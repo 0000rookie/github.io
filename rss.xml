@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>阿亮の博客</title>
+        <subtitle>阿亮的个人网站</subtitle>
+        <icon>https://www.aliang.live/images/favicon.ico</icon>
+        <link>https://www.aliang.live</link>
+        <author>
+          <name>吴小白</name>
+        </author>
+        <description>aliang</description>
+        <language>zh-CN</language>
+        <pubDate>Sat, 26 Mar 2022 18:33:07 +0800</pubDate>
+        <lastBuildDate>Sat, 26 Mar 2022 18:33:07 +0800</lastBuildDate>
+        <category term="web安全" />
+        <category term="笔记" />
+        <category term="web" />
+        <category term="theme" />
+        <category term="node.js" />
+        <category term="java" />
+        <category term="c" />
+        <category term="c++" />
+        <category term="python" />
+        <category term="前端" />
+        <category term="后端" />
+        <category term="markdown" />
+        <item>
+            <guid isPermalink="true">https://www.aliang.live/2022/03/26/computer-science/Hexo/hexo%E6%80%8E%E4%B9%88%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6%E5%8F%8A%E5%8D%B8%E8%BD%BD/</guid>
+            <title>hexo怎么安装插件</title>
+            <link>https://www.aliang.live/2022/03/26/computer-science/Hexo/hexo%E6%80%8E%E4%B9%88%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6%E5%8F%8A%E5%8D%B8%E8%BD%BD/</link>
+            <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+            <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
+            <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
+            <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
+            <pubDate>Sat, 26 Mar 2022 18:33:07 +0800</pubDate>
+            <description><![CDATA[ &lt;hr&gt;
+&lt;h3 id=&#34;hexo怎么安装插件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#hexo怎么安装插件&#34;&gt;#&lt;/a&gt; hexo 怎么安装插件&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;打开 hexo 的根目录 &lt;code&gt;Blog&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;输入安装地址 (此处我以安装 &lt;code&gt;npm i hexo-algoliasearch&lt;/code&gt;  测试)&lt;/li&gt;
+&lt;li&gt;安装成功&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://tva4.sinaimg.cn/large/0065wfS6ly8h0ntxuxa0oj30jo09njsv.jpg&#34; alt title=&#34;在Blog打开cmd&#34; height=&#34;65%&#34; width=&#34;65%&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://tva2.sinaimg.cn/large/0065wfS6ly8h0ntxktk9zj30cr02gjrc.jpg&#34; alt title=&#34;在cmd输入安装路径&#34; height=&#34;65%&#34; width=&#34;65%&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://tva3.sinaimg.cn/large/0065wfS6ly8h0nty14h5oj30lh07s0tg.jpg&#34; alt title=&#34;END&#34; height=&#34;65%&#34; width=&#34;65%&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;hexo怎么卸载插件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#hexo怎么卸载插件&#34;&gt;#&lt;/a&gt; Hexo 怎么卸载插件&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;卸载也是在 &lt;code&gt;Blog&lt;/code&gt;  打开 cmd，输入 &lt;code&gt;npm uninstall 插件名 --save&lt;/code&gt;  即可&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;或者简洁一点 &lt;code&gt;npm un 插件名 --save&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;举个例子，我要卸载 &lt;code&gt;hexo-renderer-marked&lt;/code&gt;  这个插件&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在 cmd 输入 &lt;code&gt;npm un hexo-renderer-marked --save&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://tva2.sinaimg.cn/large/0065wfS6ly8h0ntxxz7wqj30lk0650t3.jpg&#34; alt title=&#34;卸载插件&#34; height=&#34;65%&#34; width=&#34;65%&#34;&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://www.aliang.live/2022/03/26/computer-science/Hexo/%E8%AE%BE%E7%BD%AE%E5%9F%9F%E5%90%8D%E5%90%8E%E6%A0%B7%E5%BC%8F%E5%A4%B1%E6%95%88/</guid>
+            <title>设置域名后样式失效</title>
+            <link>https://www.aliang.live/2022/03/26/computer-science/Hexo/%E8%AE%BE%E7%BD%AE%E5%9F%9F%E5%90%8D%E5%90%8E%E6%A0%B7%E5%BC%8F%E5%A4%B1%E6%95%88/</link>
+            <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+            <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
+            <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
+            <pubDate>Sat, 26 Mar 2022 16:03:13 +0800</pubDate>
+            <description><![CDATA[ &lt;hr&gt;
+&lt;h3 id=&#34;设置域名后样式失效&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#设置域名后样式失效&#34;&gt;#&lt;/a&gt; 设置域名后样式失效&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;安装完 hexo 后，在设置域名后发现样式失效了。&lt;br&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;打开 F12 查看发现是路径出现了问题&lt;br&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;打开 * &lt;code&gt;_config.yml&lt;/code&gt;  * 文件修改 &lt;code&gt;url&lt;/code&gt;  和 &lt;code&gt;root&lt;/code&gt; ，修改完就正常了&lt;br&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;如图修改&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#如图修改&#34;&gt;#&lt;/a&gt; 如图修改&lt;/h4&gt;
+&lt;center style=&#34;margin-bottom:10px;border-radius:10px&#34;&gt;
+    &lt;img src=&#34;/2022/03/26/computer-science/Hexo/%E8%AE%BE%E7%BD%AE%E5%9F%9F%E5%90%8D%E5%90%8E%E6%A0%B7%E5%BC%8F%E5%A4%B1%E6%95%88/修改域名后样式失效1.png&#34; width=&#34;60%&#34; height=&#34;60%&#34; alt=&#34;图一&#34; style=&#34;border-radius:10px;&#34;&gt;
+     &lt;p&gt;
+         修改前
+    &lt;/p&gt;
+&lt;/center&gt;
+&lt;center style=&#34;margin-bottom:10px;&#34;&gt;
+    &lt;img src=&#34;/2022/03/26/computer-science/Hexo/%E8%AE%BE%E7%BD%AE%E5%9F%9F%E5%90%8D%E5%90%8E%E6%A0%B7%E5%BC%8F%E5%A4%B1%E6%95%88/修改域名后样式失效2.png&#34; width=&#34;60%&#34; height=&#34;60%&#34; alt=&#34;图二&#34; style=&#34;border-radius:10px;&#34;&gt;
+     修改前
+      &lt;br&gt;
+&lt;/center&gt;
+&lt;center style=&#34;margin-bottom:10px&#34;&gt;
+    &lt;img src=&#34;/2022/03/26/computer-science/Hexo/%E8%AE%BE%E7%BD%AE%E5%9F%9F%E5%90%8D%E5%90%8E%E6%A0%B7%E5%BC%8F%E5%A4%B1%E6%95%88/修改域名后样式失效3.png&#34; width=&#34;60%&#34; height=&#34;60%&#34; alt=&#34;图三&#34; style=&#34;border-radius:10px;&#34;&gt;
+     修改后
+      &lt;br&gt;
+&lt;/center&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://www.aliang.live/2022/03/26/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</guid>
+            <title>我的第一篇博客</title>
+            <link>https://www.aliang.live/2022/03/26/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</link>
+            <category term="生活" scheme="https://www.aliang.live/tags/%E7%94%9F%E6%B4%BB/" />
+            <pubDate>Sat, 26 Mar 2022 11:34:01 +0800</pubDate>
+            <description><![CDATA[ &lt;h6 id=&#34;历时两天终于把我的小破站建成了&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#历时两天终于把我的小破站建成了&#34;&gt;#&lt;/a&gt; 历时两天，终于把我的小破站建成了。&lt;/h6&gt;
+&lt;h6 id=&#34;小破站的初心就是为了记录自己学习情况遇到的问题进行总结以及记录生活&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#小破站的初心就是为了记录自己学习情况遇到的问题进行总结以及记录生活&#34;&gt;#&lt;/a&gt; 小破站的初心就是为了记录自己学习情况，遇到的问题进行总结，以及记录生活。&lt;/h6&gt;
+&lt;p&gt;&lt;img data-src=&#34;_images%5Cone.jpg&#34; alt&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://www.aliang.live/2022/03/25/hello-world/</guid>
+            <title>Hello World</title>
+            <link>https://www.aliang.live/2022/03/25/hello-world/</link>
+            <pubDate>Fri, 25 Mar 2022 01:26:43 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;Welcome to &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvLw==&#34;&gt;Hexo&lt;/span&gt;! This is your very first post. Check &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv&#34;&gt;documentation&lt;/span&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=&#34;&gt;troubleshooting&lt;/span&gt; or you can ask me on &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==&#34;&gt;GitHub&lt;/span&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;quick-start&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#quick-start&#34;&gt;#&lt;/a&gt; Quick Start&lt;/h2&gt;
+&lt;h3 id=&#34;create-a-new-post&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#create-a-new-post&#34;&gt;#&lt;/a&gt; Create a new post&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo new &lt;span class=&#34;token string&#34;&gt;&#34;My New Post&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvd3JpdGluZy5odG1s&#34;&gt;Writing&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;run-server&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#run-server&#34;&gt;#&lt;/a&gt; Run server&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo server&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvc2VydmVyLmh0bWw=&#34;&gt;Server&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;generate-static-files&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#generate-static-files&#34;&gt;#&lt;/a&gt; Generate static files&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo generate&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZ2VuZXJhdGluZy5odG1s&#34;&gt;Generating&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;deploy-to-remote-sites&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#deploy-to-remote-sites&#34;&gt;#&lt;/a&gt; Deploy to remote sites&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo deploy&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s&#34;&gt;Deployment&lt;/span&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

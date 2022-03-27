@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>我的第一篇博客</title>
+    <url>/2022/03/26/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h6 id="历时两天终于把我的小破站建成了"><a class="markdownIt-Anchor" href="#历时两天终于把我的小破站建成了">#</a> 历时两天，终于把我的小破站建成了。</h6>
+<h6 id="小破站的初心就是为了记录自己学习情况遇到的问题进行总结以及记录生活"><a class="markdownIt-Anchor" href="#小破站的初心就是为了记录自己学习情况遇到的问题进行总结以及记录生活">#</a> 小破站的初心就是为了记录自己学习情况，遇到的问题进行总结，以及记录生活。</h6>
+<p><img data-src="_images%5Cone.jpg" alt></p>
+]]></content>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2022/03/25/hello-world/</url>
     <content><![CDATA[<p>Welcome to <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvLw==">Hexo</span>! This is your very first post. Check <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv">documentation</span> for more info. If you get any problems when using Hexo, you can find the answer in <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=">troubleshooting</span> or you can ask me on <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==">GitHub</span>.</p>
@@ -16,19 +27,8 @@
 ]]></content>
   </entry>
   <entry>
-    <title>我的第一篇博客</title>
-    <url>/2022/03/26/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<h6 id="历时两天终于把我的小破站建成了"><a class="markdownIt-Anchor" href="#历时两天终于把我的小破站建成了">#</a> 历时两天，终于把我的小破站建成了。</h6>
-<h6 id="小破站的初心就是为了记录自己学习情况遇到的问题进行总结以及记录生活"><a class="markdownIt-Anchor" href="#小破站的初心就是为了记录自己学习情况遇到的问题进行总结以及记录生活">#</a> 小破站的初心就是为了记录自己学习情况，遇到的问题进行总结，以及记录生活。</h6>
-<p><img data-src="_images%5Cone.jpg" alt></p>
-]]></content>
-      <tags>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>hexo怎么安装插件</title>
-    <url>/2022/03/26/computer-science/blogs/hexo%E6%80%8E%E4%B9%88%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6%E5%8F%8A%E5%8D%B8%E8%BD%BD/</url>
+    <url>/2022/03/26/computer-science/Hexo/hexo%E6%80%8E%E4%B9%88%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6%E5%8F%8A%E5%8D%B8%E8%BD%BD/</url>
     <content><![CDATA[<hr>
 <h3 id="hexo怎么安装插件"><a class="markdownIt-Anchor" href="#hexo怎么安装插件">#</a> hexo 怎么安装插件</h3>
 <ol>
@@ -57,8 +57,8 @@
 <p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0ntxxz7wqj30lk0650t3.jpg" alt title="卸载插件" height="65%" width="65%"></p>
 ]]></content>
       <categories>
-        <category>comnputer-science</category>
-        <category>blogs</category>
+        <category>计算机科学</category>
+        <category>博客</category>
       </categories>
       <tags>
         <tag>博客</tag>
@@ -67,7 +67,7 @@
   </entry>
   <entry>
     <title>设置域名后样式失效</title>
-    <url>/2022/03/26/computer-science/blogs/%E8%AE%BE%E7%BD%AE%E5%9F%9F%E5%90%8D%E5%90%8E%E6%A0%B7%E5%BC%8F%E5%A4%B1%E6%95%88/</url>
+    <url>/2022/03/26/computer-science/Hexo/%E8%AE%BE%E7%BD%AE%E5%9F%9F%E5%90%8D%E5%90%8E%E6%A0%B7%E5%BC%8F%E5%A4%B1%E6%95%88/</url>
     <content><![CDATA[<hr>
 <h3 id="设置域名后样式失效"><a class="markdownIt-Anchor" href="#设置域名后样式失效">#</a> 设置域名后样式失效</h3>
 <ol>
@@ -83,25 +83,25 @@
 </ol>
 <h4 id="如图修改"><a class="markdownIt-Anchor" href="#如图修改">#</a> 如图修改</h4>
 <center style="margin-bottom:10px;border-radius:10px">
-    <img src="/2022/03/26/computer-science/blogs/%E8%AE%BE%E7%BD%AE%E5%9F%9F%E5%90%8D%E5%90%8E%E6%A0%B7%E5%BC%8F%E5%A4%B1%E6%95%88/修改域名后样式失效1.png" width="60%" height="60%" alt="图一" style="border-radius:10px;">
+    <img src="/2022/03/26/computer-science/Hexo/%E8%AE%BE%E7%BD%AE%E5%9F%9F%E5%90%8D%E5%90%8E%E6%A0%B7%E5%BC%8F%E5%A4%B1%E6%95%88/修改域名后样式失效1.png" width="60%" height="60%" alt="图一" style="border-radius:10px;">
      <p>
          修改前
     </p>
 </center>
 <center style="margin-bottom:10px;">
-    <img src="/2022/03/26/computer-science/blogs/%E8%AE%BE%E7%BD%AE%E5%9F%9F%E5%90%8D%E5%90%8E%E6%A0%B7%E5%BC%8F%E5%A4%B1%E6%95%88/修改域名后样式失效2.png" width="60%" height="60%" alt="图二" style="border-radius:10px;">
+    <img src="/2022/03/26/computer-science/Hexo/%E8%AE%BE%E7%BD%AE%E5%9F%9F%E5%90%8D%E5%90%8E%E6%A0%B7%E5%BC%8F%E5%A4%B1%E6%95%88/修改域名后样式失效2.png" width="60%" height="60%" alt="图二" style="border-radius:10px;">
      修改前
       <br>
 </center>
 <center style="margin-bottom:10px">
-    <img src="/2022/03/26/computer-science/blogs/%E8%AE%BE%E7%BD%AE%E5%9F%9F%E5%90%8D%E5%90%8E%E6%A0%B7%E5%BC%8F%E5%A4%B1%E6%95%88/修改域名后样式失效3.png" width="60%" height="60%" alt="图三" style="border-radius:10px;">
+    <img src="/2022/03/26/computer-science/Hexo/%E8%AE%BE%E7%BD%AE%E5%9F%9F%E5%90%8D%E5%90%8E%E6%A0%B7%E5%BC%8F%E5%A4%B1%E6%95%88/修改域名后样式失效3.png" width="60%" height="60%" alt="图三" style="border-radius:10px;">
      修改后
       <br>
 </center>
 ]]></content>
       <categories>
-        <category>comnputer-science</category>
-        <category>blogs</category>
+        <category>计算机科学</category>
+        <category>博客</category>
       </categories>
       <tags>
         <tag>博客</tag>
