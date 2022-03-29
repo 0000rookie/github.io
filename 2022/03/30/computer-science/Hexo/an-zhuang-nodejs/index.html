@@ -27,12 +27,12 @@
   <meta name="keywords" content="博客" />
 
 
-<link rel="canonical" href="https://www.aliang.live/2022/03/26/computer-science/Hexo/%E8%AE%BE%E7%BD%AE%E5%9F%9F%E5%90%8D%E5%90%8E%E6%A0%B7%E5%BC%8F%E5%A4%B1%E6%95%88/">
+<link rel="canonical" href="https://www.aliang.live/2022/03/30/computer-science/hexo/an-zhuang-nodejs/">
 
 
 
   <title>
-设置域名后样式失效 - 博客 - 计算机科学 |
+第四篇：安装Nodejs---从0基础搭建Hexo博客 - 博客 - 计算机科学 |
 aliang = 阿亮の博客 = 阿亮的个人网站</title>
 <meta name="generator" content="Hexo 6.1.0"></head>
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -60,23 +60,23 @@ aliang = 阿亮の博客 = 阿亮的个人网站</title>
         <div id="brand">
           <div class="pjax">
           
-  <h1 itemprop="name headline">设置域名后样式失效
+  <h1 itemprop="name headline">第四篇：安装Nodejs---从0基础搭建Hexo博客
   </h1>
   
 <div class="meta">
-  <span class="item" title="创建时间：2022-03-26 16:03:13">
+  <span class="item" title="创建时间：2022-03-30 00:43:41">
     <span class="icon">
       <i class="ic i-calendar"></i>
     </span>
     <span class="text">发表于</span>
-    <time itemprop="dateCreated datePublished" datetime="2022-03-26T16:03:13+08:00">2022-03-26</time>
+    <time itemprop="dateCreated datePublished" datetime="2022-03-30T00:43:41+08:00">2022-03-30</time>
   </span>
   <span class="item" title="本文字数">
     <span class="icon">
       <i class="ic i-pen"></i>
     </span>
     <span class="text">本文字数</span>
-    <span>99</span>
+    <span>755</span>
     <span class="text">字</span>
   </span>
   <span class="item" title="阅读时长">
@@ -117,12 +117,12 @@ aliang = 阿亮の博客 = 阿亮的个人网站</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipevuctzzj20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclgi503lj20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipesrnqv3j20zk0m8ava.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giph4wqtg4j20zk0m8x6p.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicis081o9j20zk0m8dmr.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giciszlczyj20zk0m816d.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclxp31goj20zk0m8qv5.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipexj2jgzj20zk0m8b09.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giciszlczyj20zk0m816d.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclfb3vzhj20zk0m8wny.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipewr8iypj20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclh5u05ej20zk0m87df.jpg"></li>
         </ul>
       </div>
     </header>
@@ -156,7 +156,7 @@ aliang = 阿亮の博客 = 阿亮的个人网站</title>
 </div>
 
     <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
-  <link itemprop="mainEntityOfPage" href="https://www.aliang.live/2022/03/26/computer-science/Hexo/%E8%AE%BE%E7%BD%AE%E5%9F%9F%E5%90%8D%E5%90%8E%E6%A0%B7%E5%BC%8F%E5%A4%B1%E6%95%88/">
+  <link itemprop="mainEntityOfPage" href="https://www.aliang.live/2022/03/30/computer-science/hexo/an-zhuang-nodejs/">
 
   <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="image" content="/images/avatar.jpg">
@@ -171,36 +171,82 @@ aliang = 阿亮の博客 = 阿亮的个人网站</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <hr>
-<h3 id="设置域名后样式失效"><a class="markdownIt-Anchor" href="#设置域名后样式失效">#</a> 设置域名后样式失效</h3>
+    <h2 id="nodejs安装及配置环境"><a class="markdownIt-Anchor" href="#nodejs安装及配置环境">#</a> Node.js 安装及配置环境</h2>
+<h4 id="一-nodejs安装"><a class="markdownIt-Anchor" href="#一-nodejs安装">#</a> 一、 <code>node.js</code>  安装</h4>
+<ol>
+<li>我这里安装在 <code>C:\app\nodejs</code></li>
+</ol>
+<p><img data-src="%E5%AE%89%E8%A3%85nodejs/01Node%E8%B7%AF%E5%BE%84.png" alt="01Node路径"></p>
+<ol start="2">
+<li>安装完之后打开 <code>cmd</code> ，输入 <code>node -v</code>  和 <code>npm -v</code></li>
+</ol>
+<p><img data-src="%E5%AE%89%E8%A3%85nodejs/05cmd.jpg" alt="05cmd"></p>
+<h4 id="二-设置npm在安装全局模块时的路径和环境变量"><a class="markdownIt-Anchor" href="#二-设置npm在安装全局模块时的路径和环境变量">#</a> 二、设置 npm 在安装全局模块时的路径和环境变量</h4>
+<p>如果不设置的话，安装模块是默认在 C 盘的，会占用 C 盘空间，我这边把安装路径修改一下，建议你也改一下。</p>
 <ol>
 <li>
-<p>安装完 hexo 后，在设置域名后发现样式失效了。<br></p>
+<p>在 <code>nodejs</code>  下创建两个目录 <code>ndoe_cache</code>  和 <code>node_global</code></p>
+<p><img data-src="%E5%AE%89%E8%A3%85nodejs/02%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9.png" alt="02创建文件夹"></p>
 </li>
 <li>
-<p>打开 F12 查看发现是路径出现了问题<br></p>
-</li>
-<li>
-<p>打开 * <code>_config.yml</code>  * 文件修改 <code>url</code>  和 <code>root</code> ，修改完就正常了<br></p>
+<p>选择 node_cache 右击打开属性，把权限下的 “完全控制” 选上</p>
 </li>
 </ol>
-<h4 id="如图修改"><a class="markdownIt-Anchor" href="#如图修改">#</a> 如图修改</h4>
-<center style="margin-bottom:10px;border-radius:10px">
-    <img src="/2022/03/26/computer-science/Hexo/%E8%AE%BE%E7%BD%AE%E5%9F%9F%E5%90%8D%E5%90%8E%E6%A0%B7%E5%BC%8F%E5%A4%B1%E6%95%88/修改域名后样式失效1.png" width="60%" height="60%" alt="图一" style="border-radius:10px;">
-     <p>
-         修改前
-    </p>
-</center>
-<center style="margin-bottom:10px;">
-    <img src="/2022/03/26/computer-science/Hexo/%E8%AE%BE%E7%BD%AE%E5%9F%9F%E5%90%8D%E5%90%8E%E6%A0%B7%E5%BC%8F%E5%A4%B1%E6%95%88/修改域名后样式失效2.png" width="60%" height="60%" alt="图二" style="border-radius:10px;">
-     修改前
-      <br>
-</center>
-<center style="margin-bottom:10px">
-    <img src="/2022/03/26/computer-science/Hexo/%E8%AE%BE%E7%BD%AE%E5%9F%9F%E5%90%8D%E5%90%8E%E6%A0%B7%E5%BC%8F%E5%A4%B1%E6%95%88/修改域名后样式失效3.png" width="60%" height="60%" alt="图三" style="border-radius:10px;">
-     修改后
-      <br>
-</center>
+<p><img data-src="%E5%AE%89%E8%A3%85nodejs/03%E6%96%87%E4%BB%B6%E5%A4%B9%E6%9D%83%E9%99%90%E4%BF%AE%E6%94%B9.png" alt="03文件夹权限修改"></p>
+<ol start="3">
+<li>同理，选择 node_global 右击打开属性，把权限下的 “完全控制” 也选上</li>
+</ol>
+<p><img data-src="%E5%AE%89%E8%A3%85nodejs/04.jpg" alt="04"></p>
+<ol start="4">
+<li>复制 node_global 和 node_cache 的路径</li>
+</ol>
+<p><img data-src="%E5%AE%89%E8%A3%85nodejs/06.jpg" alt="06"></p>
+<ol start="5">
+<li>然后再返回刚刚打开的 cmd, 输入以下代码</li>
+</ol>
+<p><code>npm config set prefix &quot;C:\app\nodejs\node_global&quot;</code></p>
+<p><code>npm config set cache &quot;C:\app\nodejs\node_cache&quot;</code></p>
+<p><img data-src="%E5%AE%89%E8%A3%85nodejs/07%E8%AE%BE%E7%BD%AE%E8%B7%AF%E5%BE%84.jpg" alt="07设置路径"></p>
+<ol start="6">
+<li>
+<p>设置完路径之后，我们还要去系统环境变量修改一下</p>
+<p><strong>打开桌面 —&gt; 此电脑 —&gt; 属性 —&gt; 高级系统设置 —&gt; 环境变量</strong></p>
+</li>
+</ol>
+<p><img data-src="%E5%AE%89%E8%A3%85nodejs/08%E5%B1%9E%E6%80%A7.jpg" alt="08属性"></p>
+<ol start="7">
+<li>打开高级系统设置</li>
+</ol>
+<p><img data-src="%E5%AE%89%E8%A3%85nodejs/09%E9%AB%98%E7%BA%A7.jpg" alt="09高级"></p>
+<ol start="8">
+<li>打开环境变量</li>
+</ol>
+<p><img data-src="%E5%AE%89%E8%A3%85nodejs/10%E7%8E%AF%E5%A2%83.jpg" alt="10环境"></p>
+<ol start="9">
+<li>在系统变量中新建一个变量，名为 <code>NODE_PATH</code> , 值为 <code>C:\app\nodejs\node_global\node_modules</code></li>
+</ol>
+<p><img data-src="%E5%AE%89%E8%A3%85nodejs/11%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8F%98%E9%87%8F.jpg" alt="11新建一个变量"></p>
+<p><img data-src="%E5%AE%89%E8%A3%85nodejs/12.jpg" alt="12"></p>
+<ol start="10">
+<li>然后编辑上方的用户变量的 Path, 编辑修改为 <code>C:\app\nodejs\node_global</code></li>
+</ol>
+<p><img data-src="%E5%AE%89%E8%A3%85nodejs/13%E7%BC%96%E8%BE%91.jpg" alt="13编辑"></p>
+<p><img data-src="%E5%AE%89%E8%A3%85nodejs/14.jpg" alt="14"></p>
+<p><img data-src="%E5%AE%89%E8%A3%85nodejs/15.jpg" alt="15"></p>
+<h4 id="三-全部变量修改结果如下图"><a class="markdownIt-Anchor" href="#三-全部变量修改结果如下图">#</a> 三、全部变量修改结果，如下图</h4>
+<p><img data-src="%E5%AE%89%E8%A3%85nodejs/16.jpg" alt="16"></p>
+<ol>
+<li>然后打开 <code>cmd</code>  测试一下路径设置和环境变量有没有设置正确，如果没有设置正确的话，在 <code>node_global</code>  是看不到有 <code>webpack</code>  文件夹的</li>
+</ol>
+<p><strong>安装过程</strong></p>
+<p><img data-src="%E5%AE%89%E8%A3%85nodejs/17%E4%B8%8B%E8%BD%BD%E8%BF%87%E7%A8%8B.jpg" alt="17下载过程"></p>
+<p><strong>安装成功</strong></p>
+<p><img data-src="%E5%AE%89%E8%A3%85nodejs/18.jpg" alt="18"></p>
+<ol start="2">
+<li>出现以下路径说明安装成功了 <code>node_global---&gt;node_modules---&gt;webpack</code></li>
+</ol>
+<p><img data-src="%E5%AE%89%E8%A3%85nodejs/19%E5%AE%89%E8%A3%85%E6%A8%A1%E5%9D%97%E5%AE%8C%E6%88%90.jpg" alt="19安装模块完成"></p>
+<p><strong>nodejs 环境配置到此就完成啦</strong></p>
 
       <div class="tags">
           <a href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag"><i class="ic i-tag"></i> 博客</a>
@@ -215,7 +261,7 @@ aliang = 阿亮の博客 = 阿亮的个人网站</title>
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">更新于</span>
-    <time title="修改时间：2022-03-27 15:41:06" itemprop="dateModified" datetime="2022-03-27T15:41:06+08:00">2022-03-27</time>
+    <time title="修改时间：2022-03-30 01:21:59" itemprop="dateModified" datetime="2022-03-30T01:21:59+08:00">2022-03-30</time>
   </span>
 </div>
 
@@ -251,7 +297,7 @@ aliang = 阿亮の博客 = 阿亮的个人网站</title>
   </li>
   <li class="link">
     <strong>本文链接：</strong>
-    <a href="https://www.aliang.live/2022/03/26/computer-science/Hexo/%E8%AE%BE%E7%BD%AE%E5%9F%9F%E5%90%8D%E5%90%8E%E6%A0%B7%E5%BC%8F%E5%A4%B1%E6%95%88/" title="设置域名后样式失效">https://www.aliang.live/2022/03/26/computer-science/Hexo/设置域名后样式失效/</a>
+    <a href="https://www.aliang.live/2022/03/30/computer-science/hexo/an-zhuang-nodejs/" title="第四篇：安装Nodejs---从0基础搭建Hexo博客">https://www.aliang.live/2022/03/30/computer-science/hexo/an-zhuang-nodejs/</a>
   </li>
   <li class="license">
     <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
@@ -270,20 +316,20 @@ aliang = 阿亮の博客 = 阿亮的个人网站</title>
     <div class="item left">
       
 
-  <a href="/2022/03/26/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipewr8iypj20zk0m8b29.jpg" title="我的第一篇博客">
+  <a href="/2022/03/30/computer-science/hexo/an-zhuang-hexo/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclh3brzpj20zk0m8ann.jpg" title="第五篇：安装Hexo---从0基础搭建Hexo博客">
   <span class="type">上一篇</span>
-  <span class="category"><i class="ic i-flag"></i> </span>
-  <h3>我的第一篇博客</h3>
+  <span class="category"><i class="ic i-flag"></i> 博客</span>
+  <h3>第五篇：安装Hexo---从0基础搭建Hexo博客</h3>
   </a>
 
     </div>
     <div class="item right">
       
 
-  <a href="/2022/03/26/computer-science/Hexo/hexo%E6%80%8E%E4%B9%88%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6%E5%8F%8A%E5%8D%B8%E8%BD%BD/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicliierfjj20zk0m8npd.jpg" title="hexo怎么安装插件">
+  <a href="/2022/03/30/computer-science/hexo/an-zhuang-zhu-ti/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclxfdlttj20zk0m8npd.jpg" title="第九篇：安装主题---从0基础搭建Hexo博客">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> 博客</span>
-  <h3>hexo怎么安装插件</h3>
+  <h3>第九篇：安装主题---从0基础搭建Hexo博客</h3>
   </a>
 
     </div>
@@ -302,11 +348,11 @@ aliang = 阿亮の博客 = 阿亮的个人网站</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E5%9F%9F%E5%90%8D%E5%90%8E%E6%A0%B7%E5%BC%8F%E5%A4%B1%E6%95%88"><span class="toc-number">1.</span> <span class="toc-text"> 设置域名后样式失效</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A6%82%E5%9B%BE%E4%BF%AE%E6%94%B9"><span class="toc-number">1.1.</span> <span class="toc-text"> 如图修改</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#nodejs%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83"><span class="toc-number">1.</span> <span class="toc-text"> Node.js 安装及配置环境</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%80-nodejs%E5%AE%89%E8%A3%85"><span class="toc-number">1.0.1.</span> <span class="toc-text"> 一、 node.js  安装</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BA%8C-%E8%AE%BE%E7%BD%AEnpm%E5%9C%A8%E5%AE%89%E8%A3%85%E5%85%A8%E5%B1%80%E6%A8%A1%E5%9D%97%E6%97%B6%E7%9A%84%E8%B7%AF%E5%BE%84%E5%92%8C%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="toc-number">1.0.2.</span> <span class="toc-text"> 二、设置 npm 在安装全局模块时的路径和环境变量</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%89-%E5%85%A8%E9%83%A8%E5%8F%98%E9%87%8F%E4%BF%AE%E6%94%B9%E7%BB%93%E6%9E%9C%E5%A6%82%E4%B8%8B%E5%9B%BE"><span class="toc-number">1.0.3.</span> <span class="toc-text"> 三、全部变量修改结果，如下图</span></a></li></ol></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
-          <li class="active"><a href="/2022/03/26/computer-science/Hexo/%E8%AE%BE%E7%BD%AE%E5%9F%9F%E5%90%8D%E5%90%8E%E6%A0%B7%E5%BC%8F%E5%A4%B1%E6%95%88/" rel="bookmark" title="设置域名后样式失效">设置域名后样式失效</a></li><li><a href="/2022/03/26/computer-science/Hexo/hexo%E6%80%8E%E4%B9%88%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6%E5%8F%8A%E5%8D%B8%E8%BD%BD/" rel="bookmark" title="hexo怎么安装插件">hexo怎么安装插件</a></li><li><a href="/2022/03/30/computer-science/Hexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/" rel="bookmark" title="第三篇：Git提交文件---从0基础搭建Hexo博客">第三篇：Git提交文件---从0基础搭建Hexo博客</a></li><li><a href="/2022/03/30/computer-science/Hexo/%E5%AE%89%E8%A3%85Hexo/" rel="bookmark" title="第五篇：安装Hexo---从0基础搭建Hexo博客">第五篇：安装Hexo---从0基础搭建Hexo博客</a></li><li><a href="/2022/03/30/computer-science/Hexo/%E5%AE%89%E8%A3%85Nodejs/" rel="bookmark" title="第四篇：安装Nodejs---从0基础搭建Hexo博客">第四篇：安装Nodejs---从0基础搭建Hexo博客</a></li><li><a href="/2022/03/30/computer-science/Hexo/%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98/" rel="bookmark" title="第九篇：安装主题---从0基础搭建Hexo博客">第九篇：安装主题---从0基础搭建Hexo博客</a></li><li><a href="/2022/03/30/computer-science/Hexo/%E8%A7%A3%E6%9E%90%E5%9F%9F%E5%90%8D/" rel="bookmark" title="第八篇：解析域名---从0基础搭建Hexo博客">第八篇：解析域名---从0基础搭建Hexo博客</a></li><li><a href="/2022/03/30/computer-science/Hexo/%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D/" rel="bookmark" title="第七篇：购买域名---从0基础搭建Hexo博客">第七篇：购买域名---从0基础搭建Hexo博客</a></li><li><a href="/2022/03/30/computer-science/Hexo/%E5%B0%86%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0Github/" rel="bookmark" title="第六篇：将博客部署到GitHub---从0基础搭建Hexo博客">第六篇：将博客部署到GitHub---从0基础搭建Hexo博客</a></li><li><a href="/2022/03/30/computer-science/Hexo/%E6%B3%A8%E5%86%8Cgithub/" rel="bookmark" title="第一篇：注册github---从0基础搭建Hexo博客">第一篇：注册github---从0基础搭建Hexo博客</a></li><li><a href="/2022/03/30/computer-science/Hexo/%E5%AE%89%E8%A3%85Git/" rel="bookmark" title="第二篇：安装Git---从0基础搭建Hexo博客">第二篇：安装Git---从0基础搭建Hexo博客</a></li>
+          <li><a href="/2022/03/26/computer-science/hexo/she-zhi-yu-ming-hou-yang-shi-shi-xiao/" rel="bookmark" title="设置域名后样式失效">设置域名后样式失效</a></li><li><a href="/2022/03/26/computer-science/hexo/hexo-zen-me-an-zhuang-cha-jian-ji-xie-zai/" rel="bookmark" title="hexo怎么安装插件">hexo怎么安装插件</a></li><li><a href="/2022/03/30/computer-science/hexo/git-ti-jiao-wen-jian/" rel="bookmark" title="第三篇：Git提交文件---从0基础搭建Hexo博客">第三篇：Git提交文件---从0基础搭建Hexo博客</a></li><li><a href="/2022/03/30/computer-science/hexo/an-zhuang-hexo/" rel="bookmark" title="第五篇：安装Hexo---从0基础搭建Hexo博客">第五篇：安装Hexo---从0基础搭建Hexo博客</a></li><li class="active"><a href="/2022/03/30/computer-science/hexo/an-zhuang-nodejs/" rel="bookmark" title="第四篇：安装Nodejs---从0基础搭建Hexo博客">第四篇：安装Nodejs---从0基础搭建Hexo博客</a></li><li><a href="/2022/03/30/computer-science/hexo/an-zhuang-zhu-ti/" rel="bookmark" title="第九篇：安装主题---从0基础搭建Hexo博客">第九篇：安装主题---从0基础搭建Hexo博客</a></li><li><a href="/2022/03/30/computer-science/hexo/jie-xi-yu-ming/" rel="bookmark" title="第八篇：解析域名---从0基础搭建Hexo博客">第八篇：解析域名---从0基础搭建Hexo博客</a></li><li><a href="/2022/03/30/computer-science/hexo/gou-mai-yu-ming/" rel="bookmark" title="第七篇：购买域名---从0基础搭建Hexo博客">第七篇：购买域名---从0基础搭建Hexo博客</a></li><li><a href="/2022/03/30/computer-science/hexo/jiang-bo-ke-bu-shu-dao-github/" rel="bookmark" title="第六篇：将博客部署到GitHub---从0基础搭建Hexo博客">第六篇：将博客部署到GitHub---从0基础搭建Hexo博客</a></li><li><a href="/2022/03/30/computer-science/hexo/zhu-ce-github/" rel="bookmark" title="第一篇：注册github---从0基础搭建Hexo博客">第一篇：注册github---从0基础搭建Hexo博客</a></li><li><a href="/2022/03/30/computer-science/hexo/an-zhuang-git/" rel="bookmark" title="第二篇：安装Git---从0基础搭建Hexo博客">第二篇：安装Git---从0基础搭建Hexo博客</a></li>
         </ul>
       </div>
       <div class="overview panel" data-title="站点概览">
@@ -392,12 +438,12 @@ aliang = 阿亮の博客 = 阿亮的个人网站</title>
 
   <ul id="quick">
     <li class="prev pjax">
-        <a href="/2022/03/26/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
+        <a href="/2022/03/30/computer-science/hexo/an-zhuang-hexo/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
     </li>
     <li class="up"><i class="ic i-arrow-up"></i></li>
     <li class="down"><i class="ic i-arrow-down"></i></li>
     <li class="next pjax">
-        <a href="/2022/03/26/computer-science/Hexo/hexo%E6%80%8E%E4%B9%88%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6%E5%8F%8A%E5%8D%B8%E8%BD%BD/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
+        <a href="/2022/03/30/computer-science/hexo/an-zhuang-zhu-ti/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
     </li>
     <li class="percent"></li>
   </ul>
@@ -424,7 +470,7 @@ aliang = 阿亮の博客 = 阿亮的个人网站</title>
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
 </div>
 
-    <span><a href="/2022/03/30/computer-science/Hexo/%E5%AE%89%E8%A3%85Git/" title="第二篇：安装Git---从0基础搭建Hexo博客">第二篇：安装Git---从0基础搭建Hexo博客</a></span>
+    <span><a href="/2022/03/30/computer-science/hexo/an-zhuang-git/" title="第二篇：安装Git---从0基础搭建Hexo博客">第二篇：安装Git---从0基础搭建Hexo博客</a></span>
   </li>
 
       
@@ -436,7 +482,16 @@ aliang = 阿亮の博客 = 阿亮的个人网站</title>
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
 </div>
 
-    <span><a href="/2022/03/30/computer-science/Hexo/%E5%AE%89%E8%A3%85Nodejs/" title="第四篇：安装Nodejs---从0基础搭建Hexo博客">第四篇：安装Nodejs---从0基础搭建Hexo博客</a></span>
+    <span><a href="/2022/03/30/computer-science/hexo/an-zhuang-zhu-ti/" title="第九篇：安装主题---从0基础搭建Hexo博客">第九篇：安装主题---从0基础搭建Hexo博客</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2022/03/26/wo-de-di-yi-pian-bo-ke/" title="我的第一篇博客">我的第一篇博客</a></span>
   </li>
 
       
@@ -448,7 +503,7 @@ aliang = 阿亮の博客 = 阿亮的个人网站</title>
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
 </div>
 
-    <span><a href="/2022/03/30/computer-science/Hexo/%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98/" title="第九篇：安装主题---从0基础搭建Hexo博客">第九篇：安装主题---从0基础搭建Hexo博客</a></span>
+    <span><a href="/2022/03/30/computer-science/hexo/gou-mai-yu-ming/" title="第七篇：购买域名---从0基础搭建Hexo博客">第七篇：购买域名---从0基础搭建Hexo博客</a></span>
   </li>
 
       
@@ -460,16 +515,7 @@ aliang = 阿亮の博客 = 阿亮的个人网站</title>
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
 </div>
 
-    <span><a href="/2022/03/30/computer-science/Hexo/%E6%B3%A8%E5%86%8Cgithub/" title="第一篇：注册github---从0基础搭建Hexo博客">第一篇：注册github---从0基础搭建Hexo博客</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2022/03/26/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" title="我的第一篇博客">我的第一篇博客</a></span>
+    <span><a href="/2022/03/30/computer-science/hexo/jiang-bo-ke-bu-shu-dao-github/" title="第六篇：将博客部署到GitHub---从0基础搭建Hexo博客">第六篇：将博客部署到GitHub---从0基础搭建Hexo博客</a></span>
   </li>
 
       
@@ -481,7 +527,7 @@ aliang = 阿亮の博客 = 阿亮的个人网站</title>
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
 </div>
 
-    <span><a href="/2022/03/30/computer-science/Hexo/%E5%B0%86%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0Github/" title="第六篇：将博客部署到GitHub---从0基础搭建Hexo博客">第六篇：将博客部署到GitHub---从0基础搭建Hexo博客</a></span>
+    <span><a href="/2022/03/30/computer-science/hexo/zhu-ce-github/" title="第一篇：注册github---从0基础搭建Hexo博客">第一篇：注册github---从0基础搭建Hexo博客</a></span>
   </li>
 
       
@@ -493,7 +539,7 @@ aliang = 阿亮の博客 = 阿亮的个人网站</title>
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
 </div>
 
-    <span><a href="/2022/03/30/computer-science/Hexo/%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D/" title="第七篇：购买域名---从0基础搭建Hexo博客">第七篇：购买域名---从0基础搭建Hexo博客</a></span>
+    <span><a href="/2022/03/30/computer-science/hexo/jie-xi-yu-ming/" title="第八篇：解析域名---从0基础搭建Hexo博客">第八篇：解析域名---从0基础搭建Hexo博客</a></span>
   </li>
 
       
@@ -505,7 +551,7 @@ aliang = 阿亮の博客 = 阿亮的个人网站</title>
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
 </div>
 
-    <span><a href="/2022/03/26/computer-science/Hexo/%E8%AE%BE%E7%BD%AE%E5%9F%9F%E5%90%8D%E5%90%8E%E6%A0%B7%E5%BC%8F%E5%A4%B1%E6%95%88/" title="设置域名后样式失效">设置域名后样式失效</a></span>
+    <span><a href="/2022/03/30/computer-science/hexo/an-zhuang-hexo/" title="第五篇：安装Hexo---从0基础搭建Hexo博客">第五篇：安装Hexo---从0基础搭建Hexo博客</a></span>
   </li>
 
       
@@ -517,7 +563,7 @@ aliang = 阿亮の博客 = 阿亮的个人网站</title>
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
 </div>
 
-    <span><a href="/2022/03/30/computer-science/Hexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/" title="第三篇：Git提交文件---从0基础搭建Hexo博客">第三篇：Git提交文件---从0基础搭建Hexo博客</a></span>
+    <span><a href="/2022/03/30/computer-science/hexo/an-zhuang-nodejs/" title="第四篇：安装Nodejs---从0基础搭建Hexo博客">第四篇：安装Nodejs---从0基础搭建Hexo博客</a></span>
   </li>
 
       
@@ -529,7 +575,7 @@ aliang = 阿亮の博客 = 阿亮的个人网站</title>
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
 </div>
 
-    <span><a href="/2022/03/26/computer-science/Hexo/hexo%E6%80%8E%E4%B9%88%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6%E5%8F%8A%E5%8D%B8%E8%BD%BD/" title="hexo怎么安装插件">hexo怎么安装插件</a></span>
+    <span><a href="/2022/03/26/computer-science/hexo/she-zhi-yu-ming-hou-yang-shi-shi-xiao/" title="设置域名后样式失效">设置域名后样式失效</a></span>
   </li>
 
   </ul>
@@ -572,7 +618,7 @@ aliang = 阿亮の博客 = 阿亮的个人网站</title>
   </div>
 <script data-config type="text/javascript">
   var LOCAL = {
-    path: '2022/03/26/computer-science/Hexo/设置域名后样式失效/',
+    path: '2022/03/30/computer-science/hexo/an-zhuang-nodejs/',
     favicon: {
       show: "あれんのぼろこ",
       hide: "可愛い！"

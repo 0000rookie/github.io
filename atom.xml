@@ -22,9 +22,9 @@
     <category term="后端" />
     <category term="markdown" />
     <entry>
-        <id>https://www.aliang.live/2022/03/30/computer-science/Hexo/%E5%AE%89%E8%A3%85Git/</id>
+        <id>https://www.aliang.live/2022/03/30/computer-science/hexo/an-zhuang-git/</id>
         <title>第二篇：安装Git---从0基础搭建Hexo博客</title>
-        <link rel="alternate" href="https://www.aliang.live/2022/03/30/computer-science/Hexo/%E5%AE%89%E8%A3%85Git/"/>
+        <link rel="alternate" href="https://www.aliang.live/2022/03/30/computer-science/hexo/an-zhuang-git/"/>
         <content type="html">&lt;h3 id=&#34;以下软件安装链接&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#以下软件安装链接&#34;&gt;#&lt;/a&gt; 以下软件安装链接&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;必装&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXQtc2NtLmNvbQ==&#34;&gt; Git&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;必装&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXQtc2NtLmNvbQ==&#34;&gt; Node.js&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
@@ -58,9 +58,9 @@
         <updated>2022-03-29T17:07:44.000Z</updated>
     </entry>
     <entry>
-        <id>https://www.aliang.live/2022/03/30/computer-science/Hexo/%E6%B3%A8%E5%86%8Cgithub/</id>
+        <id>https://www.aliang.live/2022/03/30/computer-science/hexo/zhu-ce-github/</id>
         <title>第一篇：注册github---从0基础搭建Hexo博客</title>
-        <link rel="alternate" href="https://www.aliang.live/2022/03/30/computer-science/Hexo/%E6%B3%A8%E5%86%8Cgithub/"/>
+        <link rel="alternate" href="https://www.aliang.live/2022/03/30/computer-science/hexo/zhu-ce-github/"/>
         <content type="html">&lt;h3 id=&#34;注册github&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#注册github&#34;&gt;#&lt;/a&gt; 注册 GitHub&lt;/h3&gt;
 &lt;p&gt;&lt;img data-src=&#34;%E6%B3%A8%E5%86%8Cgithub/01.jpg&#34; alt=&#34;01&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;%E6%B3%A8%E5%86%8Cgithub/02.jpg&#34; alt=&#34;02&#34;&gt;&lt;/p&gt;
@@ -82,9 +82,9 @@
         <updated>2022-03-29T16:50:30.000Z</updated>
     </entry>
     <entry>
-        <id>https://www.aliang.live/2022/03/30/computer-science/Hexo/%E5%B0%86%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0Github/</id>
+        <id>https://www.aliang.live/2022/03/30/computer-science/hexo/jiang-bo-ke-bu-shu-dao-github/</id>
         <title>第六篇：将博客部署到GitHub---从0基础搭建Hexo博客</title>
-        <link rel="alternate" href="https://www.aliang.live/2022/03/30/computer-science/Hexo/%E5%B0%86%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0Github/"/>
+        <link rel="alternate" href="https://www.aliang.live/2022/03/30/computer-science/hexo/jiang-bo-ke-bu-shu-dao-github/"/>
         <content type="html">&lt;h3 id=&#34;将hexo部署到github&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#将hexo部署到github&#34;&gt;#&lt;/a&gt; 将 Hexo 部署到 github&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;打开 &lt;code&gt;blog&lt;/code&gt;  文件夹，打开 &lt;code&gt;_config.yml&lt;/code&gt;  文件&lt;/li&gt;
@@ -133,9 +133,9 @@
         <updated>2022-03-29T16:45:37.000Z</updated>
     </entry>
     <entry>
-        <id>https://www.aliang.live/2022/03/30/computer-science/Hexo/%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D/</id>
+        <id>https://www.aliang.live/2022/03/30/computer-science/hexo/gou-mai-yu-ming/</id>
         <title>第七篇：购买域名---从0基础搭建Hexo博客</title>
-        <link rel="alternate" href="https://www.aliang.live/2022/03/30/computer-science/Hexo/%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D/"/>
+        <link rel="alternate" href="https://www.aliang.live/2022/03/30/computer-science/hexo/gou-mai-yu-ming/"/>
         <content type="html">&lt;h2 id=&#34;购买域名&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#购买域名&#34;&gt;#&lt;/a&gt; 购买域名&lt;/h2&gt;
 &lt;p&gt;打开&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93YW53YW5nLmFsaXl1bi5jb20v&#34;&gt;万网官网&lt;/span&gt;&lt;/p&gt;
 &lt;h4 id=&#34;一-注册账号&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-注册账号&#34;&gt;#&lt;/a&gt; 一、注册账号&lt;/h4&gt;
@@ -184,9 +184,9 @@
         <updated>2022-03-29T16:44:30.000Z</updated>
     </entry>
     <entry>
-        <id>https://www.aliang.live/2022/03/30/computer-science/Hexo/%E8%A7%A3%E6%9E%90%E5%9F%9F%E5%90%8D/</id>
+        <id>https://www.aliang.live/2022/03/30/computer-science/hexo/jie-xi-yu-ming/</id>
         <title>第八篇：解析域名---从0基础搭建Hexo博客</title>
-        <link rel="alternate" href="https://www.aliang.live/2022/03/30/computer-science/Hexo/%E8%A7%A3%E6%9E%90%E5%9F%9F%E5%90%8D/"/>
+        <link rel="alternate" href="https://www.aliang.live/2022/03/30/computer-science/hexo/jie-xi-yu-ming/"/>
         <content type="html">&lt;h3 id=&#34;解析域名&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#解析域名&#34;&gt;#&lt;/a&gt; 解析域名&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -263,9 +263,9 @@
         <updated>2022-03-29T16:44:12.000Z</updated>
     </entry>
     <entry>
-        <id>https://www.aliang.live/2022/03/30/computer-science/Hexo/%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98/</id>
+        <id>https://www.aliang.live/2022/03/30/computer-science/hexo/an-zhuang-zhu-ti/</id>
         <title>第九篇：安装主题---从0基础搭建Hexo博客</title>
-        <link rel="alternate" href="https://www.aliang.live/2022/03/30/computer-science/Hexo/%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98/"/>
+        <link rel="alternate" href="https://www.aliang.live/2022/03/30/computer-science/hexo/an-zhuang-zhu-ti/"/>
         <content type="html">&lt;h3 id=&#34;安装主题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装主题&#34;&gt;#&lt;/a&gt; 安装主题&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -316,9 +316,9 @@
         <updated>2022-03-29T16:43:51.000Z</updated>
     </entry>
     <entry>
-        <id>https://www.aliang.live/2022/03/30/computer-science/Hexo/%E5%AE%89%E8%A3%85Nodejs/</id>
+        <id>https://www.aliang.live/2022/03/30/computer-science/hexo/an-zhuang-nodejs/</id>
         <title>第四篇：安装Nodejs---从0基础搭建Hexo博客</title>
-        <link rel="alternate" href="https://www.aliang.live/2022/03/30/computer-science/Hexo/%E5%AE%89%E8%A3%85Nodejs/"/>
+        <link rel="alternate" href="https://www.aliang.live/2022/03/30/computer-science/hexo/an-zhuang-nodejs/"/>
         <content type="html">&lt;h2 id=&#34;nodejs安装及配置环境&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#nodejs安装及配置环境&#34;&gt;#&lt;/a&gt; Node.js 安装及配置环境&lt;/h2&gt;
 &lt;h4 id=&#34;一-nodejs安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-nodejs安装&#34;&gt;#&lt;/a&gt; 一、 &lt;code&gt;node.js&lt;/code&gt;  安装&lt;/h4&gt;
 &lt;ol&gt;
@@ -402,9 +402,9 @@
         <updated>2022-03-29T16:43:41.000Z</updated>
     </entry>
     <entry>
-        <id>https://www.aliang.live/2022/03/30/computer-science/Hexo/%E5%AE%89%E8%A3%85Hexo/</id>
+        <id>https://www.aliang.live/2022/03/30/computer-science/hexo/an-zhuang-hexo/</id>
         <title>第五篇：安装Hexo---从0基础搭建Hexo博客</title>
-        <link rel="alternate" href="https://www.aliang.live/2022/03/30/computer-science/Hexo/%E5%AE%89%E8%A3%85Hexo/"/>
+        <link rel="alternate" href="https://www.aliang.live/2022/03/30/computer-science/hexo/an-zhuang-hexo/"/>
         <content type="html">&lt;h3 id=&#34;安装hexo&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装hexo&#34;&gt;#&lt;/a&gt; 安装 Hexo&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;新建一个 blog 文件夹&lt;/li&gt;
@@ -482,9 +482,9 @@
         <updated>2022-03-29T16:43:26.000Z</updated>
     </entry>
     <entry>
-        <id>https://www.aliang.live/2022/03/30/computer-science/Hexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/</id>
+        <id>https://www.aliang.live/2022/03/30/computer-science/hexo/git-ti-jiao-wen-jian/</id>
         <title>第三篇：Git提交文件---从0基础搭建Hexo博客</title>
-        <link rel="alternate" href="https://www.aliang.live/2022/03/30/computer-science/Hexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/"/>
+        <link rel="alternate" href="https://www.aliang.live/2022/03/30/computer-science/hexo/git-ti-jiao-wen-jian/"/>
         <content type="html">&lt;h2 id=&#34;配置git&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#配置git&#34;&gt;#&lt;/a&gt; 配置 git&lt;/h2&gt;
 &lt;h4 id=&#34;一-绑定gitee&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-绑定gitee&#34;&gt;#&lt;/a&gt; 一、绑定 Gitee&lt;/h4&gt;
 &lt;p&gt;首先来简单介绍一下 SSH 协议&lt;/p&gt;
@@ -620,9 +620,9 @@ git config --global user.email &amp;quot;aa******56@126.com&amp;quot;
         <updated>2022-03-29T16:40:45.000Z</updated>
     </entry>
     <entry>
-        <id>https://www.aliang.live/2022/03/26/computer-science/Hexo/hexo%E6%80%8E%E4%B9%88%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6%E5%8F%8A%E5%8D%B8%E8%BD%BD/</id>
+        <id>https://www.aliang.live/2022/03/26/computer-science/hexo/hexo-zen-me-an-zhuang-cha-jian-ji-xie-zai/</id>
         <title>hexo怎么安装插件</title>
-        <link rel="alternate" href="https://www.aliang.live/2022/03/26/computer-science/Hexo/hexo%E6%80%8E%E4%B9%88%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6%E5%8F%8A%E5%8D%B8%E8%BD%BD/"/>
+        <link rel="alternate" href="https://www.aliang.live/2022/03/26/computer-science/hexo/hexo-zen-me-an-zhuang-cha-jian-ji-xie-zai/"/>
         <content type="html">&lt;hr&gt;
 &lt;h3 id=&#34;hexo怎么安装插件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#hexo怎么安装插件&#34;&gt;#&lt;/a&gt; hexo 怎么安装插件&lt;/h3&gt;
 &lt;ol&gt;
@@ -657,9 +657,9 @@ git config --global user.email &amp;quot;aa******56@126.com&amp;quot;
         <updated>2022-03-26T10:33:07.000Z</updated>
     </entry>
     <entry>
-        <id>https://www.aliang.live/2022/03/26/computer-science/Hexo/%E8%AE%BE%E7%BD%AE%E5%9F%9F%E5%90%8D%E5%90%8E%E6%A0%B7%E5%BC%8F%E5%A4%B1%E6%95%88/</id>
+        <id>https://www.aliang.live/2022/03/26/computer-science/hexo/she-zhi-yu-ming-hou-yang-shi-shi-xiao/</id>
         <title>设置域名后样式失效</title>
-        <link rel="alternate" href="https://www.aliang.live/2022/03/26/computer-science/Hexo/%E8%AE%BE%E7%BD%AE%E5%9F%9F%E5%90%8D%E5%90%8E%E6%A0%B7%E5%BC%8F%E5%A4%B1%E6%95%88/"/>
+        <link rel="alternate" href="https://www.aliang.live/2022/03/26/computer-science/hexo/she-zhi-yu-ming-hou-yang-shi-shi-xiao/"/>
         <content type="html">&lt;hr&gt;
 &lt;h3 id=&#34;设置域名后样式失效&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#设置域名后样式失效&#34;&gt;#&lt;/a&gt; 设置域名后样式失效&lt;/h3&gt;
 &lt;ol&gt;
@@ -675,18 +675,18 @@ git config --global user.email &amp;quot;aa******56@126.com&amp;quot;
 &lt;/ol&gt;
 &lt;h4 id=&#34;如图修改&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#如图修改&#34;&gt;#&lt;/a&gt; 如图修改&lt;/h4&gt;
 &lt;center style=&#34;margin-bottom:10px;border-radius:10px&#34;&gt;
-    &lt;img src=&#34;/2022/03/26/computer-science/Hexo/%E8%AE%BE%E7%BD%AE%E5%9F%9F%E5%90%8D%E5%90%8E%E6%A0%B7%E5%BC%8F%E5%A4%B1%E6%95%88/修改域名后样式失效1.png&#34; width=&#34;60%&#34; height=&#34;60%&#34; alt=&#34;图一&#34; style=&#34;border-radius:10px;&#34;&gt;
+    &lt;img src=&#34;/2022/03/26/computer-science/hexo/she-zhi-yu-ming-hou-yang-shi-shi-xiao/修改域名后样式失效1.png&#34; width=&#34;60%&#34; height=&#34;60%&#34; alt=&#34;图一&#34; style=&#34;border-radius:10px;&#34;&gt;
      &lt;p&gt;
          修改前
     &lt;/p&gt;
 &lt;/center&gt;
 &lt;center style=&#34;margin-bottom:10px;&#34;&gt;
-    &lt;img src=&#34;/2022/03/26/computer-science/Hexo/%E8%AE%BE%E7%BD%AE%E5%9F%9F%E5%90%8D%E5%90%8E%E6%A0%B7%E5%BC%8F%E5%A4%B1%E6%95%88/修改域名后样式失效2.png&#34; width=&#34;60%&#34; height=&#34;60%&#34; alt=&#34;图二&#34; style=&#34;border-radius:10px;&#34;&gt;
+    &lt;img src=&#34;/2022/03/26/computer-science/hexo/she-zhi-yu-ming-hou-yang-shi-shi-xiao/修改域名后样式失效2.png&#34; width=&#34;60%&#34; height=&#34;60%&#34; alt=&#34;图二&#34; style=&#34;border-radius:10px;&#34;&gt;
      修改前
       &lt;br&gt;
 &lt;/center&gt;
 &lt;center style=&#34;margin-bottom:10px&#34;&gt;
-    &lt;img src=&#34;/2022/03/26/computer-science/Hexo/%E8%AE%BE%E7%BD%AE%E5%9F%9F%E5%90%8D%E5%90%8E%E6%A0%B7%E5%BC%8F%E5%A4%B1%E6%95%88/修改域名后样式失效3.png&#34; width=&#34;60%&#34; height=&#34;60%&#34; alt=&#34;图三&#34; style=&#34;border-radius:10px;&#34;&gt;
+    &lt;img src=&#34;/2022/03/26/computer-science/hexo/she-zhi-yu-ming-hou-yang-shi-shi-xiao/修改域名后样式失效3.png&#34; width=&#34;60%&#34; height=&#34;60%&#34; alt=&#34;图三&#34; style=&#34;border-radius:10px;&#34;&gt;
      修改后
       &lt;br&gt;
 &lt;/center&gt;
@@ -697,9 +697,9 @@ git config --global user.email &amp;quot;aa******56@126.com&amp;quot;
         <updated>2022-03-26T08:03:13.000Z</updated>
     </entry>
     <entry>
-        <id>https://www.aliang.live/2022/03/26/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</id>
+        <id>https://www.aliang.live/2022/03/26/wo-de-di-yi-pian-bo-ke/</id>
         <title>我的第一篇博客</title>
-        <link rel="alternate" href="https://www.aliang.live/2022/03/26/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
+        <link rel="alternate" href="https://www.aliang.live/2022/03/26/wo-de-di-yi-pian-bo-ke/"/>
         <content type="html">&lt;h6 id=&#34;历时两天终于把我的小破站建成了&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#历时两天终于把我的小破站建成了&#34;&gt;#&lt;/a&gt; 历时两天，终于把我的小破站建成了。&lt;/h6&gt;
 &lt;h6 id=&#34;小破站的初心就是为了记录自己学习情况遇到的问题进行总结以及记录生活&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#小破站的初心就是为了记录自己学习情况遇到的问题进行总结以及记录生活&#34;&gt;#&lt;/a&gt; 小破站的初心就是为了记录自己学习情况，遇到的问题进行总结，以及记录生活。&lt;/h6&gt;
 &lt;p&gt;&lt;img data-src=&#34;_images%5Cone.jpg&#34; alt&gt;&lt;/p&gt;

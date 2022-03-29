@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>我的第一篇博客</title>
-    <url>/2022/03/26/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    <url>/2022/03/26/wo-de-di-yi-pian-bo-ke/</url>
     <content><![CDATA[<h6 id="历时两天终于把我的小破站建成了"><a class="markdownIt-Anchor" href="#历时两天终于把我的小破站建成了">#</a> 历时两天，终于把我的小破站建成了。</h6>
 <h6 id="小破站的初心就是为了记录自己学习情况遇到的问题进行总结以及记录生活"><a class="markdownIt-Anchor" href="#小破站的初心就是为了记录自己学习情况遇到的问题进行总结以及记录生活">#</a> 小破站的初心就是为了记录自己学习情况，遇到的问题进行总结，以及记录生活。</h6>
 <p><img data-src="_images%5Cone.jpg" alt></p>
@@ -13,7 +13,7 @@
   </entry>
   <entry>
     <title>第三篇：Git提交文件---从0基础搭建Hexo博客</title>
-    <url>/2022/03/30/computer-science/Hexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/</url>
+    <url>/2022/03/30/computer-science/hexo/git-ti-jiao-wen-jian/</url>
     <content><![CDATA[<h2 id="配置git"><a class="markdownIt-Anchor" href="#配置git">#</a> 配置 git</h2>
 <h4 id="一-绑定gitee"><a class="markdownIt-Anchor" href="#一-绑定gitee">#</a> 一、绑定 Gitee</h4>
 <p>首先来简单介绍一下 SSH 协议</p>
@@ -153,7 +153,7 @@ git config --global user.email &quot;aa******56@126.com&quot;
   </entry>
   <entry>
     <title>hexo怎么安装插件</title>
-    <url>/2022/03/26/computer-science/Hexo/hexo%E6%80%8E%E4%B9%88%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6%E5%8F%8A%E5%8D%B8%E8%BD%BD/</url>
+    <url>/2022/03/26/computer-science/hexo/hexo-zen-me-an-zhuang-cha-jian-ji-xie-zai/</url>
     <content><![CDATA[<hr>
 <h3 id="hexo怎么安装插件"><a class="markdownIt-Anchor" href="#hexo怎么安装插件">#</a> hexo 怎么安装插件</h3>
 <ol>
@@ -192,7 +192,7 @@ git config --global user.email &quot;aa******56@126.com&quot;
   </entry>
   <entry>
     <title>第二篇：安装Git---从0基础搭建Hexo博客</title>
-    <url>/2022/03/30/computer-science/Hexo/%E5%AE%89%E8%A3%85Git/</url>
+    <url>/2022/03/30/computer-science/hexo/an-zhuang-git/</url>
     <content><![CDATA[<h3 id="以下软件安装链接"><a class="markdownIt-Anchor" href="#以下软件安装链接">#</a> 以下软件安装链接</h3>
 <p><strong>必装<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbQ=="> Git</span></strong></p>
 <p><strong>必装<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbQ=="> Node.js</span></strong></p>
@@ -230,7 +230,7 @@ git config --global user.email &quot;aa******56@126.com&quot;
   </entry>
   <entry>
     <title>第五篇：安装Hexo---从0基础搭建Hexo博客</title>
-    <url>/2022/03/30/computer-science/Hexo/%E5%AE%89%E8%A3%85Hexo/</url>
+    <url>/2022/03/30/computer-science/hexo/an-zhuang-hexo/</url>
     <content><![CDATA[<h3 id="安装hexo"><a class="markdownIt-Anchor" href="#安装hexo">#</a> 安装 Hexo</h3>
 <ol>
 <li>新建一个 blog 文件夹</li>
@@ -311,8 +311,63 @@ git config --global user.email &quot;aa******56@126.com&quot;
       </tags>
   </entry>
   <entry>
+    <title>第九篇：安装主题---从0基础搭建Hexo博客</title>
+    <url>/2022/03/30/computer-science/hexo/an-zhuang-zhu-ti/</url>
+    <content><![CDATA[<h3 id="安装主题"><a class="markdownIt-Anchor" href="#安装主题">#</a> 安装主题</h3>
+<ol>
+<li>
+<p>打开 GitHub 官网，搜索 hexo theme</p>
+<p><img data-src="%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98/01.jpg" alt="01"></p>
+</li>
+<li>
+<p>我这边选择 diaspora 这个</p>
+</li>
+</ol>
+<p><img data-src="%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98/02.jpg" alt="02"></p>
+<ol start="3">
+<li>打开项目，复制安装主题的链接</li>
+</ol>
+<p><img data-src="%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98/03.jpg" alt="03"></p>
+<ol start="4">
+<li>
+<p>在 blog 文件夹下鼠标右键打开 git bash here</p>
+<p><code>$ git clone https://github.com/Fechin/hexo-theme-diaspora.git themes/diaspora</code></p>
+</li>
+</ol>
+<p><img data-src="%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98/04.jpg" alt="04"></p>
+<ol start="5">
+<li>打开 themes 文件夹，看看主题是否有下载了</li>
+</ol>
+<p><img data-src="%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98/0401.jpg" alt="0401"></p>
+<ol start="6">
+<li>主题下好之后打开 <code>_config.yml</code>  文件</li>
+</ol>
+<p><img data-src="%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98/05.jpg" alt="05"></p>
+<ol start="6">
+<li>找到 <code>theme</code> ，修改为 <code>diaspora</code>  (也就是你的主题名，冒号后有一个空格不能省略)</li>
+</ol>
+<p><img data-src="%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98/06.jpg" alt="06"></p>
+<ol start="7">
+<li>再打开 git bash here，输入 <code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code></li>
+</ol>
+<p><img data-src="%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98/07.jpg" alt="07"></p>
+<ol start="8">
+<li>打开你的博客，此时博客已经完全安装好了</li>
+</ol>
+<p><img data-src="%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98/08.jpg" alt="08"></p>
+<p><strong>博客已经漂漂亮亮啦，可以愉快的开始写博客啦</strong></p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>第四篇：安装Nodejs---从0基础搭建Hexo博客</title>
-    <url>/2022/03/30/computer-science/Hexo/%E5%AE%89%E8%A3%85Nodejs/</url>
+    <url>/2022/03/30/computer-science/hexo/an-zhuang-nodejs/</url>
     <content><![CDATA[<h2 id="nodejs安装及配置环境"><a class="markdownIt-Anchor" href="#nodejs安装及配置环境">#</a> Node.js 安装及配置环境</h2>
 <h4 id="一-nodejs安装"><a class="markdownIt-Anchor" href="#一-nodejs安装">#</a> 一、 <code>node.js</code>  安装</h4>
 <ol>
@@ -399,63 +454,8 @@ git config --global user.email &quot;aa******56@126.com&quot;
       </tags>
   </entry>
   <entry>
-    <title>第九篇：安装主题---从0基础搭建Hexo博客</title>
-    <url>/2022/03/30/computer-science/Hexo/%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98/</url>
-    <content><![CDATA[<h3 id="安装主题"><a class="markdownIt-Anchor" href="#安装主题">#</a> 安装主题</h3>
-<ol>
-<li>
-<p>打开 GitHub 官网，搜索 hexo theme</p>
-<p><img data-src="%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98/01.jpg" alt="01"></p>
-</li>
-<li>
-<p>我这边选择 diaspora 这个</p>
-</li>
-</ol>
-<p><img data-src="%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98/02.jpg" alt="02"></p>
-<ol start="3">
-<li>打开项目，复制安装主题的链接</li>
-</ol>
-<p><img data-src="%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98/03.jpg" alt="03"></p>
-<ol start="4">
-<li>
-<p>在 blog 文件夹下鼠标右键打开 git bash here</p>
-<p><code>$ git clone https://github.com/Fechin/hexo-theme-diaspora.git themes/diaspora</code></p>
-</li>
-</ol>
-<p><img data-src="%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98/04.jpg" alt="04"></p>
-<ol start="5">
-<li>打开 themes 文件夹，看看主题是否有下载了</li>
-</ol>
-<p><img data-src="%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98/0401.jpg" alt="0401"></p>
-<ol start="6">
-<li>主题下好之后打开 <code>_config.yml</code>  文件</li>
-</ol>
-<p><img data-src="%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98/05.jpg" alt="05"></p>
-<ol start="6">
-<li>找到 <code>theme</code> ，修改为 <code>diaspora</code>  (也就是你的主题名，冒号后有一个空格不能省略)</li>
-</ol>
-<p><img data-src="%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98/06.jpg" alt="06"></p>
-<ol start="7">
-<li>再打开 git bash here，输入 <code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code></li>
-</ol>
-<p><img data-src="%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98/07.jpg" alt="07"></p>
-<ol start="8">
-<li>打开你的博客，此时博客已经完全安装好了</li>
-</ol>
-<p><img data-src="%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98/08.jpg" alt="08"></p>
-<p><strong>博客已经漂漂亮亮啦，可以愉快的开始写博客啦</strong></p>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>博客</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>第六篇：将博客部署到GitHub---从0基础搭建Hexo博客</title>
-    <url>/2022/03/30/computer-science/Hexo/%E5%B0%86%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0Github/</url>
+    <url>/2022/03/30/computer-science/hexo/jiang-bo-ke-bu-shu-dao-github/</url>
     <content><![CDATA[<h3 id="将hexo部署到github"><a class="markdownIt-Anchor" href="#将hexo部署到github">#</a> 将 Hexo 部署到 github</h3>
 <ol>
 <li>打开 <code>blog</code>  文件夹，打开 <code>_config.yml</code>  文件</li>
@@ -508,7 +508,7 @@ git config --global user.email &quot;aa******56@126.com&quot;
   </entry>
   <entry>
     <title>第一篇：注册github---从0基础搭建Hexo博客</title>
-    <url>/2022/03/30/computer-science/Hexo/%E6%B3%A8%E5%86%8Cgithub/</url>
+    <url>/2022/03/30/computer-science/hexo/zhu-ce-github/</url>
     <content><![CDATA[<h3 id="注册github"><a class="markdownIt-Anchor" href="#注册github">#</a> 注册 GitHub</h3>
 <p><img data-src="%E6%B3%A8%E5%86%8Cgithub/01.jpg" alt="01"></p>
 <p><img data-src="%E6%B3%A8%E5%86%8Cgithub/02.jpg" alt="02"></p>
@@ -534,7 +534,7 @@ git config --global user.email &quot;aa******56@126.com&quot;
   </entry>
   <entry>
     <title>第八篇：解析域名---从0基础搭建Hexo博客</title>
-    <url>/2022/03/30/computer-science/Hexo/%E8%A7%A3%E6%9E%90%E5%9F%9F%E5%90%8D/</url>
+    <url>/2022/03/30/computer-science/hexo/jie-xi-yu-ming/</url>
     <content><![CDATA[<h3 id="解析域名"><a class="markdownIt-Anchor" href="#解析域名">#</a> 解析域名</h3>
 <ol>
 <li>
@@ -615,7 +615,7 @@ git config --global user.email &quot;aa******56@126.com&quot;
   </entry>
   <entry>
     <title>设置域名后样式失效</title>
-    <url>/2022/03/26/computer-science/Hexo/%E8%AE%BE%E7%BD%AE%E5%9F%9F%E5%90%8D%E5%90%8E%E6%A0%B7%E5%BC%8F%E5%A4%B1%E6%95%88/</url>
+    <url>/2022/03/26/computer-science/hexo/she-zhi-yu-ming-hou-yang-shi-shi-xiao/</url>
     <content><![CDATA[<hr>
 <h3 id="设置域名后样式失效"><a class="markdownIt-Anchor" href="#设置域名后样式失效">#</a> 设置域名后样式失效</h3>
 <ol>
@@ -631,18 +631,18 @@ git config --global user.email &quot;aa******56@126.com&quot;
 </ol>
 <h4 id="如图修改"><a class="markdownIt-Anchor" href="#如图修改">#</a> 如图修改</h4>
 <center style="margin-bottom:10px;border-radius:10px">
-    <img src="/2022/03/26/computer-science/Hexo/%E8%AE%BE%E7%BD%AE%E5%9F%9F%E5%90%8D%E5%90%8E%E6%A0%B7%E5%BC%8F%E5%A4%B1%E6%95%88/修改域名后样式失效1.png" width="60%" height="60%" alt="图一" style="border-radius:10px;">
+    <img src="/2022/03/26/computer-science/hexo/she-zhi-yu-ming-hou-yang-shi-shi-xiao/修改域名后样式失效1.png" width="60%" height="60%" alt="图一" style="border-radius:10px;">
      <p>
          修改前
     </p>
 </center>
 <center style="margin-bottom:10px;">
-    <img src="/2022/03/26/computer-science/Hexo/%E8%AE%BE%E7%BD%AE%E5%9F%9F%E5%90%8D%E5%90%8E%E6%A0%B7%E5%BC%8F%E5%A4%B1%E6%95%88/修改域名后样式失效2.png" width="60%" height="60%" alt="图二" style="border-radius:10px;">
+    <img src="/2022/03/26/computer-science/hexo/she-zhi-yu-ming-hou-yang-shi-shi-xiao/修改域名后样式失效2.png" width="60%" height="60%" alt="图二" style="border-radius:10px;">
      修改前
       <br>
 </center>
 <center style="margin-bottom:10px">
-    <img src="/2022/03/26/computer-science/Hexo/%E8%AE%BE%E7%BD%AE%E5%9F%9F%E5%90%8D%E5%90%8E%E6%A0%B7%E5%BC%8F%E5%A4%B1%E6%95%88/修改域名后样式失效3.png" width="60%" height="60%" alt="图三" style="border-radius:10px;">
+    <img src="/2022/03/26/computer-science/hexo/she-zhi-yu-ming-hou-yang-shi-shi-xiao/修改域名后样式失效3.png" width="60%" height="60%" alt="图三" style="border-radius:10px;">
      修改后
       <br>
 </center>
@@ -657,7 +657,7 @@ git config --global user.email &quot;aa******56@126.com&quot;
   </entry>
   <entry>
     <title>第七篇：购买域名---从0基础搭建Hexo博客</title>
-    <url>/2022/03/30/computer-science/Hexo/%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D/</url>
+    <url>/2022/03/30/computer-science/hexo/gou-mai-yu-ming/</url>
     <content><![CDATA[<h2 id="购买域名"><a class="markdownIt-Anchor" href="#购买域名">#</a> 购买域名</h2>
 <p>打开<span class="exturl" data-url="aHR0cHM6Ly93YW53YW5nLmFsaXl1bi5jb20v">万网官网</span></p>
 <h4 id="一-注册账号"><a class="markdownIt-Anchor" href="#一-注册账号">#</a> 一、注册账号</h4>
