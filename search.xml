@@ -12,45 +12,6 @@
       </tags>
   </entry>
   <entry>
-    <title>hexo怎么安装插件</title>
-    <url>/2022/03/26/computer-science/Hexo/hexo%E6%80%8E%E4%B9%88%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6%E5%8F%8A%E5%8D%B8%E8%BD%BD/</url>
-    <content><![CDATA[<hr>
-<h3 id="hexo怎么安装插件"><a class="markdownIt-Anchor" href="#hexo怎么安装插件">#</a> hexo 怎么安装插件</h3>
-<ol>
-<li>打开 hexo 的根目录 <code>Blog</code></li>
-<li>输入安装地址 (此处我以安装 <code>npm i hexo-algoliasearch</code>  测试)</li>
-<li>安装成功</li>
-</ol>
-<p><img data-src="https://tva4.sinaimg.cn/large/0065wfS6ly8h0ntxuxa0oj30jo09njsv.jpg" alt title="在Blog打开cmd" height="65%" width="65%"></p>
-<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0ntxktk9zj30cr02gjrc.jpg" alt title="在cmd输入安装路径" height="65%" width="65%"></p>
-<p><img data-src="https://tva3.sinaimg.cn/large/0065wfS6ly8h0nty14h5oj30lh07s0tg.jpg" alt title="END" height="65%" width="65%"></p>
-<h3 id="hexo怎么卸载插件"><a class="markdownIt-Anchor" href="#hexo怎么卸载插件">#</a> Hexo 怎么卸载插件</h3>
-<ol>
-<li>
-<p>卸载也是在 <code>Blog</code>  打开 cmd，输入 <code>npm uninstall 插件名 --save</code>  即可</p>
-</li>
-<li>
-<p>或者简洁一点 <code>npm un 插件名 --save</code></p>
-</li>
-<li>
-<p>举个例子，我要卸载 <code>hexo-renderer-marked</code>  这个插件</p>
-</li>
-<li>
-<p>在 cmd 输入 <code>npm un hexo-renderer-marked --save</code></p>
-</li>
-</ol>
-<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0ntxxz7wqj30lk0650t3.jpg" alt title="卸载插件" height="65%" width="65%"></p>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>博客</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>第三篇：Git提交文件---从0基础搭建Hexo博客</title>
     <url>/2022/03/30/computer-science/Hexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/</url>
     <content><![CDATA[<h2 id="配置git"><a class="markdownIt-Anchor" href="#配置git">#</a> 配置 git</h2>
@@ -188,6 +149,45 @@ git config --global user.email &quot;aa******56@126.com&quot;
       </categories>
       <tags>
         <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo怎么安装插件</title>
+    <url>/2022/03/26/computer-science/Hexo/hexo%E6%80%8E%E4%B9%88%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6%E5%8F%8A%E5%8D%B8%E8%BD%BD/</url>
+    <content><![CDATA[<hr>
+<h3 id="hexo怎么安装插件"><a class="markdownIt-Anchor" href="#hexo怎么安装插件">#</a> hexo 怎么安装插件</h3>
+<ol>
+<li>打开 hexo 的根目录 <code>Blog</code></li>
+<li>输入安装地址 (此处我以安装 <code>npm i hexo-algoliasearch</code>  测试)</li>
+<li>安装成功</li>
+</ol>
+<p><img data-src="https://tva4.sinaimg.cn/large/0065wfS6ly8h0ntxuxa0oj30jo09njsv.jpg" alt title="在Blog打开cmd" height="65%" width="65%"></p>
+<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0ntxktk9zj30cr02gjrc.jpg" alt title="在cmd输入安装路径" height="65%" width="65%"></p>
+<p><img data-src="https://tva3.sinaimg.cn/large/0065wfS6ly8h0nty14h5oj30lh07s0tg.jpg" alt title="END" height="65%" width="65%"></p>
+<h3 id="hexo怎么卸载插件"><a class="markdownIt-Anchor" href="#hexo怎么卸载插件">#</a> Hexo 怎么卸载插件</h3>
+<ol>
+<li>
+<p>卸载也是在 <code>Blog</code>  打开 cmd，输入 <code>npm uninstall 插件名 --save</code>  即可</p>
+</li>
+<li>
+<p>或者简洁一点 <code>npm un 插件名 --save</code></p>
+</li>
+<li>
+<p>举个例子，我要卸载 <code>hexo-renderer-marked</code>  这个插件</p>
+</li>
+<li>
+<p>在 cmd 输入 <code>npm un hexo-renderer-marked --save</code></p>
+</li>
+</ol>
+<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0ntxxz7wqj30lk0650t3.jpg" alt title="卸载插件" height="65%" width="65%"></p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>教程</tag>
       </tags>
   </entry>
   <entry>
@@ -389,32 +389,6 @@ git config --global user.email &quot;aa******56@126.com&quot;
 </ol>
 <p><img data-src="%E5%AE%89%E8%A3%85nodejs/19%E5%AE%89%E8%A3%85%E6%A8%A1%E5%9D%97%E5%AE%8C%E6%88%90.jpg" alt="19安装模块完成"></p>
 <p><strong>nodejs 环境配置到此就完成啦</strong></p>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>博客</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>安装class</title>
-    <url>/2022/03/30/computer-science/Hexo/%E5%AE%89%E8%A3%85class/</url>
-    <content><![CDATA[<h3 id="安装class"><a class="markdownIt-Anchor" href="#安装class">#</a> 安装 class</h3>
-<p><img data-src="%E5%AE%89%E8%A3%85class/01.jpg" alt="01"></p>
-<p><img data-src="%E5%AE%89%E8%A3%85class/02.jpg" alt="02"></p>
-<p><img data-src="%E5%AE%89%E8%A3%85class/03.jpg" alt="03"></p>
-<p><img data-src="%E5%AE%89%E8%A3%85class/04.jpg" alt="04"></p>
-<p><img data-src="%E5%AE%89%E8%A3%85class/0401.jpg" alt="0401"></p>
-<p><img data-src="%E5%AE%89%E8%A3%85class/0402.jpg" alt="0402"></p>
-<p><img data-src="%E5%AE%89%E8%A3%85class/0403.jpg" alt="0403"></p>
-<p><img data-src="%E5%AE%89%E8%A3%85class/0404.jpg" alt="0404"></p>
-<p><img data-src="%E5%AE%89%E8%A3%85class/0405.jpg" alt="0405"></p>
-<p><img data-src="%E5%AE%89%E8%A3%85class/0406.jpg" alt="0406"></p>
-<p><img data-src="%E5%AE%89%E8%A3%85class/0407.jpg" alt="0407"></p>
-<p><img data-src="%E5%AE%89%E8%A3%85class/0408.jpg" alt="0408"></p>
-<p><img data-src="%E5%AE%89%E8%A3%85class/0409.jpg" alt="0409"></p>
 ]]></content>
       <categories>
         <category>计算机科学</category>
