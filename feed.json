@@ -7,12 +7,28 @@
     "home_page_url": "https://www.aliang.live",
     "items": [
         {
+            "id": "https://www.aliang.live/2022/03/30/computer-science/Hexo/%E5%AE%89%E8%A3%85Git/",
+            "url": "https://www.aliang.live/2022/03/30/computer-science/Hexo/%E5%AE%89%E8%A3%85Git/",
+            "title": "安装Git",
+            "date_published": "2022-03-29T17:07:44.000Z",
+            "content_html": "<h3 id=\"以下软件安装链接\"><a class=\"markdownIt-Anchor\" href=\"#以下软件安装链接\">#</a> 以下软件安装链接</h3>\n<p><strong>必装<span class=\"exturl\" data-url=\"aHR0cHM6Ly9naXQtc2NtLmNvbQ==\"> Git</span></strong></p>\n<p><strong>必装<span class=\"exturl\" data-url=\"aHR0cHM6Ly9naXQtc2NtLmNvbQ==\"> Node.js</span></strong></p>\n<p><strong>建议装<span class=\"exturl\" data-url=\"aHR0cHM6Ly9naXQtc2NtLmNvbQ==\"> notepad3</span></strong></p>\n<h3 id=\"安装git\"><a class=\"markdownIt-Anchor\" href=\"#安装git\">#</a> 安装 Git</h3>\n<p><img data-src=\"%E5%AE%89%E8%A3%85Git/01.jpg\" alt=\"01\"></p>\n<p><img data-src=\"%E5%AE%89%E8%A3%85Git/02.jpg\" alt=\"02\"></p>\n<p><img data-src=\"%E5%AE%89%E8%A3%85Git/03.jpg\" alt=\"03\"></p>\n<p><img data-src=\"%E5%AE%89%E8%A3%85Git/04.jpg\" alt=\"04\"></p>\n<p><img data-src=\"%E5%AE%89%E8%A3%85Git/05.jpg\" alt=\"05\"></p>\n<p><img data-src=\"%E5%AE%89%E8%A3%85Git/06.jpg\" alt=\"06\"></p>\n<p><img data-src=\"%E5%AE%89%E8%A3%85Git/07.jpg\" alt=\"07\"></p>\n<p><img data-src=\"%E5%AE%89%E8%A3%85Git/08.jpg\" alt=\"08\"></p>\n<p><img data-src=\"%E5%AE%89%E8%A3%85Git/09.jpg\" alt=\"09\"></p>\n<p><img data-src=\"%E5%AE%89%E8%A3%85Git/10.jpg\" alt=\"10\"></p>\n<p><img data-src=\"%E5%AE%89%E8%A3%85Git/11.jpg\" alt=\"11\"></p>\n<p><img data-src=\"%E5%AE%89%E8%A3%85Git/12.jpg\" alt=\"12\"></p>\n<p><img data-src=\"%E5%AE%89%E8%A3%85Git/13.jpg\" alt=\"13\"></p>\n<p><img data-src=\"%E5%AE%89%E8%A3%85Git/14.jpg\" alt=\"14\"></p>\n<p><img data-src=\"%E5%AE%89%E8%A3%85Git/15.jpg\" alt=\"15\"></p>\n<p><img data-src=\"%E5%AE%89%E8%A3%85Git/16.jpg\" alt=\"15\"></p>\n<p><img data-src=\"%E5%AE%89%E8%A3%85Git/17.jpg\" alt=\"17\"></p>\n<p><img data-src=\"%E5%AE%89%E8%A3%85Git/18.jpg\" alt=\"18\"></p>\n<p><img data-src=\"%E5%AE%89%E8%A3%85Git/19.jpg\" alt=\"19\"></p>\n<p><img data-src=\"%E5%AE%89%E8%A3%85Git/20.jpg\" alt=\"20\"></p>\n<p><img data-src=\"%E5%AE%89%E8%A3%85Git/21git.jpg\" alt=\"21git\"></p>\n",
+            "tags": [
+                "计算机科学",
+                "博客",
+                "博客"
+            ]
+        },
+        {
             "id": "https://www.aliang.live/2022/03/30/computer-science/Hexo/%E6%B3%A8%E5%86%8Cgithub/",
             "url": "https://www.aliang.live/2022/03/30/computer-science/Hexo/%E6%B3%A8%E5%86%8Cgithub/",
-            "title": "注册github",
+            "title": "第一篇：注册github",
             "date_published": "2022-03-29T16:50:30.000Z",
-            "content_html": "",
-            "tags": []
+            "content_html": "<h3 id=\"注册github\"><a class=\"markdownIt-Anchor\" href=\"#注册github\">#</a> 注册 GitHub</h3>\n<p><img data-src=\"%E6%B3%A8%E5%86%8Cgithub/01.jpg\" alt=\"01\"></p>\n<p><img data-src=\"%E6%B3%A8%E5%86%8Cgithub/02.jpg\" alt=\"02\"></p>\n<p><img data-src=\"%E6%B3%A8%E5%86%8Cgithub/03%E5%AF%86%E7%A0%81.jpg\" alt=\"03密码\"></p>\n<p><img data-src=\"%E6%B3%A8%E5%86%8Cgithub/04.jpg\" alt=\"04\"></p>\n<p><img data-src=\"%E6%B3%A8%E5%86%8Cgithub/05.jpg\" alt=\"05\"></p>\n<p><img data-src=\"%E6%B3%A8%E5%86%8Cgithub/06.jpg\" alt=\"06\"></p>\n<p><img data-src=\"%E6%B3%A8%E5%86%8Cgithub/07.jpg\" alt=\"07\"></p>\n<p><img data-src=\"%E6%B3%A8%E5%86%8Cgithub/08.jpg\" alt=\"08\"></p>\n<p><img data-src=\"%E6%B3%A8%E5%86%8Cgithub/09.jpg\" alt=\"09\"></p>\n<p><img data-src=\"%E6%B3%A8%E5%86%8Cgithub/10.jpg\" alt=\"10\"></p>\n<p><img data-src=\"%E6%B3%A8%E5%86%8Cgithub/11.jpg\" alt=\"11\"></p>\n<p><img data-src=\"%E6%B3%A8%E5%86%8Cgithub/12.jpg\" alt=\"12\"></p>\n<p><img data-src=\"%E6%B3%A8%E5%86%8Cgithub/13.jpg\" alt=\"13\"></p>\n",
+            "tags": [
+                "计算机科学",
+                "博客",
+                "博客"
+            ]
         },
         {
             "id": "https://www.aliang.live/2022/03/30/computer-science/Hexo/%E5%AE%89%E8%A3%85class/",
@@ -144,14 +160,6 @@
             "tags": [
                 "生活"
             ]
-        },
-        {
-            "id": "https://www.aliang.live/2022/03/25/hello-world/",
-            "url": "https://www.aliang.live/2022/03/25/hello-world/",
-            "title": "Hello World",
-            "date_published": "2022-03-24T17:26:43.733Z",
-            "content_html": "<p>Welcome to <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvLw==\">Hexo</span>! This is your very first post. Check <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv\">documentation</span> for more info. If you get any problems when using Hexo, you can find the answer in <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=\">troubleshooting</span> or you can ask me on <span class=\"exturl\" data-url=\"aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==\">GitHub</span>.</p>\n<h2 id=\"quick-start\"><a class=\"markdownIt-Anchor\" href=\"#quick-start\">#</a> Quick Start</h2>\n<h3 id=\"create-a-new-post\"><a class=\"markdownIt-Anchor\" href=\"#create-a-new-post\">#</a> Create a new post</h3>\n<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"><span>h</span></figcaption><table><tr><td data-num=\"1\"></td><td><pre>$ hexo new <span class=\"token string\">\"My New Post\"</span></pre></td></tr></table></figure><p>More info: <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvd3JpdGluZy5odG1s\">Writing</span></p>\n<h3 id=\"run-server\"><a class=\"markdownIt-Anchor\" href=\"#run-server\">#</a> Run server</h3>\n<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"><span>h</span></figcaption><table><tr><td data-num=\"1\"></td><td><pre>$ hexo server</pre></td></tr></table></figure><p>More info: <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvc2VydmVyLmh0bWw=\">Server</span></p>\n<h3 id=\"generate-static-files\"><a class=\"markdownIt-Anchor\" href=\"#generate-static-files\">#</a> Generate static files</h3>\n<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"><span>h</span></figcaption><table><tr><td data-num=\"1\"></td><td><pre>$ hexo generate</pre></td></tr></table></figure><p>More info: <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZ2VuZXJhdGluZy5odG1s\">Generating</span></p>\n<h3 id=\"deploy-to-remote-sites\"><a class=\"markdownIt-Anchor\" href=\"#deploy-to-remote-sites\">#</a> Deploy to remote sites</h3>\n<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"><span>h</span></figcaption><table><tr><td data-num=\"1\"></td><td><pre>$ hexo deploy</pre></td></tr></table></figure><p>More info: <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s\">Deployment</span></p>\n",
-            "tags": []
         }
     ]
 }

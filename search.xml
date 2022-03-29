@@ -12,19 +12,43 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2022/03/25/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvLw==">Hexo</span>! This is your very first post. Check <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv">documentation</span> for more info. If you get any problems when using Hexo, you can find the answer in <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=">troubleshooting</span> or you can ask me on <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==">GitHub</span>.</p>
-<h2 id="quick-start"><a class="markdownIt-Anchor" href="#quick-start">#</a> Quick Start</h2>
-<h3 id="create-a-new-post"><a class="markdownIt-Anchor" href="#create-a-new-post">#</a> Create a new post</h3>
-<figure class="highlight bash"><figcaption data-lang="bash"><span>h</span></figcaption><table><tr><td data-num="1"></td><td><pre>$ hexo new <span class="token string">"My New Post"</span></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvd3JpdGluZy5odG1s">Writing</span></p>
-<h3 id="run-server"><a class="markdownIt-Anchor" href="#run-server">#</a> Run server</h3>
-<figure class="highlight bash"><figcaption data-lang="bash"><span>h</span></figcaption><table><tr><td data-num="1"></td><td><pre>$ hexo server</pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvc2VydmVyLmh0bWw=">Server</span></p>
-<h3 id="generate-static-files"><a class="markdownIt-Anchor" href="#generate-static-files">#</a> Generate static files</h3>
-<figure class="highlight bash"><figcaption data-lang="bash"><span>h</span></figcaption><table><tr><td data-num="1"></td><td><pre>$ hexo generate</pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZ2VuZXJhdGluZy5odG1s">Generating</span></p>
-<h3 id="deploy-to-remote-sites"><a class="markdownIt-Anchor" href="#deploy-to-remote-sites">#</a> Deploy to remote sites</h3>
-<figure class="highlight bash"><figcaption data-lang="bash"><span>h</span></figcaption><table><tr><td data-num="1"></td><td><pre>$ hexo deploy</pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s">Deployment</span></p>
+    <title>hexo怎么安装插件</title>
+    <url>/2022/03/26/computer-science/Hexo/hexo%E6%80%8E%E4%B9%88%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6%E5%8F%8A%E5%8D%B8%E8%BD%BD/</url>
+    <content><![CDATA[<hr>
+<h3 id="hexo怎么安装插件"><a class="markdownIt-Anchor" href="#hexo怎么安装插件">#</a> hexo 怎么安装插件</h3>
+<ol>
+<li>打开 hexo 的根目录 <code>Blog</code></li>
+<li>输入安装地址 (此处我以安装 <code>npm i hexo-algoliasearch</code>  测试)</li>
+<li>安装成功</li>
+</ol>
+<p><img data-src="https://tva4.sinaimg.cn/large/0065wfS6ly8h0ntxuxa0oj30jo09njsv.jpg" alt title="在Blog打开cmd" height="65%" width="65%"></p>
+<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0ntxktk9zj30cr02gjrc.jpg" alt title="在cmd输入安装路径" height="65%" width="65%"></p>
+<p><img data-src="https://tva3.sinaimg.cn/large/0065wfS6ly8h0nty14h5oj30lh07s0tg.jpg" alt title="END" height="65%" width="65%"></p>
+<h3 id="hexo怎么卸载插件"><a class="markdownIt-Anchor" href="#hexo怎么卸载插件">#</a> Hexo 怎么卸载插件</h3>
+<ol>
+<li>
+<p>卸载也是在 <code>Blog</code>  打开 cmd，输入 <code>npm uninstall 插件名 --save</code>  即可</p>
+</li>
+<li>
+<p>或者简洁一点 <code>npm un 插件名 --save</code></p>
+</li>
+<li>
+<p>举个例子，我要卸载 <code>hexo-renderer-marked</code>  这个插件</p>
+</li>
+<li>
+<p>在 cmd 输入 <code>npm un hexo-renderer-marked --save</code></p>
+</li>
+</ol>
+<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0ntxxz7wqj30lk0650t3.jpg" alt title="卸载插件" height="65%" width="65%"></p>
 ]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>教程</tag>
+      </tags>
   </entry>
   <entry>
     <title>git提交文件</title>
@@ -167,34 +191,34 @@ git config --global user.email &quot;aa******56@126.com&quot;
       </tags>
   </entry>
   <entry>
-    <title>hexo怎么安装插件</title>
-    <url>/2022/03/26/computer-science/Hexo/hexo%E6%80%8E%E4%B9%88%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6%E5%8F%8A%E5%8D%B8%E8%BD%BD/</url>
-    <content><![CDATA[<hr>
-<h3 id="hexo怎么安装插件"><a class="markdownIt-Anchor" href="#hexo怎么安装插件">#</a> hexo 怎么安装插件</h3>
-<ol>
-<li>打开 hexo 的根目录 <code>Blog</code></li>
-<li>输入安装地址 (此处我以安装 <code>npm i hexo-algoliasearch</code>  测试)</li>
-<li>安装成功</li>
-</ol>
-<p><img data-src="https://tva4.sinaimg.cn/large/0065wfS6ly8h0ntxuxa0oj30jo09njsv.jpg" alt title="在Blog打开cmd" height="65%" width="65%"></p>
-<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0ntxktk9zj30cr02gjrc.jpg" alt title="在cmd输入安装路径" height="65%" width="65%"></p>
-<p><img data-src="https://tva3.sinaimg.cn/large/0065wfS6ly8h0nty14h5oj30lh07s0tg.jpg" alt title="END" height="65%" width="65%"></p>
-<h3 id="hexo怎么卸载插件"><a class="markdownIt-Anchor" href="#hexo怎么卸载插件">#</a> Hexo 怎么卸载插件</h3>
-<ol>
-<li>
-<p>卸载也是在 <code>Blog</code>  打开 cmd，输入 <code>npm uninstall 插件名 --save</code>  即可</p>
-</li>
-<li>
-<p>或者简洁一点 <code>npm un 插件名 --save</code></p>
-</li>
-<li>
-<p>举个例子，我要卸载 <code>hexo-renderer-marked</code>  这个插件</p>
-</li>
-<li>
-<p>在 cmd 输入 <code>npm un hexo-renderer-marked --save</code></p>
-</li>
-</ol>
-<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0ntxxz7wqj30lk0650t3.jpg" alt title="卸载插件" height="65%" width="65%"></p>
+    <title>安装Git</title>
+    <url>/2022/03/30/computer-science/Hexo/%E5%AE%89%E8%A3%85Git/</url>
+    <content><![CDATA[<h3 id="以下软件安装链接"><a class="markdownIt-Anchor" href="#以下软件安装链接">#</a> 以下软件安装链接</h3>
+<p><strong>必装<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbQ=="> Git</span></strong></p>
+<p><strong>必装<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbQ=="> Node.js</span></strong></p>
+<p><strong>建议装<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbQ=="> notepad3</span></strong></p>
+<h3 id="安装git"><a class="markdownIt-Anchor" href="#安装git">#</a> 安装 Git</h3>
+<p><img data-src="%E5%AE%89%E8%A3%85Git/01.jpg" alt="01"></p>
+<p><img data-src="%E5%AE%89%E8%A3%85Git/02.jpg" alt="02"></p>
+<p><img data-src="%E5%AE%89%E8%A3%85Git/03.jpg" alt="03"></p>
+<p><img data-src="%E5%AE%89%E8%A3%85Git/04.jpg" alt="04"></p>
+<p><img data-src="%E5%AE%89%E8%A3%85Git/05.jpg" alt="05"></p>
+<p><img data-src="%E5%AE%89%E8%A3%85Git/06.jpg" alt="06"></p>
+<p><img data-src="%E5%AE%89%E8%A3%85Git/07.jpg" alt="07"></p>
+<p><img data-src="%E5%AE%89%E8%A3%85Git/08.jpg" alt="08"></p>
+<p><img data-src="%E5%AE%89%E8%A3%85Git/09.jpg" alt="09"></p>
+<p><img data-src="%E5%AE%89%E8%A3%85Git/10.jpg" alt="10"></p>
+<p><img data-src="%E5%AE%89%E8%A3%85Git/11.jpg" alt="11"></p>
+<p><img data-src="%E5%AE%89%E8%A3%85Git/12.jpg" alt="12"></p>
+<p><img data-src="%E5%AE%89%E8%A3%85Git/13.jpg" alt="13"></p>
+<p><img data-src="%E5%AE%89%E8%A3%85Git/14.jpg" alt="14"></p>
+<p><img data-src="%E5%AE%89%E8%A3%85Git/15.jpg" alt="15"></p>
+<p><img data-src="%E5%AE%89%E8%A3%85Git/16.jpg" alt="15"></p>
+<p><img data-src="%E5%AE%89%E8%A3%85Git/17.jpg" alt="17"></p>
+<p><img data-src="%E5%AE%89%E8%A3%85Git/18.jpg" alt="18"></p>
+<p><img data-src="%E5%AE%89%E8%A3%85Git/19.jpg" alt="19"></p>
+<p><img data-src="%E5%AE%89%E8%A3%85Git/20.jpg" alt="20"></p>
+<p><img data-src="%E5%AE%89%E8%A3%85Git/21git.jpg" alt="21git"></p>
 ]]></content>
       <categories>
         <category>计算机科学</category>
@@ -202,7 +226,6 @@ git config --global user.email &quot;aa******56@126.com&quot;
       </categories>
       <tags>
         <tag>博客</tag>
-        <tag>教程</tag>
       </tags>
   </entry>
   <entry>
@@ -278,32 +301,6 @@ git config --global user.email &quot;aa******56@126.com&quot;
 <li>ctrl+s，停止本地服务器运行</li>
 </ol>
 <p><strong>目前博客已经基本完成了</strong></p>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>博客</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>安装class</title>
-    <url>/2022/03/30/computer-science/Hexo/%E5%AE%89%E8%A3%85class/</url>
-    <content><![CDATA[<h3 id="安装class"><a class="markdownIt-Anchor" href="#安装class">#</a> 安装 class</h3>
-<p><img data-src="%E5%AE%89%E8%A3%85class/01.jpg" alt="01"></p>
-<p><img data-src="%E5%AE%89%E8%A3%85class/02.jpg" alt="02"></p>
-<p><img data-src="%E5%AE%89%E8%A3%85class/03.jpg" alt="03"></p>
-<p><img data-src="%E5%AE%89%E8%A3%85class/04.jpg" alt="04"></p>
-<p><img data-src="%E5%AE%89%E8%A3%85class/0401.jpg" alt="0401"></p>
-<p><img data-src="%E5%AE%89%E8%A3%85class/0402.jpg" alt="0402"></p>
-<p><img data-src="%E5%AE%89%E8%A3%85class/0403.jpg" alt="0403"></p>
-<p><img data-src="%E5%AE%89%E8%A3%85class/0404.jpg" alt="0404"></p>
-<p><img data-src="%E5%AE%89%E8%A3%85class/0405.jpg" alt="0405"></p>
-<p><img data-src="%E5%AE%89%E8%A3%85class/0406.jpg" alt="0406"></p>
-<p><img data-src="%E5%AE%89%E8%A3%85class/0407.jpg" alt="0407"></p>
-<p><img data-src="%E5%AE%89%E8%A3%85class/0408.jpg" alt="0408"></p>
-<p><img data-src="%E5%AE%89%E8%A3%85class/0409.jpg" alt="0409"></p>
 ]]></content>
       <categories>
         <category>计算机科学</category>
@@ -392,6 +389,32 @@ git config --global user.email &quot;aa******56@126.com&quot;
 </ol>
 <p><img data-src="%E5%AE%89%E8%A3%85nodejs/19%E5%AE%89%E8%A3%85%E6%A8%A1%E5%9D%97%E5%AE%8C%E6%88%90.jpg" alt="19安装模块完成"></p>
 <p><strong>nodejs 环境配置到此就完成啦</strong></p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>安装class</title>
+    <url>/2022/03/30/computer-science/Hexo/%E5%AE%89%E8%A3%85class/</url>
+    <content><![CDATA[<h3 id="安装class"><a class="markdownIt-Anchor" href="#安装class">#</a> 安装 class</h3>
+<p><img data-src="%E5%AE%89%E8%A3%85class/01.jpg" alt="01"></p>
+<p><img data-src="%E5%AE%89%E8%A3%85class/02.jpg" alt="02"></p>
+<p><img data-src="%E5%AE%89%E8%A3%85class/03.jpg" alt="03"></p>
+<p><img data-src="%E5%AE%89%E8%A3%85class/04.jpg" alt="04"></p>
+<p><img data-src="%E5%AE%89%E8%A3%85class/0401.jpg" alt="0401"></p>
+<p><img data-src="%E5%AE%89%E8%A3%85class/0402.jpg" alt="0402"></p>
+<p><img data-src="%E5%AE%89%E8%A3%85class/0403.jpg" alt="0403"></p>
+<p><img data-src="%E5%AE%89%E8%A3%85class/0404.jpg" alt="0404"></p>
+<p><img data-src="%E5%AE%89%E8%A3%85class/0405.jpg" alt="0405"></p>
+<p><img data-src="%E5%AE%89%E8%A3%85class/0406.jpg" alt="0406"></p>
+<p><img data-src="%E5%AE%89%E8%A3%85class/0407.jpg" alt="0407"></p>
+<p><img data-src="%E5%AE%89%E8%A3%85class/0408.jpg" alt="0408"></p>
+<p><img data-src="%E5%AE%89%E8%A3%85class/0409.jpg" alt="0409"></p>
 ]]></content>
       <categories>
         <category>计算机科学</category>
@@ -510,9 +533,30 @@ git config --global user.email &quot;aa******56@126.com&quot;
       </tags>
   </entry>
   <entry>
-    <title>注册github</title>
+    <title>第一篇：注册github</title>
     <url>/2022/03/30/computer-science/Hexo/%E6%B3%A8%E5%86%8Cgithub/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<h3 id="注册github"><a class="markdownIt-Anchor" href="#注册github">#</a> 注册 GitHub</h3>
+<p><img data-src="%E6%B3%A8%E5%86%8Cgithub/01.jpg" alt="01"></p>
+<p><img data-src="%E6%B3%A8%E5%86%8Cgithub/02.jpg" alt="02"></p>
+<p><img data-src="%E6%B3%A8%E5%86%8Cgithub/03%E5%AF%86%E7%A0%81.jpg" alt="03密码"></p>
+<p><img data-src="%E6%B3%A8%E5%86%8Cgithub/04.jpg" alt="04"></p>
+<p><img data-src="%E6%B3%A8%E5%86%8Cgithub/05.jpg" alt="05"></p>
+<p><img data-src="%E6%B3%A8%E5%86%8Cgithub/06.jpg" alt="06"></p>
+<p><img data-src="%E6%B3%A8%E5%86%8Cgithub/07.jpg" alt="07"></p>
+<p><img data-src="%E6%B3%A8%E5%86%8Cgithub/08.jpg" alt="08"></p>
+<p><img data-src="%E6%B3%A8%E5%86%8Cgithub/09.jpg" alt="09"></p>
+<p><img data-src="%E6%B3%A8%E5%86%8Cgithub/10.jpg" alt="10"></p>
+<p><img data-src="%E6%B3%A8%E5%86%8Cgithub/11.jpg" alt="11"></p>
+<p><img data-src="%E6%B3%A8%E5%86%8Cgithub/12.jpg" alt="12"></p>
+<p><img data-src="%E6%B3%A8%E5%86%8Cgithub/13.jpg" alt="13"></p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+      </tags>
   </entry>
   <entry>
     <title>解析域名</title>
