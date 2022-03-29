@@ -1,0 +1,700 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="阿亮の博客" href="https://www.aliang.live/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="阿亮の博客" href="https://www.aliang.live/atom.xml" />
+<link rel="alternate" type="application/json" title="阿亮の博客" href="https://www.aliang.live/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+  <meta name="keywords" content="博客" />
+
+
+<link rel="canonical" href="https://www.aliang.live/2022/03/30/computer-science/Hexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/">
+
+
+
+  <title>
+git提交文件 - 博客 - 计算机科学 |
+aliang = 阿亮の博客 = 阿亮的个人网站</title>
+<meta name="generator" content="Hexo 6.1.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">git提交文件
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2022-03-30 00:40:45">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2022-03-30T00:40:45+08:00">2022-03-30</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span class="text">本文字数</span>
+    <span>1.5k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span class="text">阅读时长</span>
+    <span>1 分钟</span>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">aliang</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giciuja1j1j20zk0m8kjl.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipevarprfj20zk0m8npd.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giph4lm9i7j20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeyvx1d4j20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicljitigmj20zk0m87fp.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipet4bz0yj20zk0m8e81.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span><i class="ic i-angle-right"></i>
+<span  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" itemprop="item" rel="index" title="分类于 计算机科学"><span itemprop="name">计算机科学</span></a>
+<meta itemprop="position" content="1" /></span>
+<i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" itemprop="item" rel="index" title="分类于 博客"><span itemprop="name">博客</span></a>
+<meta itemprop="position" content="2" /></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="https://www.aliang.live/2022/03/30/computer-science/Hexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/avatar.jpg">
+    <meta itemprop="name" content="吴小白">
+    <meta itemprop="description" content="阿亮的个人网站, aliang">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="阿亮の博客">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h2 id="配置git"><a class="markdownIt-Anchor" href="#配置git">#</a> 配置 git</h2>
+<h4 id="一-绑定gitee"><a class="markdownIt-Anchor" href="#一-绑定gitee">#</a> 一、绑定 Gitee</h4>
+<p>首先来简单介绍一下 SSH 协议</p>
+<p><strong>SSH（安全外壳协议，Secure Shell 的缩写）是建立在应用层基础上的安全协议。SSH 是目前较可靠，专为远程登录会话和其他网络服务提供安全性的协议，利用 SSH 协议可以有效防止远程管理过程中的信息泄露问题。简单来说，SSH 就是保障你的账户安全，将你的数据加密压缩，不仅防止其他人截获你的数据，还能加快传输速度。如果想详细了解的话，可以看这篇文章：详述 SSH 的原理及其应用 - CSDN，下面就详细介绍如何绑定 GitHub 和提交文件。</strong></p>
+<p><strong>我们要用 git 上传文件到 GitHub 首先得利用 SSH 登录远程主机，而登录方式有两种：一种是口令登录；另一种是公钥登录。口令登录每次都要输入密码十分麻烦，而公钥登录就省去了输入密码的步骤，所以我们选择公钥授权。首先我们得在 GitHub 上添加 SSH key 配置，要想生成 SSH key，就要先安装 SSH，不过我们安装了 Git Bash，其应该自带了 SSH。检验一下是否安装 SSH，我们在新建的文件夹中右键打开 Git Bash：</strong></p>
+<ol>
+<li>
+<p>新建一个文件夹 text</p>
+<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/01.jpg" alt="01"></p>
+</li>
+<li>
+<p>鼠标右击打开 git Bash Here</p>
+<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/02.jpg" alt="02"></p>
+</li>
+<li>
+<p>输入 ssh 检查使是否安装 ssh</p>
+</li>
+</ol>
+<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/03.jpg" alt="03"></p>
+<ol start="4">
+<li>
+<p>输入 ssh-keygen -t rsa 命令，表示 RSA 算法生成密钥，然后敲 4 次回车键，之后会生成两个文件，分别为密钥 id_rsa 和公钥 id_rsa.pub</p>
+<p><code>ssh-keygen -t rsa</code></p>
+</li>
+</ol>
+<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/04.jpg" alt="04"></p>
+<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/05.jpg" alt="05"></p>
+<p><strong>接下来我们要做的事情就是把公钥 id_rsa.pub 的内容添加到 GitHub。复制公钥 id_rsa.pub 文件里的内容，你可以通过目录找到 id_rsa.pub 文件的位置，用记事本打开文件复制。</strong></p>
+<ol start="5">
+<li>打开 id_rsa.pub 文件复制</li>
+</ol>
+<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/06.jpg" alt="06"></p>
+<ol start="6">
+<li>打开 github—&gt;settings—&gt;SSH and GPG keys—&gt;New SSH key</li>
+</ol>
+<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/07.jpg" alt="07"></p>
+<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/08.jpg" alt="08"></p>
+<p><strong>粘贴内容进去</strong></p>
+<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/09.jpg" alt="09"></p>
+<p><strong>添加成功</strong></p>
+<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/10add.jpg" alt="10add"></p>
+<p><strong>验证是否成功，在 Git Bash 中输入 <code> ssh -T git@github.com</code>  验证</strong></p>
+<p>首次需要输入 <code>yes</code></p>
+<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/11.jpg" alt="11"></p>
+<h4 id="二-接下来是提交文件"><a class="markdownIt-Anchor" href="#二-接下来是提交文件">#</a> 二、接下来是提交文件</h4>
+<ol>
+<li>新建仓库</li>
+</ol>
+<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/12.jpg" alt="12"></p>
+<ol start="2">
+<li>给仓库起个名</li>
+</ol>
+<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/13.jpg" alt="13"></p>
+<ol start="3">
+<li>复制仓库 HTTPS 链接</li>
+</ol>
+<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/14.jpg" alt="14"></p>
+<ol start="4">
+<li>
+<p>将仓库 text 仓库 clone 到本地仓库，返回刚刚 Git 的窗口，输入 <code>git clone 链接</code> 。</p>
+<p><code>$ git clone https://github.com/aliang518/text.git</code></p>
+</li>
+</ol>
+<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/15.jpg" alt="15"></p>
+<ol start="5">
+<li>打开刚刚在电脑新建的 text 文件夹是不是存在一个 GitHub 上名为的 text 仓库</li>
+</ol>
+<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/16.jpg" alt="16"></p>
+<ol start="6">
+<li>查看 text 仓库是不是和 GitHub 的仓库内容一样</li>
+</ol>
+<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/17.jpg" alt="17"></p>
+<ol start="7">
+<li>
+<p>新建一个文件</p>
+<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/18.jpg" alt="18"></p>
+</li>
+<li>
+<p>在此文件夹下进入 Git Bash Here</p>
+</li>
+</ol>
+<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/19.jpg" alt="19"></p>
+<ol start="9">
+<li>输入 <code>git status</code>  命令查看仓库状态</li>
+</ol>
+<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/20.jpg" alt="20"></p>
+<ol start="10">
+<li>
+<p>hexo 已经是一个 Git 仓库了，而我们刚刚创建的文件 123.txt 没有被追踪，也就是没有提交到本地仓库。现在我们使用 git add 命令将文件添加到了「临时缓冲区」，再用 git commit -m “提交信息” 将其提交到本地仓库，如下图</p>
+<p><code>git add text.txt</code></p>
+<p><code>git commit -m &quot;提交信息&quot;</code></p>
+</li>
+</ol>
+<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/20.jpg" alt="20"></p>
+<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/21commit.jpg" alt="21commit"></p>
+<p>如果你是第一次提交的话，就会出现下图情况，让你输入账号和邮箱</p>
+<pre><code>git config --global user.name &quot;aliang518&quot;
+git config --global user.email &quot;aa******56@126.com&quot;
+</code></pre>
+<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/2201.jpg" alt="2201"></p>
+<ol start="11">
+<li>
+<p>查看仓库提交日志</p>
+<p><code>git log</code></p>
+</li>
+</ol>
+<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/22.jpg" alt="22"></p>
+<ol start="12">
+<li>再输入 git status 查看一下仓库状态</li>
+</ol>
+<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/23.jpg" alt="23"></p>
+<ol start="13">
+<li>现在输入 git push origin main 命令，将本地仓库提交到远程仓库</li>
+</ol>
+<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/24.jpg" alt="24"></p>
+<ol start="14">
+<li>从浏览器打开的时候选择你已经登录 GitHub 的那个浏览器 (我这里用火狐浏览器)</li>
+</ol>
+<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/25.jpg" alt="25"></p>
+<ol start="15">
+<li>等待上次成功</li>
+</ol>
+<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/26.jpg" alt="26"></p>
+<ol start="16">
+<li>打开 GitHub 仓库 F5 刷新一下，会出现刚刚在本地 text 目录新建的 text.txt 文件</li>
+</ol>
+<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/27.jpg" alt="27"></p>
+<p><strong>提交文件已经成功啦</strong></p>
+
+      <div class="tags">
+          <a href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag"><i class="ic i-tag"></i> 博客</a>
+      </div>
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2022-03-30 00:48:17" itemprop="dateModified" datetime="2022-03-30T00:48:17+08:00">2022-03-30</time>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="吴小白 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="吴小白 支付宝">
+        <p>支付宝</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="吴小白 贝宝">
+        <p>贝宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>吴小白 <i class="ic i-at"><em>@</em></i>阿亮の博客
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="https://www.aliang.live/2022/03/30/computer-science/Hexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/" title="git提交文件">https://www.aliang.live/2022/03/30/computer-science/Hexo/git提交文件/</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/2022/03/26/computer-science/Hexo/hexo%E6%80%8E%E4%B9%88%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6%E5%8F%8A%E5%8D%B8%E8%BD%BD/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeudstjqj20zk0m8k3r.jpg" title="hexo怎么安装插件">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> 博客</span>
+  <h3>hexo怎么安装插件</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+      
+
+  <a href="/2022/03/30/computer-science/Hexo/%E5%AE%89%E8%A3%85Hexo/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicliwyw55j20zk0m8hdt.jpg" title="安装Hexo">
+  <span class="type">下一篇</span>
+  <span class="category"><i class="ic i-flag"></i> 博客</span>
+  <h3>安装Hexo</h3>
+  </a>
+
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AEgit"><span class="toc-number">1.</span> <span class="toc-text"> 配置 git</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%80-%E7%BB%91%E5%AE%9Agitee"><span class="toc-number">1.0.1.</span> <span class="toc-text"> 一、绑定 Gitee</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BA%8C-%E6%8E%A5%E4%B8%8B%E6%9D%A5%E6%98%AF%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6"><span class="toc-number">1.0.2.</span> <span class="toc-text"> 二、接下来是提交文件</span></a></li></ol></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+        <ul>
+          <li><a href="/2022/03/26/computer-science/Hexo/%E8%AE%BE%E7%BD%AE%E5%9F%9F%E5%90%8D%E5%90%8E%E6%A0%B7%E5%BC%8F%E5%A4%B1%E6%95%88/" rel="bookmark" title="设置域名后样式失效">设置域名后样式失效</a></li><li><a href="/2022/03/26/computer-science/Hexo/hexo%E6%80%8E%E4%B9%88%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6%E5%8F%8A%E5%8D%B8%E8%BD%BD/" rel="bookmark" title="hexo怎么安装插件">hexo怎么安装插件</a></li><li class="active"><a href="/2022/03/30/computer-science/Hexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/" rel="bookmark" title="git提交文件">git提交文件</a></li><li><a href="/2022/03/30/computer-science/Hexo/%E5%AE%89%E8%A3%85Hexo/" rel="bookmark" title="安装Hexo">安装Hexo</a></li><li><a href="/2022/03/30/computer-science/Hexo/%E5%AE%89%E8%A3%85Nodejs/" rel="bookmark" title="安装Nodejs">安装Nodejs</a></li><li><a href="/2022/03/30/computer-science/Hexo/%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98/" rel="bookmark" title="安装主题">安装主题</a></li><li><a href="/2022/03/30/computer-science/Hexo/%E8%A7%A3%E6%9E%90%E5%9F%9F%E5%90%8D/" rel="bookmark" title="解析域名">解析域名</a></li><li><a href="/2022/03/30/computer-science/Hexo/%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D/" rel="bookmark" title="购买域名">购买域名</a></li><li><a href="/2022/03/30/computer-science/Hexo/%E5%B0%86%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0Github/" rel="bookmark" title="将博客部署到Github">将博客部署到Github</a></li><li><a href="/2022/03/30/computer-science/Hexo/%E5%AE%89%E8%A3%85class/" rel="bookmark" title="安装class">安装class</a></li>
+        </ul>
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="吴小白"
+      data-src="/images/avatar.jpg">
+  <p class="name" itemprop="name">吴小白</p>
+  <div class="description" itemprop="description">aliang</div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">13</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">2</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">3</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tLzAwMDByb29raWU=" title="https:&#x2F;&#x2F;github.com&#x2F;0000rookie"><i class="ic i-github"></i></span>
+      <span class="exturl item twitter" data-url="aHR0cHM6Ly90d2l0dGVyLmNvbS9hYV8xMzQxMTUxMDU2" title="https:&#x2F;&#x2F;twitter.com&#x2F;aa_1341151056"><i class="ic i-twitter"></i></span>
+      <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS93dS14aWFvLWJhaS05" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;wu-xiao-bai-9"><i class="ic i-zhihu"></i></span>
+      <a href="/aa1341151056@126.com" title="aa1341151056@126.com" class="item email"><i class="ic i-envelope"></i></a>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>关于</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+  </ul>
+    
+  <li class="item">
+    <a href="/friends/" rel="section"><i class="ic i-heart"></i>friends</a>
+  </li>
+
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/2022/03/26/computer-science/Hexo/hexo%E6%80%8E%E4%B9%88%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6%E5%8F%8A%E5%8D%B8%E8%BD%BD/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/2022/03/30/computer-science/Hexo/%E5%AE%89%E8%A3%85Hexo/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+</div>
+
+    <span><a href="/2022/03/30/computer-science/Hexo/%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98/" title="安装主题">安装主题</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+</div>
+
+    <span><a href="/2022/03/30/computer-science/Hexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/" title="git提交文件">git提交文件</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2022/03/26/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" title="我的第一篇博客">我的第一篇博客</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+</div>
+
+    <span><a href="/2022/03/30/computer-science/Hexo/%E5%AE%89%E8%A3%85Nodejs/" title="安装Nodejs">安装Nodejs</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2022/03/25/hello-world/" title="Hello World">Hello World</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+</div>
+
+    <span><a href="/2022/03/30/computer-science/Hexo/%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D/" title="购买域名">购买域名</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2022/03/30/computer-science/Hexo/%E6%B3%A8%E5%86%8Cgithub/" title="注册github">注册github</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+</div>
+
+    <span><a href="/2022/03/26/computer-science/Hexo/hexo%E6%80%8E%E4%B9%88%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6%E5%8F%8A%E5%8D%B8%E8%BD%BD/" title="hexo怎么安装插件">hexo怎么安装插件</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+</div>
+
+    <span><a href="/2022/03/30/computer-science/Hexo/%E5%AE%89%E8%A3%85class/" title="安装class">安装class</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+</div>
+
+    <span><a href="/2022/03/30/computer-science/Hexo/%E5%AE%89%E8%A3%85Hexo/" title="安装Hexo">安装Hexo</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>最新评论</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2022</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">吴小白 @ aliang</span>
+  </div>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="站点总字数">4k 字</span>
+
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="站点阅读时长">4 分钟</span>
+  </div>
+  <div class="powered-by">
+    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: '2022/03/30/computer-science/Hexo/git提交文件/',
+    favicon: {
+      show: "あれんのぼろこ",
+      hide: "可愛い！"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,
+    copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+</body>
+</html>
