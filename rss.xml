@@ -26,7 +26,7 @@
         <category term="markdown" />
         <item>
             <guid isPermalink="true">https://www.aliang.live/2022/03/30/computer-science/Hexo/%E5%AE%89%E8%A3%85Git/</guid>
-            <title>安装Git</title>
+            <title>第二篇：安装Git---从0基础搭建Hexo博客</title>
             <link>https://www.aliang.live/2022/03/30/computer-science/Hexo/%E5%AE%89%E8%A3%85Git/</link>
             <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
             <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
@@ -62,7 +62,7 @@
         </item>
         <item>
             <guid isPermalink="true">https://www.aliang.live/2022/03/30/computer-science/Hexo/%E6%B3%A8%E5%86%8Cgithub/</guid>
-            <title>第一篇：注册github</title>
+            <title>第一篇：注册github---从0基础搭建Hexo博客</title>
             <link>https://www.aliang.live/2022/03/30/computer-science/Hexo/%E6%B3%A8%E5%86%8Cgithub/</link>
             <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
             <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
@@ -110,7 +110,7 @@
         </item>
         <item>
             <guid isPermalink="true">https://www.aliang.live/2022/03/30/computer-science/Hexo/%E5%B0%86%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0Github/</guid>
-            <title>将博客部署到Github</title>
+            <title>第六篇：将博客部署到GitHub---从0基础搭建Hexo博客</title>
             <link>https://www.aliang.live/2022/03/30/computer-science/Hexo/%E5%B0%86%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0Github/</link>
             <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
             <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
@@ -161,7 +161,7 @@
         </item>
         <item>
             <guid isPermalink="true">https://www.aliang.live/2022/03/30/computer-science/Hexo/%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D/</guid>
-            <title>购买域名</title>
+            <title>第七篇：购买域名---从0基础搭建Hexo博客</title>
             <link>https://www.aliang.live/2022/03/30/computer-science/Hexo/%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D/</link>
             <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
             <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
@@ -212,7 +212,7 @@
         </item>
         <item>
             <guid isPermalink="true">https://www.aliang.live/2022/03/30/computer-science/Hexo/%E8%A7%A3%E6%9E%90%E5%9F%9F%E5%90%8D/</guid>
-            <title>解析域名</title>
+            <title>第八篇：解析域名---从0基础搭建Hexo博客</title>
             <link>https://www.aliang.live/2022/03/30/computer-science/Hexo/%E8%A7%A3%E6%9E%90%E5%9F%9F%E5%90%8D/</link>
             <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
             <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
@@ -291,7 +291,7 @@
         </item>
         <item>
             <guid isPermalink="true">https://www.aliang.live/2022/03/30/computer-science/Hexo/%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98/</guid>
-            <title>安装主题</title>
+            <title>第九篇：安装主题---从0基础搭建Hexo博客</title>
             <link>https://www.aliang.live/2022/03/30/computer-science/Hexo/%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98/</link>
             <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
             <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
@@ -344,7 +344,7 @@
         </item>
         <item>
             <guid isPermalink="true">https://www.aliang.live/2022/03/30/computer-science/Hexo/%E5%AE%89%E8%A3%85Nodejs/</guid>
-            <title>安装Nodejs</title>
+            <title>第四篇：安装Nodejs---从0基础搭建Hexo博客</title>
             <link>https://www.aliang.live/2022/03/30/computer-science/Hexo/%E5%AE%89%E8%A3%85Nodejs/</link>
             <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
             <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
@@ -430,7 +430,7 @@
         </item>
         <item>
             <guid isPermalink="true">https://www.aliang.live/2022/03/30/computer-science/Hexo/%E5%AE%89%E8%A3%85Hexo/</guid>
-            <title>安装Hexo</title>
+            <title>第五篇：安装Hexo---从0基础搭建Hexo博客</title>
             <link>https://www.aliang.live/2022/03/30/computer-science/Hexo/%E5%AE%89%E8%A3%85Hexo/</link>
             <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
             <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
@@ -510,7 +510,7 @@
         </item>
         <item>
             <guid isPermalink="true">https://www.aliang.live/2022/03/30/computer-science/Hexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/</guid>
-            <title>git提交文件</title>
+            <title>第三篇：Git提交文件---从0基础搭建Hexo博客</title>
             <link>https://www.aliang.live/2022/03/30/computer-science/Hexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/</link>
             <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
             <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
