@@ -8,7 +8,7 @@
     <author>
       <name>吴小白</name>
     </author>
-    <updated>2022-03-29T16:30:51.000Z</updated>
+    <updated>2022-03-30T15:05:46.000Z</updated>
     <category term="web安全" />
     <category term="笔记" />
     <category term="web" />
@@ -22,6 +22,61 @@
     <category term="后端" />
     <category term="markdown" />
     <entry>
+        <id>https://www.aliang.live/2022/03/30/aaad0208.html</id>
+        <title>零基础搭建Hexo个人博客</title>
+        <link rel="alternate" href="https://www.aliang.live/2022/03/30/aaad0208.html"/>
+        <content type="html">&lt;h3 id=&#34;零基础搭建hexo个人博客系列&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#零基础搭建hexo个人博客系列&#34;&gt;#&lt;/a&gt; 零基础搭建 Hexo 个人博客系列&lt;/h3&gt;
+&lt;div class=&#34;links&#34;&gt;&lt;div class=&#34;item&#34; title=&#34;第一篇：注册github&#34; style=&#34;--block-color:#F46C9D;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvYTZmOWQwNzIuaHRtbA==&#34; data-background-image=&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (5).png&#34;&gt;&lt;/span&gt;
+          &lt;div class=&#34;info&#34;&gt;
+          &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvYTZmOWQwNzIuaHRtbA==&#34;&gt;第一篇：注册github&lt;/span&gt;
+          &lt;p class=&#34;desc&#34;&gt;阿亮の小破站 &amp; 搭建博客系列&lt;/p&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;item&#34; title=&#34;第二篇：安装Git&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvODU5ZjYwYmQuaHRtbA==&#34; data-background-image=&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (8).jpg&#34;&gt;&lt;/span&gt;
+          &lt;div class=&#34;info&#34;&gt;
+          &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvODU5ZjYwYmQuaHRtbA==&#34;&gt;第二篇：安装Git&lt;/span&gt;
+          &lt;p class=&#34;desc&#34;&gt;阿亮の小破站 &amp; 搭建博客系列&lt;/p&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;item&#34; title=&#34;第三篇：Git提交文件&#34; style=&#34;--block-color:#F4BAA4;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvYjc1YTFkYjYuaHRtbA==&#34; data-background-image=&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (4).png&#34;&gt;&lt;/span&gt;
+          &lt;div class=&#34;info&#34;&gt;
+          &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvYjc1YTFkYjYuaHRtbA==&#34;&gt;第三篇：Git提交文件&lt;/span&gt;
+          &lt;p class=&#34;desc&#34;&gt;阿亮の小破站 &amp; 搭建博客系列&lt;/p&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;item&#34; title=&#34;第四篇：安装Nodejs&#34; style=&#34;--block-color:#FDBF5C;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvY2Y2M2MwNy5odG1s&#34; data-background-image=&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (3).jpg&#34;&gt;&lt;/span&gt;
+          &lt;div class=&#34;info&#34;&gt;
+          &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvY2Y2M2MwNy5odG1s&#34;&gt;第四篇：安装Nodejs&lt;/span&gt;
+          &lt;p class=&#34;desc&#34;&gt;阿亮の小破站 &amp; 搭建博客系列&lt;/p&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;item&#34; title=&#34;第五篇：安装Hexo&#34; style=&#34;--block-color:#FBDE99;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvODdiNjk2NTIuaHRtbA==&#34; data-background-image=&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (9).jpg&#34;&gt;&lt;/span&gt;
+          &lt;div class=&#34;info&#34;&gt;
+          &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvODdiNjk2NTIuaHRtbA==&#34;&gt;第五篇：安装Hexo&lt;/span&gt;
+          &lt;p class=&#34;desc&#34;&gt;阿亮の小破站 &amp; 搭建博客系列&lt;/p&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;item&#34; title=&#34;第六篇：将博客部署到GitHub&#34; style=&#34;--block-color:#5A8F2;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvZGMwOWE0NmMuaHRtbA==&#34; data-background-image=&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (13).jpg&#34;&gt;&lt;/span&gt;
+          &lt;div class=&#34;info&#34;&gt;
+          &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvZGMwOWE0NmMuaHRtbA==&#34;&gt;第六篇：将博客部署到GitHub&lt;/span&gt;
+          &lt;p class=&#34;desc&#34;&gt;阿亮の小破站 &amp; 搭建博客系列&lt;/p&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;item&#34; title=&#34;第七篇：购买域名&#34; style=&#34;--block-color:#FB7B8E;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvNmMyMzkzZWMuaHRtbA==&#34; data-background-image=&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (14).jpg&#34;&gt;&lt;/span&gt;
+          &lt;div class=&#34;info&#34;&gt;
+          &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvNmMyMzkzZWMuaHRtbA==&#34;&gt;第七篇：购买域名&lt;/span&gt;
+          &lt;p class=&#34;desc&#34;&gt;阿亮の小破站 &amp; 搭建博客系列&lt;/p&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;item&#34; title=&#34;第八篇：解析域名&#34; style=&#34;--block-color:#FF7BA8;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvOWJmNmNhZWYuaHRtbA==&#34; data-background-image=&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (15).jpg&#34;&gt;&lt;/span&gt;
+          &lt;div class=&#34;info&#34;&gt;
+          &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvOWJmNmNhZWYuaHRtbA==&#34;&gt;第八篇：解析域名&lt;/span&gt;
+          &lt;p class=&#34;desc&#34;&gt;阿亮の小破站 &amp; 搭建博客系列&lt;/p&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;item&#34; title=&#34;第九篇：安装主题&#34; style=&#34;--block-color:#6AD0CB;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvYTVlZWZkZGMuaHRtbA==&#34; data-background-image=&#34;https://cdn.jsdelivr.net/gh/amehime/shoka@latest/images/avatar.jpg&#34;&gt;&lt;/span&gt;
+          &lt;div class=&#34;info&#34;&gt;
+          &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvYTVlZWZkZGMuaHRtbA==&#34;&gt;第九篇：安装主题&lt;/span&gt;
+          &lt;p class=&#34;desc&#34;&gt;阿亮の小破站 &amp; 搭建博客系列&lt;/p&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;没有加速器打开 GitHub 可能会稍微有点慢，需要加速可以联系博主&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;note success&#34;&gt;
+&lt;p&gt;希望你能找到属于自己的小破站&lt;/p&gt;
+&lt;/div&gt;
+</content>
+        <category term="computer-science" scheme="https://www.aliang.live/categories/computer-science/" />
+        <category term="Hexo" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
+        <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
+        <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
+        <updated>2022-03-30T15:05:46.000Z</updated>
+    </entry>
+    <entry>
         <id>https://www.aliang.live/2022/03/30/a5eefddc.html</id>
         <title>第九篇：安装主题---从0基础搭建Hexo博客</title>
         <link rel="alternate" href="https://www.aliang.live/2022/03/30/a5eefddc.html"/>
@@ -29,48 +84,48 @@
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;打开 GitHub 官网，搜索 hexo theme&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/WgwRFXd4k1rOljn.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/WgwRFXd4k1rOljn.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;我这边选择 diaspora 这个&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/jqtLnIyD3UTrQJo.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/jqtLnIyD3UTrQJo.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;打开项目，复制安装主题的链接&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/s9Fc15hAwPbUdpn.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/s9Fc15hAwPbUdpn.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;4&#34;&gt;
 &lt;li&gt;
 &lt;p&gt;在 blog 文件夹下鼠标右键打开 git bash here&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;$ git clone https://github.com/Fechin/hexo-theme-diaspora.git themes/diaspora&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/VHYUXteDcQiSd89.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/VHYUXteDcQiSd89.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;5&#34;&gt;
 &lt;li&gt;打开 themes 文件夹，看看主题是否有下载成功&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/2EV3nMIsKp5ozmJ.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/2EV3nMIsKp5ozmJ.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;6&#34;&gt;
 &lt;li&gt;主题下好之后打开 &lt;code&gt;_config.yml&lt;/code&gt;  文件配置主题&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/NGtOr3hjyQYU1fe.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/NGtOr3hjyQYU1fe.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;6&#34;&gt;
 &lt;li&gt;找到 &lt;code&gt;theme&lt;/code&gt; ，修改为 &lt;code&gt;diaspora&lt;/code&gt;  (也就是你的主题名，冒号后有一个空格不能省略)&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/wYXrnUu58TMZ1DA.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/wYXrnUu58TMZ1DA.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;7&#34;&gt;
 &lt;li&gt;再打开 git bash here，输入 &lt;code&gt;hexo clean &amp;amp;&amp;amp; hexo g &amp;amp;&amp;amp; hexo d&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/SN1VlxAIpaFW5Lz.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/SN1VlxAIpaFW5Lz.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;8&#34;&gt;
 &lt;li&gt;打开你的博客，此时博客已经完全安装好了&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/6QznLrvacCsXjZT.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/6QznLrvacCsXjZT.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;博客已经漂漂亮亮了，可以愉快的开始写博客啦&lt;/strong&gt;&lt;/p&gt;
 </content>
-        <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-        <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
+        <category term="computer-science" scheme="https://www.aliang.live/categories/computer-science/" />
+        <category term="Hexo" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
         <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
         <updated>2022-03-29T16:30:51.000Z</updated>
     </entry>
@@ -82,74 +137,74 @@
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;打开你的博客，复制你博客的网址&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/uV5sJkaBmqiRQcD.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/uV5sJkaBmqiRQcD.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;ctrl+R，打开 CMD ,ping 你的博客网址不要 https://，并复制 IP 地址&lt;/p&gt;
 &lt;p&gt;&lt;code&gt; ping aliang518.github.io&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/rYfdlxjLIZau8Ks.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/rYfdlxjLIZau8Ks.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;打开&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93YW53YW5nLmFsaXl1bi5jb20v&#34;&gt;万网&lt;/span&gt;，支付宝登录&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/TurKz1nhG76RAs8.jpg&#34; alt&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/Ygtbio2C5ehcZRW.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/TurKz1nhG76RAs8.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/Ygtbio2C5ehcZRW.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;打开控制台&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/e1SfM9CzU3b5il7.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/e1SfM9CzU3b5il7.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;5&#34;&gt;
 &lt;li&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/uep3jrhgKPLW8w1.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/uep3jrhgKPLW8w1.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;6&#34;&gt;
 &lt;li&gt;打开域名&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/d4KxbkcSownO8vl.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/d4KxbkcSownO8vl.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;7&#34;&gt;
 &lt;li&gt;域名列表&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/sz5CW2QUeD3ZXdR.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/sz5CW2QUeD3ZXdR.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;8&#34;&gt;
 &lt;li&gt;点击解析&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/bC6k4saZ35SJGPy.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/bC6k4saZ35SJGPy.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;9&#34;&gt;
 &lt;li&gt;添加记录&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/ec91KAoiDsPMEzB.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/ec91KAoiDsPMEzB.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;10&#34;&gt;
 &lt;li&gt;在 cmd 复制的 ip 地址粘贴上去&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/exACJOLdHjKiTuY.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/exACJOLdHjKiTuY.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;11&#34;&gt;
 &lt;li&gt;再次添加记录&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/ILAd5kUt4FOeSPh.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/ILAd5kUt4FOeSPh.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;12&#34;&gt;
 &lt;li&gt;启动&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/xC2EAWP9n1uNyHF.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/xC2EAWP9n1uNyHF.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;13&#34;&gt;
 &lt;li&gt;打开 blog 下的 source 文件夹，创建一个文件名为 &lt;code&gt;CNAME&lt;/code&gt; ，没有后缀的文件&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/sprnbtxY7GLHawd.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/sprnbtxY7GLHawd.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;14&#34;&gt;
 &lt;li&gt;在 CNAME 文件里面填入你购买的域名&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/SrZdm4P7NinQpCg.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/SrZdm4P7NinQpCg.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;15&#34;&gt;
 &lt;li&gt;在 blog 下打开 git bash here ，输入 &lt;code&gt;hexo clean &amp;amp;&amp;amp; hexo g &amp;amp;&amp;amp; hexo d&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/57FqvMVflem3UEs.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/57FqvMVflem3UEs.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;16&#34;&gt;
 &lt;li&gt;浏览器打开你的域名。域名解析成功&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/HIRYhTNcgpdJjmr.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/HIRYhTNcgpdJjmr.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 </content>
-        <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-        <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
+        <category term="computer-science" scheme="https://www.aliang.live/categories/computer-science/" />
+        <category term="Hexo" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
         <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
         <updated>2022-03-29T16:28:12.000Z</updated>
     </entry>
@@ -163,25 +218,25 @@
 &lt;ol&gt;
 &lt;li&gt;我这里使用的是支付宝登录&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/rygEU1BWAnlkHLw.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/rygEU1BWAnlkHLw.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h4 id=&#34;二-输入域名&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#二-输入域名&#34;&gt;#&lt;/a&gt; 二、输入域名&lt;/h4&gt;
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;输入自己想要的域名，搜索&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/4CnXuINvtWgTe7Q.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/4CnXuINvtWgTe7Q.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/YVbD4TrPzAklFti.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/YVbD4TrPzAklFti.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;点击立即购买&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/DeVr86NbnHGTs2d.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/DeVr86NbnHGTs2d.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;5&#34;&gt;
 &lt;li&gt;选择年限&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/cWOQ3Lakhi8V2Kt.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/cWOQ3Lakhi8V2Kt.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;6&#34;&gt;
 &lt;li&gt;将域名持有者选为 “个人”&lt;/li&gt;
 &lt;li&gt;新建信息模板&lt;/li&gt;
@@ -189,19 +244,19 @@
 &lt;li&gt;验证邮箱 (点击 &lt;code&gt;去验证&lt;/code&gt; )&lt;/li&gt;
 &lt;li&gt;立即购买&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/ykFrIJputCAawbq.jpg&#34; alt&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/93TRVgPZxYrnhA7.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/ykFrIJputCAawbq.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/93TRVgPZxYrnhA7.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;11&#34;&gt;
 &lt;li&gt;支付成功，点击进入域名控制台&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/Q1JWYLqxVKmCshf.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/Q1JWYLqxVKmCshf.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;12&#34;&gt;
 &lt;li&gt;等待审核。(我这边审核大概半小时就好了)&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/KsrTi1u3pqna2Ue.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/KsrTi1u3pqna2Ue.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 </content>
-        <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-        <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
+        <category term="computer-science" scheme="https://www.aliang.live/categories/computer-science/" />
+        <category term="Hexo" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
         <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
         <updated>2022-03-29T16:27:30.000Z</updated>
     </entry>
@@ -213,29 +268,29 @@
 &lt;ol&gt;
 &lt;li&gt;打开 &lt;code&gt;blog&lt;/code&gt;  文件夹，打开 &lt;code&gt;_config.yml&lt;/code&gt;  文件&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/XsNufKGeyItOwnB.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/XsNufKGeyItOwnB.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;滑到最下面找到如图&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/heHXcG2u1anBOAI.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/heHXcG2u1anBOAI.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;
 &lt;p&gt;打开仓库 —&amp;gt;code—&amp;gt;SSH—&amp;gt;copy，复制 SSH 的链接&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/ewWNlivjaSzXo2f.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/ewWNlivjaSzXo2f.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;填到步骤 2 的文件中。如下图&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;deploy:   type: git   repo: git@github.com:aliang518/aliang518.github.io.git   brach: master&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/KECJTU4Hah95gvr.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/KECJTU4Hah95gvr.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;5&#34;&gt;
 &lt;li&gt;
 &lt;p&gt;回到 blog 文件夹中，鼠标右键打开 git bash here，安装 git 部署插件&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;npm install hexo-deployer-git --save&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/3bDkNml7QBJVR6C.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/3bDkNml7QBJVR6C.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;6&#34;&gt;
 &lt;li&gt;
 &lt;p&gt;依次输入以下三条命令，&lt;/p&gt;
@@ -244,15 +299,15 @@
 &lt;p&gt;&lt;code&gt;hexo d&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/gucNPIbDdVnfw9v.jpg&#34; alt&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/ROfaZgmzFwec1ND.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/gucNPIbDdVnfw9v.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/ROfaZgmzFwec1ND.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;7&#34;&gt;
 &lt;li&gt;这是浏览器打开 &lt;code&gt;https://aliang518.github.io/&lt;/code&gt;  就是你的博客了&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/VeGUNhMdplYP5rz.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/VeGUNhMdplYP5rz.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 </content>
-        <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-        <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
+        <category term="computer-science" scheme="https://www.aliang.live/categories/computer-science/" />
+        <category term="Hexo" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
         <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
         <updated>2022-03-29T16:25:37.000Z</updated>
     </entry>
@@ -264,19 +319,19 @@
 &lt;ol&gt;
 &lt;li&gt;新建一个仓库&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/LoeECmrFSydhnIt.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/LoeECmrFSydhnIt.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;给仓库起个名，格式为   &lt;code&gt;账号名.github.io&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://tva4.sinaimg.cn/large/0065wfS6ly8h0rslvrth9j31ha0pqq5w.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://tva4.sinaimg.cn/large/0065wfS6ly8h0rslvrth9j31ha0pqq5w.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;打开 stetings&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/KaQX5eUTYvWp9H6.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/KaQX5eUTYvWp9H6.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;4&#34;&gt;
 &lt;li&gt;滑到下面，找到这个 GitHub pages ，点击打开&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://tva3.sinaimg.cn/large/0065wfS6ly8h0rsme8aiaj30p905tmx8.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://tva3.sinaimg.cn/large/0065wfS6ly8h0rsme8aiaj30p905tmx8.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;5&#34;&gt;
 &lt;li&gt;出现以下图说明成功了&lt;/li&gt;
 &lt;/ol&gt;
@@ -284,14 +339,14 @@
 &lt;ol start=&#34;6&#34;&gt;
 &lt;li&gt;新建一个 &lt;code&gt;blog&lt;/code&gt;  文件夹，在 &lt;code&gt;blog&lt;/code&gt;  文件夹打开 &lt;code&gt;git bash here&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/w8UDo5gxLzbOtiu.jpg&#34; alt&gt;7. 安装 &lt;code&gt;hexo-cli&lt;/code&gt;  插件&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/w8UDo5gxLzbOtiu.jpg&#34; alt=&#34;&#34;&gt;7. 安装 &lt;code&gt;hexo-cli&lt;/code&gt;  插件&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;npm install -g hexo-cli&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/IHBmwDz6FaGUyVW.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/IHBmwDz6FaGUyVW.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;8&#34;&gt;
 &lt;li&gt;初始化博客&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;code&gt;hexo init&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/X4pArW28NVYmuCa.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/X4pArW28NVYmuCa.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;9&#34;&gt;
 &lt;li&gt;静态部署博客&lt;/li&gt;
 &lt;/ol&gt;
@@ -301,7 +356,7 @@
 &lt;li&gt;打开本地服务器&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;code&gt;hexo s&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/atwxZphQzjf2kTi.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/atwxZphQzjf2kTi.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;11&#34;&gt;
 &lt;li&gt;浏览器输入 &lt;code&gt;localhost:4000&lt;/code&gt;  查看&lt;/li&gt;
 &lt;/ol&gt;
@@ -311,8 +366,8 @@
 &lt;/ol&gt;
 &lt;p&gt;&lt;strong&gt;目前博客已经基本完成了&lt;/strong&gt;&lt;/p&gt;
 </content>
-        <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-        <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
+        <category term="computer-science" scheme="https://www.aliang.live/categories/computer-science/" />
+        <category term="Hexo" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
         <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
         <updated>2022-03-29T16:25:26.000Z</updated>
     </entry>
@@ -325,80 +380,80 @@
 &lt;ol&gt;
 &lt;li&gt;我这里安装在 &lt;code&gt;C:\app\nodejs&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/N2pSe6Oq9BVLjbK.png&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/N2pSe6Oq9BVLjbK.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;安装完之后打开 &lt;code&gt;cmd&lt;/code&gt; ，输入 &lt;code&gt;node -v&lt;/code&gt;  和 &lt;code&gt;npm -v&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/Cln8IqXUAWwdMBK.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/Cln8IqXUAWwdMBK.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h4 id=&#34;二-设置npm在安装全局模块时的路径和环境变量&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#二-设置npm在安装全局模块时的路径和环境变量&#34;&gt;#&lt;/a&gt; 二、设置 npm 在安装全局模块时的路径和环境变量&lt;/h4&gt;
 &lt;p&gt;如果不设置的话，安装模块是默认在 C 盘的，会占用 C 盘空间，我这边把安装路径修改一下，建议你也改一下。&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;在 &lt;code&gt;nodejs&lt;/code&gt;  下创建两个目录 &lt;code&gt;ndoe_cache&lt;/code&gt;  和 &lt;code&gt;node_global&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/il5vILhOF76qTRs.png&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/il5vILhOF76qTRs.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;选择 node_cache 右击打开属性，把权限下的 “完全控制” 选上&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/o8THeYdwjvLzSmb.png&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/o8THeYdwjvLzSmb.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;同理，选择 node_global 右击打开属性，把权限下的 “完全控制” 也选上&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/iETUhyYIKm7q9FL.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/iETUhyYIKm7q9FL.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;4&#34;&gt;
 &lt;li&gt;复制 node_global 和 node_cache 的路径&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/Aw8O2gfGHMUWeku.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/Aw8O2gfGHMUWeku.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;5&#34;&gt;
 &lt;li&gt;然后再返回刚刚打开的 cmd, 输入以下代码&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;code&gt;npm config set prefix &amp;quot;C:\app\nodejs\node_global&amp;quot;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;npm config set cache &amp;quot;C:\app\nodejs\node_cache&amp;quot;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/piUmIH6Zv9SO8c3.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/piUmIH6Zv9SO8c3.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;6&#34;&gt;
 &lt;li&gt;
 &lt;p&gt;设置完路径之后，我们还要去系统环境变量修改一下&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;打开桌面 —&amp;gt; 此电脑 —&amp;gt; 属性 —&amp;gt; 高级系统设置 —&amp;gt; 环境变量&lt;/strong&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/FyrUTcpvfkuGBAP.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/FyrUTcpvfkuGBAP.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;7&#34;&gt;
 &lt;li&gt;打开高级系统设置&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/QvpAOLeS53EbMj9.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/QvpAOLeS53EbMj9.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;8&#34;&gt;
 &lt;li&gt;打开环境变量&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/xVQKP2vjLJ83ztU.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/xVQKP2vjLJ83ztU.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;9&#34;&gt;
 &lt;li&gt;在系统变量中新建一个变量，名为 &lt;code&gt;NODE_PATH&lt;/code&gt; , 值为 &lt;code&gt;C:\app\nodejs\node_global\node_modules&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/53jV6FgzIcTXSM8.jpg&#34; alt&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/Ust62PMjuSJ9iWw.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/53jV6FgzIcTXSM8.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/Ust62PMjuSJ9iWw.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;10&#34;&gt;
 &lt;li&gt;然后编辑上方的用户变量的 Path, 编辑修改为 &lt;code&gt;C:\app\nodejs\node_global&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/btcT8qOj6dkENLX.jpg&#34; alt&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/dnw9lCxOqj1GAH2.jpg&#34; alt&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/nYmStTyWgz4bejo.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/btcT8qOj6dkENLX.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/dnw9lCxOqj1GAH2.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/nYmStTyWgz4bejo.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h4 id=&#34;三-全部变量修改结果如下图&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#三-全部变量修改结果如下图&#34;&gt;#&lt;/a&gt; 三、全部变量修改结果，如下图&lt;/h4&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/HUSnKtdhMBgvcOq.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/HUSnKtdhMBgvcOq.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;然后打开 &lt;code&gt;cmd&lt;/code&gt;  测试一下路径设置和环境变量有没有设置正确，如果没有设置正确的话，在 &lt;code&gt;node_global&lt;/code&gt;  是看不到有 &lt;code&gt;webpack&lt;/code&gt;  文件夹的&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;strong&gt;安装过程&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/FY1g5nJesScwHvC.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/FY1g5nJesScwHvC.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;安装成功&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/8H7v1uoA3zn9WKs.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/8H7v1uoA3zn9WKs.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;出现以下路径说明安装成功了 &lt;code&gt;node_global---&amp;gt;node_modules---&amp;gt;webpack&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/ugOVX3WGfpZ9DqP.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/ugOVX3WGfpZ9DqP.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;nodejs 环境配置到此就完成啦&lt;/strong&gt;&lt;/p&gt;
 </content>
-        <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-        <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
+        <category term="computer-science" scheme="https://www.aliang.live/categories/computer-science/" />
+        <category term="Hexo" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
         <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
         <updated>2022-03-29T16:24:41.000Z</updated>
     </entry>
@@ -414,82 +469,85 @@
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;新建一个文件夹 text&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/Jz1dTG6SPkwlQ5p.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/Jz1dTG6SPkwlQ5p.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;鼠标右击打开 git Bash Here&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/Jz1dTG6SPkwlQ5p.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/Jz1dTG6SPkwlQ5p.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;输入 ssh 检查使是否安装 ssh&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/8RcNpfrZ2PEjtA7.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/8RcNpfrZ2PEjtA7.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;4&#34;&gt;
 &lt;li&gt;
 &lt;p&gt;输入 ssh-keygen -t rsa 命令，表示 RSA 算法生成密钥，然后敲 4 次回车键，之后会生成两个文件，分别为密钥 id_rsa 和公钥 id_rsa.pub&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;ssh-keygen -t rsa&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/K3mfVxdr54IvaLJ.jpg&#34; alt&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/9fNDbOAVUBeWd8G.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/K3mfVxdr54IvaLJ.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/9fNDbOAVUBeWd8G.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;接下来我们要做的事情就是把公钥 id_rsa.pub 的内容添加到 GitHub。复制公钥 id_rsa.pub 文件里的内容，你可以通过目录找到 id_rsa.pub 文件的位置，用记事本打开文件复制。&lt;/strong&gt;&lt;/p&gt;
 &lt;ol start=&#34;5&#34;&gt;
 &lt;li&gt;打开 id_rsa.pub 文件复制&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/s39ZxPGuTDJLmwF.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/s39ZxPGuTDJLmwF.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;6&#34;&gt;
 &lt;li&gt;打开 github—&amp;gt;settings—&amp;gt;SSH and GPG keys—&amp;gt;New SSH key&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/LhUzwCNnZGOXDl9.jpg&#34; alt&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/4vtGl98ehjRWKJd.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/LhUzwCNnZGOXDl9.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/4vtGl98ehjRWKJd.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;粘贴内容进去&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/i1b3hoFvzPWcUje.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/i1b3hoFvzPWcUje.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;添加成功&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/h7npjw9I8qOBaXA.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/h7npjw9I8qOBaXA.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;验证是否成功，在 Git Bash 中输入 &lt;code&gt; ssh -T git@github.com&lt;/code&gt;  验证&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;首次需要输入 &lt;code&gt;yes&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/EHSFLzxKoIavPcr.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/EHSFLzxKoIavPcr.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h4 id=&#34;二-接下来是提交文件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#二-接下来是提交文件&#34;&gt;#&lt;/a&gt; 二、接下来是提交文件&lt;/h4&gt;
 &lt;ol&gt;
 &lt;li&gt;新建仓库&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/VKYp3k8NMgDvrW1.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/VKYp3k8NMgDvrW1.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;给仓库起个名&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/zsE5a7B3KrliXny.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/zsE5a7B3KrliXny.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;复制仓库 HTTPS 链接&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/YVpZtKBoWgPbzme.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/YVpZtKBoWgPbzme.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;4&#34;&gt;
 &lt;li&gt;
 &lt;p&gt;将仓库 text 仓库 clone 到本地仓库，返回刚刚 Git 的窗口，输入 &lt;code&gt;git clone 链接&lt;/code&gt; 。&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;$ git clone https://github.com/aliang518/text.git&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/6KVx9MoJ48mE25k.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/6KVx9MoJ48mE25k.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;5&#34;&gt;
 &lt;li&gt;打开刚刚在电脑新建的 text 文件夹是不是存在一个 GitHub 上名为的 text 仓库&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/b7dHYj5e3lCxypg.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/b7dHYj5e3lCxypg.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;6&#34;&gt;
 &lt;li&gt;查看 text 仓库是不是和 GitHub 的仓库内容一样&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/g6nQxiVeCzubkNj.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/g6nQxiVeCzubkNj.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;7&#34;&gt;
 &lt;li&gt;
 &lt;p&gt;新建一个文件&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/2emTn6GyiqSZIba.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/2emTn6GyiqSZIba.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;在此文件夹下进入 Git Bash Here&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/7bi2eu8FNYTltd1.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/7bi2eu8FNYTltd1.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;9&#34;&gt;
-&lt;li&gt;输入 &lt;code&gt;git status&lt;/code&gt;  命令查看仓库状态&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;输入 &lt;code&gt;git status&lt;/code&gt;  命令查看仓库状态&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git status&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;![20] git 提交文件 / 20.jpg)&lt;/p&gt;
 &lt;ol start=&#34;10&#34;&gt;
@@ -499,44 +557,47 @@
 &lt;p&gt;&lt;code&gt;git commit -m &amp;quot;提交信息&amp;quot;&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/cK8LmrBq3vh9YQo.jpg&#34; alt&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/3ltIPmEFkHKU1Bc.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/cK8LmrBq3vh9YQo.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/3ltIPmEFkHKU1Bc.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;如果你是第一次提交的话，就会出现下图情况，让你输入账号和邮箱&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;git config --global user.name &amp;quot;aliang518&amp;quot;
-git config --global user.email &amp;quot;aa******56@126.com&amp;quot;
+&lt;pre&gt;&lt;code class=&#34;language-comment&#34;&gt;```git config --global user.name &amp;quot;aliang518&amp;quot;
+git config --global user.email &amp;quot;aa******56@126.com&amp;quot;```
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/Dbag4oklMAp1XqQ.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/Dbag4oklMAp1XqQ.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;11&#34;&gt;
 &lt;li&gt;
 &lt;p&gt;查看仓库提交日志&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;git log&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/xCkvay35W4zG8gE.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/xCkvay35W4zG8gE.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;12&#34;&gt;
-&lt;li&gt;再输入 git status 查看一下仓库状态&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;再输入 git status 查看一下仓库状态&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git status&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/DKZzdOLexy1lB52.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/DKZzdOLexy1lB52.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;13&#34;&gt;
 &lt;li&gt;现在输入 git push origin main 命令，将本地仓库提交到远程仓库&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/rFebnLUxqSkCoR3.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/rFebnLUxqSkCoR3.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;14&#34;&gt;
 &lt;li&gt;从浏览器打开的时候选择你已经登录 GitHub 的那个浏览器 (我这里用火狐浏览器)&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/etGBbrAjaOzH9Qk.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/etGBbrAjaOzH9Qk.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;15&#34;&gt;
 &lt;li&gt;等待上次成功&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/16UjrZte4OydkG8.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/16UjrZte4OydkG8.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;16&#34;&gt;
 &lt;li&gt;打开 GitHub 仓库 F5 刷新一下，会出现刚刚在本地 text 目录新建的 text.txt 文件&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/QvD1LZXAqeWSNJf.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/QvD1LZXAqeWSNJf.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;提交文件已经成功啦&lt;/strong&gt;&lt;/p&gt;
 </content>
-        <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-        <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
+        <category term="computer-science" scheme="https://www.aliang.live/categories/computer-science/" />
+        <category term="Hexo" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
         <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
         <updated>2022-03-29T16:22:45.000Z</updated>
     </entry>
@@ -549,25 +610,25 @@ git config --global user.email &amp;quot;aa******56@126.com&amp;quot;
 &lt;p&gt;&lt;strong&gt;必装&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXQtc2NtLmNvbQ==&#34;&gt; Node.js&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;建议装&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXQtc2NtLmNvbQ==&#34;&gt; notepad3&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;h3 id=&#34;安装git&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装git&#34;&gt;#&lt;/a&gt; 安装 Git&lt;/h3&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/BQvOwdEjhy2Mxpi.jpg&#34; alt&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/cynKHCaWvM1lhPQ.jpg&#34; alt&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/mGnE9UXQfjSF4LA.jpg&#34; alt&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/5Y6oqd7uJGQZ3x9.jpg&#34; alt&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/7ulfP3VQJDIR49b.jpg&#34; alt&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/O71bgvBpnoya5UN.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/BQvOwdEjhy2Mxpi.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/cynKHCaWvM1lhPQ.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/mGnE9UXQfjSF4LA.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/5Y6oqd7uJGQZ3x9.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/7ulfP3VQJDIR49b.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/O71bgvBpnoya5UN.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://tva2.sinaimg.cn/large/0065wfS6ly8h0rsgp2d5yj30dv0aw756.jpg&#34; alt=&#34;07&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://tva1.sinaimg.cn/large/0065wfS6ly8h0rshgpo17j30dv0aw74s.jpg&#34; alt=&#34;9&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/5yNqYXRIFf2kpxc.jpg&#34; alt&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/8j3PsJFgN6e1IxB.jpg&#34; alt&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/Pz4C6HLjdQiE7MB.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/5yNqYXRIFf2kpxc.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/8j3PsJFgN6e1IxB.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/Pz4C6HLjdQiE7MB.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;鼠标右看到如图说明安装成功了，打开 Git bash here&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/FbARg18aejdJUVO.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/FbARg18aejdJUVO.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;输入 git&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/7qTxPmE6YGFOklK.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/7qTxPmE6YGFOklK.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;安装 git 结束&lt;/strong&gt;&lt;/p&gt;
 </content>
-        <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-        <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
+        <category term="computer-science" scheme="https://www.aliang.live/categories/computer-science/" />
+        <category term="Hexo" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
         <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
         <updated>2022-03-29T16:21:44.000Z</updated>
     </entry>
@@ -576,22 +637,22 @@ git config --global user.email &amp;quot;aa******56@126.com&amp;quot;
         <title>第一篇：注册github---从0基础搭建Hexo博客</title>
         <link rel="alternate" href="https://www.aliang.live/2022/03/30/a6f9d072.html"/>
         <content type="html">&lt;h3 id=&#34;注册github&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#注册github&#34;&gt;#&lt;/a&gt; 注册 GitHub&lt;/h3&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/BULpyk6thPbgJCD.jpg&#34; alt&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/fo8wzF7dvqNHaB4.jpg&#34; alt&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/aXwyhW3KM8cxYCb.jpg&#34; alt&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/RN62GDFVQU1YKB3.jpg&#34; alt&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/JzFGeTjb7BHKSQD.jpg&#34; alt&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/48GA7g1N2VacpJl.jpg&#34; alt&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/uN8PBgwFWOlApfU.jpg&#34; alt&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/shHQtoZVwcPrz2I.jpg&#34; alt&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/aZSU1FnDumqY2M7.jpg&#34; alt&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/PhUtuCQNlLHXAdG.jpg&#34; alt&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/pk9Gyi28uTFrXZY.jpg&#34; alt&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/8tjJkrGRb3NBsEW.jpg&#34; alt&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/FVivdNY8BLUfcSR.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/BULpyk6thPbgJCD.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/fo8wzF7dvqNHaB4.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/aXwyhW3KM8cxYCb.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/RN62GDFVQU1YKB3.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/JzFGeTjb7BHKSQD.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/48GA7g1N2VacpJl.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/uN8PBgwFWOlApfU.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/shHQtoZVwcPrz2I.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/aZSU1FnDumqY2M7.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/PhUtuCQNlLHXAdG.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/pk9Gyi28uTFrXZY.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/8tjJkrGRb3NBsEW.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/FVivdNY8BLUfcSR.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 </content>
-        <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-        <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
+        <category term="computer-science" scheme="https://www.aliang.live/categories/computer-science/" />
+        <category term="Hexo" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
         <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
         <updated>2022-03-29T16:20:30.000Z</updated>
     </entry>
@@ -602,13 +663,19 @@ git config --global user.email &amp;quot;aa******56@126.com&amp;quot;
         <content type="html">&lt;hr&gt;
 &lt;h3 id=&#34;hexo怎么安装插件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#hexo怎么安装插件&#34;&gt;#&lt;/a&gt; hexo 怎么安装插件&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;打开 hexo 的根目录 &lt;code&gt;Blog&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;输入安装地址 (此处我以安装 &lt;code&gt;npm i hexo-algoliasearch&lt;/code&gt;  测试)&lt;/li&gt;
-&lt;li&gt;安装成功&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;打开 hexo 的根目录 &lt;code&gt;Blog&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;输入安装地址 (此处我以安装 &lt;code&gt;npm i hexo-algoliasearch&lt;/code&gt;  测试)&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;npm安装&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; i hexo-algoliasearch&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;安装成功&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://tva4.sinaimg.cn/large/0065wfS6ly8h0ntxuxa0oj30jo09njsv.jpg&#34; alt title=&#34;在Blog打开cmd&#34; height=&#34;65%&#34; width=&#34;65%&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://tva2.sinaimg.cn/large/0065wfS6ly8h0ntxktk9zj30cr02gjrc.jpg&#34; alt title=&#34;在cmd输入安装路径&#34; height=&#34;65%&#34; width=&#34;65%&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://tva3.sinaimg.cn/large/0065wfS6ly8h0nty14h5oj30lh07s0tg.jpg&#34; alt title=&#34;END&#34; height=&#34;65%&#34; width=&#34;65%&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://tva4.sinaimg.cn/large/0065wfS6ly8h0ntxuxa0oj30jo09njsv.jpg&#34; alt=&#34;&#34; title=&#34;在Blog打开cmd&#34; height=&#34;65%&#34; width=&#34;65%&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://tva2.sinaimg.cn/large/0065wfS6ly8h0ntxktk9zj30cr02gjrc.jpg&#34; alt=&#34;&#34; title=&#34;在cmd输入安装路径&#34; height=&#34;65%&#34; width=&#34;65%&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://tva3.sinaimg.cn/large/0065wfS6ly8h0nty14h5oj30lh07s0tg.jpg&#34; alt=&#34;&#34; title=&#34;END&#34; height=&#34;65%&#34; width=&#34;65%&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;hexo怎么卸载插件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#hexo怎么卸载插件&#34;&gt;#&lt;/a&gt; Hexo 怎么卸载插件&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -621,13 +688,14 @@ git config --global user.email &amp;quot;aa******56@126.com&amp;quot;
 &lt;p&gt;举个例子，我要卸载 &lt;code&gt;hexo-renderer-marked&lt;/code&gt;  这个插件&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;在 cmd 输入 &lt;code&gt;npm un hexo-renderer-marked --save&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
+&lt;p&gt;在 cmd 输入&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h 插件卸载 &lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; un hexo-renderer-marked --save&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://tva2.sinaimg.cn/large/0065wfS6ly8h0ntxxz7wqj30lk0650t3.jpg&#34; alt title=&#34;卸载插件&#34; height=&#34;65%&#34; width=&#34;65%&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://tva2.sinaimg.cn/large/0065wfS6ly8h0ntxxz7wqj30lk0650t3.jpg&#34; alt=&#34;&#34; title=&#34;卸载插件&#34; height=&#34;75%&#34; width=&#34;75%&#34;&gt;&lt;/p&gt;
 </content>
-        <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-        <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
+        <category term="computer-science" scheme="https://www.aliang.live/categories/computer-science/" />
+        <category term="Hexo" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
+        <category term="modules" scheme="https://www.aliang.live/categories/computer-science/Hexo/modules/" />
         <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
         <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
         <updated>2022-03-26T10:33:07.000Z</updated>
@@ -640,35 +708,36 @@ git config --global user.email &amp;quot;aa******56@126.com&amp;quot;
 &lt;h3 id=&#34;设置域名后样式失效&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#设置域名后样式失效&#34;&gt;#&lt;/a&gt; 设置域名后样式失效&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;安装完 hexo 后，在设置域名后发现样式失效了。&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;安装完 hexo 后，在设置域名后发现样式失效了。&lt;/br&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;打开 F12 查看发现是路径出现了问题&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;打开 F12 查看发现是路径出现了问题&lt;/br&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;打开 * &lt;code&gt;_config.yml&lt;/code&gt;  * 文件修改 &lt;code&gt;url&lt;/code&gt;  和 &lt;code&gt;root&lt;/code&gt; ，修改完就正常了&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;打开 * &lt;code&gt;_config.yml&lt;/code&gt;  * 文件修改 &lt;code&gt;url&lt;/code&gt;  和 &lt;code&gt;root&lt;/code&gt; ，修改完就正常了&lt;/br&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h4 id=&#34;如图修改&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#如图修改&#34;&gt;#&lt;/a&gt; 如图修改&lt;/h4&gt;
 &lt;center style=&#34;margin-bottom:10px;border-radius:10px&#34;&gt;
-    &lt;img src=&#34;/2022/03/26/修改域名后样式失效1.png&#34; width=&#34;60%&#34; height=&#34;60%&#34; alt=&#34;图一&#34; style=&#34;border-radius:10px;&#34;&gt;
+    &lt;img src =&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/修改域名后样式失效1.png&#34; width=&#34;60%&#34; height=&#34;60%&#34; alt=&#34;图一&#34; style=&#34;border-radius:10px;&#34;/&gt;
      &lt;p&gt;
          修改前
     &lt;/p&gt;
 &lt;/center&gt;
 &lt;center style=&#34;margin-bottom:10px;&#34;&gt;
-    &lt;img src=&#34;/2022/03/26/修改域名后样式失效2.png&#34; width=&#34;60%&#34; height=&#34;60%&#34; alt=&#34;图二&#34; style=&#34;border-radius:10px;&#34;&gt;
+    &lt;img src =&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/修改域名后样式失效2.png&#34; width=&#34;60%&#34; height=&#34;60%&#34; alt=&#34;图二&#34; style=&#34;border-radius:10px;&#34;/&gt;
      修改前
-      &lt;br&gt;
+      &lt;br/&gt;
 &lt;/center&gt;
 &lt;center style=&#34;margin-bottom:10px&#34;&gt;
-    &lt;img src=&#34;/2022/03/26/修改域名后样式失效3.png&#34; width=&#34;60%&#34; height=&#34;60%&#34; alt=&#34;图三&#34; style=&#34;border-radius:10px;&#34;&gt;
+    &lt;img src =&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/修改域名后样式失效3.png&#34; width=&#34;60%&#34; height=&#34;60%&#34; alt=&#34;图三&#34; style=&#34;border-radius:10px;&#34;/&gt;
      修改后
-      &lt;br&gt;
+      &lt;br/&gt;
 &lt;/center&gt;
 </content>
-        <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-        <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
+        <category term="computer-science" scheme="https://www.aliang.live/categories/computer-science/" />
+        <category term="Hexo" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
+        <category term="modules" scheme="https://www.aliang.live/categories/computer-science/Hexo/modules/" />
         <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
         <updated>2022-03-26T08:03:13.000Z</updated>
     </entry>
@@ -678,7 +747,7 @@ git config --global user.email &amp;quot;aa******56@126.com&amp;quot;
         <link rel="alternate" href="https://www.aliang.live/2022/03/26/d95d7e09.html"/>
         <content type="html">&lt;h6 id=&#34;历时两天终于把我的小破站建成了&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#历时两天终于把我的小破站建成了&#34;&gt;#&lt;/a&gt; 历时两天，终于把我的小破站建成了。&lt;/h6&gt;
 &lt;h6 id=&#34;小破站的初心就是为了记录自己学习情况遇到的问题进行总结以及记录生活&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#小破站的初心就是为了记录自己学习情况遇到的问题进行总结以及记录生活&#34;&gt;#&lt;/a&gt; 小破站的初心就是为了记录自己学习情况，遇到的问题进行总结，以及记录生活。&lt;/h6&gt;
-&lt;p&gt;&lt;img data-src=&#34;_images%5Cone.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;_images%5Cone.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 </content>
         <category term="生活" scheme="https://www.aliang.live/tags/%E7%94%9F%E6%B4%BB/" />
         <updated>2022-03-26T03:34:01.000Z</updated>
