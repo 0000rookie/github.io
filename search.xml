@@ -22,84 +22,84 @@
 <ol>
 <li>
 <p>新建一个文件夹 text</p>
-<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/01.jpg" alt="01"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/Jz1dTG6SPkwlQ5p.jpg" alt></p>
 </li>
 <li>
 <p>鼠标右击打开 git Bash Here</p>
-<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/02.jpg" alt="02"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/Jz1dTG6SPkwlQ5p.jpg" alt></p>
 </li>
 <li>
 <p>输入 ssh 检查使是否安装 ssh</p>
 </li>
 </ol>
-<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/03.jpg" alt="03"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/8RcNpfrZ2PEjtA7.jpg" alt></p>
 <ol start="4">
 <li>
 <p>输入 ssh-keygen -t rsa 命令，表示 RSA 算法生成密钥，然后敲 4 次回车键，之后会生成两个文件，分别为密钥 id_rsa 和公钥 id_rsa.pub</p>
 <p><code>ssh-keygen -t rsa</code></p>
 </li>
 </ol>
-<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/04.jpg" alt="04"></p>
-<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/05.jpg" alt="05"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/K3mfVxdr54IvaLJ.jpg" alt></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/9fNDbOAVUBeWd8G.jpg" alt></p>
 <p><strong>接下来我们要做的事情就是把公钥 id_rsa.pub 的内容添加到 GitHub。复制公钥 id_rsa.pub 文件里的内容，你可以通过目录找到 id_rsa.pub 文件的位置，用记事本打开文件复制。</strong></p>
 <ol start="5">
 <li>打开 id_rsa.pub 文件复制</li>
 </ol>
-<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/06.jpg" alt="06"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/s39ZxPGuTDJLmwF.jpg" alt></p>
 <ol start="6">
 <li>打开 github—&gt;settings—&gt;SSH and GPG keys—&gt;New SSH key</li>
 </ol>
-<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/07.jpg" alt="07"></p>
-<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/08.jpg" alt="08"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/LhUzwCNnZGOXDl9.jpg" alt></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/4vtGl98ehjRWKJd.jpg" alt></p>
 <p><strong>粘贴内容进去</strong></p>
-<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/09.jpg" alt="09"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/i1b3hoFvzPWcUje.jpg" alt></p>
 <p><strong>添加成功</strong></p>
-<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/10add.jpg" alt="10add"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/h7npjw9I8qOBaXA.jpg" alt></p>
 <p><strong>验证是否成功，在 Git Bash 中输入 <code> ssh -T git@github.com</code>  验证</strong></p>
 <p>首次需要输入 <code>yes</code></p>
-<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/11.jpg" alt="11"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/EHSFLzxKoIavPcr.jpg" alt></p>
 <h4 id="二-接下来是提交文件"><a class="markdownIt-Anchor" href="#二-接下来是提交文件">#</a> 二、接下来是提交文件</h4>
 <ol>
 <li>新建仓库</li>
 </ol>
-<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/12.jpg" alt="12"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/VKYp3k8NMgDvrW1.jpg" alt></p>
 <ol start="2">
 <li>给仓库起个名</li>
 </ol>
-<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/13.jpg" alt="13"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/zsE5a7B3KrliXny.jpg" alt></p>
 <ol start="3">
 <li>复制仓库 HTTPS 链接</li>
 </ol>
-<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/14.jpg" alt="14"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/YVpZtKBoWgPbzme.jpg" alt></p>
 <ol start="4">
 <li>
 <p>将仓库 text 仓库 clone 到本地仓库，返回刚刚 Git 的窗口，输入 <code>git clone 链接</code> 。</p>
 <p><code>$ git clone https://github.com/aliang518/text.git</code></p>
 </li>
 </ol>
-<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/15.jpg" alt="15"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/6KVx9MoJ48mE25k.jpg" alt></p>
 <ol start="5">
 <li>打开刚刚在电脑新建的 text 文件夹是不是存在一个 GitHub 上名为的 text 仓库</li>
 </ol>
-<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/16.jpg" alt="16"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/b7dHYj5e3lCxypg.jpg" alt></p>
 <ol start="6">
 <li>查看 text 仓库是不是和 GitHub 的仓库内容一样</li>
 </ol>
-<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/17.jpg" alt="17"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/g6nQxiVeCzubkNj.jpg" alt></p>
 <ol start="7">
 <li>
 <p>新建一个文件</p>
-<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/18.jpg" alt="18"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/2emTn6GyiqSZIba.jpg" alt></p>
 </li>
 <li>
 <p>在此文件夹下进入 Git Bash Here</p>
 </li>
 </ol>
-<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/19.jpg" alt="19"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/7bi2eu8FNYTltd1.jpg" alt></p>
 <ol start="9">
 <li>输入 <code>git status</code>  命令查看仓库状态</li>
 </ol>
-<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/20.jpg" alt="20"></p>
+<p>![20] git 提交文件 / 20.jpg)</p>
 <ol start="10">
 <li>
 <p>hexo 已经是一个 Git 仓库了，而我们刚刚创建的文件 123.txt 没有被追踪，也就是没有提交到本地仓库。现在我们使用 git add 命令将文件添加到了「临时缓冲区」，再用 git commit -m “提交信息” 将其提交到本地仓库，如下图</p>
@@ -107,40 +107,40 @@
 <p><code>git commit -m &quot;提交信息&quot;</code></p>
 </li>
 </ol>
-<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/20.jpg" alt="20"></p>
-<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/21commit.jpg" alt="21commit"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/cK8LmrBq3vh9YQo.jpg" alt></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/3ltIPmEFkHKU1Bc.jpg" alt></p>
 <p>如果你是第一次提交的话，就会出现下图情况，让你输入账号和邮箱</p>
 <pre><code>git config --global user.name &quot;aliang518&quot;
 git config --global user.email &quot;aa******56@126.com&quot;
 </code></pre>
-<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/2201.jpg" alt="2201"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/Dbag4oklMAp1XqQ.jpg" alt></p>
 <ol start="11">
 <li>
 <p>查看仓库提交日志</p>
 <p><code>git log</code></p>
 </li>
 </ol>
-<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/22.jpg" alt="22"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/xCkvay35W4zG8gE.jpg" alt></p>
 <ol start="12">
 <li>再输入 git status 查看一下仓库状态</li>
 </ol>
-<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/23.jpg" alt="23"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/DKZzdOLexy1lB52.jpg" alt></p>
 <ol start="13">
 <li>现在输入 git push origin main 命令，将本地仓库提交到远程仓库</li>
 </ol>
-<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/24.jpg" alt="24"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/rFebnLUxqSkCoR3.jpg" alt></p>
 <ol start="14">
 <li>从浏览器打开的时候选择你已经登录 GitHub 的那个浏览器 (我这里用火狐浏览器)</li>
 </ol>
-<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/25.jpg" alt="25"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/etGBbrAjaOzH9Qk.jpg" alt></p>
 <ol start="15">
 <li>等待上次成功</li>
 </ol>
-<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/26.jpg" alt="26"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/16UjrZte4OydkG8.jpg" alt></p>
 <ol start="16">
 <li>打开 GitHub 仓库 F5 刷新一下，会出现刚刚在本地 text 目录新建的 text.txt 文件</li>
 </ol>
-<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/git%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/27.jpg" alt="27"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/QvD1LZXAqeWSNJf.jpg" alt></p>
 <p><strong>提交文件已经成功啦</strong></p>
 ]]></content>
       <categories>
@@ -198,27 +198,22 @@ git config --global user.email &quot;aa******56@126.com&quot;
 <p><strong>必装<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbQ=="> Node.js</span></strong></p>
 <p><strong>建议装<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbQ=="> notepad3</span></strong></p>
 <h3 id="安装git"><a class="markdownIt-Anchor" href="#安装git">#</a> 安装 Git</h3>
-<p><img data-src="%E5%AE%89%E8%A3%85Git/01.jpg" alt="01"></p>
-<p><img data-src="%E5%AE%89%E8%A3%85Git/02.jpg" alt="02"></p>
-<p><img data-src="%E5%AE%89%E8%A3%85Git/03.jpg" alt="03"></p>
-<p><img data-src="%E5%AE%89%E8%A3%85Git/04.jpg" alt="04"></p>
-<p><img data-src="%E5%AE%89%E8%A3%85Git/05.jpg" alt="05"></p>
-<p><img data-src="%E5%AE%89%E8%A3%85Git/06.jpg" alt="06"></p>
-<p><img data-src="%E5%AE%89%E8%A3%85Git/07.jpg" alt="07"></p>
-<p><img data-src="%E5%AE%89%E8%A3%85Git/08.jpg" alt="08"></p>
-<p><img data-src="%E5%AE%89%E8%A3%85Git/09.jpg" alt="09"></p>
-<p><img data-src="%E5%AE%89%E8%A3%85Git/10.jpg" alt="10"></p>
-<p><img data-src="%E5%AE%89%E8%A3%85Git/11.jpg" alt="11"></p>
-<p><img data-src="%E5%AE%89%E8%A3%85Git/12.jpg" alt="12"></p>
-<p><img data-src="%E5%AE%89%E8%A3%85Git/13.jpg" alt="13"></p>
-<p><img data-src="%E5%AE%89%E8%A3%85Git/14.jpg" alt="14"></p>
-<p><img data-src="%E5%AE%89%E8%A3%85Git/15.jpg" alt="15"></p>
-<p><img data-src="%E5%AE%89%E8%A3%85Git/16.jpg" alt="15"></p>
-<p><img data-src="%E5%AE%89%E8%A3%85Git/17.jpg" alt="17"></p>
-<p><img data-src="%E5%AE%89%E8%A3%85Git/18.jpg" alt="18"></p>
-<p><img data-src="%E5%AE%89%E8%A3%85Git/19.jpg" alt="19"></p>
-<p><img data-src="%E5%AE%89%E8%A3%85Git/20.jpg" alt="20"></p>
-<p><img data-src="%E5%AE%89%E8%A3%85Git/21git.jpg" alt="21git"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/BQvOwdEjhy2Mxpi.jpg" alt></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/cynKHCaWvM1lhPQ.jpg" alt></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/mGnE9UXQfjSF4LA.jpg" alt></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/5Y6oqd7uJGQZ3x9.jpg" alt></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/7ulfP3VQJDIR49b.jpg" alt></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/O71bgvBpnoya5UN.jpg" alt></p>
+<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0rsgp2d5yj30dv0aw756.jpg" alt="07"></p>
+<p><img data-src="https://tva1.sinaimg.cn/large/0065wfS6ly8h0rshgpo17j30dv0aw74s.jpg" alt="9"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/5yNqYXRIFf2kpxc.jpg" alt></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/8j3PsJFgN6e1IxB.jpg" alt></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/Pz4C6HLjdQiE7MB.jpg" alt></p>
+<p><strong>鼠标右看到如图说明安装成功了，打开 Git bash here</strong></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/FbARg18aejdJUVO.jpg" alt></p>
+<p><strong>输入 git</strong></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/7qTxPmE6YGFOklK.jpg" alt></p>
+<p><strong>安装 git 结束</strong></p>
 ]]></content>
       <categories>
         <category>计算机科学</category>
@@ -233,129 +228,54 @@ git config --global user.email &quot;aa******56@126.com&quot;
     <url>/2022/03/30/computer-science/hexo/an-zhuang-hexo/</url>
     <content><![CDATA[<h3 id="安装hexo"><a class="markdownIt-Anchor" href="#安装hexo">#</a> 安装 Hexo</h3>
 <ol>
-<li>新建一个 blog 文件夹</li>
-</ol>
-<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/%E5%AE%89%E8%A3%85Hexo/06.jpg" alt="06"></p>
-<ol start="2">
-<li>
-<p>安装 hexo-cli 插件</p>
-<p><code>npm install -g hexo-cli</code></p>
-</li>
-</ol>
-<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/%E5%AE%89%E8%A3%85Hexo/07.jpg" alt="07"></p>
-<ol start="3">
 <li>新建一个仓库</li>
 </ol>
-<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/%E5%AE%89%E8%A3%85Hexo/01.jpg" alt="01"></p>
-<ol start="4">
+<p><img data-src="https://s2.loli.net/2022/03/30/LoeECmrFSydhnIt.jpg" alt></p>
+<ol start="2">
 <li>给仓库起个名，格式为   <code>账号名.github.io</code></li>
 </ol>
-<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/%E5%AE%89%E8%A3%85Hexo/02.jpg" alt="02"></p>
-<ol start="5">
+<p><img data-src="https://tva4.sinaimg.cn/large/0065wfS6ly8h0rslvrth9j31ha0pqq5w.jpg" alt></p>
+<ol start="3">
 <li>打开 stetings</li>
 </ol>
-<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/%E5%AE%89%E8%A3%85Hexo/03.jpg" alt="03"></p>
-<ol start="6">
+<p><img data-src="https://s2.loli.net/2022/03/30/KaQX5eUTYvWp9H6.jpg" alt></p>
+<ol start="4">
 <li>滑到下面，找到这个 GitHub pages ，点击打开</li>
 </ol>
-<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/%E5%AE%89%E8%A3%85Hexo/04.jpg" alt="04"></p>
-<ol start="7">
+<p><img data-src="https://tva3.sinaimg.cn/large/0065wfS6ly8h0rsme8aiaj30p905tmx8.jpg" alt></p>
+<ol start="5">
 <li>出现以下图说明成功了</li>
 </ol>
 <p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/%E5%AE%89%E8%A3%85Hexo/05.jpg" alt="05"></p>
-<ol start="8">
+<ol start="6">
 <li>新建一个 <code>blog</code>  文件夹，在 <code>blog</code>  文件夹打开 <code>git bash here</code></li>
 </ol>
-<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/%E5%AE%89%E8%A3%85Hexo/06.jpg" alt="06"></p>
-<ol start="9">
-<li>
-<p>安装 <code>hexo-cli</code>  插件</p>
+<p><img data-src="https://s2.loli.net/2022/03/30/w8UDo5gxLzbOtiu.jpg" alt>7. 安装 <code>hexo-cli</code>  插件</p>
 <p><code>npm install -g hexo-cli</code></p>
-</li>
+<p><img data-src="https://s2.loli.net/2022/03/30/IHBmwDz6FaGUyVW.jpg" alt></p>
+<ol start="8">
+<li>初始化博客</li>
 </ol>
-<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/%E5%AE%89%E8%A3%85Hexo/07.jpg" alt="07"></p>
-<ol start="10">
-<li>
-<p>初始化博客</p>
 <p><code>hexo init</code></p>
-</li>
-</ol>
-<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/%E5%AE%89%E8%A3%85Hexo/08.jpg" alt="08"></p>
-<ol start="11">
+<p><img data-src="https://s2.loli.net/2022/03/30/X4pArW28NVYmuCa.jpg" alt></p>
+<ol start="9">
 <li>静态部署博客</li>
 </ol>
 <p><code>hexo g</code></p>
-<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/%E5%AE%89%E8%A3%85Hexo/09.jpg" alt="09"></p>
-<ol start="12">
-<li>
-<p>打开本地服务器</p>
-<p><code>hexo s</code></p>
-</li>
+<p><img data-src="https://tva1.sinaimg.cn/large/0065wfS6ly8h0rsqg2bmbj30l20gdtav.jpg" alt="09"></p>
+<ol start="10">
+<li>打开本地服务器</li>
 </ol>
-<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/%E5%AE%89%E8%A3%85Hexo/0901.jpg" alt="0901"></p>
-<ol start="13">
+<p><code>hexo s</code></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/atwxZphQzjf2kTi.jpg" alt></p>
+<ol start="11">
 <li>浏览器输入 <code>localhost:4000</code>  查看</li>
 </ol>
-<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/%E5%AE%89%E8%A3%85Hexo/10.jpg" alt="10"></p>
-<ol start="14">
+<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0rsqxer30j31ha0opdiy.jpg" alt="10"></p>
+<ol start="12">
 <li>ctrl+s，停止本地服务器运行</li>
 </ol>
 <p><strong>目前博客已经基本完成了</strong></p>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>博客</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第九篇：安装主题---从0基础搭建Hexo博客</title>
-    <url>/2022/03/30/computer-science/hexo/an-zhuang-zhu-ti/</url>
-    <content><![CDATA[<h3 id="安装主题"><a class="markdownIt-Anchor" href="#安装主题">#</a> 安装主题</h3>
-<ol>
-<li>
-<p>打开 GitHub 官网，搜索 hexo theme</p>
-<p><img data-src="%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98/01.jpg" alt="01"></p>
-</li>
-<li>
-<p>我这边选择 diaspora 这个</p>
-</li>
-</ol>
-<p><img data-src="%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98/02.jpg" alt="02"></p>
-<ol start="3">
-<li>打开项目，复制安装主题的链接</li>
-</ol>
-<p><img data-src="%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98/03.jpg" alt="03"></p>
-<ol start="4">
-<li>
-<p>在 blog 文件夹下鼠标右键打开 git bash here</p>
-<p><code>$ git clone https://github.com/Fechin/hexo-theme-diaspora.git themes/diaspora</code></p>
-</li>
-</ol>
-<p><img data-src="%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98/04.jpg" alt="04"></p>
-<ol start="5">
-<li>打开 themes 文件夹，看看主题是否有下载了</li>
-</ol>
-<p><img data-src="%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98/0401.jpg" alt="0401"></p>
-<ol start="6">
-<li>主题下好之后打开 <code>_config.yml</code>  文件</li>
-</ol>
-<p><img data-src="%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98/05.jpg" alt="05"></p>
-<ol start="6">
-<li>找到 <code>theme</code> ，修改为 <code>diaspora</code>  (也就是你的主题名，冒号后有一个空格不能省略)</li>
-</ol>
-<p><img data-src="%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98/06.jpg" alt="06"></p>
-<ol start="7">
-<li>再打开 git bash here，输入 <code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code></li>
-</ol>
-<p><img data-src="%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98/07.jpg" alt="07"></p>
-<ol start="8">
-<li>打开你的博客，此时博客已经完全安装好了</li>
-</ol>
-<p><img data-src="%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98/08.jpg" alt="08"></p>
-<p><strong>博客已经漂漂亮亮啦，可以愉快的开始写博客啦</strong></p>
 ]]></content>
       <categories>
         <category>计算机科学</category>
@@ -373,77 +293,132 @@ git config --global user.email &quot;aa******56@126.com&quot;
 <ol>
 <li>我这里安装在 <code>C:\app\nodejs</code></li>
 </ol>
-<p><img data-src="%E5%AE%89%E8%A3%85nodejs/01Node%E8%B7%AF%E5%BE%84.png" alt="01Node路径"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/N2pSe6Oq9BVLjbK.png" alt></p>
 <ol start="2">
 <li>安装完之后打开 <code>cmd</code> ，输入 <code>node -v</code>  和 <code>npm -v</code></li>
 </ol>
-<p><img data-src="%E5%AE%89%E8%A3%85nodejs/05cmd.jpg" alt="05cmd"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/Cln8IqXUAWwdMBK.jpg" alt></p>
 <h4 id="二-设置npm在安装全局模块时的路径和环境变量"><a class="markdownIt-Anchor" href="#二-设置npm在安装全局模块时的路径和环境变量">#</a> 二、设置 npm 在安装全局模块时的路径和环境变量</h4>
 <p>如果不设置的话，安装模块是默认在 C 盘的，会占用 C 盘空间，我这边把安装路径修改一下，建议你也改一下。</p>
 <ol>
 <li>
 <p>在 <code>nodejs</code>  下创建两个目录 <code>ndoe_cache</code>  和 <code>node_global</code></p>
-<p><img data-src="%E5%AE%89%E8%A3%85nodejs/02%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9.png" alt="02创建文件夹"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/il5vILhOF76qTRs.png" alt></p>
 </li>
 <li>
 <p>选择 node_cache 右击打开属性，把权限下的 “完全控制” 选上</p>
 </li>
 </ol>
-<p><img data-src="%E5%AE%89%E8%A3%85nodejs/03%E6%96%87%E4%BB%B6%E5%A4%B9%E6%9D%83%E9%99%90%E4%BF%AE%E6%94%B9.png" alt="03文件夹权限修改"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/o8THeYdwjvLzSmb.png" alt></p>
 <ol start="3">
 <li>同理，选择 node_global 右击打开属性，把权限下的 “完全控制” 也选上</li>
 </ol>
-<p><img data-src="%E5%AE%89%E8%A3%85nodejs/04.jpg" alt="04"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/iETUhyYIKm7q9FL.jpg" alt></p>
 <ol start="4">
 <li>复制 node_global 和 node_cache 的路径</li>
 </ol>
-<p><img data-src="%E5%AE%89%E8%A3%85nodejs/06.jpg" alt="06"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/Aw8O2gfGHMUWeku.jpg" alt></p>
 <ol start="5">
 <li>然后再返回刚刚打开的 cmd, 输入以下代码</li>
 </ol>
 <p><code>npm config set prefix &quot;C:\app\nodejs\node_global&quot;</code></p>
 <p><code>npm config set cache &quot;C:\app\nodejs\node_cache&quot;</code></p>
-<p><img data-src="%E5%AE%89%E8%A3%85nodejs/07%E8%AE%BE%E7%BD%AE%E8%B7%AF%E5%BE%84.jpg" alt="07设置路径"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/piUmIH6Zv9SO8c3.jpg" alt></p>
 <ol start="6">
 <li>
 <p>设置完路径之后，我们还要去系统环境变量修改一下</p>
 <p><strong>打开桌面 —&gt; 此电脑 —&gt; 属性 —&gt; 高级系统设置 —&gt; 环境变量</strong></p>
 </li>
 </ol>
-<p><img data-src="%E5%AE%89%E8%A3%85nodejs/08%E5%B1%9E%E6%80%A7.jpg" alt="08属性"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/FyrUTcpvfkuGBAP.jpg" alt></p>
 <ol start="7">
 <li>打开高级系统设置</li>
 </ol>
-<p><img data-src="%E5%AE%89%E8%A3%85nodejs/09%E9%AB%98%E7%BA%A7.jpg" alt="09高级"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/QvpAOLeS53EbMj9.jpg" alt></p>
 <ol start="8">
 <li>打开环境变量</li>
 </ol>
-<p><img data-src="%E5%AE%89%E8%A3%85nodejs/10%E7%8E%AF%E5%A2%83.jpg" alt="10环境"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/xVQKP2vjLJ83ztU.jpg" alt></p>
 <ol start="9">
 <li>在系统变量中新建一个变量，名为 <code>NODE_PATH</code> , 值为 <code>C:\app\nodejs\node_global\node_modules</code></li>
 </ol>
-<p><img data-src="%E5%AE%89%E8%A3%85nodejs/11%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8F%98%E9%87%8F.jpg" alt="11新建一个变量"></p>
-<p><img data-src="%E5%AE%89%E8%A3%85nodejs/12.jpg" alt="12"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/53jV6FgzIcTXSM8.jpg" alt></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/Ust62PMjuSJ9iWw.jpg" alt></p>
 <ol start="10">
 <li>然后编辑上方的用户变量的 Path, 编辑修改为 <code>C:\app\nodejs\node_global</code></li>
 </ol>
-<p><img data-src="%E5%AE%89%E8%A3%85nodejs/13%E7%BC%96%E8%BE%91.jpg" alt="13编辑"></p>
-<p><img data-src="%E5%AE%89%E8%A3%85nodejs/14.jpg" alt="14"></p>
-<p><img data-src="%E5%AE%89%E8%A3%85nodejs/15.jpg" alt="15"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/btcT8qOj6dkENLX.jpg" alt></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/dnw9lCxOqj1GAH2.jpg" alt></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/nYmStTyWgz4bejo.jpg" alt></p>
 <h4 id="三-全部变量修改结果如下图"><a class="markdownIt-Anchor" href="#三-全部变量修改结果如下图">#</a> 三、全部变量修改结果，如下图</h4>
-<p><img data-src="%E5%AE%89%E8%A3%85nodejs/16.jpg" alt="16"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/HUSnKtdhMBgvcOq.jpg" alt></p>
 <ol>
 <li>然后打开 <code>cmd</code>  测试一下路径设置和环境变量有没有设置正确，如果没有设置正确的话，在 <code>node_global</code>  是看不到有 <code>webpack</code>  文件夹的</li>
 </ol>
 <p><strong>安装过程</strong></p>
-<p><img data-src="%E5%AE%89%E8%A3%85nodejs/17%E4%B8%8B%E8%BD%BD%E8%BF%87%E7%A8%8B.jpg" alt="17下载过程"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/FY1g5nJesScwHvC.jpg" alt></p>
 <p><strong>安装成功</strong></p>
-<p><img data-src="%E5%AE%89%E8%A3%85nodejs/18.jpg" alt="18"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/8H7v1uoA3zn9WKs.jpg" alt></p>
 <ol start="2">
 <li>出现以下路径说明安装成功了 <code>node_global---&gt;node_modules---&gt;webpack</code></li>
 </ol>
-<p><img data-src="%E5%AE%89%E8%A3%85nodejs/19%E5%AE%89%E8%A3%85%E6%A8%A1%E5%9D%97%E5%AE%8C%E6%88%90.jpg" alt="19安装模块完成"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/ugOVX3WGfpZ9DqP.jpg" alt></p>
 <p><strong>nodejs 环境配置到此就完成啦</strong></p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第九篇：安装主题---从0基础搭建Hexo博客</title>
+    <url>/2022/03/30/computer-science/hexo/an-zhuang-zhu-ti/</url>
+    <content><![CDATA[<h3 id="安装主题"><a class="markdownIt-Anchor" href="#安装主题">#</a> 安装主题</h3>
+<ol>
+<li>
+<p>打开 GitHub 官网，搜索 hexo theme</p>
+<p><img data-src="https://s2.loli.net/2022/03/30/WgwRFXd4k1rOljn.jpg" alt></p>
+</li>
+<li>
+<p>我这边选择 diaspora 这个</p>
+</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/jqtLnIyD3UTrQJo.jpg" alt></p>
+<ol start="3">
+<li>打开项目，复制安装主题的链接</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/s9Fc15hAwPbUdpn.jpg" alt></p>
+<ol start="4">
+<li>
+<p>在 blog 文件夹下鼠标右键打开 git bash here</p>
+<p><code>$ git clone https://github.com/Fechin/hexo-theme-diaspora.git themes/diaspora</code></p>
+</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/VHYUXteDcQiSd89.jpg" alt></p>
+<ol start="5">
+<li>打开 themes 文件夹，看看主题是否有下载成功</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/2EV3nMIsKp5ozmJ.jpg" alt></p>
+<ol start="6">
+<li>主题下好之后打开 <code>_config.yml</code>  文件配置主题</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/NGtOr3hjyQYU1fe.jpg" alt></p>
+<ol start="6">
+<li>找到 <code>theme</code> ，修改为 <code>diaspora</code>  (也就是你的主题名，冒号后有一个空格不能省略)</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/wYXrnUu58TMZ1DA.jpg" alt></p>
+<ol start="7">
+<li>再打开 git bash here，输入 <code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code></li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/SN1VlxAIpaFW5Lz.jpg" alt></p>
+<ol start="8">
+<li>打开你的博客，此时博客已经完全安装好了</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/6QznLrvacCsXjZT.jpg" alt></p>
+<p><strong>博客已经漂漂亮亮了，可以愉快的开始写博客啦</strong></p>
 ]]></content>
       <categories>
         <category>计算机科学</category>
@@ -460,43 +435,43 @@ git config --global user.email &quot;aa******56@126.com&quot;
 <ol>
 <li>打开 <code>blog</code>  文件夹，打开 <code>_config.yml</code>  文件</li>
 </ol>
-<p><img data-src="%E5%B0%86%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0Github/01.jpg" alt="01"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/XsNufKGeyItOwnB.jpg" alt></p>
 <ol start="2">
 <li>滑到最下面找到如图</li>
 </ol>
-<p><img data-src="%E5%B0%86%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0Github/02.jpg" alt="02"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/heHXcG2u1anBOAI.jpg" alt></p>
 <ol start="3">
-<li>打开仓库 —&gt;code—&gt;SSH—&gt;copy，复制 SSH 的链接</li>
-</ol>
-<p><img data-src="%E5%B0%86%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0Github/0201.jpg" alt="0201"></p>
-<ol start="4">
+<li>
+<p>打开仓库 —&gt;code—&gt;SSH—&gt;copy，复制 SSH 的链接</p>
+<p><img data-src="https://s2.loli.net/2022/03/30/ewWNlivjaSzXo2f.jpg" alt></p>
+</li>
 <li>
 <p>填到步骤 2 的文件中。如下图</p>
 <p><code>deploy:   type: git   repo: git@github.com:aliang518/aliang518.github.io.git   brach: master</code></p>
 </li>
 </ol>
-<p><img data-src="%E5%B0%86%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0Github/07.jpg" alt="07"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/KECJTU4Hah95gvr.jpg" alt></p>
 <ol start="5">
 <li>
 <p>回到 blog 文件夹中，鼠标右键打开 git bash here，安装 git 部署插件</p>
 <p><code>npm install hexo-deployer-git --save</code></p>
 </li>
 </ol>
-<p><img data-src="%E5%B0%86%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0Github/03.jpg" alt="03"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/3bDkNml7QBJVR6C.jpg" alt></p>
 <ol start="6">
 <li>
-<p>依次输入以下三条命令</p>
+<p>依次输入以下三条命令，</p>
 <p><code>hexo clean </code></p>
 <p><code>hexo g</code></p>
 <p><code>hexo d</code></p>
 </li>
 </ol>
-<p><img data-src="%E5%B0%86%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0Github/05.jpg" alt="05"></p>
-<p><img data-src="%E5%B0%86%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0Github/06.jpg" alt="06"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/gucNPIbDdVnfw9v.jpg" alt></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/ROfaZgmzFwec1ND.jpg" alt></p>
 <ol start="7">
 <li>这是浏览器打开 <code>https://aliang518.github.io/</code>  就是你的博客了</li>
 </ol>
-<p><img data-src="%E5%B0%86%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0Github/08.jpg" alt="08"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/VeGUNhMdplYP5rz.jpg" alt></p>
 ]]></content>
       <categories>
         <category>计算机科学</category>
@@ -510,19 +485,19 @@ git config --global user.email &quot;aa******56@126.com&quot;
     <title>第一篇：注册github---从0基础搭建Hexo博客</title>
     <url>/2022/03/30/computer-science/hexo/zhu-ce-github/</url>
     <content><![CDATA[<h3 id="注册github"><a class="markdownIt-Anchor" href="#注册github">#</a> 注册 GitHub</h3>
-<p><img data-src="%E6%B3%A8%E5%86%8Cgithub/01.jpg" alt="01"></p>
-<p><img data-src="%E6%B3%A8%E5%86%8Cgithub/02.jpg" alt="02"></p>
-<p><img data-src="%E6%B3%A8%E5%86%8Cgithub/03%E5%AF%86%E7%A0%81.jpg" alt="03密码"></p>
-<p><img data-src="%E6%B3%A8%E5%86%8Cgithub/04.jpg" alt="04"></p>
-<p><img data-src="%E6%B3%A8%E5%86%8Cgithub/05.jpg" alt="05"></p>
-<p><img data-src="%E6%B3%A8%E5%86%8Cgithub/06.jpg" alt="06"></p>
-<p><img data-src="%E6%B3%A8%E5%86%8Cgithub/07.jpg" alt="07"></p>
-<p><img data-src="%E6%B3%A8%E5%86%8Cgithub/08.jpg" alt="08"></p>
-<p><img data-src="%E6%B3%A8%E5%86%8Cgithub/09.jpg" alt="09"></p>
-<p><img data-src="%E6%B3%A8%E5%86%8Cgithub/10.jpg" alt="10"></p>
-<p><img data-src="%E6%B3%A8%E5%86%8Cgithub/11.jpg" alt="11"></p>
-<p><img data-src="%E6%B3%A8%E5%86%8Cgithub/12.jpg" alt="12"></p>
-<p><img data-src="%E6%B3%A8%E5%86%8Cgithub/13.jpg" alt="13"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/BULpyk6thPbgJCD.jpg" alt></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/fo8wzF7dvqNHaB4.jpg" alt></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/aXwyhW3KM8cxYCb.jpg" alt></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/RN62GDFVQU1YKB3.jpg" alt></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/JzFGeTjb7BHKSQD.jpg" alt></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/48GA7g1N2VacpJl.jpg" alt></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/uN8PBgwFWOlApfU.jpg" alt></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/shHQtoZVwcPrz2I.jpg" alt></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/aZSU1FnDumqY2M7.jpg" alt></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/PhUtuCQNlLHXAdG.jpg" alt></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/pk9Gyi28uTFrXZY.jpg" alt></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/8tjJkrGRb3NBsEW.jpg" alt></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/FVivdNY8BLUfcSR.jpg" alt></p>
 ]]></content>
       <categories>
         <category>计算机科学</category>
@@ -539,71 +514,71 @@ git config --global user.email &quot;aa******56@126.com&quot;
 <ol>
 <li>
 <p>打开你的博客，复制你博客的网址</p>
-<p><img data-src="%E8%A7%A3%E6%9E%90%E5%9F%9F%E5%90%8D/0001.jpg" alt="0001"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/uV5sJkaBmqiRQcD.jpg" alt></p>
 </li>
 <li>
 <p>ctrl+R，打开 CMD ,ping 你的博客网址不要 https://，并复制 IP 地址</p>
 <p><code> ping aliang518.github.io</code></p>
-<p><img data-src="%E8%A7%A3%E6%9E%90%E5%9F%9F%E5%90%8D/0002.jpg" alt="0002"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/rYfdlxjLIZau8Ks.jpg" alt></p>
 </li>
 <li>
 <p>打开<span class="exturl" data-url="aHR0cHM6Ly93YW53YW5nLmFsaXl1bi5jb20v">万网</span>，支付宝登录</p>
-<p><img data-src="%E8%A7%A3%E6%9E%90%E5%9F%9F%E5%90%8D/01.jpg" alt="01"></p>
-<p><img data-src="%E8%A7%A3%E6%9E%90%E5%9F%9F%E5%90%8D/02.jpg" alt="02"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/TurKz1nhG76RAs8.jpg" alt></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/Ygtbio2C5ehcZRW.jpg" alt></p>
 </li>
 <li>
 <p>打开控制台</p>
 </li>
 </ol>
-<p><img data-src="%E8%A7%A3%E6%9E%90%E5%9F%9F%E5%90%8D/03.jpg" alt="03"></p>
-<ol start="6">
+<p><img data-src="https://s2.loli.net/2022/03/30/e1SfM9CzU3b5il7.jpg" alt></p>
+<ol start="5">
 <li></li>
 </ol>
-<p><img data-src="%E8%A7%A3%E6%9E%90%E5%9F%9F%E5%90%8D/04.jpg" alt="04"></p>
-<ol start="7">
+<p><img data-src="https://s2.loli.net/2022/03/30/uep3jrhgKPLW8w1.jpg" alt></p>
+<ol start="6">
 <li>打开域名</li>
 </ol>
-<p><img data-src="%E8%A7%A3%E6%9E%90%E5%9F%9F%E5%90%8D/05.jpg" alt="05"></p>
-<ol start="8">
+<p><img data-src="https://s2.loli.net/2022/03/30/d4KxbkcSownO8vl.jpg" alt></p>
+<ol start="7">
 <li>域名列表</li>
 </ol>
-<p><img data-src="%E8%A7%A3%E6%9E%90%E5%9F%9F%E5%90%8D/06.jpg" alt="06"></p>
-<ol start="9">
+<p><img data-src="https://s2.loli.net/2022/03/30/sz5CW2QUeD3ZXdR.jpg" alt></p>
+<ol start="8">
 <li>点击解析</li>
 </ol>
-<p><img data-src="%E8%A7%A3%E6%9E%90%E5%9F%9F%E5%90%8D/07.jpg" alt="07"></p>
-<ol start="10">
+<p><img data-src="https://s2.loli.net/2022/03/30/bC6k4saZ35SJGPy.jpg" alt></p>
+<ol start="9">
 <li>添加记录</li>
 </ol>
-<p><img data-src="%E8%A7%A3%E6%9E%90%E5%9F%9F%E5%90%8D/08.jpg" alt="08"></p>
-<ol start="11">
+<p><img data-src="https://s2.loli.net/2022/03/30/ec91KAoiDsPMEzB.jpg" alt></p>
+<ol start="10">
 <li>在 cmd 复制的 ip 地址粘贴上去</li>
 </ol>
-<p><img data-src="%E8%A7%A3%E6%9E%90%E5%9F%9F%E5%90%8D/09.jpg" alt="09"></p>
-<ol start="12">
+<p><img data-src="https://s2.loli.net/2022/03/30/exACJOLdHjKiTuY.jpg" alt></p>
+<ol start="11">
 <li>再次添加记录</li>
 </ol>
-<p><img data-src="%E8%A7%A3%E6%9E%90%E5%9F%9F%E5%90%8D/10.jpg" alt="10"></p>
-<ol start="13">
+<p><img data-src="https://s2.loli.net/2022/03/30/ILAd5kUt4FOeSPh.jpg" alt></p>
+<ol start="12">
 <li>启动</li>
 </ol>
-<p><img data-src="%E8%A7%A3%E6%9E%90%E5%9F%9F%E5%90%8D/11.jpg" alt="11"></p>
-<ol start="14">
+<p><img data-src="https://s2.loli.net/2022/03/30/xC2EAWP9n1uNyHF.jpg" alt></p>
+<ol start="13">
 <li>打开 blog 下的 source 文件夹，创建一个文件名为 <code>CNAME</code> ，没有后缀的文件</li>
 </ol>
-<p><img data-src="%E8%A7%A3%E6%9E%90%E5%9F%9F%E5%90%8D/12.jpg" alt="12"></p>
-<ol start="15">
+<p><img data-src="https://s2.loli.net/2022/03/30/sprnbtxY7GLHawd.jpg" alt></p>
+<ol start="14">
 <li>在 CNAME 文件里面填入你购买的域名</li>
 </ol>
-<p><img data-src="%E8%A7%A3%E6%9E%90%E5%9F%9F%E5%90%8D/13.jpg" alt="13"></p>
-<ol start="16">
+<p><img data-src="https://s2.loli.net/2022/03/30/SrZdm4P7NinQpCg.jpg" alt></p>
+<ol start="15">
 <li>在 blog 下打开 git bash here ，输入 <code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code></li>
 </ol>
-<p><img data-src="%E8%A7%A3%E6%9E%90%E5%9F%9F%E5%90%8D/14.jpg" alt="14"></p>
-<ol start="17">
+<p><img data-src="https://s2.loli.net/2022/03/30/57FqvMVflem3UEs.jpg" alt></p>
+<ol start="16">
 <li>浏览器打开你的域名。域名解析成功</li>
 </ol>
-<p><img data-src="%E8%A7%A3%E6%9E%90%E5%9F%9F%E5%90%8D/15.jpg" alt="15"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/HIRYhTNcgpdJjmr.jpg" alt></p>
 ]]></content>
       <categories>
         <category>计算机科学</category>
@@ -664,24 +639,25 @@ git config --global user.email &quot;aa******56@126.com&quot;
 <ol>
 <li>我这里使用的是支付宝登录</li>
 </ol>
-<p><img data-src="%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D/00.jpg" alt="00"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/rygEU1BWAnlkHLw.jpg" alt></p>
 <h4 id="二-输入域名"><a class="markdownIt-Anchor" href="#二-输入域名">#</a> 二、输入域名</h4>
 <ol start="2">
 <li>输入自己想要的域名，搜索</li>
 </ol>
-<p><img data-src="%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D/01.jpg" alt="01"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/4CnXuINvtWgTe7Q.jpg" alt></p>
 <ol start="3">
-<li>将想购买的域名加入清单</li>
+<li>
+<p><img data-src="https://s2.loli.net/2022/03/30/YVbD4TrPzAklFti.jpg" alt></p>
+</li>
+<li>
+<p>点击立即购买</p>
+</li>
 </ol>
-<p><img data-src="%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D/02%E5%8A%A0%E5%85%A5%E6%B8%85%E5%8D%95.jpg" alt="02加入清单"></p>
-<ol start="4">
-<li>点击立即购买</li>
-</ol>
-<p><img data-src="%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D/03.jpg" alt="03"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/DeVr86NbnHGTs2d.jpg" alt></p>
 <ol start="5">
 <li>选择年限</li>
 </ol>
-<p><img data-src="%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D/04%E9%80%89%E6%8B%A9%E5%B9%B4%E9%99%90.jpg" alt="04选择年限"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/cWOQ3Lakhi8V2Kt.jpg" alt></p>
 <ol start="6">
 <li>将域名持有者选为 “个人”</li>
 <li>新建信息模板</li>
@@ -689,16 +665,16 @@ git config --global user.email &quot;aa******56@126.com&quot;
 <li>验证邮箱 (点击 <code>去验证</code> )</li>
 <li>立即购买</li>
 </ol>
-<p><img data-src="%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D/05.jpg" alt="05"></p>
-<p><img data-src="%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D/06%E6%A8%A1%E6%9D%BF.jpg" alt="06模板"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/ykFrIJputCAawbq.jpg" alt></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/93TRVgPZxYrnhA7.jpg" alt></p>
 <ol start="11">
 <li>支付成功，点击进入域名控制台</li>
 </ol>
-<p><img data-src="%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D/07.jpg" alt="07"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/Q1JWYLqxVKmCshf.jpg" alt></p>
 <ol start="12">
 <li>等待审核。(我这边审核大概半小时就好了)</li>
 </ol>
-<p><img data-src="%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D/08.jpg" alt="08"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/KsrTi1u3pqna2Ue.jpg" alt></p>
 ]]></content>
       <categories>
         <category>计算机科学</category>
