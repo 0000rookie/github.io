@@ -56,7 +56,7 @@
 <figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token function">npm</span> <span class="token function">ls</span> -dept <span class="token number">0</span></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>computer-science</category>
-        <category>Hexo</category>
+        <category>博客</category>
         <category>hexo-error</category>
       </categories>
       <tags>
@@ -100,57 +100,11 @@
 ]]></content>
       <categories>
         <category>computer-science</category>
-        <category>Hexo</category>
+        <category>博客</category>
         <category>hexo-error</category>
       </categories>
       <tags>
         <tag>博客</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo怎么安装插件</title>
-    <url>/2022/03/26/c5de56d5.html</url>
-    <content><![CDATA[<hr>
-<h3 id="hexo怎么安装插件"><a class="markdownIt-Anchor" href="#hexo怎么安装插件">#</a> hexo 怎么安装插件</h3>
-<ol>
-<li>
-<p>打开 hexo 的根目录 <code>Blog</code></p>
-</li>
-<li>
-<p>输入安装地址 (此处我以安装 <code>npm i hexo-algoliasearch</code>  测试)</p>
-<figure class="highlight bash"><figcaption data-lang="bash"><span>npm安装</span></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">npm</span> i hexo-algoliasearch</pre></td></tr></table></figure></li>
-<li>
-<p>安装成功</p>
-</li>
-</ol>
-<p><img data-src="https://tva4.sinaimg.cn/large/0065wfS6ly8h0ntxuxa0oj30jo09njsv.jpg" alt="" title="在Blog打开cmd" height="65%" width="65%"></p>
-<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0ntxktk9zj30cr02gjrc.jpg" alt="" title="在cmd输入安装路径" height="65%" width="65%"></p>
-<p><img data-src="https://tva3.sinaimg.cn/large/0065wfS6ly8h0nty14h5oj30lh07s0tg.jpg" alt="" title="END" height="65%" width="65%"></p>
-<h3 id="hexo怎么卸载插件"><a class="markdownIt-Anchor" href="#hexo怎么卸载插件">#</a> Hexo 怎么卸载插件</h3>
-<ol>
-<li>
-<p>卸载也是在 <code>Blog</code>  打开 cmd，输入 <code>npm uninstall 插件名 --save</code>  即可</p>
-</li>
-<li>
-<p>或者简洁一点 <code>npm un 插件名 --save</code></p>
-</li>
-<li>
-<p>举个例子，我要卸载 <code>hexo-renderer-marked</code>  这个插件</p>
-</li>
-<li>
-<p>在 cmd 输入</p>
-<figure class="highlight bash"><figcaption data-lang="bash"><span>h 插件卸载 </span></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">npm</span> un hexo-renderer-marked --save</pre></td></tr></table></figure></li>
-</ol>
-<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0ntxxz7wqj30lk0650t3.jpg" alt="" title="卸载插件" height="75%" width="75%"></p>
-]]></content>
-      <categories>
-        <category>computer-science</category>
-        <category>Hexo</category>
-        <category>modules</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>教程</tag>
       </tags>
   </entry>
   <entry>
@@ -285,7 +239,7 @@
 ]]></content>
       <categories>
         <category>computer-science</category>
-        <category>Hexo</category>
+        <category>博客</category>
         <category>hexo-series</category>
       </categories>
       <tags>
@@ -320,7 +274,7 @@
 ]]></content>
       <categories>
         <category>computer-science</category>
-        <category>Hexo</category>
+        <category>博客</category>
         <category>hexo-series</category>
       </categories>
       <tags>
@@ -384,7 +338,7 @@
 ]]></content>
       <categories>
         <category>computer-science</category>
-        <category>Hexo</category>
+        <category>博客</category>
         <category>hexo-series</category>
       </categories>
       <tags>
@@ -472,7 +426,7 @@
 ]]></content>
       <categories>
         <category>computer-science</category>
-        <category>Hexo</category>
+        <category>博客</category>
         <category>hexo-series</category>
       </categories>
       <tags>
@@ -528,7 +482,7 @@
 ]]></content>
       <categories>
         <category>computer-science</category>
-        <category>Hexo</category>
+        <category>博客</category>
         <category>hexo-series</category>
       </categories>
       <tags>
@@ -581,7 +535,7 @@
 ]]></content>
       <categories>
         <category>computer-science</category>
-        <category>Hexo</category>
+        <category>博客</category>
         <category>hexo-series</category>
       </categories>
       <tags>
@@ -609,7 +563,7 @@
 ]]></content>
       <categories>
         <category>computer-science</category>
-        <category>Hexo</category>
+        <category>博客</category>
         <category>hexo-series</category>
       </categories>
       <tags>
@@ -695,7 +649,7 @@
 <figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tr><td data-num="1"></td><td><pre>aliang.life</pre></td></tr></table></figure>]]></content>
       <categories>
         <category>computer-science</category>
-        <category>Hexo</category>
+        <category>博客</category>
         <category>hexo-series</category>
       </categories>
       <tags>
@@ -751,7 +705,7 @@
 ]]></content>
       <categories>
         <category>computer-science</category>
-        <category>Hexo</category>
+        <category>博客</category>
         <category>hexo-series</category>
       </categories>
       <tags>
@@ -809,8 +763,54 @@
 ]]></content>
       <categories>
         <category>computer-science</category>
-        <category>Hexo</category>
+        <category>博客</category>
         <category>hexo-series</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo怎么安装插件</title>
+    <url>/2022/03/26/c5de56d5.html</url>
+    <content><![CDATA[<hr>
+<h3 id="hexo怎么安装插件"><a class="markdownIt-Anchor" href="#hexo怎么安装插件">#</a> hexo 怎么安装插件</h3>
+<ol>
+<li>
+<p>打开 hexo 的根目录 <code>Blog</code></p>
+</li>
+<li>
+<p>输入安装地址 (此处我以安装 <code>npm i hexo-algoliasearch</code>  测试)</p>
+<figure class="highlight bash"><figcaption data-lang="bash"><span>npm安装</span></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">npm</span> i hexo-algoliasearch</pre></td></tr></table></figure></li>
+<li>
+<p>安装成功</p>
+</li>
+</ol>
+<p><img data-src="https://tva4.sinaimg.cn/large/0065wfS6ly8h0ntxuxa0oj30jo09njsv.jpg" alt="" title="在Blog打开cmd" height="65%" width="65%"></p>
+<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0ntxktk9zj30cr02gjrc.jpg" alt="" title="在cmd输入安装路径" height="65%" width="65%"></p>
+<p><img data-src="https://tva3.sinaimg.cn/large/0065wfS6ly8h0nty14h5oj30lh07s0tg.jpg" alt="" title="END" height="65%" width="65%"></p>
+<h3 id="hexo怎么卸载插件"><a class="markdownIt-Anchor" href="#hexo怎么卸载插件">#</a> Hexo 怎么卸载插件</h3>
+<ol>
+<li>
+<p>卸载也是在 <code>Blog</code>  打开 cmd，输入 <code>npm uninstall 插件名 --save</code>  即可</p>
+</li>
+<li>
+<p>或者简洁一点 <code>npm un 插件名 --save</code></p>
+</li>
+<li>
+<p>举个例子，我要卸载 <code>hexo-renderer-marked</code>  这个插件</p>
+</li>
+<li>
+<p>在 cmd 输入</p>
+<figure class="highlight bash"><figcaption data-lang="bash"><span>h 插件卸载 </span></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">npm</span> un hexo-renderer-marked --save</pre></td></tr></table></figure></li>
+</ol>
+<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0ntxxz7wqj30lk0650t3.jpg" alt="" title="卸载插件" height="75%" width="75%"></p>
+]]></content>
+      <categories>
+        <category>computer-science</category>
+        <category>博客</category>
+        <category>模块</category>
       </categories>
       <tags>
         <tag>博客</tag>

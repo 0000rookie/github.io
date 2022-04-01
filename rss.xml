@@ -29,8 +29,8 @@
             <guid isPermalink="true">https://www.aliang.live/2022/04/02/undefined.html</guid>
             <title>搭建GitHu图床</title>
             <link>https://www.aliang.live/2022/04/02/undefined.html</link>
-            <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-            <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
+            <category term="计算机科学" scheme="https://www.aliang.live/categories/computer-science/" />
+            <category term="博客" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
             <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
             <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
             <pubDate>Sat, 02 Apr 2022 00:09:31 +0800</pubDate>
@@ -41,7 +41,7 @@
             <title>搭建博客常见的错误</title>
             <link>https://www.aliang.live/2022/04/01/cdc2e518.html</link>
             <category term="computer-science" scheme="https://www.aliang.live/categories/computer-science/" />
-            <category term="Hexo" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
+            <category term="博客" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
             <category term="hexo-error" scheme="https://www.aliang.live/categories/computer-science/Hexo/hexo-error/" />
             <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
             <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
@@ -79,7 +79,7 @@
             <title>零基础搭建Hexo个人博客系列</title>
             <link>https://www.aliang.live/2022/03/30/aaad0208.html</link>
             <category term="computer-science" scheme="https://www.aliang.live/categories/computer-science/" />
-            <category term="Hexo" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
+            <category term="博客" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
             <category term="hexo-series" scheme="https://www.aliang.live/categories/computer-science/Hexo/hexo-series/" />
             <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
             <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
@@ -135,7 +135,7 @@
             <title>第九篇：安装主题---从0基础搭建Hexo博客</title>
             <link>https://www.aliang.live/2022/03/30/a5eefddc.html</link>
             <category term="computer-science" scheme="https://www.aliang.live/categories/computer-science/" />
-            <category term="Hexo" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
+            <category term="博客" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
             <category term="hexo-series" scheme="https://www.aliang.live/categories/computer-science/Hexo/hexo-series/" />
             <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
             <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
@@ -189,7 +189,7 @@
             <title>第八篇：解析域名---从0基础搭建Hexo博客</title>
             <link>https://www.aliang.live/2022/03/30/9bf6caef.html</link>
             <category term="computer-science" scheme="https://www.aliang.live/categories/computer-science/" />
-            <category term="Hexo" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
+            <category term="博客" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
             <category term="hexo-series" scheme="https://www.aliang.live/categories/computer-science/Hexo/hexo-series/" />
             <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
             <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
@@ -273,7 +273,7 @@
             <title>第七篇：购买域名---从0基础搭建Hexo博客</title>
             <link>https://www.aliang.live/2022/03/30/6c2393ec.html</link>
             <category term="computer-science" scheme="https://www.aliang.live/categories/computer-science/" />
-            <category term="Hexo" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
+            <category term="博客" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
             <category term="hexo-series" scheme="https://www.aliang.live/categories/computer-science/Hexo/hexo-series/" />
             <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
             <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
@@ -327,7 +327,7 @@
             <title>第六篇：将博客部署到GitHub---从0基础搭建Hexo博客</title>
             <link>https://www.aliang.live/2022/03/30/dc09a46c.html</link>
             <category term="computer-science" scheme="https://www.aliang.live/categories/computer-science/" />
-            <category term="Hexo" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
+            <category term="博客" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
             <category term="hexo-series" scheme="https://www.aliang.live/categories/computer-science/Hexo/hexo-series/" />
             <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
             <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
@@ -378,7 +378,7 @@
             <title>第五篇：安装Hexo---从0基础搭建Hexo博客</title>
             <link>https://www.aliang.live/2022/03/30/87b69652.html</link>
             <category term="computer-science" scheme="https://www.aliang.live/categories/computer-science/" />
-            <category term="Hexo" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
+            <category term="博客" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
             <category term="hexo-series" scheme="https://www.aliang.live/categories/computer-science/Hexo/hexo-series/" />
             <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
             <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
@@ -440,7 +440,7 @@
             <title>第四篇：安装Nodejs---从0基础搭建Hexo博客</title>
             <link>https://www.aliang.live/2022/03/30/cf63c07.html</link>
             <category term="computer-science" scheme="https://www.aliang.live/categories/computer-science/" />
-            <category term="Hexo" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
+            <category term="博客" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
             <category term="hexo-series" scheme="https://www.aliang.live/categories/computer-science/Hexo/hexo-series/" />
             <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
             <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
@@ -526,7 +526,7 @@
             <title>第三篇：Git提交文件---从0基础搭建Hexo博客</title>
             <link>https://www.aliang.live/2022/03/30/b75a1db6.html</link>
             <category term="computer-science" scheme="https://www.aliang.live/categories/computer-science/" />
-            <category term="Hexo" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
+            <category term="博客" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
             <category term="hexo-series" scheme="https://www.aliang.live/categories/computer-science/Hexo/hexo-series/" />
             <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
             <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
@@ -664,7 +664,7 @@
             <title>第二篇：安装Git---从0基础搭建Hexo博客</title>
             <link>https://www.aliang.live/2022/03/30/859f60bd.html</link>
             <category term="computer-science" scheme="https://www.aliang.live/categories/computer-science/" />
-            <category term="Hexo" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
+            <category term="博客" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
             <category term="hexo-series" scheme="https://www.aliang.live/categories/computer-science/Hexo/hexo-series/" />
             <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
             <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
@@ -697,7 +697,7 @@
             <title>第一篇：注册github---从0基础搭建Hexo博客</title>
             <link>https://www.aliang.live/2022/03/30/a6f9d072.html</link>
             <category term="computer-science" scheme="https://www.aliang.live/categories/computer-science/" />
-            <category term="Hexo" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
+            <category term="博客" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
             <category term="hexo-series" scheme="https://www.aliang.live/categories/computer-science/Hexo/hexo-series/" />
             <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
             <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
@@ -723,8 +723,8 @@
             <title>hexo怎么安装插件</title>
             <link>https://www.aliang.live/2022/03/26/c5de56d5.html</link>
             <category term="computer-science" scheme="https://www.aliang.live/categories/computer-science/" />
-            <category term="Hexo" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
-            <category term="modules" scheme="https://www.aliang.live/categories/computer-science/Hexo/modules/" />
+            <category term="博客" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
+            <category term="模块" scheme="https://www.aliang.live/categories/computer-science/Hexo/%E6%A8%A1%E5%9D%97/" />
             <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
             <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
             <pubDate>Sat, 26 Mar 2022 18:33:07 +0800</pubDate>
@@ -767,7 +767,7 @@
             <title>设置域名后样式失效</title>
             <link>https://www.aliang.live/2022/03/26/734352ba.html</link>
             <category term="computer-science" scheme="https://www.aliang.live/categories/computer-science/" />
-            <category term="Hexo" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
+            <category term="博客" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
             <category term="hexo-error" scheme="https://www.aliang.live/categories/computer-science/Hexo/hexo-error/" />
             <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
             <pubDate>Sat, 26 Mar 2022 16:03:13 +0800</pubDate>
