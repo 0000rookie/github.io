@@ -10,8 +10,8 @@
         </author>
         <description>aliang</description>
         <language>zh-CN</language>
-        <pubDate>Fri, 01 Apr 2022 16:21:38 +0800</pubDate>
-        <lastBuildDate>Fri, 01 Apr 2022 16:21:38 +0800</lastBuildDate>
+        <pubDate>Sat, 02 Apr 2022 00:09:31 +0800</pubDate>
+        <lastBuildDate>Sat, 02 Apr 2022 00:09:31 +0800</lastBuildDate>
         <category term="web安全" />
         <category term="笔记" />
         <category term="web" />
@@ -25,6 +25,17 @@
         <category term="后端" />
         <category term="markdown" />
         <category term="搭建个人博客" />
+        <item>
+            <guid isPermalink="true">https://www.aliang.live/2022/04/02/undefined.html</guid>
+            <title>搭建GitHu图床</title>
+            <link>https://www.aliang.live/2022/04/02/undefined.html</link>
+            <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+            <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
+            <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
+            <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
+            <pubDate>Sat, 02 Apr 2022 00:09:31 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://www.aliang.live/2022/04/01/cdc2e518.html</guid>
             <title>搭建博客常见的错误</title>

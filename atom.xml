@@ -8,7 +8,7 @@
     <author>
       <name>吴小白</name>
     </author>
-    <updated>2022-04-01T08:21:38.000Z</updated>
+    <updated>2022-04-01T16:09:31.000Z</updated>
     <category term="web安全" />
     <category term="笔记" />
     <category term="web" />
@@ -22,6 +22,17 @@
     <category term="后端" />
     <category term="markdown" />
     <category term="搭建个人博客" />
+    <entry>
+        <id>https://www.aliang.live/2022/04/02/undefined.html</id>
+        <title>搭建GitHu图床</title>
+        <link rel="alternate" href="https://www.aliang.live/2022/04/02/undefined.html"/>
+        <content type="html"></content>
+        <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+        <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
+        <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
+        <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
+        <updated>2022-04-01T16:09:31.000Z</updated>
+    </entry>
     <entry>
         <id>https://www.aliang.live/2022/04/01/cdc2e518.html</id>
         <title>搭建博客常见的错误</title>
