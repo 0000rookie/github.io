@@ -24,7 +24,7 @@
 <link rel="stylesheet" href="/css/app.css?v=0.2.5">
 
   
-  <meta name="keywords" content="博客" />
+  <meta name="keywords" content="博客,教程" />
 
 
 <link rel="canonical" href="https://www.aliang.live/2022/03/30/b75a1db6.html">
@@ -32,7 +32,7 @@
 
 
   <title>
-第三篇：Git提交文件---从0基础搭建Hexo博客 - Hexo - computer-science |
+第三篇：Git提交文件---从0基础搭建Hexo博客 - hexo-series - Hexo - computer-science |
 aliang = 阿亮の博客 = 阿亮的个人网站</title>
 <meta name="generator" content="Hexo 6.1.0"></head>
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -117,12 +117,12 @@ aliang = 阿亮の博客 = 阿亮的个人网站</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclg5ms2rj20zk0m8u0x.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giph4lm9i7j20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipey0a334j20zk0m8qpt.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeuibk9fj20zk0m8ay2.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeybxm1pj20zk0m8niv.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipewf5l51j20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipewr8iypj20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeun65urj20zk0m81ii.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclflwv2aj20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giciukx8a7j20zk0m8aio.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giciuja1j1j20zk0m8kjl.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicm0n457cj20zk0m8e81.jpg"></li>
         </ul>
       </div>
     </header>
@@ -151,8 +151,11 @@ aliang = 阿亮の博客 = 阿亮的个人网站</title>
 <span  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/computer-science/" itemprop="item" rel="index" title="分类于 computer-science"><span itemprop="name">computer-science</span></a>
 <meta itemprop="position" content="1" /></span>
 <i class="ic i-angle-right"></i>
-<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/computer-science/Hexo/" itemprop="item" rel="index" title="分类于 Hexo"><span itemprop="name">Hexo</span></a>
+<span  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/computer-science/Hexo/" itemprop="item" rel="index" title="分类于 Hexo"><span itemprop="name">Hexo</span></a>
 <meta itemprop="position" content="2" /></span>
+<i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/computer-science/Hexo/hexo-series/" itemprop="item" rel="index" title="分类于 hexo-series"><span itemprop="name">hexo-series</span></a>
+<meta itemprop="position" content="3" /></span>
 </div>
 
     <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
@@ -178,33 +181,32 @@ aliang = 阿亮の博客 = 阿亮的个人网站</title>
 <p><strong>我们要用 git 上传文件到 GitHub 首先得利用 SSH 登录远程主机，而登录方式有两种：一种是口令登录；另一种是公钥登录。口令登录每次都要输入密码十分麻烦，而公钥登录就省去了输入密码的步骤，所以我们选择公钥授权。首先我们得在 GitHub 上添加 SSH key 配置，要想生成 SSH key，就要先安装 SSH，不过我们安装了 Git Bash，其应该自带了 SSH。检验一下是否安装 SSH，我们在新建的文件夹中右键打开 Git Bash：</strong></p>
 <ol>
 <li>
-<p>新建一个文件夹 text</p>
+<p>新建一个文件夹 ``text`</p>
 <p><img data-src="https://s2.loli.net/2022/03/30/Jz1dTG6SPkwlQ5p.jpg" alt=""></p>
 </li>
 <li>
-<p>鼠标右击打开 git Bash Here</p>
+<p>鼠标右击打开 <code>git Bash Here</code></p>
 <p><img data-src="https://s2.loli.net/2022/03/30/Jz1dTG6SPkwlQ5p.jpg" alt=""></p>
 </li>
 <li>
-<p>输入 ssh 检查使是否安装 ssh</p>
-</li>
+<p>输入 <code>ssh</code>  检查使是否安装 <code>ssh</code></p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>ssh-keygen -t rsa</pre></td></tr></table></figure></li>
 </ol>
 <p><img data-src="https://s2.loli.net/2022/03/30/8RcNpfrZ2PEjtA7.jpg" alt=""></p>
 <ol start="4">
 <li>
-<p>输入 ssh-keygen -t rsa 命令，表示 RSA 算法生成密钥，然后敲 4 次回车键，之后会生成两个文件，分别为密钥 id_rsa 和公钥 id_rsa.pub</p>
-<p><code>ssh-keygen -t rsa</code></p>
-</li>
+<p>输入  <code>ssh-keygen -t rsa</code>  命令，表示 <code>RSA</code>  算法生成密钥，然后敲 4 次回车键，之后会生成两个文件，分别为密钥 <code>id_rsa</code>  和公钥 <code>id_rsa.pub</code></p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>ssh-keygen -t rsa</pre></td></tr></table></figure></li>
 </ol>
 <p><img data-src="https://s2.loli.net/2022/03/30/K3mfVxdr54IvaLJ.jpg" alt=""></p>
 <p><img data-src="https://s2.loli.net/2022/03/30/9fNDbOAVUBeWd8G.jpg" alt=""></p>
-<p><strong>接下来我们要做的事情就是把公钥 id_rsa.pub 的内容添加到 GitHub。复制公钥 id_rsa.pub 文件里的内容，你可以通过目录找到 id_rsa.pub 文件的位置，用记事本打开文件复制。</strong></p>
+<p><strong>接下来我们要做的事情就是把公钥 <code>id_rsa.pub</code>  的内容添加到 <code> GitHub</code> 。复制公钥  <code>id_rsa.pub</code>  文件里的内容，你可以通过目录找到  <code>id_rsa.pub</code>  文件的位置，用记事本打开文件复制。</strong></p>
 <ol start="5">
-<li>打开 id_rsa.pub 文件复制</li>
+<li>打开  <code>id_rsa.pub</code>  文件复制</li>
 </ol>
 <p><img data-src="https://s2.loli.net/2022/03/30/s39ZxPGuTDJLmwF.jpg" alt=""></p>
 <ol start="6">
-<li>打开 github—&gt;settings—&gt;SSH and GPG keys—&gt;New SSH key</li>
+<li>打开 <code>github---&gt;settings---&gt;SSH and GPG keys---&gt;New SSH key</code></li>
 </ol>
 <p><img data-src="https://s2.loli.net/2022/03/30/LhUzwCNnZGOXDl9.jpg" alt=""></p>
 <p><img data-src="https://s2.loli.net/2022/03/30/4vtGl98ehjRWKJd.jpg" alt=""></p>
@@ -212,8 +214,8 @@ aliang = 阿亮の博客 = 阿亮的个人网站</title>
 <p><img data-src="https://s2.loli.net/2022/03/30/i1b3hoFvzPWcUje.jpg" alt=""></p>
 <p><strong>添加成功</strong></p>
 <p><img data-src="https://s2.loli.net/2022/03/30/h7npjw9I8qOBaXA.jpg" alt=""></p>
-<p><strong>验证是否成功，在 Git Bash 中输入 <code> ssh -T git@github.com</code>  验证</strong></p>
-<p>首次需要输入 <code>yes</code></p>
+<p><strong>验证是否成功，在 <code>Git Bash</code>  中输入 <code> ssh -T git@github.com</code>  验证</strong></p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">ssh</span> -T git@github.com</pre></td></tr></table></figure><p>首次需要输入 <code>yes</code></p>
 <p><img data-src="https://s2.loli.net/2022/03/30/EHSFLzxKoIavPcr.jpg" alt=""></p>
 <h4 id="二-接下来是提交文件"><a class="markdownIt-Anchor" href="#二-接下来是提交文件">#</a> 二、接下来是提交文件</h4>
 <ol>
@@ -225,22 +227,21 @@ aliang = 阿亮の博客 = 阿亮的个人网站</title>
 </ol>
 <p><img data-src="https://s2.loli.net/2022/03/30/zsE5a7B3KrliXny.jpg" alt=""></p>
 <ol start="3">
-<li>复制仓库 HTTPS 链接</li>
+<li>复制仓库 <code>HTTPS</code>  链接</li>
 </ol>
 <p><img data-src="https://s2.loli.net/2022/03/30/YVpZtKBoWgPbzme.jpg" alt=""></p>
 <ol start="4">
 <li>
-<p>将仓库 text 仓库 clone 到本地仓库，返回刚刚 Git 的窗口，输入 <code>git clone 链接</code> 。</p>
-<p><code>$ git clone https://github.com/aliang518/text.git</code></p>
-</li>
+<p>将 <code>text</code>  仓库 <code>clone</code>  到本地仓库，返回刚刚 <code>Git</code>  的窗口，输入 <code>git clone 链接</code> 。</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">git</span> clone https://github.com/aliang518/text.git</pre></td></tr></table></figure></li>
 </ol>
 <p><img data-src="https://s2.loli.net/2022/03/30/6KVx9MoJ48mE25k.jpg" alt=""></p>
 <ol start="5">
-<li>打开刚刚在电脑新建的 text 文件夹是不是存在一个 GitHub 上名为的 text 仓库</li>
+<li>打开刚刚在电脑新建的 <code>text</code>  文件夹是不是存在一个 <code>GitHub</code>  上名为的 <code>text</code>  仓库</li>
 </ol>
 <p><img data-src="https://s2.loli.net/2022/03/30/b7dHYj5e3lCxypg.jpg" alt=""></p>
 <ol start="6">
-<li>查看 text 仓库是不是和 GitHub 的仓库内容一样</li>
+<li>查看 <code>text</code>  仓库是不是和 <code>GitHub</code>  的仓库内容一样</li>
 </ol>
 <p><img data-src="https://s2.loli.net/2022/03/30/g6nQxiVeCzubkNj.jpg" alt=""></p>
 <ol start="7">
@@ -249,51 +250,45 @@ aliang = 阿亮の博客 = 阿亮的个人网站</title>
 <p><img data-src="https://s2.loli.net/2022/03/30/2emTn6GyiqSZIba.jpg" alt=""></p>
 </li>
 <li>
-<p>在此文件夹下进入 Git Bash Here</p>
+<p>在此文件夹下进入 <code>Git Bash Here</code></p>
 </li>
 </ol>
 <p><img data-src="https://s2.loli.net/2022/03/30/7bi2eu8FNYTltd1.jpg" alt=""></p>
 <ol start="9">
 <li>
 <p>输入 <code>git status</code>  命令查看仓库状态</p>
-<p><code>git status</code></p>
-</li>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">git</span> status</pre></td></tr></table></figure></li>
 </ol>
-<p>![20] git 提交文件 / 20.jpg)</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204011752.jpg" alt="20"></p>
 <ol start="10">
 <li>
-<p>hexo 已经是一个 Git 仓库了，而我们刚刚创建的文件 123.txt 没有被追踪，也就是没有提交到本地仓库。现在我们使用 git add 命令将文件添加到了「临时缓冲区」，再用 git commit -m “提交信息” 将其提交到本地仓库，如下图</p>
-<p><code>git add text.txt</code></p>
-<p><code>git commit -m &quot;提交信息&quot;</code></p>
-</li>
+<p><code>hexo</code>  已经是一个 Git 仓库了，而我们刚刚创建的文件 <code>123.txt</code>  没有被追踪，也就是没有提交到本地仓库。现在我们使用  <code>git add </code> 命令将文件添加到了「临时缓冲区」，再用  <code>git commit -m &quot;</code> 提交信息&quot; 将其提交到本地仓库，如下图</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token function">git</span> <span class="token function">add</span> text.txt</pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token function">git</span> commit -m <span class="token string">"提交信息"</span></pre></td></tr></table></figure></li>
 </ol>
 <p><img data-src="https://s2.loli.net/2022/03/30/cK8LmrBq3vh9YQo.jpg" alt=""></p>
 <p><img data-src="https://s2.loli.net/2022/03/30/3ltIPmEFkHKU1Bc.jpg" alt=""></p>
 <p>如果你是第一次提交的话，就会出现下图情况，让你输入账号和邮箱</p>
-<pre><code class="language-comment">```git config --global user.name &quot;aliang518&quot;
-git config --global user.email &quot;aa******56@126.com&quot;```
-</code></pre>
-<p><img data-src="https://s2.loli.net/2022/03/30/Dbag4oklMAp1XqQ.jpg" alt=""></p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>```git config --global user.name <span class="token string">"aliang518"</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token function">git</span> config --global user.email <span class="token string">"aa******56@126.com"</span></pre></td></tr></table></figure><p><img data-src="https://s2.loli.net/2022/03/30/Dbag4oklMAp1XqQ.jpg" alt=""></p>
 <ol start="11">
 <li>
 <p>查看仓库提交日志</p>
-<p><code>git log</code></p>
-</li>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">git</span> log</pre></td></tr></table></figure></li>
 </ol>
 <p><img data-src="https://s2.loli.net/2022/03/30/xCkvay35W4zG8gE.jpg" alt=""></p>
 <ol start="12">
 <li>
-<p>再输入 git status 查看一下仓库状态</p>
-<p><code>git status</code></p>
-</li>
+<p>再输入  <code>git status</code>  查看一下仓库状态</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">git</span> status</pre></td></tr></table></figure></li>
 </ol>
 <p><img data-src="https://s2.loli.net/2022/03/30/DKZzdOLexy1lB52.jpg" alt=""></p>
 <ol start="13">
-<li>现在输入 git push origin main 命令，将本地仓库提交到远程仓库</li>
+<li>
+<p>将本地仓库提交到远程仓库</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">git</span> push origin main</pre></td></tr></table></figure></li>
 </ol>
 <p><img data-src="https://s2.loli.net/2022/03/30/rFebnLUxqSkCoR3.jpg" alt=""></p>
 <ol start="14">
-<li>从浏览器打开的时候选择你已经登录 GitHub 的那个浏览器 (我这里用火狐浏览器)</li>
+<li>从浏览器打开的时候选择你已经登录 <code>GitHub</code>  的那个浏览器 (我这里用火狐浏览器)</li>
 </ol>
 <p><img data-src="https://s2.loli.net/2022/03/30/etGBbrAjaOzH9Qk.jpg" alt=""></p>
 <ol start="15">
@@ -301,13 +296,14 @@ git config --global user.email &quot;aa******56@126.com&quot;```
 </ol>
 <p><img data-src="https://s2.loli.net/2022/03/30/16UjrZte4OydkG8.jpg" alt=""></p>
 <ol start="16">
-<li>打开 GitHub 仓库 F5 刷新一下，会出现刚刚在本地 text 目录新建的 text.txt 文件</li>
+<li>打开 <code>GitHub</code>  仓库 <code>F5</code>  刷新一下，会出现刚刚在本地 <code>text</code>  目录新建的 <code>text.txt</code>  文件</li>
 </ol>
 <p><img data-src="https://s2.loli.net/2022/03/30/QvD1LZXAqeWSNJf.jpg" alt=""></p>
 <p><strong>提交文件已经成功啦</strong></p>
 
       <div class="tags">
           <a href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag"><i class="ic i-tag"></i> 博客</a>
+          <a href="/tags/%E6%95%99%E7%A8%8B/" rel="tag"><i class="ic i-tag"></i> 教程</a>
       </div>
   </div>
 
@@ -319,7 +315,7 @@ git config --global user.email &quot;aa******56@126.com&quot;```
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">更新于</span>
-    <time title="修改时间：2022-03-31 01:20:51" itemprop="dateModified" datetime="2022-03-31T01:20:51+08:00">2022-03-31</time>
+    <time title="修改时间：2022-04-01 18:27:30" itemprop="dateModified" datetime="2022-04-01T18:27:30+08:00">2022-04-01</time>
   </span>
   <span id="2022/03/30/b75a1db6.html" class="item leancloud_visitors" data-flag-title="第三篇：Git提交文件---从0基础搭建Hexo博客" title="阅读次数">
       <span class="icon">
@@ -377,9 +373,9 @@ git config --global user.email &quot;aa******56@126.com&quot;```
     <div class="item left">
       
 
-  <a href="/2022/03/30/859f60bd.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclgi503lj20zk0m8hdt.jpg" title="第二篇：安装Git---从0基础搭建Hexo博客">
+  <a href="/2022/03/30/859f60bd.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicliwyw55j20zk0m8hdt.jpg" title="第二篇：安装Git---从0基础搭建Hexo博客">
   <span class="type">上一篇</span>
-  <span class="category"><i class="ic i-flag"></i> Hexo</span>
+  <span class="category"><i class="ic i-flag"></i> hexo-series</span>
   <h3>第二篇：安装Git---从0基础搭建Hexo博客</h3>
   </a>
 
@@ -387,9 +383,9 @@ git config --global user.email &quot;aa******56@126.com&quot;```
     <div class="item right">
       
 
-  <a href="/2022/03/30/cf63c07.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclfdu6exj20zk0m87hw.jpg" title="第四篇：安装Nodejs---从0基础搭建Hexo博客">
+  <a href="/2022/03/30/cf63c07.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicm07ih54j20zk0m84qp.jpg" title="第四篇：安装Nodejs---从0基础搭建Hexo博客">
   <span class="type">下一篇</span>
-  <span class="category"><i class="ic i-flag"></i> Hexo</span>
+  <span class="category"><i class="ic i-flag"></i> hexo-series</span>
   <h3>第四篇：安装Nodejs---从0基础搭建Hexo博客</h3>
   </a>
 
@@ -413,7 +409,7 @@ git config --global user.email &quot;aa******56@126.com&quot;```
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
-          <li><a href="/2022/03/26/734352ba.html" rel="bookmark" title="设置域名后样式失效">设置域名后样式失效</a></li><li><a href="/2022/03/26/c5de56d5.html" rel="bookmark" title="hexo怎么安装插件">hexo怎么安装插件</a></li><li><a href="/2022/03/30/a6f9d072.html" rel="bookmark" title="第一篇：注册github---从0基础搭建Hexo博客">第一篇：注册github---从0基础搭建Hexo博客</a></li><li><a href="/2022/03/30/859f60bd.html" rel="bookmark" title="第二篇：安装Git---从0基础搭建Hexo博客">第二篇：安装Git---从0基础搭建Hexo博客</a></li><li class="active"><a href="/2022/03/30/b75a1db6.html" rel="bookmark" title="第三篇：Git提交文件---从0基础搭建Hexo博客">第三篇：Git提交文件---从0基础搭建Hexo博客</a></li><li><a href="/2022/03/30/cf63c07.html" rel="bookmark" title="第四篇：安装Nodejs---从0基础搭建Hexo博客">第四篇：安装Nodejs---从0基础搭建Hexo博客</a></li><li><a href="/2022/03/30/87b69652.html" rel="bookmark" title="第五篇：安装Hexo---从0基础搭建Hexo博客">第五篇：安装Hexo---从0基础搭建Hexo博客</a></li><li><a href="/2022/03/30/dc09a46c.html" rel="bookmark" title="第六篇：将博客部署到GitHub---从0基础搭建Hexo博客">第六篇：将博客部署到GitHub---从0基础搭建Hexo博客</a></li><li><a href="/2022/03/30/6c2393ec.html" rel="bookmark" title="第七篇：购买域名---从0基础搭建Hexo博客">第七篇：购买域名---从0基础搭建Hexo博客</a></li><li><a href="/2022/03/30/9bf6caef.html" rel="bookmark" title="第八篇：解析域名---从0基础搭建Hexo博客">第八篇：解析域名---从0基础搭建Hexo博客</a></li><li><a href="/2022/03/30/a5eefddc.html" rel="bookmark" title="第九篇：安装主题---从0基础搭建Hexo博客">第九篇：安装主题---从0基础搭建Hexo博客</a></li><li><a href="/2022/03/30/aaad0208.html" rel="bookmark" title="零基础搭建Hexo个人博客">零基础搭建Hexo个人博客</a></li>
+          <li><a href="/2022/03/30/a6f9d072.html" rel="bookmark" title="第一篇：注册github---从0基础搭建Hexo博客">第一篇：注册github---从0基础搭建Hexo博客</a></li><li><a href="/2022/03/30/859f60bd.html" rel="bookmark" title="第二篇：安装Git---从0基础搭建Hexo博客">第二篇：安装Git---从0基础搭建Hexo博客</a></li><li class="active"><a href="/2022/03/30/b75a1db6.html" rel="bookmark" title="第三篇：Git提交文件---从0基础搭建Hexo博客">第三篇：Git提交文件---从0基础搭建Hexo博客</a></li><li><a href="/2022/03/30/cf63c07.html" rel="bookmark" title="第四篇：安装Nodejs---从0基础搭建Hexo博客">第四篇：安装Nodejs---从0基础搭建Hexo博客</a></li><li><a href="/2022/03/30/87b69652.html" rel="bookmark" title="第五篇：安装Hexo---从0基础搭建Hexo博客">第五篇：安装Hexo---从0基础搭建Hexo博客</a></li><li><a href="/2022/03/30/dc09a46c.html" rel="bookmark" title="第六篇：将博客部署到GitHub---从0基础搭建Hexo博客">第六篇：将博客部署到GitHub---从0基础搭建Hexo博客</a></li><li><a href="/2022/03/30/6c2393ec.html" rel="bookmark" title="第七篇：购买域名---从0基础搭建Hexo博客">第七篇：购买域名---从0基础搭建Hexo博客</a></li><li><a href="/2022/03/30/9bf6caef.html" rel="bookmark" title="第八篇：解析域名---从0基础搭建Hexo博客">第八篇：解析域名---从0基础搭建Hexo博客</a></li><li><a href="/2022/03/30/a5eefddc.html" rel="bookmark" title="第九篇：安装主题---从0基础搭建Hexo博客">第九篇：安装主题---从0基础搭建Hexo博客</a></li><li><a href="/2022/03/30/aaad0208.html" rel="bookmark" title="零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a></li>
         </ul>
       </div>
       <div class="overview panel" data-title="站点概览">
@@ -427,13 +423,13 @@ git config --global user.email &quot;aa******56@126.com&quot;```
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">13</span>
+        <span class="count">14</span>
         <span class="name">文章</span>
       </a>
     </div>
     <div class="item categories">
       <a href="/categories/">
-        <span class="count">3</span>
+        <span class="count">5</span>
         <span class="name">分类</span>
       </a>
     </div>
@@ -526,9 +522,14 @@ git config --global user.email &quot;aa******56@126.com&quot;```
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/computer-science/" title="分类于 computer-science">computer-science</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/computer-science/Hexo/" title="分类于 Hexo">Hexo</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/computer-science/Hexo/hexo-series/" title="分类于 hexo-series">hexo-series</a>
 </div>
 
-    <span><a href="/2022/03/26/d95d7e09.html" title="我的第一篇博客">我的第一篇博客</a></span>
+    <span><a href="/2022/03/30/87b69652.html" title="第五篇：安装Hexo---从0基础搭建Hexo博客">第五篇：安装Hexo---从0基础搭建Hexo博客</a></span>
   </li>
 
       
@@ -538,9 +539,11 @@ git config --global user.email &quot;aa******56@126.com&quot;```
 <a href="/categories/computer-science/" title="分类于 computer-science">computer-science</a>
 <i class="ic i-angle-right"></i>
 <a href="/categories/computer-science/Hexo/" title="分类于 Hexo">Hexo</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/computer-science/Hexo/hexo-series/" title="分类于 hexo-series">hexo-series</a>
 </div>
 
-    <span><a href="/2022/03/30/a5eefddc.html" title="第九篇：安装主题---从0基础搭建Hexo博客">第九篇：安装主题---从0基础搭建Hexo博客</a></span>
+    <span><a href="/2022/03/30/aaad0208.html" title="零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a></span>
   </li>
 
       
@@ -551,34 +554,10 @@ git config --global user.email &quot;aa******56@126.com&quot;```
 <i class="ic i-angle-right"></i>
 <a href="/categories/computer-science/Hexo/" title="分类于 Hexo">Hexo</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/computer-science/Hexo/modules/" title="分类于 modules">modules</a>
+<a href="/categories/computer-science/Hexo/hexo-series/" title="分类于 hexo-series">hexo-series</a>
 </div>
 
-    <span><a href="/2022/03/26/734352ba.html" title="设置域名后样式失效">设置域名后样式失效</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/computer-science/" title="分类于 computer-science">computer-science</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/computer-science/Hexo/" title="分类于 Hexo">Hexo</a>
-</div>
-
-    <span><a href="/2022/03/30/aaad0208.html" title="零基础搭建Hexo个人博客">零基础搭建Hexo个人博客</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/computer-science/" title="分类于 computer-science">computer-science</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/computer-science/Hexo/" title="分类于 Hexo">Hexo</a>
-</div>
-
-    <span><a href="/2022/03/30/dc09a46c.html" title="第六篇：将博客部署到GitHub---从0基础搭建Hexo博客">第六篇：将博客部署到GitHub---从0基础搭建Hexo博客</a></span>
+    <span><a href="/2022/03/30/cf63c07.html" title="第四篇：安装Nodejs---从0基础搭建Hexo博客">第四篇：安装Nodejs---从0基础搭建Hexo博客</a></span>
   </li>
 
       
@@ -602,6 +581,8 @@ git config --global user.email &quot;aa******56@126.com&quot;```
 <a href="/categories/computer-science/" title="分类于 computer-science">computer-science</a>
 <i class="ic i-angle-right"></i>
 <a href="/categories/computer-science/Hexo/" title="分类于 Hexo">Hexo</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/computer-science/Hexo/hexo-series/" title="分类于 hexo-series">hexo-series</a>
 </div>
 
     <span><a href="/2022/03/30/6c2393ec.html" title="第七篇：购买域名---从0基础搭建Hexo博客">第七篇：购买域名---从0基础搭建Hexo博客</a></span>
@@ -614,6 +595,8 @@ git config --global user.email &quot;aa******56@126.com&quot;```
 <a href="/categories/computer-science/" title="分类于 computer-science">computer-science</a>
 <i class="ic i-angle-right"></i>
 <a href="/categories/computer-science/Hexo/" title="分类于 Hexo">Hexo</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/computer-science/Hexo/hexo-series/" title="分类于 hexo-series">hexo-series</a>
 </div>
 
     <span><a href="/2022/03/30/b75a1db6.html" title="第三篇：Git提交文件---从0基础搭建Hexo博客">第三篇：Git提交文件---从0基础搭建Hexo博客</a></span>
@@ -626,9 +609,11 @@ git config --global user.email &quot;aa******56@126.com&quot;```
 <a href="/categories/computer-science/" title="分类于 computer-science">computer-science</a>
 <i class="ic i-angle-right"></i>
 <a href="/categories/computer-science/Hexo/" title="分类于 Hexo">Hexo</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/computer-science/Hexo/hexo-error/" title="分类于 hexo-error">hexo-error</a>
 </div>
 
-    <span><a href="/2022/03/30/a6f9d072.html" title="第一篇：注册github---从0基础搭建Hexo博客">第一篇：注册github---从0基础搭建Hexo博客</a></span>
+    <span><a href="/2022/03/26/734352ba.html" title="设置域名后样式失效">设置域名后样式失效</a></span>
   </li>
 
       
@@ -638,9 +623,34 @@ git config --global user.email &quot;aa******56@126.com&quot;```
 <a href="/categories/computer-science/" title="分类于 computer-science">computer-science</a>
 <i class="ic i-angle-right"></i>
 <a href="/categories/computer-science/Hexo/" title="分类于 Hexo">Hexo</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/computer-science/Hexo/hexo-series/" title="分类于 hexo-series">hexo-series</a>
 </div>
 
-    <span><a href="/2022/03/30/cf63c07.html" title="第四篇：安装Nodejs---从0基础搭建Hexo博客">第四篇：安装Nodejs---从0基础搭建Hexo博客</a></span>
+    <span><a href="/2022/03/30/a5eefddc.html" title="第九篇：安装主题---从0基础搭建Hexo博客">第九篇：安装主题---从0基础搭建Hexo博客</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/computer-science/" title="分类于 computer-science">computer-science</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/computer-science/Hexo/" title="分类于 Hexo">Hexo</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/computer-science/Hexo/hexo-series/" title="分类于 hexo-series">hexo-series</a>
+</div>
+
+    <span><a href="/2022/03/30/859f60bd.html" title="第二篇：安装Git---从0基础搭建Hexo博客">第二篇：安装Git---从0基础搭建Hexo博客</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2022/03/26/d95d7e09.html" title="我的第一篇博客">我的第一篇博客</a></span>
   </li>
 
   </ul>
@@ -665,7 +675,7 @@ git config --global user.email &quot;aa******56@126.com&quot;```
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="站点总字数">4k 字</span>
+    <span title="站点总字数">5k 字</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
