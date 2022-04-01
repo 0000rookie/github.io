@@ -56,7 +56,7 @@
 <figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token function">npm</span> <span class="token function">ls</span> -dept <span class="token number">0</span></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>computer-science</category>
-        <category>博客</category>
+        <category>Hexo</category>
         <category>hexo-error</category>
       </categories>
       <tags>
@@ -100,11 +100,46 @@
 ]]></content>
       <categories>
         <category>computer-science</category>
-        <category>博客</category>
+        <category>Hexo</category>
         <category>hexo-error</category>
       </categories>
       <tags>
         <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第二篇：安装Git---从0基础搭建Hexo博客</title>
+    <url>/2022/03/30/859f60bd.html</url>
+    <content><![CDATA[<h3 id="以下会用到的软件"><a class="markdownIt-Anchor" href="#以下会用到的软件">#</a> 以下会用到的软件</h3>
+<p><strong>必装 [Git][<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbQ==">https://git-scm.com</span>]、[Node.js][<span class="exturl" data-url="aHR0cHM6Ly9ub2RlanMub3JnL2Vu">https://nodejs.org/en</span>]</strong> <em>(点击打开)</em></p>
+<p><strong>建议装 [notepad3][<span class="exturl" data-url="aHR0cHM6Ly9yb29raWUxNjc5LmxhbnpvdWYuY29tL2lIbW1hMDI2bnZkZw==">https://rookie1679.lanzouf.com/iHmma026nvdg</span>]</strong> <em>(点击打开)</em></p>
+<hr>
+<h3 id="安装git"><a class="markdownIt-Anchor" href="#安装git">#</a> 安装 Git</h3>
+<p><img data-src="https://s2.loli.net/2022/03/30/BQvOwdEjhy2Mxpi.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/cynKHCaWvM1lhPQ.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/mGnE9UXQfjSF4LA.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/5Y6oqd7uJGQZ3x9.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/7ulfP3VQJDIR49b.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/O71bgvBpnoya5UN.jpg" alt=""></p>
+<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0rsgp2d5yj30dv0aw756.jpg" alt="07"></p>
+<p><img data-src="https://tva1.sinaimg.cn/large/0065wfS6ly8h0rshgpo17j30dv0aw74s.jpg" alt="9"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/5yNqYXRIFf2kpxc.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/8j3PsJFgN6e1IxB.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/Pz4C6HLjdQiE7MB.jpg" alt=""></p>
+<p><strong>鼠标右看到如图说明安装成功了，打开 Git bash here</strong></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/FbARg18aejdJUVO.jpg" alt=""></p>
+<p><strong>输入 git</strong></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/7qTxPmE6YGFOklK.jpg" alt=""></p>
+<p><strong>安装 git 结束</strong></p>
+]]></content>
+      <categories>
+        <category>computer-science</category>
+        <category>Hexo</category>
+        <category>hexo-series</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>教程</tag>
       </tags>
   </entry>
   <entry>
@@ -239,42 +274,7 @@
 ]]></content>
       <categories>
         <category>computer-science</category>
-        <category>博客</category>
-        <category>hexo-series</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第二篇：安装Git---从0基础搭建Hexo博客</title>
-    <url>/2022/03/30/859f60bd.html</url>
-    <content><![CDATA[<h3 id="以下会用到的软件"><a class="markdownIt-Anchor" href="#以下会用到的软件">#</a> 以下会用到的软件</h3>
-<p><strong>必装 [Git][<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbQ==">https://git-scm.com</span>]、[Node.js][<span class="exturl" data-url="aHR0cHM6Ly9ub2RlanMub3JnL2Vu">https://nodejs.org/en</span>]</strong> <em>(点击打开)</em></p>
-<p><strong>建议装 [notepad3][<span class="exturl" data-url="aHR0cHM6Ly9yb29raWUxNjc5LmxhbnpvdWYuY29tL2lIbW1hMDI2bnZkZw==">https://rookie1679.lanzouf.com/iHmma026nvdg</span>]</strong> <em>(点击打开)</em></p>
-<hr>
-<h3 id="安装git"><a class="markdownIt-Anchor" href="#安装git">#</a> 安装 Git</h3>
-<p><img data-src="https://s2.loli.net/2022/03/30/BQvOwdEjhy2Mxpi.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/cynKHCaWvM1lhPQ.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/mGnE9UXQfjSF4LA.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/5Y6oqd7uJGQZ3x9.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/7ulfP3VQJDIR49b.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/O71bgvBpnoya5UN.jpg" alt=""></p>
-<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0rsgp2d5yj30dv0aw756.jpg" alt="07"></p>
-<p><img data-src="https://tva1.sinaimg.cn/large/0065wfS6ly8h0rshgpo17j30dv0aw74s.jpg" alt="9"></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/5yNqYXRIFf2kpxc.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/8j3PsJFgN6e1IxB.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/Pz4C6HLjdQiE7MB.jpg" alt=""></p>
-<p><strong>鼠标右看到如图说明安装成功了，打开 Git bash here</strong></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/FbARg18aejdJUVO.jpg" alt=""></p>
-<p><strong>输入 git</strong></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/7qTxPmE6YGFOklK.jpg" alt=""></p>
-<p><strong>安装 git 结束</strong></p>
-]]></content>
-      <categories>
-        <category>computer-science</category>
-        <category>博客</category>
+        <category>Hexo</category>
         <category>hexo-series</category>
       </categories>
       <tags>
@@ -338,7 +338,7 @@
 ]]></content>
       <categories>
         <category>computer-science</category>
-        <category>博客</category>
+        <category>Hexo</category>
         <category>hexo-series</category>
       </categories>
       <tags>
@@ -426,7 +426,7 @@
 ]]></content>
       <categories>
         <category>computer-science</category>
-        <category>博客</category>
+        <category>Hexo</category>
         <category>hexo-series</category>
       </categories>
       <tags>
@@ -482,7 +482,7 @@
 ]]></content>
       <categories>
         <category>computer-science</category>
-        <category>博客</category>
+        <category>Hexo</category>
         <category>hexo-series</category>
       </categories>
       <tags>
@@ -535,7 +535,7 @@
 ]]></content>
       <categories>
         <category>computer-science</category>
-        <category>博客</category>
+        <category>Hexo</category>
         <category>hexo-series</category>
       </categories>
       <tags>
@@ -563,7 +563,7 @@
 ]]></content>
       <categories>
         <category>computer-science</category>
-        <category>博客</category>
+        <category>Hexo</category>
         <category>hexo-series</category>
       </categories>
       <tags>
@@ -649,7 +649,7 @@
 <figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tr><td data-num="1"></td><td><pre>aliang.life</pre></td></tr></table></figure>]]></content>
       <categories>
         <category>computer-science</category>
-        <category>博客</category>
+        <category>Hexo</category>
         <category>hexo-series</category>
       </categories>
       <tags>
@@ -705,7 +705,7 @@
 ]]></content>
       <categories>
         <category>computer-science</category>
-        <category>博客</category>
+        <category>Hexo</category>
         <category>hexo-series</category>
       </categories>
       <tags>
@@ -763,7 +763,7 @@
 ]]></content>
       <categories>
         <category>computer-science</category>
-        <category>博客</category>
+        <category>Hexo</category>
         <category>hexo-series</category>
       </categories>
       <tags>
@@ -809,8 +809,8 @@
 ]]></content>
       <categories>
         <category>computer-science</category>
-        <category>博客</category>
-        <category>模块</category>
+        <category>Hexo</category>
+        <category>modules</category>
       </categories>
       <tags>
         <tag>博客</tag>
