@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>我的第一篇博客</title>
-    <url>/2022/03/26/d95d7e09.html</url>
-    <content><![CDATA[<h6 id="历时两天终于把我的小破站建成了"><a class="markdownIt-Anchor" href="#历时两天终于把我的小破站建成了">#</a> 历时两天，终于把我的小破站建成了。</h6>
-<h6 id="小破站的初心就是为了记录自己学习情况遇到的问题进行总结以及记录生活"><a class="markdownIt-Anchor" href="#小破站的初心就是为了记录自己学习情况遇到的问题进行总结以及记录生活">#</a> 小破站的初心就是为了记录自己学习情况，遇到的问题进行总结，以及记录生活。</h6>
-<p><img data-src="_images%5Cone.jpg" alt=""></p>
-]]></content>
-      <tags>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>第三篇：Git提交文件---从0基础搭建Hexo博客</title>
     <url>/2022/03/30/b75a1db6.html</url>
     <content><![CDATA[<h2 id="配置git"><a class="markdownIt-Anchor" href="#配置git">#</a> 配置 git</h2>
@@ -158,98 +147,14 @@ git config --global user.email &quot;aa******56@126.com&quot;```
       </tags>
   </entry>
   <entry>
-    <title>第二篇：安装Git---从0基础搭建Hexo博客</title>
-    <url>/2022/03/30/859f60bd.html</url>
-    <content><![CDATA[<h3 id="以下软件安装链接"><a class="markdownIt-Anchor" href="#以下软件安装链接">#</a> 以下软件安装链接</h3>
-<p><strong>必装<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbQ=="> Git</span></strong></p>
-<p><strong>必装<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbQ=="> Node.js</span></strong></p>
-<p><strong>建议装<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbQ=="> notepad3</span></strong></p>
-<h3 id="安装git"><a class="markdownIt-Anchor" href="#安装git">#</a> 安装 Git</h3>
-<p><img data-src="https://s2.loli.net/2022/03/30/BQvOwdEjhy2Mxpi.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/cynKHCaWvM1lhPQ.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/mGnE9UXQfjSF4LA.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/5Y6oqd7uJGQZ3x9.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/7ulfP3VQJDIR49b.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/O71bgvBpnoya5UN.jpg" alt=""></p>
-<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0rsgp2d5yj30dv0aw756.jpg" alt="07"></p>
-<p><img data-src="https://tva1.sinaimg.cn/large/0065wfS6ly8h0rshgpo17j30dv0aw74s.jpg" alt="9"></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/5yNqYXRIFf2kpxc.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/8j3PsJFgN6e1IxB.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/Pz4C6HLjdQiE7MB.jpg" alt=""></p>
-<p><strong>鼠标右看到如图说明安装成功了，打开 Git bash here</strong></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/FbARg18aejdJUVO.jpg" alt=""></p>
-<p><strong>输入 git</strong></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/7qTxPmE6YGFOklK.jpg" alt=""></p>
-<p><strong>安装 git 结束</strong></p>
+    <title>我的第一篇博客</title>
+    <url>/2022/03/26/d95d7e09.html</url>
+    <content><![CDATA[<h6 id="历时两天终于把我的小破站建成了"><a class="markdownIt-Anchor" href="#历时两天终于把我的小破站建成了">#</a> 历时两天，终于把我的小破站建成了。</h6>
+<h6 id="小破站的初心就是为了记录自己学习情况遇到的问题进行总结以及记录生活"><a class="markdownIt-Anchor" href="#小破站的初心就是为了记录自己学习情况遇到的问题进行总结以及记录生活">#</a> 小破站的初心就是为了记录自己学习情况，遇到的问题进行总结，以及记录生活。</h6>
+<p><img data-src="_images%5Cone.jpg" alt=""></p>
 ]]></content>
-      <categories>
-        <category>computer-science</category>
-        <category>Hexo</category>
-      </categories>
       <tags>
-        <tag>博客</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第五篇：安装Hexo---从0基础搭建Hexo博客</title>
-    <url>/2022/03/30/87b69652.html</url>
-    <content><![CDATA[<h3 id="安装hexo"><a class="markdownIt-Anchor" href="#安装hexo">#</a> 安装 Hexo</h3>
-<ol>
-<li>新建一个仓库</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/LoeECmrFSydhnIt.jpg" alt=""></p>
-<ol start="2">
-<li>给仓库起个名，格式为   <code>账号名.github.io</code></li>
-</ol>
-<p><img data-src="https://tva4.sinaimg.cn/large/0065wfS6ly8h0rslvrth9j31ha0pqq5w.jpg" alt=""></p>
-<ol start="3">
-<li>打开 stetings</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/KaQX5eUTYvWp9H6.jpg" alt=""></p>
-<ol start="4">
-<li>滑到下面，找到这个 GitHub pages ，点击打开</li>
-</ol>
-<p><img data-src="https://tva3.sinaimg.cn/large/0065wfS6ly8h0rsme8aiaj30p905tmx8.jpg" alt=""></p>
-<ol start="5">
-<li>出现以下图说明成功了</li>
-</ol>
-<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/%E5%AE%89%E8%A3%85Hexo/05.jpg" alt="05"></p>
-<ol start="6">
-<li>新建一个 <code>blog</code>  文件夹，在 <code>blog</code>  文件夹打开 <code>git bash here</code></li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/w8UDo5gxLzbOtiu.jpg" alt="">7. 安装 <code>hexo-cli</code>  插件</p>
-<p><code>npm install -g hexo-cli</code></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/IHBmwDz6FaGUyVW.jpg" alt=""></p>
-<ol start="8">
-<li>初始化博客</li>
-</ol>
-<p><code>hexo init</code></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/X4pArW28NVYmuCa.jpg" alt=""></p>
-<ol start="9">
-<li>静态部署博客</li>
-</ol>
-<p><code>hexo g</code></p>
-<p><img data-src="https://tva1.sinaimg.cn/large/0065wfS6ly8h0rsqg2bmbj30l20gdtav.jpg" alt="09"></p>
-<ol start="10">
-<li>打开本地服务器</li>
-</ol>
-<p><code>hexo s</code></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/atwxZphQzjf2kTi.jpg" alt=""></p>
-<ol start="11">
-<li>浏览器输入 <code>localhost:4000</code>  查看</li>
-</ol>
-<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0rsqxer30j31ha0opdiy.jpg" alt="10"></p>
-<ol start="12">
-<li>ctrl+s，停止本地服务器运行</li>
-</ol>
-<p><strong>目前博客已经基本完成了</strong></p>
-]]></content>
-      <categories>
-        <category>computer-science</category>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
+        <tag>生活</tag>
       </tags>
   </entry>
   <entry>
@@ -396,6 +301,101 @@ git config --global user.email &quot;aa******56@126.com&quot;```
       </tags>
   </entry>
   <entry>
+    <title>第五篇：安装Hexo---从0基础搭建Hexo博客</title>
+    <url>/2022/03/30/87b69652.html</url>
+    <content><![CDATA[<h3 id="安装hexo"><a class="markdownIt-Anchor" href="#安装hexo">#</a> 安装 Hexo</h3>
+<ol>
+<li>新建一个仓库</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/LoeECmrFSydhnIt.jpg" alt=""></p>
+<ol start="2">
+<li>给仓库起个名，格式为   <code>账号名.github.io</code></li>
+</ol>
+<p><img data-src="https://tva4.sinaimg.cn/large/0065wfS6ly8h0rslvrth9j31ha0pqq5w.jpg" alt=""></p>
+<ol start="3">
+<li>打开 stetings</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/KaQX5eUTYvWp9H6.jpg" alt=""></p>
+<ol start="4">
+<li>滑到下面，找到这个 GitHub pages ，点击打开</li>
+</ol>
+<p><img data-src="https://tva3.sinaimg.cn/large/0065wfS6ly8h0rsme8aiaj30p905tmx8.jpg" alt=""></p>
+<ol start="5">
+<li>出现以下图说明成功了</li>
+</ol>
+<p><img data-src="C:/Users/Administrator/Desktop/github%E6%90%AD%E5%BB%BAhexo/%E5%AE%89%E8%A3%85Hexo/05.jpg" alt="05"></p>
+<ol start="6">
+<li>新建一个 <code>blog</code>  文件夹，在 <code>blog</code>  文件夹打开 <code>git bash here</code></li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/w8UDo5gxLzbOtiu.jpg" alt="">7. 安装 <code>hexo-cli</code>  插件</p>
+<p><code>npm install -g hexo-cli</code></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/IHBmwDz6FaGUyVW.jpg" alt=""></p>
+<ol start="8">
+<li>初始化博客</li>
+</ol>
+<p><code>hexo init</code></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/X4pArW28NVYmuCa.jpg" alt=""></p>
+<ol start="9">
+<li>静态部署博客</li>
+</ol>
+<p><code>hexo g</code></p>
+<p><img data-src="https://tva1.sinaimg.cn/large/0065wfS6ly8h0rsqg2bmbj30l20gdtav.jpg" alt="09"></p>
+<ol start="10">
+<li>打开本地服务器</li>
+</ol>
+<p><code>hexo s</code></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/atwxZphQzjf2kTi.jpg" alt=""></p>
+<ol start="11">
+<li>浏览器输入 <code>localhost:4000</code>  查看</li>
+</ol>
+<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0rsqxer30j31ha0opdiy.jpg" alt="10"></p>
+<ol start="12">
+<li>ctrl+s，停止本地服务器运行</li>
+</ol>
+<p><strong>目前博客已经基本完成了</strong></p>
+]]></content>
+      <categories>
+        <category>computer-science</category>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第二篇：安装Git---从0基础搭建Hexo博客</title>
+    <url>/2022/03/30/859f60bd.html</url>
+    <content><![CDATA[<h3 id="以下软件安装链接"><a class="markdownIt-Anchor" href="#以下软件安装链接">#</a> 以下软件安装链接</h3>
+<p><strong>必装<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbQ=="> Git</span></strong></p>
+<p><strong>必装<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbQ=="> Node.js</span></strong></p>
+<p><strong>建议装<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbQ=="> notepad3</span></strong></p>
+<h3 id="安装git"><a class="markdownIt-Anchor" href="#安装git">#</a> 安装 Git</h3>
+<p><img data-src="https://s2.loli.net/2022/03/30/BQvOwdEjhy2Mxpi.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/cynKHCaWvM1lhPQ.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/mGnE9UXQfjSF4LA.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/5Y6oqd7uJGQZ3x9.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/7ulfP3VQJDIR49b.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/O71bgvBpnoya5UN.jpg" alt=""></p>
+<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0rsgp2d5yj30dv0aw756.jpg" alt="07"></p>
+<p><img data-src="https://tva1.sinaimg.cn/large/0065wfS6ly8h0rshgpo17j30dv0aw74s.jpg" alt="9"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/5yNqYXRIFf2kpxc.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/8j3PsJFgN6e1IxB.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/Pz4C6HLjdQiE7MB.jpg" alt=""></p>
+<p><strong>鼠标右看到如图说明安装成功了，打开 Git bash here</strong></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/FbARg18aejdJUVO.jpg" alt=""></p>
+<p><strong>输入 git</strong></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/7qTxPmE6YGFOklK.jpg" alt=""></p>
+<p><strong>安装 git 结束</strong></p>
+]]></content>
+      <categories>
+        <category>computer-science</category>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>第六篇：将博客部署到GitHub---从0基础搭建Hexo博客</title>
     <url>/2022/03/30/dc09a46c.html</url>
     <content><![CDATA[<h3 id="将hexo部署到github"><a class="markdownIt-Anchor" href="#将hexo部署到github">#</a> 将 Hexo 部署到 github</h3>
@@ -449,22 +449,52 @@ git config --global user.email &quot;aa******56@126.com&quot;```
       </tags>
   </entry>
   <entry>
-    <title>第一篇：注册github---从0基础搭建Hexo博客</title>
-    <url>/2022/03/30/a6f9d072.html</url>
-    <content><![CDATA[<h3 id="注册github"><a class="markdownIt-Anchor" href="#注册github">#</a> 注册 GitHub</h3>
-<p><img data-src="https://s2.loli.net/2022/03/30/BULpyk6thPbgJCD.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/fo8wzF7dvqNHaB4.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/aXwyhW3KM8cxYCb.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/RN62GDFVQU1YKB3.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/JzFGeTjb7BHKSQD.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/48GA7g1N2VacpJl.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/uN8PBgwFWOlApfU.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/shHQtoZVwcPrz2I.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/aZSU1FnDumqY2M7.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/PhUtuCQNlLHXAdG.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/pk9Gyi28uTFrXZY.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/8tjJkrGRb3NBsEW.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/FVivdNY8BLUfcSR.jpg" alt=""></p>
+    <title>零基础搭建Hexo个人博客</title>
+    <url>/2022/03/30/aaad0208.html</url>
+    <content><![CDATA[<h3 id="零基础搭建hexo个人博客系列"><a class="markdownIt-Anchor" href="#零基础搭建hexo个人博客系列">#</a> 零基础搭建 Hexo 个人博客系列</h3>
+<div class="links"><div class="item" title="第一篇：注册github" style="--block-color:#F46C9D;"><span class="exturl image" data-url="aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvYTZmOWQwNzIuaHRtbA==" data-background-image="http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (5).png"></span>
+          <div class="info">
+          <span class="exturl title" data-url="aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvYTZmOWQwNzIuaHRtbA==">第一篇：注册github</span>
+          <p class="desc">阿亮の小破站 & 搭建博客系列</p>
+          </div></div><div class="item" title="第二篇：安装Git" style="--block-color:#e9546b;"><span class="exturl image" data-url="aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvODU5ZjYwYmQuaHRtbA==" data-background-image="http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (8).jpg"></span>
+          <div class="info">
+          <span class="exturl title" data-url="aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvODU5ZjYwYmQuaHRtbA==">第二篇：安装Git</span>
+          <p class="desc">阿亮の小破站 & 搭建博客系列</p>
+          </div></div><div class="item" title="第三篇：Git提交文件" style="--block-color:#F4BAA4;"><span class="exturl image" data-url="aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvYjc1YTFkYjYuaHRtbA==" data-background-image="http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (4).png"></span>
+          <div class="info">
+          <span class="exturl title" data-url="aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvYjc1YTFkYjYuaHRtbA==">第三篇：Git提交文件</span>
+          <p class="desc">阿亮の小破站 & 搭建博客系列</p>
+          </div></div><div class="item" title="第四篇：安装Nodejs" style="--block-color:#FDBF5C;"><span class="exturl image" data-url="aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvY2Y2M2MwNy5odG1s" data-background-image="http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (3).jpg"></span>
+          <div class="info">
+          <span class="exturl title" data-url="aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvY2Y2M2MwNy5odG1s">第四篇：安装Nodejs</span>
+          <p class="desc">阿亮の小破站 & 搭建博客系列</p>
+          </div></div><div class="item" title="第五篇：安装Hexo" style="--block-color:#FBDE99;"><span class="exturl image" data-url="aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvODdiNjk2NTIuaHRtbA==" data-background-image="http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (9).jpg"></span>
+          <div class="info">
+          <span class="exturl title" data-url="aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvODdiNjk2NTIuaHRtbA==">第五篇：安装Hexo</span>
+          <p class="desc">阿亮の小破站 & 搭建博客系列</p>
+          </div></div><div class="item" title="第六篇：将博客部署到GitHub" style="--block-color:#5A8F2;"><span class="exturl image" data-url="aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvZGMwOWE0NmMuaHRtbA==" data-background-image="http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (13).jpg"></span>
+          <div class="info">
+          <span class="exturl title" data-url="aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvZGMwOWE0NmMuaHRtbA==">第六篇：将博客部署到GitHub</span>
+          <p class="desc">阿亮の小破站 & 搭建博客系列</p>
+          </div></div><div class="item" title="第七篇：购买域名" style="--block-color:#FB7B8E;"><span class="exturl image" data-url="aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvNmMyMzkzZWMuaHRtbA==" data-background-image="http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (14).jpg"></span>
+          <div class="info">
+          <span class="exturl title" data-url="aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvNmMyMzkzZWMuaHRtbA==">第七篇：购买域名</span>
+          <p class="desc">阿亮の小破站 & 搭建博客系列</p>
+          </div></div><div class="item" title="第八篇：解析域名" style="--block-color:#FF7BA8;"><span class="exturl image" data-url="aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvOWJmNmNhZWYuaHRtbA==" data-background-image="http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (15).jpg"></span>
+          <div class="info">
+          <span class="exturl title" data-url="aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvOWJmNmNhZWYuaHRtbA==">第八篇：解析域名</span>
+          <p class="desc">阿亮の小破站 & 搭建博客系列</p>
+          </div></div><div class="item" title="第九篇：安装主题" style="--block-color:#6AD0CB;"><span class="exturl image" data-url="aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvYTVlZWZkZGMuaHRtbA==" data-background-image="https://cdn.jsdelivr.net/gh/amehime/shoka@latest/images/avatar.jpg"></span>
+          <div class="info">
+          <span class="exturl title" data-url="aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvYTVlZWZkZGMuaHRtbA==">第九篇：安装主题</span>
+          <p class="desc">阿亮の小破站 & 搭建博客系列</p>
+          </div></div></div>
+<div class="note info">
+<p>没有加速器打开 GitHub 可能会稍微有点慢，需要加速可以联系博主</p>
+</div>
+<div class="note success">
+<p>希望你能找到属于自己的小破站</p>
+</div>
 ]]></content>
       <categories>
         <category>computer-science</category>
@@ -472,6 +502,7 @@ git config --global user.email &quot;aa******56@126.com&quot;```
       </categories>
       <tags>
         <tag>博客</tag>
+        <tag>教程</tag>
       </tags>
   </entry>
   <entry>
@@ -556,6 +587,32 @@ git config --global user.email &quot;aa******56@126.com&quot;```
       </tags>
   </entry>
   <entry>
+    <title>第一篇：注册github---从0基础搭建Hexo博客</title>
+    <url>/2022/03/30/a6f9d072.html</url>
+    <content><![CDATA[<h3 id="注册github"><a class="markdownIt-Anchor" href="#注册github">#</a> 注册 GitHub</h3>
+<p><img data-src="https://s2.loli.net/2022/03/30/BULpyk6thPbgJCD.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/fo8wzF7dvqNHaB4.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/aXwyhW3KM8cxYCb.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/RN62GDFVQU1YKB3.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/JzFGeTjb7BHKSQD.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/48GA7g1N2VacpJl.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/uN8PBgwFWOlApfU.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/shHQtoZVwcPrz2I.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/aZSU1FnDumqY2M7.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/PhUtuCQNlLHXAdG.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/pk9Gyi28uTFrXZY.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/8tjJkrGRb3NBsEW.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/FVivdNY8BLUfcSR.jpg" alt=""></p>
+]]></content>
+      <categories>
+        <category>computer-science</category>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>第七篇：购买域名---从0基础搭建Hexo博客</title>
     <url>/2022/03/30/6c2393ec.html</url>
     <content><![CDATA[<h2 id="购买域名"><a class="markdownIt-Anchor" href="#购买域名">#</a> 购买域名</h2>
@@ -607,63 +664,6 @@ git config --global user.email &quot;aa******56@126.com&quot;```
       </categories>
       <tags>
         <tag>博客</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>零基础搭建Hexo个人博客</title>
-    <url>/2022/03/30/aaad0208.html</url>
-    <content><![CDATA[<h3 id="零基础搭建hexo个人博客系列"><a class="markdownIt-Anchor" href="#零基础搭建hexo个人博客系列">#</a> 零基础搭建 Hexo 个人博客系列</h3>
-<div class="links"><div class="item" title="第一篇：注册github" style="--block-color:#F46C9D;"><span class="exturl image" data-url="aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvYTZmOWQwNzIuaHRtbA==" data-background-image="http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (5).png"></span>
-          <div class="info">
-          <span class="exturl title" data-url="aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvYTZmOWQwNzIuaHRtbA==">第一篇：注册github</span>
-          <p class="desc">阿亮の小破站 & 搭建博客系列</p>
-          </div></div><div class="item" title="第二篇：安装Git" style="--block-color:#e9546b;"><span class="exturl image" data-url="aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvODU5ZjYwYmQuaHRtbA==" data-background-image="http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (8).jpg"></span>
-          <div class="info">
-          <span class="exturl title" data-url="aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvODU5ZjYwYmQuaHRtbA==">第二篇：安装Git</span>
-          <p class="desc">阿亮の小破站 & 搭建博客系列</p>
-          </div></div><div class="item" title="第三篇：Git提交文件" style="--block-color:#F4BAA4;"><span class="exturl image" data-url="aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvYjc1YTFkYjYuaHRtbA==" data-background-image="http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (4).png"></span>
-          <div class="info">
-          <span class="exturl title" data-url="aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvYjc1YTFkYjYuaHRtbA==">第三篇：Git提交文件</span>
-          <p class="desc">阿亮の小破站 & 搭建博客系列</p>
-          </div></div><div class="item" title="第四篇：安装Nodejs" style="--block-color:#FDBF5C;"><span class="exturl image" data-url="aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvY2Y2M2MwNy5odG1s" data-background-image="http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (3).jpg"></span>
-          <div class="info">
-          <span class="exturl title" data-url="aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvY2Y2M2MwNy5odG1s">第四篇：安装Nodejs</span>
-          <p class="desc">阿亮の小破站 & 搭建博客系列</p>
-          </div></div><div class="item" title="第五篇：安装Hexo" style="--block-color:#FBDE99;"><span class="exturl image" data-url="aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvODdiNjk2NTIuaHRtbA==" data-background-image="http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (9).jpg"></span>
-          <div class="info">
-          <span class="exturl title" data-url="aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvODdiNjk2NTIuaHRtbA==">第五篇：安装Hexo</span>
-          <p class="desc">阿亮の小破站 & 搭建博客系列</p>
-          </div></div><div class="item" title="第六篇：将博客部署到GitHub" style="--block-color:#5A8F2;"><span class="exturl image" data-url="aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvZGMwOWE0NmMuaHRtbA==" data-background-image="http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (13).jpg"></span>
-          <div class="info">
-          <span class="exturl title" data-url="aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvZGMwOWE0NmMuaHRtbA==">第六篇：将博客部署到GitHub</span>
-          <p class="desc">阿亮の小破站 & 搭建博客系列</p>
-          </div></div><div class="item" title="第七篇：购买域名" style="--block-color:#FB7B8E;"><span class="exturl image" data-url="aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvNmMyMzkzZWMuaHRtbA==" data-background-image="http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (14).jpg"></span>
-          <div class="info">
-          <span class="exturl title" data-url="aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvNmMyMzkzZWMuaHRtbA==">第七篇：购买域名</span>
-          <p class="desc">阿亮の小破站 & 搭建博客系列</p>
-          </div></div><div class="item" title="第八篇：解析域名" style="--block-color:#FF7BA8;"><span class="exturl image" data-url="aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvOWJmNmNhZWYuaHRtbA==" data-background-image="http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (15).jpg"></span>
-          <div class="info">
-          <span class="exturl title" data-url="aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvOWJmNmNhZWYuaHRtbA==">第八篇：解析域名</span>
-          <p class="desc">阿亮の小破站 & 搭建博客系列</p>
-          </div></div><div class="item" title="第九篇：安装主题" style="--block-color:#6AD0CB;"><span class="exturl image" data-url="aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvYTVlZWZkZGMuaHRtbA==" data-background-image="https://cdn.jsdelivr.net/gh/amehime/shoka@latest/images/avatar.jpg"></span>
-          <div class="info">
-          <span class="exturl title" data-url="aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvYTVlZWZkZGMuaHRtbA==">第九篇：安装主题</span>
-          <p class="desc">阿亮の小破站 & 搭建博客系列</p>
-          </div></div></div>
-<div class="note info">
-<p>没有加速器打开 GitHub 可能会稍微有点慢，需要加速可以联系博主</p>
-</div>
-<div class="note success">
-<p>希望你能找到属于自己的小破站</p>
-</div>
-]]></content>
-      <categories>
-        <category>computer-science</category>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>教程</tag>
       </tags>
   </entry>
   <entry>
