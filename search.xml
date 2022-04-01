@@ -12,46 +12,6 @@
       </tags>
   </entry>
   <entry>
-    <title>搭建博客常见的错误</title>
-    <url>/2022/04/01/cdc2e518.html</url>
-    <content><![CDATA[<h4 id="404错误"><a class="markdownIt-Anchor" href="#404错误">#</a> 404 错误</h4>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng20220401163558.png" alt="404"></p>
-<h5 id="分两种情况"><a class="markdownIt-Anchor" href="#分两种情况">#</a> 分两种情况</h5>
-<ol>
-<li>
-<h6 id="还未修改域名"><a class="markdownIt-Anchor" href="#还未修改域名">#</a> 还未修改域名</h6>
-<ol>
-<li>
-<p>打开 ``GitHub` 仓库看文件是否已经上传成功，如图。</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng20220401164116.jpg" alt=""></p>
-</li>
-</ol>
-</li>
-<li>
-<p>如果仓库是空的，说明你没上传成功，</p>
-</li>
-</ol>
-<p>打开 <code>E:\studyAPP\node_js\node_global</code>  路径插件是否成功安装 Hexo 插件了，如果没成功，那就重新安装一遍。重装还是不行的话，大概率就是你的 Nodejs 系统环境没配好，重新回到第四篇配置 Nodejs 环境。</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204011654.jpg" alt="404"></p>
-<p>如果成功安装 Hexo 插件了。再查看一下 <code>blog</code>  下的 <code>_config.yml</code>  文件， <code>deploy</code>  有没有设置正确，输入格式有没有正确 (每一个小红点都是空格)</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204011701.jpg" alt=""></p>
-<ol>
-<li>
-<h6 id="已修改域名"><a class="markdownIt-Anchor" href="#已修改域名">#</a> 已修改域名</h6>
-</li>
-</ol>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token function">npm</span> <span class="token function">ls</span> -dept <span class="token number">0</span></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>computer-science</category>
-        <category>Hexo</category>
-        <category>hexo-error</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>hexo怎么安装插件</title>
     <url>/2022/03/26/c5de56d5.html</url>
     <content><![CDATA[<hr>
@@ -91,6 +51,46 @@
         <category>computer-science</category>
         <category>Hexo</category>
         <category>modules</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>搭建博客常见的错误</title>
+    <url>/2022/04/01/cdc2e518.html</url>
+    <content><![CDATA[<h4 id="404错误"><a class="markdownIt-Anchor" href="#404错误">#</a> 404 错误</h4>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng20220401163558.png" alt="404"></p>
+<h5 id="分两种情况"><a class="markdownIt-Anchor" href="#分两种情况">#</a> 分两种情况</h5>
+<ol>
+<li>
+<h6 id="还未修改域名"><a class="markdownIt-Anchor" href="#还未修改域名">#</a> 还未修改域名</h6>
+<ol>
+<li>
+<p>打开 ``GitHub` 仓库看文件是否已经上传成功，如图。</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng20220401164116.jpg" alt=""></p>
+</li>
+</ol>
+</li>
+<li>
+<p>如果仓库是空的，说明你没上传成功，</p>
+</li>
+</ol>
+<p>打开 <code>E:\studyAPP\node_js\node_global</code>  路径插件是否成功安装 Hexo 插件了，如果没成功，那就重新安装一遍。重装还是不行的话，大概率就是你的 Nodejs 系统环境没配好，重新回到第四篇配置 Nodejs 环境。</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204011654.jpg" alt="404"></p>
+<p>如果成功安装 Hexo 插件了。再查看一下 <code>blog</code>  下的 <code>_config.yml</code>  文件， <code>deploy</code>  有没有设置正确，输入格式有没有正确 (每一个小红点都是空格)</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204011701.jpg" alt=""></p>
+<ol>
+<li>
+<h6 id="已修改域名"><a class="markdownIt-Anchor" href="#已修改域名">#</a> 已修改域名</h6>
+</li>
+</ol>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token function">npm</span> <span class="token function">ls</span> -dept <span class="token number">0</span></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>computer-science</category>
+        <category>Hexo</category>
+        <category>hexo-error</category>
       </categories>
       <tags>
         <tag>博客</tag>
@@ -666,7 +666,7 @@
 <ol start="14">
 <li>
 <p>在 <code>CNAME</code>  文件里面填入你购买的域名</p>
-<figure class="highlight yaml"><figcaption data-lang="YAML"></figcaption><table><tr><td data-num="1"></td><td><pre>aliang<span class="token punctuation">,</span>life</pre></td></tr></table></figure></li>
+<figure class="highlight yaml"><figcaption data-lang="YAML"></figcaption><table><tr><td data-num="1"></td><td><pre>aliang.life</pre></td></tr></table></figure></li>
 </ol>
 <p><img data-src="https://s2.loli.net/2022/03/30/SrZdm4P7NinQpCg.jpg" alt=""></p>
 <ol start="15">
