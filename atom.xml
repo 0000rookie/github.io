@@ -26,9 +26,36 @@
         <id>https://www.aliang.live/2022/04/02/undefined.html</id>
         <title>搭建GitHu图床</title>
         <link rel="alternate" href="https://www.aliang.live/2022/04/02/undefined.html"/>
-        <content type="html"></content>
+        <content type="html">&lt;p&gt;&lt;strong&gt;问：什么是图床？图床有什么用？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;答：图床就是一个存放你照片的云盘，只要有网络就能打开这张照片&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;新建一个仓库&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#新建一个仓库&#34;&gt;#&lt;/a&gt; 新建一个仓库&lt;/h2&gt;
+&lt;p&gt;** 用于存放图片的仓库 **  俗称图床&lt;br&gt;
+&lt;img data-src=&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021048.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;给你图床起个名字&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#给你图床起个名字&#34;&gt;#&lt;/a&gt; 给你图床起个名字&lt;/h2&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021050.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;新建token&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#新建token&#34;&gt;#&lt;/a&gt; 新建 token&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;settings---&amp;gt;Developer settings---&amp;gt;Personal access tokens---&amp;gt;generate new token&lt;/code&gt; &lt;br&gt;
+&lt;img data-src=&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021051.jpg&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img data-src=&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021059.jpg&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img data-src=&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021100.jpg&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;em&gt; 这边给大家翻译一下，英文不是很好可以看看&lt;/em&gt;&lt;br&gt;
+&lt;img data-src=&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021102.jpg&#34; alt=&#34;&#34;&gt;&lt;br&gt;
+&lt;img data-src=&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021103.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;点击复制&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021105.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;配置picgo&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#配置picgo&#34;&gt;#&lt;/a&gt; 配置 Picgo&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;注意：我在 imgs 仓库下新建了一个 Hexoimgs 文件夹&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;粘贴刚刚复制的 &lt;code&gt;token&lt;/code&gt;  到 &lt;code&gt;设定Token&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021133.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;你 &lt;code&gt;github&lt;/code&gt;  上的分支名是什么， &lt;code&gt;PicGO的&lt;/code&gt; 设定分支名就写什么&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021131.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;设定自定义域名：&lt;/strong&gt; &lt;code&gt;0000rookie/imgs&lt;/code&gt;  改成你的 &lt;code&gt;用户名/仓库名&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-URL&#34;&gt;http://cdn.jsdelivr.net/gh/0000rookie/imgs
+&lt;/code&gt;&lt;/pre&gt;
+</content>
         <category term="计算机科学" scheme="https://www.aliang.live/categories/computer-science/" />
         <category term="博客" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
+        <category term="模块" scheme="https://www.aliang.live/categories/computer-science/Hexo/%E6%A8%A1%E5%9D%97/" />
         <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
         <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
         <updated>2022-04-01T16:09:31.000Z</updated>
