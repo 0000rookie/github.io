@@ -29,9 +29,9 @@
             <guid isPermalink="true">https://www.aliang.live/2022/04/02/undefined.html</guid>
             <title>搭建GitHu图床</title>
             <link>https://www.aliang.live/2022/04/02/undefined.html</link>
-            <category term="计算机科学" scheme="https://www.aliang.live/categories/computer-science/" />
-            <category term="博客" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
-            <category term="模块" scheme="https://www.aliang.live/categories/computer-science/Hexo/%E6%A8%A1%E5%9D%97/" />
+            <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+            <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
+            <category term="模块" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E6%A8%A1%E5%9D%97/" />
             <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
             <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
             <pubDate>Sat, 02 Apr 2022 00:09:31 +0800</pubDate>
@@ -61,53 +61,53 @@
 &lt;p&gt;&lt;strong&gt;设定自定义域名：&lt;/strong&gt; &lt;code&gt;0000rookie/imgs&lt;/code&gt;  改成你的 &lt;code&gt;用户名/仓库名&lt;/code&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-URL&#34;&gt;http://cdn.jsdelivr.net/gh/0000rookie/imgs
 &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;你的图床就搭建完啦&lt;/p&gt;
  ]]></description>
         </item>
         <item>
             <guid isPermalink="true">https://www.aliang.live/2022/04/01/cdc2e518.html</guid>
             <title>搭建博客常见的错误</title>
             <link>https://www.aliang.live/2022/04/01/cdc2e518.html</link>
-            <category term="computer-science" scheme="https://www.aliang.live/categories/computer-science/" />
-            <category term="Hexo" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
-            <category term="hexo-error" scheme="https://www.aliang.live/categories/computer-science/Hexo/hexo-error/" />
+            <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+            <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
+            <category term="搭博客常见错误" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E6%90%AD%E5%8D%9A%E5%AE%A2%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/" />
             <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
             <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
             <pubDate>Fri, 01 Apr 2022 16:21:38 +0800</pubDate>
-            <description><![CDATA[ &lt;h4 id=&#34;404错误&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#404错误&#34;&gt;#&lt;/a&gt; 404 错误&lt;/h4&gt;
+            <description><![CDATA[ &lt;h2 id=&#34;404错误&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#404错误&#34;&gt;#&lt;/a&gt; 404 错误&lt;/h2&gt;
 &lt;p&gt;&lt;img data-src=&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng20220401163558.png&#34; alt=&#34;404&#34;&gt;&lt;/p&gt;
-&lt;h5 id=&#34;分两种情况&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#分两种情况&#34;&gt;#&lt;/a&gt; 分两种情况&lt;/h5&gt;
+&lt;h3 id=&#34;分两种情况&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#分两种情况&#34;&gt;#&lt;/a&gt; 分两种情况&lt;/h3&gt;
+&lt;h4 id=&#34;还未修改域名&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#还未修改域名&#34;&gt;#&lt;/a&gt; 还未修改域名&lt;/h4&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;h6 id=&#34;还未修改域名&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#还未修改域名&#34;&gt;#&lt;/a&gt; 还未修改域名&lt;/h6&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;打开 ``GitHub` 仓库看文件是否已经上传成功，如图。&lt;/p&gt;
+&lt;p&gt;打开 ``GitHub` 仓库看文件是否已经上传成功，成功如图。&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng20220401164116.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;如果仓库是空的，说明你没上传成功，&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;打开 &lt;code&gt;E:\studyAPP\node_js\node_global&lt;/code&gt;  路径插件是否成功安装 Hexo 插件了，如果没成功，那就重新安装一遍。重装还是不行的话，大概率就是你的 Nodejs 系统环境没配好，重新回到第四篇配置 Nodejs 环境。&lt;/p&gt;
+&lt;p&gt;打开 &lt;code&gt;E:\studyAPP\node_js\node_global&lt;/code&gt;  路径插件是否成功安装 &lt;code&gt;Hexo&lt;/code&gt;  插件了，如果没成功，那就重新安装一遍。重装还是不行的话，大概率就是你的 Nodejs 系统环境没配好，重新回到第四篇配置 &lt;code&gt;Nodejs&lt;/code&gt;  环境。&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204011654.jpg&#34; alt=&#34;404&#34;&gt;&lt;/p&gt;
 &lt;p&gt;如果成功安装 Hexo 插件了。再查看一下 &lt;code&gt;blog&lt;/code&gt;  下的 &lt;code&gt;_config.yml&lt;/code&gt;  文件， &lt;code&gt;deploy&lt;/code&gt;  有没有设置正确，输入格式有没有正确 (每一个小红点都是空格)&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204011701.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;h6 id=&#34;已修改域名&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#已修改域名&#34;&gt;#&lt;/a&gt; 已修改域名&lt;/h6&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;ls&lt;/span&gt; -dept &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
+&lt;p&gt;&lt;strong&gt;如果还是 404 页面&lt;/strong&gt;，再检查一下 &lt;code&gt;hexo-deployer-git&lt;/code&gt;  是不是安装成功，重新安装一遍&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt; hexo-deployer-git --save&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;已修改域名&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#已修改域名&#34;&gt;#&lt;/a&gt; 已修改域名&lt;/h3&gt;
+&lt;p&gt;大多数都是 &lt;code&gt;Blog/source/CNAME&lt;/code&gt;  文件没有&lt;strong&gt;命名&lt;/strong&gt;好或者是&lt;strong&gt;域名填写错误&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;CNAME&lt;/code&gt;  是没有后缀的文件&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204021406.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204021407.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;如果不清楚该文件是不是有后缀的，可以这样打开选项查看&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204021412.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+ ]]></description>
         </item>
         <item>
             <guid isPermalink="true">https://www.aliang.live/2022/03/30/aaad0208.html</guid>
             <title>零基础搭建Hexo个人博客系列</title>
             <link>https://www.aliang.live/2022/03/30/aaad0208.html</link>
-            <category term="computer-science" scheme="https://www.aliang.live/categories/computer-science/" />
-            <category term="Hexo" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
-            <category term="hexo-series" scheme="https://www.aliang.live/categories/computer-science/Hexo/hexo-series/" />
+            <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+            <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
+            <category term="零基础搭建Hexo个人博客系列" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" />
             <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
             <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
             <pubDate>Wed, 30 Mar 2022 23:05:46 +0800</pubDate>
@@ -161,9 +161,9 @@
             <guid isPermalink="true">https://www.aliang.live/2022/03/30/a5eefddc.html</guid>
             <title>第九篇：安装主题---从0基础搭建Hexo博客</title>
             <link>https://www.aliang.live/2022/03/30/a5eefddc.html</link>
-            <category term="computer-science" scheme="https://www.aliang.live/categories/computer-science/" />
-            <category term="Hexo" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
-            <category term="hexo-series" scheme="https://www.aliang.live/categories/computer-science/Hexo/hexo-series/" />
+            <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+            <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
+            <category term="零基础搭建Hexo个人博客系列" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" />
             <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
             <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
             <pubDate>Wed, 30 Mar 2022 00:30:51 +0800</pubDate>
@@ -201,7 +201,9 @@
 &lt;/ol&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/wYXrnUu58TMZ1DA.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;7&#34;&gt;
-&lt;li&gt;再打开 &lt;code&gt;git bash here&lt;/code&gt; ，输入 &lt;code&gt;hexo clean &amp;amp;&amp;amp; hexo g &amp;amp;&amp;amp; hexo d&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;再打开 &lt;code&gt;git bash here&lt;/code&gt; ，输入&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo clean &lt;span class=&#34;token operator&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; hexo g &lt;span class=&#34;token operator&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; hexo d&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/SN1VlxAIpaFW5Lz.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;8&#34;&gt;
@@ -215,9 +217,9 @@
             <guid isPermalink="true">https://www.aliang.live/2022/03/30/9bf6caef.html</guid>
             <title>第八篇：解析域名---从0基础搭建Hexo博客</title>
             <link>https://www.aliang.live/2022/03/30/9bf6caef.html</link>
-            <category term="computer-science" scheme="https://www.aliang.live/categories/computer-science/" />
-            <category term="Hexo" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
-            <category term="hexo-series" scheme="https://www.aliang.live/categories/computer-science/Hexo/hexo-series/" />
+            <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+            <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
+            <category term="零基础搭建Hexo个人博客系列" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" />
             <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
             <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
             <pubDate>Wed, 30 Mar 2022 00:28:12 +0800</pubDate>
@@ -299,9 +301,9 @@
             <guid isPermalink="true">https://www.aliang.live/2022/03/30/6c2393ec.html</guid>
             <title>第七篇：购买域名---从0基础搭建Hexo博客</title>
             <link>https://www.aliang.live/2022/03/30/6c2393ec.html</link>
-            <category term="computer-science" scheme="https://www.aliang.live/categories/computer-science/" />
-            <category term="Hexo" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
-            <category term="hexo-series" scheme="https://www.aliang.live/categories/computer-science/Hexo/hexo-series/" />
+            <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+            <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
+            <category term="零基础搭建Hexo个人博客系列" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" />
             <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
             <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
             <pubDate>Wed, 30 Mar 2022 00:27:30 +0800</pubDate>
@@ -353,9 +355,9 @@
             <guid isPermalink="true">https://www.aliang.live/2022/03/30/dc09a46c.html</guid>
             <title>第六篇：将博客部署到GitHub---从0基础搭建Hexo博客</title>
             <link>https://www.aliang.live/2022/03/30/dc09a46c.html</link>
-            <category term="computer-science" scheme="https://www.aliang.live/categories/computer-science/" />
-            <category term="Hexo" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
-            <category term="hexo-series" scheme="https://www.aliang.live/categories/computer-science/Hexo/hexo-series/" />
+            <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+            <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
+            <category term="零基础搭建Hexo个人博客系列" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" />
             <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
             <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
             <pubDate>Wed, 30 Mar 2022 00:25:37 +0800</pubDate>
@@ -381,8 +383,7 @@
 &lt;figure class=&#34;highlight yml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;deploy&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;type&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; git&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;repo&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; git@github.com&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;0000rookie/github.io.git&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;branch&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; main&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ol start=&#34;5&#34;&gt;
 &lt;li&gt;
 &lt;p&gt;回到 &lt;code&gt;blog&lt;/code&gt;  文件夹中，鼠标右键打开 &lt;code&gt;git bash here&lt;/code&gt; ，安装 &lt;code&gt;git&lt;/code&gt;  部署插件&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;npm install hexo-deployer-git --save&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt; hexo-deployer-git --save&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/3bDkNml7QBJVR6C.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;6&#34;&gt;
@@ -404,9 +405,9 @@
             <guid isPermalink="true">https://www.aliang.live/2022/03/30/87b69652.html</guid>
             <title>第五篇：安装Hexo---从0基础搭建Hexo博客</title>
             <link>https://www.aliang.live/2022/03/30/87b69652.html</link>
-            <category term="computer-science" scheme="https://www.aliang.live/categories/computer-science/" />
-            <category term="Hexo" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
-            <category term="hexo-series" scheme="https://www.aliang.live/categories/computer-science/Hexo/hexo-series/" />
+            <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+            <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
+            <category term="零基础搭建Hexo个人博客系列" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" />
             <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
             <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
             <pubDate>Wed, 30 Mar 2022 00:25:26 +0800</pubDate>
@@ -466,9 +467,9 @@
             <guid isPermalink="true">https://www.aliang.live/2022/03/30/cf63c07.html</guid>
             <title>第四篇：安装Nodejs---从0基础搭建Hexo博客</title>
             <link>https://www.aliang.live/2022/03/30/cf63c07.html</link>
-            <category term="computer-science" scheme="https://www.aliang.live/categories/computer-science/" />
-            <category term="Hexo" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
-            <category term="hexo-series" scheme="https://www.aliang.live/categories/computer-science/Hexo/hexo-series/" />
+            <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+            <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
+            <category term="零基础搭建Hexo个人博客系列" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" />
             <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
             <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
             <pubDate>Wed, 30 Mar 2022 00:24:41 +0800</pubDate>
@@ -552,9 +553,9 @@
             <guid isPermalink="true">https://www.aliang.live/2022/03/30/b75a1db6.html</guid>
             <title>第三篇：Git提交文件---从0基础搭建Hexo博客</title>
             <link>https://www.aliang.live/2022/03/30/b75a1db6.html</link>
-            <category term="computer-science" scheme="https://www.aliang.live/categories/computer-science/" />
-            <category term="Hexo" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
-            <category term="hexo-series" scheme="https://www.aliang.live/categories/computer-science/Hexo/hexo-series/" />
+            <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+            <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
+            <category term="零基础搭建Hexo个人博客系列" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" />
             <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
             <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
             <pubDate>Wed, 30 Mar 2022 00:22:45 +0800</pubDate>
@@ -690,9 +691,9 @@
             <guid isPermalink="true">https://www.aliang.live/2022/03/30/859f60bd.html</guid>
             <title>第二篇：安装Git---从0基础搭建Hexo博客</title>
             <link>https://www.aliang.live/2022/03/30/859f60bd.html</link>
-            <category term="computer-science" scheme="https://www.aliang.live/categories/computer-science/" />
-            <category term="Hexo" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
-            <category term="hexo-series" scheme="https://www.aliang.live/categories/computer-science/Hexo/hexo-series/" />
+            <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+            <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
+            <category term="零基础搭建Hexo个人博客系列" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" />
             <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
             <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
             <pubDate>Wed, 30 Mar 2022 00:21:44 +0800</pubDate>
@@ -723,9 +724,9 @@
             <guid isPermalink="true">https://www.aliang.live/2022/03/30/a6f9d072.html</guid>
             <title>第一篇：注册github---从0基础搭建Hexo博客</title>
             <link>https://www.aliang.live/2022/03/30/a6f9d072.html</link>
-            <category term="computer-science" scheme="https://www.aliang.live/categories/computer-science/" />
-            <category term="Hexo" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
-            <category term="hexo-series" scheme="https://www.aliang.live/categories/computer-science/Hexo/hexo-series/" />
+            <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+            <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
+            <category term="零基础搭建Hexo个人博客系列" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" />
             <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
             <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
             <pubDate>Wed, 30 Mar 2022 00:20:30 +0800</pubDate>
@@ -747,11 +748,11 @@
         </item>
         <item>
             <guid isPermalink="true">https://www.aliang.live/2022/03/26/c5de56d5.html</guid>
-            <title>hexo怎么安装插件</title>
+            <title>Hexo怎么安装插件</title>
             <link>https://www.aliang.live/2022/03/26/c5de56d5.html</link>
-            <category term="computer-science" scheme="https://www.aliang.live/categories/computer-science/" />
-            <category term="Hexo" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
-            <category term="modules" scheme="https://www.aliang.live/categories/computer-science/Hexo/modules/" />
+            <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+            <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
+            <category term="模块" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E6%A8%A1%E5%9D%97/" />
             <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
             <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
             <pubDate>Sat, 26 Mar 2022 18:33:07 +0800</pubDate>
@@ -790,45 +791,14 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://www.aliang.live/2022/03/26/734352ba.html</guid>
-            <title>设置域名后样式失效</title>
-            <link>https://www.aliang.live/2022/03/26/734352ba.html</link>
-            <category term="computer-science" scheme="https://www.aliang.live/categories/computer-science/" />
-            <category term="Hexo" scheme="https://www.aliang.live/categories/computer-science/Hexo/" />
-            <category term="hexo-error" scheme="https://www.aliang.live/categories/computer-science/Hexo/hexo-error/" />
-            <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
+            <guid isPermalink="true">https://www.aliang.live/2022/03/26/0.html</guid>
+            <title></title>
+            <link>https://www.aliang.live/2022/03/26/0.html</link>
+            <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+            <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
+            <category term="搭博客常见错误" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E6%90%AD%E5%8D%9A%E5%AE%A2%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/" />
             <pubDate>Sat, 26 Mar 2022 16:03:13 +0800</pubDate>
-            <description><![CDATA[ &lt;hr&gt;
-&lt;h3 id=&#34;设置域名后样式失效&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#设置域名后样式失效&#34;&gt;#&lt;/a&gt; 设置域名后样式失效&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;安装完 hexo 后，在设置域名后发现样式失效了。&lt;/br&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;打开 F12 查看发现是路径出现了问题&lt;/br&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;打开 * &lt;code&gt;_config.yml&lt;/code&gt;  * 文件修改 &lt;code&gt;url&lt;/code&gt;  和 &lt;code&gt;root&lt;/code&gt; ，修改完就正常了&lt;/br&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4 id=&#34;如图修改&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#如图修改&#34;&gt;#&lt;/a&gt; 如图修改&lt;/h4&gt;
-&lt;center style=&#34;margin-bottom:10px;border-radius:10px&#34;&gt;
-    &lt;img src =&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/修改域名后样式失效1.png&#34; width=&#34;60%&#34; height=&#34;60%&#34; alt=&#34;图一&#34; style=&#34;border-radius:10px;&#34;/&gt;
-     &lt;p&gt;
-         修改前
-    &lt;/p&gt;
-&lt;/center&gt;
-&lt;center style=&#34;margin-bottom:10px;&#34;&gt;
-    &lt;img src =&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/修改域名后样式失效2.png&#34; width=&#34;60%&#34; height=&#34;60%&#34; alt=&#34;图二&#34; style=&#34;border-radius:10px;&#34;/&gt;
-     修改前
-      &lt;br/&gt;
-&lt;/center&gt;
-&lt;center style=&#34;margin-bottom:10px&#34;&gt;
-    &lt;img src =&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/修改域名后样式失效3.png&#34; width=&#34;60%&#34; height=&#34;60%&#34; alt=&#34;图三&#34; style=&#34;border-radius:10px;&#34;/&gt;
-     修改后
-      &lt;br/&gt;
-&lt;/center&gt;
- ]]></description>
+            <description><![CDATA[  ]]></description>
         </item>
         <item>
             <guid isPermalink="true">https://www.aliang.live/2022/03/26/d95d7e09.html</guid>
