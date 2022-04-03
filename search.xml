@@ -12,93 +12,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo怎么安装插件</title>
-    <url>/2022/03/26/c5de56d5.html</url>
-    <content><![CDATA[<hr>
-<h3 id="hexo怎么安装插件"><a class="markdownIt-Anchor" href="#hexo怎么安装插件">#</a> hexo 怎么安装插件</h3>
-<ol>
-<li>
-<p>打开 hexo 的根目录 <code>Blog</code></p>
-</li>
-<li>
-<p>输入安装地址 (此处我以安装 <code>npm i hexo-algoliasearch</code>  测试)</p>
-<figure class="highlight bash"><figcaption data-lang="bash"><span>npm安装</span></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">npm</span> i hexo-algoliasearch</pre></td></tr></table></figure></li>
-<li>
-<p>安装成功</p>
-</li>
-</ol>
-<p><img data-src="https://tva4.sinaimg.cn/large/0065wfS6ly8h0ntxuxa0oj30jo09njsv.jpg" alt="" title="在Blog打开cmd" height="65%" width="65%"></p>
-<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0ntxktk9zj30cr02gjrc.jpg" alt="" title="在cmd输入安装路径" height="65%" width="65%"></p>
-<p><img data-src="https://tva3.sinaimg.cn/large/0065wfS6ly8h0nty14h5oj30lh07s0tg.jpg" alt="" title="END" height="65%" width="65%"></p>
-<h3 id="hexo怎么卸载插件"><a class="markdownIt-Anchor" href="#hexo怎么卸载插件">#</a> Hexo 怎么卸载插件</h3>
-<ol>
-<li>
-<p>卸载也是在 <code>Blog</code>  打开 cmd，输入 <code>npm uninstall 插件名 --save</code>  即可</p>
-</li>
-<li>
-<p>或者简洁一点 <code>npm un 插件名 --save</code></p>
-</li>
-<li>
-<p>举个例子，我要卸载 <code>hexo-renderer-marked</code>  这个插件</p>
-</li>
-<li>
-<p>在 cmd 输入</p>
-<figure class="highlight bash"><figcaption data-lang="bash"><span>h 插件卸载 </span></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">npm</span> un hexo-renderer-marked --save</pre></td></tr></table></figure></li>
-</ol>
-<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0ntxxz7wqj30lk0650t3.jpg" alt="" title="卸载插件" height="75%" width="75%"></p>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>博客</category>
-        <category>模块</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>搭建GitHu图床</title>
-    <url>/2022/04/02/e85071ad.html</url>
-    <content><![CDATA[<p><strong>问：什么是图床？图床有什么用？</strong></p>
-<p><strong>答：图床就是一个存放你照片的云盘，只要有网络就能打开这张照片</strong></p>
-<h2 id="新建一个仓库"><a class="markdownIt-Anchor" href="#新建一个仓库">#</a> 新建一个仓库</h2>
-<p>** 用于存放图片的仓库 **  俗称图床<br>
-<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021048.jpg" alt=""></p>
-<h2 id="给你图床起个名字"><a class="markdownIt-Anchor" href="#给你图床起个名字">#</a> 给你图床起个名字</h2>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021050.jpg" alt=""></p>
-<h2 id="新建token"><a class="markdownIt-Anchor" href="#新建token">#</a> 新建 token</h2>
-<p><code>settings---&gt;Developer settings---&gt;Personal access tokens---&gt;generate new token</code> <br>
-<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021051.jpg" alt=""><br>
-<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021059.jpg" alt=""><br>
-<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021100.jpg" alt=""><br>
-<em> 这边给大家翻译一下，英文不是很好可以看看</em><br>
-<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021102.jpg" alt=""><br>
-<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021103.jpg" alt=""></p>
-<p><strong>点击复制</strong></p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021105.jpg" alt=""></p>
-<h2 id="配置picgo"><a class="markdownIt-Anchor" href="#配置picgo">#</a> 配置 Picgo</h2>
-<p><strong>注意：我在 imgs 仓库下新建了一个 Hexoimgs 文件夹</strong></p>
-<p>粘贴刚刚复制的 <code>token</code>  到 <code>设定Token</code></p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021133.jpg" alt=""></p>
-<p>你 <code>github</code>  上的分支名是什么， <code>PicGO的</code> 设定分支名就写什么</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021131.jpg" alt=""></p>
-<p><strong>设定自定义域名：</strong> <code>0000rookie/imgs</code>  改成你的 <code>用户名/仓库名</code></p>
-<pre><code class="language-URL">http://cdn.jsdelivr.net/gh/0000rookie/imgs
-</code></pre>
-<p>你的图床就搭建完啦</p>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>博客</category>
-        <category>模块</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>关于shoka主题食用技巧</title>
     <url>/2022/04/03/5d5981b0.html</url>
     <content><![CDATA[<h2 id="首页置顶文章"><a class="markdownIt-Anchor" href="#首页置顶文章">#</a> 首页置顶文章</h2>
@@ -126,6 +39,63 @@
         <category>博客</category>
         <category>搭博客常见错误</category>
       </categories>
+  </entry>
+  <entry>
+    <title>搭建博客常见的错误</title>
+    <url>/2022/04/01/cdc2e518.html</url>
+    <content><![CDATA[<h2 id="404错误"><a class="markdownIt-Anchor" href="#404错误">#</a> 404 错误</h2>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng20220401163558.png" alt="404"></p>
+<h3 id="分两种情况"><a class="markdownIt-Anchor" href="#分两种情况">#</a> 分两种情况</h3>
+<h4 id="还未修改域名"><a class="markdownIt-Anchor" href="#还未修改域名">#</a> 还未修改域名</h4>
+<ol>
+<li>
+<p>打开 ``GitHub` 仓库看文件是否已经上传成功，成功如图。</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng20220401164116.jpg" alt=""></p>
+</li>
+<li>
+<p>如果仓库是空的，说明你没上传成功。</p>
+<ul>
+<li>检查 <code>blog</code>  文件夹下的 <code>_config.yml</code>  文件 <code>deploy:</code>  的配置有没有正确。如下</li>
+</ul>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>deploy:</pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>  type: <span class="token function">git</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>  repo: git@github.com:0000rookie/github.io.git</pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre>  branch: main</pre></td></tr></table></figure><ul>
+<li>重新部署到 <code>github</code>  仓库。</li>
+</ul>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>hexo clean  <span class="token comment">#清除缓存文件 db.json 和已生成的静态文件 public</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>hexo g      <span class="token comment">#生成网站静态文件到默认设置的 public 文件夹 (hexo generate 的缩写)</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>hexo d      <span class="token comment">#自动生成网站静态文件，并部署到设定的仓库 (hexo deploy 的缩写)</span></pre></td></tr></table></figure><ul>
+<li>
+<p>在部署过程中，查看 git 窗口看有没有报错的地方，如有报错，查看报错内容，如果没有，此时查看 <code>github</code>  仓库有没有更新文件。</p>
+</li>
+<li>
+<p>如果还是没看到有更新内容，看看 <code>github</code>  分支是不是 <code>main</code> ，有些同学的分支是 <code>master</code> ，需要选择分支和部署的分支一致</p>
+</li>
+</ul>
+</li>
+</ol>
+<p>还有可能的错误是 <code>hexo</code>  安装有文件缺失，要重新安装一遍。打开 <code>E:\studyAPP\node_js\node_global</code>  路径插件是否成功安装 <code>Hexo</code>  插件了，如果没成功，那就重新安装一遍。</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">npm</span> <span class="token function">install</span> -g hexo-cli</pre></td></tr></table></figure><p>重装还是不行的话，大概率就是你的 Nodejs 系统环境没配好，重新回到第四篇配置 <code>Nodejs</code>  环境。</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204011654.jpg" alt="404"></p>
+<p>如果成功安装 <code>Hexo</code>  插件了。再查看一下 <code>blog</code>  下的 <code>_config.yml</code>  文件， <code>deploy</code>  有没有设置正确，输入格式有没有正确 (每一个小红点都是空格)</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204011701.jpg" alt=""></p>
+<p><strong>如果还是 404 页面</strong>，再检查一下 <code>hexo-deployer-git</code>  是不是安装成功，重新安装一遍</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token function">npm</span> <span class="token function">install</span> hexo-deployer-git --save</pre></td></tr></table></figure><h3 id="已修改域名"><a class="markdownIt-Anchor" href="#已修改域名">#</a> 已修改域名</h3>
+<p>大多数都是 <code>Blog/source/CNAME</code>  文件没有<strong>命名</strong>好或者是<strong>域名填写错误</strong></p>
+<p><code>CNAME</code>  是没有后缀的文件</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204021406.jpg" alt=""></p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204021407.jpg" alt=""></p>
+<p>如果不清楚该文件是不是有后缀的，可以这样打开选项查看</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204021412.jpg" alt=""></p>
+<div class="note info">
+<p>本文章是记录自己安装过程中遇到的错误，总结错误，今后再遇到错误也可以回头参考一下，本文还会继续更新错误</p>
+</div>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>博客</category>
+        <category>搭博客常见错误</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>教程</tag>
+      </tags>
   </entry>
   <entry>
     <title>第三篇：Git提交文件---从0基础搭建Hexo博客</title>
@@ -513,63 +483,6 @@
       </tags>
   </entry>
   <entry>
-    <title>搭建博客常见的错误</title>
-    <url>/2022/04/01/cdc2e518.html</url>
-    <content><![CDATA[<h2 id="404错误"><a class="markdownIt-Anchor" href="#404错误">#</a> 404 错误</h2>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng20220401163558.png" alt="404"></p>
-<h3 id="分两种情况"><a class="markdownIt-Anchor" href="#分两种情况">#</a> 分两种情况</h3>
-<h4 id="还未修改域名"><a class="markdownIt-Anchor" href="#还未修改域名">#</a> 还未修改域名</h4>
-<ol>
-<li>
-<p>打开 ``GitHub` 仓库看文件是否已经上传成功，成功如图。</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng20220401164116.jpg" alt=""></p>
-</li>
-<li>
-<p>如果仓库是空的，说明你没上传成功。</p>
-<ul>
-<li>检查 <code>blog</code>  文件夹下的 <code>_config.yml</code>  文件 <code>deploy:</code>  的配置有没有正确。如下</li>
-</ul>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>deploy:</pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>  type: <span class="token function">git</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>  repo: git@github.com:0000rookie/github.io.git</pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre>  branch: main</pre></td></tr></table></figure><ul>
-<li>重新部署到 <code>github</code>  仓库。</li>
-</ul>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>hexo clean  <span class="token comment">#清除缓存文件 db.json 和已生成的静态文件 public</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>hexo g      <span class="token comment">#生成网站静态文件到默认设置的 public 文件夹 (hexo generate 的缩写)</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>hexo d      <span class="token comment">#自动生成网站静态文件，并部署到设定的仓库 (hexo deploy 的缩写)</span></pre></td></tr></table></figure><ul>
-<li>
-<p>在部署过程中，查看 git 窗口看有没有报错的地方，如有报错，查看报错内容，如果没有，此时查看 <code>github</code>  仓库有没有更新文件。</p>
-</li>
-<li>
-<p>如果还是没看到有更新内容，看看 <code>github</code>  分支是不是 <code>main</code> ，有些同学的分支是 <code>master</code> ，需要选择分支和部署的分支一致</p>
-</li>
-</ul>
-</li>
-</ol>
-<p>还有可能的错误是 <code>hexo</code>  安装有文件缺失，要重新安装一遍。打开 <code>E:\studyAPP\node_js\node_global</code>  路径插件是否成功安装 <code>Hexo</code>  插件了，如果没成功，那就重新安装一遍。</p>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">npm</span> <span class="token function">install</span> -g hexo-cli</pre></td></tr></table></figure><p>重装还是不行的话，大概率就是你的 Nodejs 系统环境没配好，重新回到第四篇配置 <code>Nodejs</code>  环境。</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204011654.jpg" alt="404"></p>
-<p>如果成功安装 <code>Hexo</code>  插件了。再查看一下 <code>blog</code>  下的 <code>_config.yml</code>  文件， <code>deploy</code>  有没有设置正确，输入格式有没有正确 (每一个小红点都是空格)</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204011701.jpg" alt=""></p>
-<p><strong>如果还是 404 页面</strong>，再检查一下 <code>hexo-deployer-git</code>  是不是安装成功，重新安装一遍</p>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token function">npm</span> <span class="token function">install</span> hexo-deployer-git --save</pre></td></tr></table></figure><h3 id="已修改域名"><a class="markdownIt-Anchor" href="#已修改域名">#</a> 已修改域名</h3>
-<p>大多数都是 <code>Blog/source/CNAME</code>  文件没有<strong>命名</strong>好或者是<strong>域名填写错误</strong></p>
-<p><code>CNAME</code>  是没有后缀的文件</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204021406.jpg" alt=""></p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204021407.jpg" alt=""></p>
-<p>如果不清楚该文件是不是有后缀的，可以这样打开选项查看</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204021412.jpg" alt=""></p>
-<div class="note info">
-<p>本文章是记录自己安装过程中遇到的错误，总结错误，今后再遇到错误也可以回头参考一下，本文还会继续更新错误</p>
-</div>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>博客</category>
-        <category>搭博客常见错误</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>第六篇：将博客部署到GitHub---从0基础搭建Hexo博客</title>
     <url>/2022/03/30/dc09a46c.html</url>
     <content><![CDATA[<h2 id="将hexo部署到github"><a class="markdownIt-Anchor" href="#将hexo部署到github">#</a> 将 Hexo 部署到 github</h2>
@@ -638,62 +551,6 @@
 <p><img data-src="https://s2.loli.net/2022/03/30/pk9Gyi28uTFrXZY.jpg" alt=""></p>
 <p><img data-src="https://s2.loli.net/2022/03/30/8tjJkrGRb3NBsEW.jpg" alt=""></p>
 <p><img data-src="https://s2.loli.net/2022/03/30/FVivdNY8BLUfcSR.jpg" alt=""></p>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>博客</category>
-        <category>零基础搭建Hexo个人博客系列</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第七篇：购买域名---从0基础搭建Hexo博客</title>
-    <url>/2022/03/30/6c2393ec.html</url>
-    <content><![CDATA[<h2 id="购买域名"><a class="markdownIt-Anchor" href="#购买域名">#</a> 购买域名</h2>
-<p><strong>打开 [万网官网][<span class="exturl" data-url="aHR0cHM6Ly93YW53YW5nLmFsaXl1bi5jb20=">https://wanwang.aliyun.com</span>]</strong></p>
-<h3 id="注册账号"><a class="markdownIt-Anchor" href="#注册账号">#</a> 注册账号</h3>
-<ol>
-<li>我这里使用的是支付宝登录</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/rygEU1BWAnlkHLw.jpg" alt=""></p>
-<h3 id="输入域名"><a class="markdownIt-Anchor" href="#输入域名">#</a> 输入域名</h3>
-<ol start="2">
-<li>输入自己想要的域名，搜索</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/4CnXuINvtWgTe7Q.jpg" alt=""></p>
-<ol start="3">
-<li>
-<p><img data-src="https://s2.loli.net/2022/03/30/YVbD4TrPzAklFti.jpg" alt=""></p>
-</li>
-<li>
-<p>点击立即购买</p>
-</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/DeVr86NbnHGTs2d.jpg" alt=""></p>
-<ol start="5">
-<li>选择年限</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/cWOQ3Lakhi8V2Kt.jpg" alt=""></p>
-<ol start="6">
-<li>将域名持有者选为 “个人”</li>
-<li>新建信息模板</li>
-<li>选择你填的资料</li>
-<li>验证邮箱 (点击 <code>去验证</code> )</li>
-<li>立即购买</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/ykFrIJputCAawbq.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/93TRVgPZxYrnhA7.jpg" alt=""></p>
-<ol start="11">
-<li>支付成功，点击进入域名控制台</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/Q1JWYLqxVKmCshf.jpg" alt=""></p>
-<ol start="12">
-<li>等待审核。(我这边审核大概半小时就好了)</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/KsrTi1u3pqna2Ue.jpg" alt=""></p>
 ]]></content>
       <categories>
         <category>计算机科学</category>
@@ -792,6 +649,62 @@
       </tags>
   </entry>
   <entry>
+    <title>第七篇：购买域名---从0基础搭建Hexo博客</title>
+    <url>/2022/03/30/6c2393ec.html</url>
+    <content><![CDATA[<h2 id="购买域名"><a class="markdownIt-Anchor" href="#购买域名">#</a> 购买域名</h2>
+<p><strong>打开 [万网官网][<span class="exturl" data-url="aHR0cHM6Ly93YW53YW5nLmFsaXl1bi5jb20=">https://wanwang.aliyun.com</span>]</strong></p>
+<h3 id="注册账号"><a class="markdownIt-Anchor" href="#注册账号">#</a> 注册账号</h3>
+<ol>
+<li>我这里使用的是支付宝登录</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/rygEU1BWAnlkHLw.jpg" alt=""></p>
+<h3 id="输入域名"><a class="markdownIt-Anchor" href="#输入域名">#</a> 输入域名</h3>
+<ol start="2">
+<li>输入自己想要的域名，搜索</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/4CnXuINvtWgTe7Q.jpg" alt=""></p>
+<ol start="3">
+<li>
+<p><img data-src="https://s2.loli.net/2022/03/30/YVbD4TrPzAklFti.jpg" alt=""></p>
+</li>
+<li>
+<p>点击立即购买</p>
+</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/DeVr86NbnHGTs2d.jpg" alt=""></p>
+<ol start="5">
+<li>选择年限</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/cWOQ3Lakhi8V2Kt.jpg" alt=""></p>
+<ol start="6">
+<li>将域名持有者选为 “个人”</li>
+<li>新建信息模板</li>
+<li>选择你填的资料</li>
+<li>验证邮箱 (点击 <code>去验证</code> )</li>
+<li>立即购买</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/ykFrIJputCAawbq.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/93TRVgPZxYrnhA7.jpg" alt=""></p>
+<ol start="11">
+<li>支付成功，点击进入域名控制台</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/Q1JWYLqxVKmCshf.jpg" alt=""></p>
+<ol start="12">
+<li>等待审核。(我这边审核大概半小时就好了)</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/KsrTi1u3pqna2Ue.jpg" alt=""></p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>博客</category>
+        <category>零基础搭建Hexo个人博客系列</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>零基础搭建Hexo个人博客系列</title>
     <url>/2022/03/30/aaad0208.html</url>
     <content><![CDATA[<h3 id="零基础搭建hexo个人博客系列"><a class="markdownIt-Anchor" href="#零基础搭建hexo个人博客系列">#</a> 零基础搭建 Hexo 个人博客系列</h3>
@@ -843,6 +756,93 @@
         <category>计算机科学</category>
         <category>博客</category>
         <category>零基础搭建Hexo个人博客系列</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>搭建GitHu图床</title>
+    <url>/2022/04/02/e85071ad.html</url>
+    <content><![CDATA[<p><strong>问：什么是图床？图床有什么用？</strong></p>
+<p><strong>答：图床就是一个存放你照片的云盘，只要有网络就能打开这张照片</strong></p>
+<h2 id="新建一个仓库"><a class="markdownIt-Anchor" href="#新建一个仓库">#</a> 新建一个仓库</h2>
+<p>** 用于存放图片的仓库 **  俗称图床<br>
+<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021048.jpg" alt=""></p>
+<h2 id="给你图床起个名字"><a class="markdownIt-Anchor" href="#给你图床起个名字">#</a> 给你图床起个名字</h2>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021050.jpg" alt=""></p>
+<h2 id="新建token"><a class="markdownIt-Anchor" href="#新建token">#</a> 新建 token</h2>
+<p><code>settings---&gt;Developer settings---&gt;Personal access tokens---&gt;generate new token</code> <br>
+<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021051.jpg" alt=""><br>
+<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021059.jpg" alt=""><br>
+<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021100.jpg" alt=""><br>
+<em> 这边给大家翻译一下，英文不是很好可以看看</em><br>
+<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021102.jpg" alt=""><br>
+<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021103.jpg" alt=""></p>
+<p><strong>点击复制</strong></p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021105.jpg" alt=""></p>
+<h2 id="配置picgo"><a class="markdownIt-Anchor" href="#配置picgo">#</a> 配置 Picgo</h2>
+<p><strong>注意：我在 imgs 仓库下新建了一个 Hexoimgs 文件夹</strong></p>
+<p>粘贴刚刚复制的 <code>token</code>  到 <code>设定Token</code></p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021133.jpg" alt=""></p>
+<p>你 <code>github</code>  上的分支名是什么， <code>PicGO的</code> 设定分支名就写什么</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021131.jpg" alt=""></p>
+<p><strong>设定自定义域名：</strong> <code>0000rookie/imgs</code>  改成你的 <code>用户名/仓库名</code></p>
+<pre><code class="language-URL">http://cdn.jsdelivr.net/gh/0000rookie/imgs
+</code></pre>
+<p>你的图床就搭建完啦</p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>博客</category>
+        <category>模块</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo怎么安装插件</title>
+    <url>/2022/03/26/c5de56d5.html</url>
+    <content><![CDATA[<hr>
+<h3 id="hexo怎么安装插件"><a class="markdownIt-Anchor" href="#hexo怎么安装插件">#</a> hexo 怎么安装插件</h3>
+<ol>
+<li>
+<p>打开 hexo 的根目录 <code>Blog</code></p>
+</li>
+<li>
+<p>输入安装地址 (此处我以安装 <code>npm i hexo-algoliasearch</code>  测试)</p>
+<figure class="highlight bash"><figcaption data-lang="bash"><span>npm安装</span></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">npm</span> i hexo-algoliasearch</pre></td></tr></table></figure></li>
+<li>
+<p>安装成功</p>
+</li>
+</ol>
+<p><img data-src="https://tva4.sinaimg.cn/large/0065wfS6ly8h0ntxuxa0oj30jo09njsv.jpg" alt="" title="在Blog打开cmd" height="65%" width="65%"></p>
+<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0ntxktk9zj30cr02gjrc.jpg" alt="" title="在cmd输入安装路径" height="65%" width="65%"></p>
+<p><img data-src="https://tva3.sinaimg.cn/large/0065wfS6ly8h0nty14h5oj30lh07s0tg.jpg" alt="" title="END" height="65%" width="65%"></p>
+<h3 id="hexo怎么卸载插件"><a class="markdownIt-Anchor" href="#hexo怎么卸载插件">#</a> Hexo 怎么卸载插件</h3>
+<ol>
+<li>
+<p>卸载也是在 <code>Blog</code>  打开 cmd，输入 <code>npm uninstall 插件名 --save</code>  即可</p>
+</li>
+<li>
+<p>或者简洁一点 <code>npm un 插件名 --save</code></p>
+</li>
+<li>
+<p>举个例子，我要卸载 <code>hexo-renderer-marked</code>  这个插件</p>
+</li>
+<li>
+<p>在 cmd 输入</p>
+<figure class="highlight bash"><figcaption data-lang="bash"><span>h 插件卸载 </span></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">npm</span> un hexo-renderer-marked --save</pre></td></tr></table></figure></li>
+</ol>
+<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0ntxxz7wqj30lk0650t3.jpg" alt="" title="卸载插件" height="75%" width="75%"></p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>博客</category>
+        <category>模块</category>
       </categories>
       <tags>
         <tag>博客</tag>
