@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Git详细使用方法</title>
+    <url>/2022/04/04/43d2d741.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>技术杂谈</category>
+      </categories>
+  </entry>
+  <entry>
     <title>我的第一篇博客</title>
     <url>/2022/03/26/d95d7e09.html</url>
     <content><![CDATA[<h6 id="历时两天终于把我的小破站建成了"><a class="markdownIt-Anchor" href="#历时两天终于把我的小破站建成了">#</a> 历时两天，终于把我的小破站建成了。</h6>
@@ -9,15 +18,6 @@
       <tags>
         <tag>生活</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Git详细使用方法</title>
-    <url>/2022/04/04/43d2d741.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>技术杂谈</category>
-      </categories>
   </entry>
   <entry>
     <title>关于shoka主题食用技巧</title>
@@ -217,41 +217,6 @@
       </categories>
   </entry>
   <entry>
-    <title>第二篇：安装Git---从0基础搭建Hexo博客</title>
-    <url>/2022/03/30/859f60bd.html</url>
-    <content><![CDATA[<h3 id="以下会用到的软件"><a class="markdownIt-Anchor" href="#以下会用到的软件">#</a> 以下会用到的软件</h3>
-<p><strong>必装 [Git][<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbQ==">https://git-scm.com</span>]、[Node.js][<span class="exturl" data-url="aHR0cHM6Ly9ub2RlanMub3JnL2Vu">https://nodejs.org/en</span>]</strong> <em>(点击打开)</em></p>
-<p><strong>建议装 [notepad3][<span class="exturl" data-url="aHR0cHM6Ly9yb29raWUxNjc5LmxhbnpvdWYuY29tL2lIbW1hMDI2bnZkZw==">https://rookie1679.lanzouf.com/iHmma026nvdg</span>]</strong> <em>(点击打开)</em></p>
-<hr>
-<h3 id="安装git"><a class="markdownIt-Anchor" href="#安装git">#</a> 安装 Git</h3>
-<p><img data-src="https://s2.loli.net/2022/03/30/BQvOwdEjhy2Mxpi.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/cynKHCaWvM1lhPQ.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/mGnE9UXQfjSF4LA.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/5Y6oqd7uJGQZ3x9.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/7ulfP3VQJDIR49b.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/O71bgvBpnoya5UN.jpg" alt=""></p>
-<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0rsgp2d5yj30dv0aw756.jpg" alt="07"></p>
-<p><img data-src="https://tva1.sinaimg.cn/large/0065wfS6ly8h0rshgpo17j30dv0aw74s.jpg" alt="9"></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/5yNqYXRIFf2kpxc.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/8j3PsJFgN6e1IxB.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/Pz4C6HLjdQiE7MB.jpg" alt=""></p>
-<p><strong>鼠标右看到如图说明安装成功了，打开 Git bash here</strong></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/FbARg18aejdJUVO.jpg" alt=""></p>
-<p><strong>输入 git</strong></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/7qTxPmE6YGFOklK.jpg" alt=""></p>
-<p><strong>安装 git 结束</strong></p>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>博客</category>
-        <category>零基础搭建Hexo个人博客系列</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>第三篇：Git提交文件---从0基础搭建Hexo博客</title>
     <url>/2022/03/30/b75a1db6.html</url>
     <content><![CDATA[<h2 id="配置git"><a class="markdownIt-Anchor" href="#配置git">#</a> 配置 git</h2>
@@ -392,58 +357,29 @@
       </tags>
   </entry>
   <entry>
-    <title>第五篇：安装Hexo---从0基础搭建Hexo博客</title>
-    <url>/2022/03/30/87b69652.html</url>
-    <content><![CDATA[<h3 id="安装hexo"><a class="markdownIt-Anchor" href="#安装hexo">#</a> 安装 Hexo</h3>
-<ol>
-<li>新建一个仓库</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/LoeECmrFSydhnIt.jpg" alt=""></p>
-<ol start="2">
-<li>给仓库起个名，格式为   <code>账号名.github.io</code></li>
-</ol>
-<p><img data-src="https://tva4.sinaimg.cn/large/0065wfS6ly8h0rslvrth9j31ha0pqq5w.jpg" alt=""></p>
-<ol start="3">
-<li>打开 <code>stetings</code></li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/KaQX5eUTYvWp9H6.jpg" alt=""></p>
-<ol start="4">
-<li>滑到下面，找到这个 <code>GitHub pages</code>  ，点击打开</li>
-</ol>
-<p><img data-src="https://tva3.sinaimg.cn/large/0065wfS6ly8h0rsme8aiaj30p905tmx8.jpg" alt=""></p>
-<ol start="5">
-<li>出现以下图说明成功了</li>
-</ol>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/05.jpg" alt="05"></p>
-<ol start="6">
-<li>新建一个 <code>blog</code>  文件夹，在 <code>blog</code>  文件夹打开 <code>git bash here</code></li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/w8UDo5gxLzbOtiu.jpg" alt="">7. 安装 <code>hexo-cli</code>  插件</p>
-<figure class="highlight bash"><figcaption data-lang="bash"><span>h</span></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">npm</span> <span class="token function">install</span> -g hexo-cli</pre></td></tr></table></figure><p><img data-src="https://s2.loli.net/2022/03/30/IHBmwDz6FaGUyVW.jpg" alt=""></p>
-<ol start="8">
-<li>初始化博客</li>
-</ol>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>hexo init</pre></td></tr></table></figure><p><img data-src="https://s2.loli.net/2022/03/30/X4pArW28NVYmuCa.jpg" alt=""></p>
-<ol start="9">
-<li>静态部署博客</li>
-</ol>
-<figure class="highlight bash"><figcaption data-lang="bash"><span>mark：1</span></figcaption><table><tr><td data-num="1"></td><td><pre>hexo g</pre></td></tr></table></figure><p><img data-src="https://tva1.sinaimg.cn/large/0065wfS6ly8h0rsqg2bmbj30l20gdtav.jpg" alt="09"></p>
-<ol start="10">
-<li>
-<p>打开本地服务器</p>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>hexo s</pre></td></tr></table></figure></li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/atwxZphQzjf2kTi.jpg" alt=""></p>
-<ol start="11">
-<li>
-<p>浏览器输入 <code>localhost:4000</code>  查看</p>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>localhost:4000</pre></td></tr></table></figure></li>
-</ol>
-<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0rsqxer30j31ha0opdiy.jpg" alt="10"></p>
-<ol start="12">
-<li><code>ctrl+s</code> ，停止本地服务器运行</li>
-</ol>
-<p><strong>目前博客已经基本完成了</strong></p>
+    <title>第二篇：安装Git---从0基础搭建Hexo博客</title>
+    <url>/2022/03/30/859f60bd.html</url>
+    <content><![CDATA[<h3 id="以下会用到的软件"><a class="markdownIt-Anchor" href="#以下会用到的软件">#</a> 以下会用到的软件</h3>
+<p><strong>必装 [Git][<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbQ==">https://git-scm.com</span>]、[Node.js][<span class="exturl" data-url="aHR0cHM6Ly9ub2RlanMub3JnL2Vu">https://nodejs.org/en</span>]</strong> <em>(点击打开)</em></p>
+<p><strong>建议装 [notepad3][<span class="exturl" data-url="aHR0cHM6Ly9yb29raWUxNjc5LmxhbnpvdWYuY29tL2lIbW1hMDI2bnZkZw==">https://rookie1679.lanzouf.com/iHmma026nvdg</span>]</strong> <em>(点击打开)</em></p>
+<hr>
+<h3 id="安装git"><a class="markdownIt-Anchor" href="#安装git">#</a> 安装 Git</h3>
+<p><img data-src="https://s2.loli.net/2022/03/30/BQvOwdEjhy2Mxpi.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/cynKHCaWvM1lhPQ.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/mGnE9UXQfjSF4LA.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/5Y6oqd7uJGQZ3x9.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/7ulfP3VQJDIR49b.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/O71bgvBpnoya5UN.jpg" alt=""></p>
+<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0rsgp2d5yj30dv0aw756.jpg" alt="07"></p>
+<p><img data-src="https://tva1.sinaimg.cn/large/0065wfS6ly8h0rshgpo17j30dv0aw74s.jpg" alt="9"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/5yNqYXRIFf2kpxc.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/8j3PsJFgN6e1IxB.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/Pz4C6HLjdQiE7MB.jpg" alt=""></p>
+<p><strong>鼠标右看到如图说明安装成功了，打开 Git bash here</strong></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/FbARg18aejdJUVO.jpg" alt=""></p>
+<p><strong>输入 git</strong></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/7qTxPmE6YGFOklK.jpg" alt=""></p>
+<p><strong>安装 git 结束</strong></p>
 ]]></content>
       <categories>
         <category>计算机科学</category>
@@ -532,6 +468,70 @@
 </ol>
 <p><img data-src="https://s2.loli.net/2022/03/30/ugOVX3WGfpZ9DqP.jpg" alt=""></p>
 <p><strong> <code>nodejs</code>  环境配置到此就完成啦</strong></p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>博客</category>
+        <category>零基础搭建Hexo个人博客系列</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第五篇：安装Hexo---从0基础搭建Hexo博客</title>
+    <url>/2022/03/30/87b69652.html</url>
+    <content><![CDATA[<h3 id="安装hexo"><a class="markdownIt-Anchor" href="#安装hexo">#</a> 安装 Hexo</h3>
+<ol>
+<li>新建一个仓库</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/LoeECmrFSydhnIt.jpg" alt=""></p>
+<ol start="2">
+<li>给仓库起个名，格式为   <code>账号名.github.io</code></li>
+</ol>
+<p><img data-src="https://tva4.sinaimg.cn/large/0065wfS6ly8h0rslvrth9j31ha0pqq5w.jpg" alt=""></p>
+<ol start="3">
+<li>打开 <code>stetings</code></li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/KaQX5eUTYvWp9H6.jpg" alt=""></p>
+<ol start="4">
+<li>滑到下面，找到这个 <code>GitHub pages</code>  ，点击打开</li>
+</ol>
+<p><img data-src="https://tva3.sinaimg.cn/large/0065wfS6ly8h0rsme8aiaj30p905tmx8.jpg" alt=""></p>
+<ol start="5">
+<li>出现以下图说明成功了</li>
+</ol>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/05.jpg" alt="05"></p>
+<ol start="6">
+<li>新建一个 <code>blog</code>  文件夹，在 <code>blog</code>  文件夹打开 <code>git bash here</code></li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/w8UDo5gxLzbOtiu.jpg" alt="">7. 安装 <code>hexo-cli</code>  插件</p>
+<figure class="highlight bash"><figcaption data-lang="bash"><span>h</span></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">npm</span> <span class="token function">install</span> -g hexo-cli</pre></td></tr></table></figure><p><img data-src="https://s2.loli.net/2022/03/30/IHBmwDz6FaGUyVW.jpg" alt=""></p>
+<ol start="8">
+<li>初始化博客</li>
+</ol>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>hexo init</pre></td></tr></table></figure><p><img data-src="https://s2.loli.net/2022/03/30/X4pArW28NVYmuCa.jpg" alt=""></p>
+<ol start="9">
+<li>静态部署博客</li>
+</ol>
+<figure class="highlight bash"><figcaption data-lang="bash"><span>mark：1</span></figcaption><table><tr><td data-num="1"></td><td><pre>hexo g</pre></td></tr></table></figure><p><img data-src="https://tva1.sinaimg.cn/large/0065wfS6ly8h0rsqg2bmbj30l20gdtav.jpg" alt="09"></p>
+<ol start="10">
+<li>
+<p>打开本地服务器</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>hexo s</pre></td></tr></table></figure></li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/atwxZphQzjf2kTi.jpg" alt=""></p>
+<ol start="11">
+<li>
+<p>浏览器输入 <code>localhost:4000</code>  查看</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>localhost:4000</pre></td></tr></table></figure></li>
+</ol>
+<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0rsqxer30j31ha0opdiy.jpg" alt="10"></p>
+<ol start="12">
+<li><code>ctrl+s</code> ，停止本地服务器运行</li>
+</ol>
+<p><strong>目前博客已经基本完成了</strong></p>
 ]]></content>
       <categories>
         <category>计算机科学</category>
@@ -654,6 +654,34 @@
       </tags>
   </entry>
   <entry>
+    <title>第一篇：注册github---从0基础搭建Hexo博客</title>
+    <url>/2022/03/30/a6f9d072.html</url>
+    <content><![CDATA[<h3 id="注册github"><a class="markdownIt-Anchor" href="#注册github">#</a> 注册 GitHub</h3>
+<p><img data-src="https://s2.loli.net/2022/03/30/BULpyk6thPbgJCD.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/fo8wzF7dvqNHaB4.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/aXwyhW3KM8cxYCb.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/RN62GDFVQU1YKB3.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/JzFGeTjb7BHKSQD.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/48GA7g1N2VacpJl.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/uN8PBgwFWOlApfU.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/shHQtoZVwcPrz2I.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/aZSU1FnDumqY2M7.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/PhUtuCQNlLHXAdG.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/pk9Gyi28uTFrXZY.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/8tjJkrGRb3NBsEW.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/FVivdNY8BLUfcSR.jpg" alt=""></p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>博客</category>
+        <category>零基础搭建Hexo个人博客系列</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>第八篇：解析域名---从0基础搭建Hexo博客</title>
     <url>/2022/03/30/9bf6caef.html</url>
     <content><![CDATA[<h3 id="解析域名"><a class="markdownIt-Anchor" href="#解析域名">#</a> 解析域名</h3>
@@ -740,22 +768,50 @@
       </tags>
   </entry>
   <entry>
-    <title>第一篇：注册github---从0基础搭建Hexo博客</title>
-    <url>/2022/03/30/a6f9d072.html</url>
-    <content><![CDATA[<h3 id="注册github"><a class="markdownIt-Anchor" href="#注册github">#</a> 注册 GitHub</h3>
-<p><img data-src="https://s2.loli.net/2022/03/30/BULpyk6thPbgJCD.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/fo8wzF7dvqNHaB4.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/aXwyhW3KM8cxYCb.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/RN62GDFVQU1YKB3.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/JzFGeTjb7BHKSQD.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/48GA7g1N2VacpJl.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/uN8PBgwFWOlApfU.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/shHQtoZVwcPrz2I.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/aZSU1FnDumqY2M7.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/PhUtuCQNlLHXAdG.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/pk9Gyi28uTFrXZY.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/8tjJkrGRb3NBsEW.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/FVivdNY8BLUfcSR.jpg" alt=""></p>
+    <title>第七篇：购买域名---从0基础搭建Hexo博客</title>
+    <url>/2022/03/30/6c2393ec.html</url>
+    <content><![CDATA[<h2 id="购买域名"><a class="markdownIt-Anchor" href="#购买域名">#</a> 购买域名</h2>
+<p><strong>打开 [万网官网][<span class="exturl" data-url="aHR0cHM6Ly93YW53YW5nLmFsaXl1bi5jb20=">https://wanwang.aliyun.com</span>]</strong></p>
+<h3 id="注册账号"><a class="markdownIt-Anchor" href="#注册账号">#</a> 注册账号</h3>
+<ol>
+<li>我这里使用的是支付宝登录</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/rygEU1BWAnlkHLw.jpg" alt=""></p>
+<h3 id="输入域名"><a class="markdownIt-Anchor" href="#输入域名">#</a> 输入域名</h3>
+<ol start="2">
+<li>输入自己想要的域名，搜索</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/4CnXuINvtWgTe7Q.jpg" alt=""></p>
+<ol start="3">
+<li>
+<p><img data-src="https://s2.loli.net/2022/03/30/YVbD4TrPzAklFti.jpg" alt=""></p>
+</li>
+<li>
+<p>点击立即购买</p>
+</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/DeVr86NbnHGTs2d.jpg" alt=""></p>
+<ol start="5">
+<li>选择年限</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/cWOQ3Lakhi8V2Kt.jpg" alt=""></p>
+<ol start="6">
+<li>将域名持有者选为 “个人”</li>
+<li>新建信息模板</li>
+<li>选择你填的资料</li>
+<li>验证邮箱 (点击 <code>去验证</code> )</li>
+<li>立即购买</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/ykFrIJputCAawbq.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/93TRVgPZxYrnhA7.jpg" alt=""></p>
+<ol start="11">
+<li>支付成功，点击进入域名控制台</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/Q1JWYLqxVKmCshf.jpg" alt=""></p>
+<ol start="12">
+<li>等待审核。(我这边审核大概半小时就好了)</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/KsrTi1u3pqna2Ue.jpg" alt=""></p>
 ]]></content>
       <categories>
         <category>计算机科学</category>
@@ -814,62 +870,6 @@
 <div class="note success">
 <p>希望你能找到属于自己的小破站</p>
 </div>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>博客</category>
-        <category>零基础搭建Hexo个人博客系列</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第七篇：购买域名---从0基础搭建Hexo博客</title>
-    <url>/2022/03/30/6c2393ec.html</url>
-    <content><![CDATA[<h2 id="购买域名"><a class="markdownIt-Anchor" href="#购买域名">#</a> 购买域名</h2>
-<p><strong>打开 [万网官网][<span class="exturl" data-url="aHR0cHM6Ly93YW53YW5nLmFsaXl1bi5jb20=">https://wanwang.aliyun.com</span>]</strong></p>
-<h3 id="注册账号"><a class="markdownIt-Anchor" href="#注册账号">#</a> 注册账号</h3>
-<ol>
-<li>我这里使用的是支付宝登录</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/rygEU1BWAnlkHLw.jpg" alt=""></p>
-<h3 id="输入域名"><a class="markdownIt-Anchor" href="#输入域名">#</a> 输入域名</h3>
-<ol start="2">
-<li>输入自己想要的域名，搜索</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/4CnXuINvtWgTe7Q.jpg" alt=""></p>
-<ol start="3">
-<li>
-<p><img data-src="https://s2.loli.net/2022/03/30/YVbD4TrPzAklFti.jpg" alt=""></p>
-</li>
-<li>
-<p>点击立即购买</p>
-</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/DeVr86NbnHGTs2d.jpg" alt=""></p>
-<ol start="5">
-<li>选择年限</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/cWOQ3Lakhi8V2Kt.jpg" alt=""></p>
-<ol start="6">
-<li>将域名持有者选为 “个人”</li>
-<li>新建信息模板</li>
-<li>选择你填的资料</li>
-<li>验证邮箱 (点击 <code>去验证</code> )</li>
-<li>立即购买</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/ykFrIJputCAawbq.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/93TRVgPZxYrnhA7.jpg" alt=""></p>
-<ol start="11">
-<li>支付成功，点击进入域名控制台</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/Q1JWYLqxVKmCshf.jpg" alt=""></p>
-<ol start="12">
-<li>等待审核。(我这边审核大概半小时就好了)</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/KsrTi1u3pqna2Ue.jpg" alt=""></p>
 ]]></content>
       <categories>
         <category>计算机科学</category>
