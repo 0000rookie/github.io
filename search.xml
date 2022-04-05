@@ -11,68 +11,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Git详细使用方法</title>
-    <url>/2022/04/04/43d2d741.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>技术杂谈</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>关于shoka主题食用技巧</title>
-    <url>/2022/04/03/5d5981b0.html</url>
-    <content><![CDATA[<h2 id="首页置顶文章"><a class="markdownIt-Anchor" href="#首页置顶文章">#</a> 首页置顶文章</h2>
-<figure class="highlight markdown"><figcaption data-lang="markdown"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token front-matter-block"><span class="token punctuation">---</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token front-matter yaml language-yaml"><span class="token key atrule">title</span><span class="token punctuation">:</span> 置顶文章</pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre><span class="token key atrule">sticky</span><span class="token punctuation">:</span> <span class="token boolean important">true</span></span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token punctuation">---</span></span></pre></td></tr></table></figure><h2 id="关闭文章评论"><a class="markdownIt-Anchor" href="#关闭文章评论">#</a> 关闭文章评论</h2>
-<figure class="highlight markdown"><figcaption data-lang="markdown"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token front-matter-block"><span class="token punctuation">---</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token front-matter yaml language-yaml"><span class="token key atrule">title</span><span class="token punctuation">:</span> 开启文章评论</pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre><span class="token key atrule">comment</span><span class="token punctuation">:</span> <span class="token boolean important">false</span></span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token punctuation">---</span></span></pre></td></tr></table></figure><h2 id="关闭文章音乐播放器"><a class="markdownIt-Anchor" href="#关闭文章音乐播放器">#</a> 关闭文章音乐播放器</h2>
-<figure class="highlight markdown"><figcaption data-lang="markdown"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token front-matter-block"><span class="token punctuation">---</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token front-matter yaml language-yaml"><span class="token key atrule">title</span><span class="token punctuation">:</span> 关闭文章音乐播放器</pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre><span class="token key atrule">audio</span><span class="token punctuation">:</span> <span class="token boolean important">false</span></span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token punctuation">---</span></span></pre></td></tr></table></figure><h2 id="个人头像配置"><a class="markdownIt-Anchor" href="#个人头像配置">#</a> 个人头像配置</h2>
-<figure class="highlight yaml"><figcaption data-lang="YAML"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token key atrule">sidebar</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>  <span class="token comment"># 侧边栏的位置</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>  <span class="token key atrule">position</span><span class="token punctuation">:</span> left</pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre>  <span class="token comment">#position: right</span></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre>  <span class="token comment"># 替换默认头像，并在这里设置 url</span></pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre>  <span class="token key atrule">avatar</span><span class="token punctuation">:</span> avatar.jpg</pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre>  <span class="token comment"># 头像路径在 themes\shoka\source\images\avatar.jpg</span></pre></td></tr></table></figure><h2 id="底部widgets"><a class="markdownIt-Anchor" href="#底部widgets">#</a> 底部 widgets</h2>
-<figure class="highlight yaml"><figcaption data-lang="YAML"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token key atrule">widgets</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>  <span class="token key atrule">random_posts</span><span class="token punctuation">:</span> <span class="token boolean important">true</span> <span class="token comment"># 显示随机文章</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>  <span class="token key atrule">recent_comments</span><span class="token punctuation">:</span> <span class="token boolean important">true</span> <span class="token comment"># 显示最近评论</span></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre>  <span class="token comment">#在 shoka/_config.yml 修改</span></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>博客</category>
-        <category>博客的食用方法</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>文章Front-Matter参数设置</title>
-    <url>/2022/04/04/a7032750.html</url>
-    <content><![CDATA[<h2 id="h2so4置顶文章"><a class="markdownIt-Anchor" href="#h2so4置顶文章">#</a> <span class="red">H<sub>2</sub>SO<sub>4</sub></span> 置顶文章</h2>
-<figure class="highlight raw"><figcaption data-lang=""><span>w Front-Matter</span></figcaption><table><tr><td data-num="1"></td><td><pre>sticky: true</pre></td></tr></table></figure><hr>
-<h2 id="h2so4开启评论"><a class="markdownIt-Anchor" href="#h2so4开启评论">#</a> <span class="red">H<sub>2</sub>SO<sub>4</sub></span> 开启评论</h2>
-<figure class="highlight raw"><figcaption data-lang=""><span>w Front-Matter</span></figcaption><table><tr><td data-num="1"></td><td><pre>comments: true</pre></td></tr></table></figure><hr>
-<h2 id="h2so4文章标签"><a class="markdownIt-Anchor" href="#h2so4文章标签">#</a> <span class="red">H<sub>2</sub>SO<sub>4</sub></span> 文章标签</h2>
-<figure class="highlight raw"><figcaption data-lang=""><span>w Front-Matter</span></figcaption><table><tr><td data-num="1"></td><td><pre>tags: </pre></td></tr><tr><td data-num="2"></td><td><pre>  - 博客</pre></td></tr><tr><td data-num="3"></td><td><pre>  - 教程</pre></td></tr></table></figure><hr>
-<h2 id="h2so4文章标题"><a class="markdownIt-Anchor" href="#h2so4文章标题">#</a> <span class="red">H<sub>2</sub>SO<sub>4</sub></span> 文章标题</h2>
-<figure class="highlight raw"><figcaption data-lang=""><span>w Front-Matter</span></figcaption><table><tr><td data-num="1"></td><td><pre>title: 文章 Front-Matter 参数设置</pre></td></tr></table></figure><hr>
-<h2 id="h2so4文章分类"><a class="markdownIt-Anchor" href="#h2so4文章分类">#</a> <span class="red">H<sub>2</sub>SO<sub>4</sub></span> 文章分类</h2>
-<figure class="highlight raw"><figcaption data-lang=""><span>w Front-Matter</span></figcaption><table><tr><td data-num="1"></td><td><pre>categories:</pre></td></tr><tr><td data-num="2"></td><td><pre>  - 计算机科学</pre></td></tr><tr><td data-num="3"></td><td><pre>  - 博客</pre></td></tr><tr><td data-num="4"></td><td><pre>  - 博客的食用方法</pre></td></tr></table></figure><hr>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>博客</category>
-        <category>博客的食用方法</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/2022/03/26/0.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>博客</category>
-        <category>搭博客常见错误</category>
-      </categories>
-  </entry>
-  <entry>
     <title>搭建博客常见的错误</title>
     <url>/2022/04/01/cdc2e518.html</url>
     <content><![CDATA[<h2 id="404错误"><a class="markdownIt-Anchor" href="#404错误">#</a> 404 错误</h2>
@@ -123,6 +61,68 @@
         <category>计算机科学</category>
         <category>博客</category>
         <category>搭博客常见错误</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git详细使用方法</title>
+    <url>/2022/04/04/43d2d741.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>技术杂谈</category>
+      </categories>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2022/03/26/0.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>博客</category>
+        <category>搭博客常见错误</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>关于shoka主题食用技巧</title>
+    <url>/2022/04/03/5d5981b0.html</url>
+    <content><![CDATA[<h2 id="首页置顶文章"><a class="markdownIt-Anchor" href="#首页置顶文章">#</a> 首页置顶文章</h2>
+<figure class="highlight markdown"><figcaption data-lang="markdown"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token front-matter-block"><span class="token punctuation">---</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token front-matter yaml language-yaml"><span class="token key atrule">title</span><span class="token punctuation">:</span> 置顶文章</pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre><span class="token key atrule">sticky</span><span class="token punctuation">:</span> <span class="token boolean important">true</span></span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token punctuation">---</span></span></pre></td></tr></table></figure><h2 id="关闭文章评论"><a class="markdownIt-Anchor" href="#关闭文章评论">#</a> 关闭文章评论</h2>
+<figure class="highlight markdown"><figcaption data-lang="markdown"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token front-matter-block"><span class="token punctuation">---</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token front-matter yaml language-yaml"><span class="token key atrule">title</span><span class="token punctuation">:</span> 开启文章评论</pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre><span class="token key atrule">comment</span><span class="token punctuation">:</span> <span class="token boolean important">false</span></span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token punctuation">---</span></span></pre></td></tr></table></figure><h2 id="关闭文章音乐播放器"><a class="markdownIt-Anchor" href="#关闭文章音乐播放器">#</a> 关闭文章音乐播放器</h2>
+<figure class="highlight markdown"><figcaption data-lang="markdown"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token front-matter-block"><span class="token punctuation">---</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token front-matter yaml language-yaml"><span class="token key atrule">title</span><span class="token punctuation">:</span> 关闭文章音乐播放器</pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre><span class="token key atrule">audio</span><span class="token punctuation">:</span> <span class="token boolean important">false</span></span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token punctuation">---</span></span></pre></td></tr></table></figure><h2 id="个人头像配置"><a class="markdownIt-Anchor" href="#个人头像配置">#</a> 个人头像配置</h2>
+<figure class="highlight yaml"><figcaption data-lang="YAML"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token key atrule">sidebar</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>  <span class="token comment"># 侧边栏的位置</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>  <span class="token key atrule">position</span><span class="token punctuation">:</span> left</pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre>  <span class="token comment">#position: right</span></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre>  <span class="token comment"># 替换默认头像，并在这里设置 url</span></pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre>  <span class="token key atrule">avatar</span><span class="token punctuation">:</span> avatar.jpg</pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre>  <span class="token comment"># 头像路径在 themes\shoka\source\images\avatar.jpg</span></pre></td></tr></table></figure><h2 id="底部widgets"><a class="markdownIt-Anchor" href="#底部widgets">#</a> 底部 widgets</h2>
+<figure class="highlight yaml"><figcaption data-lang="YAML"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token key atrule">widgets</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>  <span class="token key atrule">random_posts</span><span class="token punctuation">:</span> <span class="token boolean important">true</span> <span class="token comment"># 显示随机文章</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>  <span class="token key atrule">recent_comments</span><span class="token punctuation">:</span> <span class="token boolean important">true</span> <span class="token comment"># 显示最近评论</span></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre>  <span class="token comment">#在 shoka/_config.yml 修改</span></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>博客</category>
+        <category>博客的食用方法</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>文章Front-Matter参数设置</title>
+    <url>/2022/04/04/a7032750.html</url>
+    <content><![CDATA[<h2 id="h2so4置顶文章"><a class="markdownIt-Anchor" href="#h2so4置顶文章">#</a> <span class="red">H<sub>2</sub>SO<sub>4</sub></span> 置顶文章</h2>
+<figure class="highlight raw"><figcaption data-lang=""><span>w Front-Matter</span></figcaption><table><tr><td data-num="1"></td><td><pre>sticky: true</pre></td></tr></table></figure><hr>
+<h2 id="h2so4开启评论"><a class="markdownIt-Anchor" href="#h2so4开启评论">#</a> <span class="red">H<sub>2</sub>SO<sub>4</sub></span> 开启评论</h2>
+<figure class="highlight raw"><figcaption data-lang=""><span>w Front-Matter</span></figcaption><table><tr><td data-num="1"></td><td><pre>comments: true</pre></td></tr></table></figure><hr>
+<h2 id="h2so4文章标签"><a class="markdownIt-Anchor" href="#h2so4文章标签">#</a> <span class="red">H<sub>2</sub>SO<sub>4</sub></span> 文章标签</h2>
+<figure class="highlight raw"><figcaption data-lang=""><span>w Front-Matter</span></figcaption><table><tr><td data-num="1"></td><td><pre>tags: </pre></td></tr><tr><td data-num="2"></td><td><pre>  - 博客</pre></td></tr><tr><td data-num="3"></td><td><pre>  - 教程</pre></td></tr></table></figure><hr>
+<h2 id="h2so4文章标题"><a class="markdownIt-Anchor" href="#h2so4文章标题">#</a> <span class="red">H<sub>2</sub>SO<sub>4</sub></span> 文章标题</h2>
+<figure class="highlight raw"><figcaption data-lang=""><span>w Front-Matter</span></figcaption><table><tr><td data-num="1"></td><td><pre>title: 文章 Front-Matter 参数设置</pre></td></tr></table></figure><hr>
+<h2 id="h2so4文章分类"><a class="markdownIt-Anchor" href="#h2so4文章分类">#</a> <span class="red">H<sub>2</sub>SO<sub>4</sub></span> 文章分类</h2>
+<figure class="highlight raw"><figcaption data-lang=""><span>w Front-Matter</span></figcaption><table><tr><td data-num="1"></td><td><pre>categories:</pre></td></tr><tr><td data-num="2"></td><td><pre>  - 计算机科学</pre></td></tr><tr><td data-num="3"></td><td><pre>  - 博客</pre></td></tr><tr><td data-num="4"></td><td><pre>  - 博客的食用方法</pre></td></tr></table></figure><hr>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>博客</category>
+        <category>博客的食用方法</category>
       </categories>
       <tags>
         <tag>博客</tag>
@@ -654,6 +654,34 @@
       </tags>
   </entry>
   <entry>
+    <title>第一篇：注册github---从0基础搭建Hexo博客</title>
+    <url>/2022/03/30/a6f9d072.html</url>
+    <content><![CDATA[<h3 id="注册github"><a class="markdownIt-Anchor" href="#注册github">#</a> 注册 GitHub</h3>
+<p><img data-src="https://s2.loli.net/2022/03/30/BULpyk6thPbgJCD.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/fo8wzF7dvqNHaB4.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/aXwyhW3KM8cxYCb.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/RN62GDFVQU1YKB3.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/JzFGeTjb7BHKSQD.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/48GA7g1N2VacpJl.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/uN8PBgwFWOlApfU.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/shHQtoZVwcPrz2I.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/aZSU1FnDumqY2M7.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/PhUtuCQNlLHXAdG.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/pk9Gyi28uTFrXZY.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/8tjJkrGRb3NBsEW.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/FVivdNY8BLUfcSR.jpg" alt=""></p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>博客</category>
+        <category>零基础搭建Hexo个人博客系列</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>第八篇：解析域名---从0基础搭建Hexo博客</title>
     <url>/2022/03/30/9bf6caef.html</url>
     <content><![CDATA[<h3 id="解析域名"><a class="markdownIt-Anchor" href="#解析域名">#</a> 解析域名</h3>
@@ -729,34 +757,6 @@
 </ol>
 <p><img data-src="https://s2.loli.net/2022/03/30/HIRYhTNcgpdJjmr.jpg" alt=""></p>
 <figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tr><td data-num="1"></td><td><pre>aliang.life</pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>博客</category>
-        <category>零基础搭建Hexo个人博客系列</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第一篇：注册github---从0基础搭建Hexo博客</title>
-    <url>/2022/03/30/a6f9d072.html</url>
-    <content><![CDATA[<h3 id="注册github"><a class="markdownIt-Anchor" href="#注册github">#</a> 注册 GitHub</h3>
-<p><img data-src="https://s2.loli.net/2022/03/30/BULpyk6thPbgJCD.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/fo8wzF7dvqNHaB4.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/aXwyhW3KM8cxYCb.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/RN62GDFVQU1YKB3.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/JzFGeTjb7BHKSQD.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/48GA7g1N2VacpJl.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/uN8PBgwFWOlApfU.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/shHQtoZVwcPrz2I.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/aZSU1FnDumqY2M7.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/PhUtuCQNlLHXAdG.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/pk9Gyi28uTFrXZY.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/8tjJkrGRb3NBsEW.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/FVivdNY8BLUfcSR.jpg" alt=""></p>
-]]></content>
       <categories>
         <category>计算机科学</category>
         <category>博客</category>
