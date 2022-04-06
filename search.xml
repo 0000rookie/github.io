@@ -63,57 +63,6 @@
       </tags>
   </entry>
   <entry>
-    <title>搭建GitHu图床</title>
-    <url>/2022/04/02/e85071ad.html</url>
-    <content><![CDATA[<p><strong>问：什么是图床？图床有什么用？</strong></p>
-<p><strong>答：图床就是一个存放你照片的云盘，只要有网络就能打开这张照片</strong></p>
-<h2 id="新建一个仓库"><a class="markdownIt-Anchor" href="#新建一个仓库">#</a> 新建一个仓库</h2>
-<p>** 用于存放图片的仓库 **  俗称图床<br>
-<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021048.jpg" alt=""></p>
-<h2 id="给你图床起个名字"><a class="markdownIt-Anchor" href="#给你图床起个名字">#</a> 给你图床起个名字</h2>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021050.jpg" alt=""></p>
-<h2 id="新建token"><a class="markdownIt-Anchor" href="#新建token">#</a> 新建 token</h2>
-<p><code>settings---&gt;Developer settings---&gt;Personal access tokens---&gt;generate new token</code> <br>
-<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021051.jpg" alt=""><br>
-<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021059.jpg" alt=""><br>
-<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021100.jpg" alt=""><br>
-<em> 这边给大家翻译一下，英文不是很好可以看看</em><br>
-<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021102.jpg" alt=""><br>
-<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021103.jpg" alt=""></p>
-<p><strong>点击复制</strong></p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021105.jpg" alt=""></p>
-<h2 id="配置picgo"><a class="markdownIt-Anchor" href="#配置picgo">#</a> 配置 Picgo</h2>
-<p><strong>注意：我在 imgs 仓库下新建了一个 Hexoimgs 文件夹</strong></p>
-<p>粘贴刚刚复制的 <code>token</code>  到 <code>设定Token</code></p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021133.jpg" alt=""></p>
-<p>你 <code>github</code>  上的分支名是什么， <code>PicGO的</code> 设定分支名就写什么</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021131.jpg" alt=""></p>
-<p><strong>设定自定义域名：</strong> <code>0000rookie/imgs</code>  改成你的 <code>用户名/仓库名</code></p>
-<pre><code class="language-URL">http://cdn.jsdelivr.net/gh/0000rookie/imgs
-</code></pre>
-<p>你的图床就搭建完啦</p>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>博客</category>
-        <category>模块</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/2022/03/26/0.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>博客</category>
-        <category>搭博客常见错误</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Hexo怎么安装插件</title>
     <url>/2022/03/26/c5de56d5.html</url>
     <content><![CDATA[<hr>
@@ -160,155 +109,38 @@
       </tags>
   </entry>
   <entry>
-    <title>搭建博客常见的错误</title>
-    <url>/2022/04/01/cdc2e518.html</url>
-    <content><![CDATA[<h2 id="404错误"><a class="markdownIt-Anchor" href="#404错误">#</a> 404 错误</h2>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng20220401163558.png" alt="404"></p>
-<h3 id="分两种情况"><a class="markdownIt-Anchor" href="#分两种情况">#</a> 分两种情况</h3>
-<h4 id="还未修改域名"><a class="markdownIt-Anchor" href="#还未修改域名">#</a> 还未修改域名</h4>
-<ol>
-<li>
-<p>打开 ``GitHub` 仓库看文件是否已经上传成功，成功如图。</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng20220401164116.jpg" alt=""></p>
-</li>
-<li>
-<p>如果仓库是空的，说明你没上传成功。</p>
-<ul>
-<li>检查 <code>blog</code>  文件夹下的 <code>_config.yml</code>  文件 <code>deploy:</code>  的配置有没有正确。如下</li>
-</ul>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>deploy:</pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>  type: <span class="token function">git</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>  repo: git@github.com:0000rookie/github.io.git</pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre>  branch: main</pre></td></tr></table></figure><ul>
-<li>重新部署到 <code>github</code>  仓库。</li>
-</ul>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>hexo clean  <span class="token comment">#清除缓存文件 db.json 和已生成的静态文件 public</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>hexo g      <span class="token comment">#生成网站静态文件到默认设置的 public 文件夹 (hexo generate 的缩写)</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>hexo d      <span class="token comment">#自动生成网站静态文件，并部署到设定的仓库 (hexo deploy 的缩写)</span></pre></td></tr></table></figure><ul>
-<li>
-<p>在部署过程中，查看 git 窗口看有没有报错的地方，如有报错，查看报错内容，如果没有，此时查看 <code>github</code>  仓库有没有更新文件。</p>
-</li>
-<li>
-<p>如果还是没看到有更新内容，看看 <code>github</code>  分支是不是 <code>main</code> ，有些同学的分支是 <code>master</code> ，需要选择分支和部署的分支一致</p>
-</li>
-</ul>
-</li>
-</ol>
-<p>还有可能的错误是 <code>hexo</code>  安装有文件缺失，要重新安装一遍。打开 <code>E:\studyAPP\node_js\node_global</code>  路径插件是否成功安装 <code>Hexo</code>  插件了，如果没成功，那就重新安装一遍。</p>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">npm</span> <span class="token function">install</span> -g hexo-cli</pre></td></tr></table></figure><p>重装还是不行的话，大概率就是你的 Nodejs 系统环境没配好，重新回到第四篇配置 <code>Nodejs</code>  环境。</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204011654.jpg" alt="404"></p>
-<p>如果成功安装 <code>Hexo</code>  插件了。再查看一下 <code>blog</code>  下的 <code>_config.yml</code>  文件， <code>deploy</code>  有没有设置正确，输入格式有没有正确 (每一个小红点都是空格)</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204011701.jpg" alt=""></p>
-<p><strong>如果还是 404 页面</strong>，再检查一下 <code>hexo-deployer-git</code>  是不是安装成功，重新安装一遍</p>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token function">npm</span> <span class="token function">install</span> hexo-deployer-git --save</pre></td></tr></table></figure><h3 id="已修改域名"><a class="markdownIt-Anchor" href="#已修改域名">#</a> 已修改域名</h3>
-<p>大多数都是 <code>Blog/source/CNAME</code>  文件没有<strong>命名</strong>好或者是<strong>域名填写错误</strong></p>
-<p><code>CNAME</code>  是没有后缀的文件</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204021406.jpg" alt=""></p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204021407.jpg" alt=""></p>
-<p>如果不清楚该文件是不是有后缀的，可以这样打开选项查看</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204021412.jpg" alt=""></p>
-<div class="note info">
-<p>本文章是记录自己安装过程中遇到的错误，总结错误，今后再遇到错误也可以回头参考一下，本文还会继续更新错误</p>
-</div>
+    <title>搭建GitHu图床</title>
+    <url>/2022/04/02/e85071ad.html</url>
+    <content><![CDATA[<p><strong>问：什么是图床？图床有什么用？</strong></p>
+<p><strong>答：图床就是一个存放你照片的云盘，只要有网络就能打开这张照片</strong></p>
+<h2 id="新建一个仓库"><a class="markdownIt-Anchor" href="#新建一个仓库">#</a> 新建一个仓库</h2>
+<p><strong>用于存放图片的仓库</strong>  俗称图床<br>
+<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021048.jpg" alt=""></p>
+<h2 id="给你图床起个名字"><a class="markdownIt-Anchor" href="#给你图床起个名字">#</a> 给你图床起个名字</h2>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021050.jpg" alt=""></p>
+<h2 id="新建token"><a class="markdownIt-Anchor" href="#新建token">#</a> 新建 token</h2>
+<p><code>settings---&gt;Developer settings---&gt;Personal access tokens---&gt;generate new token</code> <br>
+<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021051.jpg" alt=""><br>
+<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021059.jpg" alt=""><br>
+<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021100.jpg" alt=""><br>
+<em> 这边给大家翻译一下，英文不是很好可以看看</em><br>
+<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021102.jpg" alt=""><br>
+<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021103.jpg" alt=""></p>
+<p><strong>点击复制</strong></p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021105.jpg" alt=""></p>
+<h2 id="配置picgo"><a class="markdownIt-Anchor" href="#配置picgo">#</a> 配置 Picgo</h2>
+<p><strong>注意：我在 imgs 仓库下新建了一个 Hexoimgs 文件夹</strong></p>
+<p>粘贴刚刚复制的 <code>token</code>  到 <code>设定Token</code></p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021133.jpg" alt=""></p>
+<p>你 <code>github</code>  上的分支名是什么， <code>PicGO的</code> 设定分支名就写什么</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021131.jpg" alt=""></p>
+<p><strong>设定自定义域名：</strong> <code>0000rookie/imgs</code>  改成你的 <code>用户名/仓库名</code></p>
+<figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tr><td data-num="1"></td><td><pre>http://cdn.jsdelivr.net/gh/0000rookie/imgs</pre></td></tr></table></figure><p><strong>你的图床就搭建完啦</strong></p>
 ]]></content>
       <categories>
         <category>计算机科学</category>
         <category>博客</category>
-        <category>搭博客常见错误</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第二篇：安装Git---从0基础搭建Hexo博客</title>
-    <url>/2022/03/30/859f60bd.html</url>
-    <content><![CDATA[<h3 id="以下会用到的软件"><a class="markdownIt-Anchor" href="#以下会用到的软件">#</a> 以下会用到的软件</h3>
-<p><strong>必装 [Git][<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbQ==">https://git-scm.com</span>]、[Node.js][<span class="exturl" data-url="aHR0cHM6Ly9ub2RlanMub3JnL2Vu">https://nodejs.org/en</span>]</strong> <em>(点击打开)</em></p>
-<p><strong>建议装 [notepad3][<span class="exturl" data-url="aHR0cHM6Ly9yb29raWUxNjc5LmxhbnpvdWYuY29tL2lIbW1hMDI2bnZkZw==">https://rookie1679.lanzouf.com/iHmma026nvdg</span>]</strong> <em>(点击打开)</em></p>
-<hr>
-<h3 id="安装git"><a class="markdownIt-Anchor" href="#安装git">#</a> 安装 Git</h3>
-<p><img data-src="https://s2.loli.net/2022/03/30/BQvOwdEjhy2Mxpi.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/cynKHCaWvM1lhPQ.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/mGnE9UXQfjSF4LA.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/5Y6oqd7uJGQZ3x9.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/7ulfP3VQJDIR49b.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/O71bgvBpnoya5UN.jpg" alt=""></p>
-<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0rsgp2d5yj30dv0aw756.jpg" alt="07"></p>
-<p><img data-src="https://tva1.sinaimg.cn/large/0065wfS6ly8h0rshgpo17j30dv0aw74s.jpg" alt="9"></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/5yNqYXRIFf2kpxc.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/8j3PsJFgN6e1IxB.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/Pz4C6HLjdQiE7MB.jpg" alt=""></p>
-<p><strong>鼠标右看到如图说明安装成功了，打开 Git bash here</strong></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/FbARg18aejdJUVO.jpg" alt=""></p>
-<p><strong>输入 git</strong></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/7qTxPmE6YGFOklK.jpg" alt=""></p>
-<p><strong>安装 git 结束</strong></p>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>博客</category>
-        <category>零基础搭建Hexo个人博客系列</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第五篇：安装Hexo---从0基础搭建Hexo博客</title>
-    <url>/2022/03/30/87b69652.html</url>
-    <content><![CDATA[<h3 id="安装hexo"><a class="markdownIt-Anchor" href="#安装hexo">#</a> 安装 Hexo</h3>
-<ol>
-<li>新建一个仓库</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/LoeECmrFSydhnIt.jpg" alt=""></p>
-<ol start="2">
-<li>给仓库起个名，格式为   <code>账号名.github.io</code></li>
-</ol>
-<p><img data-src="https://tva4.sinaimg.cn/large/0065wfS6ly8h0rslvrth9j31ha0pqq5w.jpg" alt=""></p>
-<ol start="3">
-<li>打开 <code>stetings</code></li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/KaQX5eUTYvWp9H6.jpg" alt=""></p>
-<ol start="4">
-<li>滑到下面，找到这个 <code>GitHub pages</code>  ，点击打开</li>
-</ol>
-<p><img data-src="https://tva3.sinaimg.cn/large/0065wfS6ly8h0rsme8aiaj30p905tmx8.jpg" alt=""></p>
-<ol start="5">
-<li>出现以下图说明成功了</li>
-</ol>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/05.jpg" alt="05"></p>
-<ol start="6">
-<li>新建一个 <code>blog</code>  文件夹，在 <code>blog</code>  文件夹打开 <code>git bash here</code></li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/w8UDo5gxLzbOtiu.jpg" alt="">7. 安装 <code>hexo-cli</code>  插件</p>
-<figure class="highlight bash"><figcaption data-lang="bash"><span>h</span></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">npm</span> <span class="token function">install</span> -g hexo-cli</pre></td></tr></table></figure><p><img data-src="https://s2.loli.net/2022/03/30/IHBmwDz6FaGUyVW.jpg" alt=""></p>
-<ol start="8">
-<li>初始化博客</li>
-</ol>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>hexo init</pre></td></tr></table></figure><p><img data-src="https://s2.loli.net/2022/03/30/X4pArW28NVYmuCa.jpg" alt=""></p>
-<ol start="9">
-<li>静态部署博客</li>
-</ol>
-<figure class="highlight bash"><figcaption data-lang="bash"><span>mark：1</span></figcaption><table><tr><td data-num="1"></td><td><pre>hexo g</pre></td></tr></table></figure><p><img data-src="https://tva1.sinaimg.cn/large/0065wfS6ly8h0rsqg2bmbj30l20gdtav.jpg" alt="09"></p>
-<ol start="10">
-<li>
-<p>打开本地服务器</p>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>hexo s</pre></td></tr></table></figure></li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/atwxZphQzjf2kTi.jpg" alt=""></p>
-<ol start="11">
-<li>
-<p>浏览器输入 <code>localhost:4000</code>  查看</p>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>localhost:4000</pre></td></tr></table></figure></li>
-</ol>
-<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0rsqxer30j31ha0opdiy.jpg" alt="10"></p>
-<ol start="12">
-<li><code>ctrl+s</code> ，停止本地服务器运行</li>
-</ol>
-<p><strong>目前博客已经基本完成了</strong></p>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>博客</category>
-        <category>零基础搭建Hexo个人博客系列</category>
+        <category>模块</category>
       </categories>
       <tags>
         <tag>博客</tag>
@@ -456,6 +288,108 @@
       </tags>
   </entry>
   <entry>
+    <title>搭建博客常见的错误</title>
+    <url>/2022/04/01/cdc2e518.html</url>
+    <content><![CDATA[<h2 id="404错误"><a class="markdownIt-Anchor" href="#404错误">#</a> 404 错误</h2>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng20220401163558.png" alt="404"></p>
+<h3 id="分两种情况"><a class="markdownIt-Anchor" href="#分两种情况">#</a> 分两种情况</h3>
+<h4 id="还未修改域名"><a class="markdownIt-Anchor" href="#还未修改域名">#</a> 还未修改域名</h4>
+<ol>
+<li>
+<p>打开 ``GitHub` 仓库看文件是否已经上传成功，成功如图。</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng20220401164116.jpg" alt=""></p>
+</li>
+<li>
+<p>如果仓库是空的，说明你没上传成功。</p>
+<ul>
+<li>检查 <code>blog</code>  文件夹下的 <code>_config.yml</code>  文件 <code>deploy:</code>  的配置有没有正确。如下</li>
+</ul>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>deploy:</pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>  type: <span class="token function">git</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>  repo: git@github.com:0000rookie/github.io.git</pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre>  branch: main</pre></td></tr></table></figure><ul>
+<li>重新部署到 <code>github</code>  仓库。</li>
+</ul>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>hexo clean  <span class="token comment">#清除缓存文件 db.json 和已生成的静态文件 public</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>hexo g      <span class="token comment">#生成网站静态文件到默认设置的 public 文件夹 (hexo generate 的缩写)</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>hexo d      <span class="token comment">#自动生成网站静态文件，并部署到设定的仓库 (hexo deploy 的缩写)</span></pre></td></tr></table></figure><ul>
+<li>
+<p>在部署过程中，查看 git 窗口看有没有报错的地方，如有报错，查看报错内容，如果没有，此时查看 <code>github</code>  仓库有没有更新文件。</p>
+</li>
+<li>
+<p>如果还是没看到有更新内容，看看 <code>github</code>  分支是不是 <code>main</code> ，有些同学的分支是 <code>master</code> ，需要选择分支和部署的分支一致</p>
+</li>
+</ul>
+</li>
+</ol>
+<p>还有可能的错误是 <code>hexo</code>  安装有文件缺失，要重新安装一遍。打开 <code>E:\studyAPP\node_js\node_global</code>  路径插件是否成功安装 <code>Hexo</code>  插件了，如果没成功，那就重新安装一遍。</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">npm</span> <span class="token function">install</span> -g hexo-cli</pre></td></tr></table></figure><p>重装还是不行的话，大概率就是你的 Nodejs 系统环境没配好，重新回到第四篇配置 <code>Nodejs</code>  环境。</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204011654.jpg" alt="404"></p>
+<p>如果成功安装 <code>Hexo</code>  插件了。再查看一下 <code>blog</code>  下的 <code>_config.yml</code>  文件， <code>deploy</code>  有没有设置正确，输入格式有没有正确 (每一个小红点都是空格)</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204011701.jpg" alt=""></p>
+<p><strong>如果还是 404 页面</strong>，再检查一下 <code>hexo-deployer-git</code>  是不是安装成功，重新安装一遍</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token function">npm</span> <span class="token function">install</span> hexo-deployer-git --save</pre></td></tr></table></figure><h3 id="已修改域名"><a class="markdownIt-Anchor" href="#已修改域名">#</a> 已修改域名</h3>
+<p>大多数都是 <code>Blog/source/CNAME</code>  文件没有<strong>命名</strong>好或者是<strong>域名填写错误</strong></p>
+<p><code>CNAME</code>  是没有后缀的文件</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204021406.jpg" alt=""></p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204021407.jpg" alt=""></p>
+<p>如果不清楚该文件是不是有后缀的，可以这样打开选项查看</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204021412.jpg" alt=""></p>
+<div class="note info">
+<p>本文章是记录自己安装过程中遇到的错误，总结错误，今后再遇到错误也可以回头参考一下，本文还会继续更新错误</p>
+</div>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>博客</category>
+        <category>搭博客常见错误</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2022/03/26/0.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>博客</category>
+        <category>搭博客常见错误</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>第二篇：安装Git---从0基础搭建Hexo博客</title>
+    <url>/2022/03/30/859f60bd.html</url>
+    <content><![CDATA[<h3 id="以下会用到的软件"><a class="markdownIt-Anchor" href="#以下会用到的软件">#</a> 以下会用到的软件</h3>
+<p><strong>必装 [Git][<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbQ==">https://git-scm.com</span>]、[Node.js][<span class="exturl" data-url="aHR0cHM6Ly9ub2RlanMub3JnL2Vu">https://nodejs.org/en</span>]</strong> <em>(点击打开)</em></p>
+<p><strong>建议装 [notepad3][<span class="exturl" data-url="aHR0cHM6Ly9yb29raWUxNjc5LmxhbnpvdWYuY29tL2lIbW1hMDI2bnZkZw==">https://rookie1679.lanzouf.com/iHmma026nvdg</span>]</strong> <em>(点击打开)</em></p>
+<hr>
+<h3 id="安装git"><a class="markdownIt-Anchor" href="#安装git">#</a> 安装 Git</h3>
+<p><img data-src="https://s2.loli.net/2022/03/30/BQvOwdEjhy2Mxpi.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/cynKHCaWvM1lhPQ.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/mGnE9UXQfjSF4LA.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/5Y6oqd7uJGQZ3x9.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/7ulfP3VQJDIR49b.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/O71bgvBpnoya5UN.jpg" alt=""></p>
+<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0rsgp2d5yj30dv0aw756.jpg" alt="07"></p>
+<p><img data-src="https://tva1.sinaimg.cn/large/0065wfS6ly8h0rshgpo17j30dv0aw74s.jpg" alt="9"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/5yNqYXRIFf2kpxc.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/8j3PsJFgN6e1IxB.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/Pz4C6HLjdQiE7MB.jpg" alt=""></p>
+<p><strong>鼠标右看到如图说明安装成功了，打开 Git bash here</strong></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/FbARg18aejdJUVO.jpg" alt=""></p>
+<p><strong>输入 git</strong></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/7qTxPmE6YGFOklK.jpg" alt=""></p>
+<p><strong>安装 git 结束</strong></p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>博客</category>
+        <category>零基础搭建Hexo个人博客系列</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>第四篇：安装Nodejs---从0基础搭建Hexo博客</title>
     <url>/2022/03/30/cf63c07.html</url>
     <content><![CDATA[<h2 id="nodejs安装及配置环境"><a class="markdownIt-Anchor" href="#nodejs安装及配置环境">#</a> Node.js 安装及配置环境</h2>
@@ -544,6 +478,128 @@
       </tags>
   </entry>
   <entry>
+    <title>第五篇：安装Hexo---从0基础搭建Hexo博客</title>
+    <url>/2022/03/30/87b69652.html</url>
+    <content><![CDATA[<h3 id="安装hexo"><a class="markdownIt-Anchor" href="#安装hexo">#</a> 安装 Hexo</h3>
+<ol>
+<li>新建一个仓库</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/LoeECmrFSydhnIt.jpg" alt=""></p>
+<ol start="2">
+<li>给仓库起个名，格式为   <code>账号名.github.io</code></li>
+</ol>
+<p><img data-src="https://tva4.sinaimg.cn/large/0065wfS6ly8h0rslvrth9j31ha0pqq5w.jpg" alt=""></p>
+<ol start="3">
+<li>打开 <code>stetings</code></li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/KaQX5eUTYvWp9H6.jpg" alt=""></p>
+<ol start="4">
+<li>滑到下面，找到这个 <code>GitHub pages</code>  ，点击打开</li>
+</ol>
+<p><img data-src="https://tva3.sinaimg.cn/large/0065wfS6ly8h0rsme8aiaj30p905tmx8.jpg" alt=""></p>
+<ol start="5">
+<li>出现以下图说明成功了</li>
+</ol>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/05.jpg" alt="05"></p>
+<ol start="6">
+<li>新建一个 <code>blog</code>  文件夹，在 <code>blog</code>  文件夹打开 <code>git bash here</code></li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/w8UDo5gxLzbOtiu.jpg" alt="">7. 安装 <code>hexo-cli</code>  插件</p>
+<figure class="highlight bash"><figcaption data-lang="bash"><span>h</span></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">npm</span> <span class="token function">install</span> -g hexo-cli</pre></td></tr></table></figure><p><img data-src="https://s2.loli.net/2022/03/30/IHBmwDz6FaGUyVW.jpg" alt=""></p>
+<ol start="8">
+<li>初始化博客</li>
+</ol>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>hexo init</pre></td></tr></table></figure><p><img data-src="https://s2.loli.net/2022/03/30/X4pArW28NVYmuCa.jpg" alt=""></p>
+<ol start="9">
+<li>静态部署博客</li>
+</ol>
+<figure class="highlight bash"><figcaption data-lang="bash"><span>mark：1</span></figcaption><table><tr><td data-num="1"></td><td><pre>hexo g</pre></td></tr></table></figure><p><img data-src="https://tva1.sinaimg.cn/large/0065wfS6ly8h0rsqg2bmbj30l20gdtav.jpg" alt="09"></p>
+<ol start="10">
+<li>
+<p>打开本地服务器</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>hexo s</pre></td></tr></table></figure></li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/atwxZphQzjf2kTi.jpg" alt=""></p>
+<ol start="11">
+<li>
+<p>浏览器输入 <code>localhost:4000</code>  查看</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>localhost:4000</pre></td></tr></table></figure></li>
+</ol>
+<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0rsqxer30j31ha0opdiy.jpg" alt="10"></p>
+<ol start="12">
+<li><code>ctrl+s</code> ，停止本地服务器运行</li>
+</ol>
+<p><strong>目前博客已经基本完成了</strong></p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>博客</category>
+        <category>零基础搭建Hexo个人博客系列</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第九篇：安装主题---从0基础搭建Hexo博客</title>
+    <url>/2022/03/30/a5eefddc.html</url>
+    <content><![CDATA[<h3 id="安装主题"><a class="markdownIt-Anchor" href="#安装主题">#</a> 安装主题</h3>
+<ol>
+<li>
+<p>打开 <code>GitHub</code>  官网，搜索 <code>hexo theme</code></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/WgwRFXd4k1rOljn.jpg" alt=""></p>
+</li>
+<li>
+<p>我这边选择 <code>diaspora</code>  这个</p>
+</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/jqtLnIyD3UTrQJo.jpg" alt=""></p>
+<ol start="3">
+<li>打开项目，复制安装主题的链接</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/s9Fc15hAwPbUdpn.jpg" alt=""></p>
+<ol start="4">
+<li>
+<p>在 blog 文件夹下鼠标右键打开 git bash here</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">git</span> clone https://github.com/Fechin/hexo-theme-diaspora.git themes/diaspora</pre></td></tr></table></figure></li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/VHYUXteDcQiSd89.jpg" alt=""></p>
+<ol start="5">
+<li>打开 <code>themes</code>  文件夹，看看主题是否有下载成功</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/2EV3nMIsKp5ozmJ.jpg" alt=""></p>
+<ol start="6">
+<li>主题下好之后打开 <code>_config.yml</code>  文件配置主题</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/NGtOr3hjyQYU1fe.jpg" alt=""></p>
+<ol start="6">
+<li>找到 <code>theme</code> ，修改为 <code>diaspora</code>  (也就是你的主题名，冒号后有一个空格不能省略)</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/wYXrnUu58TMZ1DA.jpg" alt=""></p>
+<ol start="7">
+<li>
+<p>再打开 <code>git bash here</code> ，输入</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>hexo clean <span class="token operator">&amp;&amp;</span> hexo g <span class="token operator">&amp;&amp;</span> hexo d</pre></td></tr></table></figure></li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/SN1VlxAIpaFW5Lz.jpg" alt=""></p>
+<ol start="8">
+<li>打开你的博客，此时博客已经完全安装好了</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/6QznLrvacCsXjZT.jpg" alt=""></p>
+<p><strong>博客已经漂漂亮亮了，可以愉快的开始写博客啦</strong></p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>博客</category>
+        <category>零基础搭建Hexo个人博客系列</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>第六篇：将博客部署到GitHub---从0基础搭建Hexo博客</title>
     <url>/2022/03/30/dc09a46c.html</url>
     <content><![CDATA[<h2 id="将hexo部署到github"><a class="markdownIt-Anchor" href="#将hexo部署到github">#</a> 将 Hexo 部署到 github</h2>
@@ -612,64 +668,6 @@
 <p><img data-src="https://s2.loli.net/2022/03/30/pk9Gyi28uTFrXZY.jpg" alt=""></p>
 <p><img data-src="https://s2.loli.net/2022/03/30/8tjJkrGRb3NBsEW.jpg" alt=""></p>
 <p><img data-src="https://s2.loli.net/2022/03/30/FVivdNY8BLUfcSR.jpg" alt=""></p>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>博客</category>
-        <category>零基础搭建Hexo个人博客系列</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第九篇：安装主题---从0基础搭建Hexo博客</title>
-    <url>/2022/03/30/a5eefddc.html</url>
-    <content><![CDATA[<h3 id="安装主题"><a class="markdownIt-Anchor" href="#安装主题">#</a> 安装主题</h3>
-<ol>
-<li>
-<p>打开 <code>GitHub</code>  官网，搜索 <code>hexo theme</code></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/WgwRFXd4k1rOljn.jpg" alt=""></p>
-</li>
-<li>
-<p>我这边选择 <code>diaspora</code>  这个</p>
-</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/jqtLnIyD3UTrQJo.jpg" alt=""></p>
-<ol start="3">
-<li>打开项目，复制安装主题的链接</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/s9Fc15hAwPbUdpn.jpg" alt=""></p>
-<ol start="4">
-<li>
-<p>在 blog 文件夹下鼠标右键打开 git bash here</p>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">git</span> clone https://github.com/Fechin/hexo-theme-diaspora.git themes/diaspora</pre></td></tr></table></figure></li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/VHYUXteDcQiSd89.jpg" alt=""></p>
-<ol start="5">
-<li>打开 <code>themes</code>  文件夹，看看主题是否有下载成功</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/2EV3nMIsKp5ozmJ.jpg" alt=""></p>
-<ol start="6">
-<li>主题下好之后打开 <code>_config.yml</code>  文件配置主题</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/NGtOr3hjyQYU1fe.jpg" alt=""></p>
-<ol start="6">
-<li>找到 <code>theme</code> ，修改为 <code>diaspora</code>  (也就是你的主题名，冒号后有一个空格不能省略)</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/wYXrnUu58TMZ1DA.jpg" alt=""></p>
-<ol start="7">
-<li>
-<p>再打开 <code>git bash here</code> ，输入</p>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>hexo clean <span class="token operator">&amp;&amp;</span> hexo g <span class="token operator">&amp;&amp;</span> hexo d</pre></td></tr></table></figure></li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/SN1VlxAIpaFW5Lz.jpg" alt=""></p>
-<ol start="8">
-<li>打开你的博客，此时博客已经完全安装好了</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/6QznLrvacCsXjZT.jpg" alt=""></p>
-<p><strong>博客已经漂漂亮亮了，可以愉快的开始写博客啦</strong></p>
 ]]></content>
       <categories>
         <category>计算机科学</category>
