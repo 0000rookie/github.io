@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>我的第一篇博客</title>
+    <url>/2022/03/26/d95d7e09.html</url>
+    <content><![CDATA[<h6 id="历时两天终于把我的小破站建成了"><a class="markdownIt-Anchor" href="#历时两天终于把我的小破站建成了">#</a> 历时两天，终于把我的小破站建成了。</h6>
+<h6 id="小破站的初心就是为了记录自己学习情况遇到的问题进行总结以及记录生活"><a class="markdownIt-Anchor" href="#小破站的初心就是为了记录自己学习情况遇到的问题进行总结以及记录生活">#</a> 小破站的初心就是为了记录自己学习情况，遇到的问题进行总结，以及记录生活。</h6>
+]]></content>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Git详细使用方法</title>
     <url>/2022/04/04/43d2d741.html</url>
     <content><![CDATA[]]></content>
@@ -10,13 +20,36 @@
       </categories>
   </entry>
   <entry>
-    <title>我的第一篇博客</title>
-    <url>/2022/03/26/d95d7e09.html</url>
-    <content><![CDATA[<h6 id="历时两天终于把我的小破站建成了"><a class="markdownIt-Anchor" href="#历时两天终于把我的小破站建成了">#</a> 历时两天，终于把我的小破站建成了。</h6>
-<h6 id="小破站的初心就是为了记录自己学习情况遇到的问题进行总结以及记录生活"><a class="markdownIt-Anchor" href="#小破站的初心就是为了记录自己学习情况遇到的问题进行总结以及记录生活">#</a> 小破站的初心就是为了记录自己学习情况，遇到的问题进行总结，以及记录生活。</h6>
+    <title>Python组合数据类型</title>
+    <url>/2022/04/08/cd7b33aa.html</url>
+    <content><![CDATA[<div class="note info">
+<p>每天记录自己学习情况</p>
+</div>
+<h2 id="列表检查是否存在重复元素"><a class="markdownIt-Anchor" href="#列表检查是否存在重复元素">#</a> 列表检查是否存在重复元素</h2>
+<p>编写函数，用列表为参数，判断有无重复元素，若有就返回 <code>True</code> ，否则，返回 <code>False</code> ，并调用函数来验证。可使用以下列表来进行验证：</p>
+<p>lst_1 = [1, 3, 4, 5, 1, 45]</p>
+<p>lst_2 = [‘N’, ‘B’, ‘A’, ‘2022’]</p>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>lst_1 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">45</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>lst_2 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'N'</span><span class="token punctuation">,</span> <span class="token string">'B'</span><span class="token punctuation">,</span> <span class="token string">'A'</span><span class="token punctuation">,</span> <span class="token string">'2022'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>lst_1<span class="token punctuation">.</span>sort<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre>lst_2<span class="token punctuation">.</span>sort<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre><span class="token keyword">def</span> <span class="token function">prin</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre>    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"["</span><span class="token punctuation">,</span> end<span class="token operator">=</span><span class="token string">""</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="8"></td><td><pre>    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="9"></td><td><pre>        <span class="token keyword">print</span><span class="token punctuation">(</span>x<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> end<span class="token operator">=</span><span class="token string">""</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="10"></td><td><pre>        <span class="token keyword">if</span> i <span class="token operator">&lt;</span> <span class="token builtin">len</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="11"></td><td><pre>            <span class="token keyword">print</span><span class="token punctuation">(</span>end<span class="token operator">=</span><span class="token string">","</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="12"></td><td><pre>        <span class="token keyword">else</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="13"></td><td><pre>            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"]"</span><span class="token punctuation">,</span> end<span class="token operator">=</span><span class="token string">"  "</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="14"></td><td><pre>    <span class="token keyword">for</span> l <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="15"></td><td><pre>        <span class="token keyword">if</span> x<span class="token punctuation">[</span>l<span class="token punctuation">]</span> <span class="token operator">==</span> x<span class="token punctuation">[</span>l <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="16"></td><td><pre>            FF <span class="token operator">=</span> <span class="token string">"有重复元素"</span></pre></td></tr><tr class="marked"><td data-num="17"></td><td><pre>            <span class="token keyword">break</span></pre></td></tr><tr class="marked"><td data-num="18"></td><td><pre>        <span class="token keyword">else</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="19"></td><td><pre>            FF <span class="token operator">=</span> <span class="token string">"无重复元素"</span></pre></td></tr><tr class="marked"><td data-num="20"></td><td><pre>    <span class="token keyword">print</span><span class="token punctuation">(</span>FF<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="21"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="22"></td><td><pre>prin<span class="token punctuation">(</span>lst_1<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="23"></td><td><pre>prin<span class="token punctuation">(</span>lst_2<span class="token punctuation">)</span></pre></td></tr></table></figure><h2 id="集合检查是否存在重复元素"><a class="markdownIt-Anchor" href="#集合检查是否存在重复元素">#</a> 集合检查是否存在重复元素</h2>
+<p>编写函数，用列表为参数，利用集合元素的无重复性来判断列表有无重复元素，若有就返回 <code>True</code> ，否则，返回 <code>False</code> ，并调用函数来验证</p>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>lst_1 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">4445</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>lst_2 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'N'</span><span class="token punctuation">,</span> <span class="token string">'B'</span><span class="token punctuation">,</span> <span class="token string">'A'</span><span class="token punctuation">,</span> <span class="token string">'2022'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre><span class="token keyword">def</span> <span class="token function">lstt</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre>    lst1 <span class="token operator">=</span> <span class="token builtin">list</span><span class="token punctuation">(</span><span class="token builtin">set</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre>    <span class="token keyword">if</span> <span class="token builtin">len</span><span class="token punctuation">(</span>lst1<span class="token punctuation">)</span> <span class="token operator">&lt;</span> <span class="token builtin">len</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre>        <span class="token keyword">return</span> <span class="token boolean">True</span></pre></td></tr><tr class="marked"><td data-num="8"></td><td><pre>    <span class="token keyword">else</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="9"></td><td><pre>        <span class="token keyword">return</span> <span class="token boolean">False</span></pre></td></tr><tr class="marked"><td data-num="10"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="11"></td><td><pre>result1 <span class="token operator">=</span> lstt<span class="token punctuation">(</span>lst_1<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="12"></td><td><pre>result2 <span class="token operator">=</span> lstt<span class="token punctuation">(</span>lst_2<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="13"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="14"></td><td><pre><span class="token keyword">def</span> <span class="token function">print1</span><span class="token punctuation">(</span>result<span class="token punctuation">,</span> lst<span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="15"></td><td><pre>    <span class="token keyword">if</span> result <span class="token operator">==</span> <span class="token boolean">True</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="16"></td><td><pre>        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'列表：&#123;&#125;有 重复元素'</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>lst<span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="17"></td><td><pre>    <span class="token keyword">else</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="18"></td><td><pre>        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'列表：&#123;&#125;无 重复元素'</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>lst<span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="19"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="20"></td><td><pre>print1<span class="token punctuation">(</span>result1<span class="token punctuation">,</span> lst_1<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="21"></td><td><pre>print1<span class="token punctuation">(</span>result2<span class="token punctuation">,</span> lst_2<span class="token punctuation">)</span></pre></td></tr></table></figure><h2 id="生日悖论"><a class="markdownIt-Anchor" href="#生日悖论">#</a> 生日悖论</h2>
+<p>现假定一年只有 <code>365</code>  天，不考虑闰年情况。请先阅读<span class="exturl" data-url="aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTclOTQlOUYlRTYlOTclQTUlRTYlODIlOTYlRTglQUUlQkEvMjcxNTI5MA==">生日悖论</span> 相关知识，再按下列要求编程模拟检验：<br>
+(1) 编写函数 <code>createBirthday()：</code> 使用随机函数生成某人的生日，结果为字符串，由 <code>01.01</code>  到 <code>12.31</code>  表示，月份。天均为两位数，中间用点号 (.) 隔开；<br>
+(2) 编写函数 <code>groupBirthdays(n)：</code> 调用 <code>createBirthday()</code>  生成团队成员的生日，用列表方式返回，其中： <code>n为</code> 团队成员数；<br>
+(3) 主函数：输入团队成员数，调用 <code>groupBirthdays(n)</code>  和创建 <code>isRepeat()</code>  函数查重，模拟 <code>100000</code>  次，计算至少有两人生日相同的比例</p>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token keyword">import</span> random <span class="token keyword">as</span> r</pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>num <span class="token operator">=</span> <span class="token number">100000</span></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre><span class="token keyword">def</span> <span class="token function">createBirthday</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre>    birthday <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="8"></td><td><pre>    month <span class="token operator">=</span> <span class="token builtin">str</span><span class="token punctuation">(</span>r<span class="token punctuation">.</span>randint<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">12</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span>rjust<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">'0'</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="9"></td><td><pre>    day <span class="token operator">=</span> <span class="token builtin">str</span><span class="token punctuation">(</span>r<span class="token punctuation">.</span>uniform<span class="token punctuation">(</span><span class="token number">0.01</span><span class="token punctuation">,</span> <span class="token number">0.31</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token number">4</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="10"></td><td><pre>    birthday <span class="token operator">=</span> month <span class="token operator">+</span> day</pre></td></tr><tr class="marked"><td data-num="11"></td><td><pre>    <span class="token comment"># print(birthday)</span></pre></td></tr><tr class="marked"><td data-num="12"></td><td><pre>    <span class="token comment"># print(type(birthday))</span></pre></td></tr><tr class="marked"><td data-num="13"></td><td><pre>    <span class="token keyword">return</span> birthday</pre></td></tr><tr class="marked"><td data-num="14"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="15"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="16"></td><td><pre><span class="token keyword">def</span> <span class="token function">groupBirthdays</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="17"></td><td><pre>    lst <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="18"></td><td><pre>    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="19"></td><td><pre>        lst<span class="token punctuation">.</span>append<span class="token punctuation">(</span>createBirthday<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="20"></td><td><pre>    <span class="token comment"># print(lst)</span></pre></td></tr><tr class="marked"><td data-num="21"></td><td><pre>    <span class="token keyword">return</span> lst</pre></td></tr><tr class="marked"><td data-num="22"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="23"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="24"></td><td><pre><span class="token keyword">def</span> <span class="token function">isRepeat</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="25"></td><td><pre>    <span class="token keyword">if</span> <span class="token builtin">len</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token builtin">len</span><span class="token punctuation">(</span><span class="token builtin">set</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="26"></td><td><pre>        <span class="token keyword">return</span> <span class="token boolean">False</span>  <span class="token comment"># 不重复</span></pre></td></tr><tr class="marked"><td data-num="27"></td><td><pre>    <span class="token keyword">else</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="28"></td><td><pre>        <span class="token keyword">return</span> <span class="token boolean">True</span>  <span class="token comment"># 重复</span></pre></td></tr><tr class="marked"><td data-num="29"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="30"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="31"></td><td><pre><span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="32"></td><td><pre>    x <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"请输入团队人数："</span><span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="33"></td><td><pre>    nums <span class="token operator">=</span> <span class="token number">0</span></pre></td></tr><tr class="marked"><td data-num="34"></td><td><pre>    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">100000</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="35"></td><td><pre>        times <span class="token operator">=</span> isRepeat<span class="token punctuation">(</span>groupBirthdays<span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="36"></td><td><pre>        <span class="token keyword">if</span> times <span class="token operator">==</span> <span class="token boolean">True</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="37"></td><td><pre>            nums <span class="token operator">+=</span> <span class="token number">1</span></pre></td></tr><tr class="marked"><td data-num="38"></td><td><pre>        <span class="token keyword">else</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="39"></td><td><pre>            <span class="token keyword">continue</span></pre></td></tr><tr class="marked"><td data-num="40"></td><td><pre>    y <span class="token operator">=</span> <span class="token builtin">str</span><span class="token punctuation">(</span>nums <span class="token operator">/</span> <span class="token number">100000</span> <span class="token operator">*</span> <span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token number">5</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="41"></td><td><pre>    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"假设一个团队有&#123;&#125;人，用随机模拟&#123;&#125;次，其中至少有两人生日相同的比例为&#123;&#125;%"</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> <span class="token number">100000</span><span class="token punctuation">,</span> y<span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="42"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="43"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="44"></td><td><pre><span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="45"></td><td><pre>    main<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr></table></figure><h2 id="文字出现频率"><a class="markdownIt-Anchor" href="#文字出现频率">#</a> 文字出现频率</h2>
+<p>编写程序，对文档” 习总书记在北京大学师生座谈会上的讲话.txt” 进行分析，按出现频率的降序打印字符 (前 20 位)。</p>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token keyword">import</span> jieba</pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>txt <span class="token operator">=</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">"F:\\习总书记在北京大学师生座谈会上的讲话 .txt"</span><span class="token punctuation">,</span><span class="token string">"r"</span><span class="token punctuation">,</span>encoding<span class="token operator">=</span><span class="token string">'gbk'</span><span class="token punctuation">,</span>errors<span class="token operator">=</span><span class="token string">'ignore'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre>lst <span class="token operator">=</span> jieba<span class="token punctuation">.</span>lcut<span class="token punctuation">(</span>txt<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre>cout <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre><span class="token keyword">for</span> ls <span class="token keyword">in</span> lst<span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre>    ls <span class="token operator">=</span> ls<span class="token punctuation">.</span>replace<span class="token punctuation">(</span><span class="token string">' '</span><span class="token punctuation">,</span><span class="token string">''</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="8"></td><td><pre>    <span class="token keyword">if</span> <span class="token builtin">len</span><span class="token punctuation">(</span>ls<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="9"></td><td><pre>        <span class="token keyword">continue</span></pre></td></tr><tr class="marked"><td data-num="10"></td><td><pre>    <span class="token keyword">else</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="11"></td><td><pre>        cout<span class="token punctuation">[</span>ls<span class="token punctuation">]</span> <span class="token operator">=</span> cout<span class="token punctuation">.</span>get<span class="token punctuation">(</span>ls<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token number">1</span></pre></td></tr><tr class="marked"><td data-num="12"></td><td><pre>items <span class="token operator">=</span> <span class="token builtin">list</span><span class="token punctuation">(</span>cout<span class="token punctuation">.</span>items<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="13"></td><td><pre>items<span class="token punctuation">.</span>sort<span class="token punctuation">(</span>key<span class="token operator">=</span><span class="token keyword">lambda</span> x<span class="token punctuation">:</span> x<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> reverse<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="14"></td><td><pre><span class="token keyword">for</span> item <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="15"></td><td><pre>    word<span class="token punctuation">,</span> count <span class="token operator">=</span> items<span class="token punctuation">[</span>item<span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="16"></td><td><pre>    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"词语:【&#123;&#125;】,出现次数:&#123;&#125;"</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>word<span class="token punctuation">,</span> count<span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr></table></figure><div class="note warning">
+<p>如有错误，请指正</p>
+</div>
 ]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>每日一更</category>
+      </categories>
       <tags>
-        <tag>生活</tag>
+        <tag>python</tag>
+        <tag>每日一更</tag>
+        <tag>python实验</tag>
       </tags>
   </entry>
   <entry>
@@ -32,63 +65,6 @@
         <category>计算机科学</category>
         <category>博客</category>
         <category>博客的食用方法</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>搭建博客常见的错误</title>
-    <url>/2022/04/01/cdc2e518.html</url>
-    <content><![CDATA[<h2 id="404错误"><a class="markdownIt-Anchor" href="#404错误">#</a> 404 错误</h2>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng20220401163558.png" alt="404"></p>
-<h3 id="分两种情况"><a class="markdownIt-Anchor" href="#分两种情况">#</a> 分两种情况</h3>
-<h4 id="还未修改域名"><a class="markdownIt-Anchor" href="#还未修改域名">#</a> 还未修改域名</h4>
-<ol>
-<li>
-<p>打开 ``GitHub` 仓库看文件是否已经上传成功，成功如图。</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng20220401164116.jpg" alt=""></p>
-</li>
-<li>
-<p>如果仓库是空的，说明你没上传成功。</p>
-<ul>
-<li>检查 <code>blog</code>  文件夹下的 <code>_config.yml</code>  文件 <code>deploy:</code>  的配置有没有正确。如下</li>
-</ul>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>deploy:</pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>  type: <span class="token function">git</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>  repo: git@github.com:0000rookie/github.io.git</pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre>  branch: main</pre></td></tr></table></figure><ul>
-<li>重新部署到 <code>github</code>  仓库。</li>
-</ul>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>hexo clean  <span class="token comment">#清除缓存文件 db.json 和已生成的静态文件 public</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>hexo g      <span class="token comment">#生成网站静态文件到默认设置的 public 文件夹 (hexo generate 的缩写)</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>hexo d      <span class="token comment">#自动生成网站静态文件，并部署到设定的仓库 (hexo deploy 的缩写)</span></pre></td></tr></table></figure><ul>
-<li>
-<p>在部署过程中，查看 git 窗口看有没有报错的地方，如有报错，查看报错内容，如果没有，此时查看 <code>github</code>  仓库有没有更新文件。</p>
-</li>
-<li>
-<p>如果还是没看到有更新内容，看看 <code>github</code>  分支是不是 <code>main</code> ，有些同学的分支是 <code>master</code> ，需要选择分支和部署的分支一致</p>
-</li>
-</ul>
-</li>
-</ol>
-<p>还有可能的错误是 <code>hexo</code>  安装有文件缺失，要重新安装一遍。打开 <code>E:\studyAPP\node_js\node_global</code>  路径插件是否成功安装 <code>Hexo</code>  插件了，如果没成功，那就重新安装一遍。</p>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">npm</span> <span class="token function">install</span> -g hexo-cli</pre></td></tr></table></figure><p>重装还是不行的话，大概率就是你的 Nodejs 系统环境没配好，重新回到第四篇配置 <code>Nodejs</code>  环境。</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204011654.jpg" alt="404"></p>
-<p>如果成功安装 <code>Hexo</code>  插件了。再查看一下 <code>blog</code>  下的 <code>_config.yml</code>  文件， <code>deploy</code>  有没有设置正确，输入格式有没有正确 (每一个小红点都是空格)</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204011701.jpg" alt=""></p>
-<p><strong>如果还是 404 页面</strong>，再检查一下 <code>hexo-deployer-git</code>  是不是安装成功，重新安装一遍</p>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token function">npm</span> <span class="token function">install</span> hexo-deployer-git --save</pre></td></tr></table></figure><h3 id="已修改域名"><a class="markdownIt-Anchor" href="#已修改域名">#</a> 已修改域名</h3>
-<p>大多数都是 <code>Blog/source/CNAME</code>  文件没有<strong>命名</strong>好或者是<strong>域名填写错误</strong></p>
-<p><code>CNAME</code>  是没有后缀的文件</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204021406.jpg" alt=""></p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204021407.jpg" alt=""></p>
-<p>如果不清楚该文件是不是有后缀的，可以这样打开选项查看</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204021412.jpg" alt=""></p>
-<div class="note info">
-<p>本文章是记录自己安装过程中遇到的错误，总结错误，今后再遇到错误也可以回头参考一下，本文还会继续更新错误</p>
-</div>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>博客</category>
-        <category>搭博客常见错误</category>
       </categories>
       <tags>
         <tag>博客</tag>
@@ -120,14 +96,89 @@
       </tags>
   </entry>
   <entry>
-    <title></title>
-    <url>/2022/03/26/0.html</url>
-    <content><![CDATA[]]></content>
+    <title>Hexo怎么安装插件</title>
+    <url>/2022/03/26/c5de56d5.html</url>
+    <content><![CDATA[<hr>
+<h3 id="hexo怎么安装插件"><a class="markdownIt-Anchor" href="#hexo怎么安装插件">#</a> hexo 怎么安装插件</h3>
+<ol>
+<li>
+<p>打开 hexo 的根目录 <code>Blog</code></p>
+</li>
+<li>
+<p>输入安装地址 (此处我以安装 <code>npm i hexo-algoliasearch</code>  测试)</p>
+<figure class="highlight bash"><figcaption data-lang="bash"><span>npm安装</span></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">npm</span> i hexo-algoliasearch</pre></td></tr></table></figure></li>
+<li>
+<p>安装成功</p>
+</li>
+</ol>
+<p><img data-src="https://tva4.sinaimg.cn/large/0065wfS6ly8h0ntxuxa0oj30jo09njsv.jpg" alt="" title="在Blog打开cmd" height="65%" width="65%"></p>
+<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0ntxktk9zj30cr02gjrc.jpg" alt="" title="在cmd输入安装路径" height="65%" width="65%"></p>
+<p><img data-src="https://tva3.sinaimg.cn/large/0065wfS6ly8h0nty14h5oj30lh07s0tg.jpg" alt="" title="END" height="65%" width="65%"></p>
+<h3 id="hexo怎么卸载插件"><a class="markdownIt-Anchor" href="#hexo怎么卸载插件">#</a> Hexo 怎么卸载插件</h3>
+<ol>
+<li>
+<p>卸载也是在 <code>Blog</code>  打开 cmd，输入 <code>npm uninstall 插件名 --save</code>  即可</p>
+</li>
+<li>
+<p>或者简洁一点 <code>npm un 插件名 --save</code></p>
+</li>
+<li>
+<p>举个例子，我要卸载 <code>hexo-renderer-marked</code>  这个插件</p>
+</li>
+<li>
+<p>在 cmd 输入</p>
+<figure class="highlight bash"><figcaption data-lang="bash"><span>h 插件卸载 </span></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">npm</span> un hexo-renderer-marked --save</pre></td></tr></table></figure></li>
+</ol>
+<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0ntxxz7wqj30lk0650t3.jpg" alt="" title="卸载插件" height="75%" width="75%"></p>
+]]></content>
       <categories>
         <category>计算机科学</category>
         <category>博客</category>
-        <category>搭博客常见错误</category>
+        <category>模块</category>
       </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>搭建GitHu图床</title>
+    <url>/2022/04/02/e85071ad.html</url>
+    <content><![CDATA[<p><strong>问：什么是图床？图床有什么用？</strong></p>
+<p><strong>答：图床就是一个存放你照片的云盘，只要有网络就能打开这张照片</strong></p>
+<h2 id="新建一个仓库"><a class="markdownIt-Anchor" href="#新建一个仓库">#</a> 新建一个仓库</h2>
+<p><strong>用于存放图片的仓库</strong>  俗称图床<br>
+<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021048.jpg" alt=""></p>
+<h2 id="给你图床起个名字"><a class="markdownIt-Anchor" href="#给你图床起个名字">#</a> 给你图床起个名字</h2>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021050.jpg" alt=""></p>
+<h2 id="新建token"><a class="markdownIt-Anchor" href="#新建token">#</a> 新建 token</h2>
+<p><code>settings---&gt;Developer settings---&gt;Personal access tokens---&gt;generate new token</code> <br>
+<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021051.jpg" alt=""><br>
+<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021059.jpg" alt=""><br>
+<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021100.jpg" alt=""><br>
+<em> 这边给大家翻译一下，英文不是很好可以看看</em><br>
+<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021102.jpg" alt=""><br>
+<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021103.jpg" alt=""></p>
+<p><strong>点击复制</strong></p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021105.jpg" alt=""></p>
+<h2 id="配置picgo"><a class="markdownIt-Anchor" href="#配置picgo">#</a> 配置 Picgo</h2>
+<p><strong>注意：我在 imgs 仓库下新建了一个 Hexoimgs 文件夹</strong></p>
+<p>粘贴刚刚复制的 <code>token</code>  到 <code>设定Token</code></p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021133.jpg" alt=""></p>
+<p>你 <code>github</code>  上的分支名是什么， <code>PicGO的</code> 设定分支名就写什么</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021131.jpg" alt=""></p>
+<p><strong>设定自定义域名：</strong> <code>0000rookie/imgs</code>  改成你的 <code>用户名/仓库名</code></p>
+<figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tr><td data-num="1"></td><td><pre>http://cdn.jsdelivr.net/gh/0000rookie/imgs</pre></td></tr></table></figure><p><strong>你的图床就搭建完啦</strong></p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>博客</category>
+        <category>模块</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>教程</tag>
+      </tags>
   </entry>
   <entry>
     <title>第三篇：Git提交文件---从0基础搭建Hexo博客</title>
@@ -270,6 +321,70 @@
       </tags>
   </entry>
   <entry>
+    <title>第五篇：安装Hexo---从0基础搭建Hexo博客</title>
+    <url>/2022/03/30/87b69652.html</url>
+    <content><![CDATA[<h3 id="安装hexo"><a class="markdownIt-Anchor" href="#安装hexo">#</a> 安装 Hexo</h3>
+<ol>
+<li>新建一个仓库</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/LoeECmrFSydhnIt.jpg" alt=""></p>
+<ol start="2">
+<li>给仓库起个名，格式为   <code>账号名.github.io</code></li>
+</ol>
+<p><img data-src="https://tva4.sinaimg.cn/large/0065wfS6ly8h0rslvrth9j31ha0pqq5w.jpg" alt=""></p>
+<ol start="3">
+<li>打开 <code>stetings</code></li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/KaQX5eUTYvWp9H6.jpg" alt=""></p>
+<ol start="4">
+<li>滑到下面，找到这个 <code>GitHub pages</code>  ，点击打开</li>
+</ol>
+<p><img data-src="https://tva3.sinaimg.cn/large/0065wfS6ly8h0rsme8aiaj30p905tmx8.jpg" alt=""></p>
+<ol start="5">
+<li>出现以下图说明成功了</li>
+</ol>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/05.jpg" alt="05"></p>
+<ol start="6">
+<li>新建一个 <code>blog</code>  文件夹，在 <code>blog</code>  文件夹打开 <code>git bash here</code></li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/w8UDo5gxLzbOtiu.jpg" alt="">7. 安装 <code>hexo-cli</code>  插件</p>
+<figure class="highlight bash"><figcaption data-lang="bash"><span>h</span></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">npm</span> <span class="token function">install</span> -g hexo-cli</pre></td></tr></table></figure><p><img data-src="https://s2.loli.net/2022/03/30/IHBmwDz6FaGUyVW.jpg" alt=""></p>
+<ol start="8">
+<li>初始化博客</li>
+</ol>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>hexo init</pre></td></tr></table></figure><p><img data-src="https://s2.loli.net/2022/03/30/X4pArW28NVYmuCa.jpg" alt=""></p>
+<ol start="9">
+<li>静态部署博客</li>
+</ol>
+<figure class="highlight bash"><figcaption data-lang="bash"><span>mark：1</span></figcaption><table><tr><td data-num="1"></td><td><pre>hexo g</pre></td></tr></table></figure><p><img data-src="https://tva1.sinaimg.cn/large/0065wfS6ly8h0rsqg2bmbj30l20gdtav.jpg" alt="09"></p>
+<ol start="10">
+<li>
+<p>打开本地服务器</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>hexo s</pre></td></tr></table></figure></li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/atwxZphQzjf2kTi.jpg" alt=""></p>
+<ol start="11">
+<li>
+<p>浏览器输入 <code>localhost:4000</code>  查看</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>localhost:4000</pre></td></tr></table></figure></li>
+</ol>
+<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0rsqxer30j31ha0opdiy.jpg" alt="10"></p>
+<ol start="12">
+<li><code>ctrl+s</code> ，停止本地服务器运行</li>
+</ol>
+<p><strong>目前博客已经基本完成了</strong></p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>博客</category>
+        <category>零基础搭建Hexo个人博客系列</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>第二篇：安装Git---从0基础搭建Hexo博客</title>
     <url>/2022/03/30/859f60bd.html</url>
     <content><![CDATA[<h3 id="以下会用到的软件"><a class="markdownIt-Anchor" href="#以下会用到的软件">#</a> 以下会用到的软件</h3>
@@ -393,58 +508,52 @@
       </tags>
   </entry>
   <entry>
-    <title>第五篇：安装Hexo---从0基础搭建Hexo博客</title>
-    <url>/2022/03/30/87b69652.html</url>
-    <content><![CDATA[<h3 id="安装hexo"><a class="markdownIt-Anchor" href="#安装hexo">#</a> 安装 Hexo</h3>
+    <title>第九篇：安装主题---从0基础搭建Hexo博客</title>
+    <url>/2022/03/30/a5eefddc.html</url>
+    <content><![CDATA[<h3 id="安装主题"><a class="markdownIt-Anchor" href="#安装主题">#</a> 安装主题</h3>
 <ol>
-<li>新建一个仓库</li>
+<li>
+<p>打开 <code>GitHub</code>  官网，搜索 <code>hexo theme</code></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/WgwRFXd4k1rOljn.jpg" alt=""></p>
+</li>
+<li>
+<p>我这边选择 <code>diaspora</code>  这个</p>
+</li>
 </ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/LoeECmrFSydhnIt.jpg" alt=""></p>
-<ol start="2">
-<li>给仓库起个名，格式为   <code>账号名.github.io</code></li>
-</ol>
-<p><img data-src="https://tva4.sinaimg.cn/large/0065wfS6ly8h0rslvrth9j31ha0pqq5w.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/jqtLnIyD3UTrQJo.jpg" alt=""></p>
 <ol start="3">
-<li>打开 <code>stetings</code></li>
+<li>打开项目，复制安装主题的链接</li>
 </ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/KaQX5eUTYvWp9H6.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/s9Fc15hAwPbUdpn.jpg" alt=""></p>
 <ol start="4">
-<li>滑到下面，找到这个 <code>GitHub pages</code>  ，点击打开</li>
+<li>
+<p>在 blog 文件夹下鼠标右键打开 git bash here</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">git</span> clone https://github.com/Fechin/hexo-theme-diaspora.git themes/diaspora</pre></td></tr></table></figure></li>
 </ol>
-<p><img data-src="https://tva3.sinaimg.cn/large/0065wfS6ly8h0rsme8aiaj30p905tmx8.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/VHYUXteDcQiSd89.jpg" alt=""></p>
 <ol start="5">
-<li>出现以下图说明成功了</li>
+<li>打开 <code>themes</code>  文件夹，看看主题是否有下载成功</li>
 </ol>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/05.jpg" alt="05"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/2EV3nMIsKp5ozmJ.jpg" alt=""></p>
 <ol start="6">
-<li>新建一个 <code>blog</code>  文件夹，在 <code>blog</code>  文件夹打开 <code>git bash here</code></li>
+<li>主题下好之后打开 <code>_config.yml</code>  文件配置主题</li>
 </ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/w8UDo5gxLzbOtiu.jpg" alt="">7. 安装 <code>hexo-cli</code>  插件</p>
-<figure class="highlight bash"><figcaption data-lang="bash"><span>h</span></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">npm</span> <span class="token function">install</span> -g hexo-cli</pre></td></tr></table></figure><p><img data-src="https://s2.loli.net/2022/03/30/IHBmwDz6FaGUyVW.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/NGtOr3hjyQYU1fe.jpg" alt=""></p>
+<ol start="6">
+<li>找到 <code>theme</code> ，修改为 <code>diaspora</code>  (也就是你的主题名，冒号后有一个空格不能省略)</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/wYXrnUu58TMZ1DA.jpg" alt=""></p>
+<ol start="7">
+<li>
+<p>再打开 <code>git bash here</code> ，输入</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>hexo clean <span class="token operator">&amp;&amp;</span> hexo g <span class="token operator">&amp;&amp;</span> hexo d</pre></td></tr></table></figure></li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/SN1VlxAIpaFW5Lz.jpg" alt=""></p>
 <ol start="8">
-<li>初始化博客</li>
+<li>打开你的博客，此时博客已经完全安装好了</li>
 </ol>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>hexo init</pre></td></tr></table></figure><p><img data-src="https://s2.loli.net/2022/03/30/X4pArW28NVYmuCa.jpg" alt=""></p>
-<ol start="9">
-<li>静态部署博客</li>
-</ol>
-<figure class="highlight bash"><figcaption data-lang="bash"><span>mark：1</span></figcaption><table><tr><td data-num="1"></td><td><pre>hexo g</pre></td></tr></table></figure><p><img data-src="https://tva1.sinaimg.cn/large/0065wfS6ly8h0rsqg2bmbj30l20gdtav.jpg" alt="09"></p>
-<ol start="10">
-<li>
-<p>打开本地服务器</p>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>hexo s</pre></td></tr></table></figure></li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/atwxZphQzjf2kTi.jpg" alt=""></p>
-<ol start="11">
-<li>
-<p>浏览器输入 <code>localhost:4000</code>  查看</p>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>localhost:4000</pre></td></tr></table></figure></li>
-</ol>
-<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0rsqxer30j31ha0opdiy.jpg" alt="10"></p>
-<ol start="12">
-<li><code>ctrl+s</code> ，停止本地服务器运行</li>
-</ol>
-<p><strong>目前博客已经基本完成了</strong></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/6QznLrvacCsXjZT.jpg" alt=""></p>
+<p><strong>博客已经漂漂亮亮了，可以愉快的开始写博客啦</strong></p>
 ]]></content>
       <categories>
         <category>计算机科学</category>
@@ -525,64 +634,6 @@
 <p><img data-src="https://s2.loli.net/2022/03/30/pk9Gyi28uTFrXZY.jpg" alt=""></p>
 <p><img data-src="https://s2.loli.net/2022/03/30/8tjJkrGRb3NBsEW.jpg" alt=""></p>
 <p><img data-src="https://s2.loli.net/2022/03/30/FVivdNY8BLUfcSR.jpg" alt=""></p>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>博客</category>
-        <category>零基础搭建Hexo个人博客系列</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第九篇：安装主题---从0基础搭建Hexo博客</title>
-    <url>/2022/03/30/a5eefddc.html</url>
-    <content><![CDATA[<h3 id="安装主题"><a class="markdownIt-Anchor" href="#安装主题">#</a> 安装主题</h3>
-<ol>
-<li>
-<p>打开 <code>GitHub</code>  官网，搜索 <code>hexo theme</code></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/WgwRFXd4k1rOljn.jpg" alt=""></p>
-</li>
-<li>
-<p>我这边选择 <code>diaspora</code>  这个</p>
-</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/jqtLnIyD3UTrQJo.jpg" alt=""></p>
-<ol start="3">
-<li>打开项目，复制安装主题的链接</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/s9Fc15hAwPbUdpn.jpg" alt=""></p>
-<ol start="4">
-<li>
-<p>在 blog 文件夹下鼠标右键打开 git bash here</p>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">git</span> clone https://github.com/Fechin/hexo-theme-diaspora.git themes/diaspora</pre></td></tr></table></figure></li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/VHYUXteDcQiSd89.jpg" alt=""></p>
-<ol start="5">
-<li>打开 <code>themes</code>  文件夹，看看主题是否有下载成功</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/2EV3nMIsKp5ozmJ.jpg" alt=""></p>
-<ol start="6">
-<li>主题下好之后打开 <code>_config.yml</code>  文件配置主题</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/NGtOr3hjyQYU1fe.jpg" alt=""></p>
-<ol start="6">
-<li>找到 <code>theme</code> ，修改为 <code>diaspora</code>  (也就是你的主题名，冒号后有一个空格不能省略)</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/wYXrnUu58TMZ1DA.jpg" alt=""></p>
-<ol start="7">
-<li>
-<p>再打开 <code>git bash here</code> ，输入</p>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>hexo clean <span class="token operator">&amp;&amp;</span> hexo g <span class="token operator">&amp;&amp;</span> hexo d</pre></td></tr></table></figure></li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/SN1VlxAIpaFW5Lz.jpg" alt=""></p>
-<ol start="8">
-<li>打开你的博客，此时博客已经完全安装好了</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/6QznLrvacCsXjZT.jpg" alt=""></p>
-<p><strong>博客已经漂漂亮亮了，可以愉快的开始写博客啦</strong></p>
 ]]></content>
       <categories>
         <category>计算机科学</category>
@@ -795,6 +846,16 @@
       </tags>
   </entry>
   <entry>
+    <title></title>
+    <url>/2022/03/26/0.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>博客</category>
+        <category>搭博客常见错误</category>
+      </categories>
+  </entry>
+  <entry>
     <title>添加开机自启程序</title>
     <url>/2022/04/07/2cc8588f.html</url>
     <content><![CDATA[<h2 id="键盘点击winr"><a class="markdownIt-Anchor" href="#键盘点击winr">#</a> 键盘点击 <code>win+R</code></h2>
@@ -815,84 +876,56 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo怎么安装插件</title>
-    <url>/2022/03/26/c5de56d5.html</url>
-    <content><![CDATA[<hr>
-<h3 id="hexo怎么安装插件"><a class="markdownIt-Anchor" href="#hexo怎么安装插件">#</a> hexo 怎么安装插件</h3>
+    <title>搭建博客常见的错误</title>
+    <url>/2022/04/01/cdc2e518.html</url>
+    <content><![CDATA[<h2 id="404错误"><a class="markdownIt-Anchor" href="#404错误">#</a> 404 错误</h2>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng20220401163558.png" alt="404"></p>
+<h3 id="分两种情况"><a class="markdownIt-Anchor" href="#分两种情况">#</a> 分两种情况</h3>
+<h4 id="还未修改域名"><a class="markdownIt-Anchor" href="#还未修改域名">#</a> 还未修改域名</h4>
 <ol>
 <li>
-<p>打开 hexo 的根目录 <code>Blog</code></p>
+<p>打开 ``GitHub` 仓库看文件是否已经上传成功，成功如图。</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng20220401164116.jpg" alt=""></p>
 </li>
 <li>
-<p>输入安装地址 (此处我以安装 <code>npm i hexo-algoliasearch</code>  测试)</p>
-<figure class="highlight bash"><figcaption data-lang="bash"><span>npm安装</span></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">npm</span> i hexo-algoliasearch</pre></td></tr></table></figure></li>
+<p>如果仓库是空的，说明你没上传成功。</p>
+<ul>
+<li>检查 <code>blog</code>  文件夹下的 <code>_config.yml</code>  文件 <code>deploy:</code>  的配置有没有正确。如下</li>
+</ul>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>deploy:</pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>  type: <span class="token function">git</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>  repo: git@github.com:0000rookie/github.io.git</pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre>  branch: main</pre></td></tr></table></figure><ul>
+<li>重新部署到 <code>github</code>  仓库。</li>
+</ul>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>hexo clean  <span class="token comment">#清除缓存文件 db.json 和已生成的静态文件 public</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>hexo g      <span class="token comment">#生成网站静态文件到默认设置的 public 文件夹 (hexo generate 的缩写)</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>hexo d      <span class="token comment">#自动生成网站静态文件，并部署到设定的仓库 (hexo deploy 的缩写)</span></pre></td></tr></table></figure><ul>
 <li>
-<p>安装成功</p>
+<p>在部署过程中，查看 git 窗口看有没有报错的地方，如有报错，查看报错内容，如果没有，此时查看 <code>github</code>  仓库有没有更新文件。</p>
+</li>
+<li>
+<p>如果还是没看到有更新内容，看看 <code>github</code>  分支是不是 <code>main</code> ，有些同学的分支是 <code>master</code> ，需要选择分支和部署的分支一致</p>
+</li>
+</ul>
 </li>
 </ol>
-<p><img data-src="https://tva4.sinaimg.cn/large/0065wfS6ly8h0ntxuxa0oj30jo09njsv.jpg" alt="" title="在Blog打开cmd" height="65%" width="65%"></p>
-<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0ntxktk9zj30cr02gjrc.jpg" alt="" title="在cmd输入安装路径" height="65%" width="65%"></p>
-<p><img data-src="https://tva3.sinaimg.cn/large/0065wfS6ly8h0nty14h5oj30lh07s0tg.jpg" alt="" title="END" height="65%" width="65%"></p>
-<h3 id="hexo怎么卸载插件"><a class="markdownIt-Anchor" href="#hexo怎么卸载插件">#</a> Hexo 怎么卸载插件</h3>
-<ol>
-<li>
-<p>卸载也是在 <code>Blog</code>  打开 cmd，输入 <code>npm uninstall 插件名 --save</code>  即可</p>
-</li>
-<li>
-<p>或者简洁一点 <code>npm un 插件名 --save</code></p>
-</li>
-<li>
-<p>举个例子，我要卸载 <code>hexo-renderer-marked</code>  这个插件</p>
-</li>
-<li>
-<p>在 cmd 输入</p>
-<figure class="highlight bash"><figcaption data-lang="bash"><span>h 插件卸载 </span></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">npm</span> un hexo-renderer-marked --save</pre></td></tr></table></figure></li>
-</ol>
-<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0ntxxz7wqj30lk0650t3.jpg" alt="" title="卸载插件" height="75%" width="75%"></p>
+<p>还有可能的错误是 <code>hexo</code>  安装有文件缺失，要重新安装一遍。打开 <code>E:\studyAPP\node_js\node_global</code>  路径插件是否成功安装 <code>Hexo</code>  插件了，如果没成功，那就重新安装一遍。</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">npm</span> <span class="token function">install</span> -g hexo-cli</pre></td></tr></table></figure><p>重装还是不行的话，大概率就是你的 Nodejs 系统环境没配好，重新回到第四篇配置 <code>Nodejs</code>  环境。</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204011654.jpg" alt="404"></p>
+<p>如果成功安装 <code>Hexo</code>  插件了。再查看一下 <code>blog</code>  下的 <code>_config.yml</code>  文件， <code>deploy</code>  有没有设置正确，输入格式有没有正确 (每一个小红点都是空格)</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204011701.jpg" alt=""></p>
+<p><strong>如果还是 404 页面</strong>，再检查一下 <code>hexo-deployer-git</code>  是不是安装成功，重新安装一遍</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token function">npm</span> <span class="token function">install</span> hexo-deployer-git --save</pre></td></tr></table></figure><h3 id="已修改域名"><a class="markdownIt-Anchor" href="#已修改域名">#</a> 已修改域名</h3>
+<p>大多数都是 <code>Blog/source/CNAME</code>  文件没有<strong>命名</strong>好或者是<strong>域名填写错误</strong></p>
+<p><code>CNAME</code>  是没有后缀的文件</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204021406.jpg" alt=""></p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204021407.jpg" alt=""></p>
+<p>如果不清楚该文件是不是有后缀的，可以这样打开选项查看</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204021412.jpg" alt=""></p>
+<div class="note info">
+<p>本文章是记录自己安装过程中遇到的错误，总结错误，今后再遇到错误也可以回头参考一下，本文还会继续更新错误</p>
+</div>
 ]]></content>
       <categories>
         <category>计算机科学</category>
         <category>博客</category>
-        <category>模块</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>搭建GitHu图床</title>
-    <url>/2022/04/02/e85071ad.html</url>
-    <content><![CDATA[<p><strong>问：什么是图床？图床有什么用？</strong></p>
-<p><strong>答：图床就是一个存放你照片的云盘，只要有网络就能打开这张照片</strong></p>
-<h2 id="新建一个仓库"><a class="markdownIt-Anchor" href="#新建一个仓库">#</a> 新建一个仓库</h2>
-<p><strong>用于存放图片的仓库</strong>  俗称图床<br>
-<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021048.jpg" alt=""></p>
-<h2 id="给你图床起个名字"><a class="markdownIt-Anchor" href="#给你图床起个名字">#</a> 给你图床起个名字</h2>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021050.jpg" alt=""></p>
-<h2 id="新建token"><a class="markdownIt-Anchor" href="#新建token">#</a> 新建 token</h2>
-<p><code>settings---&gt;Developer settings---&gt;Personal access tokens---&gt;generate new token</code> <br>
-<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021051.jpg" alt=""><br>
-<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021059.jpg" alt=""><br>
-<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021100.jpg" alt=""><br>
-<em> 这边给大家翻译一下，英文不是很好可以看看</em><br>
-<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021102.jpg" alt=""><br>
-<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021103.jpg" alt=""></p>
-<p><strong>点击复制</strong></p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021105.jpg" alt=""></p>
-<h2 id="配置picgo"><a class="markdownIt-Anchor" href="#配置picgo">#</a> 配置 Picgo</h2>
-<p><strong>注意：我在 imgs 仓库下新建了一个 Hexoimgs 文件夹</strong></p>
-<p>粘贴刚刚复制的 <code>token</code>  到 <code>设定Token</code></p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021133.jpg" alt=""></p>
-<p>你 <code>github</code>  上的分支名是什么， <code>PicGO的</code> 设定分支名就写什么</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021131.jpg" alt=""></p>
-<p><strong>设定自定义域名：</strong> <code>0000rookie/imgs</code>  改成你的 <code>用户名/仓库名</code></p>
-<figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tr><td data-num="1"></td><td><pre>http://cdn.jsdelivr.net/gh/0000rookie/imgs</pre></td></tr></table></figure><p><strong>你的图床就搭建完啦</strong></p>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>博客</category>
-        <category>模块</category>
+        <category>搭博客常见错误</category>
       </categories>
       <tags>
         <tag>博客</tag>
