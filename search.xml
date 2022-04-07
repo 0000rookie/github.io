@@ -20,18 +20,86 @@
       </categories>
   </entry>
   <entry>
-    <title>关于shoka主题食用技巧</title>
-    <url>/2022/04/03/5d5981b0.html</url>
-    <content><![CDATA[<h2 id="首页置顶文章"><a class="markdownIt-Anchor" href="#首页置顶文章">#</a> 首页置顶文章</h2>
-<figure class="highlight markdown"><figcaption data-lang="markdown"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token front-matter-block"><span class="token punctuation">---</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token front-matter yaml language-yaml"><span class="token key atrule">title</span><span class="token punctuation">:</span> 置顶文章</pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre><span class="token key atrule">sticky</span><span class="token punctuation">:</span> <span class="token boolean important">true</span></span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token punctuation">---</span></span></pre></td></tr></table></figure><h2 id="关闭文章评论"><a class="markdownIt-Anchor" href="#关闭文章评论">#</a> 关闭文章评论</h2>
-<figure class="highlight markdown"><figcaption data-lang="markdown"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token front-matter-block"><span class="token punctuation">---</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token front-matter yaml language-yaml"><span class="token key atrule">title</span><span class="token punctuation">:</span> 开启文章评论</pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre><span class="token key atrule">comment</span><span class="token punctuation">:</span> <span class="token boolean important">false</span></span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token punctuation">---</span></span></pre></td></tr></table></figure><h2 id="关闭文章音乐播放器"><a class="markdownIt-Anchor" href="#关闭文章音乐播放器">#</a> 关闭文章音乐播放器</h2>
-<figure class="highlight markdown"><figcaption data-lang="markdown"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token front-matter-block"><span class="token punctuation">---</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token front-matter yaml language-yaml"><span class="token key atrule">title</span><span class="token punctuation">:</span> 关闭文章音乐播放器</pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre><span class="token key atrule">audio</span><span class="token punctuation">:</span> <span class="token boolean important">false</span></span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token punctuation">---</span></span></pre></td></tr></table></figure><h2 id="个人头像配置"><a class="markdownIt-Anchor" href="#个人头像配置">#</a> 个人头像配置</h2>
-<figure class="highlight yaml"><figcaption data-lang="YAML"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token key atrule">sidebar</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>  <span class="token comment"># 侧边栏的位置</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>  <span class="token key atrule">position</span><span class="token punctuation">:</span> left</pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre>  <span class="token comment">#position: right</span></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre>  <span class="token comment"># 替换默认头像，并在这里设置 url</span></pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre>  <span class="token key atrule">avatar</span><span class="token punctuation">:</span> avatar.jpg</pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre>  <span class="token comment"># 头像路径在 themes\shoka\source\images\avatar.jpg</span></pre></td></tr></table></figure><h2 id="底部widgets"><a class="markdownIt-Anchor" href="#底部widgets">#</a> 底部 widgets</h2>
-<figure class="highlight yaml"><figcaption data-lang="YAML"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token key atrule">widgets</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>  <span class="token key atrule">random_posts</span><span class="token punctuation">:</span> <span class="token boolean important">true</span> <span class="token comment"># 显示随机文章</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>  <span class="token key atrule">recent_comments</span><span class="token punctuation">:</span> <span class="token boolean important">true</span> <span class="token comment"># 显示最近评论</span></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre>  <span class="token comment">#在 shoka/_config.yml 修改</span></pre></td></tr></table></figure>]]></content>
+    <title>添加开机自启程序</title>
+    <url>/2022/04/07/2cc8588f.html</url>
+    <content><![CDATA[<h2 id="键盘点击winr"><a class="markdownIt-Anchor" href="#键盘点击winr">#</a> 键盘点击 <code>win+R</code></h2>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204071930.jpg" alt=""></p>
+<h2 id="在窗口输入shellstartup"><a class="markdownIt-Anchor" href="#在窗口输入shellstartup">#</a> 在窗口输入 <code>shell:startup</code></h2>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>shell:startup</pre></td></tr></table></figure><p><strong>打开是这个路径</strong>，把你想要开机自启的软件快捷方式拖到这个路径下，以后电脑开机就会自动启动这个程序了</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204071937.jpg" alt=""></p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204071936.jpg" alt=""></p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>技术杂谈</category>
+        <category>一个小技巧</category>
+      </categories>
+      <tags>
+        <tag>生活小技巧</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2022/03/26/0.html</url>
+    <content><![CDATA[]]></content>
       <categories>
         <category>计算机科学</category>
         <category>博客</category>
-        <category>博客的食用方法</category>
+        <category>搭博客常见错误</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>搭建博客常见的错误</title>
+    <url>/2022/04/01/cdc2e518.html</url>
+    <content><![CDATA[<h2 id="404错误"><a class="markdownIt-Anchor" href="#404错误">#</a> 404 错误</h2>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng20220401163558.png" alt="404"></p>
+<h3 id="分两种情况"><a class="markdownIt-Anchor" href="#分两种情况">#</a> 分两种情况</h3>
+<h4 id="还未修改域名"><a class="markdownIt-Anchor" href="#还未修改域名">#</a> 还未修改域名</h4>
+<ol>
+<li>
+<p>打开 ``GitHub` 仓库看文件是否已经上传成功，成功如图。</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng20220401164116.jpg" alt=""></p>
+</li>
+<li>
+<p>如果仓库是空的，说明你没上传成功。</p>
+<ul>
+<li>检查 <code>blog</code>  文件夹下的 <code>_config.yml</code>  文件 <code>deploy:</code>  的配置有没有正确。如下</li>
+</ul>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>deploy:</pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>  type: <span class="token function">git</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>  repo: git@github.com:0000rookie/github.io.git</pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre>  branch: main</pre></td></tr></table></figure><ul>
+<li>重新部署到 <code>github</code>  仓库。</li>
+</ul>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>hexo clean  <span class="token comment">#清除缓存文件 db.json 和已生成的静态文件 public</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>hexo g      <span class="token comment">#生成网站静态文件到默认设置的 public 文件夹 (hexo generate 的缩写)</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>hexo d      <span class="token comment">#自动生成网站静态文件，并部署到设定的仓库 (hexo deploy 的缩写)</span></pre></td></tr></table></figure><ul>
+<li>
+<p>在部署过程中，查看 git 窗口看有没有报错的地方，如有报错，查看报错内容，如果没有，此时查看 <code>github</code>  仓库有没有更新文件。</p>
+</li>
+<li>
+<p>如果还是没看到有更新内容，看看 <code>github</code>  分支是不是 <code>main</code> ，有些同学的分支是 <code>master</code> ，需要选择分支和部署的分支一致</p>
+</li>
+</ul>
+</li>
+</ol>
+<p>还有可能的错误是 <code>hexo</code>  安装有文件缺失，要重新安装一遍。打开 <code>E:\studyAPP\node_js\node_global</code>  路径插件是否成功安装 <code>Hexo</code>  插件了，如果没成功，那就重新安装一遍。</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">npm</span> <span class="token function">install</span> -g hexo-cli</pre></td></tr></table></figure><p>重装还是不行的话，大概率就是你的 Nodejs 系统环境没配好，重新回到第四篇配置 <code>Nodejs</code>  环境。</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204011654.jpg" alt="404"></p>
+<p>如果成功安装 <code>Hexo</code>  插件了。再查看一下 <code>blog</code>  下的 <code>_config.yml</code>  文件， <code>deploy</code>  有没有设置正确，输入格式有没有正确 (每一个小红点都是空格)</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204011701.jpg" alt=""></p>
+<p><strong>如果还是 404 页面</strong>，再检查一下 <code>hexo-deployer-git</code>  是不是安装成功，重新安装一遍</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token function">npm</span> <span class="token function">install</span> hexo-deployer-git --save</pre></td></tr></table></figure><h3 id="已修改域名"><a class="markdownIt-Anchor" href="#已修改域名">#</a> 已修改域名</h3>
+<p>大多数都是 <code>Blog/source/CNAME</code>  文件没有<strong>命名</strong>好或者是<strong>域名填写错误</strong></p>
+<p><code>CNAME</code>  是没有后缀的文件</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204021406.jpg" alt=""></p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204021407.jpg" alt=""></p>
+<p>如果不清楚该文件是不是有后缀的，可以这样打开选项查看</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204021412.jpg" alt=""></p>
+<div class="note info">
+<p>本文章是记录自己安装过程中遇到的错误，总结错误，今后再遇到错误也可以回头参考一下，本文还会继续更新错误</p>
+</div>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>博客</category>
+        <category>搭博客常见错误</category>
       </categories>
       <tags>
         <tag>博客</tag>
@@ -52,6 +120,25 @@
 <h2 id="h2so4文章分类"><a class="markdownIt-Anchor" href="#h2so4文章分类">#</a> <span class="red">H<sub>2</sub>SO<sub>4</sub></span> 文章分类</h2>
 <figure class="highlight raw"><figcaption data-lang=""><span>w Front-Matter</span></figcaption><table><tr><td data-num="1"></td><td><pre>categories:</pre></td></tr><tr><td data-num="2"></td><td><pre>  - 计算机科学</pre></td></tr><tr><td data-num="3"></td><td><pre>  - 博客</pre></td></tr><tr><td data-num="4"></td><td><pre>  - 博客的食用方法</pre></td></tr></table></figure><hr>
 ]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>博客</category>
+        <category>博客的食用方法</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于shoka主题食用技巧</title>
+    <url>/2022/04/03/5d5981b0.html</url>
+    <content><![CDATA[<h2 id="首页置顶文章"><a class="markdownIt-Anchor" href="#首页置顶文章">#</a> 首页置顶文章</h2>
+<figure class="highlight markdown"><figcaption data-lang="markdown"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token front-matter-block"><span class="token punctuation">---</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token front-matter yaml language-yaml"><span class="token key atrule">title</span><span class="token punctuation">:</span> 置顶文章</pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre><span class="token key atrule">sticky</span><span class="token punctuation">:</span> <span class="token boolean important">true</span></span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token punctuation">---</span></span></pre></td></tr></table></figure><h2 id="关闭文章评论"><a class="markdownIt-Anchor" href="#关闭文章评论">#</a> 关闭文章评论</h2>
+<figure class="highlight markdown"><figcaption data-lang="markdown"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token front-matter-block"><span class="token punctuation">---</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token front-matter yaml language-yaml"><span class="token key atrule">title</span><span class="token punctuation">:</span> 开启文章评论</pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre><span class="token key atrule">comment</span><span class="token punctuation">:</span> <span class="token boolean important">false</span></span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token punctuation">---</span></span></pre></td></tr></table></figure><h2 id="关闭文章音乐播放器"><a class="markdownIt-Anchor" href="#关闭文章音乐播放器">#</a> 关闭文章音乐播放器</h2>
+<figure class="highlight markdown"><figcaption data-lang="markdown"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token front-matter-block"><span class="token punctuation">---</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token front-matter yaml language-yaml"><span class="token key atrule">title</span><span class="token punctuation">:</span> 关闭文章音乐播放器</pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre><span class="token key atrule">audio</span><span class="token punctuation">:</span> <span class="token boolean important">false</span></span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token punctuation">---</span></span></pre></td></tr></table></figure><h2 id="个人头像配置"><a class="markdownIt-Anchor" href="#个人头像配置">#</a> 个人头像配置</h2>
+<figure class="highlight yaml"><figcaption data-lang="YAML"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token key atrule">sidebar</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>  <span class="token comment"># 侧边栏的位置</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>  <span class="token key atrule">position</span><span class="token punctuation">:</span> left</pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre>  <span class="token comment">#position: right</span></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre>  <span class="token comment"># 替换默认头像，并在这里设置 url</span></pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre>  <span class="token key atrule">avatar</span><span class="token punctuation">:</span> avatar.jpg</pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre>  <span class="token comment"># 头像路径在 themes\shoka\source\images\avatar.jpg</span></pre></td></tr></table></figure><h2 id="底部widgets"><a class="markdownIt-Anchor" href="#底部widgets">#</a> 底部 widgets</h2>
+<figure class="highlight yaml"><figcaption data-lang="YAML"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token key atrule">widgets</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>  <span class="token key atrule">random_posts</span><span class="token punctuation">:</span> <span class="token boolean important">true</span> <span class="token comment"># 显示随机文章</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>  <span class="token key atrule">recent_comments</span><span class="token punctuation">:</span> <span class="token boolean important">true</span> <span class="token comment"># 显示最近评论</span></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre>  <span class="token comment">#在 shoka/_config.yml 修改</span></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>计算机科学</category>
         <category>博客</category>
@@ -288,71 +375,68 @@
       </tags>
   </entry>
   <entry>
-    <title>搭建博客常见的错误</title>
-    <url>/2022/04/01/cdc2e518.html</url>
-    <content><![CDATA[<h2 id="404错误"><a class="markdownIt-Anchor" href="#404错误">#</a> 404 错误</h2>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng20220401163558.png" alt="404"></p>
-<h3 id="分两种情况"><a class="markdownIt-Anchor" href="#分两种情况">#</a> 分两种情况</h3>
-<h4 id="还未修改域名"><a class="markdownIt-Anchor" href="#还未修改域名">#</a> 还未修改域名</h4>
+    <title>第五篇：安装Hexo---从0基础搭建Hexo博客</title>
+    <url>/2022/03/30/87b69652.html</url>
+    <content><![CDATA[<h3 id="安装hexo"><a class="markdownIt-Anchor" href="#安装hexo">#</a> 安装 Hexo</h3>
 <ol>
-<li>
-<p>打开 ``GitHub` 仓库看文件是否已经上传成功，成功如图。</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng20220401164116.jpg" alt=""></p>
-</li>
-<li>
-<p>如果仓库是空的，说明你没上传成功。</p>
-<ul>
-<li>检查 <code>blog</code>  文件夹下的 <code>_config.yml</code>  文件 <code>deploy:</code>  的配置有没有正确。如下</li>
-</ul>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>deploy:</pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>  type: <span class="token function">git</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>  repo: git@github.com:0000rookie/github.io.git</pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre>  branch: main</pre></td></tr></table></figure><ul>
-<li>重新部署到 <code>github</code>  仓库。</li>
-</ul>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>hexo clean  <span class="token comment">#清除缓存文件 db.json 和已生成的静态文件 public</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>hexo g      <span class="token comment">#生成网站静态文件到默认设置的 public 文件夹 (hexo generate 的缩写)</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>hexo d      <span class="token comment">#自动生成网站静态文件，并部署到设定的仓库 (hexo deploy 的缩写)</span></pre></td></tr></table></figure><ul>
-<li>
-<p>在部署过程中，查看 git 窗口看有没有报错的地方，如有报错，查看报错内容，如果没有，此时查看 <code>github</code>  仓库有没有更新文件。</p>
-</li>
-<li>
-<p>如果还是没看到有更新内容，看看 <code>github</code>  分支是不是 <code>main</code> ，有些同学的分支是 <code>master</code> ，需要选择分支和部署的分支一致</p>
-</li>
-</ul>
-</li>
+<li>新建一个仓库</li>
 </ol>
-<p>还有可能的错误是 <code>hexo</code>  安装有文件缺失，要重新安装一遍。打开 <code>E:\studyAPP\node_js\node_global</code>  路径插件是否成功安装 <code>Hexo</code>  插件了，如果没成功，那就重新安装一遍。</p>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">npm</span> <span class="token function">install</span> -g hexo-cli</pre></td></tr></table></figure><p>重装还是不行的话，大概率就是你的 Nodejs 系统环境没配好，重新回到第四篇配置 <code>Nodejs</code>  环境。</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204011654.jpg" alt="404"></p>
-<p>如果成功安装 <code>Hexo</code>  插件了。再查看一下 <code>blog</code>  下的 <code>_config.yml</code>  文件， <code>deploy</code>  有没有设置正确，输入格式有没有正确 (每一个小红点都是空格)</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204011701.jpg" alt=""></p>
-<p><strong>如果还是 404 页面</strong>，再检查一下 <code>hexo-deployer-git</code>  是不是安装成功，重新安装一遍</p>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token function">npm</span> <span class="token function">install</span> hexo-deployer-git --save</pre></td></tr></table></figure><h3 id="已修改域名"><a class="markdownIt-Anchor" href="#已修改域名">#</a> 已修改域名</h3>
-<p>大多数都是 <code>Blog/source/CNAME</code>  文件没有<strong>命名</strong>好或者是<strong>域名填写错误</strong></p>
-<p><code>CNAME</code>  是没有后缀的文件</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204021406.jpg" alt=""></p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204021407.jpg" alt=""></p>
-<p>如果不清楚该文件是不是有后缀的，可以这样打开选项查看</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204021412.jpg" alt=""></p>
-<div class="note info">
-<p>本文章是记录自己安装过程中遇到的错误，总结错误，今后再遇到错误也可以回头参考一下，本文还会继续更新错误</p>
-</div>
+<p><img data-src="https://s2.loli.net/2022/03/30/LoeECmrFSydhnIt.jpg" alt=""></p>
+<ol start="2">
+<li>给仓库起个名，格式为   <code>账号名.github.io</code></li>
+</ol>
+<p><img data-src="https://tva4.sinaimg.cn/large/0065wfS6ly8h0rslvrth9j31ha0pqq5w.jpg" alt=""></p>
+<ol start="3">
+<li>打开 <code>stetings</code></li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/KaQX5eUTYvWp9H6.jpg" alt=""></p>
+<ol start="4">
+<li>滑到下面，找到这个 <code>GitHub pages</code>  ，点击打开</li>
+</ol>
+<p><img data-src="https://tva3.sinaimg.cn/large/0065wfS6ly8h0rsme8aiaj30p905tmx8.jpg" alt=""></p>
+<ol start="5">
+<li>出现以下图说明成功了</li>
+</ol>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/05.jpg" alt="05"></p>
+<ol start="6">
+<li>新建一个 <code>blog</code>  文件夹，在 <code>blog</code>  文件夹打开 <code>git bash here</code></li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/w8UDo5gxLzbOtiu.jpg" alt="">7. 安装 <code>hexo-cli</code>  插件</p>
+<figure class="highlight bash"><figcaption data-lang="bash"><span>h</span></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">npm</span> <span class="token function">install</span> -g hexo-cli</pre></td></tr></table></figure><p><img data-src="https://s2.loli.net/2022/03/30/IHBmwDz6FaGUyVW.jpg" alt=""></p>
+<ol start="8">
+<li>初始化博客</li>
+</ol>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>hexo init</pre></td></tr></table></figure><p><img data-src="https://s2.loli.net/2022/03/30/X4pArW28NVYmuCa.jpg" alt=""></p>
+<ol start="9">
+<li>静态部署博客</li>
+</ol>
+<figure class="highlight bash"><figcaption data-lang="bash"><span>mark：1</span></figcaption><table><tr><td data-num="1"></td><td><pre>hexo g</pre></td></tr></table></figure><p><img data-src="https://tva1.sinaimg.cn/large/0065wfS6ly8h0rsqg2bmbj30l20gdtav.jpg" alt="09"></p>
+<ol start="10">
+<li>
+<p>打开本地服务器</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>hexo s</pre></td></tr></table></figure></li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/atwxZphQzjf2kTi.jpg" alt=""></p>
+<ol start="11">
+<li>
+<p>浏览器输入 <code>localhost:4000</code>  查看</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>localhost:4000</pre></td></tr></table></figure></li>
+</ol>
+<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0rsqxer30j31ha0opdiy.jpg" alt="10"></p>
+<ol start="12">
+<li><code>ctrl+s</code> ，停止本地服务器运行</li>
+</ol>
+<p><strong>目前博客已经基本完成了</strong></p>
 ]]></content>
       <categories>
         <category>计算机科学</category>
         <category>博客</category>
-        <category>搭博客常见错误</category>
+        <category>零基础搭建Hexo个人博客系列</category>
       </categories>
       <tags>
         <tag>博客</tag>
         <tag>教程</tag>
       </tags>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/2022/03/26/0.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>博客</category>
-        <category>搭博客常见错误</category>
-      </categories>
   </entry>
   <entry>
     <title>第二篇：安装Git---从0基础搭建Hexo博客</title>
@@ -478,70 +562,6 @@
       </tags>
   </entry>
   <entry>
-    <title>第五篇：安装Hexo---从0基础搭建Hexo博客</title>
-    <url>/2022/03/30/87b69652.html</url>
-    <content><![CDATA[<h3 id="安装hexo"><a class="markdownIt-Anchor" href="#安装hexo">#</a> 安装 Hexo</h3>
-<ol>
-<li>新建一个仓库</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/LoeECmrFSydhnIt.jpg" alt=""></p>
-<ol start="2">
-<li>给仓库起个名，格式为   <code>账号名.github.io</code></li>
-</ol>
-<p><img data-src="https://tva4.sinaimg.cn/large/0065wfS6ly8h0rslvrth9j31ha0pqq5w.jpg" alt=""></p>
-<ol start="3">
-<li>打开 <code>stetings</code></li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/KaQX5eUTYvWp9H6.jpg" alt=""></p>
-<ol start="4">
-<li>滑到下面，找到这个 <code>GitHub pages</code>  ，点击打开</li>
-</ol>
-<p><img data-src="https://tva3.sinaimg.cn/large/0065wfS6ly8h0rsme8aiaj30p905tmx8.jpg" alt=""></p>
-<ol start="5">
-<li>出现以下图说明成功了</li>
-</ol>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/05.jpg" alt="05"></p>
-<ol start="6">
-<li>新建一个 <code>blog</code>  文件夹，在 <code>blog</code>  文件夹打开 <code>git bash here</code></li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/w8UDo5gxLzbOtiu.jpg" alt="">7. 安装 <code>hexo-cli</code>  插件</p>
-<figure class="highlight bash"><figcaption data-lang="bash"><span>h</span></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">npm</span> <span class="token function">install</span> -g hexo-cli</pre></td></tr></table></figure><p><img data-src="https://s2.loli.net/2022/03/30/IHBmwDz6FaGUyVW.jpg" alt=""></p>
-<ol start="8">
-<li>初始化博客</li>
-</ol>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>hexo init</pre></td></tr></table></figure><p><img data-src="https://s2.loli.net/2022/03/30/X4pArW28NVYmuCa.jpg" alt=""></p>
-<ol start="9">
-<li>静态部署博客</li>
-</ol>
-<figure class="highlight bash"><figcaption data-lang="bash"><span>mark：1</span></figcaption><table><tr><td data-num="1"></td><td><pre>hexo g</pre></td></tr></table></figure><p><img data-src="https://tva1.sinaimg.cn/large/0065wfS6ly8h0rsqg2bmbj30l20gdtav.jpg" alt="09"></p>
-<ol start="10">
-<li>
-<p>打开本地服务器</p>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>hexo s</pre></td></tr></table></figure></li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/atwxZphQzjf2kTi.jpg" alt=""></p>
-<ol start="11">
-<li>
-<p>浏览器输入 <code>localhost:4000</code>  查看</p>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>localhost:4000</pre></td></tr></table></figure></li>
-</ol>
-<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0rsqxer30j31ha0opdiy.jpg" alt="10"></p>
-<ol start="12">
-<li><code>ctrl+s</code> ，停止本地服务器运行</li>
-</ol>
-<p><strong>目前博客已经基本完成了</strong></p>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>博客</category>
-        <category>零基础搭建Hexo个人博客系列</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>第九篇：安装主题---从0基础搭建Hexo博客</title>
     <url>/2022/03/30/a5eefddc.html</url>
     <content><![CDATA[<h3 id="安装主题"><a class="markdownIt-Anchor" href="#安装主题">#</a> 安装主题</h3>
@@ -600,6 +620,34 @@
       </tags>
   </entry>
   <entry>
+    <title>第一篇：注册github---从0基础搭建Hexo博客</title>
+    <url>/2022/03/30/a6f9d072.html</url>
+    <content><![CDATA[<h3 id="注册github"><a class="markdownIt-Anchor" href="#注册github">#</a> 注册 GitHub</h3>
+<p><img data-src="https://s2.loli.net/2022/03/30/BULpyk6thPbgJCD.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/fo8wzF7dvqNHaB4.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/aXwyhW3KM8cxYCb.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/RN62GDFVQU1YKB3.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/JzFGeTjb7BHKSQD.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/48GA7g1N2VacpJl.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/uN8PBgwFWOlApfU.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/shHQtoZVwcPrz2I.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/aZSU1FnDumqY2M7.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/PhUtuCQNlLHXAdG.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/pk9Gyi28uTFrXZY.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/8tjJkrGRb3NBsEW.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/FVivdNY8BLUfcSR.jpg" alt=""></p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>博客</category>
+        <category>零基础搭建Hexo个人博客系列</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>第六篇：将博客部署到GitHub---从0基础搭建Hexo博客</title>
     <url>/2022/03/30/dc09a46c.html</url>
     <content><![CDATA[<h2 id="将hexo部署到github"><a class="markdownIt-Anchor" href="#将hexo部署到github">#</a> 将 Hexo 部署到 github</h2>
@@ -640,34 +688,6 @@
 <figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>https://aliang518.github.io/</pre></td></tr></table></figure></li>
 </ol>
 <p><img data-src="https://s2.loli.net/2022/03/30/VeGUNhMdplYP5rz.jpg" alt=""></p>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>博客</category>
-        <category>零基础搭建Hexo个人博客系列</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第一篇：注册github---从0基础搭建Hexo博客</title>
-    <url>/2022/03/30/a6f9d072.html</url>
-    <content><![CDATA[<h3 id="注册github"><a class="markdownIt-Anchor" href="#注册github">#</a> 注册 GitHub</h3>
-<p><img data-src="https://s2.loli.net/2022/03/30/BULpyk6thPbgJCD.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/fo8wzF7dvqNHaB4.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/aXwyhW3KM8cxYCb.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/RN62GDFVQU1YKB3.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/JzFGeTjb7BHKSQD.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/48GA7g1N2VacpJl.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/uN8PBgwFWOlApfU.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/shHQtoZVwcPrz2I.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/aZSU1FnDumqY2M7.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/PhUtuCQNlLHXAdG.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/pk9Gyi28uTFrXZY.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/8tjJkrGRb3NBsEW.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/FVivdNY8BLUfcSR.jpg" alt=""></p>
 ]]></content>
       <categories>
         <category>计算机科学</category>
@@ -766,62 +786,6 @@
       </tags>
   </entry>
   <entry>
-    <title>第七篇：购买域名---从0基础搭建Hexo博客</title>
-    <url>/2022/03/30/6c2393ec.html</url>
-    <content><![CDATA[<h2 id="购买域名"><a class="markdownIt-Anchor" href="#购买域名">#</a> 购买域名</h2>
-<p><strong>打开 [万网官网][<span class="exturl" data-url="aHR0cHM6Ly93YW53YW5nLmFsaXl1bi5jb20=">https://wanwang.aliyun.com</span>]</strong></p>
-<h3 id="注册账号"><a class="markdownIt-Anchor" href="#注册账号">#</a> 注册账号</h3>
-<ol>
-<li>我这里使用的是支付宝登录</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/rygEU1BWAnlkHLw.jpg" alt=""></p>
-<h3 id="输入域名"><a class="markdownIt-Anchor" href="#输入域名">#</a> 输入域名</h3>
-<ol start="2">
-<li>输入自己想要的域名，搜索</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/4CnXuINvtWgTe7Q.jpg" alt=""></p>
-<ol start="3">
-<li>
-<p><img data-src="https://s2.loli.net/2022/03/30/YVbD4TrPzAklFti.jpg" alt=""></p>
-</li>
-<li>
-<p>点击立即购买</p>
-</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/DeVr86NbnHGTs2d.jpg" alt=""></p>
-<ol start="5">
-<li>选择年限</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/cWOQ3Lakhi8V2Kt.jpg" alt=""></p>
-<ol start="6">
-<li>将域名持有者选为 “个人”</li>
-<li>新建信息模板</li>
-<li>选择你填的资料</li>
-<li>验证邮箱 (点击 <code>去验证</code> )</li>
-<li>立即购买</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/ykFrIJputCAawbq.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/93TRVgPZxYrnhA7.jpg" alt=""></p>
-<ol start="11">
-<li>支付成功，点击进入域名控制台</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/Q1JWYLqxVKmCshf.jpg" alt=""></p>
-<ol start="12">
-<li>等待审核。(我这边审核大概半小时就好了)</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/KsrTi1u3pqna2Ue.jpg" alt=""></p>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>博客</category>
-        <category>零基础搭建Hexo个人博客系列</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>零基础搭建Hexo个人博客系列</title>
     <url>/2022/03/30/aaad0208.html</url>
     <content><![CDATA[<h3 id="零基础搭建hexo个人博客系列"><a class="markdownIt-Anchor" href="#零基础搭建hexo个人博客系列">#</a> 零基础搭建 Hexo 个人博客系列</h3>
@@ -868,6 +832,62 @@
 <div class="note success">
 <p>希望你能找到属于自己的小破站</p>
 </div>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>博客</category>
+        <category>零基础搭建Hexo个人博客系列</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第七篇：购买域名---从0基础搭建Hexo博客</title>
+    <url>/2022/03/30/6c2393ec.html</url>
+    <content><![CDATA[<h2 id="购买域名"><a class="markdownIt-Anchor" href="#购买域名">#</a> 购买域名</h2>
+<p><strong>打开 [万网官网][<span class="exturl" data-url="aHR0cHM6Ly93YW53YW5nLmFsaXl1bi5jb20=">https://wanwang.aliyun.com</span>]</strong></p>
+<h3 id="注册账号"><a class="markdownIt-Anchor" href="#注册账号">#</a> 注册账号</h3>
+<ol>
+<li>我这里使用的是支付宝登录</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/rygEU1BWAnlkHLw.jpg" alt=""></p>
+<h3 id="输入域名"><a class="markdownIt-Anchor" href="#输入域名">#</a> 输入域名</h3>
+<ol start="2">
+<li>输入自己想要的域名，搜索</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/4CnXuINvtWgTe7Q.jpg" alt=""></p>
+<ol start="3">
+<li>
+<p><img data-src="https://s2.loli.net/2022/03/30/YVbD4TrPzAklFti.jpg" alt=""></p>
+</li>
+<li>
+<p>点击立即购买</p>
+</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/DeVr86NbnHGTs2d.jpg" alt=""></p>
+<ol start="5">
+<li>选择年限</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/cWOQ3Lakhi8V2Kt.jpg" alt=""></p>
+<ol start="6">
+<li>将域名持有者选为 “个人”</li>
+<li>新建信息模板</li>
+<li>选择你填的资料</li>
+<li>验证邮箱 (点击 <code>去验证</code> )</li>
+<li>立即购买</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/ykFrIJputCAawbq.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/93TRVgPZxYrnhA7.jpg" alt=""></p>
+<ol start="11">
+<li>支付成功，点击进入域名控制台</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/Q1JWYLqxVKmCshf.jpg" alt=""></p>
+<ol start="12">
+<li>等待审核。(我这边审核大概半小时就好了)</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/KsrTi1u3pqna2Ue.jpg" alt=""></p>
 ]]></content>
       <categories>
         <category>计算机科学</category>

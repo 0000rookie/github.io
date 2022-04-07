@@ -7,6 +7,20 @@
     "home_page_url": "https://www.aliang.live",
     "items": [
         {
+            "id": "https://www.aliang.live/2022/04/07/2cc8588f.html",
+            "url": "https://www.aliang.live/2022/04/07/2cc8588f.html",
+            "title": "添加开机自启程序",
+            "date_published": "2022-04-07T11:26:10.000Z",
+            "content_html": "<h2 id=\"键盘点击winr\"><a class=\"markdownIt-Anchor\" href=\"#键盘点击winr\">#</a> 键盘点击 <code>win+R</code></h2>\n<p><img data-src=\"http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204071930.jpg\" alt=\"\"></p>\n<h2 id=\"在窗口输入shellstartup\"><a class=\"markdownIt-Anchor\" href=\"#在窗口输入shellstartup\">#</a> 在窗口输入 <code>shell:startup</code></h2>\n<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre>shell:startup</pre></td></tr></table></figure><p><strong>打开是这个路径</strong>，把你想要开机自启的软件快捷方式拖到这个路径下，以后电脑开机就会自动启动这个程序了</p>\n<p><img data-src=\"http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204071937.jpg\" alt=\"\"></p>\n<p><img data-src=\"http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204071936.jpg\" alt=\"\"></p>\n",
+            "tags": [
+                "计算机科学",
+                "技术杂谈",
+                "一个小技巧",
+                "生活小技巧",
+                "教程"
+            ]
+        },
+        {
             "id": "https://www.aliang.live/2022/04/04/a7032750.html",
             "url": "https://www.aliang.live/2022/04/04/a7032750.html",
             "title": "文章Front-Matter参数设置",

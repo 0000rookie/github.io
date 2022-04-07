@@ -10,8 +10,8 @@
         </author>
         <description>aliang</description>
         <language>zh-CN</language>
-        <pubDate>Mon, 04 Apr 2022 14:22:16 +0800</pubDate>
-        <lastBuildDate>Mon, 04 Apr 2022 14:22:16 +0800</lastBuildDate>
+        <pubDate>Thu, 07 Apr 2022 19:26:10 +0800</pubDate>
+        <lastBuildDate>Thu, 07 Apr 2022 19:26:10 +0800</lastBuildDate>
         <category term="web安全" />
         <category term="笔记" />
         <category term="web" />
@@ -25,6 +25,24 @@
         <category term="后端" />
         <category term="markdown" />
         <category term="搭建个人博客" />
+        <item>
+            <guid isPermalink="true">https://www.aliang.live/2022/04/07/2cc8588f.html</guid>
+            <title>添加开机自启程序</title>
+            <link>https://www.aliang.live/2022/04/07/2cc8588f.html</link>
+            <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+            <category term="技术杂谈" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" />
+            <category term="一个小技巧" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E4%B8%80%E4%B8%AA%E5%B0%8F%E6%8A%80%E5%B7%A7/" />
+            <category term="生活小技巧" scheme="https://www.aliang.live/tags/%E7%94%9F%E6%B4%BB%E5%B0%8F%E6%8A%80%E5%B7%A7/" />
+            <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
+            <pubDate>Thu, 07 Apr 2022 19:26:10 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;键盘点击winr&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#键盘点击winr&#34;&gt;#&lt;/a&gt; 键盘点击 &lt;code&gt;win+R&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204071930.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;在窗口输入shellstartup&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#在窗口输入shellstartup&#34;&gt;#&lt;/a&gt; 在窗口输入 &lt;code&gt;shell:startup&lt;/code&gt;&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;shell:startup&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;strong&gt;打开是这个路径&lt;/strong&gt;，把你想要开机自启的软件快捷方式拖到这个路径下，以后电脑开机就会自动启动这个程序了&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204071937.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204071936.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://www.aliang.live/2022/04/04/a7032750.html</guid>
             <title>文章Front-Matter参数设置</title>
