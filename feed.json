@@ -7,6 +7,20 @@
     "home_page_url": "https://www.aliang.live",
     "items": [
         {
+            "id": "https://www.aliang.live/2022/04/08/edaa94fb.html",
+            "url": "https://www.aliang.live/2022/04/08/edaa94fb.html",
+            "title": "为博客添加免费的CDN加速",
+            "date_published": "2022-04-08T03:37:37.000Z",
+            "content_html": "<h2 id=\"设置statics\"><a class=\"markdownIt-Anchor\" href=\"#设置statics\">#</a> 设置 <code>statics</code></h2>\n<p>在 <code>_config.yml</code>  文件下配置</p>\n<figure class=\"highlight yaml\"><figcaption data-lang=\"YAML\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre><span class=\"token key atrule\">statics</span><span class=\"token punctuation\">:</span> https<span class=\"token punctuation\">:</span>//cdn.jsdelivr.net/gh/0000rookie/github.io/ </pre></td></tr><tr><td data-num=\"2\"></td><td><pre><span class=\"token key atrule\">statics</span><span class=\"token punctuation\">:</span> https<span class=\"token punctuation\">:</span>//cdn.jsdelivr.net/gh/账户名/仓库名/</pre></td></tr></table></figure><p><img data-src=\"http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204081139.jpg\" alt=\"\"></p>\n<h2 id=\"刷新cdnjsdelivr\"><a class=\"markdownIt-Anchor\" href=\"#刷新cdnjsdelivr\">#</a> 刷新 <code>CDN.jsDelivr</code></h2>\n<p>打开浏览器输入你 <code>statics</code>  的资源路径，回车刷新一下。</p>\n<figure class=\"highlight html\"><figcaption data-lang=\"HTML\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre>https://cdn.jsdelivr.net/gh/0000rookie/github.io/</pre></td></tr><tr><td data-num=\"2\"></td><td><pre>https://cdn.jsdelivr.net/gh/账户名/仓库名/</pre></td></tr></table></figure><div class=\"note info\">\n<p>如果成功了是以下的样子，如果没出现，等几分钟再刷新一下</p>\n</div>\n<p><img data-src=\"http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204081149.jpg\" alt=\"\"></p>\n<div class=\"note info\">\n<p>这个 <code>url</code>  和 <code>root</code>  是不用管的，一开始我是设置 <code>url</code>  的，但是网站没有出现样式，访问 <code>cdn</code>  的时候返回是无定义</p>\n</div>\n<p><img data-src=\"http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204081142.jpg\" alt=\"\"></p>\n<div class=\"note info\">\n<p>如果样式还是没出现，打开你网站， <code>F12</code>  调试一下，修改一下你的 <code>CSS</code>  路径，看看是哪里出问题，看报错信息是什么</p>\n</div>\n<p><img data-src=\"http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204081152.jpg\" alt=\"\"></p>\n<div class=\"note info\">\n<p>如果是出现这个错误，说明你的 <code>statics</code>  路径填错了，找不到你的路径文件</p>\n</div>\n<p><img data-src=\"http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204081154.jpg\" alt=\"\"></p>\n",
+            "tags": [
+                "计算机科学",
+                "每日一更",
+                "博客",
+                "每日一更",
+                "教程"
+            ]
+        },
+        {
             "id": "https://www.aliang.live/2022/04/08/cd7b33aa.html",
             "url": "https://www.aliang.live/2022/04/08/cd7b33aa.html",
             "title": "Python组合数据类型",
@@ -265,16 +279,6 @@
                 "计算机科学",
                 "博客",
                 "搭博客常见错误"
-            ]
-        },
-        {
-            "id": "https://www.aliang.live/2022/03/26/d95d7e09.html",
-            "url": "https://www.aliang.live/2022/03/26/d95d7e09.html",
-            "title": "我的第一篇博客",
-            "date_published": "2022-03-26T03:34:01.000Z",
-            "content_html": "<h6 id=\"历时两天终于把我的小破站建成了\"><a class=\"markdownIt-Anchor\" href=\"#历时两天终于把我的小破站建成了\">#</a> 历时两天，终于把我的小破站建成了。</h6>\n<h6 id=\"小破站的初心就是为了记录自己学习情况遇到的问题进行总结以及记录生活\"><a class=\"markdownIt-Anchor\" href=\"#小破站的初心就是为了记录自己学习情况遇到的问题进行总结以及记录生活\">#</a> 小破站的初心就是为了记录自己学习情况，遇到的问题进行总结，以及记录生活。</h6>\n",
-            "tags": [
-                "生活"
             ]
         }
     ]
