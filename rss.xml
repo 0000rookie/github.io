@@ -29,22 +29,25 @@
             <guid isPermalink="true">https://www.aliang.live/2022/04/08/c32e96d4.html</guid>
             <title>git push origin master失败</title>
             <link>https://www.aliang.live/2022/04/08/c32e96d4.html</link>
+            <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+            <category term="每日一更" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B4/" />
             <category term="每日一更" scheme="https://www.aliang.live/tags/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B4/" />
             <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
             <category term="git" scheme="https://www.aliang.live/tags/git/" />
             <pubDate>Fri, 08 Apr 2022 22:34:15 +0800</pubDate>
-            <description><![CDATA[ &lt;details&gt;&lt;summary&gt;primary 我要怎么备份blog文件？？？&lt;/summary&gt;&lt;div&gt;
+            <description><![CDATA[ &lt;h2 id=&#34;关于我想备份blog这件事&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#关于我想备份blog这件事&#34;&gt;#&lt;/a&gt; 关于我想备份 &lt;code&gt;blog&lt;/code&gt;  这件事&lt;/h2&gt;
+&lt;details class=&#34;primary&#34;&gt;&lt;summary&gt;我要怎么备份`blog`文件？？？&lt;/summary&gt;&lt;div&gt;
 &lt;div class=&#34;note primary&#34;&gt;
 &lt;p&gt;这几天在想，万一那天我想在别的电脑上写博客，或者是我电脑突然抽风硬盘坏了，我的博客数据岂不是没了？？？&lt;/p&gt;
 &lt;p&gt;又或者我什么时候不小心删错了文件，岂不是出大问题？？？&lt;/p&gt;
 &lt;/div&gt;
-&lt;p&gt;带着这个问题，我一开始是找了几个 PC 端自动本地备份的程序，但效果不太理想。&lt;/p&gt;
+&lt;p&gt;带着这个问题，我一开始是找了几个 &lt;code&gt;PC端&lt;/code&gt; 自动本地备份的程序，但效果不太理想。&lt;/p&gt;
 &lt;p&gt;定时备份：不能保证你在设置定时的这段时间内进行 &lt;code&gt;hexo d&lt;/code&gt;  多少次，如果定时备份的时间设置过短，理论上对硬盘的读写会拖慢其他程序的运行。&lt;/p&gt;
 &lt;p&gt;所以在想，如果有一个程序可以监控我 &lt;code&gt;blog&lt;/code&gt;  下的文件变化，每变化一次就进行记录一次，进行增量备份一次，这是我想到最完美的办法，带着这个想法，我似乎找到了一个方法。&lt;/p&gt;
 &lt;/div&gt;&lt;/details&gt;
-&lt;details&gt;&lt;summary&gt;danger 持续集成服务&lt;/summary&gt;&lt;div&gt;
+&lt;details class=&#34;danger&#34;&gt;&lt;summary&gt;持续集成服务&lt;/summary&gt;&lt;div&gt;
 &lt;p&gt;此处引用百度百科：持续集成是一种软件开发实践，即团队开发成员经常集成他们的工作，通常每个成员每天至少集成一次，也就意味着每天可能会发生多次集成。每次集成都通过自动化的构建（包括编译，发布，自动化测试）来验证，从而尽早地发现集成错误。&lt;/p&gt;
-&lt;p&gt;简单来说，就是这个服务绑定了 GitHub，我们每提交一次代码到 GitHub，它都会抓取一次我们的仓库，检查新代码，然后提供一个运行环境，执行测试，完成构建，还能部署到服务器。&lt;/p&gt;
+&lt;p&gt;简单来说，就是这个服务绑定了 &lt;code&gt;GitHub&lt;/code&gt; ，我们每提交一次代码到 ``GitHub`，它都会抓取一次我们的仓库，检查新代码，然后提供一个运行环境，执行测试，完成构建，还能部署到服务器。&lt;/p&gt;
 &lt;/div&gt;&lt;/details&gt;
 &lt;p&gt;然后我这次在准备提交文件到我新建的 &lt;code&gt;hexo-backups&lt;/code&gt;  仓库的时候，出错了，就记录一下错误。&lt;/p&gt;
 &lt;h2 id=&#34;git-pash-origin-master失败&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#git-pash-origin-master失败&#34;&gt;#&lt;/a&gt;  &lt;code&gt;git pash origin master&lt;/code&gt;  失败&lt;/h2&gt;
