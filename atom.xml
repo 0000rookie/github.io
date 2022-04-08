@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://www.aliang.live</id>
+    <id>https://cdn.jsdelivr.net/gh/aliang.live</id>
     <title>阿亮の博客</title>
     <subtitle>阿亮的个人网站</subtitle>
-    <icon>https://www.aliang.live/images/favicon.ico</icon>
-    <link href="https://www.aliang.live" />
+    <icon>https://cdn.jsdelivr.net/gh/aliang.live/images/favicon.ico</icon>
+    <link href="https://cdn.jsdelivr.net/gh/aliang.live" />
     <author>
       <name>吴小白</name>
     </author>
@@ -23,9 +23,9 @@
     <category term="markdown" />
     <category term="搭建个人博客" />
     <entry>
-        <id>https://www.aliang.live/2022/04/08/cd7b33aa.html</id>
+        <id>https://cdn.jsdelivr.net/gh/aliang.live/2022/04/08/cd7b33aa.html</id>
         <title>Python组合数据类型</title>
-        <link rel="alternate" href="https://www.aliang.live/2022/04/08/cd7b33aa.html"/>
+        <link rel="alternate" href="https://cdn.jsdelivr.net/gh/aliang.live/2022/04/08/cd7b33aa.html"/>
         <content type="html">&lt;div class=&#34;note info&#34;&gt;
 &lt;p&gt;每天记录自己学习情况&lt;/p&gt;
 &lt;/div&gt;
@@ -46,17 +46,17 @@
 &lt;p&gt;如有错误，请指正&lt;/p&gt;
 &lt;/div&gt;
 </content>
-        <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-        <category term="每日一更" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B4/" />
-        <category term="python" scheme="https://www.aliang.live/tags/python/" />
-        <category term="每日一更" scheme="https://www.aliang.live/tags/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B4/" />
-        <category term="python实验" scheme="https://www.aliang.live/tags/python%E5%AE%9E%E9%AA%8C/" />
+        <category term="计算机科学" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+        <category term="每日一更" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B4/" />
+        <category term="python" scheme="https://cdn.jsdelivr.net/gh/aliang.live/tags/python/" />
+        <category term="每日一更" scheme="https://cdn.jsdelivr.net/gh/aliang.live/tags/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B4/" />
+        <category term="python实验" scheme="https://cdn.jsdelivr.net/gh/aliang.live/tags/python%E5%AE%9E%E9%AA%8C/" />
         <updated>2022-04-07T17:26:19.000Z</updated>
     </entry>
     <entry>
-        <id>https://www.aliang.live/2022/04/07/2cc8588f.html</id>
+        <id>https://cdn.jsdelivr.net/gh/aliang.live/2022/04/07/2cc8588f.html</id>
         <title>添加开机自启程序</title>
-        <link rel="alternate" href="https://www.aliang.live/2022/04/07/2cc8588f.html"/>
+        <link rel="alternate" href="https://cdn.jsdelivr.net/gh/aliang.live/2022/04/07/2cc8588f.html"/>
         <content type="html">&lt;h2 id=&#34;键盘点击winr&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#键盘点击winr&#34;&gt;#&lt;/a&gt; 键盘点击 &lt;code&gt;win+R&lt;/code&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;img data-src=&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204071930.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;在窗口输入shellstartup&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#在窗口输入shellstartup&#34;&gt;#&lt;/a&gt; 在窗口输入 &lt;code&gt;shell:startup&lt;/code&gt;&lt;/h2&gt;
@@ -64,17 +64,17 @@
 &lt;p&gt;&lt;img data-src=&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204071937.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204071936.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 </content>
-        <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-        <category term="技术杂谈" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" />
-        <category term="一个小技巧" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E4%B8%80%E4%B8%AA%E5%B0%8F%E6%8A%80%E5%B7%A7/" />
-        <category term="生活小技巧" scheme="https://www.aliang.live/tags/%E7%94%9F%E6%B4%BB%E5%B0%8F%E6%8A%80%E5%B7%A7/" />
-        <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
+        <category term="计算机科学" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+        <category term="技术杂谈" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" />
+        <category term="一个小技巧" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E4%B8%80%E4%B8%AA%E5%B0%8F%E6%8A%80%E5%B7%A7/" />
+        <category term="教程" scheme="https://cdn.jsdelivr.net/gh/aliang.live/tags/%E6%95%99%E7%A8%8B/" />
+        <category term="生活小技巧" scheme="https://cdn.jsdelivr.net/gh/aliang.live/tags/%E7%94%9F%E6%B4%BB%E5%B0%8F%E6%8A%80%E5%B7%A7/" />
         <updated>2022-04-07T11:26:10.000Z</updated>
     </entry>
     <entry>
-        <id>https://www.aliang.live/2022/04/04/a7032750.html</id>
+        <id>https://cdn.jsdelivr.net/gh/aliang.live/2022/04/04/a7032750.html</id>
         <title>文章Front-Matter参数设置</title>
-        <link rel="alternate" href="https://www.aliang.live/2022/04/04/a7032750.html"/>
+        <link rel="alternate" href="https://cdn.jsdelivr.net/gh/aliang.live/2022/04/04/a7032750.html"/>
         <content type="html">&lt;h2 id=&#34;h2so4置顶文章&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#h2so4置顶文章&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;red&#34;&gt;H&lt;sub&gt;2&lt;/sub&gt;SO&lt;sub&gt;4&lt;/sub&gt;&lt;/span&gt; 置顶文章&lt;/h2&gt;
 &lt;figure class=&#34;highlight raw&#34;&gt;&lt;figcaption data-lang=&#34;&#34;&gt;&lt;span&gt;w Front-Matter&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;sticky: true&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;hr&gt;
 &lt;h2 id=&#34;h2so4开启评论&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#h2so4开启评论&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;red&#34;&gt;H&lt;sub&gt;2&lt;/sub&gt;SO&lt;sub&gt;4&lt;/sub&gt;&lt;/span&gt; 开启评论&lt;/h2&gt;
@@ -86,43 +86,43 @@
 &lt;h2 id=&#34;h2so4文章分类&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#h2so4文章分类&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;red&#34;&gt;H&lt;sub&gt;2&lt;/sub&gt;SO&lt;sub&gt;4&lt;/sub&gt;&lt;/span&gt; 文章分类&lt;/h2&gt;
 &lt;figure class=&#34;highlight raw&#34;&gt;&lt;figcaption data-lang=&#34;&#34;&gt;&lt;span&gt;w Front-Matter&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;categories:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  - 计算机科学&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  - 博客&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  - 博客的食用方法&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;hr&gt;
 </content>
-        <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-        <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
-        <category term="博客的食用方法" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/" />
-        <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
-        <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
+        <category term="计算机科学" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+        <category term="博客" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
+        <category term="博客的食用方法" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/" />
+        <category term="博客" scheme="https://cdn.jsdelivr.net/gh/aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
+        <category term="教程" scheme="https://cdn.jsdelivr.net/gh/aliang.live/tags/%E6%95%99%E7%A8%8B/" />
         <updated>2022-04-04T06:22:16.000Z</updated>
     </entry>
     <entry>
-        <id>https://www.aliang.live/2022/04/04/43d2d741.html</id>
+        <id>https://cdn.jsdelivr.net/gh/aliang.live/2022/04/04/43d2d741.html</id>
         <title>Git详细使用方法</title>
-        <link rel="alternate" href="https://www.aliang.live/2022/04/04/43d2d741.html"/>
+        <link rel="alternate" href="https://cdn.jsdelivr.net/gh/aliang.live/2022/04/04/43d2d741.html"/>
         <content type="html"></content>
-        <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-        <category term="技术杂谈" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" />
+        <category term="计算机科学" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+        <category term="技术杂谈" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" />
         <updated>2022-04-04T06:11:09.000Z</updated>
     </entry>
     <entry>
-        <id>https://www.aliang.live/2022/04/03/5d5981b0.html</id>
+        <id>https://cdn.jsdelivr.net/gh/aliang.live/2022/04/03/5d5981b0.html</id>
         <title>关于shoka主题食用技巧</title>
-        <link rel="alternate" href="https://www.aliang.live/2022/04/03/5d5981b0.html"/>
+        <link rel="alternate" href="https://cdn.jsdelivr.net/gh/aliang.live/2022/04/03/5d5981b0.html"/>
         <content type="html">&lt;h2 id=&#34;首页置顶文章&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#首页置顶文章&#34;&gt;#&lt;/a&gt; 首页置顶文章&lt;/h2&gt;
 &lt;figure class=&#34;highlight markdown&#34;&gt;&lt;figcaption data-lang=&#34;markdown&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token front-matter-block&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;---&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token front-matter yaml language-yaml&#34;&gt;&lt;span class=&#34;token key atrule&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; 置顶文章&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;sticky&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;---&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;关闭文章评论&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#关闭文章评论&#34;&gt;#&lt;/a&gt; 关闭文章评论&lt;/h2&gt;
 &lt;figure class=&#34;highlight markdown&#34;&gt;&lt;figcaption data-lang=&#34;markdown&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token front-matter-block&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;---&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token front-matter yaml language-yaml&#34;&gt;&lt;span class=&#34;token key atrule&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; 开启文章评论&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;comment&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;false&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;---&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;关闭文章音乐播放器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#关闭文章音乐播放器&#34;&gt;#&lt;/a&gt; 关闭文章音乐播放器&lt;/h2&gt;
 &lt;figure class=&#34;highlight markdown&#34;&gt;&lt;figcaption data-lang=&#34;markdown&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token front-matter-block&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;---&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token front-matter yaml language-yaml&#34;&gt;&lt;span class=&#34;token key atrule&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; 关闭文章音乐播放器&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;audio&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;false&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;---&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;个人头像配置&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#个人头像配置&#34;&gt;#&lt;/a&gt; 个人头像配置&lt;/h2&gt;
 &lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;sidebar&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token comment&#34;&gt;# 侧边栏的位置&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;position&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; left&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token comment&#34;&gt;#position: right&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token comment&#34;&gt;# 替换默认头像，并在这里设置 url&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;avatar&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; avatar.jpg&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token comment&#34;&gt;# 头像路径在 themes\shoka\source\images\avatar.jpg&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;底部widgets&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#底部widgets&#34;&gt;#&lt;/a&gt; 底部 widgets&lt;/h2&gt;
 &lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;widgets&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;random_posts&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;true&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;# 显示随机文章&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;recent_comments&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;true&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;# 显示最近评论&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token comment&#34;&gt;#在 shoka/_config.yml 修改&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
-        <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-        <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
-        <category term="博客的食用方法" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/" />
-        <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
-        <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
+        <category term="计算机科学" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+        <category term="博客" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
+        <category term="博客的食用方法" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/" />
+        <category term="博客" scheme="https://cdn.jsdelivr.net/gh/aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
+        <category term="教程" scheme="https://cdn.jsdelivr.net/gh/aliang.live/tags/%E6%95%99%E7%A8%8B/" />
         <updated>2022-04-02T17:36:30.000Z</updated>
     </entry>
     <entry>
-        <id>https://www.aliang.live/2022/04/02/e85071ad.html</id>
+        <id>https://cdn.jsdelivr.net/gh/aliang.live/2022/04/02/e85071ad.html</id>
         <title>搭建GitHu图床</title>
-        <link rel="alternate" href="https://www.aliang.live/2022/04/02/e85071ad.html"/>
+        <link rel="alternate" href="https://cdn.jsdelivr.net/gh/aliang.live/2022/04/02/e85071ad.html"/>
         <content type="html">&lt;p&gt;&lt;strong&gt;问：什么是图床？图床有什么用？&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;答：图床就是一个存放你照片的云盘，只要有网络就能打开这张照片&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;新建一个仓库&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#新建一个仓库&#34;&gt;#&lt;/a&gt; 新建一个仓库&lt;/h2&gt;
@@ -149,17 +149,17 @@
 &lt;p&gt;&lt;strong&gt;设定自定义域名：&lt;/strong&gt; &lt;code&gt;0000rookie/imgs&lt;/code&gt;  改成你的 &lt;code&gt;用户名/仓库名&lt;/code&gt;&lt;/p&gt;
 &lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;http://cdn.jsdelivr.net/gh/0000rookie/imgs&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;strong&gt;你的图床就搭建完啦&lt;/strong&gt;&lt;/p&gt;
 </content>
-        <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-        <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
-        <category term="模块" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E6%A8%A1%E5%9D%97/" />
-        <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
-        <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
+        <category term="计算机科学" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+        <category term="博客" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
+        <category term="模块" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E6%A8%A1%E5%9D%97/" />
+        <category term="博客" scheme="https://cdn.jsdelivr.net/gh/aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
+        <category term="教程" scheme="https://cdn.jsdelivr.net/gh/aliang.live/tags/%E6%95%99%E7%A8%8B/" />
         <updated>2022-04-01T16:09:31.000Z</updated>
     </entry>
     <entry>
-        <id>https://www.aliang.live/2022/04/01/cdc2e518.html</id>
+        <id>https://cdn.jsdelivr.net/gh/aliang.live/2022/04/01/cdc2e518.html</id>
         <title>搭建博客常见的错误</title>
-        <link rel="alternate" href="https://www.aliang.live/2022/04/01/cdc2e518.html"/>
+        <link rel="alternate" href="https://cdn.jsdelivr.net/gh/aliang.live/2022/04/01/cdc2e518.html"/>
         <content type="html">&lt;h2 id=&#34;404错误&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#404错误&#34;&gt;#&lt;/a&gt; 404 错误&lt;/h2&gt;
 &lt;p&gt;&lt;img data-src=&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng20220401163558.png&#34; alt=&#34;404&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;分两种情况&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#分两种情况&#34;&gt;#&lt;/a&gt; 分两种情况&lt;/h3&gt;
@@ -204,17 +204,17 @@
 &lt;p&gt;本文章是记录自己安装过程中遇到的错误，总结错误，今后再遇到错误也可以回头参考一下，本文还会继续更新错误&lt;/p&gt;
 &lt;/div&gt;
 </content>
-        <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-        <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
-        <category term="搭博客常见错误" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E6%90%AD%E5%8D%9A%E5%AE%A2%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/" />
-        <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
-        <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
+        <category term="计算机科学" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+        <category term="博客" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
+        <category term="搭博客常见错误" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E6%90%AD%E5%8D%9A%E5%AE%A2%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/" />
+        <category term="博客" scheme="https://cdn.jsdelivr.net/gh/aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
+        <category term="教程" scheme="https://cdn.jsdelivr.net/gh/aliang.live/tags/%E6%95%99%E7%A8%8B/" />
         <updated>2022-04-01T08:21:38.000Z</updated>
     </entry>
     <entry>
-        <id>https://www.aliang.live/2022/03/30/aaad0208.html</id>
+        <id>https://cdn.jsdelivr.net/gh/aliang.live/2022/03/30/aaad0208.html</id>
         <title>零基础搭建Hexo个人博客系列</title>
-        <link rel="alternate" href="https://www.aliang.live/2022/03/30/aaad0208.html"/>
+        <link rel="alternate" href="https://cdn.jsdelivr.net/gh/aliang.live/2022/03/30/aaad0208.html"/>
         <content type="html">&lt;h3 id=&#34;零基础搭建hexo个人博客系列&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#零基础搭建hexo个人博客系列&#34;&gt;#&lt;/a&gt; 零基础搭建 Hexo 个人博客系列&lt;/h3&gt;
 &lt;div class=&#34;links&#34;&gt;&lt;div class=&#34;item&#34; title=&#34;第一篇：注册github&#34; style=&#34;--block-color:#F46C9D;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvYTZmOWQwNzIuaHRtbA==&#34; data-background-image=&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (5).png&#34;&gt;&lt;/span&gt;
           &lt;div class=&#34;info&#34;&gt;
@@ -260,17 +260,17 @@
 &lt;p&gt;希望你能找到属于自己的小破站&lt;/p&gt;
 &lt;/div&gt;
 </content>
-        <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-        <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
-        <category term="零基础搭建Hexo个人博客系列" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" />
-        <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
-        <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
+        <category term="计算机科学" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+        <category term="博客" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
+        <category term="零基础搭建Hexo个人博客系列" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" />
+        <category term="博客" scheme="https://cdn.jsdelivr.net/gh/aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
+        <category term="教程" scheme="https://cdn.jsdelivr.net/gh/aliang.live/tags/%E6%95%99%E7%A8%8B/" />
         <updated>2022-03-30T15:05:46.000Z</updated>
     </entry>
     <entry>
-        <id>https://www.aliang.live/2022/03/30/a5eefddc.html</id>
+        <id>https://cdn.jsdelivr.net/gh/aliang.live/2022/03/30/a5eefddc.html</id>
         <title>第九篇：安装主题---从0基础搭建Hexo博客</title>
-        <link rel="alternate" href="https://www.aliang.live/2022/03/30/a5eefddc.html"/>
+        <link rel="alternate" href="https://cdn.jsdelivr.net/gh/aliang.live/2022/03/30/a5eefddc.html"/>
         <content type="html">&lt;h3 id=&#34;安装主题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装主题&#34;&gt;#&lt;/a&gt; 安装主题&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -316,17 +316,17 @@
 &lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/6QznLrvacCsXjZT.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;博客已经漂漂亮亮了，可以愉快的开始写博客啦&lt;/strong&gt;&lt;/p&gt;
 </content>
-        <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-        <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
-        <category term="零基础搭建Hexo个人博客系列" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" />
-        <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
-        <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
+        <category term="计算机科学" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+        <category term="博客" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
+        <category term="零基础搭建Hexo个人博客系列" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" />
+        <category term="博客" scheme="https://cdn.jsdelivr.net/gh/aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
+        <category term="教程" scheme="https://cdn.jsdelivr.net/gh/aliang.live/tags/%E6%95%99%E7%A8%8B/" />
         <updated>2022-03-29T16:30:51.000Z</updated>
     </entry>
     <entry>
-        <id>https://www.aliang.live/2022/03/30/9bf6caef.html</id>
+        <id>https://cdn.jsdelivr.net/gh/aliang.live/2022/03/30/9bf6caef.html</id>
         <title>第八篇：解析域名---从0基础搭建Hexo博客</title>
-        <link rel="alternate" href="https://www.aliang.live/2022/03/30/9bf6caef.html"/>
+        <link rel="alternate" href="https://cdn.jsdelivr.net/gh/aliang.live/2022/03/30/9bf6caef.html"/>
         <content type="html">&lt;h3 id=&#34;解析域名&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#解析域名&#34;&gt;#&lt;/a&gt; 解析域名&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -400,17 +400,17 @@
 &lt;/ol&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/HIRYhTNcgpdJjmr.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;aliang.life&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
-        <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-        <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
-        <category term="零基础搭建Hexo个人博客系列" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" />
-        <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
-        <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
+        <category term="计算机科学" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+        <category term="博客" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
+        <category term="零基础搭建Hexo个人博客系列" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" />
+        <category term="博客" scheme="https://cdn.jsdelivr.net/gh/aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
+        <category term="教程" scheme="https://cdn.jsdelivr.net/gh/aliang.live/tags/%E6%95%99%E7%A8%8B/" />
         <updated>2022-03-29T16:28:12.000Z</updated>
     </entry>
     <entry>
-        <id>https://www.aliang.live/2022/03/30/6c2393ec.html</id>
+        <id>https://cdn.jsdelivr.net/gh/aliang.live/2022/03/30/6c2393ec.html</id>
         <title>第七篇：购买域名---从0基础搭建Hexo博客</title>
-        <link rel="alternate" href="https://www.aliang.live/2022/03/30/6c2393ec.html"/>
+        <link rel="alternate" href="https://cdn.jsdelivr.net/gh/aliang.live/2022/03/30/6c2393ec.html"/>
         <content type="html">&lt;h2 id=&#34;购买域名&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#购买域名&#34;&gt;#&lt;/a&gt; 购买域名&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;打开 [万网官网][&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93YW53YW5nLmFsaXl1bi5jb20=&#34;&gt;https://wanwang.aliyun.com&lt;/span&gt;]&lt;/strong&gt;&lt;/p&gt;
 &lt;h3 id=&#34;注册账号&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#注册账号&#34;&gt;#&lt;/a&gt; 注册账号&lt;/h3&gt;
@@ -454,17 +454,17 @@
 &lt;/ol&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/KsrTi1u3pqna2Ue.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 </content>
-        <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-        <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
-        <category term="零基础搭建Hexo个人博客系列" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" />
-        <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
-        <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
+        <category term="计算机科学" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+        <category term="博客" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
+        <category term="零基础搭建Hexo个人博客系列" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" />
+        <category term="博客" scheme="https://cdn.jsdelivr.net/gh/aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
+        <category term="教程" scheme="https://cdn.jsdelivr.net/gh/aliang.live/tags/%E6%95%99%E7%A8%8B/" />
         <updated>2022-03-29T16:27:30.000Z</updated>
     </entry>
     <entry>
-        <id>https://www.aliang.live/2022/03/30/dc09a46c.html</id>
+        <id>https://cdn.jsdelivr.net/gh/aliang.live/2022/03/30/dc09a46c.html</id>
         <title>第六篇：将博客部署到GitHub---从0基础搭建Hexo博客</title>
-        <link rel="alternate" href="https://www.aliang.live/2022/03/30/dc09a46c.html"/>
+        <link rel="alternate" href="https://cdn.jsdelivr.net/gh/aliang.live/2022/03/30/dc09a46c.html"/>
         <content type="html">&lt;h2 id=&#34;将hexo部署到github&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#将hexo部署到github&#34;&gt;#&lt;/a&gt; 将 Hexo 部署到 github&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;打开 &lt;code&gt;blog&lt;/code&gt;  文件夹，打开 &lt;code&gt;_config.yml&lt;/code&gt;  文件&lt;/li&gt;
@@ -504,17 +504,17 @@
 &lt;/ol&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/VeGUNhMdplYP5rz.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 </content>
-        <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-        <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
-        <category term="零基础搭建Hexo个人博客系列" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" />
-        <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
-        <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
+        <category term="计算机科学" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+        <category term="博客" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
+        <category term="零基础搭建Hexo个人博客系列" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" />
+        <category term="博客" scheme="https://cdn.jsdelivr.net/gh/aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
+        <category term="教程" scheme="https://cdn.jsdelivr.net/gh/aliang.live/tags/%E6%95%99%E7%A8%8B/" />
         <updated>2022-03-29T16:25:37.000Z</updated>
     </entry>
     <entry>
-        <id>https://www.aliang.live/2022/03/30/87b69652.html</id>
+        <id>https://cdn.jsdelivr.net/gh/aliang.live/2022/03/30/87b69652.html</id>
         <title>第五篇：安装Hexo---从0基础搭建Hexo博客</title>
-        <link rel="alternate" href="https://www.aliang.live/2022/03/30/87b69652.html"/>
+        <link rel="alternate" href="https://cdn.jsdelivr.net/gh/aliang.live/2022/03/30/87b69652.html"/>
         <content type="html">&lt;h3 id=&#34;安装hexo&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装hexo&#34;&gt;#&lt;/a&gt; 安装 Hexo&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;新建一个仓库&lt;/li&gt;
@@ -566,17 +566,17 @@
 &lt;/ol&gt;
 &lt;p&gt;&lt;strong&gt;目前博客已经基本完成了&lt;/strong&gt;&lt;/p&gt;
 </content>
-        <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-        <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
-        <category term="零基础搭建Hexo个人博客系列" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" />
-        <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
-        <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
+        <category term="计算机科学" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+        <category term="博客" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
+        <category term="零基础搭建Hexo个人博客系列" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" />
+        <category term="博客" scheme="https://cdn.jsdelivr.net/gh/aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
+        <category term="教程" scheme="https://cdn.jsdelivr.net/gh/aliang.live/tags/%E6%95%99%E7%A8%8B/" />
         <updated>2022-03-29T16:25:26.000Z</updated>
     </entry>
     <entry>
-        <id>https://www.aliang.live/2022/03/30/cf63c07.html</id>
+        <id>https://cdn.jsdelivr.net/gh/aliang.live/2022/03/30/cf63c07.html</id>
         <title>第四篇：安装Nodejs---从0基础搭建Hexo博客</title>
-        <link rel="alternate" href="https://www.aliang.live/2022/03/30/cf63c07.html"/>
+        <link rel="alternate" href="https://cdn.jsdelivr.net/gh/aliang.live/2022/03/30/cf63c07.html"/>
         <content type="html">&lt;h2 id=&#34;nodejs安装及配置环境&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#nodejs安装及配置环境&#34;&gt;#&lt;/a&gt; Node.js 安装及配置环境&lt;/h2&gt;
 &lt;h3 id=&#34;nodejs安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#nodejs安装&#34;&gt;#&lt;/a&gt;  &lt;code&gt;node.js&lt;/code&gt;  安装&lt;/h3&gt;
 &lt;ol&gt;
@@ -652,17 +652,17 @@
 &lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/ugOVX3WGfpZ9DqP.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt; &lt;code&gt;nodejs&lt;/code&gt;  环境配置到此就完成啦&lt;/strong&gt;&lt;/p&gt;
 </content>
-        <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-        <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
-        <category term="零基础搭建Hexo个人博客系列" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" />
-        <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
-        <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
+        <category term="计算机科学" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+        <category term="博客" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
+        <category term="零基础搭建Hexo个人博客系列" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" />
+        <category term="博客" scheme="https://cdn.jsdelivr.net/gh/aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
+        <category term="教程" scheme="https://cdn.jsdelivr.net/gh/aliang.live/tags/%E6%95%99%E7%A8%8B/" />
         <updated>2022-03-29T16:24:41.000Z</updated>
     </entry>
     <entry>
-        <id>https://www.aliang.live/2022/03/30/b75a1db6.html</id>
+        <id>https://cdn.jsdelivr.net/gh/aliang.live/2022/03/30/b75a1db6.html</id>
         <title>第三篇：Git提交文件---从0基础搭建Hexo博客</title>
-        <link rel="alternate" href="https://www.aliang.live/2022/03/30/b75a1db6.html"/>
+        <link rel="alternate" href="https://cdn.jsdelivr.net/gh/aliang.live/2022/03/30/b75a1db6.html"/>
         <content type="html">&lt;h2 id=&#34;配置git&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#配置git&#34;&gt;#&lt;/a&gt; 配置 git&lt;/h2&gt;
 &lt;h4 id=&#34;一-绑定gitee&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-绑定gitee&#34;&gt;#&lt;/a&gt; 一、绑定 Gitee&lt;/h4&gt;
 &lt;p&gt;首先来简单介绍一下 SSH 协议&lt;/p&gt;
@@ -790,17 +790,17 @@
 &lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/QvD1LZXAqeWSNJf.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;提交文件已经成功啦&lt;/strong&gt;&lt;/p&gt;
 </content>
-        <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-        <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
-        <category term="零基础搭建Hexo个人博客系列" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" />
-        <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
-        <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
+        <category term="计算机科学" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+        <category term="博客" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
+        <category term="零基础搭建Hexo个人博客系列" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" />
+        <category term="博客" scheme="https://cdn.jsdelivr.net/gh/aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
+        <category term="教程" scheme="https://cdn.jsdelivr.net/gh/aliang.live/tags/%E6%95%99%E7%A8%8B/" />
         <updated>2022-03-29T16:22:45.000Z</updated>
     </entry>
     <entry>
-        <id>https://www.aliang.live/2022/03/30/859f60bd.html</id>
+        <id>https://cdn.jsdelivr.net/gh/aliang.live/2022/03/30/859f60bd.html</id>
         <title>第二篇：安装Git---从0基础搭建Hexo博客</title>
-        <link rel="alternate" href="https://www.aliang.live/2022/03/30/859f60bd.html"/>
+        <link rel="alternate" href="https://cdn.jsdelivr.net/gh/aliang.live/2022/03/30/859f60bd.html"/>
         <content type="html">&lt;h3 id=&#34;以下会用到的软件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#以下会用到的软件&#34;&gt;#&lt;/a&gt; 以下会用到的软件&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;必装 [Git][&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXQtc2NtLmNvbQ==&#34;&gt;https://git-scm.com&lt;/span&gt;]、[Node.js][&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ub2RlanMub3JnL2Vu&#34;&gt;https://nodejs.org/en&lt;/span&gt;]&lt;/strong&gt; &lt;em&gt;(点击打开)&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;建议装 [notepad3][&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9yb29raWUxNjc5LmxhbnpvdWYuY29tL2lIbW1hMDI2bnZkZw==&#34;&gt;https://rookie1679.lanzouf.com/iHmma026nvdg&lt;/span&gt;]&lt;/strong&gt; &lt;em&gt;(点击打开)&lt;/em&gt;&lt;/p&gt;
@@ -823,17 +823,17 @@
 &lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/7qTxPmE6YGFOklK.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;安装 git 结束&lt;/strong&gt;&lt;/p&gt;
 </content>
-        <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-        <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
-        <category term="零基础搭建Hexo个人博客系列" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" />
-        <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
-        <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
+        <category term="计算机科学" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+        <category term="博客" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
+        <category term="零基础搭建Hexo个人博客系列" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" />
+        <category term="博客" scheme="https://cdn.jsdelivr.net/gh/aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
+        <category term="教程" scheme="https://cdn.jsdelivr.net/gh/aliang.live/tags/%E6%95%99%E7%A8%8B/" />
         <updated>2022-03-29T16:21:44.000Z</updated>
     </entry>
     <entry>
-        <id>https://www.aliang.live/2022/03/30/a6f9d072.html</id>
+        <id>https://cdn.jsdelivr.net/gh/aliang.live/2022/03/30/a6f9d072.html</id>
         <title>第一篇：注册github---从0基础搭建Hexo博客</title>
-        <link rel="alternate" href="https://www.aliang.live/2022/03/30/a6f9d072.html"/>
+        <link rel="alternate" href="https://cdn.jsdelivr.net/gh/aliang.live/2022/03/30/a6f9d072.html"/>
         <content type="html">&lt;h3 id=&#34;注册github&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#注册github&#34;&gt;#&lt;/a&gt; 注册 GitHub&lt;/h3&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/BULpyk6thPbgJCD.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/fo8wzF7dvqNHaB4.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
@@ -849,17 +849,17 @@
 &lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/8tjJkrGRb3NBsEW.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/FVivdNY8BLUfcSR.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 </content>
-        <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-        <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
-        <category term="零基础搭建Hexo个人博客系列" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" />
-        <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
-        <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
+        <category term="计算机科学" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+        <category term="博客" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
+        <category term="零基础搭建Hexo个人博客系列" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" />
+        <category term="博客" scheme="https://cdn.jsdelivr.net/gh/aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
+        <category term="教程" scheme="https://cdn.jsdelivr.net/gh/aliang.live/tags/%E6%95%99%E7%A8%8B/" />
         <updated>2022-03-29T16:20:30.000Z</updated>
     </entry>
     <entry>
-        <id>https://www.aliang.live/2022/03/26/c5de56d5.html</id>
+        <id>https://cdn.jsdelivr.net/gh/aliang.live/2022/03/26/c5de56d5.html</id>
         <title>Hexo怎么安装插件</title>
-        <link rel="alternate" href="https://www.aliang.live/2022/03/26/c5de56d5.html"/>
+        <link rel="alternate" href="https://cdn.jsdelivr.net/gh/aliang.live/2022/03/26/c5de56d5.html"/>
         <content type="html">&lt;hr&gt;
 &lt;h3 id=&#34;hexo怎么安装插件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#hexo怎么安装插件&#34;&gt;#&lt;/a&gt; hexo 怎么安装插件&lt;/h3&gt;
 &lt;ol&gt;
@@ -893,31 +893,31 @@
 &lt;/ol&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://tva2.sinaimg.cn/large/0065wfS6ly8h0ntxxz7wqj30lk0650t3.jpg&#34; alt=&#34;&#34; title=&#34;卸载插件&#34; height=&#34;75%&#34; width=&#34;75%&#34;&gt;&lt;/p&gt;
 </content>
-        <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-        <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
-        <category term="模块" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E6%A8%A1%E5%9D%97/" />
-        <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
-        <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
+        <category term="计算机科学" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+        <category term="博客" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
+        <category term="模块" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E6%A8%A1%E5%9D%97/" />
+        <category term="博客" scheme="https://cdn.jsdelivr.net/gh/aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
+        <category term="教程" scheme="https://cdn.jsdelivr.net/gh/aliang.live/tags/%E6%95%99%E7%A8%8B/" />
         <updated>2022-03-26T10:33:07.000Z</updated>
     </entry>
     <entry>
-        <id>https://www.aliang.live/2022/03/26/0.html</id>
+        <id>https://cdn.jsdelivr.net/gh/aliang.live/2022/03/26/0.html</id>
         <title></title>
-        <link rel="alternate" href="https://www.aliang.live/2022/03/26/0.html"/>
+        <link rel="alternate" href="https://cdn.jsdelivr.net/gh/aliang.live/2022/03/26/0.html"/>
         <content type="html"></content>
-        <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-        <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
-        <category term="搭博客常见错误" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E6%90%AD%E5%8D%9A%E5%AE%A2%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/" />
+        <category term="计算机科学" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+        <category term="博客" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
+        <category term="搭博客常见错误" scheme="https://cdn.jsdelivr.net/gh/aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E6%90%AD%E5%8D%9A%E5%AE%A2%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/" />
         <updated>2022-03-26T08:03:13.398Z</updated>
     </entry>
     <entry>
-        <id>https://www.aliang.live/2022/03/26/d95d7e09.html</id>
+        <id>https://cdn.jsdelivr.net/gh/aliang.live/2022/03/26/d95d7e09.html</id>
         <title>我的第一篇博客</title>
-        <link rel="alternate" href="https://www.aliang.live/2022/03/26/d95d7e09.html"/>
+        <link rel="alternate" href="https://cdn.jsdelivr.net/gh/aliang.live/2022/03/26/d95d7e09.html"/>
         <content type="html">&lt;h6 id=&#34;历时两天终于把我的小破站建成了&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#历时两天终于把我的小破站建成了&#34;&gt;#&lt;/a&gt; 历时两天，终于把我的小破站建成了。&lt;/h6&gt;
 &lt;h6 id=&#34;小破站的初心就是为了记录自己学习情况遇到的问题进行总结以及记录生活&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#小破站的初心就是为了记录自己学习情况遇到的问题进行总结以及记录生活&#34;&gt;#&lt;/a&gt; 小破站的初心就是为了记录自己学习情况，遇到的问题进行总结，以及记录生活。&lt;/h6&gt;
 </content>
-        <category term="生活" scheme="https://www.aliang.live/tags/%E7%94%9F%E6%B4%BB/" />
+        <category term="生活" scheme="https://cdn.jsdelivr.net/gh/aliang.live/tags/%E7%94%9F%E6%B4%BB/" />
         <updated>2022-03-26T03:34:01.000Z</updated>
     </entry>
 </feed>
