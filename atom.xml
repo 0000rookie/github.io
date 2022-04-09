@@ -440,7 +440,7 @@
 &lt;h4 id=&#34;还未修改域名&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#还未修改域名&#34;&gt;#&lt;/a&gt; 还未修改域名&lt;/h4&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;打开 ``GitHub` 仓库看文件是否已经上传成功，成功如图。&lt;/p&gt;
+&lt;p&gt;打开 &lt;code&gt;GitHub&lt;/code&gt;  仓库看文件是否已经上传成功，成功如图。&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng20220401164116.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -528,6 +528,19 @@
           &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;item&#34; title=&#34;第九篇：安装主题&#34; style=&#34;--block-color:#6AD0CB;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvYTVlZWZkZGMuaHRtbA==&#34; data-background-image=&#34;https://cdn.jsdelivr.net/gh/amehime/shoka@latest/images/avatar.jpg&#34;&gt;&lt;/span&gt;
           &lt;div class=&#34;info&#34;&gt;
           &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvYTVlZWZkZGMuaHRtbA==&#34;&gt;第九篇：安装主题&lt;/span&gt;
+          &lt;p class=&#34;desc&#34;&gt;阿亮の小破站 &amp; 搭建博客系列&lt;/p&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;hr&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;如何在博客写文章？？？&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;links&#34;&gt;&lt;div class=&#34;item&#34; title=&#34;搭建图床&#34; style=&#34;--block-color:#FF7BA8;&#34;&gt;&lt;a href=&#34;https://www.aliang.live/2022/04/02/e85071ad.html&#34; class=&#34;image&#34; data-background-image=&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (15).jpg&#34;&gt;&lt;/a&gt;
+          &lt;div class=&#34;info&#34;&gt;
+          &lt;a href=&#34;https://www.aliang.live/2022/04/02/e85071ad.html&#34; class=&#34;title&#34;&gt;搭建图床&lt;/a&gt;
+          &lt;p class=&#34;desc&#34;&gt;阿亮の小破站 &amp; 搭建博客系列&lt;/p&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;item&#34; title=&#34;Front-Matter参数设置&#34; style=&#34;--block-color:#FF7BA8;&#34;&gt;&lt;a href=&#34;https://www.aliang.live/2022/04/04/a7032750.html&#34; class=&#34;image&#34; data-background-image=&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (4).png&#34;&gt;&lt;/a&gt;
+          &lt;div class=&#34;info&#34;&gt;
+          &lt;a href=&#34;https://www.aliang.live/2022/04/04/a7032750.html&#34; class=&#34;title&#34;&gt;Front-Matter参数设置&lt;/a&gt;
           &lt;p class=&#34;desc&#34;&gt;阿亮の小破站 &amp; 搭建博客系列&lt;/p&gt;
           &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;div class=&#34;note info&#34;&gt;

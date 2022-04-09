@@ -20,20 +20,6 @@
       </categories>
   </entry>
   <entry>
-    <title>4.9日记分享</title>
-    <url>/2022/04/10/ef5acbc6.html</url>
-    <content><![CDATA[<h2 id="49日记分享"><a class="markdownIt-Anchor" href="#49日记分享">#</a> 4.9 日记分享</h2>
-<p>自从开始玩博客之后，经常用到 <code>Git</code> ，感觉非常重要。如今每个企业都基本用到 <code>Git</code> ，如果就业的时候不会使用 <code>Git</code> ，感觉还是落后于别人一步的，而且，现在也有时间学习，倒不如现在开始学习一下，顺便玩一玩服务器，可能对 <code>Git</code>  会更加熟练，话不多说，直接动手开始学习。</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-        <category>日记</category>
-      </categories>
-      <tags>
-        <tag>日记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Python组合数据类型</title>
     <url>/2022/04/08/cd7b33aa.html</url>
     <content><![CDATA[<div class="note info">
@@ -79,6 +65,44 @@
         <tag>博客</tag>
         <tag>每日一更</tag>
         <tag>hexo主题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>为博客添加免费的CDN加速</title>
+    <url>/2022/04/08/edaa94fb.html</url>
+    <content><![CDATA[<h2 id="设置statics"><a class="markdownIt-Anchor" href="#设置statics">#</a> 设置 <code>statics</code></h2>
+<p>在根目录或者 <code>themes</code>  下 <code>_config.yml</code>  文件下配置</p>
+<figure class="highlight yaml"><figcaption data-lang="YAML"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token key atrule">格式：statics</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//cdn.jsdelivr.net/gh/账户名/仓库名/</pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token key atrule">statics</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//cdn.jsdelivr.net/gh/0000rookie/github.io/</pre></td></tr></table></figure><p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204081139.jpg" alt=""></p>
+<h2 id="刷新cdnjsdelivr"><a class="markdownIt-Anchor" href="#刷新cdnjsdelivr">#</a> 刷新 <code>CDN.jsDelivr</code></h2>
+<p>打开浏览器输入你 <code>statics</code>  的资源路径，回车刷新一下。</p>
+<figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tr><td data-num="1"></td><td><pre>https://cdn.jsdelivr.net/gh/0000rookie/github.io/</pre></td></tr><tr><td data-num="2"></td><td><pre>https://cdn.jsdelivr.net/gh/账户名/仓库名/</pre></td></tr></table></figure><div class="note info">
+<p>如果成功了是以下的样子，如果没出现，等几分钟再刷新一下</p>
+</div>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204081149.jpg" alt=""></p>
+<div class="note info">
+<p>这个 <code>url</code>  和 <code>root</code>  是不用管的，一开始我是设置 <code>url</code>  的，但是网站没有出现样式，访问 <code>cdn</code>  的时候返回是无定义</p>
+</div>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204081142.jpg" alt=""></p>
+<div class="note info">
+<p>如果样式还是没出现，打开你网站， <code>F12</code>  调试一下，修改一下你的 <code>CSS</code>  路径，看看是哪里出问题，看报错信息是什么</p>
+</div>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204081152.jpg" alt=""></p>
+<div class="note info">
+<p>如果是出现这个错误，说明你的 <code>statics</code>  路径填错了，找不到你的路径文件</p>
+</div>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204081154.jpg" alt=""></p>
+<div class="note warning">
+<p>以上如有错误，欢迎留言指出</p>
+</div>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>每日一更</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>每日一更</tag>
+        <tag>教程</tag>
       </tags>
   </entry>
   <entry>
@@ -133,44 +157,6 @@
       </tags>
   </entry>
   <entry>
-    <title>为博客添加免费的CDN加速</title>
-    <url>/2022/04/08/edaa94fb.html</url>
-    <content><![CDATA[<h2 id="设置statics"><a class="markdownIt-Anchor" href="#设置statics">#</a> 设置 <code>statics</code></h2>
-<p>在根目录或者 <code>themes</code>  下 <code>_config.yml</code>  文件下配置</p>
-<figure class="highlight yaml"><figcaption data-lang="YAML"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token key atrule">格式：statics</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//cdn.jsdelivr.net/gh/账户名/仓库名/</pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token key atrule">statics</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//cdn.jsdelivr.net/gh/0000rookie/github.io/</pre></td></tr></table></figure><p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204081139.jpg" alt=""></p>
-<h2 id="刷新cdnjsdelivr"><a class="markdownIt-Anchor" href="#刷新cdnjsdelivr">#</a> 刷新 <code>CDN.jsDelivr</code></h2>
-<p>打开浏览器输入你 <code>statics</code>  的资源路径，回车刷新一下。</p>
-<figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tr><td data-num="1"></td><td><pre>https://cdn.jsdelivr.net/gh/0000rookie/github.io/</pre></td></tr><tr><td data-num="2"></td><td><pre>https://cdn.jsdelivr.net/gh/账户名/仓库名/</pre></td></tr></table></figure><div class="note info">
-<p>如果成功了是以下的样子，如果没出现，等几分钟再刷新一下</p>
-</div>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204081149.jpg" alt=""></p>
-<div class="note info">
-<p>这个 <code>url</code>  和 <code>root</code>  是不用管的，一开始我是设置 <code>url</code>  的，但是网站没有出现样式，访问 <code>cdn</code>  的时候返回是无定义</p>
-</div>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204081142.jpg" alt=""></p>
-<div class="note info">
-<p>如果样式还是没出现，打开你网站， <code>F12</code>  调试一下，修改一下你的 <code>CSS</code>  路径，看看是哪里出问题，看报错信息是什么</p>
-</div>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204081152.jpg" alt=""></p>
-<div class="note info">
-<p>如果是出现这个错误，说明你的 <code>statics</code>  路径填错了，找不到你的路径文件</p>
-</div>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204081154.jpg" alt=""></p>
-<div class="note warning">
-<p>以上如有错误，欢迎留言指出</p>
-</div>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>每日一更</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>每日一更</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>这是大二下的各科作业</title>
     <url>/2022/04/08/2b5f7ebb.html</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，这个密码看着不太对，请再试试" data-whm="抱歉，这个文章不能被纠正，不过您还是能看看解密后的内容">
@@ -189,6 +175,20 @@
         <category>计算机科学</category>
         <category>每日一更</category>
       </categories>
+  </entry>
+  <entry>
+    <title>4.9日记分享</title>
+    <url>/2022/04/10/ef5acbc6.html</url>
+    <content><![CDATA[<h2 id="49日记分享"><a class="markdownIt-Anchor" href="#49日记分享">#</a> 4.9 日记分享</h2>
+<p>自从开始玩博客之后，经常用到 <code>Git</code> ，感觉非常重要。如今每个企业都基本用到 <code>Git</code> ，如果就业的时候不会使用 <code>Git</code> ，感觉还是落后于别人一步的，而且，现在也有时间学习，倒不如现在开始学习一下，顺便玩一玩服务器，可能对 <code>Git</code>  会更加熟练，话不多说，直接动手开始学习。</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+        <category>日记</category>
+      </categories>
+      <tags>
+        <tag>日记</tag>
+      </tags>
   </entry>
   <entry>
     <title>添加开机自启程序</title>
@@ -402,7 +402,7 @@
 <h4 id="还未修改域名"><a class="markdownIt-Anchor" href="#还未修改域名">#</a> 还未修改域名</h4>
 <ol>
 <li>
-<p>打开 ``GitHub` 仓库看文件是否已经上传成功，成功如图。</p>
+<p>打开 <code>GitHub</code>  仓库看文件是否已经上传成功，成功如图。</p>
 <p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng20220401164116.jpg" alt=""></p>
 </li>
 <li>
@@ -1188,6 +1188,19 @@
           </div></div><div class="item" title="第九篇：安装主题" style="--block-color:#6AD0CB;"><span class="exturl image" data-url="aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvYTVlZWZkZGMuaHRtbA==" data-background-image="https://cdn.jsdelivr.net/gh/amehime/shoka@latest/images/avatar.jpg"></span>
           <div class="info">
           <span class="exturl title" data-url="aHR0cDovL2FsaWFuZy5saXZlLzIwMjIvMDMvMzAvYTVlZWZkZGMuaHRtbA==">第九篇：安装主题</span>
+          <p class="desc">阿亮の小破站 & 搭建博客系列</p>
+          </div></div></div>
+<hr>
+<div class="note info">
+<p>如何在博客写文章？？？</p>
+</div>
+<div class="links"><div class="item" title="搭建图床" style="--block-color:#FF7BA8;"><a href="https://www.aliang.live/2022/04/02/e85071ad.html" class="image" data-background-image="http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (15).jpg"></a>
+          <div class="info">
+          <a href="https://www.aliang.live/2022/04/02/e85071ad.html" class="title">搭建图床</a>
+          <p class="desc">阿亮の小破站 & 搭建博客系列</p>
+          </div></div><div class="item" title="Front-Matter参数设置" style="--block-color:#FF7BA8;"><a href="https://www.aliang.live/2022/04/04/a7032750.html" class="image" data-background-image="http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (4).png"></a>
+          <div class="info">
+          <a href="https://www.aliang.live/2022/04/04/a7032750.html" class="title">Front-Matter参数设置</a>
           <p class="desc">阿亮の小破站 & 搭建博客系列</p>
           </div></div></div>
 <div class="note info">
