@@ -8,7 +8,7 @@
     <author>
       <name>吴小白</name>
     </author>
-    <updated>2022-04-08T20:27:34.000Z</updated>
+    <updated>2022-04-09T17:00:52.000Z</updated>
     <category term="web安全" />
     <category term="笔记" />
     <category term="web" />
@@ -22,6 +22,18 @@
     <category term="后端" />
     <category term="markdown" />
     <category term="搭建个人博客" />
+    <entry>
+        <id>https://www.aliang.live/2022/04/10/ef5acbc6.html</id>
+        <title>4.9日记分享</title>
+        <link rel="alternate" href="https://www.aliang.live/2022/04/10/ef5acbc6.html"/>
+        <content type="html">&lt;h2 id=&#34;49日记分享&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#49日记分享&#34;&gt;#&lt;/a&gt; 4.9 日记分享&lt;/h2&gt;
+&lt;p&gt;自从开始玩博客之后，经常用到 &lt;code&gt;Git&lt;/code&gt; ，感觉非常重要。如今每个企业都基本用到 &lt;code&gt;Git&lt;/code&gt; ，如果就业的时候不会使用 &lt;code&gt;Git&lt;/code&gt; ，感觉还是落后于别人一步的，而且，现在也有时间学习，倒不如现在开始学习一下，顺便玩一玩服务器，可能对 &lt;code&gt;Git&lt;/code&gt;  会更加熟练，话不多说，直接动手开始学习。&lt;/p&gt;
+</content>
+        <category term="生活" scheme="https://www.aliang.live/categories/%E7%94%9F%E6%B4%BB/" />
+        <category term="日记" scheme="https://www.aliang.live/categories/%E7%94%9F%E6%B4%BB/%E6%97%A5%E8%AE%B0/" />
+        <category term="日记" scheme="https://www.aliang.live/tags/%E6%97%A5%E8%AE%B0/" />
+        <updated>2022-04-09T17:00:52.000Z</updated>
+    </entry>
     <entry>
         <id>https://www.aliang.live/2022/04/09/ff2eb0a3.html</id>
         <title>hexo结构分析</title>
@@ -51,7 +63,7 @@
 &lt;/div&gt;&lt;/details&gt;
 &lt;details class=&#34;danger&#34;&gt;&lt;summary&gt;持续集成服务&lt;/summary&gt;&lt;div&gt;
 &lt;p&gt;此处引用百度百科：持续集成是一种软件开发实践，即团队开发成员经常集成他们的工作，通常每个成员每天至少集成一次，也就意味着每天可能会发生多次集成。每次集成都通过自动化的构建（包括编译，发布，自动化测试）来验证，从而尽早地发现集成错误。&lt;/p&gt;
-&lt;p&gt;简单来说，就是这个服务绑定了 &lt;code&gt;GitHub&lt;/code&gt; ，我们每提交一次代码到 ``GitHub`，它都会抓取一次我们的仓库，检查新代码，然后提供一个运行环境，执行测试，完成构建，还能部署到服务器。&lt;/p&gt;
+&lt;p&gt;简单来说，就是这个服务绑定了 &lt;code&gt;GitHub&lt;/code&gt; ，我们每提交一次代码到 &lt;code&gt;GitHub&lt;/code&gt; ，它都会抓取一次我们的仓库，检查新代码，然后提供一个运行环境，执行测试，完成构建，还能部署到服务器。&lt;/p&gt;
 &lt;/div&gt;&lt;/details&gt;
 &lt;p&gt;然后我这次在准备提交文件到我新建的 &lt;code&gt;hexo-backups&lt;/code&gt;  仓库的时候，出错了，就记录一下错误。&lt;/p&gt;
 &lt;h2 id=&#34;git-pash-origin-master失败&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#git-pash-origin-master失败&#34;&gt;#&lt;/a&gt;  &lt;code&gt;git pash origin master&lt;/code&gt;  失败&lt;/h2&gt;
@@ -67,10 +79,10 @@
 &lt;p&gt;是的，我真的以为我只是修改一下 &lt;code&gt;origin&lt;/code&gt;  就处理好了&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204082324.jpg&#34; alt=&#34;&#34; title=&#34;重新commit&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;git-push-f-origin-master提交成功&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#git-push-f-origin-master提交成功&#34;&gt;#&lt;/a&gt;  &lt;code&gt;git push -f origin master&lt;/code&gt;  提交成功&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;git push -f origin master&lt;/code&gt;  就成功了&lt;/p&gt;
+&lt;p&gt;奇怪的是，我试试用 &lt;code&gt;git push -f origin master&lt;/code&gt;  就成功了&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204082326.jpg&#34; alt=&#34;&#34; title=&#34;git push -f origin master&#34;&gt;&lt;/p&gt;
 &lt;div class=&#34;note success&#34;&gt;
-&lt;p&gt;目前我还不知道是什么原因导致错误，如果你知道，欢迎留言告诉我！！！&lt;/p&gt;
+&lt;p&gt;目前还不知道是什么原因导致错误，如果你知道，欢迎留言告诉我！！！&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;note warning&#34;&gt;
 &lt;p&gt;以上如有错误，欢迎留言指出&lt;/p&gt;
@@ -81,6 +93,7 @@
         <category term="每日一更" scheme="https://www.aliang.live/tags/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B4/" />
         <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
         <category term="git" scheme="https://www.aliang.live/tags/git/" />
+        <category term="BUG" scheme="https://www.aliang.live/tags/BUG/" />
         <updated>2022-04-08T14:34:15.000Z</updated>
     </entry>
     <entry>
@@ -1060,38 +1073,5 @@
         <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
         <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
         <updated>2022-03-29T16:22:45.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://www.aliang.live/2022/03/30/859f60bd.html</id>
-        <title>第二篇：安装Git---从0基础搭建Hexo博客</title>
-        <link rel="alternate" href="https://www.aliang.live/2022/03/30/859f60bd.html"/>
-        <content type="html">&lt;h3 id=&#34;以下会用到的软件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#以下会用到的软件&#34;&gt;#&lt;/a&gt; 以下会用到的软件&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;必装 [Git][&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXQtc2NtLmNvbQ==&#34;&gt;https://git-scm.com&lt;/span&gt;]、[Node.js][&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ub2RlanMub3JnL2Vu&#34;&gt;https://nodejs.org/en&lt;/span&gt;]&lt;/strong&gt; &lt;em&gt;(点击打开)&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;建议装 [notepad3][&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9yb29raWUxNjc5LmxhbnpvdWYuY29tL2lIbW1hMDI2bnZkZw==&#34;&gt;https://rookie1679.lanzouf.com/iHmma026nvdg&lt;/span&gt;]&lt;/strong&gt; &lt;em&gt;(点击打开)&lt;/em&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;安装git&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装git&#34;&gt;#&lt;/a&gt; 安装 Git&lt;/h3&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/BQvOwdEjhy2Mxpi.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/cynKHCaWvM1lhPQ.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/mGnE9UXQfjSF4LA.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/5Y6oqd7uJGQZ3x9.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/7ulfP3VQJDIR49b.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/O71bgvBpnoya5UN.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://tva2.sinaimg.cn/large/0065wfS6ly8h0rsgp2d5yj30dv0aw756.jpg&#34; alt=&#34;07&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://tva1.sinaimg.cn/large/0065wfS6ly8h0rshgpo17j30dv0aw74s.jpg&#34; alt=&#34;9&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/5yNqYXRIFf2kpxc.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/8j3PsJFgN6e1IxB.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/Pz4C6HLjdQiE7MB.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;鼠标右看到如图说明安装成功了，打开 Git bash here&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/FbARg18aejdJUVO.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;输入 git&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/7qTxPmE6YGFOklK.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;安装 git 结束&lt;/strong&gt;&lt;/p&gt;
-</content>
-        <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-        <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
-        <category term="零基础搭建Hexo个人博客系列" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" />
-        <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
-        <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
-        <updated>2022-03-29T16:21:44.000Z</updated>
     </entry>
 </feed>
