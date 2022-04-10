@@ -62,7 +62,7 @@
         <title>git push origin master失败</title>
         <link rel="alternate" href="https://www.aliang.live/2022/04/08/c32e96d4.html"/>
         <content type="html">&lt;h2 id=&#34;关于我想备份blog这件事&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#关于我想备份blog这件事&#34;&gt;#&lt;/a&gt; 关于我想备份 &lt;code&gt;blog&lt;/code&gt;  这件事&lt;/h2&gt;
-&lt;details class=&#34;primary&#34;&gt;&lt;summary&gt;我要怎么备份`blog`文件？？？&lt;/summary&gt;&lt;div&gt;
+&lt;details class=&#34;primary&#34;&gt;&lt;summary&gt;我要怎么备份blog文件？？？&lt;/summary&gt;&lt;div&gt;
 &lt;div class=&#34;note primary&#34;&gt;
 &lt;p&gt;这几天在想，万一那天我想在别的电脑上写博客，或者是我电脑突然抽风硬盘坏了，我的博客数据岂不是没了？？？&lt;/p&gt;
 &lt;p&gt;又或者我什么时候不小心删错了文件，岂不是出大问题？？？&lt;/p&gt;
@@ -402,7 +402,7 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;/details&gt;
 &lt;details class=&#34;success&#34;&gt;&lt;summary&gt;绿色&lt;/summary&gt;&lt;div&gt;
-&lt;div class=&#34;links&#34;&gt;&lt;div class=&#34;item&#34; title=&#34;優萌初華&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWU=&#34; data-background-image=&#34;https://cdn.jsdelivr.net/gh/0000rookie/github.io/images/404.png&#34;&gt;&lt;/span&gt;
+&lt;div class=&#34;links&#34;&gt;&lt;div class=&#34;item&#34; title=&#34;優萌初華&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWU=&#34; data-background-image=&#34;https://dn-staticfile.qbox.me/gh/0000rookie/github.io/images/404.png&#34;&gt;&lt;/span&gt;
           &lt;div class=&#34;info&#34;&gt;
           &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWU=&#34;&gt;優萌初華&lt;/span&gt;
           &lt;p class=&#34;desc&#34;&gt;https://shoka.lostyu.me&lt;/p&gt;
