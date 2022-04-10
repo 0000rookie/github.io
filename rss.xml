@@ -10,8 +10,8 @@
         </author>
         <description>aliang</description>
         <language>zh-CN</language>
-        <pubDate>Sun, 10 Apr 2022 01:00:52 +0800</pubDate>
-        <lastBuildDate>Sun, 10 Apr 2022 01:00:52 +0800</lastBuildDate>
+        <pubDate>Sun, 10 Apr 2022 12:30:48 +0800</pubDate>
+        <lastBuildDate>Sun, 10 Apr 2022 12:30:48 +0800</lastBuildDate>
         <category term="web安全" />
         <category term="笔记" />
         <category term="web" />
@@ -25,6 +25,16 @@
         <category term="后端" />
         <category term="markdown" />
         <category term="搭建个人博客" />
+        <item>
+            <guid isPermalink="true">https://www.aliang.live/2022/04/10/3fa3774.html</guid>
+            <title>常用命令指令</title>
+            <link>https://www.aliang.live/2022/04/10/3fa3774.html</link>
+            <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+            <category term="每日一更" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B4/" />
+            <category term="每日一更" scheme="https://www.aliang.live/tags/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B4/" />
+            <pubDate>Sun, 10 Apr 2022 12:30:48 +0800</pubDate>
+            <description><![CDATA[ &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;tree &lt;span class=&#34;token builtin class-name&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;#列出当前文件夹下的所有文件&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;tree /f &lt;span class=&#34;token comment&#34;&gt;#显示当前文件夹所有文件&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;tree /a &lt;span class=&#34;token comment&#34;&gt;#显示当前文件夹的所有文件夹&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://www.aliang.live/2022/04/10/ef5acbc6.html</guid>
             <title>4.9日记分享</title>
@@ -950,144 +960,6 @@
 &lt;/ol&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/ugOVX3WGfpZ9DqP.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt; &lt;code&gt;nodejs&lt;/code&gt;  环境配置到此就完成啦&lt;/strong&gt;&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://www.aliang.live/2022/03/30/b75a1db6.html</guid>
-            <title>第三篇：Git提交文件---从0基础搭建Hexo博客</title>
-            <link>https://www.aliang.live/2022/03/30/b75a1db6.html</link>
-            <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-            <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
-            <category term="零基础搭建Hexo个人博客系列" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" />
-            <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
-            <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
-            <pubDate>Wed, 30 Mar 2022 00:22:45 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;配置git&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#配置git&#34;&gt;#&lt;/a&gt; 配置 git&lt;/h2&gt;
-&lt;h4 id=&#34;一-绑定gitee&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-绑定gitee&#34;&gt;#&lt;/a&gt; 一、绑定 Gitee&lt;/h4&gt;
-&lt;p&gt;首先来简单介绍一下 SSH 协议&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;SSH（安全外壳协议，Secure Shell 的缩写）是建立在应用层基础上的安全协议。SSH 是目前较可靠，专为远程登录会话和其他网络服务提供安全性的协议，利用 SSH 协议可以有效防止远程管理过程中的信息泄露问题。简单来说，SSH 就是保障你的账户安全，将你的数据加密压缩，不仅防止其他人截获你的数据，还能加快传输速度。如果想详细了解的话，可以看这篇文章：详述 SSH 的原理及其应用 - CSDN，下面就详细介绍如何绑定 GitHub 和提交文件。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;我们要用 git 上传文件到 GitHub 首先得利用 SSH 登录远程主机，而登录方式有两种：一种是口令登录；另一种是公钥登录。口令登录每次都要输入密码十分麻烦，而公钥登录就省去了输入密码的步骤，所以我们选择公钥授权。首先我们得在 GitHub 上添加 SSH key 配置，要想生成 SSH key，就要先安装 SSH，不过我们安装了 Git Bash，其应该自带了 SSH。检验一下是否安装 SSH，我们在新建的文件夹中右键打开 Git Bash：&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;新建一个文件夹 ``text`&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/Jz1dTG6SPkwlQ5p.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;鼠标右击打开 &lt;code&gt;git Bash Here&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/Jz1dTG6SPkwlQ5p.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;输入 &lt;code&gt;ssh&lt;/code&gt;  检查使是否安装 &lt;code&gt;ssh&lt;/code&gt;&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;ssh-keygen -t rsa&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/8RcNpfrZ2PEjtA7.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;ol start=&#34;4&#34;&gt;
-&lt;li&gt;
-&lt;p&gt;输入  &lt;code&gt;ssh-keygen -t rsa&lt;/code&gt;  命令，表示 &lt;code&gt;RSA&lt;/code&gt;  算法生成密钥，然后敲 4 次回车键，之后会生成两个文件，分别为密钥 &lt;code&gt;id_rsa&lt;/code&gt;  和公钥 &lt;code&gt;id_rsa.pub&lt;/code&gt;&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;ssh-keygen -t rsa&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/K3mfVxdr54IvaLJ.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/9fNDbOAVUBeWd8G.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;接下来我们要做的事情就是把公钥 &lt;code&gt;id_rsa.pub&lt;/code&gt;  的内容添加到 &lt;code&gt; GitHub&lt;/code&gt; 。复制公钥  &lt;code&gt;id_rsa.pub&lt;/code&gt;  文件里的内容，你可以通过目录找到  &lt;code&gt;id_rsa.pub&lt;/code&gt;  文件的位置，用记事本打开文件复制。&lt;/strong&gt;&lt;/p&gt;
-&lt;ol start=&#34;5&#34;&gt;
-&lt;li&gt;打开  &lt;code&gt;id_rsa.pub&lt;/code&gt;  文件复制&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/s39ZxPGuTDJLmwF.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;ol start=&#34;6&#34;&gt;
-&lt;li&gt;打开 &lt;code&gt;github---&amp;gt;settings---&amp;gt;SSH and GPG keys---&amp;gt;New SSH key&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/LhUzwCNnZGOXDl9.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/4vtGl98ehjRWKJd.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;粘贴内容进去&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/i1b3hoFvzPWcUje.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;添加成功&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/h7npjw9I8qOBaXA.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;验证是否成功，在 &lt;code&gt;Git Bash&lt;/code&gt;  中输入 &lt;code&gt; ssh -T git@github.com&lt;/code&gt;  验证&lt;/strong&gt;&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;ssh&lt;/span&gt; -T git@github.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;首次需要输入 &lt;code&gt;yes&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/EHSFLzxKoIavPcr.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h4 id=&#34;二-接下来是提交文件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#二-接下来是提交文件&#34;&gt;#&lt;/a&gt; 二、接下来是提交文件&lt;/h4&gt;
-&lt;ol&gt;
-&lt;li&gt;新建仓库&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/VKYp3k8NMgDvrW1.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;给仓库起个名&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/zsE5a7B3KrliXny.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;复制仓库 &lt;code&gt;HTTPS&lt;/code&gt;  链接&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/YVpZtKBoWgPbzme.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;ol start=&#34;4&#34;&gt;
-&lt;li&gt;
-&lt;p&gt;将 &lt;code&gt;text&lt;/code&gt;  仓库 &lt;code&gt;clone&lt;/code&gt;  到本地仓库，返回刚刚 &lt;code&gt;Git&lt;/code&gt;  的窗口，输入 &lt;code&gt;git clone 链接&lt;/code&gt; 。&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; clone https://github.com/aliang518/text.git&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/6KVx9MoJ48mE25k.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;ol start=&#34;5&#34;&gt;
-&lt;li&gt;打开刚刚在电脑新建的 &lt;code&gt;text&lt;/code&gt;  文件夹是不是存在一个 &lt;code&gt;GitHub&lt;/code&gt;  上名为的 &lt;code&gt;text&lt;/code&gt;  仓库&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/b7dHYj5e3lCxypg.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;ol start=&#34;6&#34;&gt;
-&lt;li&gt;查看 &lt;code&gt;text&lt;/code&gt;  仓库是不是和 &lt;code&gt;GitHub&lt;/code&gt;  的仓库内容一样&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/g6nQxiVeCzubkNj.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;ol start=&#34;7&#34;&gt;
-&lt;li&gt;
-&lt;p&gt;新建一个文件&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/2emTn6GyiqSZIba.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;在此文件夹下进入 &lt;code&gt;Git Bash Here&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/7bi2eu8FNYTltd1.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;ol start=&#34;9&#34;&gt;
-&lt;li&gt;
-&lt;p&gt;输入 &lt;code&gt;git status&lt;/code&gt;  命令查看仓库状态&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; status&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204011752.jpg&#34; alt=&#34;20&#34;&gt;&lt;/p&gt;
-&lt;ol start=&#34;10&#34;&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;hexo&lt;/code&gt;  已经是一个 Git 仓库了，而我们刚刚创建的文件 &lt;code&gt;123.txt&lt;/code&gt;  没有被追踪，也就是没有提交到本地仓库。现在我们使用  &lt;code&gt;git add &lt;/code&gt; 命令将文件添加到了「临时缓冲区」，再用  &lt;code&gt;git commit -m &amp;quot;&lt;/code&gt; 提交信息&amp;quot; 将其提交到本地仓库，如下图&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;add&lt;/span&gt; text.txt&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; commit -m &lt;span class=&#34;token string&#34;&gt;&#34;提交信息&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/cK8LmrBq3vh9YQo.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/3ltIPmEFkHKU1Bc.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;如果你是第一次提交的话，就会出现下图情况，让你输入账号和邮箱&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;```git config --global user.name &lt;span class=&#34;token string&#34;&gt;&#34;aliang518&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; config --global user.email &lt;span class=&#34;token string&#34;&gt;&#34;aa******56@126.com&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/Dbag4oklMAp1XqQ.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;ol start=&#34;11&#34;&gt;
-&lt;li&gt;
-&lt;p&gt;查看仓库提交日志&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; log&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/xCkvay35W4zG8gE.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;ol start=&#34;12&#34;&gt;
-&lt;li&gt;
-&lt;p&gt;再输入  &lt;code&gt;git status&lt;/code&gt;  查看一下仓库状态&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; status&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/DKZzdOLexy1lB52.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;ol start=&#34;13&#34;&gt;
-&lt;li&gt;
-&lt;p&gt;将本地仓库提交到远程仓库&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; push origin main&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/rFebnLUxqSkCoR3.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;ol start=&#34;14&#34;&gt;
-&lt;li&gt;从浏览器打开的时候选择你已经登录 &lt;code&gt;GitHub&lt;/code&gt;  的那个浏览器 (我这里用火狐浏览器)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/etGBbrAjaOzH9Qk.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;ol start=&#34;15&#34;&gt;
-&lt;li&gt;等待上次成功&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/16UjrZte4OydkG8.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;ol start=&#34;16&#34;&gt;
-&lt;li&gt;打开 &lt;code&gt;GitHub&lt;/code&gt;  仓库 &lt;code&gt;F5&lt;/code&gt;  刷新一下，会出现刚刚在本地 &lt;code&gt;text&lt;/code&gt;  目录新建的 &lt;code&gt;text.txt&lt;/code&gt;  文件&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/QvD1LZXAqeWSNJf.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;提交文件已经成功啦&lt;/strong&gt;&lt;/p&gt;
  ]]></description>
         </item>
     </channel>
