@@ -25,31 +25,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Git详细使用方法</title>
-    <url>/2022/04/04/43d2d741.html</url>
-    <content><![CDATA[<div class="note info">
-<p>以下全部操作环境都是在 <code>window10</code> 、 <code>github</code>  执行</p>
-</div>
-<h2 id="使用git"><a class="markdownIt-Anchor" href="#使用git">#</a> 使用 Git</h2>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">git</span> init 			<span class="token comment">#初始化当前文件夹为仓库，默认是 master 分支</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token function">git</span> <span class="token builtin class-name">help</span> -a 		<span class="token comment"># 显示完全的指令列表</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre><span class="token function">git</span> <span class="token function">add</span> text.txt 	<span class="token comment"># 添加 text.txt 文件加入到 Git 系统的索引中，tips: 可以使用通配符添加 “*” 和 “.”</span></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre><span class="token function">git</span> status			<span class="token comment"># 查看当前 Git 的状态，是否有新文件没有加入到 Git 索引中</span></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre><span class="token function">git</span> commit -m <span class="token string">"操作说明"</span> --author<span class="token operator">=</span><span class="token string">'操作者姓名'</span> --email<span class="token operator">=</span><span class="token string">'操作者邮箱'</span> <span class="token comment">#把已经添加到 Git 索引的所有文件到推送到 repository，一般我们在使用 github 的时候，就是通过这个指令把文件推送到 github 的</span></pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre>gitk 				<span class="token comment"># 启动图形界面查看 repository 有哪些文件</span></pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre><span class="token comment"># 一般在离开 git bash here 的时候习惯用 exit 结束</span></pre></td></tr></table></figure><ol>
-<li>启动 <code>Git bash here</code>  使用 <code>cd</code>  进入某文件夹</li>
-<li><code>git init</code>  初始化当前文件夹，建立 <code>Git系统索引</code> ，此时当前文件夹会出现一个 <code>.git</code>  文件夹</li>
-<li><code>git add text.txt</code>  把 <code>text.txt</code>  文件添加到 <code>Git系统索引</code> 中</li>
-<li><code>git commit -m &quot;此次提交操作说明&quot; --author='操作者姓名' --email='操作者的邮箱'</code>  将已经添加到 <code>Git系统索引</code> 的文件全部提交到 <code>github</code></li>
-</ol>
-<div class="note info">
-<p>tips：如果你在 git add text.txt 指令之后，你对 text.txt 文件进行修改，此时你新修改的内容是不被保存到 github 上面的，保存到 github 的是你修改前的内容</p>
-</div>
-<div class="note info">
-<p>以上如有错误，欢迎指出</p>
-</div>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>技术杂谈</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Python组合数据类型</title>
     <url>/2022/04/08/cd7b33aa.html</url>
     <content><![CDATA[<div class="note info">
@@ -216,6 +191,93 @@
       <categories>
         <category>计算机科学</category>
         <category>每日一更</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Git详细使用方法</title>
+    <url>/2022/04/04/43d2d741.html</url>
+    <content><![CDATA[<div class="note info">
+<p>以下全部操作环境都是在 <code>window10</code> 、 <code>github</code>  执行</p>
+</div>
+<h2 id="使用git"><a class="markdownIt-Anchor" href="#使用git">#</a> 使用 Git</h2>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">git</span> init 			<span class="token comment">#初始化当前文件夹为仓库，默认是 master 分支</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token function">git</span> <span class="token builtin class-name">help</span> -a 		<span class="token comment"># 显示完全的指令列表</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre><span class="token function">git</span> <span class="token function">add</span> text.txt 	<span class="token comment"># 添加 text.txt 文件加入到 Git 系统的索引中，tips: 可以使用通配符添加 “*” 和 “.”</span></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre><span class="token function">git</span> status			<span class="token comment"># 查看当前 Git 的状态，是否有新文件没有加入到 Git 索引中</span></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre><span class="token function">git</span> commit -m <span class="token string">"操作说明"</span> --author<span class="token operator">=</span><span class="token string">'操作者姓名'</span> --email<span class="token operator">=</span><span class="token string">'操作者邮箱'</span> <span class="token comment">#把已经添加到 Git 索引的所有文件到推送到 repository，一般我们在使用 github 的时候，就是通过这个指令把文件推送到 github 的</span></pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre>gitk 				<span class="token comment"># 启动图形界面查看 repository 有哪些文件</span></pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre><span class="token comment"># 一般在离开 git bash here 的时候习惯用 exit 结束</span></pre></td></tr></table></figure><ol>
+<li>启动 <code>Git bash here</code>  使用 <code>cd</code>  进入某文件夹</li>
+<li><code>git init</code>  初始化当前文件夹，建立 <code>Git系统索引</code> ，此时当前文件夹会出现一个 <code>.git</code>  文件夹</li>
+<li><code>git add text.txt</code>  把 <code>text.txt</code>  文件添加到 <code>Git系统索引</code> 中</li>
+<li><code>git commit -m &quot;此次提交操作说明&quot; --author='操作者姓名' --email='操作者的邮箱'</code>  将已经添加到 <code>Git系统索引</code> 的文件全部提交到 <code>github</code></li>
+</ol>
+<div class="note info">
+<p>tips：如果你在 git add text.txt 指令之后，你对 text.txt 文件进行修改，此时你新修改的内容是不被保存到 github 上面的，保存到 github 的是你修改前的内容</p>
+</div>
+<div class="note info">
+<p>以上如有错误，欢迎指出</p>
+</div>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>技术杂谈</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>添加开机自启程序</title>
+    <url>/2022/04/07/2cc8588f.html</url>
+    <content><![CDATA[<h2 id="键盘点击winr"><a class="markdownIt-Anchor" href="#键盘点击winr">#</a> 键盘点击 <code>win+R</code></h2>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204071930.jpg" alt=""></p>
+<h2 id="在窗口输入shellstartup"><a class="markdownIt-Anchor" href="#在窗口输入shellstartup">#</a> 在窗口输入 <code>shell:startup</code></h2>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>shell:startup</pre></td></tr></table></figure><p><strong>打开是这个路径</strong>，把你想要开机自启的软件快捷方式拖到这个路径下，以后电脑开机就会自动启动这个程序了</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204071937.jpg" alt=""></p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204071936.jpg" alt=""></p>
+<div class="note warning">
+<p>以上如有错误，欢迎留言指出</p>
+</div>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>技术杂谈</category>
+        <category>一个小技巧</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+        <tag>生活小技巧</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何给PicGo添加水印</title>
+    <url>/2022/04/11/2fbd98c3.html</url>
+    <content><![CDATA[<p>在运营独立博客的时候，自己原创的文章，经常会被别人转载，又没有标明原作者地址，导致原创作者流量流失了一部分，如果可以标记原创是自己的话，那就非常方便了，比如说加个水印就好一点。刚好 <code>PicGo</code>  有个插件 <code>watermark</code>  可以给突破加水印，这就很方便了，不用上传图片自己还要去添加一个水印。</p>
+<h2 id="安装watermark"><a class="markdownIt-Anchor" href="#安装watermark">#</a> 安装 <code>watermark</code></h2>
+<p>安装 <code>watermark</code> ， <code>PicGo</code>  最低版本要 <code>2.2.0</code></p>
+<p>可以直接在 <code>PicGo</code>  插件设置下载</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204110022.jpeg" alt=""></p>
+<h2 id="配置watermark"><a class="markdownIt-Anchor" href="#配置watermark">#</a> 配置 <code>watermark</code></h2>
+<div class="note info">
+<p>有些同学可能在配置 watermark 一直出错，可以试着 <code>字体文件路径</code> 设置和我一样的，把文件拉进去就行</p>
+</div>
+<p>这里放上字体链接，有需要自取，字体来源于 <span class="exturl" data-url="aHR0cHM6Ly93d3cuZm9udHMubmV0LmNuL2ZvbnQtNDAwOTA5Njk5NjAuaHRtbD9wcmV2aWV3VGV4dD13d3cuaGlra2kuc2l0ZQ==">字体天下</span></p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204110023.jpeg" alt=""></p>
+<div class="note warning">
+<p>以上如果有侵害你的权益，请立即联系我</p>
+</div>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>技术杂谈</category>
+        <category>一个小技巧</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>一个技巧</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git详细使用方法</title>
+    <url>/2022/04/04/43d2d741.html</url>
+    <content><![CDATA[<h2 id="初始化仓库"><a class="markdownIt-Anchor" href="#初始化仓库">#</a> 初始化仓库</h2>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">git</span> init 			<span class="token comment">#初始化当前文件夹为仓库，默认是 master 分支</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token function">git</span> <span class="token builtin class-name">help</span> -a 		<span class="token comment"># 显示完全的指令列表</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre><span class="token function">git</span> <span class="token function">add</span> text.txt 	<span class="token comment"># 添加 text.txt 文件加入到 Git 系统的索引中，tips: 可以使用通配符添加 “*” 和 “.”</span></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre><span class="token function">git</span> status			<span class="token comment"># 查看当前 Git 的状态，是否有新文件没有加入到 Git 索引中</span></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre><span class="token function">git</span> commit -m <span class="token string">"操作说明"</span> --author<span class="token operator">=</span><span class="token string">'操作者姓名'</span> --email<span class="token operator">=</span><span class="token string">'操作者邮箱'</span> <span class="token comment">#把已经添加到 Git 索引的所有文件到推送到 repository，一般我们在使用 github 的时候，就是通过这个指令把文件推送到 github 的</span></pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre>gitk 				<span class="token comment"># 启动图形界面查看 repository 有哪些文件</span></pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre><span class="token comment"># 一般在离开 git bash here 的时候习惯用 exit 结束</span></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>技术杂谈</category>
+        <category>持续更新</category>
       </categories>
   </entry>
   <entry>
@@ -456,118 +518,6 @@
       <tags>
         <tag>博客</tag>
         <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo怎么安装插件</title>
-    <url>/2022/03/26/c5de56d5.html</url>
-    <content><![CDATA[<hr>
-<h3 id="hexo怎么安装插件"><a class="markdownIt-Anchor" href="#hexo怎么安装插件">#</a> hexo 怎么安装插件</h3>
-<ol>
-<li>
-<p>打开 hexo 的根目录 <code>Blog</code></p>
-</li>
-<li>
-<p>输入安装地址 (此处我以安装 <code>npm i hexo-algoliasearch</code>  测试)</p>
-<figure class="highlight bash"><figcaption data-lang="bash"><span>npm安装</span></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">npm</span> i hexo-algoliasearch</pre></td></tr></table></figure></li>
-<li>
-<p>安装成功</p>
-</li>
-</ol>
-<p><img data-src="https://tva4.sinaimg.cn/large/0065wfS6ly8h0ntxuxa0oj30jo09njsv.jpg" alt="" title="在Blog打开cmd" height="65%" width="65%"></p>
-<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0ntxktk9zj30cr02gjrc.jpg" alt="" title="在cmd输入安装路径" height="65%" width="65%"></p>
-<p><img data-src="https://tva3.sinaimg.cn/large/0065wfS6ly8h0nty14h5oj30lh07s0tg.jpg" alt="" title="END" height="65%" width="65%"></p>
-<h3 id="hexo怎么卸载插件"><a class="markdownIt-Anchor" href="#hexo怎么卸载插件">#</a> Hexo 怎么卸载插件</h3>
-<ol>
-<li>
-<p>卸载也是在 <code>Blog</code>  打开 cmd，输入 <code>npm uninstall 插件名 --save</code>  即可</p>
-</li>
-<li>
-<p>或者简洁一点 <code>npm un 插件名 --save</code></p>
-</li>
-<li>
-<p>举个例子，我要卸载 <code>hexo-renderer-marked</code>  这个插件</p>
-</li>
-<li>
-<p>在 cmd 输入</p>
-<figure class="highlight bash"><figcaption data-lang="bash"><span>h 插件卸载 </span></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">npm</span> un hexo-renderer-marked --save</pre></td></tr></table></figure></li>
-</ol>
-<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0ntxxz7wqj30lk0650t3.jpg" alt="" title="卸载插件" height="75%" width="75%"></p>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>博客</category>
-        <category>模块</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>搭建GitHu图床</title>
-    <url>/2022/04/02/e85071ad.html</url>
-    <content><![CDATA[<p><strong>问：什么是图床？图床有什么用？</strong></p>
-<p><strong>答：图床就是一个存放你照片的云盘，只要有网络就能打开这张照片</strong></p>
-<h2 id="新建一个仓库"><a class="markdownIt-Anchor" href="#新建一个仓库">#</a> 新建一个仓库</h2>
-<p><strong>用于存放图片的仓库</strong>  俗称图床<br>
-<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021048.jpg" alt=""></p>
-<h2 id="给你图床起个名字"><a class="markdownIt-Anchor" href="#给你图床起个名字">#</a> 给你图床起个名字</h2>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021050.jpg" alt=""></p>
-<h2 id="新建token"><a class="markdownIt-Anchor" href="#新建token">#</a> 新建 token</h2>
-<p><code>settings---&gt;Developer settings---&gt;Personal access tokens---&gt;generate new token</code> <br>
-<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021051.jpg" alt=""><br>
-<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021059.jpg" alt=""><br>
-<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021100.jpg" alt=""><br>
-<em> 这边给大家翻译一下，英文不是很好可以看看</em><br>
-<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021102.jpg" alt=""><br>
-<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021103.jpg" alt=""></p>
-<p><strong>点击复制</strong></p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021105.jpg" alt=""></p>
-<h2 id="配置picgo"><a class="markdownIt-Anchor" href="#配置picgo">#</a> 配置 Picgo</h2>
-<div class="note info">
-<p><strong>我在 imgs 仓库下新建了一个 Hexoimgs 文件夹</strong></p>
-</div>
-<p>粘贴刚刚复制的 <code>token</code>  到 <code>设定Token</code></p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021133.jpg" alt=""></p>
-<p>你 <code>github</code>  上的分支名是什么， <code>PicGO的</code> 设定分支名就写什么</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021131.jpg" alt=""></p>
-<p><strong>设定自定义域名：</strong> <code>0000rookie/imgs</code>  改成你的 <code>用户名/仓库名</code></p>
-<figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tr><td data-num="1"></td><td><pre>http://cdn.jsdelivr.net/gh/0000rookie/imgs</pre></td></tr></table></figure><div class="note success">
-<p><strong>你的图床就搭建完啦</strong></p>
-</div>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>博客</category>
-        <category>模块</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>添加开机自启程序</title>
-    <url>/2022/04/07/2cc8588f.html</url>
-    <content><![CDATA[<h2 id="键盘点击winr"><a class="markdownIt-Anchor" href="#键盘点击winr">#</a> 键盘点击 <code>win+R</code></h2>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204071930.jpg" alt=""></p>
-<h2 id="在窗口输入shellstartup"><a class="markdownIt-Anchor" href="#在窗口输入shellstartup">#</a> 在窗口输入 <code>shell:startup</code></h2>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>shell:startup</pre></td></tr></table></figure><p><strong>打开是这个路径</strong>，把你想要开机自启的软件快捷方式拖到这个路径下，以后电脑开机就会自动启动这个程序了</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204071937.jpg" alt=""></p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204071936.jpg" alt=""></p>
-<div class="note warning">
-<p>以上如有错误，欢迎留言指出</p>
-</div>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>技术杂谈</category>
-        <category>一个小技巧</category>
-      </categories>
-      <tags>
-        <tag>教程</tag>
-        <tag>生活小技巧</tag>
       </tags>
   </entry>
   <entry>
@@ -956,6 +906,34 @@
       </tags>
   </entry>
   <entry>
+    <title>第一篇：注册github---从0基础搭建Hexo博客</title>
+    <url>/2022/03/30/a6f9d072.html</url>
+    <content><![CDATA[<h3 id="注册github"><a class="markdownIt-Anchor" href="#注册github">#</a> 注册 GitHub</h3>
+<p><img data-src="https://s2.loli.net/2022/03/30/BULpyk6thPbgJCD.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/fo8wzF7dvqNHaB4.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/aXwyhW3KM8cxYCb.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/RN62GDFVQU1YKB3.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/JzFGeTjb7BHKSQD.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/48GA7g1N2VacpJl.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/uN8PBgwFWOlApfU.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/shHQtoZVwcPrz2I.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/aZSU1FnDumqY2M7.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/PhUtuCQNlLHXAdG.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/pk9Gyi28uTFrXZY.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/8tjJkrGRb3NBsEW.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/FVivdNY8BLUfcSR.jpg" alt=""></p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>博客</category>
+        <category>零基础搭建Hexo个人博客系列</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>第六篇：将博客部署到GitHub---从0基础搭建Hexo博客</title>
     <url>/2022/03/30/dc09a46c.html</url>
     <content><![CDATA[<h2 id="将hexo部署到github"><a class="markdownIt-Anchor" href="#将hexo部署到github">#</a> 将 Hexo 部署到 github</h2>
@@ -1001,6 +979,52 @@
         <category>计算机科学</category>
         <category>博客</category>
         <category>零基础搭建Hexo个人博客系列</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo怎么安装插件</title>
+    <url>/2022/03/26/c5de56d5.html</url>
+    <content><![CDATA[<hr>
+<h3 id="hexo怎么安装插件"><a class="markdownIt-Anchor" href="#hexo怎么安装插件">#</a> hexo 怎么安装插件</h3>
+<ol>
+<li>
+<p>打开 hexo 的根目录 <code>Blog</code></p>
+</li>
+<li>
+<p>输入安装地址 (此处我以安装 <code>npm i hexo-algoliasearch</code>  测试)</p>
+<figure class="highlight bash"><figcaption data-lang="bash"><span>npm安装</span></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">npm</span> i hexo-algoliasearch</pre></td></tr></table></figure></li>
+<li>
+<p>安装成功</p>
+</li>
+</ol>
+<p><img data-src="https://tva4.sinaimg.cn/large/0065wfS6ly8h0ntxuxa0oj30jo09njsv.jpg" alt="" title="在Blog打开cmd" height="65%" width="65%"></p>
+<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0ntxktk9zj30cr02gjrc.jpg" alt="" title="在cmd输入安装路径" height="65%" width="65%"></p>
+<p><img data-src="https://tva3.sinaimg.cn/large/0065wfS6ly8h0nty14h5oj30lh07s0tg.jpg" alt="" title="END" height="65%" width="65%"></p>
+<h3 id="hexo怎么卸载插件"><a class="markdownIt-Anchor" href="#hexo怎么卸载插件">#</a> Hexo 怎么卸载插件</h3>
+<ol>
+<li>
+<p>卸载也是在 <code>Blog</code>  打开 cmd，输入 <code>npm uninstall 插件名 --save</code>  即可</p>
+</li>
+<li>
+<p>或者简洁一点 <code>npm un 插件名 --save</code></p>
+</li>
+<li>
+<p>举个例子，我要卸载 <code>hexo-renderer-marked</code>  这个插件</p>
+</li>
+<li>
+<p>在 cmd 输入</p>
+<figure class="highlight bash"><figcaption data-lang="bash"><span>h 插件卸载 </span></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">npm</span> un hexo-renderer-marked --save</pre></td></tr></table></figure></li>
+</ol>
+<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0ntxxz7wqj30lk0650t3.jpg" alt="" title="卸载插件" height="75%" width="75%"></p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>博客</category>
+        <category>模块</category>
       </categories>
       <tags>
         <tag>博客</tag>
@@ -1094,22 +1118,50 @@
       </tags>
   </entry>
   <entry>
-    <title>第一篇：注册github---从0基础搭建Hexo博客</title>
-    <url>/2022/03/30/a6f9d072.html</url>
-    <content><![CDATA[<h3 id="注册github"><a class="markdownIt-Anchor" href="#注册github">#</a> 注册 GitHub</h3>
-<p><img data-src="https://s2.loli.net/2022/03/30/BULpyk6thPbgJCD.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/fo8wzF7dvqNHaB4.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/aXwyhW3KM8cxYCb.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/RN62GDFVQU1YKB3.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/JzFGeTjb7BHKSQD.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/48GA7g1N2VacpJl.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/uN8PBgwFWOlApfU.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/shHQtoZVwcPrz2I.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/aZSU1FnDumqY2M7.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/PhUtuCQNlLHXAdG.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/pk9Gyi28uTFrXZY.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/8tjJkrGRb3NBsEW.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/FVivdNY8BLUfcSR.jpg" alt=""></p>
+    <title>第七篇：购买域名---从0基础搭建Hexo博客</title>
+    <url>/2022/03/30/6c2393ec.html</url>
+    <content><![CDATA[<h2 id="购买域名"><a class="markdownIt-Anchor" href="#购买域名">#</a> 购买域名</h2>
+<p><strong>打开 [万网官网][<span class="exturl" data-url="aHR0cHM6Ly93YW53YW5nLmFsaXl1bi5jb20=">https://wanwang.aliyun.com</span>]</strong></p>
+<h3 id="注册账号"><a class="markdownIt-Anchor" href="#注册账号">#</a> 注册账号</h3>
+<ol>
+<li>我这里使用的是支付宝登录</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/rygEU1BWAnlkHLw.jpg" alt=""></p>
+<h3 id="输入域名"><a class="markdownIt-Anchor" href="#输入域名">#</a> 输入域名</h3>
+<ol start="2">
+<li>输入自己想要的域名，搜索</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/4CnXuINvtWgTe7Q.jpg" alt=""></p>
+<ol start="3">
+<li>
+<p><img data-src="https://s2.loli.net/2022/03/30/YVbD4TrPzAklFti.jpg" alt=""></p>
+</li>
+<li>
+<p>点击立即购买</p>
+</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/DeVr86NbnHGTs2d.jpg" alt=""></p>
+<ol start="5">
+<li>选择年限</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/cWOQ3Lakhi8V2Kt.jpg" alt=""></p>
+<ol start="6">
+<li>将域名持有者选为 “个人”</li>
+<li>新建信息模板</li>
+<li>选择你填的资料</li>
+<li>验证邮箱 (点击 <code>去验证</code> )</li>
+<li>立即购买</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/ykFrIJputCAawbq.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/93TRVgPZxYrnhA7.jpg" alt=""></p>
+<ol start="11">
+<li>支付成功，点击进入域名控制台</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/Q1JWYLqxVKmCshf.jpg" alt=""></p>
+<ol start="12">
+<li>等待审核。(我这边审核大概半小时就好了)</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/KsrTi1u3pqna2Ue.jpg" alt=""></p>
 ]]></content>
       <categories>
         <category>计算机科学</category>
@@ -1193,70 +1245,46 @@
       </tags>
   </entry>
   <entry>
-    <title>第七篇：购买域名---从0基础搭建Hexo博客</title>
-    <url>/2022/03/30/6c2393ec.html</url>
-    <content><![CDATA[<h2 id="购买域名"><a class="markdownIt-Anchor" href="#购买域名">#</a> 购买域名</h2>
-<p><strong>打开 [万网官网][<span class="exturl" data-url="aHR0cHM6Ly93YW53YW5nLmFsaXl1bi5jb20=">https://wanwang.aliyun.com</span>]</strong></p>
-<h3 id="注册账号"><a class="markdownIt-Anchor" href="#注册账号">#</a> 注册账号</h3>
-<ol>
-<li>我这里使用的是支付宝登录</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/rygEU1BWAnlkHLw.jpg" alt=""></p>
-<h3 id="输入域名"><a class="markdownIt-Anchor" href="#输入域名">#</a> 输入域名</h3>
-<ol start="2">
-<li>输入自己想要的域名，搜索</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/4CnXuINvtWgTe7Q.jpg" alt=""></p>
-<ol start="3">
-<li>
-<p><img data-src="https://s2.loli.net/2022/03/30/YVbD4TrPzAklFti.jpg" alt=""></p>
-</li>
-<li>
-<p>点击立即购买</p>
-</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/DeVr86NbnHGTs2d.jpg" alt=""></p>
-<ol start="5">
-<li>选择年限</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/cWOQ3Lakhi8V2Kt.jpg" alt=""></p>
-<ol start="6">
-<li>将域名持有者选为 “个人”</li>
-<li>新建信息模板</li>
-<li>选择你填的资料</li>
-<li>验证邮箱 (点击 <code>去验证</code> )</li>
-<li>立即购买</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/ykFrIJputCAawbq.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/93TRVgPZxYrnhA7.jpg" alt=""></p>
-<ol start="11">
-<li>支付成功，点击进入域名控制台</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/Q1JWYLqxVKmCshf.jpg" alt=""></p>
-<ol start="12">
-<li>等待审核。(我这边审核大概半小时就好了)</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/KsrTi1u3pqna2Ue.jpg" alt=""></p>
+    <title>搭建GitHu图床</title>
+    <url>/2022/04/02/e85071ad.html</url>
+    <content><![CDATA[<p><strong>问：什么是图床？图床有什么用？</strong></p>
+<p><strong>答：图床就是一个存放你照片的云盘，只要有网络就能打开这张照片</strong></p>
+<h2 id="新建一个仓库"><a class="markdownIt-Anchor" href="#新建一个仓库">#</a> 新建一个仓库</h2>
+<p><strong>用于存放图片的仓库</strong>  俗称图床<br>
+<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021048.jpg" alt=""></p>
+<h2 id="给你图床起个名字"><a class="markdownIt-Anchor" href="#给你图床起个名字">#</a> 给你图床起个名字</h2>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021050.jpg" alt=""></p>
+<h2 id="新建token"><a class="markdownIt-Anchor" href="#新建token">#</a> 新建 token</h2>
+<p><code>settings---&gt;Developer settings---&gt;Personal access tokens---&gt;generate new token</code> <br>
+<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021051.jpg" alt=""><br>
+<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021059.jpg" alt=""><br>
+<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021100.jpg" alt=""><br>
+<em> 这边给大家翻译一下，英文不是很好可以看看</em><br>
+<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021102.jpg" alt=""><br>
+<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021103.jpg" alt=""></p>
+<p><strong>点击复制</strong></p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021105.jpg" alt=""></p>
+<h2 id="配置picgo"><a class="markdownIt-Anchor" href="#配置picgo">#</a> 配置 Picgo</h2>
+<div class="note info">
+<p><strong>我在 imgs 仓库下新建了一个 Hexoimgs 文件夹</strong></p>
+</div>
+<p>粘贴刚刚复制的 <code>token</code>  到 <code>设定Token</code></p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021133.jpg" alt=""></p>
+<p>你 <code>github</code>  上的分支名是什么， <code>PicGO的</code> 设定分支名就写什么</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021131.jpg" alt=""></p>
+<p><strong>设定自定义域名：</strong> <code>0000rookie/imgs</code>  改成你的 <code>用户名/仓库名</code></p>
+<figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tr><td data-num="1"></td><td><pre>http://cdn.jsdelivr.net/gh/0000rookie/imgs</pre></td></tr></table></figure><div class="note success">
+<p><strong>你的图床就搭建完啦</strong></p>
+</div>
 ]]></content>
       <categories>
         <category>计算机科学</category>
         <category>博客</category>
-        <category>零基础搭建Hexo个人博客系列</category>
+        <category>模块</category>
       </categories>
       <tags>
         <tag>博客</tag>
         <tag>教程</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Git详细使用方法</title>
-    <url>/2022/04/04/43d2d741.html</url>
-    <content><![CDATA[<h2 id="初始化仓库"><a class="markdownIt-Anchor" href="#初始化仓库">#</a> 初始化仓库</h2>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">git</span> init 			<span class="token comment">#初始化当前文件夹为仓库，默认是 master 分支</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token function">git</span> <span class="token builtin class-name">help</span> -a 		<span class="token comment"># 显示完全的指令列表</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre><span class="token function">git</span> <span class="token function">add</span> text.txt 	<span class="token comment"># 添加 text.txt 文件加入到 Git 系统的索引中，tips: 可以使用通配符添加 “*” 和 “.”</span></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre><span class="token function">git</span> status			<span class="token comment"># 查看当前 Git 的状态，是否有新文件没有加入到 Git 索引中</span></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre><span class="token function">git</span> commit -m <span class="token string">"操作说明"</span> --author<span class="token operator">=</span><span class="token string">'操作者姓名'</span> --email<span class="token operator">=</span><span class="token string">'操作者邮箱'</span> <span class="token comment">#把已经添加到 Git 索引的所有文件到推送到 repository，一般我们在使用 github 的时候，就是通过这个指令把文件推送到 github 的</span></pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre>gitk 				<span class="token comment"># 启动图形界面查看 repository 有哪些文件</span></pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre><span class="token comment"># 一般在离开 git bash here 的时候习惯用 exit 结束</span></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>技术杂谈</category>
-        <category>持续更新</category>
-      </categories>
   </entry>
 </search>
