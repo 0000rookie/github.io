@@ -7,6 +7,19 @@
     "home_page_url": "https://www.hikki.site",
     "items": [
         {
+            "id": "https://www.hikki.site/2022/04/11/ee3e214f.html",
+            "url": "https://www.hikki.site/2022/04/11/ee3e214f.html",
+            "title": "QQ/微信/支付宝 收款码美化",
+            "date_published": "2022-04-10T17:19:45.000Z",
+            "content_html": "<p>刚发现个不错的网站，叫<span class=\"exturl\" data-url=\"aHR0cHM6Ly9jbGkuaW0v\">草料二维码</span></p>\n",
+            "tags": [
+                "生活",
+                "好物推荐",
+                "好物推荐",
+                "一个小技巧"
+            ]
+        },
+        {
             "id": "https://www.hikki.site/2022/04/11/2fbd98c3.html",
             "url": "https://www.hikki.site/2022/04/11/2fbd98c3.html",
             "title": "如何给PicGo添加水印",
@@ -253,20 +266,6 @@
             "title": "第七篇：购买域名---从0基础搭建Hexo博客",
             "date_published": "2022-03-29T16:27:30.000Z",
             "content_html": "<h2 id=\"购买域名\"><a class=\"markdownIt-Anchor\" href=\"#购买域名\">#</a> 购买域名</h2>\n<p><strong>打开 [万网官网][<span class=\"exturl\" data-url=\"aHR0cHM6Ly93YW53YW5nLmFsaXl1bi5jb20=\">https://wanwang.aliyun.com</span>]</strong></p>\n<h3 id=\"注册账号\"><a class=\"markdownIt-Anchor\" href=\"#注册账号\">#</a> 注册账号</h3>\n<ol>\n<li>我这里使用的是支付宝登录</li>\n</ol>\n<p><img data-src=\"https://s2.loli.net/2022/03/30/rygEU1BWAnlkHLw.jpg\" alt=\"\"></p>\n<h3 id=\"输入域名\"><a class=\"markdownIt-Anchor\" href=\"#输入域名\">#</a> 输入域名</h3>\n<ol start=\"2\">\n<li>输入自己想要的域名，搜索</li>\n</ol>\n<p><img data-src=\"https://s2.loli.net/2022/03/30/4CnXuINvtWgTe7Q.jpg\" alt=\"\"></p>\n<ol start=\"3\">\n<li>\n<p><img data-src=\"https://s2.loli.net/2022/03/30/YVbD4TrPzAklFti.jpg\" alt=\"\"></p>\n</li>\n<li>\n<p>点击立即购买</p>\n</li>\n</ol>\n<p><img data-src=\"https://s2.loli.net/2022/03/30/DeVr86NbnHGTs2d.jpg\" alt=\"\"></p>\n<ol start=\"5\">\n<li>选择年限</li>\n</ol>\n<p><img data-src=\"https://s2.loli.net/2022/03/30/cWOQ3Lakhi8V2Kt.jpg\" alt=\"\"></p>\n<ol start=\"6\">\n<li>将域名持有者选为 “个人”</li>\n<li>新建信息模板</li>\n<li>选择你填的资料</li>\n<li>验证邮箱 (点击 <code>去验证</code> )</li>\n<li>立即购买</li>\n</ol>\n<p><img data-src=\"https://s2.loli.net/2022/03/30/ykFrIJputCAawbq.jpg\" alt=\"\"></p>\n<p><img data-src=\"https://s2.loli.net/2022/03/30/93TRVgPZxYrnhA7.jpg\" alt=\"\"></p>\n<ol start=\"11\">\n<li>支付成功，点击进入域名控制台</li>\n</ol>\n<p><img data-src=\"https://s2.loli.net/2022/03/30/Q1JWYLqxVKmCshf.jpg\" alt=\"\"></p>\n<ol start=\"12\">\n<li>等待审核。(我这边审核大概半小时就好了)</li>\n</ol>\n<p><img data-src=\"https://s2.loli.net/2022/03/30/KsrTi1u3pqna2Ue.jpg\" alt=\"\"></p>\n",
-            "tags": [
-                "计算机科学",
-                "博客",
-                "零基础搭建Hexo个人博客系列",
-                "博客",
-                "教程"
-            ]
-        },
-        {
-            "id": "https://www.hikki.site/2022/03/30/dc09a46c.html",
-            "url": "https://www.hikki.site/2022/03/30/dc09a46c.html",
-            "title": "第六篇：将博客部署到GitHub---从0基础搭建Hexo博客",
-            "date_published": "2022-03-29T16:25:37.000Z",
-            "content_html": "<h2 id=\"将hexo部署到github\"><a class=\"markdownIt-Anchor\" href=\"#将hexo部署到github\">#</a> 将 Hexo 部署到 github</h2>\n<ol>\n<li>打开 <code>blog</code>  文件夹，打开 <code>_config.yml</code>  文件</li>\n</ol>\n<p><img data-src=\"https://s2.loli.net/2022/03/30/XsNufKGeyItOwnB.jpg\" alt=\"\"></p>\n<ol start=\"2\">\n<li>滑到最下面找到如图</li>\n</ol>\n<p><img data-src=\"https://s2.loli.net/2022/03/30/heHXcG2u1anBOAI.jpg\" alt=\"\"></p>\n<ol start=\"3\">\n<li>\n<p><code>打开仓库---&gt;code---&gt;SSH---&gt;copy</code> ，复制 <code>SSH</code>  的链接</p>\n<p><img data-src=\"https://s2.loli.net/2022/03/30/ewWNlivjaSzXo2f.jpg\" alt=\"\"></p>\n</li>\n<li>\n<p>填到 <code>步骤2 </code> 的文件中。如下图</p>\n</li>\n</ol>\n<p><img data-src=\"http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204012026.jpg\" alt=\"\"></p>\n<figure class=\"highlight yml\"><figcaption data-lang=\"YAML\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre><span class=\"token key atrule\">deploy</span><span class=\"token punctuation\">:</span></pre></td></tr><tr><td data-num=\"2\"></td><td><pre>  <span class=\"token key atrule\">type</span><span class=\"token punctuation\">:</span> git</pre></td></tr><tr><td data-num=\"3\"></td><td><pre>  <span class=\"token key atrule\">repo</span><span class=\"token punctuation\">:</span> git@github.com<span class=\"token punctuation\">:</span>0000rookie/github.io.git</pre></td></tr><tr><td data-num=\"4\"></td><td><pre>  <span class=\"token key atrule\">branch</span><span class=\"token punctuation\">:</span> main</pre></td></tr></table></figure><ol start=\"5\">\n<li>\n<p>回到 <code>blog</code>  文件夹中，鼠标右键打开 <code>git bash here</code> ，安装 <code>git</code>  部署插件</p>\n<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"></figcaption><table><tr class=\"marked\"><td data-num=\"1\"></td><td><pre><span class=\"token function\">npm</span> <span class=\"token function\">install</span> hexo-deployer-git --save</pre></td></tr></table></figure></li>\n</ol>\n<p><img data-src=\"https://s2.loli.net/2022/03/30/3bDkNml7QBJVR6C.jpg\" alt=\"\"></p>\n<ol start=\"6\">\n<li>\n<p>依次输入以下三条命令，</p>\n<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"></figcaption><table><tr class=\"marked\"><td data-num=\"1\"></td><td><pre>hexo clean </pre></td></tr><tr class=\"marked\"><td data-num=\"2\"></td><td><pre>hexo g</pre></td></tr><tr class=\"marked\"><td data-num=\"3\"></td><td><pre>hexo d</pre></td></tr></table></figure></li>\n</ol>\n<p><img data-src=\"https://s2.loli.net/2022/03/30/gucNPIbDdVnfw9v.jpg\" alt=\"\"></p>\n<p><img data-src=\"https://s2.loli.net/2022/03/30/ROfaZgmzFwec1ND.jpg\" alt=\"\"></p>\n<ol start=\"7\">\n<li>\n<p>这是浏览器打开 <code>https://aliang518.github.io/</code>  就是你的博客了</p>\n<figure class=\"highlight html\"><figcaption data-lang=\"HTML\"></figcaption><table><tr class=\"marked\"><td data-num=\"1\"></td><td><pre>https://aliang518.github.io/</pre></td></tr></table></figure></li>\n</ol>\n<p><img data-src=\"https://s2.loli.net/2022/03/30/VeGUNhMdplYP5rz.jpg\" alt=\"\"></p>\n",
             "tags": [
                 "计算机科学",
                 "博客",
