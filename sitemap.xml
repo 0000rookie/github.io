@@ -254,13 +254,6 @@
 
   
   <url>
-    <loc>https://www.aliang.live/tags/%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2022-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2022-04-10</lastmod>
     <changefreq>weekly</changefreq>
@@ -268,7 +261,7 @@
   </url>
   
   <url>
-    <loc>https://www.aliang.live/tags/python/</loc>
+    <loc>https://www.aliang.live/tags/%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2022-04-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -282,13 +275,6 @@
   </url>
   
   <url>
-    <loc>https://www.aliang.live/tags/python%E5%AE%9E%E9%AA%8C/</loc>
-    <lastmod>2022-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.aliang.live/tags/hexo%E4%B8%BB%E9%A2%98/</loc>
     <lastmod>2022-04-10</lastmod>
     <changefreq>weekly</changefreq>
@@ -296,7 +282,28 @@
   </url>
   
   <url>
+    <loc>https://www.aliang.live/tags/python/</loc>
+    <lastmod>2022-04-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.aliang.live/tags/python%E5%AE%9E%E9%AA%8C/</loc>
+    <lastmod>2022-04-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2022-04-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.aliang.live/tags/%E6%97%A5%E8%AE%B0/</loc>
     <lastmod>2022-04-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -311,13 +318,6 @@
   
   <url>
     <loc>https://www.aliang.live/tags/BUG/</loc>
-    <lastmod>2022-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.aliang.live/tags/%E6%97%A5%E8%AE%B0/</loc>
     <lastmod>2022-04-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -340,7 +340,7 @@
   </url>
   
   <url>
-    <loc>https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B4/</loc>
+    <loc>https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/</loc>
     <lastmod>2022-04-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -354,7 +354,7 @@
   </url>
   
   <url>
-    <loc>https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/</loc>
+    <loc>https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B4/</loc>
     <lastmod>2022-04-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -368,13 +368,6 @@
   </url>
   
   <url>
-    <loc>https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/</loc>
-    <lastmod>2022-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E6%90%AD%E5%8D%9A%E5%AE%A2%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/</loc>
     <lastmod>2022-04-10</lastmod>
     <changefreq>weekly</changefreq>
@@ -382,14 +375,14 @@
   </url>
   
   <url>
-    <loc>https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E6%A8%A1%E5%9D%97/</loc>
+    <loc>https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/</loc>
     <lastmod>2022-04-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/</loc>
+    <loc>https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E6%A8%A1%E5%9D%97/</loc>
     <lastmod>2022-04-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -411,6 +404,13 @@
   
   <url>
     <loc>https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E4%B8%80%E4%B8%AA%E5%B0%8F%E6%8A%80%E5%B7%A7/</loc>
+    <lastmod>2022-04-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/</loc>
     <lastmod>2022-04-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
