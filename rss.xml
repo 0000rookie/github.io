@@ -249,7 +249,33 @@
             <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
             <category term="技术杂谈" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" />
             <pubDate>Mon, 04 Apr 2022 14:11:09 +0800</pubDate>
-            <description><![CDATA[  ]]></description>
+            <description><![CDATA[ &lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;以下全部操作环境都是在 &lt;code&gt;window10&lt;/code&gt; 、 &lt;code&gt;github&lt;/code&gt;  执行&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;使用git&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#使用git&#34;&gt;#&lt;/a&gt; 使用 Git&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; init 			&lt;span class=&#34;token comment&#34;&gt;#初始化当前文件夹为仓库，默认是 master 分支&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;token builtin class-name&#34;&gt;help&lt;/span&gt; -a 		&lt;span class=&#34;token comment&#34;&gt;# 显示完全的指令列表&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;add&lt;/span&gt; text.txt 	&lt;span class=&#34;token comment&#34;&gt;# 添加 text.txt 文件加入到 Git 系统的索引中，tips: 可以使用通配符添加 “*” 和 “.”&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; status			&lt;span class=&#34;token comment&#34;&gt;# 查看当前 Git 的状态，是否有新文件没有加入到 Git 索引中&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; commit -m &lt;span class=&#34;token string&#34;&gt;&#34;操作说明&#34;&lt;/span&gt; --author&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;操作者姓名&#39;&lt;/span&gt; --email&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;操作者邮箱&#39;&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;#把已经添加到 Git 索引的所有文件到推送到 repository，一般我们在使用 github 的时候，就是通过这个指令把文件推送到 github 的&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;gitk 				&lt;span class=&#34;token comment&#34;&gt;# 启动图形界面查看 repository 有哪些文件&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 一般在离开 git bash here 的时候习惯用 exit 结束&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ol&gt;
+&lt;li&gt;启动 &lt;code&gt;Git bash here&lt;/code&gt;  使用 &lt;code&gt;cd&lt;/code&gt;  进入某文件夹&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git init&lt;/code&gt;  初始化当前文件夹，建立 &lt;code&gt;Git系统索引&lt;/code&gt; ，此时当前文件夹会出现一个 &lt;code&gt;.git&lt;/code&gt;  文件夹&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git add text.txt&lt;/code&gt;  把 &lt;code&gt;text.txt&lt;/code&gt;  文件添加到 &lt;code&gt;Git系统索引&lt;/code&gt; 中&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git commit -m &amp;quot;此次提交操作说明&amp;quot; --author=&#39;操作者姓名&#39; --email=&#39;操作者的邮箱&#39;&lt;/code&gt;  将已经添加到 &lt;code&gt;Git系统索引&lt;/code&gt; 的文件全部提交到 &lt;code&gt;github&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;tips：如果你在 git add text.txt 指令之后，你对 text.txt 文件进行修改，此时你新修改的内容是不被保存到 github 上面的，保存到 github 的是你修改前的内容&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;以上如有错误，欢迎指出&lt;/p&gt;
+&lt;/div&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://www.aliang.live/2022/04/04/43d2d741.html</guid>
+            <title>Git详细使用方法</title>
+            <link>https://www.aliang.live/2022/04/04/43d2d741.html</link>
+            <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+            <category term="技术杂谈" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" />
+            <pubDate>Mon, 04 Apr 2022 14:11:09 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;初始化仓库&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#初始化仓库&#34;&gt;#&lt;/a&gt; 初始化仓库&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; init 			&lt;span class=&#34;token comment&#34;&gt;#初始化当前文件夹为仓库，默认是 master 分支&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;token builtin class-name&#34;&gt;help&lt;/span&gt; -a 		&lt;span class=&#34;token comment&#34;&gt;# 显示完全的指令列表&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;add&lt;/span&gt; text.txt 	&lt;span class=&#34;token comment&#34;&gt;# 添加 text.txt 文件加入到 Git 系统的索引中，tips: 可以使用通配符添加 “*” 和 “.”&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; status			&lt;span class=&#34;token comment&#34;&gt;# 查看当前 Git 的状态，是否有新文件没有加入到 Git 索引中&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; commit -m &lt;span class=&#34;token string&#34;&gt;&#34;操作说明&#34;&lt;/span&gt; --author&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;操作者姓名&#39;&lt;/span&gt; --email&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;操作者邮箱&#39;&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;#把已经添加到 Git 索引的所有文件到推送到 repository，一般我们在使用 github 的时候，就是通过这个指令把文件推送到 github 的&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;gitk 				&lt;span class=&#34;token comment&#34;&gt;# 启动图形界面查看 repository 有哪些文件&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 一般在离开 git bash here 的时候习惯用 exit 结束&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
         </item>
         <item>
             <guid isPermalink="true">https://www.aliang.live/2022/04/03/5d5981b0.html</guid>
@@ -874,92 +900,6 @@
 &lt;li&gt;&lt;code&gt;ctrl+s&lt;/code&gt; ，停止本地服务器运行&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;strong&gt;目前博客已经基本完成了&lt;/strong&gt;&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://www.aliang.live/2022/03/30/cf63c07.html</guid>
-            <title>第四篇：安装Nodejs---从0基础搭建Hexo博客</title>
-            <link>https://www.aliang.live/2022/03/30/cf63c07.html</link>
-            <category term="计算机科学" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-            <category term="博客" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
-            <category term="零基础搭建Hexo个人博客系列" scheme="https://www.aliang.live/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" />
-            <category term="博客" scheme="https://www.aliang.live/tags/%E5%8D%9A%E5%AE%A2/" />
-            <category term="教程" scheme="https://www.aliang.live/tags/%E6%95%99%E7%A8%8B/" />
-            <pubDate>Wed, 30 Mar 2022 00:24:41 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;nodejs安装及配置环境&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#nodejs安装及配置环境&#34;&gt;#&lt;/a&gt; Node.js 安装及配置环境&lt;/h2&gt;
-&lt;h3 id=&#34;nodejs安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#nodejs安装&#34;&gt;#&lt;/a&gt;  &lt;code&gt;node.js&lt;/code&gt;  安装&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;我这里安装在 &lt;code&gt;C:\app\nodejs&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/N2pSe6Oq9BVLjbK.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;安装完之后打开 &lt;code&gt;cmd&lt;/code&gt; ，输入 &lt;code&gt;node -v&lt;/code&gt;  和 &lt;code&gt;npm -v&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/Cln8IqXUAWwdMBK.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;设置npm在安装全局模块时的路径和环境变量&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#设置npm在安装全局模块时的路径和环境变量&#34;&gt;#&lt;/a&gt; 设置 npm 在安装全局模块时的路径和环境变量&lt;/h3&gt;
-&lt;p&gt;如果不设置的话，安装模块是默认在 C 盘的，会占用 C 盘空间，我这边把安装路径修改一下，建议你也改一下。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;在 &lt;code&gt;nodejs&lt;/code&gt;  下创建两个目录 &lt;code&gt;ndoe_cache&lt;/code&gt;  和 &lt;code&gt;node_global&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/il5vILhOF76qTRs.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;选择 &lt;code&gt;node_cache&lt;/code&gt;  右击打开属性，把权限下的 “完全控制” 选上&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/o8THeYdwjvLzSmb.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;同理，选择 &lt;code&gt;node_global&lt;/code&gt;  右击打开属性，把权限下的 “完全控制” 也选上&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/iETUhyYIKm7q9FL.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;ol start=&#34;4&#34;&gt;
-&lt;li&gt;复制 &lt;code&gt;node_global&lt;/code&gt;  和 &lt;code&gt;node_cache&lt;/code&gt;  的路径&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/Aw8O2gfGHMUWeku.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;ol start=&#34;5&#34;&gt;
-&lt;li&gt;然后再返回刚刚打开的 cmd, 输入以下代码&lt;/li&gt;
-&lt;/ol&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; config &lt;span class=&#34;token builtin class-name&#34;&gt;set&lt;/span&gt; prefix &lt;span class=&#34;token string&#34;&gt;&#34;C:&lt;span class=&#34;token entity&#34; title=&#34;\a&#34;&gt;\a&lt;/span&gt;pp&lt;span class=&#34;token entity&#34; title=&#34;\n&#34;&gt;\n&lt;/span&gt;odejs&lt;span class=&#34;token entity&#34; title=&#34;\n&#34;&gt;\n&lt;/span&gt;ode_global&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; config &lt;span class=&#34;token builtin class-name&#34;&gt;set&lt;/span&gt; cache &lt;span class=&#34;token string&#34;&gt;&#34;C:&lt;span class=&#34;token entity&#34; title=&#34;\a&#34;&gt;\a&lt;/span&gt;pp&lt;span class=&#34;token entity&#34; title=&#34;\n&#34;&gt;\n&lt;/span&gt;odejs&lt;span class=&#34;token entity&#34; title=&#34;\n&#34;&gt;\n&lt;/span&gt;ode_cache&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/piUmIH6Zv9SO8c3.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;ol start=&#34;6&#34;&gt;
-&lt;li&gt;
-&lt;p&gt;设置完路径之后，我们还要去系统环境变量修改一下&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;打开桌面 —&amp;gt; 此电脑 —&amp;gt; 属性 —&amp;gt; 高级系统设置 —&amp;gt; 环境变量&lt;/strong&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/FyrUTcpvfkuGBAP.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;ol start=&#34;7&#34;&gt;
-&lt;li&gt;打开高级系统设置&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/QvpAOLeS53EbMj9.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;ol start=&#34;8&#34;&gt;
-&lt;li&gt;打开环境变量&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/xVQKP2vjLJ83ztU.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;ol start=&#34;9&#34;&gt;
-&lt;li&gt;在系统变量中新建一个变量，名为 &lt;code&gt;NODE_PATH&lt;/code&gt; , 值为 &lt;code&gt;C:\app\nodejs\node_global\node_modules&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/53jV6FgzIcTXSM8.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/Ust62PMjuSJ9iWw.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;ol start=&#34;10&#34;&gt;
-&lt;li&gt;然后编辑上方的用户变量的 Path, 编辑修改为 &lt;code&gt;C:\app\nodejs\node_global&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/btcT8qOj6dkENLX.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/dnw9lCxOqj1GAH2.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/nYmStTyWgz4bejo.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;全部变量修改结果如下图&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#全部变量修改结果如下图&#34;&gt;#&lt;/a&gt; 全部变量修改结果，如下图&lt;/h3&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/HUSnKtdhMBgvcOq.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;然后打开 &lt;code&gt;cmd&lt;/code&gt;  测试一下路径设置和环境变量有没有设置正确，如果没有设置正确的话，在 &lt;code&gt;node_global&lt;/code&gt;  是看不到有 &lt;code&gt;webpack&lt;/code&gt;  文件夹的&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;安装过程&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/FY1g5nJesScwHvC.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;安装成功&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/8H7v1uoA3zn9WKs.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;出现以下路径说明安装成功了 &lt;code&gt;node_global---&amp;gt;node_modules---&amp;gt;webpack&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2022/03/30/ugOVX3WGfpZ9DqP.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt; &lt;code&gt;nodejs&lt;/code&gt;  环境配置到此就完成啦&lt;/strong&gt;&lt;/p&gt;
  ]]></description>
         </item>
     </channel>
