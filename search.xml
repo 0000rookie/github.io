@@ -11,281 +11,13 @@
       </tags>
   </entry>
   <entry>
-    <title>QQ/微信/支付宝 收款码美化</title>
-    <url>/2022/04/11/ee3e214f.html</url>
-    <content><![CDATA[<p>有时候想贴个二维码出来，但是觉得这个二维码太丑了，然后就发现了个神奇的网站，叫<span class="exturl" data-url="aHR0cHM6Ly9jbGkuaW0v">草料二维码</span></p>
-<p>可以美化微信、支付宝、钉钉等二维码，文字转二维码等等功能，各种各样。</p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204120247.jpeg" alt=""></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204120248.jpeg" alt=""></p>
-]]></content>
-      <categories>
-        <category>生活</category>
-        <category>好物推荐</category>
-      </categories>
-      <tags>
-        <tag>好物推荐</tag>
-        <tag>一个小技巧</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>日记分享2022.4.13</title>
-    <url>/2022/04/13/b9e6c7bf.html</url>
-    <content><![CDATA[<div class="note danger">
-<p>我周三还没开始写作业</p>
-</div>
-<p>周一的一堆作业，这周不知道怎么回事，一直都是提不起精神学习，一直在捣鼓自己喜欢的东西，博客，git 等等，对自己喜欢的东西很有兴趣捣鼓，不喜欢的数据结构确实提不起兴趣，喜欢 python、linux 就会很主动去学习。算了算了，今晚好好睡个觉，明天好好学习。</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-        <category>日记</category>
-      </categories>
-      <tags>
-        <tag>日记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>4.9日记分享</title>
-    <url>/2022/04/10/ef5acbc6.html</url>
-    <content><![CDATA[<h2 id="49日记分享"><a class="markdownIt-Anchor" href="#49日记分享">#</a> 4.9 日记分享</h2>
-<p>自从开始玩博客之后，经常用到 <code>Git</code> ，感觉非常重要。如今每个企业都基本用到 <code>Git</code> ，如果就业的时候不会使用 <code>Git</code> ，感觉还是落后于别人一步的，而且，现在也有时间学习，倒不如现在开始学习一下，顺便玩一玩服务器，可能对 <code>Git</code>  会更加熟练，话不多说，直接动手开始学习。</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-        <category>日记</category>
-      </categories>
-      <tags>
-        <tag>日记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux忘记数据库密码</title>
-    <url>/2022/04/12/3d358537.html</url>
-    <content><![CDATA[<p>这几天班里在搞团日活动，有个活动是 <code>Oj</code>  比赛，通过同学们刷题提高语言能力，因此需要一个 <code>Oj</code>  平台统计数据，我就想看看自己能不能搭建一个 <code>Oj</code>  平台，然后给大家测试题目。</p>
-<p>在部署项目过程中，我忘记 <code>mysql</code>  密码了，导致我数据库想修改数据没办法。</p>
-<p>经过一番折腾，找到了 <code>mysql</code>  初始密码，记录一下。</p>
-<p><code>mysql</code>  初始密码文件路径： <code>/etc/mysql/debian.cnf</code></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204120203.jpeg" alt=""></p>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>每日一更</category>
-      </categories>
-      <tags>
-        <tag>每日一更</tag>
-        <tag>Linux</tag>
-        <tag>教程</tag>
-        <tag>数据库</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Python组合数据类型</title>
-    <url>/2022/04/08/cd7b33aa.html</url>
-    <content><![CDATA[<div class="note info">
-<p>每天记录自己学习情况</p>
-</div>
-<h2 id="列表检查是否存在重复元素"><a class="markdownIt-Anchor" href="#列表检查是否存在重复元素">#</a> 列表检查是否存在重复元素</h2>
-<p>编写函数，用列表为参数，判断有无重复元素，若有就返回 <code>True</code> ，否则，返回 <code>False</code> ，并调用函数来验证。可使用以下列表来进行验证：</p>
-<p>lst_1 = [1, 3, 4, 5, 1, 45]</p>
-<p>lst_2 = [‘N’, ‘B’, ‘A’, ‘2022’]</p>
-<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>lst_1 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">45</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>lst_2 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'N'</span><span class="token punctuation">,</span> <span class="token string">'B'</span><span class="token punctuation">,</span> <span class="token string">'A'</span><span class="token punctuation">,</span> <span class="token string">'2022'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>lst_1<span class="token punctuation">.</span>sort<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre>lst_2<span class="token punctuation">.</span>sort<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre><span class="token keyword">def</span> <span class="token function">prin</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre>    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"["</span><span class="token punctuation">,</span> end<span class="token operator">=</span><span class="token string">""</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="8"></td><td><pre>    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="9"></td><td><pre>        <span class="token keyword">print</span><span class="token punctuation">(</span>x<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> end<span class="token operator">=</span><span class="token string">""</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="10"></td><td><pre>        <span class="token keyword">if</span> i <span class="token operator">&lt;</span> <span class="token builtin">len</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="11"></td><td><pre>            <span class="token keyword">print</span><span class="token punctuation">(</span>end<span class="token operator">=</span><span class="token string">","</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="12"></td><td><pre>        <span class="token keyword">else</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="13"></td><td><pre>            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"]"</span><span class="token punctuation">,</span> end<span class="token operator">=</span><span class="token string">"  "</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="14"></td><td><pre>    <span class="token keyword">for</span> l <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="15"></td><td><pre>        <span class="token keyword">if</span> x<span class="token punctuation">[</span>l<span class="token punctuation">]</span> <span class="token operator">==</span> x<span class="token punctuation">[</span>l <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="16"></td><td><pre>            FF <span class="token operator">=</span> <span class="token string">"有重复元素"</span></pre></td></tr><tr class="marked"><td data-num="17"></td><td><pre>            <span class="token keyword">break</span></pre></td></tr><tr class="marked"><td data-num="18"></td><td><pre>        <span class="token keyword">else</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="19"></td><td><pre>            FF <span class="token operator">=</span> <span class="token string">"无重复元素"</span></pre></td></tr><tr class="marked"><td data-num="20"></td><td><pre>    <span class="token keyword">print</span><span class="token punctuation">(</span>FF<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="21"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="22"></td><td><pre>prin<span class="token punctuation">(</span>lst_1<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="23"></td><td><pre>prin<span class="token punctuation">(</span>lst_2<span class="token punctuation">)</span></pre></td></tr></table></figure><h2 id="集合检查是否存在重复元素"><a class="markdownIt-Anchor" href="#集合检查是否存在重复元素">#</a> 集合检查是否存在重复元素</h2>
-<p>编写函数，用列表为参数，利用集合元素的无重复性来判断列表有无重复元素，若有就返回 <code>True</code> ，否则，返回 <code>False</code> ，并调用函数来验证</p>
-<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>lst_1 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">4445</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>lst_2 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'N'</span><span class="token punctuation">,</span> <span class="token string">'B'</span><span class="token punctuation">,</span> <span class="token string">'A'</span><span class="token punctuation">,</span> <span class="token string">'2022'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre><span class="token keyword">def</span> <span class="token function">lstt</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre>    lst1 <span class="token operator">=</span> <span class="token builtin">list</span><span class="token punctuation">(</span><span class="token builtin">set</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre>    <span class="token keyword">if</span> <span class="token builtin">len</span><span class="token punctuation">(</span>lst1<span class="token punctuation">)</span> <span class="token operator">&lt;</span> <span class="token builtin">len</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre>        <span class="token keyword">return</span> <span class="token boolean">True</span></pre></td></tr><tr class="marked"><td data-num="8"></td><td><pre>    <span class="token keyword">else</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="9"></td><td><pre>        <span class="token keyword">return</span> <span class="token boolean">False</span></pre></td></tr><tr class="marked"><td data-num="10"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="11"></td><td><pre>result1 <span class="token operator">=</span> lstt<span class="token punctuation">(</span>lst_1<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="12"></td><td><pre>result2 <span class="token operator">=</span> lstt<span class="token punctuation">(</span>lst_2<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="13"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="14"></td><td><pre><span class="token keyword">def</span> <span class="token function">print1</span><span class="token punctuation">(</span>result<span class="token punctuation">,</span> lst<span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="15"></td><td><pre>    <span class="token keyword">if</span> result <span class="token operator">==</span> <span class="token boolean">True</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="16"></td><td><pre>        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'列表：&#123;&#125;有 重复元素'</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>lst<span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="17"></td><td><pre>    <span class="token keyword">else</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="18"></td><td><pre>        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'列表：&#123;&#125;无 重复元素'</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>lst<span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="19"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="20"></td><td><pre>print1<span class="token punctuation">(</span>result1<span class="token punctuation">,</span> lst_1<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="21"></td><td><pre>print1<span class="token punctuation">(</span>result2<span class="token punctuation">,</span> lst_2<span class="token punctuation">)</span></pre></td></tr></table></figure><h2 id="生日悖论"><a class="markdownIt-Anchor" href="#生日悖论">#</a> 生日悖论</h2>
-<p>现假定一年只有 <code>365</code>  天，不考虑闰年情况。请先阅读<span class="exturl" data-url="aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTclOTQlOUYlRTYlOTclQTUlRTYlODIlOTYlRTglQUUlQkEvMjcxNTI5MA==">生日悖论</span> 相关知识，再按下列要求编程模拟检验：<br>
-(1) 编写函数 <code>createBirthday()：</code> 使用随机函数生成某人的生日，结果为字符串，由 <code>01.01</code>  到 <code>12.31</code>  表示，月份。天均为两位数，中间用点号 (.) 隔开；<br>
-(2) 编写函数 <code>groupBirthdays(n)：</code> 调用 <code>createBirthday()</code>  生成团队成员的生日，用列表方式返回，其中： <code>n为</code> 团队成员数；<br>
-(3) 主函数：输入团队成员数，调用 <code>groupBirthdays(n)</code>  和创建 <code>isRepeat()</code>  函数查重，模拟 <code>100000</code>  次，计算至少有两人生日相同的比例</p>
-<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token keyword">import</span> random <span class="token keyword">as</span> r</pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>num <span class="token operator">=</span> <span class="token number">100000</span></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre><span class="token keyword">def</span> <span class="token function">createBirthday</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre>    birthday <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="8"></td><td><pre>    month <span class="token operator">=</span> <span class="token builtin">str</span><span class="token punctuation">(</span>r<span class="token punctuation">.</span>randint<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">12</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span>rjust<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">'0'</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="9"></td><td><pre>    day <span class="token operator">=</span> <span class="token builtin">str</span><span class="token punctuation">(</span>r<span class="token punctuation">.</span>uniform<span class="token punctuation">(</span><span class="token number">0.01</span><span class="token punctuation">,</span> <span class="token number">0.31</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token number">4</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="10"></td><td><pre>    birthday <span class="token operator">=</span> month <span class="token operator">+</span> day</pre></td></tr><tr class="marked"><td data-num="11"></td><td><pre>    <span class="token comment"># print(birthday)</span></pre></td></tr><tr class="marked"><td data-num="12"></td><td><pre>    <span class="token comment"># print(type(birthday))</span></pre></td></tr><tr class="marked"><td data-num="13"></td><td><pre>    <span class="token keyword">return</span> birthday</pre></td></tr><tr class="marked"><td data-num="14"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="15"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="16"></td><td><pre><span class="token keyword">def</span> <span class="token function">groupBirthdays</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="17"></td><td><pre>    lst <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="18"></td><td><pre>    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="19"></td><td><pre>        lst<span class="token punctuation">.</span>append<span class="token punctuation">(</span>createBirthday<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="20"></td><td><pre>    <span class="token comment"># print(lst)</span></pre></td></tr><tr class="marked"><td data-num="21"></td><td><pre>    <span class="token keyword">return</span> lst</pre></td></tr><tr class="marked"><td data-num="22"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="23"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="24"></td><td><pre><span class="token keyword">def</span> <span class="token function">isRepeat</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="25"></td><td><pre>    <span class="token keyword">if</span> <span class="token builtin">len</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token builtin">len</span><span class="token punctuation">(</span><span class="token builtin">set</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="26"></td><td><pre>        <span class="token keyword">return</span> <span class="token boolean">False</span>  <span class="token comment"># 不重复</span></pre></td></tr><tr class="marked"><td data-num="27"></td><td><pre>    <span class="token keyword">else</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="28"></td><td><pre>        <span class="token keyword">return</span> <span class="token boolean">True</span>  <span class="token comment"># 重复</span></pre></td></tr><tr class="marked"><td data-num="29"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="30"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="31"></td><td><pre><span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="32"></td><td><pre>    x <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"请输入团队人数："</span><span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="33"></td><td><pre>    nums <span class="token operator">=</span> <span class="token number">0</span></pre></td></tr><tr class="marked"><td data-num="34"></td><td><pre>    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">100000</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="35"></td><td><pre>        times <span class="token operator">=</span> isRepeat<span class="token punctuation">(</span>groupBirthdays<span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="36"></td><td><pre>        <span class="token keyword">if</span> times <span class="token operator">==</span> <span class="token boolean">True</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="37"></td><td><pre>            nums <span class="token operator">+=</span> <span class="token number">1</span></pre></td></tr><tr class="marked"><td data-num="38"></td><td><pre>        <span class="token keyword">else</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="39"></td><td><pre>            <span class="token keyword">continue</span></pre></td></tr><tr class="marked"><td data-num="40"></td><td><pre>    y <span class="token operator">=</span> <span class="token builtin">str</span><span class="token punctuation">(</span>nums <span class="token operator">/</span> <span class="token number">100000</span> <span class="token operator">*</span> <span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token number">5</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="41"></td><td><pre>    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"假设一个团队有&#123;&#125;人，用随机模拟&#123;&#125;次，其中至少有两人生日相同的比例为&#123;&#125;%"</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> <span class="token number">100000</span><span class="token punctuation">,</span> y<span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="42"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="43"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="44"></td><td><pre><span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="45"></td><td><pre>    main<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr></table></figure><h2 id="文字出现频率"><a class="markdownIt-Anchor" href="#文字出现频率">#</a> 文字出现频率</h2>
-<p>编写程序，对文档” 习总书记在北京大学师生座谈会上的讲话.txt” 进行分析，按出现频率的降序打印字符 (前 20 位)。</p>
-<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token keyword">import</span> jieba</pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>txt <span class="token operator">=</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">"F:\\习总书记在北京大学师生座谈会上的讲话 .txt"</span><span class="token punctuation">,</span><span class="token string">"r"</span><span class="token punctuation">,</span>encoding<span class="token operator">=</span><span class="token string">'gbk'</span><span class="token punctuation">,</span>errors<span class="token operator">=</span><span class="token string">'ignore'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre>lst <span class="token operator">=</span> jieba<span class="token punctuation">.</span>lcut<span class="token punctuation">(</span>txt<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre>cout <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre><span class="token keyword">for</span> ls <span class="token keyword">in</span> lst<span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre>    ls <span class="token operator">=</span> ls<span class="token punctuation">.</span>replace<span class="token punctuation">(</span><span class="token string">' '</span><span class="token punctuation">,</span><span class="token string">''</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="8"></td><td><pre>    <span class="token keyword">if</span> <span class="token builtin">len</span><span class="token punctuation">(</span>ls<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="9"></td><td><pre>        <span class="token keyword">continue</span></pre></td></tr><tr class="marked"><td data-num="10"></td><td><pre>    <span class="token keyword">else</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="11"></td><td><pre>        cout<span class="token punctuation">[</span>ls<span class="token punctuation">]</span> <span class="token operator">=</span> cout<span class="token punctuation">.</span>get<span class="token punctuation">(</span>ls<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token number">1</span></pre></td></tr><tr class="marked"><td data-num="12"></td><td><pre>items <span class="token operator">=</span> <span class="token builtin">list</span><span class="token punctuation">(</span>cout<span class="token punctuation">.</span>items<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="13"></td><td><pre>items<span class="token punctuation">.</span>sort<span class="token punctuation">(</span>key<span class="token operator">=</span><span class="token keyword">lambda</span> x<span class="token punctuation">:</span> x<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> reverse<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="14"></td><td><pre><span class="token keyword">for</span> item <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="15"></td><td><pre>    word<span class="token punctuation">,</span> count <span class="token operator">=</span> items<span class="token punctuation">[</span>item<span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="16"></td><td><pre>    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"词语:【&#123;&#125;】,出现次数:&#123;&#125;"</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>word<span class="token punctuation">,</span> count<span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr></table></figure><div class="note warning">
-<p>以上如有错误，欢迎留言指出</p>
-</div>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>每日一更</category>
-      </categories>
-      <tags>
-        <tag>每日一更</tag>
-        <tag>python</tag>
-        <tag>python实验</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>CentOS新增root用户</title>
-    <url>/2022/04/16/111f4f09.html</url>
-    <content><![CDATA[<h2 id="进入root"><a class="markdownIt-Anchor" href="#进入root">#</a> 进入 root</h2>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">su</span> root  				<span class="token comment"># 进入 root 时需要输入密码，密码是不显示的</span></pre></td></tr><tr><td data-num="2"></td><td><pre>gedit /etc/sudoers		<span class="token comment"># 打开 sudoers 文件</span></pre></td></tr></table></figure><p><img data-src="http://hikki.test.upcdn.net/2022045220.jpeg" alt=""></p>
-<h2 id="添加新用户"><a class="markdownIt-Anchor" href="#添加新用户">#</a> 添加新用户</h2>
-<p>滑到最下面找到 <code>root</code></p>
-<p>在 <code>root</code>  下面添加，</p>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>新用户名 <span class="token assign-left variable">ALL</span><span class="token operator">=</span><span class="token punctuation">(</span>ALL<span class="token punctuation">)</span> ALL </pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token comment"># 新用户必须要存在才能添加</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token comment"># lilbai518 这个用户，我之前已经创建过了</span></pre></td></tr></table></figure><p><img data-src="http://hikki.test.upcdn.net/2022045229.jpeg" alt=""></p>
-<p><img data-src="http://hikki.test.upcdn.net/2022045256.jpeg" alt=""></p>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>每日一更</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>CentoOS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>为博客添加免费的CDN加速</title>
-    <url>/2022/04/08/edaa94fb.html</url>
-    <content><![CDATA[<h2 id="设置statics"><a class="markdownIt-Anchor" href="#设置statics">#</a> 设置 <code>statics</code></h2>
-<p>在根目录或者 <code>themes</code>  下 <code>_config.yml</code>  文件下配置</p>
-<figure class="highlight yaml"><figcaption data-lang="YAML"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token key atrule">格式：statics</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//cdn.jsdelivr.net/gh/账户名/仓库名/</pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token key atrule">statics</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//cdn.jsdelivr.net/gh/0000rookie/github.io/</pre></td></tr></table></figure><p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204081139.jpg" alt=""></p>
-<h2 id="刷新cdnjsdelivr"><a class="markdownIt-Anchor" href="#刷新cdnjsdelivr">#</a> 刷新 <code>CDN.jsDelivr</code></h2>
-<p>打开浏览器输入你 <code>statics</code>  的资源路径，回车刷新一下。</p>
-<figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tr><td data-num="1"></td><td><pre>https://cdn.jsdelivr.net/gh/0000rookie/github.io/</pre></td></tr><tr><td data-num="2"></td><td><pre>https://cdn.jsdelivr.net/gh/账户名/仓库名/</pre></td></tr></table></figure><div class="note info">
-<p>如果成功了是以下的样子，如果没出现，等几分钟再刷新一下</p>
-</div>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204081149.jpg" alt=""></p>
-<div class="note info">
-<p>这个 <code>url</code>  和 <code>root</code>  是不用管的，一开始我是设置 <code>url</code>  的，但是网站没有出现样式，访问 <code>cdn</code>  的时候返回是无定义</p>
-</div>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204081142.jpg" alt=""></p>
-<div class="note info">
-<p>如果样式还是没出现，打开你网站， <code>F12</code>  调试一下，修改一下你的 <code>CSS</code>  路径，看看是哪里出问题，看报错信息是什么</p>
-</div>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204081152.jpg" alt=""></p>
-<div class="note info">
-<p>如果是出现这个错误，说明你的 <code>statics</code>  路径填错了，找不到你的路径文件</p>
-</div>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204081154.jpg" alt=""></p>
-<div class="note warning">
-<p>以上如有错误，欢迎留言指出</p>
-</div>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>每日一更</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>每日一更</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>git push origin master失败</title>
-    <url>/2022/04/08/c32e96d4.html</url>
-    <content><![CDATA[<h2 id="关于我想备份blog这件事"><a class="markdownIt-Anchor" href="#关于我想备份blog这件事">#</a> 关于我想备份 <code>blog</code>  这件事</h2>
-<details class="primary"><summary>我要怎么备份blog文件？？？</summary><div>
-<div class="note primary">
-<p>这几天在想，万一那天我想在别的电脑上写博客，或者是我电脑突然抽风硬盘坏了，我的博客数据岂不是没了？？？</p>
-<p>又或者我什么时候不小心删错了文件，岂不是出大问题？？？</p>
-</div>
-<p>带着这个问题，我一开始是找了几个 <code>PC端</code> 自动本地备份的程序，但效果不太理想。</p>
-<p>定时备份：不能保证你在设置定时的这段时间内进行 <code>hexo d</code>  多少次，如果定时备份的时间设置过短，理论上对硬盘的读写会拖慢其他程序的运行。</p>
-<p>所以在想，如果有一个程序可以监控我 <code>blog</code>  下的文件变化，每变化一次就进行记录一次，进行增量备份一次，这是我想到最完美的办法，带着这个想法，我似乎找到了一个方法。</p>
-</div></details>
-<details class="danger"><summary>持续集成服务</summary><div>
-<p>此处引用百度百科：持续集成是一种软件开发实践，即团队开发成员经常集成他们的工作，通常每个成员每天至少集成一次，也就意味着每天可能会发生多次集成。每次集成都通过自动化的构建（包括编译，发布，自动化测试）来验证，从而尽早地发现集成错误。</p>
-<p>简单来说，就是这个服务绑定了 <code>GitHub</code> ，我们每提交一次代码到 <code>GitHub</code> ，它都会抓取一次我们的仓库，检查新代码，然后提供一个运行环境，执行测试，完成构建，还能部署到服务器。</p>
-</div></details>
-<p>然后我这次在准备提交文件到我新建的 <code>hexo-backups</code>  仓库的时候，出错了，就记录一下错误。</p>
-<h2 id="git-pash-origin-master失败"><a class="markdownIt-Anchor" href="#git-pash-origin-master失败">#</a>  <code>git pash origin master</code>  失败</h2>
-<p>第一次遇见这个问题，我还以为是 <code>.gitignore</code>  文件的 <code>.DS_Store</code>  文件不存在？然后我删掉这个文件，好像还是继续报一样的错误，然后排除这个可能。</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204082309.jpg" alt="" title="git pash origin master失败"></p>
-<h2 id="新建文件测试"><a class="markdownIt-Anchor" href="#新建文件测试">#</a> 新建文件测试</h2>
-<p>然后新建文件测试一下，看是不是文件没有被加载到缓存区，发现结果已经加载到缓冲区了</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204082313.jpg" alt="" title="测试文件"></p>
-<h2 id="添加origin"><a class="markdownIt-Anchor" href="#添加origin">#</a> 添加 origin</h2>
-<p>一开始我没有删除旧的 origin，我直接添加了，直接报错。实际操作应该删除旧的 origin 的，再添加新的 origin</p>
-<figure class="highlight bash"><figcaption data-lang="bash"><span>删除origin</span></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token comment"># 删除 origin</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token function">git</span> remote remove origin</pre></td></tr></table></figure><figure class="highlight bash"><figcaption data-lang="bash"><span>添加origin</span></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token comment"># 此处的 git@github.com:0000rookie/Hexo-backups.git 是仓库的 SSH</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token function">git</span> <span class="token function">add</span> git@github.com:0000rookie/Hexo-backups.git</pre></td></tr></table></figure><figure class="highlight bash"><figcaption data-lang="bash"><span>查看origin</span></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">git</span> origin -v</pre></td></tr></table></figure><p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204082315.jpg" alt="" title="添加控制器"></p>
-<h2 id="重新commit"><a class="markdownIt-Anchor" href="#重新commit">#</a> 重新 commit</h2>
-<p>是的，我真的以为我只是修改一下 <code>origin</code>  就处理好了</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204082324.jpg" alt="" title="重新commit"></p>
-<h2 id="git-push-f-origin-master提交成功"><a class="markdownIt-Anchor" href="#git-push-f-origin-master提交成功">#</a>  <code>git push -f origin master</code>  提交成功</h2>
-<p>奇怪的是，我试试用 <code>git push -f origin master</code>  就成功了</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204082326.jpg" alt="" title="git push -f origin master"></p>
-<div class="note success">
-<p>目前还不知道是什么原因导致错误，如果你知道，欢迎留言告诉我！！！</p>
-</div>
-<div class="note warning">
-<p>以上如有错误，欢迎留言指出</p>
-</div>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>每日一更</category>
-      </categories>
-      <tags>
-        <tag>每日一更</tag>
-        <tag>教程</tag>
-        <tag>git</tag>
-        <tag>BUG</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo结构分析</title>
-    <url>/2022/04/09/ff2eb0a3.html</url>
-    <content><![CDATA[<h2 id="meta头文件"><a class="markdownIt-Anchor" href="#meta头文件">#</a>  <code>meta</code>  头文件</h2>
-<figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tr><td data-num="1"></td><td><pre># 存放mate头文件</pre></td></tr><tr><td data-num="2"></td><td><pre>.\themes\shoka\layout\_partials\head</pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>每日一更</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>每日一更</tag>
-        <tag>hexo主题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>常用命令指令</title>
-    <url>/2022/04/10/3fa3774.html</url>
-    <content><![CDATA[<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>tree <span class="token builtin class-name">.</span> <span class="token comment">#列出当前文件夹下的所有文件</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>tree /f <span class="token comment">#显示当前文件夹所有文件</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>tree /a <span class="token comment">#显示当前文件夹的所有文件夹</span></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>每日一更</category>
-      </categories>
-      <tags>
-        <tag>每日一更</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>这是大二下的各科作业</title>
-    <url>/2022/04/08/2b5f7ebb.html</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，这个密码看着不太对，请再试试" data-whm="抱歉，这个文章不能被纠正，不过您还是能看看解密后的内容">
-  <script id="hbeData" type="hbeData" data-hmacdigest="736d6f317de652675e92c562c9d559a1a4933fa5da6633bb287a93596b9f26cc">fc8ec58bcd304fc0f97ab129566d154af1d2a39ab32988b65a03f96755db586b87c750b1a5859def1c25d72c08186c80ac1f1b603ec24b6d40ce078a19cf4ed63b8b3c89281368284ed5acd62cab190e9c8bab2fe4d1765ffaa3769cbf699834be2ed0fbcc9fe46d07a65759e40b49ee59d107702bf0b469a0462f78f31e766b18f3a153c653ac1ad4ab8836b343844227b31f6c898d1e46d0da787b9d58dbe8114036fd7da0e08f8817b51a6b26661006a228f59c179587570624d1b08486876e4257edbaa0f0d5c2cf0d8f1eea49ba5b643c84122c99cfea74e7111df955af1e587963b806a1c979ae02d61d62a0f6f193f8d890a31df3abe5bc77e581d9ccf1c0592fbdc04d0c6b79f91e21d636b9b8986224515d6a7671132330cddb9c4a5e758fcd7ec41d24d8a749a0ddd2bb9ab993a7f5a70d8051da001c5cc574616916c87145b6ea5d991bfe663c48f3d52cc9e2defac07737be9d0c0b9c2f6176c43c560e1012d1a2b58a5cce83f997de32e46b42e8900f216bf9ac83bd5883d3f83bb3e7238cbf3b62c152d751fe30d9925ed87b157e1bbee9aa3990e8b78f3d7519875fe1de884eec368562a936a2e9d613f3f112258f85dfb93a3746817e00d90185dae4e805dfbf455b5c239b54b33b1595247ac059c9db5283920ed3a474b1c131ebb191ba09fe400fbcc3c3d4e7bed94267f78debaaa5378abe94f47deea417d56a30cf29c22c5630a185aef48d6ac2be2c4c8496d986b70472dbff913ca04bd324c8e9d11ac3efa565c8d50e62bbbcf6e8a782d00bc58cb7fdf291f95ae22fd3fca5350e0f778b5fdafa23528d16d543b523f6a32087773d23577f02f23ac7f32e25b8c6e5c3ea7787ca23c8921300ecd2c46966aa1b19140d68f7920ad378342403bfc41473a362694962b41c2b148aebe488735787d4da4e5035a6d92397fdbfbee957de90027ab21203c3f0801d6c2bbbcbad3b65732c174c47fa4e2b29410846a0996f4eb893eb9d1bb33d33d698c90f9aa63d687302a1929fc2e3c520ef0d78a434685a9bdbad279fe7bddfd8351f519df2a0a4499ecccfd36b2fa070acc95854d860c73591cbc84d912b7145be038397728196a093d9e9b6c91c98e734b477442b979cd2d402ecc037d5e7eaf810257422352057a654ae1948f38156e7a0f2103dc9a2976ff17785887a07b94a95cce95bc1b40c5de916eef4107bbbc0a151d4a57dd8c64a8a30b3159bb28d39c2eaa9d37d3ce75e351717cc2efe3a2471e3ba02d992c3535c52f5b815c7b60fec10c6a9145d5d725443eb326e0892085ffa16ef202c5a6451235355869cdaf5e1d28d0c5bab9b0e0929c79725d5abd7d43c7b1d6e00661c8ad12b7b5697aa6e5f38b27300a0e473500e38547844a87bd4785176034a9c731b928c89c4f639601241a3580d027d4a50412e4b57c8e6656d86a8afaa4388d8292fb33517227a2385b413fae669615ff901627e921eafd0827a700f8108f8965a345788b4d0cc4ea866dfd62ea5410c5ab55d04b50d23d4fbac0865fd1a1dba9c25e9f71714d780fca0b04bfc0453840610d2a6514cd9b8c2dcaee4898cda75964ea35778e9879fbf1febe7a48b45a9958d2cbc207f43d998fe7af70b6db1a52b049bd3cf10827c52e7f0ac702e981ad5047db75a2fe65558fb68d6cca366d656e36a4c6d2748b10731831a01abdab48c62bc55209a8be77ae5a438359ee304f61fc165533bce421522edff8c73b91df590a4d7664b582dbf9cd63b819a38d8dedb7a00713f8d1903e0cc96c159a11312436c5b53a7734feb2648481b1d6263841bf3c62002</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">您好，私の班级は？</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>每日一更</category>
-      </categories>
-  </entry>
-  <entry>
     <title>python qt5 实现记事本界面</title>
     <url>/2022/04/25/37c8254d.html</url>
     <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>python基础</title>
-    <url>/2022/04/21/81b2f4bf.html</url>
-    <content><![CDATA[<h2 id="python格式化输出"><a class="markdownIt-Anchor" href="#python格式化输出">#</a> python 格式化输出</h2>
-<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token operator">>></span><span class="token operator">></span>ls<span class="token operator">=</span><span class="token string">"这是字符串"</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token operator">>></span><span class="token operator">></span><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"&#123;&#125;"</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>ls<span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre><span class="token operator">>></span><span class="token operator">></span><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"%ls"</span>   <span class="token operator">%</span>ls <span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre>这是字符串</pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre>这是字符串</pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre><span class="token comment"># 总结：第二种和 C 语言输出类似，但是在 "" 后没有逗号的，注意是没有逗号的</span></pre></td></tr></table></figure><h2 id="列表出现相同字符次数统计"><a class="markdownIt-Anchor" href="#列表出现相同字符次数统计">#</a> 列表出现相同字符次数统计</h2>
-<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment"># 例子 1</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token operator">>></span><span class="token operator">></span>ls<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token operator">>></span><span class="token operator">></span><span class="token keyword">print</span><span class="token punctuation">(</span>ls<span class="token punctuation">.</span>count<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token number">3</span></pre></td></tr><tr><td data-num="5"></td><td><pre></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token comment"># 例子 2</span></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token operator">>></span><span class="token operator">></span>ls<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">"123"</span><span class="token punctuation">,</span><span class="token string">"123"</span><span class="token punctuation">,</span><span class="token string">"111"</span><span class="token punctuation">,</span><span class="token string">"456"</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token operator">>></span><span class="token operator">></span><span class="token keyword">print</span><span class="token punctuation">(</span>ls<span class="token punctuation">.</span>count<span class="token punctuation">(</span><span class="token string">"123"</span><span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token number">2</span></pre></td></tr><tr><td data-num="10"></td><td><pre></pre></td></tr><tr><td data-num="11"></td><td><pre><span class="token comment"># 总结: count 可以计算列表中相同的字符串</span></pre></td></tr></table></figure><h2 id="判断字符是否在列表内"><a class="markdownIt-Anchor" href="#判断字符是否在列表内">#</a> 判断字符是否在列表内</h2>
-<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token operator">>></span><span class="token operator">></span>ls<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">"123"</span><span class="token punctuation">,</span><span class="token string">"123"</span><span class="token punctuation">,</span><span class="token string">"111"</span><span class="token punctuation">,</span><span class="token string">"456"</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token operator">>></span><span class="token operator">></span><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"123"</span> <span class="token keyword">in</span> ls<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre><span class="token boolean">True</span></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre><span class="token comment"># 总结：通过 “"字符串" in 数组” 形式可以检查字符串是否在列表中</span></pre></td></tr></table></figure><h2 id="运算符"><a class="markdownIt-Anchor" href="#运算符">#</a> 运算符</h2>
-<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token comment"># i**n 等于 2 的 n 次方</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token operator">>></span><span class="token operator">></span><span class="token builtin">sum</span><span class="token operator">=</span><span class="token number">2</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre><span class="token operator">>></span><span class="token operator">></span><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">sum</span><span class="token operator">**</span><span class="token number">3</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre><span class="token number">8</span></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>计算机科学</category>
         <category>技术杂谈</category>
       </categories>
-      <tags>
-        <tag>-python</tag>
-      </tags>
   </entry>
   <entry>
     <title>python qt5 实现记事本界面</title>
@@ -349,6 +81,39 @@
       </tags>
   </entry>
   <entry>
+    <title>python基础</title>
+    <url>/2022/04/21/81b2f4bf.html</url>
+    <content><![CDATA[<h2 id="python格式化输出"><a class="markdownIt-Anchor" href="#python格式化输出">#</a> python 格式化输出</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token operator">>></span><span class="token operator">></span>ls<span class="token operator">=</span><span class="token string">"这是字符串"</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token operator">>></span><span class="token operator">></span><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"&#123;&#125;"</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>ls<span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre><span class="token operator">>></span><span class="token operator">></span><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"%ls"</span>   <span class="token operator">%</span>ls <span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre>这是字符串</pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre>这是字符串</pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre><span class="token comment"># 总结：第二种和 C 语言输出类似，但是在 "" 后没有逗号的，注意是没有逗号的</span></pre></td></tr></table></figure><h2 id="列表出现相同字符次数统计"><a class="markdownIt-Anchor" href="#列表出现相同字符次数统计">#</a> 列表出现相同字符次数统计</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment"># 例子 1</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token operator">>></span><span class="token operator">></span>ls<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token operator">>></span><span class="token operator">></span><span class="token keyword">print</span><span class="token punctuation">(</span>ls<span class="token punctuation">.</span>count<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token number">3</span></pre></td></tr><tr><td data-num="5"></td><td><pre></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token comment"># 例子 2</span></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token operator">>></span><span class="token operator">></span>ls<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">"123"</span><span class="token punctuation">,</span><span class="token string">"123"</span><span class="token punctuation">,</span><span class="token string">"111"</span><span class="token punctuation">,</span><span class="token string">"456"</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token operator">>></span><span class="token operator">></span><span class="token keyword">print</span><span class="token punctuation">(</span>ls<span class="token punctuation">.</span>count<span class="token punctuation">(</span><span class="token string">"123"</span><span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token number">2</span></pre></td></tr><tr><td data-num="10"></td><td><pre></pre></td></tr><tr><td data-num="11"></td><td><pre><span class="token comment"># 总结: count 可以计算列表中相同的字符串</span></pre></td></tr></table></figure><h2 id="判断字符是否在列表内"><a class="markdownIt-Anchor" href="#判断字符是否在列表内">#</a> 判断字符是否在列表内</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token operator">>></span><span class="token operator">></span>ls<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">"123"</span><span class="token punctuation">,</span><span class="token string">"123"</span><span class="token punctuation">,</span><span class="token string">"111"</span><span class="token punctuation">,</span><span class="token string">"456"</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token operator">>></span><span class="token operator">></span><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"123"</span> <span class="token keyword">in</span> ls<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre><span class="token boolean">True</span></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre><span class="token comment"># 总结：通过 “"字符串" in 数组” 形式可以检查字符串是否在列表中</span></pre></td></tr></table></figure><h2 id="运算符"><a class="markdownIt-Anchor" href="#运算符">#</a> 运算符</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token comment"># i**n 等于 2 的 n 次方</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token operator">>></span><span class="token operator">></span><span class="token builtin">sum</span><span class="token operator">=</span><span class="token number">2</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre><span class="token operator">>></span><span class="token operator">></span><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">sum</span><span class="token operator">**</span><span class="token number">3</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre><span class="token number">8</span></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>技术杂谈</category>
+      </categories>
+      <tags>
+        <tag>-python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ERROR: spyder 4.0.1 requires pyqtwebengine&lt;5.13; python_version &gt;= 3, which is not installed. ERROR: spyder 4.0.1 has requirement pyqt5&lt;5.13; python_version &gt;= 3, but you&#39;ll have pyqt5 5.15.6 which is incompatible.</title>
+    <url>/2022/04/23/af3d5cf5.html</url>
+    <content><![CDATA[<h2 id="报错内容"><a class="markdownIt-Anchor" href="#报错内容">#</a> 报错内容</h2>
+<p>原因是 <code>Spyder</code>  不是最新版本</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token operator">>></span><span class="token operator">></span>pip <span class="token function">install</span> pyqt5 <span class="token comment">#报错内容如下</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>ERROR: spyder <span class="token number">4.0</span>.1 requires pyqtwebengine<span class="token operator">&lt;</span><span class="token number">5.13</span><span class="token punctuation">;</span> python_version <span class="token operator">>=</span> <span class="token string">"3"</span>, <span class="token function">which</span> is not installed. </pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>ERROR: spyder <span class="token number">4.0</span>.1 has requirement pyqt<span class="token operator"><span class="token file-descriptor important">5</span>&lt;</span><span class="token number">5.13</span><span class="token punctuation">;</span> python_version <span class="token operator">>=</span> <span class="token string">"3"</span>, but you'll have pyqt5 <span class="token number">5.15</span>.6 <span class="token function">which</span> is incompatible.</pre></td></tr></table></figure><h2 id="查询spyder版本"><a class="markdownIt-Anchor" href="#查询spyder版本">#</a> 查询 spyder 版本</h2>
+<p>更新版本，通过 <code>pip install spyder==*</code>  查询版本</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token operator">>></span><span class="token operator">></span>pip <span class="token function">install</span> <span class="token assign-left variable">spyder</span><span class="token operator">==</span>*</pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>ERROR: Could not <span class="token function">find</span> a version that satisfies the requirement <span class="token assign-left variable">spyder</span><span class="token operator">==</span>* <span class="token punctuation">(</span>from versions: <span class="token number">2.3</span>.0, <span class="token number">2.3</span>.1, <span class="token number">2.3</span>.2, <span class="token number">2.3</span>.3, <span class="token number">2.3</span>.4, <span class="token number">2.3</span>.5.2, <span class="token number">2.3</span>.6, <span class="token number">2.3</span>.7, <span class="token number">2.3</span>.8, <span class="token number">2.3</span>.9, <span class="token number">3.0</span>.0b2, <span class="token number">3.0</span>.0b3, <span class="token number">3.0</span>.0b4, <span class="token number">3.0</span>.0b5, <span class="token number">3.0</span>.0b6, <span class="token number">3.0</span>.0b7, <span class="token number">3.0</span>.0, <span class="token number">3.0</span>.1, <span class="token number">3.0</span>.2, <span class="token number">3.1</span>.0, <span class="token number">3.1</span>.1, <span class="token number">3.1</span>.2, <span class="token number">3.1</span>.3, <span class="token number">3.1</span>.4, <span class="token number">3.2</span>.0, <span class="token number">3.2</span>.1, <span class="token number">3.2</span>.2, <span class="token number">3.2</span>.3, <span class="token number">3.2</span>.4, <span class="token number">3.2</span>.5, <span class="token number">3.2</span>.6, <span class="token number">3.2</span>.7, <span class="token number">3.2</span>.8, <span class="token number">3.3</span>.0, <span class="token number">3.3</span>.1, <span class="token number">3.3</span>.2, <span class="token number">3.3</span>.3, <span class="token number">3.3</span>.4, <span class="token number">3.3</span>.5, <span class="token number">3.3</span>.6, <span class="token number">4.0</span>.0b1, <span class="token number">4.0</span>.0b2, <span class="token number">4.0</span>.0b3, <span class="token number">4.0</span>.0b4, <span class="token number">4.0</span>.0b5, <span class="token number">4.0</span>.0b6, <span class="token number">4.0</span>.0b7, <span class="token number">4.0</span>.0rc1, <span class="token number">4.0</span>.0rc2, <span class="token number">4.0</span>.0rc3, <span class="token number">4.0</span>.0, <span class="token number">4.0</span>.1, <span class="token number">4.1</span>.0, <span class="token number">4.1</span>.1, <span class="token number">4.1</span>.2, <span class="token number">4.1</span>.3, <span class="token number">4.1</span>.4, <span class="token number">4.1</span>.5, <span class="token number">4.1</span>.6, <span class="token number">4.2</span>.0, <span class="token number">4.2</span>.1, <span class="token number">4.2</span>.2, <span class="token number">4.2</span>.3, <span class="token number">4.2</span>.4, <span class="token number">4.2</span>.5, <span class="token number">5.0</span>.0a1, <span class="token number">5.0</span>.0a2, <span class="token number">5.0</span>.0a3, <span class="token number">5.0</span>.0a4, <span class="token number">5.0</span>.0a5, <span class="token number">5.0</span>.0a6, <span class="token number">5.0</span>.0a7, <span class="token number">5.0</span>.0, <span class="token number">5.0</span>.1, <span class="token number">5.0</span>.2, <span class="token number">5.0</span>.3, <span class="token number">5.0</span>.4, <span class="token number">5.0</span>.5, <span class="token number">5.1</span>.0, <span class="token number">5.1</span>.1, <span class="token number">5.1</span>.2, <span class="token number">5.1</span>.3, <span class="token number">5.1</span>.4, <span class="token number">5.1</span>.5, <span class="token number">5.2</span>.0, <span class="token number">5.2</span>.1, <span class="token number">5.2</span>.2, <span class="token number">5.3</span>.0<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="3"></td><td><pre>ERROR: No matching distribution found <span class="token keyword">for</span> <span class="token assign-left variable">spyder</span><span class="token operator">==</span>*</pre></td></tr></table></figure><h2 id="安装530版本"><a class="markdownIt-Anchor" href="#安装530版本">#</a> 安装 5.3.0 版本</h2>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token operator">>></span><span class="token operator">></span>pip <span class="token function">install</span> <span class="token assign-left variable">spyder</span><span class="token operator">==</span><span class="token number">5.3</span>.0</pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>技术杂谈</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>学习注册表</title>
     <url>/2022/04/18/16ad79ec.html</url>
     <content><![CDATA[]]></content>
@@ -359,6 +124,290 @@
       <tags>
         <tag>技术杂谈</tag>
         <tag>注册表</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日记分享2022.4.13</title>
+    <url>/2022/04/13/b9e6c7bf.html</url>
+    <content><![CDATA[<div class="note danger">
+<p>我周三还没开始写作业</p>
+</div>
+<p>周一的一堆作业，这周不知道怎么回事，一直都是提不起精神学习，一直在捣鼓自己喜欢的东西，博客，git 等等，对自己喜欢的东西很有兴趣捣鼓，不喜欢的数据结构确实提不起兴趣，喜欢 python、linux 就会很主动去学习。算了算了，今晚好好睡个觉，明天好好学习。</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+        <category>日记</category>
+      </categories>
+      <tags>
+        <tag>日记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>4.9日记分享</title>
+    <url>/2022/04/10/ef5acbc6.html</url>
+    <content><![CDATA[<h2 id="49日记分享"><a class="markdownIt-Anchor" href="#49日记分享">#</a> 4.9 日记分享</h2>
+<p>自从开始玩博客之后，经常用到 <code>Git</code> ，感觉非常重要。如今每个企业都基本用到 <code>Git</code> ，如果就业的时候不会使用 <code>Git</code> ，感觉还是落后于别人一步的，而且，现在也有时间学习，倒不如现在开始学习一下，顺便玩一玩服务器，可能对 <code>Git</code>  会更加熟练，话不多说，直接动手开始学习。</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+        <category>日记</category>
+      </categories>
+      <tags>
+        <tag>日记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CentOS新增root用户</title>
+    <url>/2022/04/16/111f4f09.html</url>
+    <content><![CDATA[<h2 id="进入root"><a class="markdownIt-Anchor" href="#进入root">#</a> 进入 root</h2>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">su</span> root  				<span class="token comment"># 进入 root 时需要输入密码，密码是不显示的</span></pre></td></tr><tr><td data-num="2"></td><td><pre>gedit /etc/sudoers		<span class="token comment"># 打开 sudoers 文件</span></pre></td></tr></table></figure><p><img data-src="http://hikki.test.upcdn.net/2022045220.jpeg" alt=""></p>
+<h2 id="添加新用户"><a class="markdownIt-Anchor" href="#添加新用户">#</a> 添加新用户</h2>
+<p>滑到最下面找到 <code>root</code></p>
+<p>在 <code>root</code>  下面添加，</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>新用户名 <span class="token assign-left variable">ALL</span><span class="token operator">=</span><span class="token punctuation">(</span>ALL<span class="token punctuation">)</span> ALL </pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token comment"># 新用户必须要存在才能添加</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token comment"># lilbai518 这个用户，我之前已经创建过了</span></pre></td></tr></table></figure><p><img data-src="http://hikki.test.upcdn.net/2022045229.jpeg" alt=""></p>
+<p><img data-src="http://hikki.test.upcdn.net/2022045256.jpeg" alt=""></p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>每日一更</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>CentoOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python组合数据类型</title>
+    <url>/2022/04/08/cd7b33aa.html</url>
+    <content><![CDATA[<div class="note info">
+<p>每天记录自己学习情况</p>
+</div>
+<h2 id="列表检查是否存在重复元素"><a class="markdownIt-Anchor" href="#列表检查是否存在重复元素">#</a> 列表检查是否存在重复元素</h2>
+<p>编写函数，用列表为参数，判断有无重复元素，若有就返回 <code>True</code> ，否则，返回 <code>False</code> ，并调用函数来验证。可使用以下列表来进行验证：</p>
+<p>lst_1 = [1, 3, 4, 5, 1, 45]</p>
+<p>lst_2 = [‘N’, ‘B’, ‘A’, ‘2022’]</p>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>lst_1 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">45</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>lst_2 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'N'</span><span class="token punctuation">,</span> <span class="token string">'B'</span><span class="token punctuation">,</span> <span class="token string">'A'</span><span class="token punctuation">,</span> <span class="token string">'2022'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>lst_1<span class="token punctuation">.</span>sort<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre>lst_2<span class="token punctuation">.</span>sort<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre><span class="token keyword">def</span> <span class="token function">prin</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre>    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"["</span><span class="token punctuation">,</span> end<span class="token operator">=</span><span class="token string">""</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="8"></td><td><pre>    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="9"></td><td><pre>        <span class="token keyword">print</span><span class="token punctuation">(</span>x<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> end<span class="token operator">=</span><span class="token string">""</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="10"></td><td><pre>        <span class="token keyword">if</span> i <span class="token operator">&lt;</span> <span class="token builtin">len</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="11"></td><td><pre>            <span class="token keyword">print</span><span class="token punctuation">(</span>end<span class="token operator">=</span><span class="token string">","</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="12"></td><td><pre>        <span class="token keyword">else</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="13"></td><td><pre>            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"]"</span><span class="token punctuation">,</span> end<span class="token operator">=</span><span class="token string">"  "</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="14"></td><td><pre>    <span class="token keyword">for</span> l <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="15"></td><td><pre>        <span class="token keyword">if</span> x<span class="token punctuation">[</span>l<span class="token punctuation">]</span> <span class="token operator">==</span> x<span class="token punctuation">[</span>l <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="16"></td><td><pre>            FF <span class="token operator">=</span> <span class="token string">"有重复元素"</span></pre></td></tr><tr class="marked"><td data-num="17"></td><td><pre>            <span class="token keyword">break</span></pre></td></tr><tr class="marked"><td data-num="18"></td><td><pre>        <span class="token keyword">else</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="19"></td><td><pre>            FF <span class="token operator">=</span> <span class="token string">"无重复元素"</span></pre></td></tr><tr class="marked"><td data-num="20"></td><td><pre>    <span class="token keyword">print</span><span class="token punctuation">(</span>FF<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="21"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="22"></td><td><pre>prin<span class="token punctuation">(</span>lst_1<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="23"></td><td><pre>prin<span class="token punctuation">(</span>lst_2<span class="token punctuation">)</span></pre></td></tr></table></figure><h2 id="集合检查是否存在重复元素"><a class="markdownIt-Anchor" href="#集合检查是否存在重复元素">#</a> 集合检查是否存在重复元素</h2>
+<p>编写函数，用列表为参数，利用集合元素的无重复性来判断列表有无重复元素，若有就返回 <code>True</code> ，否则，返回 <code>False</code> ，并调用函数来验证</p>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>lst_1 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">4445</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>lst_2 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'N'</span><span class="token punctuation">,</span> <span class="token string">'B'</span><span class="token punctuation">,</span> <span class="token string">'A'</span><span class="token punctuation">,</span> <span class="token string">'2022'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre><span class="token keyword">def</span> <span class="token function">lstt</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre>    lst1 <span class="token operator">=</span> <span class="token builtin">list</span><span class="token punctuation">(</span><span class="token builtin">set</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre>    <span class="token keyword">if</span> <span class="token builtin">len</span><span class="token punctuation">(</span>lst1<span class="token punctuation">)</span> <span class="token operator">&lt;</span> <span class="token builtin">len</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre>        <span class="token keyword">return</span> <span class="token boolean">True</span></pre></td></tr><tr class="marked"><td data-num="8"></td><td><pre>    <span class="token keyword">else</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="9"></td><td><pre>        <span class="token keyword">return</span> <span class="token boolean">False</span></pre></td></tr><tr class="marked"><td data-num="10"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="11"></td><td><pre>result1 <span class="token operator">=</span> lstt<span class="token punctuation">(</span>lst_1<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="12"></td><td><pre>result2 <span class="token operator">=</span> lstt<span class="token punctuation">(</span>lst_2<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="13"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="14"></td><td><pre><span class="token keyword">def</span> <span class="token function">print1</span><span class="token punctuation">(</span>result<span class="token punctuation">,</span> lst<span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="15"></td><td><pre>    <span class="token keyword">if</span> result <span class="token operator">==</span> <span class="token boolean">True</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="16"></td><td><pre>        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'列表：&#123;&#125;有 重复元素'</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>lst<span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="17"></td><td><pre>    <span class="token keyword">else</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="18"></td><td><pre>        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'列表：&#123;&#125;无 重复元素'</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>lst<span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="19"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="20"></td><td><pre>print1<span class="token punctuation">(</span>result1<span class="token punctuation">,</span> lst_1<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="21"></td><td><pre>print1<span class="token punctuation">(</span>result2<span class="token punctuation">,</span> lst_2<span class="token punctuation">)</span></pre></td></tr></table></figure><h2 id="生日悖论"><a class="markdownIt-Anchor" href="#生日悖论">#</a> 生日悖论</h2>
+<p>现假定一年只有 <code>365</code>  天，不考虑闰年情况。请先阅读<span class="exturl" data-url="aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTclOTQlOUYlRTYlOTclQTUlRTYlODIlOTYlRTglQUUlQkEvMjcxNTI5MA==">生日悖论</span> 相关知识，再按下列要求编程模拟检验：<br>
+(1) 编写函数 <code>createBirthday()：</code> 使用随机函数生成某人的生日，结果为字符串，由 <code>01.01</code>  到 <code>12.31</code>  表示，月份。天均为两位数，中间用点号 (.) 隔开；<br>
+(2) 编写函数 <code>groupBirthdays(n)：</code> 调用 <code>createBirthday()</code>  生成团队成员的生日，用列表方式返回，其中： <code>n为</code> 团队成员数；<br>
+(3) 主函数：输入团队成员数，调用 <code>groupBirthdays(n)</code>  和创建 <code>isRepeat()</code>  函数查重，模拟 <code>100000</code>  次，计算至少有两人生日相同的比例</p>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token keyword">import</span> random <span class="token keyword">as</span> r</pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>num <span class="token operator">=</span> <span class="token number">100000</span></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre><span class="token keyword">def</span> <span class="token function">createBirthday</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre>    birthday <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="8"></td><td><pre>    month <span class="token operator">=</span> <span class="token builtin">str</span><span class="token punctuation">(</span>r<span class="token punctuation">.</span>randint<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">12</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span>rjust<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">'0'</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="9"></td><td><pre>    day <span class="token operator">=</span> <span class="token builtin">str</span><span class="token punctuation">(</span>r<span class="token punctuation">.</span>uniform<span class="token punctuation">(</span><span class="token number">0.01</span><span class="token punctuation">,</span> <span class="token number">0.31</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token number">4</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="10"></td><td><pre>    birthday <span class="token operator">=</span> month <span class="token operator">+</span> day</pre></td></tr><tr class="marked"><td data-num="11"></td><td><pre>    <span class="token comment"># print(birthday)</span></pre></td></tr><tr class="marked"><td data-num="12"></td><td><pre>    <span class="token comment"># print(type(birthday))</span></pre></td></tr><tr class="marked"><td data-num="13"></td><td><pre>    <span class="token keyword">return</span> birthday</pre></td></tr><tr class="marked"><td data-num="14"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="15"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="16"></td><td><pre><span class="token keyword">def</span> <span class="token function">groupBirthdays</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="17"></td><td><pre>    lst <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="18"></td><td><pre>    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="19"></td><td><pre>        lst<span class="token punctuation">.</span>append<span class="token punctuation">(</span>createBirthday<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="20"></td><td><pre>    <span class="token comment"># print(lst)</span></pre></td></tr><tr class="marked"><td data-num="21"></td><td><pre>    <span class="token keyword">return</span> lst</pre></td></tr><tr class="marked"><td data-num="22"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="23"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="24"></td><td><pre><span class="token keyword">def</span> <span class="token function">isRepeat</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="25"></td><td><pre>    <span class="token keyword">if</span> <span class="token builtin">len</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token builtin">len</span><span class="token punctuation">(</span><span class="token builtin">set</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="26"></td><td><pre>        <span class="token keyword">return</span> <span class="token boolean">False</span>  <span class="token comment"># 不重复</span></pre></td></tr><tr class="marked"><td data-num="27"></td><td><pre>    <span class="token keyword">else</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="28"></td><td><pre>        <span class="token keyword">return</span> <span class="token boolean">True</span>  <span class="token comment"># 重复</span></pre></td></tr><tr class="marked"><td data-num="29"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="30"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="31"></td><td><pre><span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="32"></td><td><pre>    x <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"请输入团队人数："</span><span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="33"></td><td><pre>    nums <span class="token operator">=</span> <span class="token number">0</span></pre></td></tr><tr class="marked"><td data-num="34"></td><td><pre>    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">100000</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="35"></td><td><pre>        times <span class="token operator">=</span> isRepeat<span class="token punctuation">(</span>groupBirthdays<span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="36"></td><td><pre>        <span class="token keyword">if</span> times <span class="token operator">==</span> <span class="token boolean">True</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="37"></td><td><pre>            nums <span class="token operator">+=</span> <span class="token number">1</span></pre></td></tr><tr class="marked"><td data-num="38"></td><td><pre>        <span class="token keyword">else</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="39"></td><td><pre>            <span class="token keyword">continue</span></pre></td></tr><tr class="marked"><td data-num="40"></td><td><pre>    y <span class="token operator">=</span> <span class="token builtin">str</span><span class="token punctuation">(</span>nums <span class="token operator">/</span> <span class="token number">100000</span> <span class="token operator">*</span> <span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token number">5</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="41"></td><td><pre>    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"假设一个团队有&#123;&#125;人，用随机模拟&#123;&#125;次，其中至少有两人生日相同的比例为&#123;&#125;%"</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> <span class="token number">100000</span><span class="token punctuation">,</span> y<span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="42"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="43"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="44"></td><td><pre><span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="45"></td><td><pre>    main<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr></table></figure><h2 id="文字出现频率"><a class="markdownIt-Anchor" href="#文字出现频率">#</a> 文字出现频率</h2>
+<p>编写程序，对文档” 习总书记在北京大学师生座谈会上的讲话.txt” 进行分析，按出现频率的降序打印字符 (前 20 位)。</p>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token keyword">import</span> jieba</pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>txt <span class="token operator">=</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">"F:\\习总书记在北京大学师生座谈会上的讲话 .txt"</span><span class="token punctuation">,</span><span class="token string">"r"</span><span class="token punctuation">,</span>encoding<span class="token operator">=</span><span class="token string">'gbk'</span><span class="token punctuation">,</span>errors<span class="token operator">=</span><span class="token string">'ignore'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre>lst <span class="token operator">=</span> jieba<span class="token punctuation">.</span>lcut<span class="token punctuation">(</span>txt<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre>cout <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre><span class="token keyword">for</span> ls <span class="token keyword">in</span> lst<span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre>    ls <span class="token operator">=</span> ls<span class="token punctuation">.</span>replace<span class="token punctuation">(</span><span class="token string">' '</span><span class="token punctuation">,</span><span class="token string">''</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="8"></td><td><pre>    <span class="token keyword">if</span> <span class="token builtin">len</span><span class="token punctuation">(</span>ls<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="9"></td><td><pre>        <span class="token keyword">continue</span></pre></td></tr><tr class="marked"><td data-num="10"></td><td><pre>    <span class="token keyword">else</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="11"></td><td><pre>        cout<span class="token punctuation">[</span>ls<span class="token punctuation">]</span> <span class="token operator">=</span> cout<span class="token punctuation">.</span>get<span class="token punctuation">(</span>ls<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token number">1</span></pre></td></tr><tr class="marked"><td data-num="12"></td><td><pre>items <span class="token operator">=</span> <span class="token builtin">list</span><span class="token punctuation">(</span>cout<span class="token punctuation">.</span>items<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="13"></td><td><pre>items<span class="token punctuation">.</span>sort<span class="token punctuation">(</span>key<span class="token operator">=</span><span class="token keyword">lambda</span> x<span class="token punctuation">:</span> x<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> reverse<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="14"></td><td><pre><span class="token keyword">for</span> item <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="15"></td><td><pre>    word<span class="token punctuation">,</span> count <span class="token operator">=</span> items<span class="token punctuation">[</span>item<span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="16"></td><td><pre>    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"词语:【&#123;&#125;】,出现次数:&#123;&#125;"</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>word<span class="token punctuation">,</span> count<span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr></table></figure><div class="note warning">
+<p>以上如有错误，欢迎留言指出</p>
+</div>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>每日一更</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>每日一更</tag>
+        <tag>python实验</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo结构分析</title>
+    <url>/2022/04/09/ff2eb0a3.html</url>
+    <content><![CDATA[<h2 id="meta头文件"><a class="markdownIt-Anchor" href="#meta头文件">#</a>  <code>meta</code>  头文件</h2>
+<figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tr><td data-num="1"></td><td><pre># 存放mate头文件</pre></td></tr><tr><td data-num="2"></td><td><pre>.\themes\shoka\layout\_partials\head</pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>每日一更</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>每日一更</tag>
+        <tag>hexo主题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux忘记数据库密码</title>
+    <url>/2022/04/12/3d358537.html</url>
+    <content><![CDATA[<p>这几天班里在搞团日活动，有个活动是 <code>Oj</code>  比赛，通过同学们刷题提高语言能力，因此需要一个 <code>Oj</code>  平台统计数据，我就想看看自己能不能搭建一个 <code>Oj</code>  平台，然后给大家测试题目。</p>
+<p>在部署项目过程中，我忘记 <code>mysql</code>  密码了，导致我数据库想修改数据没办法。</p>
+<p>经过一番折腾，找到了 <code>mysql</code>  初始密码，记录一下。</p>
+<p><code>mysql</code>  初始密码文件路径： <code>/etc/mysql/debian.cnf</code></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204120203.jpeg" alt=""></p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>每日一更</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>每日一更</tag>
+        <tag>教程</tag>
+        <tag>数据库</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>git push origin master失败</title>
+    <url>/2022/04/08/c32e96d4.html</url>
+    <content><![CDATA[<h2 id="关于我想备份blog这件事"><a class="markdownIt-Anchor" href="#关于我想备份blog这件事">#</a> 关于我想备份 <code>blog</code>  这件事</h2>
+<details class="primary"><summary>我要怎么备份blog文件？？？</summary><div>
+<div class="note primary">
+<p>这几天在想，万一那天我想在别的电脑上写博客，或者是我电脑突然抽风硬盘坏了，我的博客数据岂不是没了？？？</p>
+<p>又或者我什么时候不小心删错了文件，岂不是出大问题？？？</p>
+</div>
+<p>带着这个问题，我一开始是找了几个 <code>PC端</code> 自动本地备份的程序，但效果不太理想。</p>
+<p>定时备份：不能保证你在设置定时的这段时间内进行 <code>hexo d</code>  多少次，如果定时备份的时间设置过短，理论上对硬盘的读写会拖慢其他程序的运行。</p>
+<p>所以在想，如果有一个程序可以监控我 <code>blog</code>  下的文件变化，每变化一次就进行记录一次，进行增量备份一次，这是我想到最完美的办法，带着这个想法，我似乎找到了一个方法。</p>
+</div></details>
+<details class="danger"><summary>持续集成服务</summary><div>
+<p>此处引用百度百科：持续集成是一种软件开发实践，即团队开发成员经常集成他们的工作，通常每个成员每天至少集成一次，也就意味着每天可能会发生多次集成。每次集成都通过自动化的构建（包括编译，发布，自动化测试）来验证，从而尽早地发现集成错误。</p>
+<p>简单来说，就是这个服务绑定了 <code>GitHub</code> ，我们每提交一次代码到 <code>GitHub</code> ，它都会抓取一次我们的仓库，检查新代码，然后提供一个运行环境，执行测试，完成构建，还能部署到服务器。</p>
+</div></details>
+<p>然后我这次在准备提交文件到我新建的 <code>hexo-backups</code>  仓库的时候，出错了，就记录一下错误。</p>
+<h2 id="git-pash-origin-master失败"><a class="markdownIt-Anchor" href="#git-pash-origin-master失败">#</a>  <code>git pash origin master</code>  失败</h2>
+<p>第一次遇见这个问题，我还以为是 <code>.gitignore</code>  文件的 <code>.DS_Store</code>  文件不存在？然后我删掉这个文件，好像还是继续报一样的错误，然后排除这个可能。</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204082309.jpg" alt="" title="git pash origin master失败"></p>
+<h2 id="新建文件测试"><a class="markdownIt-Anchor" href="#新建文件测试">#</a> 新建文件测试</h2>
+<p>然后新建文件测试一下，看是不是文件没有被加载到缓存区，发现结果已经加载到缓冲区了</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204082313.jpg" alt="" title="测试文件"></p>
+<h2 id="添加origin"><a class="markdownIt-Anchor" href="#添加origin">#</a> 添加 origin</h2>
+<p>一开始我没有删除旧的 origin，我直接添加了，直接报错。实际操作应该删除旧的 origin 的，再添加新的 origin</p>
+<figure class="highlight bash"><figcaption data-lang="bash"><span>删除origin</span></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token comment"># 删除 origin</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token function">git</span> remote remove origin</pre></td></tr></table></figure><figure class="highlight bash"><figcaption data-lang="bash"><span>添加origin</span></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token comment"># 此处的 git@github.com:0000rookie/Hexo-backups.git 是仓库的 SSH</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token function">git</span> <span class="token function">add</span> git@github.com:0000rookie/Hexo-backups.git</pre></td></tr></table></figure><figure class="highlight bash"><figcaption data-lang="bash"><span>查看origin</span></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">git</span> origin -v</pre></td></tr></table></figure><p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204082315.jpg" alt="" title="添加控制器"></p>
+<h2 id="重新commit"><a class="markdownIt-Anchor" href="#重新commit">#</a> 重新 commit</h2>
+<p>是的，我真的以为我只是修改一下 <code>origin</code>  就处理好了</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204082324.jpg" alt="" title="重新commit"></p>
+<h2 id="git-push-f-origin-master提交成功"><a class="markdownIt-Anchor" href="#git-push-f-origin-master提交成功">#</a>  <code>git push -f origin master</code>  提交成功</h2>
+<p>奇怪的是，我试试用 <code>git push -f origin master</code>  就成功了</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204082326.jpg" alt="" title="git push -f origin master"></p>
+<div class="note success">
+<p>目前还不知道是什么原因导致错误，如果你知道，欢迎留言告诉我！！！</p>
+</div>
+<div class="note warning">
+<p>以上如有错误，欢迎留言指出</p>
+</div>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>每日一更</category>
+      </categories>
+      <tags>
+        <tag>每日一更</tag>
+        <tag>教程</tag>
+        <tag>git</tag>
+        <tag>BUG</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>常用命令指令</title>
+    <url>/2022/04/10/3fa3774.html</url>
+    <content><![CDATA[<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>tree <span class="token builtin class-name">.</span> <span class="token comment">#列出当前文件夹下的所有文件</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>tree /f <span class="token comment">#显示当前文件夹所有文件</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>tree /a <span class="token comment">#显示当前文件夹的所有文件夹</span></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>每日一更</category>
+      </categories>
+      <tags>
+        <tag>每日一更</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>为博客添加免费的CDN加速</title>
+    <url>/2022/04/08/edaa94fb.html</url>
+    <content><![CDATA[<h2 id="设置statics"><a class="markdownIt-Anchor" href="#设置statics">#</a> 设置 <code>statics</code></h2>
+<p>在根目录或者 <code>themes</code>  下 <code>_config.yml</code>  文件下配置</p>
+<figure class="highlight yaml"><figcaption data-lang="YAML"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token key atrule">格式：statics</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//cdn.jsdelivr.net/gh/账户名/仓库名/</pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token key atrule">statics</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//cdn.jsdelivr.net/gh/0000rookie/github.io/</pre></td></tr></table></figure><p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204081139.jpg" alt=""></p>
+<h2 id="刷新cdnjsdelivr"><a class="markdownIt-Anchor" href="#刷新cdnjsdelivr">#</a> 刷新 <code>CDN.jsDelivr</code></h2>
+<p>打开浏览器输入你 <code>statics</code>  的资源路径，回车刷新一下。</p>
+<figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tr><td data-num="1"></td><td><pre>https://cdn.jsdelivr.net/gh/0000rookie/github.io/</pre></td></tr><tr><td data-num="2"></td><td><pre>https://cdn.jsdelivr.net/gh/账户名/仓库名/</pre></td></tr></table></figure><div class="note info">
+<p>如果成功了是以下的样子，如果没出现，等几分钟再刷新一下</p>
+</div>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204081149.jpg" alt=""></p>
+<div class="note info">
+<p>这个 <code>url</code>  和 <code>root</code>  是不用管的，一开始我是设置 <code>url</code>  的，但是网站没有出现样式，访问 <code>cdn</code>  的时候返回是无定义</p>
+</div>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204081142.jpg" alt=""></p>
+<div class="note info">
+<p>如果样式还是没出现，打开你网站， <code>F12</code>  调试一下，修改一下你的 <code>CSS</code>  路径，看看是哪里出问题，看报错信息是什么</p>
+</div>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204081152.jpg" alt=""></p>
+<div class="note info">
+<p>如果是出现这个错误，说明你的 <code>statics</code>  路径填错了，找不到你的路径文件</p>
+</div>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204081154.jpg" alt=""></p>
+<div class="note warning">
+<p>以上如有错误，欢迎留言指出</p>
+</div>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>每日一更</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>每日一更</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>QQ/微信/支付宝 收款码美化</title>
+    <url>/2022/04/11/ee3e214f.html</url>
+    <content><![CDATA[<p>有时候想贴个二维码出来，但是觉得这个二维码太丑了，然后就发现了个神奇的网站，叫<span class="exturl" data-url="aHR0cHM6Ly9jbGkuaW0v">草料二维码</span></p>
+<p>可以美化微信、支付宝、钉钉等二维码，文字转二维码等等功能，各种各样。</p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204120247.jpeg" alt=""></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204120248.jpeg" alt=""></p>
+]]></content>
+      <categories>
+        <category>生活</category>
+        <category>好物推荐</category>
+      </categories>
+      <tags>
+        <tag>好物推荐</tag>
+        <tag>一个小技巧</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>这是大二下的各科作业</title>
+    <url>/2022/04/08/2b5f7ebb.html</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，这个密码看着不太对，请再试试" data-whm="抱歉，这个文章不能被纠正，不过您还是能看看解密后的内容">
+  <script id="hbeData" type="hbeData" data-hmacdigest="736d6f317de652675e92c562c9d559a1a4933fa5da6633bb287a93596b9f26cc">fc8ec58bcd304fc0f97ab129566d154af1d2a39ab32988b65a03f96755db586b87c750b1a5859def1c25d72c08186c80ac1f1b603ec24b6d40ce078a19cf4ed63b8b3c89281368284ed5acd62cab190e9c8bab2fe4d1765ffaa3769cbf699834be2ed0fbcc9fe46d07a65759e40b49ee59d107702bf0b469a0462f78f31e766b18f3a153c653ac1ad4ab8836b343844227b31f6c898d1e46d0da787b9d58dbe8114036fd7da0e08f8817b51a6b26661006a228f59c179587570624d1b08486876e4257edbaa0f0d5c2cf0d8f1eea49ba5b643c84122c99cfea74e7111df955af1e587963b806a1c979ae02d61d62a0f6f193f8d890a31df3abe5bc77e581d9ccf1c0592fbdc04d0c6b79f91e21d636b9b8986224515d6a7671132330cddb9c4a5e758fcd7ec41d24d8a749a0ddd2bb9ab993a7f5a70d8051da001c5cc574616916c87145b6ea5d991bfe663c48f3d52cc9e2defac07737be9d0c0b9c2f6176c43c560e1012d1a2b58a5cce83f997de32e46b42e8900f216bf9ac83bd5883d3f83bb3e7238cbf3b62c152d751fe30d9925ed87b157e1bbee9aa3990e8b78f3d7519875fe1de884eec368562a936a2e9d613f3f112258f85dfb93a3746817e00d90185dae4e805dfbf455b5c239b54b33b1595247ac059c9db5283920ed3a474b1c131ebb191ba09fe400fbcc3c3d4e7bed94267f78debaaa5378abe94f47deea417d56a30cf29c22c5630a185aef48d6ac2be2c4c8496d986b70472dbff913ca04bd324c8e9d11ac3efa565c8d50e62bbbcf6e8a782d00bc58cb7fdf291f95ae22fd3fca5350e0f778b5fdafa23528d16d543b523f6a32087773d23577f02f23ac7f32e25b8c6e5c3ea7787ca23c8921300ecd2c46966aa1b19140d68f7920ad378342403bfc41473a362694962b41c2b148aebe488735787d4da4e5035a6d92397fdbfbee957de90027ab21203c3f0801d6c2bbbcbad3b65732c174c47fa4e2b29410846a0996f4eb893eb9d1bb33d33d698c90f9aa63d687302a1929fc2e3c520ef0d78a434685a9bdbad279fe7bddfd8351f519df2a0a4499ecccfd36b2fa070acc95854d860c73591cbc84d912b7145be038397728196a093d9e9b6c91c98e734b477442b979cd2d402ecc037d5e7eaf810257422352057a654ae1948f38156e7a0f2103dc9a2976ff17785887a07b94a95cce95bc1b40c5de916eef4107bbbc0a151d4a57dd8c64a8a30b3159bb28d39c2eaa9d37d3ce75e351717cc2efe3a2471e3ba02d992c3535c52f5b815c7b60fec10c6a9145d5d725443eb326e0892085ffa16ef202c5a6451235355869cdaf5e1d28d0c5bab9b0e0929c79725d5abd7d43c7b1d6e00661c8ad12b7b5697aa6e5f38b27300a0e473500e38547844a87bd4785176034a9c731b928c89c4f639601241a3580d027d4a50412e4b57c8e6656d86a8afaa4388d8292fb33517227a2385b413fae669615ff901627e921eafd0827a700f8108f8965a345788b4d0cc4ea866dfd62ea5410c5ab55d04b50d23d4fbac0865fd1a1dba9c25e9f71714d780fca0b04bfc0453840610d2a6514cd9b8c2dcaee4898cda75964ea35778e9879fbf1febe7a48b45a9958d2cbc207f43d998fe7af70b6db1a52b049bd3cf10827c52e7f0ac702e981ad5047db75a2fe65558fb68d6cca366d656e36a4c6d2748b10731831a01abdab48c62bc55209a8be77ae5a438359ee304f61fc165533bce421522edff8c73b91df590a4d7664b582dbf9cd63b819a38d8dedb7a00713f8d1903e0cc96c159a11312436c5b53a7734feb2648481b1d6263841bf3c62002</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">您好，私の班级は？</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>每日一更</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>jsdelivr刷新缓存</title>
+    <url>/2022/04/12/6f010433.html</url>
+    <content><![CDATA[<div class="note info">
+<p>如何刷新 CDN.jsdelivr 缓存 ？？？</p>
+</div>
+<p>有时候在加载网页的时候， <code>CDN</code>  刷新总是非常的慢，想快点看到，但是一直不刷新，这就需要我们去手动刷新 <code>CDN.jsdelivr</code>  缓存了，不手动刷新的话，可能要等｀24 小时｀左右才会自动刷新。</p>
+<p>先看看你的静态资源有没有配置好，打开你的静态资源链接，如：</p>
+<figure class="highlight yaml"><figcaption data-lang="YAML"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token key atrule">statics</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//cdn.jsdelivr.net/gh/用户名/仓库名/  </pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token comment">#此处的用户名是我的 github 用户名，仓库名是我 hexo 部署的仓库名，你根据自己的情况打开正确的链接</span></pre></td></tr></table></figure><p>如果出现以下这个页面，说明 <code>cdn</code>  已经有缓存到你的静态文件了，如果没出现，说明你本地配置的 <code>statics</code>  没配置好</p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204130009.jpeg" alt=""></p>
+<p>如何刷新呢？打开以下链接，在 <code>url</code>  链接框回车</p>
+<figure class="highlight yaml"><figcaption data-lang="YAML"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>https<span class="token punctuation">:</span>//purge.jsdelivr.net/gh/用户名/仓库名@master/ </pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token comment">#将 statics 中的 cdn 替换为 purge，在后面加上你仓库的分支名，我仓库默认分支是 master</span></pre></td></tr></table></figure><p>如果有出现这个界面并且 status 返回的是 <code>finished</code>  说明成功了</p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204130011.jpeg" alt=""></p>
+<div class="note success">
+<p>此时已经刷新成功啦</p>
+</div>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>博客</category>
+        <category>博客的食用方法</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>每日一更</tag>
+        <tag>教程</tag>
       </tags>
   </entry>
   <entry>
@@ -444,51 +493,6 @@
       </tags>
   </entry>
   <entry>
-    <title>ERROR: spyder 4.0.1 requires pyqtwebengine&lt;5.13; python_version &gt;= 3, which is not installed. ERROR: spyder 4.0.1 has requirement pyqt5&lt;5.13; python_version &gt;= 3, but you&#39;ll have pyqt5 5.15.6 which is incompatible.</title>
-    <url>/2022/04/23/af3d5cf5.html</url>
-    <content><![CDATA[<h2 id="报错内容"><a class="markdownIt-Anchor" href="#报错内容">#</a> 报错内容</h2>
-<p>原因是 <code>Spyder</code>  不是最新版本</p>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token operator">>></span><span class="token operator">></span>pip <span class="token function">install</span> pyqt5 <span class="token comment">#报错内容如下</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>ERROR: spyder <span class="token number">4.0</span>.1 requires pyqtwebengine<span class="token operator">&lt;</span><span class="token number">5.13</span><span class="token punctuation">;</span> python_version <span class="token operator">>=</span> <span class="token string">"3"</span>, <span class="token function">which</span> is not installed. </pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>ERROR: spyder <span class="token number">4.0</span>.1 has requirement pyqt<span class="token operator"><span class="token file-descriptor important">5</span>&lt;</span><span class="token number">5.13</span><span class="token punctuation">;</span> python_version <span class="token operator">>=</span> <span class="token string">"3"</span>, but you'll have pyqt5 <span class="token number">5.15</span>.6 <span class="token function">which</span> is incompatible.</pre></td></tr></table></figure><h2 id="查询spyder版本"><a class="markdownIt-Anchor" href="#查询spyder版本">#</a> 查询 spyder 版本</h2>
-<p>更新版本，通过 <code>pip install spyder==*</code>  查询版本</p>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token operator">>></span><span class="token operator">></span>pip <span class="token function">install</span> <span class="token assign-left variable">spyder</span><span class="token operator">==</span>*</pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>ERROR: Could not <span class="token function">find</span> a version that satisfies the requirement <span class="token assign-left variable">spyder</span><span class="token operator">==</span>* <span class="token punctuation">(</span>from versions: <span class="token number">2.3</span>.0, <span class="token number">2.3</span>.1, <span class="token number">2.3</span>.2, <span class="token number">2.3</span>.3, <span class="token number">2.3</span>.4, <span class="token number">2.3</span>.5.2, <span class="token number">2.3</span>.6, <span class="token number">2.3</span>.7, <span class="token number">2.3</span>.8, <span class="token number">2.3</span>.9, <span class="token number">3.0</span>.0b2, <span class="token number">3.0</span>.0b3, <span class="token number">3.0</span>.0b4, <span class="token number">3.0</span>.0b5, <span class="token number">3.0</span>.0b6, <span class="token number">3.0</span>.0b7, <span class="token number">3.0</span>.0, <span class="token number">3.0</span>.1, <span class="token number">3.0</span>.2, <span class="token number">3.1</span>.0, <span class="token number">3.1</span>.1, <span class="token number">3.1</span>.2, <span class="token number">3.1</span>.3, <span class="token number">3.1</span>.4, <span class="token number">3.2</span>.0, <span class="token number">3.2</span>.1, <span class="token number">3.2</span>.2, <span class="token number">3.2</span>.3, <span class="token number">3.2</span>.4, <span class="token number">3.2</span>.5, <span class="token number">3.2</span>.6, <span class="token number">3.2</span>.7, <span class="token number">3.2</span>.8, <span class="token number">3.3</span>.0, <span class="token number">3.3</span>.1, <span class="token number">3.3</span>.2, <span class="token number">3.3</span>.3, <span class="token number">3.3</span>.4, <span class="token number">3.3</span>.5, <span class="token number">3.3</span>.6, <span class="token number">4.0</span>.0b1, <span class="token number">4.0</span>.0b2, <span class="token number">4.0</span>.0b3, <span class="token number">4.0</span>.0b4, <span class="token number">4.0</span>.0b5, <span class="token number">4.0</span>.0b6, <span class="token number">4.0</span>.0b7, <span class="token number">4.0</span>.0rc1, <span class="token number">4.0</span>.0rc2, <span class="token number">4.0</span>.0rc3, <span class="token number">4.0</span>.0, <span class="token number">4.0</span>.1, <span class="token number">4.1</span>.0, <span class="token number">4.1</span>.1, <span class="token number">4.1</span>.2, <span class="token number">4.1</span>.3, <span class="token number">4.1</span>.4, <span class="token number">4.1</span>.5, <span class="token number">4.1</span>.6, <span class="token number">4.2</span>.0, <span class="token number">4.2</span>.1, <span class="token number">4.2</span>.2, <span class="token number">4.2</span>.3, <span class="token number">4.2</span>.4, <span class="token number">4.2</span>.5, <span class="token number">5.0</span>.0a1, <span class="token number">5.0</span>.0a2, <span class="token number">5.0</span>.0a3, <span class="token number">5.0</span>.0a4, <span class="token number">5.0</span>.0a5, <span class="token number">5.0</span>.0a6, <span class="token number">5.0</span>.0a7, <span class="token number">5.0</span>.0, <span class="token number">5.0</span>.1, <span class="token number">5.0</span>.2, <span class="token number">5.0</span>.3, <span class="token number">5.0</span>.4, <span class="token number">5.0</span>.5, <span class="token number">5.1</span>.0, <span class="token number">5.1</span>.1, <span class="token number">5.1</span>.2, <span class="token number">5.1</span>.3, <span class="token number">5.1</span>.4, <span class="token number">5.1</span>.5, <span class="token number">5.2</span>.0, <span class="token number">5.2</span>.1, <span class="token number">5.2</span>.2, <span class="token number">5.3</span>.0<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="3"></td><td><pre>ERROR: No matching distribution found <span class="token keyword">for</span> <span class="token assign-left variable">spyder</span><span class="token operator">==</span>*</pre></td></tr></table></figure><h2 id="安装530版本"><a class="markdownIt-Anchor" href="#安装530版本">#</a> 安装 5.3.0 版本</h2>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token operator">>></span><span class="token operator">></span>pip <span class="token function">install</span> <span class="token assign-left variable">spyder</span><span class="token operator">==</span><span class="token number">5.3</span>.0</pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>技术杂谈</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>jsdelivr刷新缓存</title>
-    <url>/2022/04/12/6f010433.html</url>
-    <content><![CDATA[<div class="note info">
-<p>如何刷新 CDN.jsdelivr 缓存 ？？？</p>
-</div>
-<p>有时候在加载网页的时候， <code>CDN</code>  刷新总是非常的慢，想快点看到，但是一直不刷新，这就需要我们去手动刷新 <code>CDN.jsdelivr</code>  缓存了，不手动刷新的话，可能要等｀24 小时｀左右才会自动刷新。</p>
-<p>先看看你的静态资源有没有配置好，打开你的静态资源链接，如：</p>
-<figure class="highlight yaml"><figcaption data-lang="YAML"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token key atrule">statics</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//cdn.jsdelivr.net/gh/用户名/仓库名/  </pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token comment">#此处的用户名是我的 github 用户名，仓库名是我 hexo 部署的仓库名，你根据自己的情况打开正确的链接</span></pre></td></tr></table></figure><p>如果出现以下这个页面，说明 <code>cdn</code>  已经有缓存到你的静态文件了，如果没出现，说明你本地配置的 <code>statics</code>  没配置好</p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204130009.jpeg" alt=""></p>
-<p>如何刷新呢？打开以下链接，在 <code>url</code>  链接框回车</p>
-<figure class="highlight yaml"><figcaption data-lang="YAML"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>https<span class="token punctuation">:</span>//purge.jsdelivr.net/gh/用户名/仓库名@master/ </pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token comment">#将 statics 中的 cdn 替换为 purge，在后面加上你仓库的分支名，我仓库默认分支是 master</span></pre></td></tr></table></figure><p>如果有出现这个界面并且 status 返回的是 <code>finished</code>  说明成功了</p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204130011.jpeg" alt=""></p>
-<div class="note success">
-<p>此时已经刷新成功啦</p>
-</div>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>博客</category>
-        <category>博客的食用方法</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>每日一更</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>如何在hexo博客写作</title>
     <url>/2022/04/13/b26ff49b.html</url>
     <content><![CDATA[<h2 id="前言"><a class="markdownIt-Anchor" href="#前言">#</a> 前言</h2>
@@ -555,6 +559,37 @@
       </tags>
   </entry>
   <entry>
+    <title>Hexo部署err:Error:Spawn failed错误</title>
+    <url>/2022/04/25/28af37eb.html</url>
+    <content><![CDATA[<h2 id="errerrorspawn-failed"><a class="markdownIt-Anchor" href="#errerrorspawn-failed">#</a>  <code>err:Error:Spawn failed</code></h2>
+<p>今晚在发布文章的时候突然出现了这个问题，昨天还是正常的，今晚就报错了，前前后后尝试了好多办法</p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022045305.jpeg" alt=""></p>
+<h2 id="解决方案"><a class="markdownIt-Anchor" href="#解决方案">#</a> 解决方案</h2>
+<h3 id="删除id_rsa-id_rsapub-known_hosts"><a class="markdownIt-Anchor" href="#删除id_rsa-id_rsapub-known_hosts">#</a> 删除 <code>id_rsa</code> 、 <code>id_rsa.pub</code> 、 <code>known_hosts</code></h3>
+<p>打开 <code>C:\Users\Administrator\.ssh</code>  路径，删除 <code>id_rsa</code> 、 <code>id_rsa.pub</code> 、 <code>known_hosts</code></p>
+<h3 id="在bash重新生成rsa文件"><a class="markdownIt-Anchor" href="#在bash重新生成rsa文件">#</a> 在 <code>bash</code>  重新生成 rsa 文件</h3>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token operator">>></span><span class="token operator">></span>ssh-keygen -t rsa</pre></td></tr></table></figure><h3 id="打开github-setting-ssh-and-gpg-keys-new-ssh-key"><a class="markdownIt-Anchor" href="#打开github-setting-ssh-and-gpg-keys-new-ssh-key">#</a> 打开 <code>github---&gt;setting---&gt;SSH and GPG keys---&gt;New ssh key</code></h3>
+<p>打开 <code>.ssh</code>  路径，将 <code>id_rsa.pub</code>  的内容复制到新创建的 <code>ssh key</code>  里面</p>
+<h3 id="测试是否连接到github"><a class="markdownIt-Anchor" href="#测试是否连接到github">#</a> 测试是否连接到 <code>github</code></h3>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token operator">>></span><span class="token operator">></span>ssh -T git@github.com</pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>ssh: connect to <span class="token function">host</span> github.com port <span class="token number">22</span>: Connection timed out <span class="token comment">#连接失败</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre><span class="token comment"># 如果是出现以下则说明成功，以下的文章就不用看了</span></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre>The authenticity of <span class="token function">host</span> <span class="token string">'[ssh.github.com]:443 ([20.205.243.160]:443)'</span> can't be established.</pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre>ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.</pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre>This key is not known by any other names</pre></td></tr><tr class="marked"><td data-num="8"></td><td><pre>Are you sure you want to <span class="token builtin class-name">continue</span> connecting <span class="token punctuation">(</span>yes/no/<span class="token punctuation">[</span>fingerprint<span class="token punctuation">]</span><span class="token punctuation">)</span>? <span class="token comment"># 此时在此输入 yes 回车就行</span></pre></td></tr></table></figure><hr>
+<p>如果你失败了，接着往下</p>
+<h3 id="新建config文件"><a class="markdownIt-Anchor" href="#新建config文件">#</a> 新建 <code>config</code>  文件</h3>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022045733.jpeg" alt=""></p>
+<h3 id="在config文件输入下面内容"><a class="markdownIt-Anchor" href="#在config文件输入下面内容">#</a> 在 <code>config</code>  文件输入下面内容</h3>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022045818.jpeg" alt=""></p>
+<figure class="highlight yaml"><figcaption data-lang="YAML"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>Host github.com</pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>User <span class="token important">*****@gmail.com</span>  <span class="token comment">#登录 github 的邮箱，这段文字不复制到文件</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>Hostname ssh.github.com</pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre>PreferredAuthentications publickey</pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre>IdentityFile ~/.ssh/id_rsa</pre></td></tr><tr><td data-num="6"></td><td><pre>Port 443</pre></td></tr></table></figure><h3 id="连接github"><a class="markdownIt-Anchor" href="#连接github">#</a> 连接 <code>github</code></h3>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token operator">>></span><span class="token operator">></span>ssh -T git@github.com <span class="token comment">#此时出现以下页面成功啦</span></pre></td></tr><tr><td data-num="2"></td><td><pre>The authenticity of <span class="token function">host</span> <span class="token string">'[ssh.github.com]:443 ([20.205.243.160]:443)'</span> can<span class="token string">'t be established.</pre></td></tr><tr><td data-num="3"></td><td><pre>ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.</pre></td></tr><tr><td data-num="4"></td><td><pre>This key is not known by any other names</pre></td></tr><tr><td data-num="5"></td><td><pre>Are you sure you want to continue connecting (yes/no/[fingerprint])? yes # 此处输入yes</pre></td></tr><tr><td data-num="6"></td><td><pre>Warning: Permanently added '</span><span class="token punctuation">[</span>ssh.github.com<span class="token punctuation">]</span>:443<span class="token string">' (ED25519) to the list of known hosts.</pre></td></tr><tr><td data-num="7"></td><td><pre>Hi 0000rookie! You'</span>ve successfully authenticated, but GitHub does not provide shell access.</pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>博客</category>
+        <category>搭博客常见错误</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>bug</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>搭建博客常见的错误</title>
     <url>/2022/04/01/cdc2e518.html</url>
     <content><![CDATA[<h2 id="404错误"><a class="markdownIt-Anchor" href="#404错误">#</a> 404 错误</h2>
@@ -615,126 +650,6 @@
       </tags>
   </entry>
   <entry>
-    <title>如何给PicGo添加水印</title>
-    <url>/2022/04/11/2fbd98c3.html</url>
-    <content><![CDATA[<p>在运营独立博客的时候，自己原创的文章，经常会被别人转载，又没有标明原作者地址，导致原创作者流量流失了一部分，如果可以标记原创是自己的话，那就非常方便了，比如说加个水印就好一点。刚好 <code>PicGo</code>  有个插件 <code>watermark</code>  可以给突破加水印，这就很方便了，不用上传图片自己还要去添加一个水印。</p>
-<h2 id="安装watermark"><a class="markdownIt-Anchor" href="#安装watermark">#</a> 安装 <code>watermark</code></h2>
-<p>安装 <code>watermark</code> ， <code>PicGo</code>  最低版本要 <code>2.2.0</code></p>
-<p>可以直接在 <code>PicGo</code>  插件设置下载</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204110022.jpeg" alt=""></p>
-<h2 id="配置watermark"><a class="markdownIt-Anchor" href="#配置watermark">#</a> 配置 <code>watermark</code></h2>
-<div class="note info">
-<p>有些同学可能在配置 watermark 一直出错，可以试着 <code>字体文件路径</code> 设置和我一样的，把文件拉进去就行</p>
-</div>
-<p>这里放上字体链接，有需要自取，字体来源于 <span class="exturl" data-url="aHR0cHM6Ly93d3cuZm9udHMubmV0LmNuL2ZvbnQtNDAwOTA5Njk5NjAuaHRtbD9wcmV2aWV3VGV4dD13d3cuaGlra2kuc2l0ZQ==">字体天下</span></p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204110023.jpeg" alt=""></p>
-<div class="note warning">
-<p>以上如果有侵害你的权益，请立即联系我</p>
-</div>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>技术杂谈</category>
-        <category>一个小技巧</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>一个技巧</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo部署err:Error:Spawn failed错误</title>
-    <url>/2022/04/25/28af37eb.html</url>
-    <content><![CDATA[<h2 id="errerrorspawn-failed"><a class="markdownIt-Anchor" href="#errerrorspawn-failed">#</a>  <code>err:Error:Spawn failed</code></h2>
-<p>今晚在发布文章的时候突然出现了这个问题，昨天还是正常的，今晚就报错了，前前后后尝试了好多办法</p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022045305.jpeg" alt=""></p>
-<h2 id="解决方案"><a class="markdownIt-Anchor" href="#解决方案">#</a> 解决方案</h2>
-<h3 id="删除id_rsa-id_rsapub-known_hosts"><a class="markdownIt-Anchor" href="#删除id_rsa-id_rsapub-known_hosts">#</a> 删除 <code>id_rsa</code> 、 <code>id_rsa.pub</code> 、 <code>known_hosts</code></h3>
-<p>打开 <code>C:\Users\Administrator\.ssh</code>  路径，删除 <code>id_rsa</code> 、 <code>id_rsa.pub</code> 、 <code>known_hosts</code></p>
-<h3 id="在bash重新生成rsa文件"><a class="markdownIt-Anchor" href="#在bash重新生成rsa文件">#</a> 在 <code>bash</code>  重新生成 rsa 文件</h3>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token operator">>></span><span class="token operator">></span>ssh-keygen -t rsa</pre></td></tr></table></figure><h3 id="打开github-setting-ssh-and-gpg-keys-new-ssh-key"><a class="markdownIt-Anchor" href="#打开github-setting-ssh-and-gpg-keys-new-ssh-key">#</a> 打开 <code>github---&gt;setting---&gt;SSH and GPG keys---&gt;New ssh key</code></h3>
-<p>打开 <code>.ssh</code>  路径，将 <code>id_rsa.pub</code>  的内容复制到新创建的 <code>ssh key</code>  里面</p>
-<h3 id="测试是否连接到github"><a class="markdownIt-Anchor" href="#测试是否连接到github">#</a> 测试是否连接到 <code>github</code></h3>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token operator">>></span><span class="token operator">></span>ssh -T git@github.com</pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>ssh: connect to <span class="token function">host</span> github.com port <span class="token number">22</span>: Connection timed out <span class="token comment">#连接失败</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre><span class="token comment"># 如果是出现以下则说明成功，以下的文章就不用看了</span></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre>The authenticity of <span class="token function">host</span> <span class="token string">'[ssh.github.com]:443 ([20.205.243.160]:443)'</span> can't be established.</pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre>ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.</pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre>This key is not known by any other names</pre></td></tr><tr class="marked"><td data-num="8"></td><td><pre>Are you sure you want to <span class="token builtin class-name">continue</span> connecting <span class="token punctuation">(</span>yes/no/<span class="token punctuation">[</span>fingerprint<span class="token punctuation">]</span><span class="token punctuation">)</span>? <span class="token comment"># 此时在此输入 yes 回车就行</span></pre></td></tr></table></figure><hr>
-<p>如果你失败了，接着往下</p>
-<h3 id="新建config文件"><a class="markdownIt-Anchor" href="#新建config文件">#</a> 新建 <code>config</code>  文件</h3>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022045733.jpeg" alt=""></p>
-<h3 id="在config文件输入下面内容"><a class="markdownIt-Anchor" href="#在config文件输入下面内容">#</a> 在 <code>config</code>  文件输入下面内容</h3>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022045818.jpeg" alt=""></p>
-<figure class="highlight yaml"><figcaption data-lang="YAML"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>Host github.com</pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>User <span class="token important">*****@gmail.com</span>  <span class="token comment">#登录 github 的邮箱，这段文字不复制到文件</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>Hostname ssh.github.com</pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre>PreferredAuthentications publickey</pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre>IdentityFile ~/.ssh/id_rsa</pre></td></tr><tr><td data-num="6"></td><td><pre>Port 443</pre></td></tr></table></figure><h3 id="连接github"><a class="markdownIt-Anchor" href="#连接github">#</a> 连接 <code>github</code></h3>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token operator">>></span><span class="token operator">></span>ssh -T git@github.com <span class="token comment">#此时出现以下页面成功啦</span></pre></td></tr><tr><td data-num="2"></td><td><pre>The authenticity of <span class="token function">host</span> <span class="token string">'[ssh.github.com]:443 ([20.205.243.160]:443)'</span> can<span class="token string">'t be established.</pre></td></tr><tr><td data-num="3"></td><td><pre>ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.</pre></td></tr><tr><td data-num="4"></td><td><pre>This key is not known by any other names</pre></td></tr><tr><td data-num="5"></td><td><pre>Are you sure you want to continue connecting (yes/no/[fingerprint])? yes # 此处输入yes</pre></td></tr><tr><td data-num="6"></td><td><pre>Warning: Permanently added '</span><span class="token punctuation">[</span>ssh.github.com<span class="token punctuation">]</span>:443<span class="token string">' (ED25519) to the list of known hosts.</pre></td></tr><tr><td data-num="7"></td><td><pre>Hi 0000rookie! You'</span>ve successfully authenticated, but GitHub does not provide shell access.</pre></td></tr></table></figure>]]></content>
-      <tags>
-        <tag>博客</tag>
-        <tag>bug</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>添加开机自启程序</title>
-    <url>/2022/04/07/2cc8588f.html</url>
-    <content><![CDATA[<h2 id="键盘点击winr"><a class="markdownIt-Anchor" href="#键盘点击winr">#</a> 键盘点击 <code>win+R</code></h2>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204071930.jpg" alt=""></p>
-<h2 id="在窗口输入shellstartup"><a class="markdownIt-Anchor" href="#在窗口输入shellstartup">#</a> 在窗口输入 <code>shell:startup</code></h2>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>shell:startup</pre></td></tr></table></figure><p><strong>打开是这个路径</strong>，把你想要开机自启的软件快捷方式拖到这个路径下，以后电脑开机就会自动启动这个程序了</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204071937.jpg" alt=""></p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204071936.jpg" alt=""></p>
-<div class="note warning">
-<p>以上如有错误，欢迎留言指出</p>
-</div>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>技术杂谈</category>
-        <category>一个小技巧</category>
-      </categories>
-      <tags>
-        <tag>教程</tag>
-        <tag>生活小技巧</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>搭建GitHu图床</title>
-    <url>/2022/04/02/e85071ad.html</url>
-    <content><![CDATA[<p><strong>问：什么是图床？图床有什么用？</strong></p>
-<p><strong>答：图床就是一个存放你照片的云盘，只要有网络就能打开这张照片</strong></p>
-<h2 id="新建一个仓库"><a class="markdownIt-Anchor" href="#新建一个仓库">#</a> 新建一个仓库</h2>
-<p><strong>用于存放图片的仓库</strong>  俗称图床<br>
-<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021048.jpg" alt=""></p>
-<h2 id="给你图床起个名字"><a class="markdownIt-Anchor" href="#给你图床起个名字">#</a> 给你图床起个名字</h2>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021050.jpg" alt=""></p>
-<h2 id="新建token"><a class="markdownIt-Anchor" href="#新建token">#</a> 新建 token</h2>
-<p><code>settings---&gt;Developer settings---&gt;Personal access tokens---&gt;generate new token</code> <br>
-<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021051.jpg" alt=""><br>
-<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021059.jpg" alt=""><br>
-<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021100.jpg" alt=""><br>
-<em> 这边给大家翻译一下，英文不是很好可以看看</em><br>
-<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021102.jpg" alt=""><br>
-<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021103.jpg" alt=""></p>
-<p><strong>点击复制</strong></p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021105.jpg" alt=""></p>
-<h2 id="配置picgo"><a class="markdownIt-Anchor" href="#配置picgo">#</a> 配置 Picgo</h2>
-<div class="note info">
-<p><strong>我在 imgs 仓库下新建了一个 Hexoimgs 文件夹</strong></p>
-</div>
-<p>粘贴刚刚复制的 <code>token</code>  到 <code>设定Token</code></p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021133.jpg" alt=""></p>
-<p>你 <code>github</code>  上的分支名是什么， <code>PicGO的</code> 设定分支名就写什么</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021131.jpg" alt=""></p>
-<p><strong>设定自定义域名：</strong> <code>0000rookie/imgs</code>  改成你的 <code>用户名/仓库名</code></p>
-<figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tr><td data-num="1"></td><td><pre>http://cdn.jsdelivr.net/gh/0000rookie/imgs</pre></td></tr></table></figure><div class="note success">
-<p><strong>你的图床就搭建完啦</strong></p>
-</div>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>博客</category>
-        <category>模块</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hexo怎么安装插件</title>
     <url>/2022/03/26/c5de56d5.html</url>
     <content><![CDATA[<hr>
@@ -774,146 +689,6 @@
         <category>计算机科学</category>
         <category>博客</category>
         <category>模块</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第三篇：Git提交文件---从0基础搭建Hexo博客</title>
-    <url>/2022/03/30/b75a1db6.html</url>
-    <content><![CDATA[<h2 id="配置git"><a class="markdownIt-Anchor" href="#配置git">#</a> 配置 git</h2>
-<h4 id="一-绑定gitee"><a class="markdownIt-Anchor" href="#一-绑定gitee">#</a> 一、绑定 Gitee</h4>
-<p>首先来简单介绍一下 SSH 协议</p>
-<p><strong>SSH（安全外壳协议，Secure Shell 的缩写）是建立在应用层基础上的安全协议。SSH 是目前较可靠，专为远程登录会话和其他网络服务提供安全性的协议，利用 SSH 协议可以有效防止远程管理过程中的信息泄露问题。简单来说，SSH 就是保障你的账户安全，将你的数据加密压缩，不仅防止其他人截获你的数据，还能加快传输速度。如果想详细了解的话，可以看这篇文章：详述 SSH 的原理及其应用 - CSDN，下面就详细介绍如何绑定 GitHub 和提交文件。</strong></p>
-<p><strong>我们要用 git 上传文件到 GitHub 首先得利用 SSH 登录远程主机，而登录方式有两种：一种是口令登录；另一种是公钥登录。口令登录每次都要输入密码十分麻烦，而公钥登录就省去了输入密码的步骤，所以我们选择公钥授权。首先我们得在 GitHub 上添加 SSH key 配置，要想生成 SSH key，就要先安装 SSH，不过我们安装了 Git Bash，其应该自带了 SSH。检验一下是否安装 SSH，我们在新建的文件夹中右键打开 Git Bash：</strong></p>
-<ol>
-<li>
-<p>新建一个文件夹 ``text`</p>
-<p><img data-src="https://s2.loli.net/2022/03/30/Jz1dTG6SPkwlQ5p.jpg" alt=""></p>
-</li>
-<li>
-<p>鼠标右击打开 <code>git Bash Here</code></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/Jz1dTG6SPkwlQ5p.jpg" alt=""></p>
-</li>
-<li>
-<p>输入 <code>ssh</code>  检查使是否安装 <code>ssh</code></p>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>ssh-keygen -t rsa</pre></td></tr></table></figure></li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/8RcNpfrZ2PEjtA7.jpg" alt=""></p>
-<ol start="4">
-<li>
-<p>输入  <code>ssh-keygen -t rsa</code>  命令，表示 <code>RSA</code>  算法生成密钥，然后敲 4 次回车键，之后会生成两个文件，分别为密钥 <code>id_rsa</code>  和公钥 <code>id_rsa.pub</code></p>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>ssh-keygen -t rsa</pre></td></tr></table></figure></li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/K3mfVxdr54IvaLJ.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/9fNDbOAVUBeWd8G.jpg" alt=""></p>
-<p><strong>接下来我们要做的事情就是把公钥 <code>id_rsa.pub</code>  的内容添加到 <code> GitHub</code> 。复制公钥  <code>id_rsa.pub</code>  文件里的内容，你可以通过目录找到  <code>id_rsa.pub</code>  文件的位置，用记事本打开文件复制。</strong></p>
-<ol start="5">
-<li>打开  <code>id_rsa.pub</code>  文件复制</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/s39ZxPGuTDJLmwF.jpg" alt=""></p>
-<ol start="6">
-<li>打开 <code>github---&gt;settings---&gt;SSH and GPG keys---&gt;New SSH key</code></li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/LhUzwCNnZGOXDl9.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/4vtGl98ehjRWKJd.jpg" alt=""></p>
-<p><strong>粘贴内容进去</strong></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/i1b3hoFvzPWcUje.jpg" alt=""></p>
-<p><strong>添加成功</strong></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/h7npjw9I8qOBaXA.jpg" alt=""></p>
-<p><strong>验证是否成功，在 <code>Git Bash</code>  中输入 <code> ssh -T git@github.com</code>  验证</strong></p>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">ssh</span> -T git@github.com</pre></td></tr></table></figure><p>首次需要输入 <code>yes</code></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/EHSFLzxKoIavPcr.jpg" alt=""></p>
-<h4 id="二-接下来是提交文件"><a class="markdownIt-Anchor" href="#二-接下来是提交文件">#</a> 二、接下来是提交文件</h4>
-<ol>
-<li>新建仓库</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/VKYp3k8NMgDvrW1.jpg" alt=""></p>
-<ol start="2">
-<li>给仓库起个名</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/zsE5a7B3KrliXny.jpg" alt=""></p>
-<ol start="3">
-<li>复制仓库 <code>HTTPS</code>  链接</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/YVpZtKBoWgPbzme.jpg" alt=""></p>
-<ol start="4">
-<li>
-<p>将 <code>text</code>  仓库 <code>clone</code>  到本地仓库，返回刚刚 <code>Git</code>  的窗口，输入 <code>git clone 链接</code> 。</p>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">git</span> clone https://github.com/aliang518/text.git</pre></td></tr></table></figure></li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/6KVx9MoJ48mE25k.jpg" alt=""></p>
-<ol start="5">
-<li>打开刚刚在电脑新建的 <code>text</code>  文件夹是不是存在一个 <code>GitHub</code>  上名为的 <code>text</code>  仓库</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/b7dHYj5e3lCxypg.jpg" alt=""></p>
-<ol start="6">
-<li>查看 <code>text</code>  仓库是不是和 <code>GitHub</code>  的仓库内容一样</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/g6nQxiVeCzubkNj.jpg" alt=""></p>
-<ol start="7">
-<li>
-<p>新建一个文件</p>
-<p><img data-src="https://s2.loli.net/2022/03/30/2emTn6GyiqSZIba.jpg" alt=""></p>
-</li>
-<li>
-<p>在此文件夹下进入 <code>Git Bash Here</code></p>
-</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/7bi2eu8FNYTltd1.jpg" alt=""></p>
-<ol start="9">
-<li>
-<p>输入 <code>git status</code>  命令查看仓库状态</p>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">git</span> status</pre></td></tr></table></figure></li>
-</ol>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204011752.jpg" alt="20"></p>
-<ol start="10">
-<li>
-<p><code>hexo</code>  已经是一个 Git 仓库了，而我们刚刚创建的文件 <code>123.txt</code>  没有被追踪，也就是没有提交到本地仓库。现在我们使用  <code>git add </code> 命令将文件添加到了「临时缓冲区」，再用  <code>git commit -m &quot;</code> 提交信息&quot; 将其提交到本地仓库，如下图</p>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token function">git</span> <span class="token function">add</span> text.txt</pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token function">git</span> commit -m <span class="token string">"提交信息"</span></pre></td></tr></table></figure></li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/cK8LmrBq3vh9YQo.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/3ltIPmEFkHKU1Bc.jpg" alt=""></p>
-<p>如果你是第一次提交的话，就会出现下图情况，让你输入账号和邮箱</p>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>```git config --global user.name <span class="token string">"aliang518"</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token function">git</span> config --global user.email <span class="token string">"aa******56@126.com"</span></pre></td></tr></table></figure><p><img data-src="https://s2.loli.net/2022/03/30/Dbag4oklMAp1XqQ.jpg" alt=""></p>
-<ol start="11">
-<li>
-<p>查看仓库提交日志</p>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">git</span> log</pre></td></tr></table></figure></li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/xCkvay35W4zG8gE.jpg" alt=""></p>
-<ol start="12">
-<li>
-<p>再输入  <code>git status</code>  查看一下仓库状态</p>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">git</span> status</pre></td></tr></table></figure></li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/DKZzdOLexy1lB52.jpg" alt=""></p>
-<ol start="13">
-<li>
-<p>将本地仓库提交到远程仓库</p>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">git</span> push origin main</pre></td></tr></table></figure></li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/rFebnLUxqSkCoR3.jpg" alt=""></p>
-<ol start="14">
-<li>从浏览器打开的时候选择你已经登录 <code>GitHub</code>  的那个浏览器 (我这里用火狐浏览器)</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/etGBbrAjaOzH9Qk.jpg" alt=""></p>
-<ol start="15">
-<li>等待上次成功</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/16UjrZte4OydkG8.jpg" alt=""></p>
-<ol start="16">
-<li>打开 <code>GitHub</code>  仓库 <code>F5</code>  刷新一下，会出现刚刚在本地 <code>text</code>  目录新建的 <code>text.txt</code>  文件</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/QvD1LZXAqeWSNJf.jpg" alt=""></p>
-<p><strong>提交文件已经成功啦</strong></p>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>博客</category>
-        <category>零基础搭建Hexo个人博客系列</category>
       </categories>
       <tags>
         <tag>博客</tag>
@@ -1072,34 +847,42 @@
       </tags>
   </entry>
   <entry>
-    <title>第二篇：安装Git---从0基础搭建Hexo博客</title>
-    <url>/2022/03/30/859f60bd.html</url>
-    <content><![CDATA[<h3 id="以下会用到的软件"><a class="markdownIt-Anchor" href="#以下会用到的软件">#</a> 以下会用到的软件</h3>
-<p><strong>必装 [Git][<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbQ==">https://git-scm.com</span>]、[Node.js][<span class="exturl" data-url="aHR0cHM6Ly9ub2RlanMub3JnL2Vu">https://nodejs.org/en</span>]</strong> <em>(点击打开)</em></p>
-<p><strong>建议装 [notepad3][<span class="exturl" data-url="aHR0cHM6Ly9yb29raWUxNjc5LmxhbnpvdWYuY29tL2lIbW1hMDI2bnZkZw==">https://rookie1679.lanzouf.com/iHmma026nvdg</span>]</strong> <em>(点击打开)</em></p>
-<hr>
-<h3 id="安装git"><a class="markdownIt-Anchor" href="#安装git">#</a> 安装 Git</h3>
-<p><img data-src="https://s2.loli.net/2022/03/30/BQvOwdEjhy2Mxpi.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/cynKHCaWvM1lhPQ.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/mGnE9UXQfjSF4LA.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/5Y6oqd7uJGQZ3x9.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/7ulfP3VQJDIR49b.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/O71bgvBpnoya5UN.jpg" alt=""></p>
-<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0rsgp2d5yj30dv0aw756.jpg" alt="07"></p>
-<p><img data-src="https://tva1.sinaimg.cn/large/0065wfS6ly8h0rshgpo17j30dv0aw74s.jpg" alt="9"></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/5yNqYXRIFf2kpxc.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/8j3PsJFgN6e1IxB.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/Pz4C6HLjdQiE7MB.jpg" alt=""></p>
-<p><strong>鼠标右看到如图说明安装成功了，打开 Git bash here</strong></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/FbARg18aejdJUVO.jpg" alt=""></p>
-<p><strong>输入 git</strong></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/7qTxPmE6YGFOklK.jpg" alt=""></p>
-<p><strong>安装 git 结束</strong></p>
+    <title>搭建GitHu图床</title>
+    <url>/2022/04/02/e85071ad.html</url>
+    <content><![CDATA[<p><strong>问：什么是图床？图床有什么用？</strong></p>
+<p><strong>答：图床就是一个存放你照片的云盘，只要有网络就能打开这张照片</strong></p>
+<h2 id="新建一个仓库"><a class="markdownIt-Anchor" href="#新建一个仓库">#</a> 新建一个仓库</h2>
+<p><strong>用于存放图片的仓库</strong>  俗称图床<br>
+<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021048.jpg" alt=""></p>
+<h2 id="给你图床起个名字"><a class="markdownIt-Anchor" href="#给你图床起个名字">#</a> 给你图床起个名字</h2>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021050.jpg" alt=""></p>
+<h2 id="新建token"><a class="markdownIt-Anchor" href="#新建token">#</a> 新建 token</h2>
+<p><code>settings---&gt;Developer settings---&gt;Personal access tokens---&gt;generate new token</code> <br>
+<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021051.jpg" alt=""><br>
+<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021059.jpg" alt=""><br>
+<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021100.jpg" alt=""><br>
+<em> 这边给大家翻译一下，英文不是很好可以看看</em><br>
+<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021102.jpg" alt=""><br>
+<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021103.jpg" alt=""></p>
+<p><strong>点击复制</strong></p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021105.jpg" alt=""></p>
+<h2 id="配置picgo"><a class="markdownIt-Anchor" href="#配置picgo">#</a> 配置 Picgo</h2>
+<div class="note info">
+<p><strong>我在 imgs 仓库下新建了一个 Hexoimgs 文件夹</strong></p>
+</div>
+<p>粘贴刚刚复制的 <code>token</code>  到 <code>设定Token</code></p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021133.jpg" alt=""></p>
+<p>你 <code>github</code>  上的分支名是什么， <code>PicGO的</code> 设定分支名就写什么</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021131.jpg" alt=""></p>
+<p><strong>设定自定义域名：</strong> <code>0000rookie/imgs</code>  改成你的 <code>用户名/仓库名</code></p>
+<figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tr><td data-num="1"></td><td><pre>http://cdn.jsdelivr.net/gh/0000rookie/imgs</pre></td></tr></table></figure><div class="note success">
+<p><strong>你的图床就搭建完啦</strong></p>
+</div>
 ]]></content>
       <categories>
         <category>计算机科学</category>
         <category>博客</category>
-        <category>零基础搭建Hexo个人博客系列</category>
+        <category>模块</category>
       </categories>
       <tags>
         <tag>博客</tag>
@@ -1107,82 +890,202 @@
       </tags>
   </entry>
   <entry>
-    <title>第四篇：安装Nodejs---从0基础搭建Hexo博客</title>
-    <url>/2022/03/30/cf63c07.html</url>
-    <content><![CDATA[<h2 id="nodejs安装及配置环境"><a class="markdownIt-Anchor" href="#nodejs安装及配置环境">#</a> Node.js 安装及配置环境</h2>
-<h3 id="nodejs安装"><a class="markdownIt-Anchor" href="#nodejs安装">#</a>  <code>node.js</code>  安装</h3>
-<ol>
-<li>我这里安装在 <code>C:\app\nodejs</code></li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/N2pSe6Oq9BVLjbK.png" alt=""></p>
-<ol start="2">
-<li>安装完之后打开 <code>cmd</code> ，输入 <code>node -v</code>  和 <code>npm -v</code></li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/Cln8IqXUAWwdMBK.jpg" alt=""></p>
-<h3 id="设置npm在安装全局模块时的路径和环境变量"><a class="markdownIt-Anchor" href="#设置npm在安装全局模块时的路径和环境变量">#</a> 设置 npm 在安装全局模块时的路径和环境变量</h3>
-<p>如果不设置的话，安装模块是默认在 C 盘的，会占用 C 盘空间，我这边把安装路径修改一下，建议你也改一下。</p>
+    <title>如何给PicGo添加水印</title>
+    <url>/2022/04/11/2fbd98c3.html</url>
+    <content><![CDATA[<p>在运营独立博客的时候，自己原创的文章，经常会被别人转载，又没有标明原作者地址，导致原创作者流量流失了一部分，如果可以标记原创是自己的话，那就非常方便了，比如说加个水印就好一点。刚好 <code>PicGo</code>  有个插件 <code>watermark</code>  可以给突破加水印，这就很方便了，不用上传图片自己还要去添加一个水印。</p>
+<h2 id="安装watermark"><a class="markdownIt-Anchor" href="#安装watermark">#</a> 安装 <code>watermark</code></h2>
+<p>安装 <code>watermark</code> ， <code>PicGo</code>  最低版本要 <code>2.2.0</code></p>
+<p>可以直接在 <code>PicGo</code>  插件设置下载</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204110022.jpeg" alt=""></p>
+<h2 id="配置watermark"><a class="markdownIt-Anchor" href="#配置watermark">#</a> 配置 <code>watermark</code></h2>
+<div class="note info">
+<p>有些同学可能在配置 watermark 一直出错，可以试着 <code>字体文件路径</code> 设置和我一样的，把文件拉进去就行</p>
+</div>
+<p>这里放上字体链接，有需要自取，字体来源于 <span class="exturl" data-url="aHR0cHM6Ly93d3cuZm9udHMubmV0LmNuL2ZvbnQtNDAwOTA5Njk5NjAuaHRtbD9wcmV2aWV3VGV4dD13d3cuaGlra2kuc2l0ZQ==">字体天下</span></p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204110023.jpeg" alt=""></p>
+<div class="note warning">
+<p>以上如果有侵害你的权益，请立即联系我</p>
+</div>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>技术杂谈</category>
+        <category>一个小技巧</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>一个技巧</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>添加开机自启程序</title>
+    <url>/2022/04/07/2cc8588f.html</url>
+    <content><![CDATA[<h2 id="键盘点击winr"><a class="markdownIt-Anchor" href="#键盘点击winr">#</a> 键盘点击 <code>win+R</code></h2>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204071930.jpg" alt=""></p>
+<h2 id="在窗口输入shellstartup"><a class="markdownIt-Anchor" href="#在窗口输入shellstartup">#</a> 在窗口输入 <code>shell:startup</code></h2>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>shell:startup</pre></td></tr></table></figure><p><strong>打开是这个路径</strong>，把你想要开机自启的软件快捷方式拖到这个路径下，以后电脑开机就会自动启动这个程序了</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204071937.jpg" alt=""></p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204071936.jpg" alt=""></p>
+<div class="note warning">
+<p>以上如有错误，欢迎留言指出</p>
+</div>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>技术杂谈</category>
+        <category>一个小技巧</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+        <tag>生活小技巧</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git详细使用方法</title>
+    <url>/2022/04/04/43d2d741.html</url>
+    <content><![CDATA[<h2 id="初始化仓库"><a class="markdownIt-Anchor" href="#初始化仓库">#</a> 初始化仓库</h2>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">git</span> init 			<span class="token comment">#初始化当前文件夹为仓库，默认是 master 分支</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token function">git</span> <span class="token builtin class-name">help</span> -a 		<span class="token comment"># 显示完全的指令列表</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre><span class="token function">git</span> <span class="token function">add</span> text.txt 	<span class="token comment"># 添加 text.txt 文件加入到 Git 系统的索引中，tips: 可以使用通配符添加 “*” 和 “.”</span></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre><span class="token function">git</span> status			<span class="token comment"># 查看当前 Git 的状态，是否有新文件没有加入到 Git 索引中</span></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre><span class="token function">git</span> commit -m <span class="token string">"操作说明"</span> --author<span class="token operator">=</span><span class="token string">'操作者姓名'</span> --email<span class="token operator">=</span><span class="token string">'操作者邮箱'</span> <span class="token comment">#把已经添加到 Git 索引的所有文件到推送到 repository，一般我们在使用 github 的时候，就是通过这个指令把文件推送到 github 的</span></pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre>gitk 				<span class="token comment"># 启动图形界面查看 repository 有哪些文件</span></pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre><span class="token comment"># 一般在离开 git bash here 的时候习惯用 exit 结束，这样下次回来的时候可以恢复到原来的状态</span></pre></td></tr></table></figure><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204121821.jpeg" alt="" title="本地仓库提交都爱github仓库流程"></p>
+<p><code>config</code>  有三个基本配置的文件，他们分别有优先权之分。</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>.git/config					<span class="token comment">#优先权最高，存在于 Git 本地仓库下的.git 文件内</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>Administrator/.gitconfig	<span class="token comment">#其次，存在于你 PC 当前用户下</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>etc/gitconfig 				<span class="token comment">#优先权最低，存在 Git 安装软件的位置</span></pre></td></tr></table></figure><p><em>存在位置如图所示</em></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204121724.jpeg" alt="" title=".git/config"></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204121743.jpeg" alt="" title="Administrator/.gitconfig"></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204121723.jpeg" alt="" title="etc/gitconfig "></p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>技术杂谈</category>
+        <category>持续更新</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>第三篇：Git提交文件---从0基础搭建Hexo博客</title>
+    <url>/2022/03/30/b75a1db6.html</url>
+    <content><![CDATA[<h2 id="配置git"><a class="markdownIt-Anchor" href="#配置git">#</a> 配置 git</h2>
+<h4 id="一-绑定gitee"><a class="markdownIt-Anchor" href="#一-绑定gitee">#</a> 一、绑定 Gitee</h4>
+<p>首先来简单介绍一下 SSH 协议</p>
+<p><strong>SSH（安全外壳协议，Secure Shell 的缩写）是建立在应用层基础上的安全协议。SSH 是目前较可靠，专为远程登录会话和其他网络服务提供安全性的协议，利用 SSH 协议可以有效防止远程管理过程中的信息泄露问题。简单来说，SSH 就是保障你的账户安全，将你的数据加密压缩，不仅防止其他人截获你的数据，还能加快传输速度。如果想详细了解的话，可以看这篇文章：详述 SSH 的原理及其应用 - CSDN，下面就详细介绍如何绑定 GitHub 和提交文件。</strong></p>
+<p><strong>我们要用 git 上传文件到 GitHub 首先得利用 SSH 登录远程主机，而登录方式有两种：一种是口令登录；另一种是公钥登录。口令登录每次都要输入密码十分麻烦，而公钥登录就省去了输入密码的步骤，所以我们选择公钥授权。首先我们得在 GitHub 上添加 SSH key 配置，要想生成 SSH key，就要先安装 SSH，不过我们安装了 Git Bash，其应该自带了 SSH。检验一下是否安装 SSH，我们在新建的文件夹中右键打开 Git Bash：</strong></p>
 <ol>
 <li>
-<p>在 <code>nodejs</code>  下创建两个目录 <code>ndoe_cache</code>  和 <code>node_global</code></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/il5vILhOF76qTRs.png" alt=""></p>
+<p>新建一个文件夹 ``text`</p>
+<p><img data-src="https://s2.loli.net/2022/03/30/Jz1dTG6SPkwlQ5p.jpg" alt=""></p>
 </li>
 <li>
-<p>选择 <code>node_cache</code>  右击打开属性，把权限下的 “完全控制” 选上</p>
+<p>鼠标右击打开 <code>git Bash Here</code></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/Jz1dTG6SPkwlQ5p.jpg" alt=""></p>
 </li>
+<li>
+<p>输入 <code>ssh</code>  检查使是否安装 <code>ssh</code></p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>ssh-keygen -t rsa</pre></td></tr></table></figure></li>
 </ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/o8THeYdwjvLzSmb.png" alt=""></p>
-<ol start="3">
-<li>同理，选择 <code>node_global</code>  右击打开属性，把权限下的 “完全控制” 也选上</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/iETUhyYIKm7q9FL.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/8RcNpfrZ2PEjtA7.jpg" alt=""></p>
 <ol start="4">
-<li>复制 <code>node_global</code>  和 <code>node_cache</code>  的路径</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/Aw8O2gfGHMUWeku.jpg" alt=""></p>
-<ol start="5">
-<li>然后再返回刚刚打开的 cmd, 输入以下代码</li>
-</ol>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">npm</span> config <span class="token builtin class-name">set</span> prefix <span class="token string">"C:<span class="token entity" title="\a">\a</span>pp<span class="token entity" title="\n">\n</span>odejs<span class="token entity" title="\n">\n</span>ode_global"</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token function">npm</span> config <span class="token builtin class-name">set</span> cache <span class="token string">"C:<span class="token entity" title="\a">\a</span>pp<span class="token entity" title="\n">\n</span>odejs<span class="token entity" title="\n">\n</span>ode_cache"</span></pre></td></tr></table></figure><p><img data-src="https://s2.loli.net/2022/03/30/piUmIH6Zv9SO8c3.jpg" alt=""></p>
-<ol start="6">
 <li>
-<p>设置完路径之后，我们还要去系统环境变量修改一下</p>
-<p><strong>打开桌面 —&gt; 此电脑 —&gt; 属性 —&gt; 高级系统设置 —&gt; 环境变量</strong></p>
+<p>输入  <code>ssh-keygen -t rsa</code>  命令，表示 <code>RSA</code>  算法生成密钥，然后敲 4 次回车键，之后会生成两个文件，分别为密钥 <code>id_rsa</code>  和公钥 <code>id_rsa.pub</code></p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>ssh-keygen -t rsa</pre></td></tr></table></figure></li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/K3mfVxdr54IvaLJ.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/9fNDbOAVUBeWd8G.jpg" alt=""></p>
+<p><strong>接下来我们要做的事情就是把公钥 <code>id_rsa.pub</code>  的内容添加到 <code> GitHub</code> 。复制公钥  <code>id_rsa.pub</code>  文件里的内容，你可以通过目录找到  <code>id_rsa.pub</code>  文件的位置，用记事本打开文件复制。</strong></p>
+<ol start="5">
+<li>打开  <code>id_rsa.pub</code>  文件复制</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/s39ZxPGuTDJLmwF.jpg" alt=""></p>
+<ol start="6">
+<li>打开 <code>github---&gt;settings---&gt;SSH and GPG keys---&gt;New SSH key</code></li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/LhUzwCNnZGOXDl9.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/4vtGl98ehjRWKJd.jpg" alt=""></p>
+<p><strong>粘贴内容进去</strong></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/i1b3hoFvzPWcUje.jpg" alt=""></p>
+<p><strong>添加成功</strong></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/h7npjw9I8qOBaXA.jpg" alt=""></p>
+<p><strong>验证是否成功，在 <code>Git Bash</code>  中输入 <code> ssh -T git@github.com</code>  验证</strong></p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">ssh</span> -T git@github.com</pre></td></tr></table></figure><p>首次需要输入 <code>yes</code></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/EHSFLzxKoIavPcr.jpg" alt=""></p>
+<h4 id="二-接下来是提交文件"><a class="markdownIt-Anchor" href="#二-接下来是提交文件">#</a> 二、接下来是提交文件</h4>
+<ol>
+<li>新建仓库</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/VKYp3k8NMgDvrW1.jpg" alt=""></p>
+<ol start="2">
+<li>给仓库起个名</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/zsE5a7B3KrliXny.jpg" alt=""></p>
+<ol start="3">
+<li>复制仓库 <code>HTTPS</code>  链接</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/YVpZtKBoWgPbzme.jpg" alt=""></p>
+<ol start="4">
+<li>
+<p>将 <code>text</code>  仓库 <code>clone</code>  到本地仓库，返回刚刚 <code>Git</code>  的窗口，输入 <code>git clone 链接</code> 。</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">git</span> clone https://github.com/aliang518/text.git</pre></td></tr></table></figure></li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/6KVx9MoJ48mE25k.jpg" alt=""></p>
+<ol start="5">
+<li>打开刚刚在电脑新建的 <code>text</code>  文件夹是不是存在一个 <code>GitHub</code>  上名为的 <code>text</code>  仓库</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/b7dHYj5e3lCxypg.jpg" alt=""></p>
+<ol start="6">
+<li>查看 <code>text</code>  仓库是不是和 <code>GitHub</code>  的仓库内容一样</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/g6nQxiVeCzubkNj.jpg" alt=""></p>
+<ol start="7">
+<li>
+<p>新建一个文件</p>
+<p><img data-src="https://s2.loli.net/2022/03/30/2emTn6GyiqSZIba.jpg" alt=""></p>
+</li>
+<li>
+<p>在此文件夹下进入 <code>Git Bash Here</code></p>
 </li>
 </ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/FyrUTcpvfkuGBAP.jpg" alt=""></p>
-<ol start="7">
-<li>打开高级系统设置</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/QvpAOLeS53EbMj9.jpg" alt=""></p>
-<ol start="8">
-<li>打开环境变量</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/xVQKP2vjLJ83ztU.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/7bi2eu8FNYTltd1.jpg" alt=""></p>
 <ol start="9">
-<li>在系统变量中新建一个变量，名为 <code>NODE_PATH</code> , 值为 <code>C:\app\nodejs\node_global\node_modules</code></li>
+<li>
+<p>输入 <code>git status</code>  命令查看仓库状态</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">git</span> status</pre></td></tr></table></figure></li>
 </ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/53jV6FgzIcTXSM8.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/Ust62PMjuSJ9iWw.jpg" alt=""></p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204011752.jpg" alt="20"></p>
 <ol start="10">
-<li>然后编辑上方的用户变量的 Path, 编辑修改为 <code>C:\app\nodejs\node_global</code></li>
+<li>
+<p><code>hexo</code>  已经是一个 Git 仓库了，而我们刚刚创建的文件 <code>123.txt</code>  没有被追踪，也就是没有提交到本地仓库。现在我们使用  <code>git add </code> 命令将文件添加到了「临时缓冲区」，再用  <code>git commit -m &quot;</code> 提交信息&quot; 将其提交到本地仓库，如下图</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token function">git</span> <span class="token function">add</span> text.txt</pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token function">git</span> commit -m <span class="token string">"提交信息"</span></pre></td></tr></table></figure></li>
 </ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/btcT8qOj6dkENLX.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/dnw9lCxOqj1GAH2.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/nYmStTyWgz4bejo.jpg" alt=""></p>
-<h3 id="全部变量修改结果如下图"><a class="markdownIt-Anchor" href="#全部变量修改结果如下图">#</a> 全部变量修改结果，如下图</h3>
-<p><img data-src="https://s2.loli.net/2022/03/30/HUSnKtdhMBgvcOq.jpg" alt=""></p>
-<ol>
-<li>然后打开 <code>cmd</code>  测试一下路径设置和环境变量有没有设置正确，如果没有设置正确的话，在 <code>node_global</code>  是看不到有 <code>webpack</code>  文件夹的</li>
+<p><img data-src="https://s2.loli.net/2022/03/30/cK8LmrBq3vh9YQo.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/3ltIPmEFkHKU1Bc.jpg" alt=""></p>
+<p>如果你是第一次提交的话，就会出现下图情况，让你输入账号和邮箱</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>```git config --global user.name <span class="token string">"aliang518"</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token function">git</span> config --global user.email <span class="token string">"aa******56@126.com"</span></pre></td></tr></table></figure><p><img data-src="https://s2.loli.net/2022/03/30/Dbag4oklMAp1XqQ.jpg" alt=""></p>
+<ol start="11">
+<li>
+<p>查看仓库提交日志</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">git</span> log</pre></td></tr></table></figure></li>
 </ol>
-<p><strong>安装过程</strong></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/FY1g5nJesScwHvC.jpg" alt=""></p>
-<p><strong>安装成功</strong></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/8H7v1uoA3zn9WKs.jpg" alt=""></p>
-<ol start="2">
-<li>出现以下路径说明安装成功了 <code>node_global---&gt;node_modules---&gt;webpack</code></li>
+<p><img data-src="https://s2.loli.net/2022/03/30/xCkvay35W4zG8gE.jpg" alt=""></p>
+<ol start="12">
+<li>
+<p>再输入  <code>git status</code>  查看一下仓库状态</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">git</span> status</pre></td></tr></table></figure></li>
 </ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/ugOVX3WGfpZ9DqP.jpg" alt=""></p>
-<p><strong> <code>nodejs</code>  环境配置到此就完成啦</strong></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/DKZzdOLexy1lB52.jpg" alt=""></p>
+<ol start="13">
+<li>
+<p>将本地仓库提交到远程仓库</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">git</span> push origin main</pre></td></tr></table></figure></li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/rFebnLUxqSkCoR3.jpg" alt=""></p>
+<ol start="14">
+<li>从浏览器打开的时候选择你已经登录 <code>GitHub</code>  的那个浏览器 (我这里用火狐浏览器)</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/etGBbrAjaOzH9Qk.jpg" alt=""></p>
+<ol start="15">
+<li>等待上次成功</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/16UjrZte4OydkG8.jpg" alt=""></p>
+<ol start="16">
+<li>打开 <code>GitHub</code>  仓库 <code>F5</code>  刷新一下，会出现刚刚在本地 <code>text</code>  目录新建的 <code>text.txt</code>  文件</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/QvD1LZXAqeWSNJf.jpg" alt=""></p>
+<p><strong>提交文件已经成功啦</strong></p>
 ]]></content>
       <categories>
         <category>计算机科学</category>
@@ -1323,6 +1226,129 @@
 </ol>
 <p><img data-src="https://s2.loli.net/2022/03/30/6QznLrvacCsXjZT.jpg" alt=""></p>
 <p><strong>博客已经漂漂亮亮了，可以愉快的开始写博客啦</strong></p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>博客</category>
+        <category>零基础搭建Hexo个人博客系列</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第二篇：安装Git---从0基础搭建Hexo博客</title>
+    <url>/2022/03/30/859f60bd.html</url>
+    <content><![CDATA[<h3 id="以下会用到的软件"><a class="markdownIt-Anchor" href="#以下会用到的软件">#</a> 以下会用到的软件</h3>
+<p><strong>必装 [Git][<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbQ==">https://git-scm.com</span>]、[Node.js][<span class="exturl" data-url="aHR0cHM6Ly9ub2RlanMub3JnL2Vu">https://nodejs.org/en</span>]</strong> <em>(点击打开)</em></p>
+<p><strong>建议装 [notepad3][<span class="exturl" data-url="aHR0cHM6Ly9yb29raWUxNjc5LmxhbnpvdWYuY29tL2lIbW1hMDI2bnZkZw==">https://rookie1679.lanzouf.com/iHmma026nvdg</span>]</strong> <em>(点击打开)</em></p>
+<hr>
+<h3 id="安装git"><a class="markdownIt-Anchor" href="#安装git">#</a> 安装 Git</h3>
+<p><img data-src="https://s2.loli.net/2022/03/30/BQvOwdEjhy2Mxpi.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/cynKHCaWvM1lhPQ.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/mGnE9UXQfjSF4LA.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/5Y6oqd7uJGQZ3x9.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/7ulfP3VQJDIR49b.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/O71bgvBpnoya5UN.jpg" alt=""></p>
+<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0rsgp2d5yj30dv0aw756.jpg" alt="07"></p>
+<p><img data-src="https://tva1.sinaimg.cn/large/0065wfS6ly8h0rshgpo17j30dv0aw74s.jpg" alt="9"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/5yNqYXRIFf2kpxc.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/8j3PsJFgN6e1IxB.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/Pz4C6HLjdQiE7MB.jpg" alt=""></p>
+<p><strong>鼠标右看到如图说明安装成功了，打开 Git bash here</strong></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/FbARg18aejdJUVO.jpg" alt=""></p>
+<p><strong>输入 git</strong></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/7qTxPmE6YGFOklK.jpg" alt=""></p>
+<p><strong>安装 git 结束</strong></p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>博客</category>
+        <category>零基础搭建Hexo个人博客系列</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第四篇：安装Nodejs---从0基础搭建Hexo博客</title>
+    <url>/2022/03/30/cf63c07.html</url>
+    <content><![CDATA[<h2 id="nodejs安装及配置环境"><a class="markdownIt-Anchor" href="#nodejs安装及配置环境">#</a> Node.js 安装及配置环境</h2>
+<h3 id="nodejs安装"><a class="markdownIt-Anchor" href="#nodejs安装">#</a>  <code>node.js</code>  安装</h3>
+<ol>
+<li>我这里安装在 <code>C:\app\nodejs</code></li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/N2pSe6Oq9BVLjbK.png" alt=""></p>
+<ol start="2">
+<li>安装完之后打开 <code>cmd</code> ，输入 <code>node -v</code>  和 <code>npm -v</code></li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/Cln8IqXUAWwdMBK.jpg" alt=""></p>
+<h3 id="设置npm在安装全局模块时的路径和环境变量"><a class="markdownIt-Anchor" href="#设置npm在安装全局模块时的路径和环境变量">#</a> 设置 npm 在安装全局模块时的路径和环境变量</h3>
+<p>如果不设置的话，安装模块是默认在 C 盘的，会占用 C 盘空间，我这边把安装路径修改一下，建议你也改一下。</p>
+<ol>
+<li>
+<p>在 <code>nodejs</code>  下创建两个目录 <code>ndoe_cache</code>  和 <code>node_global</code></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/il5vILhOF76qTRs.png" alt=""></p>
+</li>
+<li>
+<p>选择 <code>node_cache</code>  右击打开属性，把权限下的 “完全控制” 选上</p>
+</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/o8THeYdwjvLzSmb.png" alt=""></p>
+<ol start="3">
+<li>同理，选择 <code>node_global</code>  右击打开属性，把权限下的 “完全控制” 也选上</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/iETUhyYIKm7q9FL.jpg" alt=""></p>
+<ol start="4">
+<li>复制 <code>node_global</code>  和 <code>node_cache</code>  的路径</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/Aw8O2gfGHMUWeku.jpg" alt=""></p>
+<ol start="5">
+<li>然后再返回刚刚打开的 cmd, 输入以下代码</li>
+</ol>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">npm</span> config <span class="token builtin class-name">set</span> prefix <span class="token string">"C:<span class="token entity" title="\a">\a</span>pp<span class="token entity" title="\n">\n</span>odejs<span class="token entity" title="\n">\n</span>ode_global"</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token function">npm</span> config <span class="token builtin class-name">set</span> cache <span class="token string">"C:<span class="token entity" title="\a">\a</span>pp<span class="token entity" title="\n">\n</span>odejs<span class="token entity" title="\n">\n</span>ode_cache"</span></pre></td></tr></table></figure><p><img data-src="https://s2.loli.net/2022/03/30/piUmIH6Zv9SO8c3.jpg" alt=""></p>
+<ol start="6">
+<li>
+<p>设置完路径之后，我们还要去系统环境变量修改一下</p>
+<p><strong>打开桌面 —&gt; 此电脑 —&gt; 属性 —&gt; 高级系统设置 —&gt; 环境变量</strong></p>
+</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/FyrUTcpvfkuGBAP.jpg" alt=""></p>
+<ol start="7">
+<li>打开高级系统设置</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/QvpAOLeS53EbMj9.jpg" alt=""></p>
+<ol start="8">
+<li>打开环境变量</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/xVQKP2vjLJ83ztU.jpg" alt=""></p>
+<ol start="9">
+<li>在系统变量中新建一个变量，名为 <code>NODE_PATH</code> , 值为 <code>C:\app\nodejs\node_global\node_modules</code></li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/53jV6FgzIcTXSM8.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/Ust62PMjuSJ9iWw.jpg" alt=""></p>
+<ol start="10">
+<li>然后编辑上方的用户变量的 Path, 编辑修改为 <code>C:\app\nodejs\node_global</code></li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/btcT8qOj6dkENLX.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/dnw9lCxOqj1GAH2.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/nYmStTyWgz4bejo.jpg" alt=""></p>
+<h3 id="全部变量修改结果如下图"><a class="markdownIt-Anchor" href="#全部变量修改结果如下图">#</a> 全部变量修改结果，如下图</h3>
+<p><img data-src="https://s2.loli.net/2022/03/30/HUSnKtdhMBgvcOq.jpg" alt=""></p>
+<ol>
+<li>然后打开 <code>cmd</code>  测试一下路径设置和环境变量有没有设置正确，如果没有设置正确的话，在 <code>node_global</code>  是看不到有 <code>webpack</code>  文件夹的</li>
+</ol>
+<p><strong>安装过程</strong></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/FY1g5nJesScwHvC.jpg" alt=""></p>
+<p><strong>安装成功</strong></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/8H7v1uoA3zn9WKs.jpg" alt=""></p>
+<ol start="2">
+<li>出现以下路径说明安装成功了 <code>node_global---&gt;node_modules---&gt;webpack</code></li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/ugOVX3WGfpZ9DqP.jpg" alt=""></p>
+<p><strong> <code>nodejs</code>  环境配置到此就完成啦</strong></p>
 ]]></content>
       <categories>
         <category>计算机科学</category>
@@ -1654,22 +1680,5 @@
         <tag>博客</tag>
         <tag>教程</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Git详细使用方法</title>
-    <url>/2022/04/04/43d2d741.html</url>
-    <content><![CDATA[<h2 id="初始化仓库"><a class="markdownIt-Anchor" href="#初始化仓库">#</a> 初始化仓库</h2>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">git</span> init 			<span class="token comment">#初始化当前文件夹为仓库，默认是 master 分支</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token function">git</span> <span class="token builtin class-name">help</span> -a 		<span class="token comment"># 显示完全的指令列表</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre><span class="token function">git</span> <span class="token function">add</span> text.txt 	<span class="token comment"># 添加 text.txt 文件加入到 Git 系统的索引中，tips: 可以使用通配符添加 “*” 和 “.”</span></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre><span class="token function">git</span> status			<span class="token comment"># 查看当前 Git 的状态，是否有新文件没有加入到 Git 索引中</span></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre><span class="token function">git</span> commit -m <span class="token string">"操作说明"</span> --author<span class="token operator">=</span><span class="token string">'操作者姓名'</span> --email<span class="token operator">=</span><span class="token string">'操作者邮箱'</span> <span class="token comment">#把已经添加到 Git 索引的所有文件到推送到 repository，一般我们在使用 github 的时候，就是通过这个指令把文件推送到 github 的</span></pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre>gitk 				<span class="token comment"># 启动图形界面查看 repository 有哪些文件</span></pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre><span class="token comment"># 一般在离开 git bash here 的时候习惯用 exit 结束，这样下次回来的时候可以恢复到原来的状态</span></pre></td></tr></table></figure><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204121821.jpeg" alt="" title="本地仓库提交都爱github仓库流程"></p>
-<p><code>config</code>  有三个基本配置的文件，他们分别有优先权之分。</p>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>.git/config					<span class="token comment">#优先权最高，存在于 Git 本地仓库下的.git 文件内</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>Administrator/.gitconfig	<span class="token comment">#其次，存在于你 PC 当前用户下</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>etc/gitconfig 				<span class="token comment">#优先权最低，存在 Git 安装软件的位置</span></pre></td></tr></table></figure><p><em>存在位置如图所示</em></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204121724.jpeg" alt="" title=".git/config"></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204121743.jpeg" alt="" title="Administrator/.gitconfig"></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204121723.jpeg" alt="" title="etc/gitconfig "></p>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>技术杂谈</category>
-        <category>持续更新</category>
-      </categories>
   </entry>
 </search>

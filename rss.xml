@@ -29,6 +29,9 @@
             <guid isPermalink="true">https://www.hikki.site/2022/04/25/28af37eb.html</guid>
             <title>Hexo部署err:Error:Spawn failed错误</title>
             <link>https://www.hikki.site/2022/04/25/28af37eb.html</link>
+            <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+            <category term="博客" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
+            <category term="搭博客常见错误" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E6%90%AD%E5%8D%9A%E5%AE%A2%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/" />
             <category term="博客" scheme="https://www.hikki.site/tags/%E5%8D%9A%E5%AE%A2/" />
             <category term="bug" scheme="https://www.hikki.site/tags/bug/" />
             <pubDate>Mon, 25 Apr 2022 01:51:19 +0800</pubDate>
@@ -55,6 +58,8 @@
             <guid isPermalink="true">https://www.hikki.site/2022/04/25/37c8254d.html</guid>
             <title>python qt5 实现记事本界面</title>
             <link>https://www.hikki.site/2022/04/25/37c8254d.html</link>
+            <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+            <category term="技术杂谈" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" />
             <pubDate>Mon, 25 Apr 2022 01:17:11 +0800</pubDate>
             <description><![CDATA[  ]]></description>
         </item>
@@ -411,8 +416,8 @@
             <link>https://www.hikki.site/2022/04/12/3d358537.html</link>
             <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
             <category term="每日一更" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B4/" />
-            <category term="每日一更" scheme="https://www.hikki.site/tags/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B4/" />
             <category term="Linux" scheme="https://www.hikki.site/tags/Linux/" />
+            <category term="每日一更" scheme="https://www.hikki.site/tags/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B4/" />
             <category term="教程" scheme="https://www.hikki.site/tags/%E6%95%99%E7%A8%8B/" />
             <category term="数据库" scheme="https://www.hikki.site/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" />
             <pubDate>Tue, 12 Apr 2022 01:54:58 +0800</pubDate>
