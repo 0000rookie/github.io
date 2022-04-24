@@ -424,49 +424,7 @@
   </url>
   
   <url>
-    <loc>https://www.hikki.site/tags/python/</loc>
-    <lastmod>2022-04-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.hikki.site/tags/python/</loc>
-    <lastmod>2022-04-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.hikki.site/tags/python%E9%82%A3%E4%BA%9B%E5%BA%93/</loc>
-    <lastmod>2022-04-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.hikki.site/tags/pyhton/</loc>
-    <lastmod>2022-04-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.hikki.site/tags/andriod/</loc>
-    <lastmod>2022-04-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.hikki.site/tags/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/</loc>
-    <lastmod>2022-04-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.hikki.site/tags/%E6%B3%A8%E5%86%8C%E8%A1%A8/</loc>
+    <loc>https://www.hikki.site/tags/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B4/</loc>
     <lastmod>2022-04-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -474,20 +432,6 @@
   
   <url>
     <loc>https://www.hikki.site/tags/Linux/</loc>
-    <lastmod>2022-04-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.hikki.site/tags/CentoOS/</loc>
-    <lastmod>2022-04-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.hikki.site/tags/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B4/</loc>
     <lastmod>2022-04-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -502,6 +446,20 @@
   
   <url>
     <loc>https://www.hikki.site/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
+    <lastmod>2022-04-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.hikki.site/tags/CentoOS/</loc>
+    <lastmod>2022-04-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.hikki.site/tags/python/</loc>
     <lastmod>2022-04-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -530,6 +488,48 @@
   
   <url>
     <loc>https://www.hikki.site/tags/BUG/</loc>
+    <lastmod>2022-04-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.hikki.site/tags/python%E9%82%A3%E4%BA%9B%E5%BA%93/</loc>
+    <lastmod>2022-04-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.hikki.site/tags/pyhton/</loc>
+    <lastmod>2022-04-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.hikki.site/tags/python/</loc>
+    <lastmod>2022-04-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.hikki.site/tags/andriod/</loc>
+    <lastmod>2022-04-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.hikki.site/tags/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/</loc>
+    <lastmod>2022-04-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.hikki.site/tags/%E6%B3%A8%E5%86%8C%E8%A1%A8/</loc>
     <lastmod>2022-04-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -587,6 +587,13 @@
   </url>
   
   <url>
+    <loc>https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B4/</loc>
+    <lastmod>2022-04-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.hikki.site/categories/%E7%94%9F%E6%B4%BB/%E5%A5%BD%E7%89%A9%E6%8E%A8%E8%8D%90/</loc>
     <lastmod>2022-04-24</lastmod>
     <changefreq>weekly</changefreq>
@@ -602,13 +609,6 @@
   
   <url>
     <loc>https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/</loc>
-    <lastmod>2022-04-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B4/</loc>
     <lastmod>2022-04-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
