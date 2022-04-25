@@ -1405,7 +1405,7 @@ function friendscircle(){
   //var friend = friends[Math.floor(Math.random()*friends.length)];
   var friend = 'https://shoka.lostyu.me/';
   //window.open(friend,"_blank");
-   window.location.href="http://www.njcatv.net";
+   window.location.href="https://shoka.lostyu.me/";
 }
 
 
