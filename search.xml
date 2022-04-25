@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>我的第一篇博客</title>
-    <url>/2022/03/26/d95d7e09.html</url>
+    <url>/d95d7e09.html</url>
     <content><![CDATA[<h6 id="历时两天终于把我的小破站建成了"><a class="markdownIt-Anchor" href="#历时两天终于把我的小破站建成了">#</a> 历时两天，终于把我的小破站建成了。</h6>
 <h6 id="小破站的初心就是为了记录自己学习情况遇到的问题进行总结以及记录生活"><a class="markdownIt-Anchor" href="#小破站的初心就是为了记录自己学习情况遇到的问题进行总结以及记录生活">#</a> 小破站的初心就是为了记录自己学习情况，遇到的问题进行总结，以及记录生活。</h6>
 ]]></content>
@@ -12,7 +12,7 @@
   </entry>
   <entry>
     <title>QQ/微信/支付宝 收款码美化</title>
-    <url>/2022/04/11/ee3e214f.html</url>
+    <url>/ee3e214f.html</url>
     <content><![CDATA[<p>有时候想贴个二维码出来，但是觉得这个二维码太丑了，然后就发现了个神奇的网站，叫<span class="exturl" data-url="aHR0cHM6Ly9jbGkuaW0v">草料二维码</span></p>
 <p>可以美化微信、支付宝、钉钉等二维码，文字转二维码等等功能，各种各样。</p>
 <p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204120247.jpeg" alt=""></p>
@@ -29,7 +29,7 @@
   </entry>
   <entry>
     <title>日记分享2022.4.13</title>
-    <url>/2022/04/13/b9e6c7bf.html</url>
+    <url>/b9e6c7bf.html</url>
     <content><![CDATA[<div class="note danger">
 <p>我周三还没开始写作业</p>
 </div>
@@ -45,7 +45,7 @@
   </entry>
   <entry>
     <title>4.9日记分享</title>
-    <url>/2022/04/10/ef5acbc6.html</url>
+    <url>/ef5acbc6.html</url>
     <content><![CDATA[<h2 id="49日记分享"><a class="markdownIt-Anchor" href="#49日记分享">#</a> 4.9 日记分享</h2>
 <p>自从开始玩博客之后，经常用到 <code>Git</code> ，感觉非常重要。如今每个企业都基本用到 <code>Git</code> ，如果就业的时候不会使用 <code>Git</code> ，感觉还是落后于别人一步的，而且，现在也有时间学习，倒不如现在开始学习一下，顺便玩一玩服务器，可能对 <code>Git</code>  会更加熟练，话不多说，直接动手开始学习。</p>
 ]]></content>
@@ -59,7 +59,7 @@
   </entry>
   <entry>
     <title>root破解手机限速问题</title>
-    <url>/2022/04/21/70ded1a5.html</url>
+    <url>/70ded1a5.html</url>
     <content><![CDATA[<h2 id="前言"><a class="markdownIt-Anchor" href="#前言">#</a> 前言</h2>
 <p>首先你要有 <code>root</code>  才能食用以下教程，而且仅适用 <code>andriod</code>  手机，苹果手机不支持。</p>
 <p>我们是通过修改手机接收频段来改善手机信号的，我们手机默认的频段一般是选择比较稳定的，但是，但是，但是如果大家都选这个最稳定的，是不是就容易造成人数过多使用这个频段，造成资源拥堵，资源分配到每个人是不是就变少了呢。</p>
@@ -71,12 +71,12 @@
 <li>打开的时候要 <code>root</code>  权限，选择 <code>允许</code> ， <code>打开强制功能</code></li>
 <li>选择频段</li>
 </ol>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022045801.jpeg" alt=""></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022045801.jpeg" alt="" width="75%" height="75%"></p>
 <h2 id="选择lte频段"><a class="markdownIt-Anchor" href="#选择lte频段">#</a> 选择 LTE 频段</h2>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022040700.jpeg" alt=""></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022040700.jpeg" alt="" width="75%" height="75%"></p>
 <h2 id="修改频段为b1和b3"><a class="markdownIt-Anchor" href="#修改频段为b1和b3">#</a> 修改频段为 B1 和 B3</h2>
 <p><strong>此处我是联通卡</strong>，选 B1 和 B3 比较快，也相对稳定很多，5G 也基本没掉线过，非常稳定</p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022040740.jpeg" alt=""></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022040740.jpeg" alt="" width="75%" height="75%"></p>
 ]]></content>
       <categories>
         <category>计算机科学</category>
@@ -88,7 +88,7 @@
   </entry>
   <entry>
     <title>学习注册表</title>
-    <url>/2022/04/18/16ad79ec.html</url>
+    <url>/16ad79ec.html</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>计算机科学</category>
@@ -101,7 +101,7 @@
   </entry>
   <entry>
     <title>ERROR: spyder 4.0.1 requires pyqtwebengine&lt;5.13; python_version &gt;= 3, which is not installed. ERROR: spyder 4.0.1 has requirement pyqt5&lt;5.13; python_version &gt;= 3, but you&#39;ll have pyqt5 5.15.6 which is incompatible.</title>
-    <url>/2022/04/23/af3d5cf5.html</url>
+    <url>/af3d5cf5.html</url>
     <content><![CDATA[<h2 id="报错内容"><a class="markdownIt-Anchor" href="#报错内容">#</a> 报错内容</h2>
 <p>原因是 <code>Spyder</code>  不是最新版本</p>
 <figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token operator">>></span><span class="token operator">></span>pip <span class="token function">install</span> pyqt5 <span class="token comment">#报错内容如下</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>ERROR: spyder <span class="token number">4.0</span>.1 requires pyqtwebengine<span class="token operator">&lt;</span><span class="token number">5.13</span><span class="token punctuation">;</span> python_version <span class="token operator">>=</span> <span class="token string">"3"</span>, <span class="token function">which</span> is not installed. </pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>ERROR: spyder <span class="token number">4.0</span>.1 has requirement pyqt<span class="token operator"><span class="token file-descriptor important">5</span>&lt;</span><span class="token number">5.13</span><span class="token punctuation">;</span> python_version <span class="token operator">>=</span> <span class="token string">"3"</span>, but you'll have pyqt5 <span class="token number">5.15</span>.6 <span class="token function">which</span> is incompatible.</pre></td></tr></table></figure><h2 id="查询spyder版本"><a class="markdownIt-Anchor" href="#查询spyder版本">#</a> 查询 spyder 版本</h2>
@@ -118,7 +118,7 @@
   </entry>
   <entry>
     <title>CentOS新增root用户</title>
-    <url>/2022/04/16/111f4f09.html</url>
+    <url>/111f4f09.html</url>
     <content><![CDATA[<h2 id="进入root"><a class="markdownIt-Anchor" href="#进入root">#</a> 进入 root</h2>
 <figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">su</span> root  				<span class="token comment"># 进入 root 时需要输入密码，密码是不显示的</span></pre></td></tr><tr><td data-num="2"></td><td><pre>gedit /etc/sudoers		<span class="token comment"># 打开 sudoers 文件</span></pre></td></tr></table></figure><p><img data-src="http://hikki.test.upcdn.net/2022045220.jpeg" alt=""></p>
 <h2 id="添加新用户"><a class="markdownIt-Anchor" href="#添加新用户">#</a> 添加新用户</h2>
@@ -138,7 +138,7 @@
   </entry>
   <entry>
     <title>Linux忘记数据库密码</title>
-    <url>/2022/04/12/3d358537.html</url>
+    <url>/3d358537.html</url>
     <content><![CDATA[<p>这几天班里在搞团日活动，有个活动是 <code>Oj</code>  比赛，通过同学们刷题提高语言能力，因此需要一个 <code>Oj</code>  平台统计数据，我就想看看自己能不能搭建一个 <code>Oj</code>  平台，然后给大家测试题目。</p>
 <p>在部署项目过程中，我忘记 <code>mysql</code>  密码了，导致我数据库想修改数据没办法。</p>
 <p>经过一番折腾，找到了 <code>mysql</code>  初始密码，记录一下。</p>
@@ -158,7 +158,7 @@
   </entry>
   <entry>
     <title>Python组合数据类型</title>
-    <url>/2022/04/08/cd7b33aa.html</url>
+    <url>/cd7b33aa.html</url>
     <content><![CDATA[<div class="note info">
 <p>每天记录自己学习情况</p>
 </div>
@@ -191,7 +191,7 @@
   </entry>
   <entry>
     <title>hexo结构分析</title>
-    <url>/2022/04/09/ff2eb0a3.html</url>
+    <url>/ff2eb0a3.html</url>
     <content><![CDATA[<h2 id="meta头文件"><a class="markdownIt-Anchor" href="#meta头文件">#</a>  <code>meta</code>  头文件</h2>
 <figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tr><td data-num="1"></td><td><pre># 存放mate头文件</pre></td></tr><tr><td data-num="2"></td><td><pre>.\themes\shoka\layout\_partials\head</pre></td></tr></table></figure>]]></content>
       <categories>
@@ -206,7 +206,7 @@
   </entry>
   <entry>
     <title>git push origin master失败</title>
-    <url>/2022/04/08/c32e96d4.html</url>
+    <url>/c32e96d4.html</url>
     <content><![CDATA[<h2 id="关于我想备份blog这件事"><a class="markdownIt-Anchor" href="#关于我想备份blog这件事">#</a> 关于我想备份 <code>blog</code>  这件事</h2>
 <details class="primary"><summary>我要怎么备份blog文件？？？</summary><div>
 <div class="note primary">
@@ -257,7 +257,7 @@
   </entry>
   <entry>
     <title>为博客添加免费的CDN加速</title>
-    <url>/2022/04/08/edaa94fb.html</url>
+    <url>/edaa94fb.html</url>
     <content><![CDATA[<h2 id="设置statics"><a class="markdownIt-Anchor" href="#设置statics">#</a> 设置 <code>statics</code></h2>
 <p>在根目录或者 <code>themes</code>  下 <code>_config.yml</code>  文件下配置</p>
 <figure class="highlight yaml"><figcaption data-lang="YAML"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token key atrule">格式：statics</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//cdn.jsdelivr.net/gh/账户名/仓库名/</pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token key atrule">statics</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//cdn.jsdelivr.net/gh/0000rookie/github.io/</pre></td></tr></table></figure><p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204081139.jpg" alt=""></p>
@@ -295,7 +295,7 @@
   </entry>
   <entry>
     <title>常用命令指令</title>
-    <url>/2022/04/10/3fa3774.html</url>
+    <url>/3fa3774.html</url>
     <content><![CDATA[<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>tree <span class="token builtin class-name">.</span> <span class="token comment">#列出当前文件夹下的所有文件</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>tree /f <span class="token comment">#显示当前文件夹所有文件</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>tree /a <span class="token comment">#显示当前文件夹的所有文件夹</span></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>计算机科学</category>
@@ -307,7 +307,7 @@
   </entry>
   <entry>
     <title>这是大二下的各科作业</title>
-    <url>/2022/04/08/2b5f7ebb.html</url>
+    <url>/2b5f7ebb.html</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，这个密码看着不太对，请再试试" data-whm="抱歉，这个文章不能被纠正，不过您还是能看看解密后的内容">
   <script id="hbeData" type="hbeData" data-hmacdigest="736d6f317de652675e92c562c9d559a1a4933fa5da6633bb287a93596b9f26cc">fc8ec58bcd304fc0f97ab129566d154af1d2a39ab32988b65a03f96755db586b87c750b1a5859def1c25d72c08186c80ac1f1b603ec24b6d40ce078a19cf4ed63b8b3c89281368284ed5acd62cab190e9c8bab2fe4d1765ffaa3769cbf699834be2ed0fbcc9fe46d07a65759e40b49ee59d107702bf0b469a0462f78f31e766b18f3a153c653ac1ad4ab8836b343844227b31f6c898d1e46d0da787b9d58dbe8114036fd7da0e08f8817b51a6b26661006a228f59c179587570624d1b08486876e4257edbaa0f0d5c2cf0d8f1eea49ba5b643c84122c99cfea74e7111df955af1e587963b806a1c979ae02d61d62a0f6f193f8d890a31df3abe5bc77e581d9ccf1c0592fbdc04d0c6b79f91e21d636b9b8986224515d6a7671132330cddb9c4a5e758fcd7ec41d24d8a749a0ddd2bb9ab993a7f5a70d8051da001c5cc574616916c87145b6ea5d991bfe663c48f3d52cc9e2defac07737be9d0c0b9c2f6176c43c560e1012d1a2b58a5cce83f997de32e46b42e8900f216bf9ac83bd5883d3f83bb3e7238cbf3b62c152d751fe30d9925ed87b157e1bbee9aa3990e8b78f3d7519875fe1de884eec368562a936a2e9d613f3f112258f85dfb93a3746817e00d90185dae4e805dfbf455b5c239b54b33b1595247ac059c9db5283920ed3a474b1c131ebb191ba09fe400fbcc3c3d4e7bed94267f78debaaa5378abe94f47deea417d56a30cf29c22c5630a185aef48d6ac2be2c4c8496d986b70472dbff913ca04bd324c8e9d11ac3efa565c8d50e62bbbcf6e8a782d00bc58cb7fdf291f95ae22fd3fca5350e0f778b5fdafa23528d16d543b523f6a32087773d23577f02f23ac7f32e25b8c6e5c3ea7787ca23c8921300ecd2c46966aa1b19140d68f7920ad378342403bfc41473a362694962b41c2b148aebe488735787d4da4e5035a6d92397fdbfbee957de90027ab21203c3f0801d6c2bbbcbad3b65732c174c47fa4e2b29410846a0996f4eb893eb9d1bb33d33d698c90f9aa63d687302a1929fc2e3c520ef0d78a434685a9bdbad279fe7bddfd8351f519df2a0a4499ecccfd36b2fa070acc95854d860c73591cbc84d912b7145be038397728196a093d9e9b6c91c98e734b477442b979cd2d402ecc037d5e7eaf810257422352057a654ae1948f38156e7a0f2103dc9a2976ff17785887a07b94a95cce95bc1b40c5de916eef4107bbbc0a151d4a57dd8c64a8a30b3159bb28d39c2eaa9d37d3ce75e351717cc2efe3a2471e3ba02d992c3535c52f5b815c7b60fec10c6a9145d5d725443eb326e0892085ffa16ef202c5a6451235355869cdaf5e1d28d0c5bab9b0e0929c79725d5abd7d43c7b1d6e00661c8ad12b7b5697aa6e5f38b27300a0e473500e38547844a87bd4785176034a9c731b928c89c4f639601241a3580d027d4a50412e4b57c8e6656d86a8afaa4388d8292fb33517227a2385b413fae669615ff901627e921eafd0827a700f8108f8965a345788b4d0cc4ea866dfd62ea5410c5ab55d04b50d23d4fbac0865fd1a1dba9c25e9f71714d780fca0b04bfc0453840610d2a6514cd9b8c2dcaee4898cda75964ea35778e9879fbf1febe7a48b45a9958d2cbc207f43d998fe7af70b6db1a52b049bd3cf10827c52e7f0ac702e981ad5047db75a2fe65558fb68d6cca366d656e36a4c6d2748b10731831a01abdab48c62bc55209a8be77ae5a438359ee304f61fc165533bce421522edff8c73b91df590a4d7664b582dbf9cd63b819a38d8dedb7a00713f8d1903e0cc96c159a11312436c5b53a7734feb2648481b1d6263841bf3c62002</script>
   <div class="hbe hbe-content">
@@ -326,55 +326,8 @@
       </categories>
   </entry>
   <entry>
-    <title>如何在hexo博客写作</title>
-    <url>/2022/04/13/b26ff49b.html</url>
-    <content><![CDATA[<h2 id="前言"><a class="markdownIt-Anchor" href="#前言">#</a> 前言</h2>
-<p><code>hexo</code>  采用的是 <code>markdown</code>  语言的轻量级标记语言，写作时使用 <code>markdown</code> ，它的后缀名是 <code>.md</code>  在 hexo 部署的时候， <code>hexo</code>  会渲染 <code>md文件</code> 形成 <code>HTML</code> ，可以大量减少写作排版时间，从而更加专注写作，而不是专注于排版内容。</p>
-<p>如果你不会 <code>markdown</code>  语言甚至都没听过，没关系， <code>markdown</code>  是一种非常简单的语言，他的语法只有十几种，常用的就不到十来个，非常容易入手，一般人半小时就能学会，下面是官网，你可以自行去了解一下学习一下语法。</p>
-<div class="links"><div class="item" title="Markdown官网" style="--block-color:#FBDE99;"><span class="exturl image" data-url="aHR0cHM6Ly9tYXJrZG93bi5jb20uY24v" data-background-image="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204131202.png"></span>
-          <div class="info">
-          <span class="exturl title" data-url="aHR0cHM6Ly9tYXJrZG93bi5jb20uY24v">Markdown官网</span>
-          <p class="desc">轻量级标记语言</p>
-          </div></div><div class="item" title="Typora官网" style="--block-color:#FDBF5C;"><span class="exturl image" data-url="aHR0cHM6Ly9zdXBwb3J0LnR5cG9yYWlvLmNuL3poL01hcmtkb3duLVJlZmVyZW5jZS8=" data-background-image="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204131213.png"></span>
-          <div class="info">
-          <span class="exturl title" data-url="aHR0cHM6Ly9zdXBwb3J0LnR5cG9yYWlvLmNuL3poL01hcmtkb3duLVJlZmVyZW5jZS8=">Typora官网</span>
-          <p class="desc">支持markdown语法</p>
-          </div></div><div class="item" title="Typora软件下载" style="--block-color:#6AD0CB;"><span class="exturl image" data-url="aHR0cHM6Ly9zdXBwb3J0LnR5cG9yYWlvLmNuLw==" data-background-image="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204131213.png"></span>
-          <div class="info">
-          <span class="exturl title" data-url="aHR0cHM6Ly9zdXBwb3J0LnR5cG9yYWlvLmNuLw==">Typora软件下载</span>
-          <p class="desc">官网下载</p>
-          </div></div></div>
-<hr>
-<p>在这里我使用的是 <code>typora</code> ，如果你有需要，可以去官网下一个，或者你用文本编辑器写作也是可以的， <code>Typora</code>  从 <code>V1.0</code>  版本之后就开始收费了，可以下载 <code>V1.0</code>  之前的版本。</p>
-<p><code>Typora</code>  是一个 <code>markdown</code>  编辑器，极简的风格，让你专注于写作.</p>
-<h2 id="如何创建第一篇文章"><a class="markdownIt-Anchor" href="#如何创建第一篇文章">#</a> 如何创建第一篇文章</h2>
-<h3 id="打开git-bash"><a class="markdownIt-Anchor" href="#打开git-bash">#</a> 打开 git bash</h3>
-<p>在你的博客下打开 <code>git bash here</code></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/202204.jpeg" alt=""></p>
-<h3 id="输入指令"><a class="markdownIt-Anchor" href="#输入指令">#</a> 输入指令</h3>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>hexo new 文章标题</pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token comment"># 或者是</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>hexo new 文章标题 --path 路径/文件名.md</pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre><span class="token comment"># 或者可以简写一下</span></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre>hexo new 文章标题 -p 路径/文件名.md</pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre><span class="token comment"># tips：如果不设置路径的话，新建文章是默认存储在 \source\_posts\ 这个路径下的</span></pre></td></tr></table></figure><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/02.jpg" alt=""></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/03.jpg" alt=""></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/04.jpg" alt=""></p>
-<figure class="highlight yaml"><figcaption data-lang="YAML"><span>mark: 1,2-9</span></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment"># Front——matter 格式</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token key atrule">title</span><span class="token punctuation">:</span> 如何在hexo博客写作 			<span class="token comment">#文章标题</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token key atrule">date</span><span class="token punctuation">:</span> <span class="token datetime number">2022-04-13 11:52:06</span>			<span class="token comment">#文章创建时间</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token key atrule">tags</span><span class="token punctuation">:</span>						<span class="token comment">#文章标签</span></pre></td></tr><tr><td data-num="5"></td><td><pre>  <span class="token punctuation">-</span> 博客</pre></td></tr><tr><td data-num="6"></td><td><pre>  <span class="token punctuation">-</span> 每日一更</pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token key atrule">categories</span><span class="token punctuation">:</span> 					<span class="token comment">#文章类别</span></pre></td></tr><tr><td data-num="8"></td><td><pre>  <span class="token punctuation">-</span> 计算机科学</pre></td></tr><tr><td data-num="9"></td><td><pre>  <span class="token punctuation">-</span> 博客</pre></td></tr><tr><td data-num="10"></td><td><pre>  <span class="token punctuation">-</span> 博客的食用方法</pre></td></tr></table></figure><h3 id="发布文章"><a class="markdownIt-Anchor" href="#发布文章">#</a> 发布文章</h3>
-<p>当你文章写完了，想发布到博客上面，先要把文章部署到 <code>github</code>  上面，然后打开你的博客，博客就会读取 <code>github</code>  仓库的内容了。</p>
-<figure class="highlight bash"><figcaption data-lang="bash"><span>mark: 1,2-7</span></figcaption><table><tr><td data-num="1"></td><td><pre>hexo clean</pre></td></tr><tr><td data-num="2"></td><td><pre> hexo g</pre></td></tr><tr><td data-num="3"></td><td><pre> hexo d</pre></td></tr><tr><td data-num="4"></td><td><pre> <span class="token comment"># 逐步输入以上三条指令，执行完再输入下一条</span></pre></td></tr><tr><td data-num="5"></td><td><pre> <span class="token comment"># 或者一次性输入三条也是可以的，但新手还不建议一次性输入，前期部署可能有时候容易出错</span></pre></td></tr><tr><td data-num="6"></td><td><pre> hexo clean <span class="token operator">&amp;&amp;</span> hexo g <span class="token operator">&amp;&amp;</span> hexo d</pre></td></tr><tr><td data-num="7"></td><td><pre> <span class="token comment"># 部署完了看一下窗口没有出现报错就可以去博客刷新一下内容了，一般需要几分钟才更新内容</span></pre></td></tr></table></figure><p>到这里，就是 <code>hexo</code>  正常的写作顺序啦</p>
-<div class="note info">
-<p>以上如有错误，欢迎指出</p>
-</div>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>博客</category>
-        <category>博客的食用方法</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>每日一更</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>jsdelivr刷新缓存</title>
-    <url>/2022/04/12/6f010433.html</url>
+    <url>/6f010433.html</url>
     <content><![CDATA[<div class="note info">
 <p>如何刷新 CDN.jsdelivr 缓存 ？？？</p>
 </div>
@@ -402,7 +355,7 @@
   </entry>
   <entry>
     <title>关于shoka主题食用技巧</title>
-    <url>/2022/04/03/5d5981b0.html</url>
+    <url>/5d5981b0.html</url>
     <content><![CDATA[<h2 id="front-matter详解"><a class="markdownIt-Anchor" href="#front-matter详解">#</a> Front-Matter 详解</h2>
 <figure class="highlight markdown"><figcaption data-lang="markdown"><span>n</span></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>title: 文章Front-Matter参数设置  	#文章标题</pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>tags: 							#文章标签</pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>  <span class="token list punctuation">-</span> 博客</pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre>  <span class="token list punctuation">-</span> 教程</pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre>categories:						#文章分类</pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre>  <span class="token list punctuation">-</span> 计算机科学</pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre>  <span class="token list punctuation">-</span> 博客</pre></td></tr><tr class="marked"><td data-num="8"></td><td><pre>sticky: true 					#文章置顶</pre></td></tr><tr><td data-num="9"></td><td><pre>comments: true  				#开启评论</pre></td></tr><tr><td data-num="10"></td><td><pre>audio: false					#关闭音乐播放器</pre></td></tr><tr><td data-num="11"></td><td><pre>date: 2022-04-04 14:22:16  		#文章创建时间，自动生成，或者自己修改时间也可以</pre></td></tr></table></figure><hr>
 <h2 id="个人头像配置"><a class="markdownIt-Anchor" href="#个人头像配置">#</a> 个人头像配置</h2>
@@ -483,8 +436,55 @@
       </tags>
   </entry>
   <entry>
+    <title>如何在hexo博客写作</title>
+    <url>/b26ff49b.html</url>
+    <content><![CDATA[<h2 id="前言"><a class="markdownIt-Anchor" href="#前言">#</a> 前言</h2>
+<p><code>hexo</code>  采用的是 <code>markdown</code>  语言的轻量级标记语言，写作时使用 <code>markdown</code> ，它的后缀名是 <code>.md</code>  在 hexo 部署的时候， <code>hexo</code>  会渲染 <code>md文件</code> 形成 <code>HTML</code> ，可以大量减少写作排版时间，从而更加专注写作，而不是专注于排版内容。</p>
+<p>如果你不会 <code>markdown</code>  语言甚至都没听过，没关系， <code>markdown</code>  是一种非常简单的语言，他的语法只有十几种，常用的就不到十来个，非常容易入手，一般人半小时就能学会，下面是官网，你可以自行去了解一下学习一下语法。</p>
+<div class="links"><div class="item" title="Markdown官网" style="--block-color:#FBDE99;"><span class="exturl image" data-url="aHR0cHM6Ly9tYXJrZG93bi5jb20uY24v" data-background-image="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204131202.png"></span>
+          <div class="info">
+          <span class="exturl title" data-url="aHR0cHM6Ly9tYXJrZG93bi5jb20uY24v">Markdown官网</span>
+          <p class="desc">轻量级标记语言</p>
+          </div></div><div class="item" title="Typora官网" style="--block-color:#FDBF5C;"><span class="exturl image" data-url="aHR0cHM6Ly9zdXBwb3J0LnR5cG9yYWlvLmNuL3poL01hcmtkb3duLVJlZmVyZW5jZS8=" data-background-image="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204131213.png"></span>
+          <div class="info">
+          <span class="exturl title" data-url="aHR0cHM6Ly9zdXBwb3J0LnR5cG9yYWlvLmNuL3poL01hcmtkb3duLVJlZmVyZW5jZS8=">Typora官网</span>
+          <p class="desc">支持markdown语法</p>
+          </div></div><div class="item" title="Typora软件下载" style="--block-color:#6AD0CB;"><span class="exturl image" data-url="aHR0cHM6Ly9zdXBwb3J0LnR5cG9yYWlvLmNuLw==" data-background-image="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204131213.png"></span>
+          <div class="info">
+          <span class="exturl title" data-url="aHR0cHM6Ly9zdXBwb3J0LnR5cG9yYWlvLmNuLw==">Typora软件下载</span>
+          <p class="desc">官网下载</p>
+          </div></div></div>
+<hr>
+<p>在这里我使用的是 <code>typora</code> ，如果你有需要，可以去官网下一个，或者你用文本编辑器写作也是可以的， <code>Typora</code>  从 <code>V1.0</code>  版本之后就开始收费了，可以下载 <code>V1.0</code>  之前的版本。</p>
+<p><code>Typora</code>  是一个 <code>markdown</code>  编辑器，极简的风格，让你专注于写作.</p>
+<h2 id="如何创建第一篇文章"><a class="markdownIt-Anchor" href="#如何创建第一篇文章">#</a> 如何创建第一篇文章</h2>
+<h3 id="打开git-bash"><a class="markdownIt-Anchor" href="#打开git-bash">#</a> 打开 git bash</h3>
+<p>在你的博客下打开 <code>git bash here</code></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/202204.jpeg" alt=""></p>
+<h3 id="输入指令"><a class="markdownIt-Anchor" href="#输入指令">#</a> 输入指令</h3>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>hexo new 文章标题</pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token comment"># 或者是</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>hexo new 文章标题 --path 路径/文件名.md</pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre><span class="token comment"># 或者可以简写一下</span></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre>hexo new 文章标题 -p 路径/文件名.md</pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre><span class="token comment"># tips：如果不设置路径的话，新建文章是默认存储在 \source\_posts\ 这个路径下的</span></pre></td></tr></table></figure><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/02.jpg" alt=""></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/03.jpg" alt=""></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/04.jpg" alt=""></p>
+<figure class="highlight yaml"><figcaption data-lang="YAML"><span>mark: 1,2-9</span></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment"># Front——matter 格式</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token key atrule">title</span><span class="token punctuation">:</span> 如何在hexo博客写作 			<span class="token comment">#文章标题</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token key atrule">date</span><span class="token punctuation">:</span> <span class="token datetime number">2022-04-13 11:52:06</span>			<span class="token comment">#文章创建时间</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token key atrule">tags</span><span class="token punctuation">:</span>						<span class="token comment">#文章标签</span></pre></td></tr><tr><td data-num="5"></td><td><pre>  <span class="token punctuation">-</span> 博客</pre></td></tr><tr><td data-num="6"></td><td><pre>  <span class="token punctuation">-</span> 每日一更</pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token key atrule">categories</span><span class="token punctuation">:</span> 					<span class="token comment">#文章类别</span></pre></td></tr><tr><td data-num="8"></td><td><pre>  <span class="token punctuation">-</span> 计算机科学</pre></td></tr><tr><td data-num="9"></td><td><pre>  <span class="token punctuation">-</span> 博客</pre></td></tr><tr><td data-num="10"></td><td><pre>  <span class="token punctuation">-</span> 博客的食用方法</pre></td></tr></table></figure><h3 id="发布文章"><a class="markdownIt-Anchor" href="#发布文章">#</a> 发布文章</h3>
+<p>当你文章写完了，想发布到博客上面，先要把文章部署到 <code>github</code>  上面，然后打开你的博客，博客就会读取 <code>github</code>  仓库的内容了。</p>
+<figure class="highlight bash"><figcaption data-lang="bash"><span>mark: 1,2-7</span></figcaption><table><tr><td data-num="1"></td><td><pre>hexo clean</pre></td></tr><tr><td data-num="2"></td><td><pre> hexo g</pre></td></tr><tr><td data-num="3"></td><td><pre> hexo d</pre></td></tr><tr><td data-num="4"></td><td><pre> <span class="token comment"># 逐步输入以上三条指令，执行完再输入下一条</span></pre></td></tr><tr><td data-num="5"></td><td><pre> <span class="token comment"># 或者一次性输入三条也是可以的，但新手还不建议一次性输入，前期部署可能有时候容易出错</span></pre></td></tr><tr><td data-num="6"></td><td><pre> hexo clean <span class="token operator">&amp;&amp;</span> hexo g <span class="token operator">&amp;&amp;</span> hexo d</pre></td></tr><tr><td data-num="7"></td><td><pre> <span class="token comment"># 部署完了看一下窗口没有出现报错就可以去博客刷新一下内容了，一般需要几分钟才更新内容</span></pre></td></tr></table></figure><p>到这里，就是 <code>hexo</code>  正常的写作顺序啦</p>
+<div class="note info">
+<p>以上如有错误，欢迎指出</p>
+</div>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>博客</category>
+        <category>博客的食用方法</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>每日一更</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>文章Front-Matter参数设置</title>
-    <url>/2022/04/04/a7032750.html</url>
+    <url>/a7032750.html</url>
     <content><![CDATA[<h2 id="h2so4front-matter详解"><a class="markdownIt-Anchor" href="#h2so4front-matter详解">#</a> <span class="red">H<sub>2</sub>SO<sub>4</sub></span>Front-Matter 详解</h2>
 <figure class="highlight markdown"><figcaption data-lang="markdown"><span>n</span></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>title: 文章Front-Matter参数设置  	#文章标题</pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>tags: 							#文章标签</pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>  <span class="token list punctuation">-</span> 博客</pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre>  <span class="token list punctuation">-</span> 教程</pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre>categories:						#文章分类</pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre>  <span class="token list punctuation">-</span> 计算机科学</pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre>  <span class="token list punctuation">-</span> 博客</pre></td></tr><tr class="marked"><td data-num="8"></td><td><pre>sticky: true 					#文章置顶</pre></td></tr><tr><td data-num="9"></td><td><pre>comments: true  				#开启评论</pre></td></tr><tr><td data-num="10"></td><td><pre>audio: false					#关闭音乐播放器</pre></td></tr><tr><td data-num="11"></td><td><pre>date: 2022-04-04 14:22:16  		#文章创建时间，自动生成，或者自己修改时间也可以</pre></td></tr></table></figure><hr>
 <div class="note warning">
@@ -503,7 +503,7 @@
   </entry>
   <entry>
     <title>Hexo部署err:Error:Spawn failed错误</title>
-    <url>/2022/04/25/28af37eb.html</url>
+    <url>/28af37eb.html</url>
     <content><![CDATA[<h2 id="errerrorspawn-failed"><a class="markdownIt-Anchor" href="#errerrorspawn-failed">#</a>  <code>err:Error:Spawn failed</code></h2>
 <p>今晚在发布文章的时候突然出现了这个问题，昨天还是正常的，今晚就报错了，前前后后尝试了好多办法</p>
 <p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022045305.jpeg" alt=""></p>
@@ -534,7 +534,7 @@
   </entry>
   <entry>
     <title>搭建博客常见的错误</title>
-    <url>/2022/04/01/cdc2e518.html</url>
+    <url>/cdc2e518.html</url>
     <content><![CDATA[<h2 id="404错误"><a class="markdownIt-Anchor" href="#404错误">#</a> 404 错误</h2>
 <p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng20220401163558.png" alt="404"></p>
 <h3 id="分两种情况"><a class="markdownIt-Anchor" href="#分两种情况">#</a> 分两种情况</h3>
@@ -594,7 +594,7 @@
   </entry>
   <entry>
     <title>Hexo怎么安装插件</title>
-    <url>/2022/03/26/c5de56d5.html</url>
+    <url>/c5de56d5.html</url>
     <content><![CDATA[<hr>
 <h3 id="hexo怎么安装插件"><a class="markdownIt-Anchor" href="#hexo怎么安装插件">#</a> hexo 怎么安装插件</h3>
 <ol>
@@ -639,51 +639,8 @@
       </tags>
   </entry>
   <entry>
-    <title>搭建GitHu图床</title>
-    <url>/2022/04/02/e85071ad.html</url>
-    <content><![CDATA[<p><strong>问：什么是图床？图床有什么用？</strong></p>
-<p><strong>答：图床就是一个存放你照片的云盘，只要有网络就能打开这张照片</strong></p>
-<h2 id="新建一个仓库"><a class="markdownIt-Anchor" href="#新建一个仓库">#</a> 新建一个仓库</h2>
-<p><strong>用于存放图片的仓库</strong>  俗称图床<br>
-<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021048.jpg" alt=""></p>
-<h2 id="给你图床起个名字"><a class="markdownIt-Anchor" href="#给你图床起个名字">#</a> 给你图床起个名字</h2>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021050.jpg" alt=""></p>
-<h2 id="新建token"><a class="markdownIt-Anchor" href="#新建token">#</a> 新建 token</h2>
-<p><code>settings---&gt;Developer settings---&gt;Personal access tokens---&gt;generate new token</code> <br>
-<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021051.jpg" alt=""><br>
-<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021059.jpg" alt=""><br>
-<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021100.jpg" alt=""><br>
-<em> 这边给大家翻译一下，英文不是很好可以看看</em><br>
-<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021102.jpg" alt=""><br>
-<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021103.jpg" alt=""></p>
-<p><strong>点击复制</strong></p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021105.jpg" alt=""></p>
-<h2 id="配置picgo"><a class="markdownIt-Anchor" href="#配置picgo">#</a> 配置 Picgo</h2>
-<div class="note info">
-<p><strong>我在 imgs 仓库下新建了一个 Hexoimgs 文件夹</strong></p>
-</div>
-<p>粘贴刚刚复制的 <code>token</code>  到 <code>设定Token</code></p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021133.jpg" alt=""></p>
-<p>你 <code>github</code>  上的分支名是什么， <code>PicGO的</code> 设定分支名就写什么</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021131.jpg" alt=""></p>
-<p><strong>设定自定义域名：</strong> <code>0000rookie/imgs</code>  改成你的 <code>用户名/仓库名</code></p>
-<figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tr><td data-num="1"></td><td><pre>http://cdn.jsdelivr.net/gh/0000rookie/imgs</pre></td></tr></table></figure><div class="note success">
-<p><strong>你的图床就搭建完啦</strong></p>
-</div>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>博客</category>
-        <category>模块</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>记录自用hexo模块</title>
-    <url>/2022/04/12/4d530639.html</url>
+    <url>/4d530639.html</url>
     <content><![CDATA[<h2 id="记录自用hexo模块"><a class="markdownIt-Anchor" href="#记录自用hexo模块">#</a> 记录自用 hexo 模块</h2>
 <table>
 <thead>
@@ -834,7 +791,7 @@
   </entry>
   <entry>
     <title>第三篇：Git提交文件---从0基础搭建Hexo博客</title>
-    <url>/2022/03/30/b75a1db6.html</url>
+    <url>/b75a1db6.html</url>
     <content><![CDATA[<h2 id="配置git"><a class="markdownIt-Anchor" href="#配置git">#</a> 配置 git</h2>
 <h4 id="一-绑定gitee"><a class="markdownIt-Anchor" href="#一-绑定gitee">#</a> 一、绑定 Gitee</h4>
 <p>首先来简单介绍一下 SSH 协议</p>
@@ -973,8 +930,86 @@
       </tags>
   </entry>
   <entry>
+    <title>搭建GitHu图床</title>
+    <url>/e85071ad.html</url>
+    <content><![CDATA[<p><strong>问：什么是图床？图床有什么用？</strong></p>
+<p><strong>答：图床就是一个存放你照片的云盘，只要有网络就能打开这张照片</strong></p>
+<h2 id="新建一个仓库"><a class="markdownIt-Anchor" href="#新建一个仓库">#</a> 新建一个仓库</h2>
+<p><strong>用于存放图片的仓库</strong>  俗称图床<br>
+<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021048.jpg" alt=""></p>
+<h2 id="给你图床起个名字"><a class="markdownIt-Anchor" href="#给你图床起个名字">#</a> 给你图床起个名字</h2>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021050.jpg" alt=""></p>
+<h2 id="新建token"><a class="markdownIt-Anchor" href="#新建token">#</a> 新建 token</h2>
+<p><code>settings---&gt;Developer settings---&gt;Personal access tokens---&gt;generate new token</code> <br>
+<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021051.jpg" alt=""><br>
+<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021059.jpg" alt=""><br>
+<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021100.jpg" alt=""><br>
+<em> 这边给大家翻译一下，英文不是很好可以看看</em><br>
+<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021102.jpg" alt=""><br>
+<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021103.jpg" alt=""></p>
+<p><strong>点击复制</strong></p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021105.jpg" alt=""></p>
+<h2 id="配置picgo"><a class="markdownIt-Anchor" href="#配置picgo">#</a> 配置 Picgo</h2>
+<div class="note info">
+<p><strong>我在 imgs 仓库下新建了一个 Hexoimgs 文件夹</strong></p>
+</div>
+<p>粘贴刚刚复制的 <code>token</code>  到 <code>设定Token</code></p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021133.jpg" alt=""></p>
+<p>你 <code>github</code>  上的分支名是什么， <code>PicGO的</code> 设定分支名就写什么</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021131.jpg" alt=""></p>
+<p><strong>设定自定义域名：</strong> <code>0000rookie/imgs</code>  改成你的 <code>用户名/仓库名</code></p>
+<figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tr><td data-num="1"></td><td><pre>http://cdn.jsdelivr.net/gh/0000rookie/imgs</pre></td></tr></table></figure><div class="note success">
+<p><strong>你的图床就搭建完啦</strong></p>
+</div>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>博客</category>
+        <category>模块</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第二篇：安装Git---从0基础搭建Hexo博客</title>
+    <url>/859f60bd.html</url>
+    <content><![CDATA[<h3 id="以下会用到的软件"><a class="markdownIt-Anchor" href="#以下会用到的软件">#</a> 以下会用到的软件</h3>
+<p><strong>必装 [Git][<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbQ==">https://git-scm.com</span>]、[Node.js][<span class="exturl" data-url="aHR0cHM6Ly9ub2RlanMub3JnL2Vu">https://nodejs.org/en</span>]</strong> <em>(点击打开)</em></p>
+<p><strong>建议装 [notepad3][<span class="exturl" data-url="aHR0cHM6Ly9yb29raWUxNjc5LmxhbnpvdWYuY29tL2lIbW1hMDI2bnZkZw==">https://rookie1679.lanzouf.com/iHmma026nvdg</span>]</strong> <em>(点击打开)</em></p>
+<hr>
+<h3 id="安装git"><a class="markdownIt-Anchor" href="#安装git">#</a> 安装 Git</h3>
+<p><img data-src="https://s2.loli.net/2022/03/30/BQvOwdEjhy2Mxpi.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/cynKHCaWvM1lhPQ.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/mGnE9UXQfjSF4LA.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/5Y6oqd7uJGQZ3x9.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/7ulfP3VQJDIR49b.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/O71bgvBpnoya5UN.jpg" alt=""></p>
+<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0rsgp2d5yj30dv0aw756.jpg" alt="07"></p>
+<p><img data-src="https://tva1.sinaimg.cn/large/0065wfS6ly8h0rshgpo17j30dv0aw74s.jpg" alt="9"></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/5yNqYXRIFf2kpxc.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/8j3PsJFgN6e1IxB.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/Pz4C6HLjdQiE7MB.jpg" alt=""></p>
+<p><strong>鼠标右看到如图说明安装成功了，打开 Git bash here</strong></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/FbARg18aejdJUVO.jpg" alt=""></p>
+<p><strong>输入 git</strong></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/7qTxPmE6YGFOklK.jpg" alt=""></p>
+<p><strong>安装 git 结束</strong></p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>博客</category>
+        <category>零基础搭建Hexo个人博客系列</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>第五篇：安装Hexo---从0基础搭建Hexo博客</title>
-    <url>/2022/03/30/87b69652.html</url>
+    <url>/87b69652.html</url>
     <content><![CDATA[<h3 id="安装hexo"><a class="markdownIt-Anchor" href="#安装hexo">#</a> 安装 Hexo</h3>
 <ol>
 <li>新建一个仓库</li>
@@ -1037,43 +1072,8 @@
       </tags>
   </entry>
   <entry>
-    <title>第二篇：安装Git---从0基础搭建Hexo博客</title>
-    <url>/2022/03/30/859f60bd.html</url>
-    <content><![CDATA[<h3 id="以下会用到的软件"><a class="markdownIt-Anchor" href="#以下会用到的软件">#</a> 以下会用到的软件</h3>
-<p><strong>必装 [Git][<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbQ==">https://git-scm.com</span>]、[Node.js][<span class="exturl" data-url="aHR0cHM6Ly9ub2RlanMub3JnL2Vu">https://nodejs.org/en</span>]</strong> <em>(点击打开)</em></p>
-<p><strong>建议装 [notepad3][<span class="exturl" data-url="aHR0cHM6Ly9yb29raWUxNjc5LmxhbnpvdWYuY29tL2lIbW1hMDI2bnZkZw==">https://rookie1679.lanzouf.com/iHmma026nvdg</span>]</strong> <em>(点击打开)</em></p>
-<hr>
-<h3 id="安装git"><a class="markdownIt-Anchor" href="#安装git">#</a> 安装 Git</h3>
-<p><img data-src="https://s2.loli.net/2022/03/30/BQvOwdEjhy2Mxpi.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/cynKHCaWvM1lhPQ.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/mGnE9UXQfjSF4LA.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/5Y6oqd7uJGQZ3x9.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/7ulfP3VQJDIR49b.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/O71bgvBpnoya5UN.jpg" alt=""></p>
-<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0rsgp2d5yj30dv0aw756.jpg" alt="07"></p>
-<p><img data-src="https://tva1.sinaimg.cn/large/0065wfS6ly8h0rshgpo17j30dv0aw74s.jpg" alt="9"></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/5yNqYXRIFf2kpxc.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/8j3PsJFgN6e1IxB.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/Pz4C6HLjdQiE7MB.jpg" alt=""></p>
-<p><strong>鼠标右看到如图说明安装成功了，打开 Git bash here</strong></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/FbARg18aejdJUVO.jpg" alt=""></p>
-<p><strong>输入 git</strong></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/7qTxPmE6YGFOklK.jpg" alt=""></p>
-<p><strong>安装 git 结束</strong></p>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>博客</category>
-        <category>零基础搭建Hexo个人博客系列</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>第四篇：安装Nodejs---从0基础搭建Hexo博客</title>
-    <url>/2022/03/30/cf63c07.html</url>
+    <url>/cf63c07.html</url>
     <content><![CDATA[<h2 id="nodejs安装及配置环境"><a class="markdownIt-Anchor" href="#nodejs安装及配置环境">#</a> Node.js 安装及配置环境</h2>
 <h3 id="nodejs安装"><a class="markdownIt-Anchor" href="#nodejs安装">#</a>  <code>node.js</code>  安装</h3>
 <ol>
@@ -1161,7 +1161,7 @@
   </entry>
   <entry>
     <title>第九篇：安装主题---从0基础搭建Hexo博客</title>
-    <url>/2022/03/30/a5eefddc.html</url>
+    <url>/a5eefddc.html</url>
     <content><![CDATA[<h2 id="寻找主题"><a class="markdownIt-Anchor" href="#寻找主题">#</a> 寻找主题</h2>
 <div class="note info">
 <p>一般我们找主题都是去 <code>github</code>  上面搜索 <code>hexo</code>  或者是 <code>hexo</code>  官网找主题，在选择主题我们都是选自己喜欢的嘛，还有好看的，但是选主题的同时，也要注重主题是否有详细的使用手册，不然你设置好了主题，你不知道主题如何使用，更好看也是白搭，如果你真的是非这个主题不可的话，那只能自己捣鼓了。以下我放上一些博主觉得还可以的主题链接，有需要可以取走。</p>
@@ -1237,7 +1237,7 @@
   </entry>
   <entry>
     <title>第六篇：将博客部署到GitHub---从0基础搭建Hexo博客</title>
-    <url>/2022/03/30/dc09a46c.html</url>
+    <url>/dc09a46c.html</url>
     <content><![CDATA[<h2 id="将hexo部署到github"><a class="markdownIt-Anchor" href="#将hexo部署到github">#</a> 将 Hexo 部署到 github</h2>
 <ol>
 <li>打开 <code>blog</code>  文件夹，打开 <code>_config.yml</code>  文件</li>
@@ -1289,7 +1289,7 @@
   </entry>
   <entry>
     <title>第一篇：注册github---从0基础搭建Hexo博客</title>
-    <url>/2022/03/30/a6f9d072.html</url>
+    <url>/a6f9d072.html</url>
     <content><![CDATA[<h3 id="注册github"><a class="markdownIt-Anchor" href="#注册github">#</a> 注册 GitHub</h3>
 <p><img data-src="https://s2.loli.net/2022/03/30/BULpyk6thPbgJCD.jpg" alt=""></p>
 <p><img data-src="https://s2.loli.net/2022/03/30/fo8wzF7dvqNHaB4.jpg" alt=""></p>
@@ -1317,7 +1317,7 @@
   </entry>
   <entry>
     <title>第八篇：解析域名---从0基础搭建Hexo博客</title>
-    <url>/2022/03/30/9bf6caef.html</url>
+    <url>/9bf6caef.html</url>
     <content><![CDATA[<h3 id="解析域名"><a class="markdownIt-Anchor" href="#解析域名">#</a> 解析域名</h3>
 <ol>
 <li>
@@ -1402,8 +1402,135 @@
       </tags>
   </entry>
   <entry>
+    <title>零基础搭建Hexo个人博客系列</title>
+    <url>/aaad0208.html</url>
+    <content><![CDATA[<h3 id="零基础搭建hexo个人博客系列"><a class="markdownIt-Anchor" href="#零基础搭建hexo个人博客系列">#</a> 零基础搭建 Hexo 个人博客系列</h3>
+<h3 id="前言"><a class="markdownIt-Anchor" href="#前言">#</a> 前言</h3>
+<div class="note default">
+<p>问：听说博客很好玩，可以搭一个属于自己的网站，但是听说要买服务器，这个会不会很贵啊？</p>
+</div>
+<div class="note primary">
+<p>答：本次教程不需要购买服务器，此次我们使用 <code>github pages</code> + <code>hexo</code>  静态部署，完全不需要服务器.</p>
+</div>
+<div class="note default">
+<p>问：什么是 github pages？什么是 hexo？</p>
+</div>
+<div class="note primary">
+<p>答：github pages 是一个静态站点托管服务，就是我们可以把我们的网站代码放在 github 的仓库里，github pages 可以读取仓库的代码，映射到互联网上面，但是这样是没有后台的，只是一个静态页面，对于我们写博客来说，这已经足够了。</p>
+</div>
+<div class="note info">
+<p>本教程适用于刚入门博客的小白，对新手友好，尽量做到每一步都描述出来。</p>
+</div>
+<div class="links"><div class="item" title="第一篇：注册github" style="--block-color:#F46C9D;"><span class="exturl image" data-url="aHR0cDovL2hpa2tpLnNpdGUvYTZmOWQwNzIuaHRtbA==" data-background-image="http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (5).png"></span>
+          <div class="info">
+          <span class="exturl title" data-url="aHR0cDovL2hpa2tpLnNpdGUvYTZmOWQwNzIuaHRtbA==">第一篇：注册github</span>
+          <p class="desc">阿亮の小破站 & 搭建博客系列</p>
+          </div></div><div class="item" title="第二篇：安装Git" style="--block-color:#e9546b;"><span class="exturl image" data-url="aHR0cDovL2hpa2tpLnNpdGUvODU5ZjYwYmQuaHRtbA==" data-background-image="http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (8).jpg"></span>
+          <div class="info">
+          <span class="exturl title" data-url="aHR0cDovL2hpa2tpLnNpdGUvODU5ZjYwYmQuaHRtbA==">第二篇：安装Git</span>
+          <p class="desc">阿亮の小破站 & 搭建博客系列</p>
+          </div></div><div class="item" title="第三篇：Git提交文件" style="--block-color:#F4BAA4;"><span class="exturl image" data-url="aHR0cDovL2hpa2tpLnNpdGUvYjc1YTFkYjYuaHRtbA==" data-background-image="http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (4).png"></span>
+          <div class="info">
+          <span class="exturl title" data-url="aHR0cDovL2hpa2tpLnNpdGUvYjc1YTFkYjYuaHRtbA==">第三篇：Git提交文件</span>
+          <p class="desc">阿亮の小破站 & 搭建博客系列</p>
+          </div></div><div class="item" title="第四篇：安装Nodejs" style="--block-color:#FDBF5C;"><span class="exturl image" data-url="aHR0cDovL2hpa2tpLnNpdGUvY2Y2M2MwNy5odG1s" data-background-image="http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (3).jpg"></span>
+          <div class="info">
+          <span class="exturl title" data-url="aHR0cDovL2hpa2tpLnNpdGUvY2Y2M2MwNy5odG1s">第四篇：安装Nodejs</span>
+          <p class="desc">阿亮の小破站 & 搭建博客系列</p>
+          </div></div><div class="item" title="第五篇：安装Hexo" style="--block-color:#FBDE99;"><span class="exturl image" data-url="aHR0cDovL2hpa2tpLnNpdGUvODdiNjk2NTIuaHRtbA==" data-background-image="http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (9).jpg"></span>
+          <div class="info">
+          <span class="exturl title" data-url="aHR0cDovL2hpa2tpLnNpdGUvODdiNjk2NTIuaHRtbA==">第五篇：安装Hexo</span>
+          <p class="desc">阿亮の小破站 & 搭建博客系列</p>
+          </div></div><div class="item" title="第六篇：将博客部署到GitHub" style="--block-color:#a6c1ee;"><span class="exturl image" data-url="aHR0cDovL2hpa2tpLnNpdGUvZGMwOWE0NmMuaHRtbA==" data-background-image="http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (13).jpg"></span>
+          <div class="info">
+          <span class="exturl title" data-url="aHR0cDovL2hpa2tpLnNpdGUvZGMwOWE0NmMuaHRtbA==">第六篇：将博客部署到GitHub</span>
+          <p class="desc">阿亮の小破站 & 搭建博客系列</p>
+          </div></div></div>
+<hr>
+<div class="links"><div class="item" title="第七篇：安装主题" style="--block-color:#6AD0CB;"><span class="exturl image" data-url="aHR0cDovL2hpa2tpLnNpdGUvMjAyMi8wMy8zMC9hNWVlZmRkYy5odG1s" data-background-image="https://cdn.jsdelivr.net/gh/amehime/shoka@latest/images/avatar.jpg"></span>
+          <div class="info">
+          <span class="exturl title" data-url="aHR0cDovL2hpa2tpLnNpdGUvMjAyMi8wMy8zMC9hNWVlZmRkYy5odG1s">第七篇：安装主题</span>
+          <p class="desc">阿亮の小破站 & 搭建博客系列</p>
+          </div></div></div>
+<hr>
+<hr>
+<div class="note info">
+<p>如果你想拥有一个好看的域名，也就是网址，继续往下看</p>
+</div>
+<div class="links"><div class="item" title="第八篇：购买域名" style="--block-color:#FB7B8E;"><span class="exturl image" data-url="aHR0cDovL2hpa2tpLnNpdGUvNmMyMzkzZWMuaHRtbA==" data-background-image="http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (14).jpg"></span>
+          <div class="info">
+          <span class="exturl title" data-url="aHR0cDovL2hpa2tpLnNpdGUvNmMyMzkzZWMuaHRtbA==">第八篇：购买域名</span>
+          <p class="desc">阿亮の小破站 & 搭建博客系列</p>
+          </div></div><div class="item" title="第九篇：解析域名" style="--block-color:#FF7BA8;"><span class="exturl image" data-url="aHR0cDovL2hpa2tpLnNpdGUvOWJmNmNhZWYuaHRtbA==" data-background-image="http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (15).jpg"></span>
+          <div class="info">
+          <span class="exturl title" data-url="aHR0cDovL2hpa2tpLnNpdGUvOWJmNmNhZWYuaHRtbA==">第九篇：解析域名</span>
+          <p class="desc">阿亮の小破站 & 搭建博客系列</p>
+          </div></div></div>
+<hr>
+<div class="note info">
+<p>如何在博客写文章？？？</p>
+</div>
+<div class="links"><div class="item" title="如何在hexo博客写作" style="--block-color:#fa709a;"><span class="exturl image" data-url="aHR0cHM6Ly9oaWtraS5zaXRlL2IyNmZmNDliLmh0bWw=" data-background-image="http://cdn.jsdelivr.net/gh/0000rookie/imgs/3840×2160amliamng202204100243-32.jpg"></span>
+          <div class="info">
+          <span class="exturl title" data-url="aHR0cHM6Ly9oaWtraS5zaXRlL2IyNmZmNDliLmh0bWw=">如何在hexo博客写作</span>
+          <p class="desc">阿亮の小破站 & 如何写文章</p>
+          </div></div><div class="item" title="Front-Matter参数设置" style="--block-color:#FF7BA8;"><a href="https://www.hikki.site/a7032750.html" class="image" data-background-image="http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (4).png"></a>
+          <div class="info">
+          <a href="https://www.hikki.site/a7032750.html" class="title">Front-Matter参数设置</a>
+          <p class="desc">阿亮の小破站 & 如何写文章</p>
+          </div></div><div class="item" title="搭建图床" style="--block-color:#FF7BA8;"><a href="https://www.hikki.site/e85071ad.html" class="image" data-background-image="http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (15).jpg"></a>
+          <div class="info">
+          <a href="https://www.hikki.site/e85071ad.html" class="title">搭建图床</a>
+          <p class="desc">阿亮の小破站 & 如何搭建图床</p>
+          </div></div></div>
+<div class="note info">
+<p>没有加速器打开 GitHub 可能会稍微有点慢，需要加速可以联系博主</p>
+</div>
+<div class="note success">
+<p>希望你能找到属于自己的小破站</p>
+</div>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>博客</category>
+        <category>零基础搭建Hexo个人博客系列</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何给PicGo添加水印</title>
+    <url>/2fbd98c3.html</url>
+    <content><![CDATA[<p>在运营独立博客的时候，自己原创的文章，经常会被别人转载，又没有标明原作者地址，导致原创作者流量流失了一部分，如果可以标记原创是自己的话，那就非常方便了，比如说加个水印就好一点。刚好 <code>PicGo</code>  有个插件 <code>watermark</code>  可以给突破加水印，这就很方便了，不用上传图片自己还要去添加一个水印。</p>
+<h2 id="安装watermark"><a class="markdownIt-Anchor" href="#安装watermark">#</a> 安装 <code>watermark</code></h2>
+<p>安装 <code>watermark</code> ， <code>PicGo</code>  最低版本要 <code>2.2.0</code></p>
+<p>可以直接在 <code>PicGo</code>  插件设置下载</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204110022.jpeg" alt=""></p>
+<h2 id="配置watermark"><a class="markdownIt-Anchor" href="#配置watermark">#</a> 配置 <code>watermark</code></h2>
+<div class="note info">
+<p>有些同学可能在配置 watermark 一直出错，可以试着 <code>字体文件路径</code> 设置和我一样的，把文件拉进去就行</p>
+</div>
+<p>这里放上字体链接，有需要自取，字体来源于 <span class="exturl" data-url="aHR0cHM6Ly93d3cuZm9udHMubmV0LmNuL2ZvbnQtNDAwOTA5Njk5NjAuaHRtbD9wcmV2aWV3VGV4dD13d3cuaGlra2kuc2l0ZQ==">字体天下</span></p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204110023.jpeg" alt=""></p>
+<div class="note warning">
+<p>以上如果有侵害你的权益，请立即联系我</p>
+</div>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>技术杂谈</category>
+        <category>一个小技巧</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>一个技巧</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>第七篇：购买域名---从0基础搭建Hexo博客</title>
-    <url>/2022/03/30/6c2393ec.html</url>
+    <url>/6c2393ec.html</url>
     <content><![CDATA[<h2 id="购买域名"><a class="markdownIt-Anchor" href="#购买域名">#</a> 购买域名</h2>
 <p><strong>打开 [万网官网][<span class="exturl" data-url="aHR0cHM6Ly93YW53YW5nLmFsaXl1bi5jb20=">https://wanwang.aliyun.com</span>]</strong></p>
 <h3 id="注册账号"><a class="markdownIt-Anchor" href="#注册账号">#</a> 注册账号</h3>
@@ -1458,135 +1585,8 @@
       </tags>
   </entry>
   <entry>
-    <title>如何给PicGo添加水印</title>
-    <url>/2022/04/11/2fbd98c3.html</url>
-    <content><![CDATA[<p>在运营独立博客的时候，自己原创的文章，经常会被别人转载，又没有标明原作者地址，导致原创作者流量流失了一部分，如果可以标记原创是自己的话，那就非常方便了，比如说加个水印就好一点。刚好 <code>PicGo</code>  有个插件 <code>watermark</code>  可以给突破加水印，这就很方便了，不用上传图片自己还要去添加一个水印。</p>
-<h2 id="安装watermark"><a class="markdownIt-Anchor" href="#安装watermark">#</a> 安装 <code>watermark</code></h2>
-<p>安装 <code>watermark</code> ， <code>PicGo</code>  最低版本要 <code>2.2.0</code></p>
-<p>可以直接在 <code>PicGo</code>  插件设置下载</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204110022.jpeg" alt=""></p>
-<h2 id="配置watermark"><a class="markdownIt-Anchor" href="#配置watermark">#</a> 配置 <code>watermark</code></h2>
-<div class="note info">
-<p>有些同学可能在配置 watermark 一直出错，可以试着 <code>字体文件路径</code> 设置和我一样的，把文件拉进去就行</p>
-</div>
-<p>这里放上字体链接，有需要自取，字体来源于 <span class="exturl" data-url="aHR0cHM6Ly93d3cuZm9udHMubmV0LmNuL2ZvbnQtNDAwOTA5Njk5NjAuaHRtbD9wcmV2aWV3VGV4dD13d3cuaGlra2kuc2l0ZQ==">字体天下</span></p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204110023.jpeg" alt=""></p>
-<div class="note warning">
-<p>以上如果有侵害你的权益，请立即联系我</p>
-</div>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>技术杂谈</category>
-        <category>一个小技巧</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>一个技巧</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>零基础搭建Hexo个人博客系列</title>
-    <url>/2022/03/30/aaad0208.html</url>
-    <content><![CDATA[<h3 id="零基础搭建hexo个人博客系列"><a class="markdownIt-Anchor" href="#零基础搭建hexo个人博客系列">#</a> 零基础搭建 Hexo 个人博客系列</h3>
-<h3 id="前言"><a class="markdownIt-Anchor" href="#前言">#</a> 前言</h3>
-<div class="note default">
-<p>问：听说博客很好玩，可以搭一个属于自己的网站，但是听说要买服务器，这个会不会很贵啊？</p>
-</div>
-<div class="note primary">
-<p>答：本次教程不需要购买服务器，此次我们使用 <code>github pages</code> + <code>hexo</code>  静态部署，完全不需要服务器.</p>
-</div>
-<div class="note default">
-<p>问：什么是 github pages？什么是 hexo？</p>
-</div>
-<div class="note primary">
-<p>答：github pages 是一个静态站点托管服务，就是我们可以把我们的网站代码放在 github 的仓库里，github pages 可以读取仓库的代码，映射到互联网上面，但是这样是没有后台的，只是一个静态页面，对于我们写博客来说，这已经足够了。</p>
-</div>
-<div class="note info">
-<p>本教程适用于刚入门博客的小白，对新手友好，尽量做到每一步都描述出来。</p>
-</div>
-<div class="links"><div class="item" title="第一篇：注册github" style="--block-color:#F46C9D;"><span class="exturl image" data-url="aHR0cDovL2hpa2tpLnNpdGUvMjAyMi8wMy8zMC9hNmY5ZDA3Mi5odG1s" data-background-image="http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (5).png"></span>
-          <div class="info">
-          <span class="exturl title" data-url="aHR0cDovL2hpa2tpLnNpdGUvMjAyMi8wMy8zMC9hNmY5ZDA3Mi5odG1s">第一篇：注册github</span>
-          <p class="desc">阿亮の小破站 & 搭建博客系列</p>
-          </div></div><div class="item" title="第二篇：安装Git" style="--block-color:#e9546b;"><span class="exturl image" data-url="aHR0cDovL2hpa2tpLnNpdGUvMjAyMi8wMy8zMC84NTlmNjBiZC5odG1s" data-background-image="http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (8).jpg"></span>
-          <div class="info">
-          <span class="exturl title" data-url="aHR0cDovL2hpa2tpLnNpdGUvMjAyMi8wMy8zMC84NTlmNjBiZC5odG1s">第二篇：安装Git</span>
-          <p class="desc">阿亮の小破站 & 搭建博客系列</p>
-          </div></div><div class="item" title="第三篇：Git提交文件" style="--block-color:#F4BAA4;"><span class="exturl image" data-url="aHR0cDovL2hpa2tpLnNpdGUvMjAyMi8wMy8zMC9iNzVhMWRiNi5odG1s" data-background-image="http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (4).png"></span>
-          <div class="info">
-          <span class="exturl title" data-url="aHR0cDovL2hpa2tpLnNpdGUvMjAyMi8wMy8zMC9iNzVhMWRiNi5odG1s">第三篇：Git提交文件</span>
-          <p class="desc">阿亮の小破站 & 搭建博客系列</p>
-          </div></div><div class="item" title="第四篇：安装Nodejs" style="--block-color:#FDBF5C;"><span class="exturl image" data-url="aHR0cDovL2hpa2tpLnNpdGUvMjAyMi8wMy8zMC9jZjYzYzA3Lmh0bWw=" data-background-image="http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (3).jpg"></span>
-          <div class="info">
-          <span class="exturl title" data-url="aHR0cDovL2hpa2tpLnNpdGUvMjAyMi8wMy8zMC9jZjYzYzA3Lmh0bWw=">第四篇：安装Nodejs</span>
-          <p class="desc">阿亮の小破站 & 搭建博客系列</p>
-          </div></div><div class="item" title="第五篇：安装Hexo" style="--block-color:#FBDE99;"><span class="exturl image" data-url="aHR0cDovL2hpa2tpLnNpdGUvMjAyMi8wMy8zMC84N2I2OTY1Mi5odG1s" data-background-image="http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (9).jpg"></span>
-          <div class="info">
-          <span class="exturl title" data-url="aHR0cDovL2hpa2tpLnNpdGUvMjAyMi8wMy8zMC84N2I2OTY1Mi5odG1s">第五篇：安装Hexo</span>
-          <p class="desc">阿亮の小破站 & 搭建博客系列</p>
-          </div></div><div class="item" title="第六篇：将博客部署到GitHub" style="--block-color:#a6c1ee;"><span class="exturl image" data-url="aHR0cDovL2hpa2tpLnNpdGUvMjAyMi8wMy8zMC9kYzA5YTQ2Yy5odG1s" data-background-image="http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (13).jpg"></span>
-          <div class="info">
-          <span class="exturl title" data-url="aHR0cDovL2hpa2tpLnNpdGUvMjAyMi8wMy8zMC9kYzA5YTQ2Yy5odG1s">第六篇：将博客部署到GitHub</span>
-          <p class="desc">阿亮の小破站 & 搭建博客系列</p>
-          </div></div></div>
-<hr>
-<div class="links"><div class="item" title="第七篇：安装主题" style="--block-color:#6AD0CB;"><span class="exturl image" data-url="aHR0cDovL2hpa2tpLnNpdGUvMjAyMi8wMy8zMC9hNWVlZmRkYy5odG1s" data-background-image="https://cdn.jsdelivr.net/gh/amehime/shoka@latest/images/avatar.jpg"></span>
-          <div class="info">
-          <span class="exturl title" data-url="aHR0cDovL2hpa2tpLnNpdGUvMjAyMi8wMy8zMC9hNWVlZmRkYy5odG1s">第七篇：安装主题</span>
-          <p class="desc">阿亮の小破站 & 搭建博客系列</p>
-          </div></div></div>
-<hr>
-<hr>
-<div class="note info">
-<p>如果你想拥有一个好看的域名，也就是网址，继续往下看</p>
-</div>
-<div class="links"><div class="item" title="第八篇：购买域名" style="--block-color:#FB7B8E;"><span class="exturl image" data-url="aHR0cDovL2hpa2tpLnNpdGUvMjAyMi8wMy8zMC82YzIzOTNlYy5odG1s" data-background-image="http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (14).jpg"></span>
-          <div class="info">
-          <span class="exturl title" data-url="aHR0cDovL2hpa2tpLnNpdGUvMjAyMi8wMy8zMC82YzIzOTNlYy5odG1s">第八篇：购买域名</span>
-          <p class="desc">阿亮の小破站 & 搭建博客系列</p>
-          </div></div><div class="item" title="第九篇：解析域名" style="--block-color:#FF7BA8;"><span class="exturl image" data-url="aHR0cDovL2hpa2tpLnNpdGUvMjAyMi8wMy8zMC85YmY2Y2FlZi5odG1s" data-background-image="http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (15).jpg"></span>
-          <div class="info">
-          <span class="exturl title" data-url="aHR0cDovL2hpa2tpLnNpdGUvMjAyMi8wMy8zMC85YmY2Y2FlZi5odG1s">第九篇：解析域名</span>
-          <p class="desc">阿亮の小破站 & 搭建博客系列</p>
-          </div></div></div>
-<hr>
-<div class="note info">
-<p>如何在博客写文章？？？</p>
-</div>
-<div class="links"><div class="item" title="如何在hexo博客写作" style="--block-color:#fa709a;"><span class="exturl image" data-url="aHR0cHM6Ly9oaWtraS5zaXRlLzIwMjIvMDQvMTMvYjI2ZmY0OWIuaHRtbA==" data-background-image="http://cdn.jsdelivr.net/gh/0000rookie/imgs/3840×2160amliamng202204100243-32.jpg"></span>
-          <div class="info">
-          <span class="exturl title" data-url="aHR0cHM6Ly9oaWtraS5zaXRlLzIwMjIvMDQvMTMvYjI2ZmY0OWIuaHRtbA==">如何在hexo博客写作</span>
-          <p class="desc">阿亮の小破站 & 如何写文章</p>
-          </div></div><div class="item" title="Front-Matter参数设置" style="--block-color:#FF7BA8;"><a href="https://www.hikki.site/2022/04/04/a7032750.html" class="image" data-background-image="http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (4).png"></a>
-          <div class="info">
-          <a href="https://www.hikki.site/2022/04/04/a7032750.html" class="title">Front-Matter参数设置</a>
-          <p class="desc">阿亮の小破站 & 如何写文章</p>
-          </div></div><div class="item" title="搭建图床" style="--block-color:#FF7BA8;"><a href="https://www.hikki.site/2022/04/02/e85071ad.html" class="image" data-background-image="http://cdn.jsdelivr.net/gh/0000rookie/imgs/0 (15).jpg"></a>
-          <div class="info">
-          <a href="https://www.hikki.site/2022/04/02/e85071ad.html" class="title">搭建图床</a>
-          <p class="desc">阿亮の小破站 & 如何搭建图床</p>
-          </div></div></div>
-<div class="note info">
-<p>没有加速器打开 GitHub 可能会稍微有点慢，需要加速可以联系博主</p>
-</div>
-<div class="note success">
-<p>希望你能找到属于自己的小破站</p>
-</div>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>博客</category>
-        <category>零基础搭建Hexo个人博客系列</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>添加开机自启程序</title>
-    <url>/2022/04/07/2cc8588f.html</url>
+    <url>/2cc8588f.html</url>
     <content><![CDATA[<h2 id="键盘点击winr"><a class="markdownIt-Anchor" href="#键盘点击winr">#</a> 键盘点击 <code>win+R</code></h2>
 <p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204071930.jpg" alt=""></p>
 <h2 id="在窗口输入shellstartup"><a class="markdownIt-Anchor" href="#在窗口输入shellstartup">#</a> 在窗口输入 <code>shell:startup</code></h2>
@@ -1608,24 +1608,8 @@
       </tags>
   </entry>
   <entry>
-    <title>python qt5 实现记事本界面</title>
-    <url>/2022/04/25/37c8254d.html</url>
-    <content><![CDATA[<h2 id="用qt5实现一个简单的记事本界面"><a class="markdownIt-Anchor" href="#用qt5实现一个简单的记事本界面">#</a> 用 qt5 实现一个简单的记事本界面</h2>
-<p>要求：实现有 <code>Menubar</code>  和 <code>Menuitems</code>  和快捷键</p>
-<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token keyword">import</span> sys</pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre><span class="token keyword">from</span> PyQt5<span class="token punctuation">.</span>QtGui <span class="token keyword">import</span> QCursor<span class="token punctuation">,</span> QIcon</pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre><span class="token keyword">from</span> PyQt5<span class="token punctuation">.</span>QtWidgets <span class="token keyword">import</span> QApplication<span class="token punctuation">,</span> QMenu<span class="token punctuation">,</span> QMainWindow<span class="token punctuation">,</span> QAction</pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre><span class="token keyword">class</span> <span class="token class-name">menu</span><span class="token punctuation">(</span>QMainWindow<span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="8"></td><td><pre>    <span class="token comment"># 初始化面板大小</span></pre></td></tr><tr class="marked"><td data-num="9"></td><td><pre>    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="10"></td><td><pre>        <span class="token builtin">super</span><span class="token punctuation">(</span>menu<span class="token punctuation">,</span> self<span class="token punctuation">)</span><span class="token punctuation">.</span>__init__<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="11"></td><td><pre>        self<span class="token punctuation">.</span>title <span class="token operator">=</span> <span class="token string">'notepad--'</span></pre></td></tr><tr class="marked"><td data-num="12"></td><td><pre>        self<span class="token punctuation">.</span>left <span class="token operator">=</span> <span class="token number">500</span></pre></td></tr><tr class="marked"><td data-num="13"></td><td><pre>        self<span class="token punctuation">.</span>top <span class="token operator">=</span> <span class="token number">1000</span></pre></td></tr><tr class="marked"><td data-num="14"></td><td><pre>        self<span class="token punctuation">.</span>width <span class="token operator">=</span> <span class="token number">600</span></pre></td></tr><tr class="marked"><td data-num="15"></td><td><pre>        self<span class="token punctuation">.</span>height <span class="token operator">=</span> <span class="token number">600</span></pre></td></tr><tr class="marked"><td data-num="16"></td><td><pre>        self<span class="token punctuation">.</span>initUI<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="17"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="18"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="19"></td><td><pre>    <span class="token keyword">def</span> <span class="token function">initUI</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="20"></td><td><pre>        self<span class="token punctuation">.</span>setWindowTitle<span class="token punctuation">(</span>self<span class="token punctuation">.</span>title<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="21"></td><td><pre>        self<span class="token punctuation">.</span>setGeometry<span class="token punctuation">(</span>self<span class="token punctuation">.</span>top<span class="token punctuation">,</span> self<span class="token punctuation">.</span>left<span class="token punctuation">,</span> self<span class="token punctuation">.</span>width<span class="token punctuation">,</span> self<span class="token punctuation">.</span>height<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="22"></td><td><pre>        <span class="token comment"># 实例化菜单条</span></pre></td></tr><tr class="marked"><td data-num="23"></td><td><pre>        mainMenubar <span class="token operator">=</span> self<span class="token punctuation">.</span>menuBar<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="24"></td><td><pre>        </pre></td></tr><tr class="marked"><td data-num="25"></td><td><pre>        <span class="token comment"># 将 menuitems 添加到 menubar 并命名</span></pre></td></tr><tr class="marked"><td data-num="26"></td><td><pre>        menu_item_name <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'fileMenu'</span><span class="token punctuation">,</span> <span class="token string">'editMenu'</span><span class="token punctuation">,</span> <span class="token string">'formatMenu'</span><span class="token punctuation">,</span> <span class="token string">'searchMenu'</span><span class="token punctuation">,</span> <span class="token string">'helpMenu'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="27"></td><td><pre>        menu_item_bar_name <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'文件'</span><span class="token punctuation">,</span> <span class="token string">'编辑'</span><span class="token punctuation">,</span> <span class="token string">'格式'</span><span class="token punctuation">,</span> <span class="token string">'查看'</span><span class="token punctuation">,</span> <span class="token string">'帮助'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="28"></td><td><pre>        <span class="token keyword">for</span> l <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>menu_item_name<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="29"></td><td><pre>            menu_item_name<span class="token punctuation">[</span>l<span class="token punctuation">]</span> <span class="token operator">=</span> mainMenubar<span class="token punctuation">.</span>addMenu<span class="token punctuation">(</span>menu_item_bar_name<span class="token punctuation">[</span>l<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="30"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="31"></td><td><pre>        <span class="token comment"># 将操作名、属性名、快捷键用列表封装起来，用循环进行添加，此处有不足之处就是循环不能合一，后续有能力再优化一下</span></pre></td></tr><tr class="marked"><td data-num="32"></td><td><pre>        file_name <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'新建(N)'</span><span class="token punctuation">,</span> <span class="token string">'打开(O)'</span><span class="token punctuation">,</span> <span class="token string">'保存(S)'</span><span class="token punctuation">,</span> <span class="token string">'另存为(A)'</span><span class="token punctuation">,</span> <span class="token string">'页面设置(U)'</span><span class="token punctuation">,</span> <span class="token string">'打印(P)'</span><span class="token punctuation">,</span> <span class="token string">'退出(X)'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="33"></td><td><pre>        file_name_as <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'new'</span><span class="token punctuation">,</span> <span class="token string">'open'</span><span class="token punctuation">,</span> <span class="token string">'save'</span><span class="token punctuation">,</span> <span class="token string">'save_as'</span><span class="token punctuation">,</span> <span class="token string">'setup'</span><span class="token punctuation">,</span> <span class="token string">'print'</span><span class="token punctuation">,</span> <span class="token string">'exit'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="34"></td><td><pre>        file_shortcut_key <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'Ctrl+N'</span><span class="token punctuation">,</span> <span class="token string">'Ctrl+O'</span><span class="token punctuation">,</span> <span class="token string">'Ctrl+S'</span><span class="token punctuation">,</span> <span class="token string">''</span><span class="token punctuation">,</span> <span class="token string">''</span><span class="token punctuation">,</span> <span class="token string">'Ctrl+P'</span><span class="token punctuation">,</span> <span class="token string">''</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="35"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="36"></td><td><pre>        edit_name <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'撤销(U)'</span><span class="token punctuation">,</span> <span class="token string">'剪切(T)'</span><span class="token punctuation">,</span> <span class="token string">'复制(C)'</span><span class="token punctuation">,</span> <span class="token string">'粘贴(V)'</span><span class="token punctuation">,</span> <span class="token string">'删除(L)'</span><span class="token punctuation">,</span> <span class="token string">'查找(F)'</span><span class="token punctuation">,</span> <span class="token string">'查找下一个(N)'</span><span class="token punctuation">,</span> <span class="token string">'替换(R)'</span><span class="token punctuation">,</span> <span class="token string">'转到(G)'</span><span class="token punctuation">,</span> <span class="token string">'全选(A)'</span><span class="token punctuation">,</span></pre></td></tr><tr class="marked"><td data-num="37"></td><td><pre>                     <span class="token string">'时间/日期(D)'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="38"></td><td><pre>        edit_name_as <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'repeal'</span><span class="token punctuation">,</span> <span class="token string">'cut'</span><span class="token punctuation">,</span> <span class="token string">'copy'</span><span class="token punctuation">,</span> <span class="token string">'paste'</span><span class="token punctuation">,</span> <span class="token string">'dele'</span><span class="token punctuation">,</span> <span class="token string">'search'</span><span class="token punctuation">,</span> <span class="token string">'search_one'</span><span class="token punctuation">,</span> <span class="token string">'replace'</span><span class="token punctuation">,</span> <span class="token string">'goto'</span><span class="token punctuation">,</span></pre></td></tr><tr class="marked"><td data-num="39"></td><td><pre>                        <span class="token string">'check_all'</span><span class="token punctuation">,</span> <span class="token string">'datetimes'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="40"></td><td><pre>        edit_shortcut_key <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'Ctrl+Z'</span><span class="token punctuation">,</span> <span class="token string">'Ctrl+X'</span><span class="token punctuation">,</span> <span class="token string">'Ctrl+C'</span><span class="token punctuation">,</span> <span class="token string">'Ctrl+V'</span><span class="token punctuation">,</span> <span class="token string">'Del'</span><span class="token punctuation">,</span> <span class="token string">'Ctrl+F'</span><span class="token punctuation">,</span> <span class="token string">'F3'</span><span class="token punctuation">,</span> <span class="token string">'Ctrl+H'</span><span class="token punctuation">,</span> <span class="token string">'Ctrl+G'</span><span class="token punctuation">,</span></pre></td></tr><tr class="marked"><td data-num="41"></td><td><pre>                             <span class="token string">'Ctrl+A'</span><span class="token punctuation">,</span> <span class="token string">'F5'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="42"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="43"></td><td><pre>        format_name <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'自动换行(W)'</span><span class="token punctuation">,</span> <span class="token string">'字体(F)'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="44"></td><td><pre>        format_name_as <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'lines'</span><span class="token punctuation">,</span> <span class="token string">'font'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="45"></td><td><pre>        format_shortcut_key <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">''</span><span class="token punctuation">,</span> <span class="token string">''</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="46"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="47"></td><td><pre>        search_name <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'状态栏(S)'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="48"></td><td><pre>        search_name_as <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'statusbar'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="49"></td><td><pre>        search_shortcut_key <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">''</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="50"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="51"></td><td><pre>        help_name <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'查看帮助(H)'</span><span class="token punctuation">,</span> <span class="token string">'关于记事本(A)'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="52"></td><td><pre>        help_name_as <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'lookhelp'</span><span class="token punctuation">,</span> <span class="token string">'about'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="53"></td><td><pre>        help_shortcut_key <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">''</span><span class="token punctuation">,</span> <span class="token string">''</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="54"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="55"></td><td><pre>        <span class="token comment"># 用循环将子菜单添加到菜单</span></pre></td></tr><tr class="marked"><td data-num="56"></td><td><pre>        <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>file_name_as<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="57"></td><td><pre>            file_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> QAction<span class="token punctuation">(</span>QIcon<span class="token punctuation">(</span><span class="token string">'12.png'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> file_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> self<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="58"></td><td><pre>            file_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>setShortcut<span class="token punctuation">(</span>file_shortcut_key<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="59"></td><td><pre>            file_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>setText<span class="token punctuation">(</span>file_name<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="60"></td><td><pre>            <span class="token comment"># 将子菜单添加到菜单</span></pre></td></tr><tr class="marked"><td data-num="61"></td><td><pre>            menu_item_name<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>addAction<span class="token punctuation">(</span>file_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="62"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="63"></td><td><pre>        <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>edit_name_as<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="64"></td><td><pre>            edit_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> QAction<span class="token punctuation">(</span>QIcon<span class="token punctuation">(</span><span class="token string">'12.png'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> edit_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> self<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="65"></td><td><pre>            edit_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>setShortcut<span class="token punctuation">(</span>edit_shortcut_key<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="66"></td><td><pre>            edit_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>setText<span class="token punctuation">(</span>edit_name<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="67"></td><td><pre>            <span class="token comment"># 将子菜单添加到菜单</span></pre></td></tr><tr class="marked"><td data-num="68"></td><td><pre>            menu_item_name<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>addAction<span class="token punctuation">(</span>edit_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="69"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="70"></td><td><pre>        <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>format_name_as<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="71"></td><td><pre>            format_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> QAction<span class="token punctuation">(</span>QIcon<span class="token punctuation">(</span><span class="token string">'12.png'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> format_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> self<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="72"></td><td><pre>            format_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>setShortcut<span class="token punctuation">(</span>format_shortcut_key<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="73"></td><td><pre>            format_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>setText<span class="token punctuation">(</span>format_name<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="74"></td><td><pre>            <span class="token comment"># 将子菜单添加到菜单</span></pre></td></tr><tr class="marked"><td data-num="75"></td><td><pre>            menu_item_name<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">.</span>addAction<span class="token punctuation">(</span>format_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="76"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="77"></td><td><pre>        <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>search_name_as<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="78"></td><td><pre>            search_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> QAction<span class="token punctuation">(</span>QIcon<span class="token punctuation">(</span><span class="token string">'12.png'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> search_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> self<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="79"></td><td><pre>            search_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>setShortcut<span class="token punctuation">(</span>search_shortcut_key<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="80"></td><td><pre>            search_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>setText<span class="token punctuation">(</span>search_name<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="81"></td><td><pre>            <span class="token comment"># 将子菜单添加到菜单</span></pre></td></tr><tr class="marked"><td data-num="82"></td><td><pre>            menu_item_name<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">.</span>addAction<span class="token punctuation">(</span>search_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="83"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="84"></td><td><pre>        <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>help_name_as<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="85"></td><td><pre>            help_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> QAction<span class="token punctuation">(</span>QIcon<span class="token punctuation">(</span><span class="token string">'12.png'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> help_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> self<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="86"></td><td><pre>            help_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>setShortcut<span class="token punctuation">(</span>help_shortcut_key<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="87"></td><td><pre>            help_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>setText<span class="token punctuation">(</span>help_name<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="88"></td><td><pre>            <span class="token comment"># 将子菜单添加到菜单</span></pre></td></tr><tr class="marked"><td data-num="89"></td><td><pre>            menu_item_name<span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">.</span>addAction<span class="token punctuation">(</span>help_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="90"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="91"></td><td><pre>        self<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="92"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="93"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="94"></td><td><pre><span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="95"></td><td><pre>    app <span class="token operator">=</span> QApplication<span class="token punctuation">(</span>sys<span class="token punctuation">.</span>argv<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="96"></td><td><pre>    s <span class="token operator">=</span> menu<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="97"></td><td><pre>    sys<span class="token punctuation">.</span>exit<span class="token punctuation">(</span>app<span class="token punctuation">.</span>exec_<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>预览图</strong></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022044946.jpeg" alt=""></p>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>技术杂谈</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Git详细使用方法</title>
-    <url>/2022/04/04/43d2d741.html</url>
+    <url>/43d2d741.html</url>
     <content><![CDATA[<h2 id="初始化仓库"><a class="markdownIt-Anchor" href="#初始化仓库">#</a> 初始化仓库</h2>
 <figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">git</span> init 			<span class="token comment">#初始化当前文件夹为仓库，默认是 master 分支</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token function">git</span> <span class="token builtin class-name">help</span> -a 		<span class="token comment"># 显示完全的指令列表</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre><span class="token function">git</span> <span class="token function">add</span> text.txt 	<span class="token comment"># 添加 text.txt 文件加入到 Git 系统的索引中，tips: 可以使用通配符添加 “*” 和 “.”</span></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre><span class="token function">git</span> status			<span class="token comment"># 查看当前 Git 的状态，是否有新文件没有加入到 Git 索引中</span></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre><span class="token function">git</span> commit -m <span class="token string">"操作说明"</span> --author<span class="token operator">=</span><span class="token string">'操作者姓名'</span> --email<span class="token operator">=</span><span class="token string">'操作者邮箱'</span> <span class="token comment">#把已经添加到 Git 索引的所有文件到推送到 repository，一般我们在使用 github 的时候，就是通过这个指令把文件推送到 github 的</span></pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre>gitk 				<span class="token comment"># 启动图形界面查看 repository 有哪些文件</span></pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre><span class="token comment"># 一般在离开 git bash here 的时候习惯用 exit 结束，这样下次回来的时候可以恢复到原来的状态</span></pre></td></tr></table></figure><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204121821.jpeg" alt="" title="本地仓库提交都爱github仓库流程"></p>
 <p><code>config</code>  有三个基本配置的文件，他们分别有优先权之分。</p>
@@ -1641,8 +1625,25 @@
       </categories>
   </entry>
   <entry>
+    <title>python qt5 实现记事本界面</title>
+    <url>/37c8254d.html</url>
+    <content><![CDATA[<h2 id="用qt5实现一个简单的记事本界面"><a class="markdownIt-Anchor" href="#用qt5实现一个简单的记事本界面">#</a> 用 qt5 实现一个简单的记事本界面</h2>
+<p>要求：实现有 <code>Menubar</code>  和 <code>Menuitems</code>  和快捷键</p>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token keyword">import</span> sys</pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre><span class="token keyword">from</span> PyQt5<span class="token punctuation">.</span>QtGui <span class="token keyword">import</span> QCursor<span class="token punctuation">,</span> QIcon</pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre><span class="token keyword">from</span> PyQt5<span class="token punctuation">.</span>QtWidgets <span class="token keyword">import</span> QApplication<span class="token punctuation">,</span> QMenu<span class="token punctuation">,</span> QMainWindow<span class="token punctuation">,</span> QAction</pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre><span class="token keyword">class</span> <span class="token class-name">menu</span><span class="token punctuation">(</span>QMainWindow<span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="8"></td><td><pre>    <span class="token comment"># 初始化面板大小</span></pre></td></tr><tr class="marked"><td data-num="9"></td><td><pre>    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="10"></td><td><pre>        <span class="token builtin">super</span><span class="token punctuation">(</span>menu<span class="token punctuation">,</span> self<span class="token punctuation">)</span><span class="token punctuation">.</span>__init__<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="11"></td><td><pre>        self<span class="token punctuation">.</span>title <span class="token operator">=</span> <span class="token string">'notepad--'</span></pre></td></tr><tr class="marked"><td data-num="12"></td><td><pre>        self<span class="token punctuation">.</span>left <span class="token operator">=</span> <span class="token number">500</span></pre></td></tr><tr class="marked"><td data-num="13"></td><td><pre>        self<span class="token punctuation">.</span>top <span class="token operator">=</span> <span class="token number">1000</span></pre></td></tr><tr class="marked"><td data-num="14"></td><td><pre>        self<span class="token punctuation">.</span>width <span class="token operator">=</span> <span class="token number">600</span></pre></td></tr><tr class="marked"><td data-num="15"></td><td><pre>        self<span class="token punctuation">.</span>height <span class="token operator">=</span> <span class="token number">600</span></pre></td></tr><tr class="marked"><td data-num="16"></td><td><pre>        self<span class="token punctuation">.</span>initUI<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="17"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="18"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="19"></td><td><pre>    <span class="token keyword">def</span> <span class="token function">initUI</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="20"></td><td><pre>        self<span class="token punctuation">.</span>setWindowTitle<span class="token punctuation">(</span>self<span class="token punctuation">.</span>title<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="21"></td><td><pre>        self<span class="token punctuation">.</span>setGeometry<span class="token punctuation">(</span>self<span class="token punctuation">.</span>top<span class="token punctuation">,</span> self<span class="token punctuation">.</span>left<span class="token punctuation">,</span> self<span class="token punctuation">.</span>width<span class="token punctuation">,</span> self<span class="token punctuation">.</span>height<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="22"></td><td><pre>        <span class="token comment"># 实例化菜单条</span></pre></td></tr><tr class="marked"><td data-num="23"></td><td><pre>        mainMenubar <span class="token operator">=</span> self<span class="token punctuation">.</span>menuBar<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="24"></td><td><pre>        </pre></td></tr><tr class="marked"><td data-num="25"></td><td><pre>        <span class="token comment"># 将 menuitems 添加到 menubar 并命名</span></pre></td></tr><tr class="marked"><td data-num="26"></td><td><pre>        menu_item_name <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'fileMenu'</span><span class="token punctuation">,</span> <span class="token string">'editMenu'</span><span class="token punctuation">,</span> <span class="token string">'formatMenu'</span><span class="token punctuation">,</span> <span class="token string">'searchMenu'</span><span class="token punctuation">,</span> <span class="token string">'helpMenu'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="27"></td><td><pre>        menu_item_bar_name <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'文件'</span><span class="token punctuation">,</span> <span class="token string">'编辑'</span><span class="token punctuation">,</span> <span class="token string">'格式'</span><span class="token punctuation">,</span> <span class="token string">'查看'</span><span class="token punctuation">,</span> <span class="token string">'帮助'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="28"></td><td><pre>        <span class="token keyword">for</span> l <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>menu_item_name<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="29"></td><td><pre>            menu_item_name<span class="token punctuation">[</span>l<span class="token punctuation">]</span> <span class="token operator">=</span> mainMenubar<span class="token punctuation">.</span>addMenu<span class="token punctuation">(</span>menu_item_bar_name<span class="token punctuation">[</span>l<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="30"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="31"></td><td><pre>        <span class="token comment"># 将操作名、属性名、快捷键用列表封装起来，用循环进行添加，此处有不足之处就是循环不能合一，后续有能力再优化一下</span></pre></td></tr><tr class="marked"><td data-num="32"></td><td><pre>        file_name <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'新建(N)'</span><span class="token punctuation">,</span> <span class="token string">'打开(O)'</span><span class="token punctuation">,</span> <span class="token string">'保存(S)'</span><span class="token punctuation">,</span> <span class="token string">'另存为(A)'</span><span class="token punctuation">,</span> <span class="token string">'页面设置(U)'</span><span class="token punctuation">,</span> <span class="token string">'打印(P)'</span><span class="token punctuation">,</span> <span class="token string">'退出(X)'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="33"></td><td><pre>        file_name_as <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'new'</span><span class="token punctuation">,</span> <span class="token string">'open'</span><span class="token punctuation">,</span> <span class="token string">'save'</span><span class="token punctuation">,</span> <span class="token string">'save_as'</span><span class="token punctuation">,</span> <span class="token string">'setup'</span><span class="token punctuation">,</span> <span class="token string">'print'</span><span class="token punctuation">,</span> <span class="token string">'exit'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="34"></td><td><pre>        file_shortcut_key <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'Ctrl+N'</span><span class="token punctuation">,</span> <span class="token string">'Ctrl+O'</span><span class="token punctuation">,</span> <span class="token string">'Ctrl+S'</span><span class="token punctuation">,</span> <span class="token string">''</span><span class="token punctuation">,</span> <span class="token string">''</span><span class="token punctuation">,</span> <span class="token string">'Ctrl+P'</span><span class="token punctuation">,</span> <span class="token string">''</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="35"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="36"></td><td><pre>        edit_name <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'撤销(U)'</span><span class="token punctuation">,</span> <span class="token string">'剪切(T)'</span><span class="token punctuation">,</span> <span class="token string">'复制(C)'</span><span class="token punctuation">,</span> <span class="token string">'粘贴(V)'</span><span class="token punctuation">,</span> <span class="token string">'删除(L)'</span><span class="token punctuation">,</span> <span class="token string">'查找(F)'</span><span class="token punctuation">,</span> <span class="token string">'查找下一个(N)'</span><span class="token punctuation">,</span> <span class="token string">'替换(R)'</span><span class="token punctuation">,</span> <span class="token string">'转到(G)'</span><span class="token punctuation">,</span> <span class="token string">'全选(A)'</span><span class="token punctuation">,</span></pre></td></tr><tr class="marked"><td data-num="37"></td><td><pre>                     <span class="token string">'时间/日期(D)'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="38"></td><td><pre>        edit_name_as <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'repeal'</span><span class="token punctuation">,</span> <span class="token string">'cut'</span><span class="token punctuation">,</span> <span class="token string">'copy'</span><span class="token punctuation">,</span> <span class="token string">'paste'</span><span class="token punctuation">,</span> <span class="token string">'dele'</span><span class="token punctuation">,</span> <span class="token string">'search'</span><span class="token punctuation">,</span> <span class="token string">'search_one'</span><span class="token punctuation">,</span> <span class="token string">'replace'</span><span class="token punctuation">,</span> <span class="token string">'goto'</span><span class="token punctuation">,</span></pre></td></tr><tr class="marked"><td data-num="39"></td><td><pre>                        <span class="token string">'check_all'</span><span class="token punctuation">,</span> <span class="token string">'datetimes'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="40"></td><td><pre>        edit_shortcut_key <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'Ctrl+Z'</span><span class="token punctuation">,</span> <span class="token string">'Ctrl+X'</span><span class="token punctuation">,</span> <span class="token string">'Ctrl+C'</span><span class="token punctuation">,</span> <span class="token string">'Ctrl+V'</span><span class="token punctuation">,</span> <span class="token string">'Del'</span><span class="token punctuation">,</span> <span class="token string">'Ctrl+F'</span><span class="token punctuation">,</span> <span class="token string">'F3'</span><span class="token punctuation">,</span> <span class="token string">'Ctrl+H'</span><span class="token punctuation">,</span> <span class="token string">'Ctrl+G'</span><span class="token punctuation">,</span></pre></td></tr><tr class="marked"><td data-num="41"></td><td><pre>                             <span class="token string">'Ctrl+A'</span><span class="token punctuation">,</span> <span class="token string">'F5'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="42"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="43"></td><td><pre>        format_name <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'自动换行(W)'</span><span class="token punctuation">,</span> <span class="token string">'字体(F)'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="44"></td><td><pre>        format_name_as <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'lines'</span><span class="token punctuation">,</span> <span class="token string">'font'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="45"></td><td><pre>        format_shortcut_key <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">''</span><span class="token punctuation">,</span> <span class="token string">''</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="46"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="47"></td><td><pre>        search_name <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'状态栏(S)'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="48"></td><td><pre>        search_name_as <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'statusbar'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="49"></td><td><pre>        search_shortcut_key <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">''</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="50"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="51"></td><td><pre>        help_name <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'查看帮助(H)'</span><span class="token punctuation">,</span> <span class="token string">'关于记事本(A)'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="52"></td><td><pre>        help_name_as <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'lookhelp'</span><span class="token punctuation">,</span> <span class="token string">'about'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="53"></td><td><pre>        help_shortcut_key <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">''</span><span class="token punctuation">,</span> <span class="token string">''</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="54"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="55"></td><td><pre>        <span class="token comment"># 用循环将子菜单添加到菜单</span></pre></td></tr><tr class="marked"><td data-num="56"></td><td><pre>        <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>file_name_as<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="57"></td><td><pre>            file_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> QAction<span class="token punctuation">(</span>QIcon<span class="token punctuation">(</span><span class="token string">'12.png'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> file_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> self<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="58"></td><td><pre>            file_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>setShortcut<span class="token punctuation">(</span>file_shortcut_key<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="59"></td><td><pre>            file_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>setText<span class="token punctuation">(</span>file_name<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="60"></td><td><pre>            <span class="token comment"># 将子菜单添加到菜单</span></pre></td></tr><tr class="marked"><td data-num="61"></td><td><pre>            menu_item_name<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>addAction<span class="token punctuation">(</span>file_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="62"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="63"></td><td><pre>        <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>edit_name_as<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="64"></td><td><pre>            edit_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> QAction<span class="token punctuation">(</span>QIcon<span class="token punctuation">(</span><span class="token string">'12.png'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> edit_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> self<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="65"></td><td><pre>            edit_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>setShortcut<span class="token punctuation">(</span>edit_shortcut_key<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="66"></td><td><pre>            edit_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>setText<span class="token punctuation">(</span>edit_name<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="67"></td><td><pre>            <span class="token comment"># 将子菜单添加到菜单</span></pre></td></tr><tr class="marked"><td data-num="68"></td><td><pre>            menu_item_name<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>addAction<span class="token punctuation">(</span>edit_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="69"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="70"></td><td><pre>        <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>format_name_as<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="71"></td><td><pre>            format_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> QAction<span class="token punctuation">(</span>QIcon<span class="token punctuation">(</span><span class="token string">'12.png'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> format_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> self<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="72"></td><td><pre>            format_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>setShortcut<span class="token punctuation">(</span>format_shortcut_key<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="73"></td><td><pre>            format_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>setText<span class="token punctuation">(</span>format_name<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="74"></td><td><pre>            <span class="token comment"># 将子菜单添加到菜单</span></pre></td></tr><tr class="marked"><td data-num="75"></td><td><pre>            menu_item_name<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">.</span>addAction<span class="token punctuation">(</span>format_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="76"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="77"></td><td><pre>        <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>search_name_as<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="78"></td><td><pre>            search_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> QAction<span class="token punctuation">(</span>QIcon<span class="token punctuation">(</span><span class="token string">'12.png'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> search_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> self<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="79"></td><td><pre>            search_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>setShortcut<span class="token punctuation">(</span>search_shortcut_key<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="80"></td><td><pre>            search_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>setText<span class="token punctuation">(</span>search_name<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="81"></td><td><pre>            <span class="token comment"># 将子菜单添加到菜单</span></pre></td></tr><tr class="marked"><td data-num="82"></td><td><pre>            menu_item_name<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">.</span>addAction<span class="token punctuation">(</span>search_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="83"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="84"></td><td><pre>        <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>help_name_as<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="85"></td><td><pre>            help_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> QAction<span class="token punctuation">(</span>QIcon<span class="token punctuation">(</span><span class="token string">'12.png'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> help_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> self<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="86"></td><td><pre>            help_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>setShortcut<span class="token punctuation">(</span>help_shortcut_key<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="87"></td><td><pre>            help_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>setText<span class="token punctuation">(</span>help_name<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="88"></td><td><pre>            <span class="token comment"># 将子菜单添加到菜单</span></pre></td></tr><tr class="marked"><td data-num="89"></td><td><pre>            menu_item_name<span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">.</span>addAction<span class="token punctuation">(</span>help_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="90"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="91"></td><td><pre>        self<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="92"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="93"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="94"></td><td><pre><span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="95"></td><td><pre>    app <span class="token operator">=</span> QApplication<span class="token punctuation">(</span>sys<span class="token punctuation">.</span>argv<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="96"></td><td><pre>    s <span class="token operator">=</span> menu<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="97"></td><td><pre>    sys<span class="token punctuation">.</span>exit<span class="token punctuation">(</span>app<span class="token punctuation">.</span>exec_<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>预览图</strong></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022044946.jpeg" alt=""></p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>编程语言</category>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>python-math库</title>
-    <url>/2022/04/21/1edcfdea.html</url>
+    <url>/1edcfdea.html</url>
     <content><![CDATA[<h2 id="python内置数值运算函数"><a class="markdownIt-Anchor" href="#python内置数值运算函数">#</a> python 内置数值运算函数</h2>
 <p>python 解释器内置了一些函数，以下列出部分常用函数</p>
 <figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token builtin">abs</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span>		<span class="token comment">#x 的绝对值</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token builtin">pow</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span>y<span class="token punctuation">[</span><span class="token punctuation">,</span>z<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token comment">#(x**y)% z,[...] 表示参数可以省略，即 pow (x,y), 它与 x**y 相同</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre><span class="token builtin">round</span><span class="token punctuation">(</span>x<span class="token punctuation">[</span><span class="token punctuation">,</span>n<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token comment">#对 x 四舍五入，保留 n 位小数，round () 返回四舍五入的整数</span></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre><span class="token builtin">max</span><span class="token punctuation">(</span>X<span class="token operator">~</span><span class="token number">1</span><span class="token punctuation">,</span>X<span class="token operator">~</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>X<span class="token operator">~</span>n<span class="token punctuation">)</span><span class="token comment">#取 X1 到 Xn 的最大值，n 没有限定</span></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre><span class="token builtin">min</span><span class="token punctuation">(</span>X<span class="token operator">~</span><span class="token number">1</span><span class="token punctuation">,</span>X<span class="token operator">~</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>X<span class="token operator">~</span>n<span class="token punctuation">)</span><span class="token comment">#取 X1 到 Xn 的最小值，n 没有限定</span></pre></td></tr></table></figure><p>**pow ()** 常用场景</p>
@@ -1650,7 +1651,8 @@
 ]]></content>
       <categories>
         <category>计算机科学</category>
-        <category>技术杂谈</category>
+        <category>编程语言</category>
+        <category>python</category>
       </categories>
       <tags>
         <tag>python那些库</tag>
@@ -1659,7 +1661,7 @@
   </entry>
   <entry>
     <title>python基础</title>
-    <url>/2022/04/21/81b2f4bf.html</url>
+    <url>/81b2f4bf.html</url>
     <content><![CDATA[<h2 id="python格式化输出"><a class="markdownIt-Anchor" href="#python格式化输出">#</a> python 格式化输出</h2>
 <figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token operator">>></span><span class="token operator">></span>ls<span class="token operator">=</span><span class="token string">"这是字符串"</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token operator">>></span><span class="token operator">></span><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"&#123;&#125;"</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>ls<span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre><span class="token operator">>></span><span class="token operator">></span><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"%ls"</span>   <span class="token operator">%</span>ls <span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre>这是字符串</pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre>这是字符串</pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre><span class="token comment"># 总结：第二种和 C 语言输出类似，但是在 "" 后没有逗号的，注意是没有逗号的</span></pre></td></tr></table></figure><h2 id="列表出现相同字符次数统计"><a class="markdownIt-Anchor" href="#列表出现相同字符次数统计">#</a> 列表出现相同字符次数统计</h2>
 <figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment"># 例子 1</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token operator">>></span><span class="token operator">></span>ls<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token operator">>></span><span class="token operator">></span><span class="token keyword">print</span><span class="token punctuation">(</span>ls<span class="token punctuation">.</span>count<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token number">3</span></pre></td></tr><tr><td data-num="5"></td><td><pre></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token comment"># 例子 2</span></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token operator">>></span><span class="token operator">></span>ls<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">"123"</span><span class="token punctuation">,</span><span class="token string">"123"</span><span class="token punctuation">,</span><span class="token string">"111"</span><span class="token punctuation">,</span><span class="token string">"456"</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token operator">>></span><span class="token operator">></span><span class="token keyword">print</span><span class="token punctuation">(</span>ls<span class="token punctuation">.</span>count<span class="token punctuation">(</span><span class="token string">"123"</span><span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token number">2</span></pre></td></tr><tr><td data-num="10"></td><td><pre></pre></td></tr><tr><td data-num="11"></td><td><pre><span class="token comment"># 总结: count 可以计算列表中相同的字符串</span></pre></td></tr></table></figure><h2 id="判断字符是否在列表内"><a class="markdownIt-Anchor" href="#判断字符是否在列表内">#</a> 判断字符是否在列表内</h2>
@@ -1667,7 +1669,8 @@
 <figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token comment"># i**n 等于 2 的 n 次方</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token operator">>></span><span class="token operator">></span><span class="token builtin">sum</span><span class="token operator">=</span><span class="token number">2</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre><span class="token operator">>></span><span class="token operator">></span><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">sum</span><span class="token operator">**</span><span class="token number">3</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre><span class="token number">8</span></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>计算机科学</category>
-        <category>技术杂谈</category>
+        <category>编程语言</category>
+        <category>python</category>
       </categories>
       <tags>
         <tag>-python</tag>

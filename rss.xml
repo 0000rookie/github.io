@@ -26,9 +26,9 @@
         <category term="markdown" />
         <category term="搭建个人博客" />
         <item>
-            <guid isPermalink="true">https://www.hikki.site/2022/04/25/28af37eb.html</guid>
+            <guid isPermalink="true">https://www.hikki.site/28af37eb.html</guid>
             <title>Hexo部署err:Error:Spawn failed错误</title>
-            <link>https://www.hikki.site/2022/04/25/28af37eb.html</link>
+            <link>https://www.hikki.site/28af37eb.html</link>
             <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
             <category term="博客" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
             <category term="搭博客常见错误" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E6%90%AD%E5%8D%9A%E5%AE%A2%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/" />
@@ -55,11 +55,12 @@
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&gt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;ssh -T git@github.com &lt;span class=&#34;token comment&#34;&gt;#此时出现以下页面成功啦&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;The authenticity of &lt;span class=&#34;token function&#34;&gt;host&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;[ssh.github.com]:443 ([20.205.243.160]:443)&#39;&lt;/span&gt; can&lt;span class=&#34;token string&#34;&gt;&#39;t be established.&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;This key is not known by any other names&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Are you sure you want to continue connecting (yes/no/[fingerprint])? yes # 此处输入yes&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Warning: Permanently added &#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;ssh.github.com&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;:443&lt;span class=&#34;token string&#34;&gt;&#39; (ED25519) to the list of known hosts.&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Hi 0000rookie! You&#39;&lt;/span&gt;ve successfully authenticated, but GitHub does not provide shell access.&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://www.hikki.site/2022/04/25/37c8254d.html</guid>
+            <guid isPermalink="true">https://www.hikki.site/37c8254d.html</guid>
             <title>python qt5 实现记事本界面</title>
-            <link>https://www.hikki.site/2022/04/25/37c8254d.html</link>
+            <link>https://www.hikki.site/37c8254d.html</link>
             <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-            <category term="技术杂谈" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" />
+            <category term="编程语言" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" />
+            <category term="python" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" />
             <category term="python" scheme="https://www.hikki.site/tags/python/" />
             <pubDate>Mon, 25 Apr 2022 00:43:20 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;用qt5实现一个简单的记事本界面&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#用qt5实现一个简单的记事本界面&#34;&gt;#&lt;/a&gt; 用 qt5 实现一个简单的记事本界面&lt;/h2&gt;
@@ -69,9 +70,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://www.hikki.site/2022/04/23/af3d5cf5.html</guid>
+            <guid isPermalink="true">https://www.hikki.site/af3d5cf5.html</guid>
             <title>ERROR: spyder 4.0.1 requires pyqtwebengine&lt;5.13; python_version &gt;= 3, which is not installed. ERROR: spyder 4.0.1 has requirement pyqt5&lt;5.13; python_version &gt;= 3, but you&#39;ll have pyqt5 5.15.6 which is incompatible.</title>
-            <link>https://www.hikki.site/2022/04/23/af3d5cf5.html</link>
+            <link>https://www.hikki.site/af3d5cf5.html</link>
             <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
             <category term="技术杂谈" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" />
             <category term="python" scheme="https://www.hikki.site/tags/python/" />
@@ -84,9 +85,9 @@
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&gt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;pip &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt; &lt;span class=&#34;token assign-left variable&#34;&gt;spyder&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;5.3&lt;/span&gt;.0&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://www.hikki.site/2022/04/21/70ded1a5.html</guid>
+            <guid isPermalink="true">https://www.hikki.site/70ded1a5.html</guid>
             <title>root破解手机限速问题</title>
-            <link>https://www.hikki.site/2022/04/21/70ded1a5.html</link>
+            <link>https://www.hikki.site/70ded1a5.html</link>
             <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
             <category term="技术杂谈" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" />
             <category term="andriod" scheme="https://www.hikki.site/tags/andriod/" />
@@ -102,20 +103,21 @@
 &lt;li&gt;打开的时候要 &lt;code&gt;root&lt;/code&gt;  权限，选择 &lt;code&gt;允许&lt;/code&gt; ， &lt;code&gt;打开强制功能&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;选择频段&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022045801.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022045801.jpeg&#34; alt=&#34;&#34; width=&#34;75%&#34; height=&#34;75%&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;选择lte频段&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#选择lte频段&#34;&gt;#&lt;/a&gt; 选择 LTE 频段&lt;/h2&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022040700.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022040700.jpeg&#34; alt=&#34;&#34; width=&#34;75%&#34; height=&#34;75%&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;修改频段为b1和b3&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#修改频段为b1和b3&#34;&gt;#&lt;/a&gt; 修改频段为 B1 和 B3&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;此处我是联通卡&lt;/strong&gt;，选 B1 和 B3 比较快，也相对稳定很多，5G 也基本没掉线过，非常稳定&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022040740.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022040740.jpeg&#34; alt=&#34;&#34; width=&#34;75%&#34; height=&#34;75%&#34;&gt;&lt;/p&gt;
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://www.hikki.site/2022/04/21/1edcfdea.html</guid>
+            <guid isPermalink="true">https://www.hikki.site/1edcfdea.html</guid>
             <title>python-math库</title>
-            <link>https://www.hikki.site/2022/04/21/1edcfdea.html</link>
+            <link>https://www.hikki.site/1edcfdea.html</link>
             <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-            <category term="技术杂谈" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" />
+            <category term="编程语言" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" />
+            <category term="python" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" />
             <category term="python那些库" scheme="https://www.hikki.site/tags/python%E9%82%A3%E4%BA%9B%E5%BA%93/" />
             <category term="pyhton" scheme="https://www.hikki.site/tags/pyhton/" />
             <pubDate>Thu, 21 Apr 2022 22:51:41 +0800</pubDate>
@@ -126,11 +128,12 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://www.hikki.site/2022/04/21/81b2f4bf.html</guid>
+            <guid isPermalink="true">https://www.hikki.site/81b2f4bf.html</guid>
             <title>python基础</title>
-            <link>https://www.hikki.site/2022/04/21/81b2f4bf.html</link>
+            <link>https://www.hikki.site/81b2f4bf.html</link>
             <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-            <category term="技术杂谈" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" />
+            <category term="编程语言" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" />
+            <category term="python" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" />
             <category term="-python" scheme="https://www.hikki.site/tags/python/" />
             <pubDate>Thu, 21 Apr 2022 22:44:51 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;python格式化输出&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#python格式化输出&#34;&gt;#&lt;/a&gt; python 格式化输出&lt;/h2&gt;
@@ -140,9 +143,9 @@
 &lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# i**n 等于 2 的 n 次方&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&gt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;sum&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&gt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;sum&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;**&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;8&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://www.hikki.site/2022/04/18/16ad79ec.html</guid>
+            <guid isPermalink="true">https://www.hikki.site/16ad79ec.html</guid>
             <title>学习注册表</title>
-            <link>https://www.hikki.site/2022/04/18/16ad79ec.html</link>
+            <link>https://www.hikki.site/16ad79ec.html</link>
             <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
             <category term="技术杂谈" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" />
             <category term="技术杂谈" scheme="https://www.hikki.site/tags/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" />
@@ -151,9 +154,9 @@
             <description><![CDATA[  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://www.hikki.site/2022/04/16/111f4f09.html</guid>
+            <guid isPermalink="true">https://www.hikki.site/111f4f09.html</guid>
             <title>CentOS新增root用户</title>
-            <link>https://www.hikki.site/2022/04/16/111f4f09.html</link>
+            <link>https://www.hikki.site/111f4f09.html</link>
             <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
             <category term="每日一更" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B4/" />
             <category term="Linux" scheme="https://www.hikki.site/tags/Linux/" />
@@ -169,9 +172,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://www.hikki.site/2022/04/13/b9e6c7bf.html</guid>
+            <guid isPermalink="true">https://www.hikki.site/b9e6c7bf.html</guid>
             <title>日记分享2022.4.13</title>
-            <link>https://www.hikki.site/2022/04/13/b9e6c7bf.html</link>
+            <link>https://www.hikki.site/b9e6c7bf.html</link>
             <category term="生活" scheme="https://www.hikki.site/categories/%E7%94%9F%E6%B4%BB/" />
             <category term="日记" scheme="https://www.hikki.site/categories/%E7%94%9F%E6%B4%BB/%E6%97%A5%E8%AE%B0/" />
             <category term="日记" scheme="https://www.hikki.site/tags/%E6%97%A5%E8%AE%B0/" />
@@ -183,9 +186,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://www.hikki.site/2022/04/13/b26ff49b.html</guid>
+            <guid isPermalink="true">https://www.hikki.site/b26ff49b.html</guid>
             <title>如何在hexo博客写作</title>
-            <link>https://www.hikki.site/2022/04/13/b26ff49b.html</link>
+            <link>https://www.hikki.site/b26ff49b.html</link>
             <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
             <category term="博客" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
             <category term="博客的食用方法" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/" />
@@ -228,9 +231,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://www.hikki.site/2022/04/12/6f010433.html</guid>
+            <guid isPermalink="true">https://www.hikki.site/6f010433.html</guid>
             <title>jsdelivr刷新缓存</title>
-            <link>https://www.hikki.site/2022/04/12/6f010433.html</link>
+            <link>https://www.hikki.site/6f010433.html</link>
             <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
             <category term="博客" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
             <category term="博客的食用方法" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/" />
@@ -254,9 +257,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://www.hikki.site/2022/04/12/4d530639.html</guid>
+            <guid isPermalink="true">https://www.hikki.site/4d530639.html</guid>
             <title>记录自用hexo模块</title>
-            <link>https://www.hikki.site/2022/04/12/4d530639.html</link>
+            <link>https://www.hikki.site/4d530639.html</link>
             <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
             <category term="博客" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
             <category term="模块" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E6%A8%A1%E5%9D%97/" />
@@ -403,9 +406,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://www.hikki.site/2022/04/12/3d358537.html</guid>
+            <guid isPermalink="true">https://www.hikki.site/3d358537.html</guid>
             <title>Linux忘记数据库密码</title>
-            <link>https://www.hikki.site/2022/04/12/3d358537.html</link>
+            <link>https://www.hikki.site/3d358537.html</link>
             <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
             <category term="每日一更" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B4/" />
             <category term="Linux" scheme="https://www.hikki.site/tags/Linux/" />
@@ -421,9 +424,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://www.hikki.site/2022/04/11/ee3e214f.html</guid>
+            <guid isPermalink="true">https://www.hikki.site/ee3e214f.html</guid>
             <title>QQ/微信/支付宝 收款码美化</title>
-            <link>https://www.hikki.site/2022/04/11/ee3e214f.html</link>
+            <link>https://www.hikki.site/ee3e214f.html</link>
             <category term="生活" scheme="https://www.hikki.site/categories/%E7%94%9F%E6%B4%BB/" />
             <category term="好物推荐" scheme="https://www.hikki.site/categories/%E7%94%9F%E6%B4%BB/%E5%A5%BD%E7%89%A9%E6%8E%A8%E8%8D%90/" />
             <category term="好物推荐" scheme="https://www.hikki.site/tags/%E5%A5%BD%E7%89%A9%E6%8E%A8%E8%8D%90/" />
@@ -436,9 +439,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://www.hikki.site/2022/04/11/2fbd98c3.html</guid>
+            <guid isPermalink="true">https://www.hikki.site/2fbd98c3.html</guid>
             <title>如何给PicGo添加水印</title>
-            <link>https://www.hikki.site/2022/04/11/2fbd98c3.html</link>
+            <link>https://www.hikki.site/2fbd98c3.html</link>
             <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
             <category term="技术杂谈" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" />
             <category term="一个小技巧" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E4%B8%80%E4%B8%AA%E5%B0%8F%E6%8A%80%E5%B7%A7/" />
@@ -462,9 +465,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://www.hikki.site/2022/04/10/3fa3774.html</guid>
+            <guid isPermalink="true">https://www.hikki.site/3fa3774.html</guid>
             <title>常用命令指令</title>
-            <link>https://www.hikki.site/2022/04/10/3fa3774.html</link>
+            <link>https://www.hikki.site/3fa3774.html</link>
             <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
             <category term="每日一更" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B4/" />
             <category term="每日一更" scheme="https://www.hikki.site/tags/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B4/" />
@@ -472,9 +475,9 @@
             <description><![CDATA[ &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;tree &lt;span class=&#34;token builtin class-name&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;#列出当前文件夹下的所有文件&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;tree /f &lt;span class=&#34;token comment&#34;&gt;#显示当前文件夹所有文件&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;tree /a &lt;span class=&#34;token comment&#34;&gt;#显示当前文件夹的所有文件夹&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://www.hikki.site/2022/04/10/ef5acbc6.html</guid>
+            <guid isPermalink="true">https://www.hikki.site/ef5acbc6.html</guid>
             <title>4.9日记分享</title>
-            <link>https://www.hikki.site/2022/04/10/ef5acbc6.html</link>
+            <link>https://www.hikki.site/ef5acbc6.html</link>
             <category term="生活" scheme="https://www.hikki.site/categories/%E7%94%9F%E6%B4%BB/" />
             <category term="日记" scheme="https://www.hikki.site/categories/%E7%94%9F%E6%B4%BB/%E6%97%A5%E8%AE%B0/" />
             <category term="日记" scheme="https://www.hikki.site/tags/%E6%97%A5%E8%AE%B0/" />
@@ -484,9 +487,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://www.hikki.site/2022/04/09/ff2eb0a3.html</guid>
+            <guid isPermalink="true">https://www.hikki.site/ff2eb0a3.html</guid>
             <title>hexo结构分析</title>
-            <link>https://www.hikki.site/2022/04/09/ff2eb0a3.html</link>
+            <link>https://www.hikki.site/ff2eb0a3.html</link>
             <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
             <category term="每日一更" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B4/" />
             <category term="博客" scheme="https://www.hikki.site/tags/%E5%8D%9A%E5%AE%A2/" />
@@ -497,9 +500,9 @@
 &lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;# 存放mate头文件&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;.\themes\shoka\layout\_partials\head&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://www.hikki.site/2022/04/08/c32e96d4.html</guid>
+            <guid isPermalink="true">https://www.hikki.site/c32e96d4.html</guid>
             <title>git push origin master失败</title>
-            <link>https://www.hikki.site/2022/04/08/c32e96d4.html</link>
+            <link>https://www.hikki.site/c32e96d4.html</link>
             <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
             <category term="每日一更" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B4/" />
             <category term="每日一更" scheme="https://www.hikki.site/tags/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B4/" />
@@ -546,9 +549,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://www.hikki.site/2022/04/08/2b5f7ebb.html</guid>
+            <guid isPermalink="true">https://www.hikki.site/2b5f7ebb.html</guid>
             <title>这是大二下的各科作业</title>
-            <link>https://www.hikki.site/2022/04/08/2b5f7ebb.html</link>
+            <link>https://www.hikki.site/2b5f7ebb.html</link>
             <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
             <category term="每日一更" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B4/" />
             <pubDate>Fri, 08 Apr 2022 12:27:18 +0800</pubDate>

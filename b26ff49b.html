@@ -1,0 +1,663 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+
+<meta name="yandex-verification" content="0f41f442b8921fd6" /> 
+<meta name="description" content="python、springboot、andriod、root" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/0000rookie/github.io/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="https://cdn.jsdelivr.net/gh/0000rookie/github.io/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="google-site-verification" content="true">
+  <meta name="msvalidate.01" content="true">
+  <meta name="yandex-verification" content="true">
+  <meta name="baidu-site-verification" content="true">
+
+
+<link rel="alternate" type="application/rss+xml" title="璃柏涟の筆記" href="https://www.hikki.site/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="璃柏涟の筆記" href="https://www.hikki.site/atom.xml" />
+<link rel="alternate" type="application/json" title="璃柏涟の筆記" href="https://www.hikki.site/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/0000rookie/github.io/css/app.css?v=0.2.5">
+
+  
+  <meta name="keywords" content="博客,每日一更" />
+
+
+<link rel="canonical" href="https://www.hikki.site/b26ff49b.html">
+
+
+
+  <title>
+如何在hexo博客写作 - 博客的食用方法 - 博客 - 计算机科学 |
+筆記 = 璃柏涟の筆記 = 专注学习筆記</title>
+<meta name="generator" content="Hexo 6.1.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">如何在hexo博客写作
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2022-04-13 19:13:30">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2022-04-13T19:13:30+08:00">2022-04-13</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span class="text">本文字数</span>
+    <span>952</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span class="text">阅读时长</span>
+    <span>1 分钟</span>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">筆記</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giciszlczyj20zk0m816d.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclxp31goj20zk0m8qv5.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipexj2jgzj20zk0m8b09.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipet8c1a2j20zk0m8kct.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipeudstjqj20zk0m8k3r.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclil3m4ej20zk0m8tn8.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span><i class="ic i-angle-right"></i>
+<span  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" itemprop="item" rel="index" title="分类于 计算机科学"><span itemprop="name">计算机科学</span></a>
+<meta itemprop="position" content="1" /></span>
+<i class="ic i-angle-right"></i>
+<span  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" itemprop="item" rel="index" title="分类于 博客"><span itemprop="name">博客</span></a>
+<meta itemprop="position" content="2" /></span>
+<i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/" itemprop="item" rel="index" title="分类于 博客的食用方法"><span itemprop="name">博客的食用方法</span></a>
+<meta itemprop="position" content="3" /></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="https://www.hikki.site/b26ff49b.html">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/0000rookie/github.io/images/avatar.jpg">
+    <meta itemprop="name" content="璃柏涟">
+    <meta itemprop="description" content="专注学习筆記, 喜欢的东西就努力去追求，万一成功了呢！">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="璃柏涟の筆記">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h2 id="前言"><a class="markdownIt-Anchor" href="#前言">#</a> 前言</h2>
+<p><code>hexo</code>  采用的是 <code>markdown</code>  语言的轻量级标记语言，写作时使用 <code>markdown</code> ，它的后缀名是 <code>.md</code>  在 hexo 部署的时候， <code>hexo</code>  会渲染 <code>md文件</code> 形成 <code>HTML</code> ，可以大量减少写作排版时间，从而更加专注写作，而不是专注于排版内容。</p>
+<p>如果你不会 <code>markdown</code>  语言甚至都没听过，没关系， <code>markdown</code>  是一种非常简单的语言，他的语法只有十几种，常用的就不到十来个，非常容易入手，一般人半小时就能学会，下面是官网，你可以自行去了解一下学习一下语法。</p>
+<div class="links"><div class="item" title="Markdown官网" style="--block-color:#FBDE99;"><span class="exturl image" data-url="aHR0cHM6Ly9tYXJrZG93bi5jb20uY24v" data-background-image="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204131202.png"></span>
+          <div class="info">
+          <span class="exturl title" data-url="aHR0cHM6Ly9tYXJrZG93bi5jb20uY24v">Markdown官网</span>
+          <p class="desc">轻量级标记语言</p>
+          </div></div><div class="item" title="Typora官网" style="--block-color:#FDBF5C;"><span class="exturl image" data-url="aHR0cHM6Ly9zdXBwb3J0LnR5cG9yYWlvLmNuL3poL01hcmtkb3duLVJlZmVyZW5jZS8=" data-background-image="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204131213.png"></span>
+          <div class="info">
+          <span class="exturl title" data-url="aHR0cHM6Ly9zdXBwb3J0LnR5cG9yYWlvLmNuL3poL01hcmtkb3duLVJlZmVyZW5jZS8=">Typora官网</span>
+          <p class="desc">支持markdown语法</p>
+          </div></div><div class="item" title="Typora软件下载" style="--block-color:#6AD0CB;"><span class="exturl image" data-url="aHR0cHM6Ly9zdXBwb3J0LnR5cG9yYWlvLmNuLw==" data-background-image="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204131213.png"></span>
+          <div class="info">
+          <span class="exturl title" data-url="aHR0cHM6Ly9zdXBwb3J0LnR5cG9yYWlvLmNuLw==">Typora软件下载</span>
+          <p class="desc">官网下载</p>
+          </div></div></div>
+<hr>
+<p>在这里我使用的是 <code>typora</code> ，如果你有需要，可以去官网下一个，或者你用文本编辑器写作也是可以的， <code>Typora</code>  从 <code>V1.0</code>  版本之后就开始收费了，可以下载 <code>V1.0</code>  之前的版本。</p>
+<p><code>Typora</code>  是一个 <code>markdown</code>  编辑器，极简的风格，让你专注于写作.</p>
+<h2 id="如何创建第一篇文章"><a class="markdownIt-Anchor" href="#如何创建第一篇文章">#</a> 如何创建第一篇文章</h2>
+<h3 id="打开git-bash"><a class="markdownIt-Anchor" href="#打开git-bash">#</a> 打开 git bash</h3>
+<p>在你的博客下打开 <code>git bash here</code></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/202204.jpeg" alt=""></p>
+<h3 id="输入指令"><a class="markdownIt-Anchor" href="#输入指令">#</a> 输入指令</h3>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>hexo new 文章标题</pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token comment"># 或者是</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>hexo new 文章标题 --path 路径/文件名.md</pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre><span class="token comment"># 或者可以简写一下</span></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre>hexo new 文章标题 -p 路径/文件名.md</pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre><span class="token comment"># tips：如果不设置路径的话，新建文章是默认存储在 \source\_posts\ 这个路径下的</span></pre></td></tr></table></figure><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/02.jpg" alt=""></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/03.jpg" alt=""></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/04.jpg" alt=""></p>
+<figure class="highlight yaml"><figcaption data-lang="YAML"><span>mark: 1,2-9</span></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment"># Front——matter 格式</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token key atrule">title</span><span class="token punctuation">:</span> 如何在hexo博客写作 			<span class="token comment">#文章标题</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token key atrule">date</span><span class="token punctuation">:</span> <span class="token datetime number">2022-04-13 11:52:06</span>			<span class="token comment">#文章创建时间</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token key atrule">tags</span><span class="token punctuation">:</span>						<span class="token comment">#文章标签</span></pre></td></tr><tr><td data-num="5"></td><td><pre>  <span class="token punctuation">-</span> 博客</pre></td></tr><tr><td data-num="6"></td><td><pre>  <span class="token punctuation">-</span> 每日一更</pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token key atrule">categories</span><span class="token punctuation">:</span> 					<span class="token comment">#文章类别</span></pre></td></tr><tr><td data-num="8"></td><td><pre>  <span class="token punctuation">-</span> 计算机科学</pre></td></tr><tr><td data-num="9"></td><td><pre>  <span class="token punctuation">-</span> 博客</pre></td></tr><tr><td data-num="10"></td><td><pre>  <span class="token punctuation">-</span> 博客的食用方法</pre></td></tr></table></figure><h3 id="发布文章"><a class="markdownIt-Anchor" href="#发布文章">#</a> 发布文章</h3>
+<p>当你文章写完了，想发布到博客上面，先要把文章部署到 <code>github</code>  上面，然后打开你的博客，博客就会读取 <code>github</code>  仓库的内容了。</p>
+<figure class="highlight bash"><figcaption data-lang="bash"><span>mark: 1,2-7</span></figcaption><table><tr><td data-num="1"></td><td><pre>hexo clean</pre></td></tr><tr><td data-num="2"></td><td><pre> hexo g</pre></td></tr><tr><td data-num="3"></td><td><pre> hexo d</pre></td></tr><tr><td data-num="4"></td><td><pre> <span class="token comment"># 逐步输入以上三条指令，执行完再输入下一条</span></pre></td></tr><tr><td data-num="5"></td><td><pre> <span class="token comment"># 或者一次性输入三条也是可以的，但新手还不建议一次性输入，前期部署可能有时候容易出错</span></pre></td></tr><tr><td data-num="6"></td><td><pre> hexo clean <span class="token operator">&amp;&amp;</span> hexo g <span class="token operator">&amp;&amp;</span> hexo d</pre></td></tr><tr><td data-num="7"></td><td><pre> <span class="token comment"># 部署完了看一下窗口没有出现报错就可以去博客刷新一下内容了，一般需要几分钟才更新内容</span></pre></td></tr></table></figure><p>到这里，就是 <code>hexo</code>  正常的写作顺序啦</p>
+<div class="note info">
+<p>以上如有错误，欢迎指出</p>
+</div>
+
+      <div class="tags">
+          <a href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag"><i class="ic i-tag"></i> 博客</a>
+          <a href="/tags/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B4/" rel="tag"><i class="ic i-tag"></i> 每日一更</a>
+      </div>
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2022-04-13 23:31:18" itemprop="dateModified" datetime="2022-04-13T23:31:18+08:00">2022-04-13</time>
+  </span>
+  <span id="b26ff49b.html" class="item leancloud_visitors" data-flag-title="如何在hexo博客写作" title="阅读次数">
+      <span class="icon">
+        <i class="ic i-eye"></i>
+      </span>
+      <span class="text">阅读次数</span>
+      <span class="leancloud-visitors-count"></span>
+      <span class="text">次</span>
+  </span>
+</div>
+
+
+
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="https://cdn.jsdelivr.net/gh/0000rookie/github.io/images/wechatpay.jpg" alt="璃柏涟 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="https://cdn.jsdelivr.net/gh/0000rookie/github.io/images/alipay.jpg" alt="璃柏涟 支付宝">
+        <p>支付宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>璃柏涟 <i class="ic i-at"><em>@</em></i>璃柏涟の筆記
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="https://www.hikki.site/b26ff49b.html" title="如何在hexo博客写作">https://www.hikki.site/b26ff49b.html</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/6f010433.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicitzannuj20zk0m8b29.jpg" title="jsdelivr刷新缓存">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> 博客的食用方法</span>
+  <h3>jsdelivr刷新缓存</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+      
+
+  <a href="/b9e6c7bf.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicliwyw55j20zk0m8hdt.jpg" title="日记分享2022.4.13">
+  <span class="type">下一篇</span>
+  <span class="category"><i class="ic i-flag"></i> 日记</span>
+  <h3>日记分享2022.4.13</h3>
+  </a>
+
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text"> 前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BA%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0"><span class="toc-number">2.</span> <span class="toc-text"> 如何创建第一篇文章</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%93%E5%BC%80git-bash"><span class="toc-number">2.1.</span> <span class="toc-text"> 打开 git bash</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BE%93%E5%85%A5%E6%8C%87%E4%BB%A4"><span class="toc-number">2.2.</span> <span class="toc-text"> 输入指令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%91%E5%B8%83%E6%96%87%E7%AB%A0"><span class="toc-number">2.3.</span> <span class="toc-text"> 发布文章</span></a></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+        <ul>
+          <li><a href="/5d5981b0.html" rel="bookmark" title="关于shoka主题食用技巧">关于shoka主题食用技巧</a></li><li><a href="/a7032750.html" rel="bookmark" title="文章Front-Matter参数设置">文章Front-Matter参数设置</a></li><li><a href="/6f010433.html" rel="bookmark" title="jsdelivr刷新缓存">jsdelivr刷新缓存</a></li><li class="active"><a href="/b26ff49b.html" rel="bookmark" title="如何在hexo博客写作">如何在hexo博客写作</a></li>
+        </ul>
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="璃柏涟"
+      data-src="https://cdn.jsdelivr.net/gh/0000rookie/github.io/images/avatar.jpg">
+  <p class="name" itemprop="name">璃柏涟</p>
+  <div class="description" itemprop="description">喜欢的东西就努力去追求，万一成功了呢！</div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">40</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">15</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">26</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tLzAwMDByb29raWU=" title="https:&#x2F;&#x2F;github.com&#x2F;0000rookie"><i class="ic i-github"></i></span>
+      <span class="exturl item twitter" data-url="aHR0cHM6Ly90d2l0dGVyLmNvbS9hYV8xMzQxMTUxMDU2" title="https:&#x2F;&#x2F;twitter.com&#x2F;aa_1341151056"><i class="ic i-twitter"></i></span>
+      <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS93dS14aWFvLWJhaS05" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;wu-xiao-bai-9"><i class="ic i-zhihu"></i></span>
+      <a href="/aa1341151056@126.com" title="aa1341151056@126.com" class="item email"><i class="ic i-envelope"></i></a>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>关于</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+  </ul>
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-magic"></i>链接</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/links/friend-links/" rel="section"><i class="ic i-link"></i>友链</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/links/johou/" rel="section"><i class="ic i-star"></i>情報</a>
+  </li>
+
+  </ul>
+    
+  <li class="item">
+    <a href="/friends-circle/" rel="section"><i class="ic i-paper-plane"></i>链圈</a>
+  </li>
+
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/6f010433.html" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/b9e6c7bf.html" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
+</div>
+
+    <span><a href="/6c2393ec.html" title="第七篇：购买域名---从0基础搭建Hexo博客">第七篇：购买域名---从0基础搭建Hexo博客</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B4/" title="分类于 每日一更">每日一更</a>
+</div>
+
+    <span><a href="/3fa3774.html" title="常用命令指令">常用命令指令</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E7%94%9F%E6%B4%BB/" title="分类于 生活">生活</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E7%94%9F%E6%B4%BB/%E5%A5%BD%E7%89%A9%E6%8E%A8%E8%8D%90/" title="分类于 好物推荐">好物推荐</a>
+</div>
+
+    <span><a href="/ee3e214f.html" title="QQ&#x2F;微信&#x2F;支付宝 收款码美化">QQ/微信/支付宝 收款码美化</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E7%94%9F%E6%B4%BB/" title="分类于 生活">生活</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E7%94%9F%E6%B4%BB/%E6%97%A5%E8%AE%B0/" title="分类于 日记">日记</a>
+</div>
+
+    <span><a href="/ef5acbc6.html" title="4.9日记分享">4.9日记分享</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B4/" title="分类于 每日一更">每日一更</a>
+</div>
+
+    <span><a href="/edaa94fb.html" title="为博客添加免费的CDN加速">为博客添加免费的CDN加速</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B4/" title="分类于 每日一更">每日一更</a>
+</div>
+
+    <span><a href="/2b5f7ebb.html" title="这是大二下的各科作业">这是大二下的各科作业</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E6%A8%A1%E5%9D%97/" title="分类于 模块">模块</a>
+</div>
+
+    <span><a href="/e85071ad.html" title="搭建GitHu图床">搭建GitHu图床</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
+</div>
+
+    <span><a href="/1edcfdea.html" title="python-math库">python-math库</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
+</div>
+
+    <span><a href="/aaad0208.html" title="零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
+</div>
+
+    <span><a href="/af3d5cf5.html" title="ERROR: spyder 4.0.1 requires pyqtwebengine&lt;5.13; python_version &gt;&#x3D; 3, which is not installed. ERROR: spyder 4.0.1 has requirement pyqt5&lt;5.13; python_version &gt;&#x3D; 3, but you&#39;ll have pyqt5 5.15.6 which is incompatible.">ERROR: spyder 4.0.1 requires pyqtwebengine<5.13; python_version >= 3, which is not installed. ERROR: spyder 4.0.1 has requirement pyqt5<5.13; python_version >= 3, but you'll have pyqt5 5.15.6 which is incompatible.</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>最新评论</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 
+    <span itemprop="copyrightYear">2022</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">璃柏涟 @ 筆記</span>
+  </div>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="站点总字数">22k 字</span>
+
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="站点阅读时长">30 分钟</span>
+  </div>
+  <div class="powered-by">
+    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  
+  <div class="upyun-logo">
+    <span>本网站由</span>
+    <a class="upyun-logo-ref" href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="blank">
+        <img class="upyun-img" align="bottom" height="18" src="https://i.loli.net/2021/06/19/zgdbal6fjnuEPLO.png" alt="又拍云">
+    </a>
+    <span>提供 CDN 加速/云存储服务</span>
+  </div>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: 'b26ff49b.html',
+    favicon: {
+      show: "あれんのぼろこ",
+      hide: "可愛い！"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,
+    copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/0000rookie/github.io/js/app.js?v=0.2.5"></script>
+
+
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"left","width":109,"height":236,"hOffset":40,"vOffset":3},"mobile":{"show":true,"scale":0.2},"react":{"opacityDefault":0.7,"opacityOnHover":0.8},"log":false});</script></body>
+</html>
