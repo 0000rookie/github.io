@@ -1400,7 +1400,7 @@ const clipBoard = function(str, callback) {
 function friendscircle(){
   var friends = [
     'https://shoka.lostyu.me/',
-    'https://ldwei.top/',
+    'https://ldwei.top/'
     ];
   //var friend = friends[Math.floor(Math.random()*friends.length)];
   var friend = 'https://shoka.lostyu.me/';

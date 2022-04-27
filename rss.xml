@@ -10,8 +10,8 @@
         </author>
         <description>喜欢的东西就努力去追求，万一成功了呢！</description>
         <language>zh-CN</language>
-        <pubDate>Mon, 25 Apr 2022 01:51:19 +0800</pubDate>
-        <lastBuildDate>Mon, 25 Apr 2022 01:51:19 +0800</lastBuildDate>
+        <pubDate>Thu, 28 Apr 2022 00:24:52 +0800</pubDate>
+        <lastBuildDate>Thu, 28 Apr 2022 00:24:52 +0800</lastBuildDate>
         <category term="web安全" />
         <category term="笔记" />
         <category term="web" />
@@ -25,6 +25,65 @@
         <category term="后端" />
         <category term="markdown" />
         <category term="搭建个人博客" />
+        <item>
+            <guid isPermalink="true">https://www.hikki.site/17554f39.html</guid>
+            <title>关于手机双开不显示双开目录999</title>
+            <link>https://www.hikki.site/17554f39.html</link>
+            <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+            <category term="技术杂谈" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" />
+            <category term="-刷机" scheme="https://www.hikki.site/tags/%E5%88%B7%E6%9C%BA/" />
+            <pubDate>Thu, 28 Apr 2022 00:24:52 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;手机双开之后找不到双开的目录999&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#手机双开之后找不到双开的目录999&#34;&gt;#&lt;/a&gt; 手机双开之后找不到双开的目录 999&lt;/h2&gt;
+&lt;h3 id=&#34;发现问题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#发现问题&#34;&gt;#&lt;/a&gt; 发现问题&lt;/h3&gt;
+&lt;p&gt;今天想找一下手机双开的根目录，发现怎么不见了？？？离谱，正常不是应该在 &lt;code&gt;/storage/emulated/999/&lt;/code&gt;  下吗？？？怎么不见了，而且 &lt;code&gt;/storage/emulated/0/&lt;/code&gt;  根目录也不见了，奇了怪了&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022043410.jpeg&#34; alt=&#34;&#34; width=&#34;75%&#34; height=&#34;75%&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;分析问题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#分析问题&#34;&gt;#&lt;/a&gt; 分析问题&lt;/h3&gt;
+&lt;p&gt;但是，我一打开 &lt;code&gt;MT管理器&lt;/code&gt; 它又显示 &lt;code&gt;/storage/emulated/0/&lt;/code&gt; ，就很奇怪。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022043404.jpeg&#34; alt=&#34;&#34; width=&#34;75%&#34; height=&#34;75%&#34;&gt;&lt;/p&gt;
+&lt;p&gt;于是带着这个疑问去查了一下资料，发现 &lt;code&gt;/storage/emulated/0/&lt;/code&gt;  和 &lt;code&gt;/storage/emulated/999/&lt;/code&gt;  并不是一个真实存在的目录，只是一个虚拟卷映射。知道是虚拟卷映射就简单了，去找一下真实目录就好。&lt;/p&gt;
+&lt;h3 id=&#34;解决问题根目录在datamedia&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#解决问题根目录在datamedia&#34;&gt;#&lt;/a&gt; 解决问题，根目录在 &lt;code&gt;/data/media/&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;发现 &lt;code&gt;/0/&lt;/code&gt;  和 &lt;code&gt;/999/&lt;/code&gt;  目录在 &lt;code&gt;/data/media/&lt;/code&gt;  下&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022043415.jpeg&#34; alt=&#34;&#34; width=&#34;75%&#34; height=&#34;75%&#34;&gt;&lt;/p&gt;
+&lt;p&gt;其实，在 &lt;code&gt;/sdcard&lt;/code&gt;  也有一个本机根目录，甚至你还能在 &lt;code&gt;/storage/ace-999/&lt;/code&gt;  和 &lt;code&gt;/storage/self/primary/&lt;/code&gt;  看到双开根目录和本机根目录&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022043422.jpeg&#34; alt=&#34;&#34; width=&#34;75%&#34; height=&#34;75%&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022045756.jpeg&#34; alt=&#34;&#34; width=&#34;75%&#34; height=&#34;75%&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;综上&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#综上&#34;&gt;#&lt;/a&gt; 综上&lt;/h2&gt;
+&lt;h3 id=&#34;本机根目录&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#本机根目录&#34;&gt;#&lt;/a&gt; 本机根目录&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;/data/media/0/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/sdcard/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/storage/self/primary/&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;双开根目录&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#双开根目录&#34;&gt;#&lt;/a&gt; 双开根目录&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;/data/media/999/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/storage/ace-999/&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://www.hikki.site/c3e9968a.html</guid>
+            <title>python Qt5基础知识</title>
+            <link>https://www.hikki.site/c3e9968a.html</link>
+            <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+            <category term="编程语言" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" />
+            <category term="python" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" />
+            <category term="python" scheme="https://www.hikki.site/tags/python/" />
+            <category term="Qt5" scheme="https://www.hikki.site/tags/Qt5/" />
+            <pubDate>Tue, 26 Apr 2022 11:49:48 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;添加间隔线&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#添加间隔线&#34;&gt;#&lt;/a&gt; 添加间隔线&lt;/h2&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;fileMenu&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;addSeparator&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;#fileMenu 是菜单 bar&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://www.hikki.site/b9893092.html</guid>
+            <title>python Qt5实现记事本基本功能</title>
+            <link>https://www.hikki.site/b9893092.html</link>
+            <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+            <category term="编程语言" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" />
+            <category term="python" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" />
+            <pubDate>Tue, 26 Apr 2022 11:48:57 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://www.hikki.site/28af37eb.html</guid>
             <title>Hexo部署err:Error:Spawn failed错误</title>
@@ -90,7 +149,7 @@
             <link>https://www.hikki.site/70ded1a5.html</link>
             <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
             <category term="技术杂谈" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" />
-            <category term="andriod" scheme="https://www.hikki.site/tags/andriod/" />
+            <category term="Andriod" scheme="https://www.hikki.site/tags/Andriod/" />
             <pubDate>Thu, 21 Apr 2022 23:46:35 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;前言&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#前言&#34;&gt;#&lt;/a&gt; 前言&lt;/h2&gt;
 &lt;p&gt;首先你要有 &lt;code&gt;root&lt;/code&gt;  才能食用以下教程，而且仅适用 &lt;code&gt;andriod&lt;/code&gt;  手机，苹果手机不支持。&lt;/p&gt;
@@ -118,8 +177,8 @@
             <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
             <category term="编程语言" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" />
             <category term="python" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" />
+            <category term="python" scheme="https://www.hikki.site/tags/python/" />
             <category term="python那些库" scheme="https://www.hikki.site/tags/python%E9%82%A3%E4%BA%9B%E5%BA%93/" />
-            <category term="pyhton" scheme="https://www.hikki.site/tags/pyhton/" />
             <pubDate>Thu, 21 Apr 2022 22:51:41 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;python内置数值运算函数&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#python内置数值运算函数&#34;&gt;#&lt;/a&gt; python 内置数值运算函数&lt;/h2&gt;
 &lt;p&gt;python 解释器内置了一些函数，以下列出部分常用函数&lt;/p&gt;
@@ -134,7 +193,7 @@
             <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
             <category term="编程语言" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" />
             <category term="python" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" />
-            <category term="-python" scheme="https://www.hikki.site/tags/python/" />
+            <category term="python" scheme="https://www.hikki.site/tags/python/" />
             <pubDate>Thu, 21 Apr 2022 22:44:51 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;python格式化输出&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#python格式化输出&#34;&gt;#&lt;/a&gt; python 格式化输出&lt;/h2&gt;
 &lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&gt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;ls&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;这是字符串&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&gt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;&amp;#123;&amp;#125;&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;format&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;ls&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&gt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;%ls&#34;&lt;/span&gt;   &lt;span class=&#34;token operator&#34;&gt;%&lt;/span&gt;ls &lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;这是字符串&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;这是字符串&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 总结：第二种和 C 语言输出类似，但是在 &#34;&#34; 后没有逗号的，注意是没有逗号的&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;列表出现相同字符次数统计&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#列表出现相同字符次数统计&#34;&gt;#&lt;/a&gt; 列表出现相同字符次数统计&lt;/h2&gt;
@@ -149,7 +208,6 @@
             <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
             <category term="技术杂谈" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" />
             <category term="技术杂谈" scheme="https://www.hikki.site/tags/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" />
-            <category term="注册表" scheme="https://www.hikki.site/tags/%E6%B3%A8%E5%86%8C%E8%A1%A8/" />
             <pubDate>Mon, 18 Apr 2022 15:08:55 +0800</pubDate>
             <description><![CDATA[  ]]></description>
         </item>
@@ -158,7 +216,7 @@
             <title>CentOS新增root用户</title>
             <link>https://www.hikki.site/111f4f09.html</link>
             <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-            <category term="每日一更" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B4/" />
+            <category term="技术杂谈" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" />
             <category term="Linux" scheme="https://www.hikki.site/tags/Linux/" />
             <category term="CentoOS" scheme="https://www.hikki.site/tags/CentoOS/" />
             <pubDate>Sat, 16 Apr 2022 15:49:21 +0800</pubDate>
@@ -238,8 +296,8 @@
             <category term="博客" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
             <category term="博客的食用方法" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/" />
             <category term="博客" scheme="https://www.hikki.site/tags/%E5%8D%9A%E5%AE%A2/" />
-            <category term="每日一更" scheme="https://www.hikki.site/tags/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B4/" />
             <category term="教程" scheme="https://www.hikki.site/tags/%E6%95%99%E7%A8%8B/" />
+            <category term="每日一更" scheme="https://www.hikki.site/tags/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B4/" />
             <pubDate>Tue, 12 Apr 2022 23:54:52 +0800</pubDate>
             <description><![CDATA[ &lt;div class=&#34;note info&#34;&gt;
 &lt;p&gt;如何刷新 CDN.jsdelivr 缓存 ？？？&lt;/p&gt;
@@ -410,9 +468,8 @@
             <title>Linux忘记数据库密码</title>
             <link>https://www.hikki.site/3d358537.html</link>
             <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-            <category term="每日一更" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B4/" />
+            <category term="技术杂谈" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" />
             <category term="Linux" scheme="https://www.hikki.site/tags/Linux/" />
-            <category term="每日一更" scheme="https://www.hikki.site/tags/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B4/" />
             <category term="教程" scheme="https://www.hikki.site/tags/%E6%95%99%E7%A8%8B/" />
             <category term="数据库" scheme="https://www.hikki.site/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" />
             <pubDate>Tue, 12 Apr 2022 01:54:58 +0800</pubDate>
@@ -445,7 +502,6 @@
             <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
             <category term="技术杂谈" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" />
             <category term="一个小技巧" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E4%B8%80%E4%B8%AA%E5%B0%8F%E6%8A%80%E5%B7%A7/" />
-            <category term="技术" scheme="https://www.hikki.site/tags/%E6%8A%80%E6%9C%AF/" />
             <category term="一个技巧" scheme="https://www.hikki.site/tags/%E4%B8%80%E4%B8%AA%E6%8A%80%E5%B7%A7/" />
             <pubDate>Mon, 11 Apr 2022 00:19:39 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;在运营独立博客的时候，自己原创的文章，经常会被别人转载，又没有标明原作者地址，导致原创作者流量流失了一部分，如果可以标记原创是自己的话，那就非常方便了，比如说加个水印就好一点。刚好 &lt;code&gt;PicGo&lt;/code&gt;  有个插件 &lt;code&gt;watermark&lt;/code&gt;  可以给突破加水印，这就很方便了，不用上传图片自己还要去添加一个水印。&lt;/p&gt;
@@ -469,8 +525,8 @@
             <title>常用命令指令</title>
             <link>https://www.hikki.site/3fa3774.html</link>
             <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-            <category term="每日一更" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B4/" />
-            <category term="每日一更" scheme="https://www.hikki.site/tags/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B4/" />
+            <category term="技术杂谈" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" />
+            <category term="技术杂谈" scheme="https://www.hikki.site/tags/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" />
             <pubDate>Sun, 10 Apr 2022 12:30:48 +0800</pubDate>
             <description><![CDATA[ &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;tree &lt;span class=&#34;token builtin class-name&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;#列出当前文件夹下的所有文件&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;tree /f &lt;span class=&#34;token comment&#34;&gt;#显示当前文件夹所有文件&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;tree /a &lt;span class=&#34;token comment&#34;&gt;#显示当前文件夹的所有文件夹&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
         </item>
@@ -485,88 +541,6 @@
             <description><![CDATA[ &lt;h2 id=&#34;49日记分享&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#49日记分享&#34;&gt;#&lt;/a&gt; 4.9 日记分享&lt;/h2&gt;
 &lt;p&gt;自从开始玩博客之后，经常用到 &lt;code&gt;Git&lt;/code&gt; ，感觉非常重要。如今每个企业都基本用到 &lt;code&gt;Git&lt;/code&gt; ，如果就业的时候不会使用 &lt;code&gt;Git&lt;/code&gt; ，感觉还是落后于别人一步的，而且，现在也有时间学习，倒不如现在开始学习一下，顺便玩一玩服务器，可能对 &lt;code&gt;Git&lt;/code&gt;  会更加熟练，话不多说，直接动手开始学习。&lt;/p&gt;
  ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://www.hikki.site/ff2eb0a3.html</guid>
-            <title>hexo结构分析</title>
-            <link>https://www.hikki.site/ff2eb0a3.html</link>
-            <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-            <category term="每日一更" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B4/" />
-            <category term="博客" scheme="https://www.hikki.site/tags/%E5%8D%9A%E5%AE%A2/" />
-            <category term="每日一更" scheme="https://www.hikki.site/tags/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B4/" />
-            <category term="hexo主题" scheme="https://www.hikki.site/tags/hexo%E4%B8%BB%E9%A2%98/" />
-            <pubDate>Sat, 09 Apr 2022 04:27:34 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;meta头文件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#meta头文件&#34;&gt;#&lt;/a&gt;  &lt;code&gt;meta&lt;/code&gt;  头文件&lt;/h2&gt;
-&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;# 存放mate头文件&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;.\themes\shoka\layout\_partials\head&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://www.hikki.site/c32e96d4.html</guid>
-            <title>git push origin master失败</title>
-            <link>https://www.hikki.site/c32e96d4.html</link>
-            <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-            <category term="每日一更" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B4/" />
-            <category term="每日一更" scheme="https://www.hikki.site/tags/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B4/" />
-            <category term="教程" scheme="https://www.hikki.site/tags/%E6%95%99%E7%A8%8B/" />
-            <category term="git" scheme="https://www.hikki.site/tags/git/" />
-            <category term="BUG" scheme="https://www.hikki.site/tags/BUG/" />
-            <pubDate>Fri, 08 Apr 2022 22:34:15 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;关于我想备份blog这件事&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#关于我想备份blog这件事&#34;&gt;#&lt;/a&gt; 关于我想备份 &lt;code&gt;blog&lt;/code&gt;  这件事&lt;/h2&gt;
-&lt;details class=&#34;primary&#34;&gt;&lt;summary&gt;我要怎么备份blog文件？？？&lt;/summary&gt;&lt;div&gt;
-&lt;div class=&#34;note primary&#34;&gt;
-&lt;p&gt;这几天在想，万一那天我想在别的电脑上写博客，或者是我电脑突然抽风硬盘坏了，我的博客数据岂不是没了？？？&lt;/p&gt;
-&lt;p&gt;又或者我什么时候不小心删错了文件，岂不是出大问题？？？&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;带着这个问题，我一开始是找了几个 &lt;code&gt;PC端&lt;/code&gt; 自动本地备份的程序，但效果不太理想。&lt;/p&gt;
-&lt;p&gt;定时备份：不能保证你在设置定时的这段时间内进行 &lt;code&gt;hexo d&lt;/code&gt;  多少次，如果定时备份的时间设置过短，理论上对硬盘的读写会拖慢其他程序的运行。&lt;/p&gt;
-&lt;p&gt;所以在想，如果有一个程序可以监控我 &lt;code&gt;blog&lt;/code&gt;  下的文件变化，每变化一次就进行记录一次，进行增量备份一次，这是我想到最完美的办法，带着这个想法，我似乎找到了一个方法。&lt;/p&gt;
-&lt;/div&gt;&lt;/details&gt;
-&lt;details class=&#34;danger&#34;&gt;&lt;summary&gt;持续集成服务&lt;/summary&gt;&lt;div&gt;
-&lt;p&gt;此处引用百度百科：持续集成是一种软件开发实践，即团队开发成员经常集成他们的工作，通常每个成员每天至少集成一次，也就意味着每天可能会发生多次集成。每次集成都通过自动化的构建（包括编译，发布，自动化测试）来验证，从而尽早地发现集成错误。&lt;/p&gt;
-&lt;p&gt;简单来说，就是这个服务绑定了 &lt;code&gt;GitHub&lt;/code&gt; ，我们每提交一次代码到 &lt;code&gt;GitHub&lt;/code&gt; ，它都会抓取一次我们的仓库，检查新代码，然后提供一个运行环境，执行测试，完成构建，还能部署到服务器。&lt;/p&gt;
-&lt;/div&gt;&lt;/details&gt;
-&lt;p&gt;然后我这次在准备提交文件到我新建的 &lt;code&gt;hexo-backups&lt;/code&gt;  仓库的时候，出错了，就记录一下错误。&lt;/p&gt;
-&lt;h2 id=&#34;git-pash-origin-master失败&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#git-pash-origin-master失败&#34;&gt;#&lt;/a&gt;  &lt;code&gt;git pash origin master&lt;/code&gt;  失败&lt;/h2&gt;
-&lt;p&gt;第一次遇见这个问题，我还以为是 &lt;code&gt;.gitignore&lt;/code&gt;  文件的 &lt;code&gt;.DS_Store&lt;/code&gt;  文件不存在？然后我删掉这个文件，好像还是继续报一样的错误，然后排除这个可能。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204082309.jpg&#34; alt=&#34;&#34; title=&#34;git pash origin master失败&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;新建文件测试&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#新建文件测试&#34;&gt;#&lt;/a&gt; 新建文件测试&lt;/h2&gt;
-&lt;p&gt;然后新建文件测试一下，看是不是文件没有被加载到缓存区，发现结果已经加载到缓冲区了&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204082313.jpg&#34; alt=&#34;&#34; title=&#34;测试文件&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;添加origin&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#添加origin&#34;&gt;#&lt;/a&gt; 添加 origin&lt;/h2&gt;
-&lt;p&gt;一开始我没有删除旧的 origin，我直接添加了，直接报错。实际操作应该删除旧的 origin 的，再添加新的 origin&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;删除origin&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 删除 origin&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; remote remove origin&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;添加origin&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 此处的 git@github.com:0000rookie/Hexo-backups.git 是仓库的 SSH&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;add&lt;/span&gt; git@github.com:0000rookie/Hexo-backups.git&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;查看origin&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; origin -v&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204082315.jpg&#34; alt=&#34;&#34; title=&#34;添加控制器&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;重新commit&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#重新commit&#34;&gt;#&lt;/a&gt; 重新 commit&lt;/h2&gt;
-&lt;p&gt;是的，我真的以为我只是修改一下 &lt;code&gt;origin&lt;/code&gt;  就处理好了&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204082324.jpg&#34; alt=&#34;&#34; title=&#34;重新commit&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;git-push-f-origin-master提交成功&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#git-push-f-origin-master提交成功&#34;&gt;#&lt;/a&gt;  &lt;code&gt;git push -f origin master&lt;/code&gt;  提交成功&lt;/h2&gt;
-&lt;p&gt;奇怪的是，我试试用 &lt;code&gt;git push -f origin master&lt;/code&gt;  就成功了&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204082326.jpg&#34; alt=&#34;&#34; title=&#34;git push -f origin master&#34;&gt;&lt;/p&gt;
-&lt;div class=&#34;note success&#34;&gt;
-&lt;p&gt;目前还不知道是什么原因导致错误，如果你知道，欢迎留言告诉我！！！&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;note warning&#34;&gt;
-&lt;p&gt;以上如有错误，欢迎留言指出&lt;/p&gt;
-&lt;/div&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://www.hikki.site/2b5f7ebb.html</guid>
-            <title>这是大二下的各科作业</title>
-            <link>https://www.hikki.site/2b5f7ebb.html</link>
-            <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-            <category term="每日一更" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B4/" />
-            <pubDate>Fri, 08 Apr 2022 12:27:18 +0800</pubDate>
-            <description><![CDATA[ &lt;div class=&#34;hbe hbe-container&#34; id=&#34;hexo-blog-encrypt&#34; data-wpm=&#34;抱歉，这个密码看着不太对，请再试试&#34; data-whm=&#34;抱歉，这个文章不能被纠正，不过您还是能看看解密后的内容&#34;&gt;
-  &lt;script id=&#34;hbeData&#34; type=&#34;hbeData&#34; data-hmacdigest=&#34;736d6f317de652675e92c562c9d559a1a4933fa5da6633bb287a93596b9f26cc&#34;&gt;fc8ec58bcd304fc0f97ab129566d154af1d2a39ab32988b65a03f96755db586b87c750b1a5859def1c25d72c08186c80ac1f1b603ec24b6d40ce078a19cf4ed63b8b3c89281368284ed5acd62cab190e9c8bab2fe4d1765ffaa3769cbf699834be2ed0fbcc9fe46d07a65759e40b49ee59d107702bf0b469a0462f78f31e766b18f3a153c653ac1ad4ab8836b343844227b31f6c898d1e46d0da787b9d58dbe8114036fd7da0e08f8817b51a6b26661006a228f59c179587570624d1b08486876e4257edbaa0f0d5c2cf0d8f1eea49ba5b643c84122c99cfea74e7111df955af1e587963b806a1c979ae02d61d62a0f6f193f8d890a31df3abe5bc77e581d9ccf1c0592fbdc04d0c6b79f91e21d636b9b8986224515d6a7671132330cddb9c4a5e758fcd7ec41d24d8a749a0ddd2bb9ab993a7f5a70d8051da001c5cc574616916c87145b6ea5d991bfe663c48f3d52cc9e2defac07737be9d0c0b9c2f6176c43c560e1012d1a2b58a5cce83f997de32e46b42e8900f216bf9ac83bd5883d3f83bb3e7238cbf3b62c152d751fe30d9925ed87b157e1bbee9aa3990e8b78f3d7519875fe1de884eec368562a936a2e9d613f3f112258f85dfb93a3746817e00d90185dae4e805dfbf455b5c239b54b33b1595247ac059c9db5283920ed3a474b1c131ebb191ba09fe400fbcc3c3d4e7bed94267f78debaaa5378abe94f47deea417d56a30cf29c22c5630a185aef48d6ac2be2c4c8496d986b70472dbff913ca04bd324c8e9d11ac3efa565c8d50e62bbbcf6e8a782d00bc58cb7fdf291f95ae22fd3fca5350e0f778b5fdafa23528d16d543b523f6a32087773d23577f02f23ac7f32e25b8c6e5c3ea7787ca23c8921300ecd2c46966aa1b19140d68f7920ad378342403bfc41473a362694962b41c2b148aebe488735787d4da4e5035a6d92397fdbfbee957de90027ab21203c3f0801d6c2bbbcbad3b65732c174c47fa4e2b29410846a0996f4eb893eb9d1bb33d33d698c90f9aa63d687302a1929fc2e3c520ef0d78a434685a9bdbad279fe7bddfd8351f519df2a0a4499ecccfd36b2fa070acc95854d860c73591cbc84d912b7145be038397728196a093d9e9b6c91c98e734b477442b979cd2d402ecc037d5e7eaf810257422352057a654ae1948f38156e7a0f2103dc9a2976ff17785887a07b94a95cce95bc1b40c5de916eef4107bbbc0a151d4a57dd8c64a8a30b3159bb28d39c2eaa9d37d3ce75e351717cc2efe3a2471e3ba02d992c3535c52f5b815c7b60fec10c6a9145d5d725443eb326e0892085ffa16ef202c5a6451235355869cdaf5e1d28d0c5bab9b0e0929c79725d5abd7d43c7b1d6e00661c8ad12b7b5697aa6e5f38b27300a0e473500e38547844a87bd4785176034a9c731b928c89c4f639601241a3580d027d4a50412e4b57c8e6656d86a8afaa4388d8292fb33517227a2385b413fae669615ff901627e921eafd0827a700f8108f8965a345788b4d0cc4ea866dfd62ea5410c5ab55d04b50d23d4fbac0865fd1a1dba9c25e9f71714d780fca0b04bfc0453840610d2a6514cd9b8c2dcaee4898cda75964ea35778e9879fbf1febe7a48b45a9958d2cbc207f43d998fe7af70b6db1a52b049bd3cf10827c52e7f0ac702e981ad5047db75a2fe65558fb68d6cca366d656e36a4c6d2748b10731831a01abdab48c62bc55209a8be77ae5a438359ee304f61fc165533bce421522edff8c73b91df590a4d7664b582dbf9cd63b819a38d8dedb7a00713f8d1903e0cc96c159a11312436c5b53a7734feb2648481b1d6263841bf3c62002&lt;/script&gt;
-  &lt;div class=&#34;hbe hbe-content&#34;&gt;
-    &lt;div class=&#34;hbe hbe-input hbe-input-default&#34;&gt;
-      &lt;input class=&#34;hbe hbe-input-field hbe-input-field-default&#34; type=&#34;password&#34; id=&#34;hbePass&#34;&gt;
-      &lt;label class=&#34;hbe hbe-input-label hbe-input-label-default&#34; for=&#34;hbePass&#34;&gt;
-        &lt;span class=&#34;hbe hbe-input-label-content hbe-input-label-content-default&#34;&gt;您好，私の班级は？&lt;/span&gt;
-      &lt;/label&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;script data-pjax src=&#34;/lib/hbe.js&#34;&gt;&lt;/script&gt;&lt;link href=&#34;/css/hbe.style.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;&gt; ]]></description>
         </item>
     </channel>
 </rss>

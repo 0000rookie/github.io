@@ -7,6 +7,44 @@
     "home_page_url": "https://www.hikki.site",
     "items": [
         {
+            "id": "https://www.hikki.site/17554f39.html",
+            "url": "https://www.hikki.site/17554f39.html",
+            "title": "关于手机双开不显示双开目录999",
+            "date_published": "2022-04-27T16:24:52.000Z",
+            "content_html": "<h2 id=\"手机双开之后找不到双开的目录999\"><a class=\"markdownIt-Anchor\" href=\"#手机双开之后找不到双开的目录999\">#</a> 手机双开之后找不到双开的目录 999</h2>\n<h3 id=\"发现问题\"><a class=\"markdownIt-Anchor\" href=\"#发现问题\">#</a> 发现问题</h3>\n<p>今天想找一下手机双开的根目录，发现怎么不见了？？？离谱，正常不是应该在 <code>/storage/emulated/999/</code>  下吗？？？怎么不见了，而且 <code>/storage/emulated/0/</code>  根目录也不见了，奇了怪了</p>\n<p><img data-src=\"https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022043410.jpeg\" alt=\"\" width=\"75%\" height=\"75%\"></p>\n<h3 id=\"分析问题\"><a class=\"markdownIt-Anchor\" href=\"#分析问题\">#</a> 分析问题</h3>\n<p>但是，我一打开 <code>MT管理器</code> 它又显示 <code>/storage/emulated/0/</code> ，就很奇怪。</p>\n<p><img data-src=\"https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022043404.jpeg\" alt=\"\" width=\"75%\" height=\"75%\"></p>\n<p>于是带着这个疑问去查了一下资料，发现 <code>/storage/emulated/0/</code>  和 <code>/storage/emulated/999/</code>  并不是一个真实存在的目录，只是一个虚拟卷映射。知道是虚拟卷映射就简单了，去找一下真实目录就好。</p>\n<h3 id=\"解决问题根目录在datamedia\"><a class=\"markdownIt-Anchor\" href=\"#解决问题根目录在datamedia\">#</a> 解决问题，根目录在 <code>/data/media/</code></h3>\n<p>发现 <code>/0/</code>  和 <code>/999/</code>  目录在 <code>/data/media/</code>  下</p>\n<p><img data-src=\"https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022043415.jpeg\" alt=\"\" width=\"75%\" height=\"75%\"></p>\n<p>其实，在 <code>/sdcard</code>  也有一个本机根目录，甚至你还能在 <code>/storage/ace-999/</code>  和 <code>/storage/self/primary/</code>  看到双开根目录和本机根目录</p>\n<p><img data-src=\"https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022043422.jpeg\" alt=\"\" width=\"75%\" height=\"75%\"></p>\n<p><img data-src=\"https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022045756.jpeg\" alt=\"\" width=\"75%\" height=\"75%\"></p>\n<h2 id=\"综上\"><a class=\"markdownIt-Anchor\" href=\"#综上\">#</a> 综上</h2>\n<h3 id=\"本机根目录\"><a class=\"markdownIt-Anchor\" href=\"#本机根目录\">#</a> 本机根目录</h3>\n<ol>\n<li><code>/data/media/0/</code></li>\n<li><code>/sdcard/</code></li>\n<li><code>/storage/self/primary/</code></li>\n</ol>\n<h3 id=\"双开根目录\"><a class=\"markdownIt-Anchor\" href=\"#双开根目录\">#</a> 双开根目录</h3>\n<ol>\n<li><code>/data/media/999/</code></li>\n<li><code>/storage/ace-999/</code></li>\n</ol>\n",
+            "tags": [
+                "计算机科学",
+                "技术杂谈",
+                "-刷机"
+            ]
+        },
+        {
+            "id": "https://www.hikki.site/c3e9968a.html",
+            "url": "https://www.hikki.site/c3e9968a.html",
+            "title": "python Qt5基础知识",
+            "date_published": "2022-04-26T03:49:48.000Z",
+            "content_html": "<h2 id=\"添加间隔线\"><a class=\"markdownIt-Anchor\" href=\"#添加间隔线\">#</a> 添加间隔线</h2>\n<figure class=\"highlight python\"><figcaption data-lang=\"python\"></figcaption><table><tr class=\"marked\"><td data-num=\"1\"></td><td><pre>fileMenu<span class=\"token punctuation\">.</span>addSeparator<span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span> <span class=\"token comment\">#fileMenu 是菜单 bar</span></pre></td></tr></table></figure>",
+            "tags": [
+                "计算机科学",
+                "编程语言",
+                "python",
+                "python",
+                "Qt5"
+            ]
+        },
+        {
+            "id": "https://www.hikki.site/b9893092.html",
+            "url": "https://www.hikki.site/b9893092.html",
+            "title": "python Qt5实现记事本基本功能",
+            "date_published": "2022-04-26T03:48:57.000Z",
+            "content_html": "",
+            "tags": [
+                "计算机科学",
+                "编程语言",
+                "python"
+            ]
+        },
+        {
             "id": "https://www.hikki.site/28af37eb.html",
             "url": "https://www.hikki.site/28af37eb.html",
             "title": "Hexo部署err:Error:Spawn failed错误",
@@ -54,7 +92,7 @@
             "tags": [
                 "计算机科学",
                 "技术杂谈",
-                "andriod"
+                "Andriod"
             ]
         },
         {
@@ -67,8 +105,8 @@
                 "计算机科学",
                 "编程语言",
                 "python",
-                "python那些库",
-                "pyhton"
+                "python",
+                "python那些库"
             ]
         },
         {
@@ -81,7 +119,7 @@
                 "计算机科学",
                 "编程语言",
                 "python",
-                "-python"
+                "python"
             ]
         },
         {
@@ -93,8 +131,7 @@
             "tags": [
                 "计算机科学",
                 "技术杂谈",
-                "技术杂谈",
-                "注册表"
+                "技术杂谈"
             ]
         },
         {
@@ -105,7 +142,7 @@
             "content_html": "<h2 id=\"进入root\"><a class=\"markdownIt-Anchor\" href=\"#进入root\">#</a> 进入 root</h2>\n<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"></figcaption><table><tr class=\"marked\"><td data-num=\"1\"></td><td><pre><span class=\"token function\">su</span> root  \t\t\t\t<span class=\"token comment\"># 进入 root 时需要输入密码，密码是不显示的</span></pre></td></tr><tr><td data-num=\"2\"></td><td><pre>gedit /etc/sudoers\t\t<span class=\"token comment\"># 打开 sudoers 文件</span></pre></td></tr></table></figure><p><img data-src=\"http://hikki.test.upcdn.net/2022045220.jpeg\" alt=\"\"></p>\n<h2 id=\"添加新用户\"><a class=\"markdownIt-Anchor\" href=\"#添加新用户\">#</a> 添加新用户</h2>\n<p>滑到最下面找到 <code>root</code></p>\n<p>在 <code>root</code>  下面添加，</p>\n<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"></figcaption><table><tr class=\"marked\"><td data-num=\"1\"></td><td><pre>新用户名 <span class=\"token assign-left variable\">ALL</span><span class=\"token operator\">=</span><span class=\"token punctuation\">(</span>ALL<span class=\"token punctuation\">)</span> ALL </pre></td></tr><tr><td data-num=\"2\"></td><td><pre><span class=\"token comment\"># 新用户必须要存在才能添加</span></pre></td></tr><tr><td data-num=\"3\"></td><td><pre><span class=\"token comment\"># lilbai518 这个用户，我之前已经创建过了</span></pre></td></tr></table></figure><p><img data-src=\"http://hikki.test.upcdn.net/2022045229.jpeg\" alt=\"\"></p>\n<p><img data-src=\"http://hikki.test.upcdn.net/2022045256.jpeg\" alt=\"\"></p>\n",
             "tags": [
                 "计算机科学",
-                "每日一更",
+                "技术杂谈",
                 "Linux",
                 "CentoOS"
             ]
@@ -147,8 +184,8 @@
                 "博客",
                 "博客的食用方法",
                 "博客",
-                "每日一更",
-                "教程"
+                "教程",
+                "每日一更"
             ]
         },
         {
@@ -173,9 +210,8 @@
             "content_html": "<p>这几天班里在搞团日活动，有个活动是 <code>Oj</code>  比赛，通过同学们刷题提高语言能力，因此需要一个 <code>Oj</code>  平台统计数据，我就想看看自己能不能搭建一个 <code>Oj</code>  平台，然后给大家测试题目。</p>\n<p>在部署项目过程中，我忘记 <code>mysql</code>  密码了，导致我数据库想修改数据没办法。</p>\n<p>经过一番折腾，找到了 <code>mysql</code>  初始密码，记录一下。</p>\n<p><code>mysql</code>  初始密码文件路径： <code>/etc/mysql/debian.cnf</code></p>\n<p><img data-src=\"https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204120203.jpeg\" alt=\"\"></p>\n",
             "tags": [
                 "计算机科学",
-                "每日一更",
+                "技术杂谈",
                 "Linux",
-                "每日一更",
                 "教程",
                 "数据库"
             ]
@@ -203,7 +239,6 @@
                 "计算机科学",
                 "技术杂谈",
                 "一个小技巧",
-                "技术",
                 "一个技巧"
             ]
         },
@@ -215,8 +250,8 @@
             "content_html": "<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"></figcaption><table><tr class=\"marked\"><td data-num=\"1\"></td><td><pre>tree <span class=\"token builtin class-name\">.</span> <span class=\"token comment\">#列出当前文件夹下的所有文件</span></pre></td></tr><tr class=\"marked\"><td data-num=\"2\"></td><td><pre>tree /f <span class=\"token comment\">#显示当前文件夹所有文件</span></pre></td></tr><tr class=\"marked\"><td data-num=\"3\"></td><td><pre>tree /a <span class=\"token comment\">#显示当前文件夹的所有文件夹</span></pre></td></tr></table></figure>",
             "tags": [
                 "计算机科学",
-                "每日一更",
-                "每日一更"
+                "技术杂谈",
+                "技术杂谈"
             ]
         },
         {
@@ -229,46 +264,6 @@
                 "生活",
                 "日记",
                 "日记"
-            ]
-        },
-        {
-            "id": "https://www.hikki.site/ff2eb0a3.html",
-            "url": "https://www.hikki.site/ff2eb0a3.html",
-            "title": "hexo结构分析",
-            "date_published": "2022-04-08T20:27:34.000Z",
-            "content_html": "<h2 id=\"meta头文件\"><a class=\"markdownIt-Anchor\" href=\"#meta头文件\">#</a>  <code>meta</code>  头文件</h2>\n<figure class=\"highlight html\"><figcaption data-lang=\"HTML\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre># 存放mate头文件</pre></td></tr><tr><td data-num=\"2\"></td><td><pre>.\\themes\\shoka\\layout\\_partials\\head</pre></td></tr></table></figure>",
-            "tags": [
-                "计算机科学",
-                "每日一更",
-                "博客",
-                "每日一更",
-                "hexo主题"
-            ]
-        },
-        {
-            "id": "https://www.hikki.site/c32e96d4.html",
-            "url": "https://www.hikki.site/c32e96d4.html",
-            "title": "git push origin master失败",
-            "date_published": "2022-04-08T14:34:15.000Z",
-            "content_html": "<h2 id=\"关于我想备份blog这件事\"><a class=\"markdownIt-Anchor\" href=\"#关于我想备份blog这件事\">#</a> 关于我想备份 <code>blog</code>  这件事</h2>\n<details class=\"primary\"><summary>我要怎么备份blog文件？？？</summary><div>\n<div class=\"note primary\">\n<p>这几天在想，万一那天我想在别的电脑上写博客，或者是我电脑突然抽风硬盘坏了，我的博客数据岂不是没了？？？</p>\n<p>又或者我什么时候不小心删错了文件，岂不是出大问题？？？</p>\n</div>\n<p>带着这个问题，我一开始是找了几个 <code>PC端</code> 自动本地备份的程序，但效果不太理想。</p>\n<p>定时备份：不能保证你在设置定时的这段时间内进行 <code>hexo d</code>  多少次，如果定时备份的时间设置过短，理论上对硬盘的读写会拖慢其他程序的运行。</p>\n<p>所以在想，如果有一个程序可以监控我 <code>blog</code>  下的文件变化，每变化一次就进行记录一次，进行增量备份一次，这是我想到最完美的办法，带着这个想法，我似乎找到了一个方法。</p>\n</div></details>\n<details class=\"danger\"><summary>持续集成服务</summary><div>\n<p>此处引用百度百科：持续集成是一种软件开发实践，即团队开发成员经常集成他们的工作，通常每个成员每天至少集成一次，也就意味着每天可能会发生多次集成。每次集成都通过自动化的构建（包括编译，发布，自动化测试）来验证，从而尽早地发现集成错误。</p>\n<p>简单来说，就是这个服务绑定了 <code>GitHub</code> ，我们每提交一次代码到 <code>GitHub</code> ，它都会抓取一次我们的仓库，检查新代码，然后提供一个运行环境，执行测试，完成构建，还能部署到服务器。</p>\n</div></details>\n<p>然后我这次在准备提交文件到我新建的 <code>hexo-backups</code>  仓库的时候，出错了，就记录一下错误。</p>\n<h2 id=\"git-pash-origin-master失败\"><a class=\"markdownIt-Anchor\" href=\"#git-pash-origin-master失败\">#</a>  <code>git pash origin master</code>  失败</h2>\n<p>第一次遇见这个问题，我还以为是 <code>.gitignore</code>  文件的 <code>.DS_Store</code>  文件不存在？然后我删掉这个文件，好像还是继续报一样的错误，然后排除这个可能。</p>\n<p><img data-src=\"http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204082309.jpg\" alt=\"\" title=\"git pash origin master失败\"></p>\n<h2 id=\"新建文件测试\"><a class=\"markdownIt-Anchor\" href=\"#新建文件测试\">#</a> 新建文件测试</h2>\n<p>然后新建文件测试一下，看是不是文件没有被加载到缓存区，发现结果已经加载到缓冲区了</p>\n<p><img data-src=\"http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204082313.jpg\" alt=\"\" title=\"测试文件\"></p>\n<h2 id=\"添加origin\"><a class=\"markdownIt-Anchor\" href=\"#添加origin\">#</a> 添加 origin</h2>\n<p>一开始我没有删除旧的 origin，我直接添加了，直接报错。实际操作应该删除旧的 origin 的，再添加新的 origin</p>\n<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"><span>删除origin</span></figcaption><table><tr class=\"marked\"><td data-num=\"1\"></td><td><pre><span class=\"token comment\"># 删除 origin</span></pre></td></tr><tr class=\"marked\"><td data-num=\"2\"></td><td><pre><span class=\"token function\">git</span> remote remove origin</pre></td></tr></table></figure><figure class=\"highlight bash\"><figcaption data-lang=\"bash\"><span>添加origin</span></figcaption><table><tr class=\"marked\"><td data-num=\"1\"></td><td><pre><span class=\"token comment\"># 此处的 git@github.com:0000rookie/Hexo-backups.git 是仓库的 SSH</span></pre></td></tr><tr class=\"marked\"><td data-num=\"2\"></td><td><pre><span class=\"token function\">git</span> <span class=\"token function\">add</span> git@github.com:0000rookie/Hexo-backups.git</pre></td></tr></table></figure><figure class=\"highlight bash\"><figcaption data-lang=\"bash\"><span>查看origin</span></figcaption><table><tr class=\"marked\"><td data-num=\"1\"></td><td><pre><span class=\"token function\">git</span> origin -v</pre></td></tr></table></figure><p><img data-src=\"http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204082315.jpg\" alt=\"\" title=\"添加控制器\"></p>\n<h2 id=\"重新commit\"><a class=\"markdownIt-Anchor\" href=\"#重新commit\">#</a> 重新 commit</h2>\n<p>是的，我真的以为我只是修改一下 <code>origin</code>  就处理好了</p>\n<p><img data-src=\"http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204082324.jpg\" alt=\"\" title=\"重新commit\"></p>\n<h2 id=\"git-push-f-origin-master提交成功\"><a class=\"markdownIt-Anchor\" href=\"#git-push-f-origin-master提交成功\">#</a>  <code>git push -f origin master</code>  提交成功</h2>\n<p>奇怪的是，我试试用 <code>git push -f origin master</code>  就成功了</p>\n<p><img data-src=\"http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204082326.jpg\" alt=\"\" title=\"git push -f origin master\"></p>\n<div class=\"note success\">\n<p>目前还不知道是什么原因导致错误，如果你知道，欢迎留言告诉我！！！</p>\n</div>\n<div class=\"note warning\">\n<p>以上如有错误，欢迎留言指出</p>\n</div>\n",
-            "tags": [
-                "计算机科学",
-                "每日一更",
-                "每日一更",
-                "教程",
-                "git",
-                "BUG"
-            ]
-        },
-        {
-            "id": "https://www.hikki.site/2b5f7ebb.html",
-            "url": "https://www.hikki.site/2b5f7ebb.html",
-            "title": "这是大二下的各科作业",
-            "date_published": "2022-04-08T04:27:18.000Z",
-            "content_html": "<div class=\"hbe hbe-container\" id=\"hexo-blog-encrypt\" data-wpm=\"抱歉，这个密码看着不太对，请再试试\" data-whm=\"抱歉，这个文章不能被纠正，不过您还是能看看解密后的内容\">\n  <script id=\"hbeData\" type=\"hbeData\" data-hmacdigest=\"736d6f317de652675e92c562c9d559a1a4933fa5da6633bb287a93596b9f26cc\">fc8ec58bcd304fc0f97ab129566d154af1d2a39ab32988b65a03f96755db586b87c750b1a5859def1c25d72c08186c80ac1f1b603ec24b6d40ce078a19cf4ed63b8b3c89281368284ed5acd62cab190e9c8bab2fe4d1765ffaa3769cbf699834be2ed0fbcc9fe46d07a65759e40b49ee59d107702bf0b469a0462f78f31e766b18f3a153c653ac1ad4ab8836b343844227b31f6c898d1e46d0da787b9d58dbe8114036fd7da0e08f8817b51a6b26661006a228f59c179587570624d1b08486876e4257edbaa0f0d5c2cf0d8f1eea49ba5b643c84122c99cfea74e7111df955af1e587963b806a1c979ae02d61d62a0f6f193f8d890a31df3abe5bc77e581d9ccf1c0592fbdc04d0c6b79f91e21d636b9b8986224515d6a7671132330cddb9c4a5e758fcd7ec41d24d8a749a0ddd2bb9ab993a7f5a70d8051da001c5cc574616916c87145b6ea5d991bfe663c48f3d52cc9e2defac07737be9d0c0b9c2f6176c43c560e1012d1a2b58a5cce83f997de32e46b42e8900f216bf9ac83bd5883d3f83bb3e7238cbf3b62c152d751fe30d9925ed87b157e1bbee9aa3990e8b78f3d7519875fe1de884eec368562a936a2e9d613f3f112258f85dfb93a3746817e00d90185dae4e805dfbf455b5c239b54b33b1595247ac059c9db5283920ed3a474b1c131ebb191ba09fe400fbcc3c3d4e7bed94267f78debaaa5378abe94f47deea417d56a30cf29c22c5630a185aef48d6ac2be2c4c8496d986b70472dbff913ca04bd324c8e9d11ac3efa565c8d50e62bbbcf6e8a782d00bc58cb7fdf291f95ae22fd3fca5350e0f778b5fdafa23528d16d543b523f6a32087773d23577f02f23ac7f32e25b8c6e5c3ea7787ca23c8921300ecd2c46966aa1b19140d68f7920ad378342403bfc41473a362694962b41c2b148aebe488735787d4da4e5035a6d92397fdbfbee957de90027ab21203c3f0801d6c2bbbcbad3b65732c174c47fa4e2b29410846a0996f4eb893eb9d1bb33d33d698c90f9aa63d687302a1929fc2e3c520ef0d78a434685a9bdbad279fe7bddfd8351f519df2a0a4499ecccfd36b2fa070acc95854d860c73591cbc84d912b7145be038397728196a093d9e9b6c91c98e734b477442b979cd2d402ecc037d5e7eaf810257422352057a654ae1948f38156e7a0f2103dc9a2976ff17785887a07b94a95cce95bc1b40c5de916eef4107bbbc0a151d4a57dd8c64a8a30b3159bb28d39c2eaa9d37d3ce75e351717cc2efe3a2471e3ba02d992c3535c52f5b815c7b60fec10c6a9145d5d725443eb326e0892085ffa16ef202c5a6451235355869cdaf5e1d28d0c5bab9b0e0929c79725d5abd7d43c7b1d6e00661c8ad12b7b5697aa6e5f38b27300a0e473500e38547844a87bd4785176034a9c731b928c89c4f639601241a3580d027d4a50412e4b57c8e6656d86a8afaa4388d8292fb33517227a2385b413fae669615ff901627e921eafd0827a700f8108f8965a345788b4d0cc4ea866dfd62ea5410c5ab55d04b50d23d4fbac0865fd1a1dba9c25e9f71714d780fca0b04bfc0453840610d2a6514cd9b8c2dcaee4898cda75964ea35778e9879fbf1febe7a48b45a9958d2cbc207f43d998fe7af70b6db1a52b049bd3cf10827c52e7f0ac702e981ad5047db75a2fe65558fb68d6cca366d656e36a4c6d2748b10731831a01abdab48c62bc55209a8be77ae5a438359ee304f61fc165533bce421522edff8c73b91df590a4d7664b582dbf9cd63b819a38d8dedb7a00713f8d1903e0cc96c159a11312436c5b53a7734feb2648481b1d6263841bf3c62002</script>\n  <div class=\"hbe hbe-content\">\n    <div class=\"hbe hbe-input hbe-input-default\">\n      <input class=\"hbe hbe-input-field hbe-input-field-default\" type=\"password\" id=\"hbePass\">\n      <label class=\"hbe hbe-input-label hbe-input-label-default\" for=\"hbePass\">\n        <span class=\"hbe hbe-input-label-content hbe-input-label-content-default\">您好，私の班级は？</span>\n      </label>\n    </div>\n  </div>\n</div>\n<script data-pjax src=\"/lib/hbe.js\"></script><link href=\"/css/hbe.style.css\" rel=\"stylesheet\" type=\"text/css\">",
-            "tags": [
-                "计算机科学",
-                "每日一更"
             ]
         }
     ]
