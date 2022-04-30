@@ -39,6 +39,22 @@
 &lt;p&gt;我这里使用的是 CentOS Linux 7&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/2022045547.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;新建远程连接&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#新建远程连接&#34;&gt;#&lt;/a&gt; 新建远程连接&lt;/h2&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;我这里使用的是 [ &lt;code&gt;Xshell&lt;/code&gt; 👿&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cueHNoZWxsLmNvbS96aC9mcmVlLWZvci1ob21lLXNjaG9vbC8=&#34;&gt;https://www.xshell.com/zh/free-for-home-school/&lt;/span&gt;) ，可以申请免费非商用用途&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/2022054715.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;远程连接&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#远程连接&#34;&gt;#&lt;/a&gt; 远程连接&lt;/h2&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/2022055148.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/2022055211.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;输入虚拟机用户名&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#输入虚拟机用户名&#34;&gt;#&lt;/a&gt; 输入虚拟机用户名&lt;/h2&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/2022055223.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;输入虚拟机账号对应的密码&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#输入虚拟机账号对应的密码&#34;&gt;#&lt;/a&gt; 输入虚拟机账号对应的密码&lt;/h2&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/2022055230.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;远程成功&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#远程成功&#34;&gt;#&lt;/a&gt; 远程成功&lt;/h2&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/2022055313.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;退出远程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#退出远程&#34;&gt;#&lt;/a&gt; 退出远程&lt;/h2&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/2022055319.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
  ]]></description>
         </item>
         <item>
@@ -196,7 +212,6 @@
             <category term="编程语言" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" />
             <category term="python" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" />
             <category term="python" scheme="https://www.hikki.site/tags/python/" />
-            <category term="python那些库" scheme="https://www.hikki.site/tags/python%E9%82%A3%E4%BA%9B%E5%BA%93/" />
             <pubDate>Thu, 21 Apr 2022 22:51:41 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;python内置数值运算函数&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#python内置数值运算函数&#34;&gt;#&lt;/a&gt; python 内置数值运算函数&lt;/h2&gt;
 &lt;p&gt;python 解释器内置了一些函数，以下列出部分常用函数&lt;/p&gt;
@@ -253,7 +268,6 @@
             <link>https://www.hikki.site/b9e6c7bf.html</link>
             <category term="生活" scheme="https://www.hikki.site/categories/%E7%94%9F%E6%B4%BB/" />
             <category term="日记" scheme="https://www.hikki.site/categories/%E7%94%9F%E6%B4%BB/%E6%97%A5%E8%AE%B0/" />
-            <category term="日记" scheme="https://www.hikki.site/tags/%E6%97%A5%E8%AE%B0/" />
             <pubDate>Wed, 13 Apr 2022 23:32:10 +0800</pubDate>
             <description><![CDATA[ &lt;div class=&#34;note danger&#34;&gt;
 &lt;p&gt;我周三还没开始写作业&lt;/p&gt;
@@ -269,7 +283,6 @@
             <category term="博客" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
             <category term="博客的食用方法" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/" />
             <category term="博客" scheme="https://www.hikki.site/tags/%E5%8D%9A%E5%AE%A2/" />
-            <category term="每日一更" scheme="https://www.hikki.site/tags/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B4/" />
             <pubDate>Wed, 13 Apr 2022 19:13:30 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;前言&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#前言&#34;&gt;#&lt;/a&gt; 前言&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;hexo&lt;/code&gt;  采用的是 &lt;code&gt;markdown&lt;/code&gt;  语言的轻量级标记语言，写作时使用 &lt;code&gt;markdown&lt;/code&gt; ，它的后缀名是 &lt;code&gt;.md&lt;/code&gt;  在 hexo 部署的时候， &lt;code&gt;hexo&lt;/code&gt;  会渲染 &lt;code&gt;md文件&lt;/code&gt; 形成 &lt;code&gt;HTML&lt;/code&gt; ，可以大量减少写作排版时间，从而更加专注写作，而不是专注于排版内容。&lt;/p&gt;
@@ -315,7 +328,6 @@
             <category term="博客的食用方法" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/" />
             <category term="博客" scheme="https://www.hikki.site/tags/%E5%8D%9A%E5%AE%A2/" />
             <category term="教程" scheme="https://www.hikki.site/tags/%E6%95%99%E7%A8%8B/" />
-            <category term="每日一更" scheme="https://www.hikki.site/tags/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B4/" />
             <pubDate>Tue, 12 Apr 2022 23:54:52 +0800</pubDate>
             <description><![CDATA[ &lt;div class=&#34;note info&#34;&gt;
 &lt;p&gt;如何刷新 CDN.jsdelivr 缓存 ？？？&lt;/p&gt;
@@ -503,7 +515,6 @@
             <title>QQ/微信/支付宝 收款码美化</title>
             <link>https://www.hikki.site/ee3e214f.html</link>
             <category term="生活" scheme="https://www.hikki.site/categories/%E7%94%9F%E6%B4%BB/" />
-            <category term="好物推荐" scheme="https://www.hikki.site/categories/%E7%94%9F%E6%B4%BB/%E5%A5%BD%E7%89%A9%E6%8E%A8%E8%8D%90/" />
             <category term="一个小技巧" scheme="https://www.hikki.site/tags/%E4%B8%80%E4%B8%AA%E5%B0%8F%E6%8A%80%E5%B7%A7/" />
             <pubDate>Mon, 11 Apr 2022 01:19:45 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;有时候想贴个二维码出来，但是觉得这个二维码太丑了，然后就发现了个神奇的网站，叫&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jbGkuaW0v&#34;&gt;草料二维码&lt;/span&gt;&lt;/p&gt;
