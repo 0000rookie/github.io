@@ -35,13 +35,13 @@
             <pubDate>Fri, 29 Apr 2022 13:54:33 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;查询虚拟机ip地址&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#查询虚拟机ip地址&#34;&gt;#&lt;/a&gt; 查询虚拟机 IP 地址&lt;/h2&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&gt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;ifconfig&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;ens33: &lt;span class=&#34;token assign-left variable&#34;&gt;flags&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;416&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&lt;span class=&#34;token file-descriptor important&#34;&gt;3&lt;/span&gt;&amp;lt;&lt;/span&gt;UP,BROADCAST,RUNNING,MULTICAST&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;  mtu &lt;span class=&#34;token number&#34;&gt;1500&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        inet &lt;span class=&#34;token number&#34;&gt;192.168&lt;/span&gt;.253.132  netmask &lt;span class=&#34;token number&#34;&gt;255.255&lt;/span&gt;.255.0  broadcast &lt;span class=&#34;token number&#34;&gt;192.168&lt;/span&gt;.253.255&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        inet6 fe80::a4de:8d41:623a:fe18  prefixlen &lt;span class=&#34;token number&#34;&gt;64&lt;/span&gt;  scopeid 0x2&lt;span class=&#34;token operator&#34;&gt;&lt;span class=&#34;token file-descriptor important&#34;&gt;0&lt;/span&gt;&amp;lt;&lt;/span&gt;link&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        ether 00:0c:29:e6:1b:b9  txqueuelen &lt;span class=&#34;token number&#34;&gt;1000&lt;/span&gt;  &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;Ethernet&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        RX packets &lt;span class=&#34;token number&#34;&gt;11173&lt;/span&gt;  bytes &lt;span class=&#34;token number&#34;&gt;16432024&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;15.6&lt;/span&gt; MiB&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        RX errors &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;  dropped &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;  overruns &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;  frame &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        TX packets &lt;span class=&#34;token number&#34;&gt;4965&lt;/span&gt;  bytes &lt;span class=&#34;token number&#34;&gt;316559&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;309.1&lt;/span&gt; KiB&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        TX errors &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;  dropped &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt; overruns &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;  carrier &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;  collisions &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;我的 IP 地址是 &lt;code&gt;192.168.253.132&lt;/code&gt;&lt;/p&gt;
-&lt;div class=&#34;note info&#34;&gt;
+&lt;div class=&#34;note warning&#34;&gt;
 &lt;p&gt;我这里使用的是 CentOS Linux 7&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/2022045547.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;新建远程连接&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#新建远程连接&#34;&gt;#&lt;/a&gt; 新建远程连接&lt;/h2&gt;
 &lt;div class=&#34;note info&#34;&gt;
-&lt;p&gt;我这里使用的是 [ &lt;code&gt;Xshell&lt;/code&gt; 👿&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cueHNoZWxsLmNvbS96aC9mcmVlLWZvci1ob21lLXNjaG9vbC8=&#34;&gt;https://www.xshell.com/zh/free-for-home-school/&lt;/span&gt;) ，可以申请免费非商用用途&lt;/p&gt;
+&lt;p&gt;我这里使用的是 &lt;code&gt;Xshell&lt;/code&gt;  (&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cueHNoZWxsLmNvbS96aC9mcmVlLWZvci1ob21lLXNjaG9vbC8=&#34;&gt;https://www.xshell.com/zh/free-for-home-school/&lt;/span&gt;)  可以申请免费非商用用途&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/2022054715.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;远程连接&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#远程连接&#34;&gt;#&lt;/a&gt; 远程连接&lt;/h2&gt;
@@ -49,9 +49,13 @@
 &lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/2022055211.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;输入虚拟机用户名&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#输入虚拟机用户名&#34;&gt;#&lt;/a&gt; 输入虚拟机用户名&lt;/h2&gt;
 &lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/2022055223.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;输入虚拟机账号对应的密码&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#输入虚拟机账号对应的密码&#34;&gt;#&lt;/a&gt; 输入虚拟机账号对应的密码&lt;/h2&gt;
+&lt;h2 id=&#34;输入密码&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#输入密码&#34;&gt;#&lt;/a&gt; 输入密码&lt;/h2&gt;
+&lt;p&gt;输入虚拟机账号对应的密码&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/2022055230.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;远程成功&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#远程成功&#34;&gt;#&lt;/a&gt; 远程成功&lt;/h2&gt;
+&lt;div class=&#34;note success&#34;&gt;
+&lt;p&gt;远程成功啦&lt;/p&gt;
+&lt;/div&gt;
 &lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/2022055313.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;退出远程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#退出远程&#34;&gt;#&lt;/a&gt; 退出远程&lt;/h2&gt;
 &lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/2022055319.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
@@ -515,6 +519,7 @@
             <title>QQ/微信/支付宝 收款码美化</title>
             <link>https://www.hikki.site/ee3e214f.html</link>
             <category term="生活" scheme="https://www.hikki.site/categories/%E7%94%9F%E6%B4%BB/" />
+            <category term="好物推荐" scheme="https://www.hikki.site/categories/%E7%94%9F%E6%B4%BB/%E5%A5%BD%E7%89%A9%E6%8E%A8%E8%8D%90/" />
             <category term="一个小技巧" scheme="https://www.hikki.site/tags/%E4%B8%80%E4%B8%AA%E5%B0%8F%E6%8A%80%E5%B7%A7/" />
             <pubDate>Mon, 11 Apr 2022 01:19:45 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;有时候想贴个二维码出来，但是觉得这个二维码太丑了，然后就发现了个神奇的网站，叫&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jbGkuaW0v&#34;&gt;草料二维码&lt;/span&gt;&lt;/p&gt;
