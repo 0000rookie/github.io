@@ -10,8 +10,8 @@
         </author>
         <description>喜欢的东西就努力去追求，万一成功了呢！</description>
         <language>zh-CN</language>
-        <pubDate>Thu, 28 Apr 2022 00:24:52 +0800</pubDate>
-        <lastBuildDate>Thu, 28 Apr 2022 00:24:52 +0800</lastBuildDate>
+        <pubDate>Fri, 29 Apr 2022 13:54:33 +0800</pubDate>
+        <lastBuildDate>Fri, 29 Apr 2022 13:54:33 +0800</lastBuildDate>
         <category term="web安全" />
         <category term="笔记" />
         <category term="web" />
@@ -26,27 +26,43 @@
         <category term="markdown" />
         <category term="搭建个人博客" />
         <item>
+            <guid isPermalink="true">https://www.hikki.site/8d43d157.html</guid>
+            <title>如何远程虚拟机</title>
+            <link>https://www.hikki.site/8d43d157.html</link>
+            <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+            <category term="技术杂谈" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" />
+            <category term="Linux" scheme="https://www.hikki.site/tags/Linux/" />
+            <pubDate>Fri, 29 Apr 2022 13:54:33 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;查询虚拟机ip地址&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#查询虚拟机ip地址&#34;&gt;#&lt;/a&gt; 查询虚拟机 IP 地址&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&gt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;ifconfig&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;ens33: &lt;span class=&#34;token assign-left variable&#34;&gt;flags&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;416&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&lt;span class=&#34;token file-descriptor important&#34;&gt;3&lt;/span&gt;&amp;lt;&lt;/span&gt;UP,BROADCAST,RUNNING,MULTICAST&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;  mtu &lt;span class=&#34;token number&#34;&gt;1500&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        inet &lt;span class=&#34;token number&#34;&gt;192.168&lt;/span&gt;.253.132  netmask &lt;span class=&#34;token number&#34;&gt;255.255&lt;/span&gt;.255.0  broadcast &lt;span class=&#34;token number&#34;&gt;192.168&lt;/span&gt;.253.255&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        inet6 fe80::a4de:8d41:623a:fe18  prefixlen &lt;span class=&#34;token number&#34;&gt;64&lt;/span&gt;  scopeid 0x2&lt;span class=&#34;token operator&#34;&gt;&lt;span class=&#34;token file-descriptor important&#34;&gt;0&lt;/span&gt;&amp;lt;&lt;/span&gt;link&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        ether 00:0c:29:e6:1b:b9  txqueuelen &lt;span class=&#34;token number&#34;&gt;1000&lt;/span&gt;  &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;Ethernet&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        RX packets &lt;span class=&#34;token number&#34;&gt;11173&lt;/span&gt;  bytes &lt;span class=&#34;token number&#34;&gt;16432024&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;15.6&lt;/span&gt; MiB&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        RX errors &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;  dropped &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;  overruns &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;  frame &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        TX packets &lt;span class=&#34;token number&#34;&gt;4965&lt;/span&gt;  bytes &lt;span class=&#34;token number&#34;&gt;316559&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;309.1&lt;/span&gt; KiB&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        TX errors &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;  dropped &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt; overruns &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;  carrier &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;  collisions &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;我的 IP 地址是 &lt;code&gt;192.168.253.132&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;我这里使用的是 CentOS Linux 7&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/2022045547.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
             <guid isPermalink="true">https://www.hikki.site/17554f39.html</guid>
             <title>关于手机双开不显示双开目录999</title>
             <link>https://www.hikki.site/17554f39.html</link>
             <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
             <category term="技术杂谈" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" />
-            <category term="-刷机" scheme="https://www.hikki.site/tags/%E5%88%B7%E6%9C%BA/" />
+            <category term="刷机" scheme="https://www.hikki.site/tags/%E5%88%B7%E6%9C%BA/" />
             <pubDate>Thu, 28 Apr 2022 00:24:52 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;手机双开之后找不到双开的目录999&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#手机双开之后找不到双开的目录999&#34;&gt;#&lt;/a&gt; 手机双开之后找不到双开的目录 999&lt;/h2&gt;
 &lt;h3 id=&#34;发现问题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#发现问题&#34;&gt;#&lt;/a&gt; 发现问题&lt;/h3&gt;
 &lt;p&gt;今天想找一下手机双开的根目录，发现怎么不见了？？？离谱，正常不是应该在 &lt;code&gt;/storage/emulated/999/&lt;/code&gt;  下吗？？？怎么不见了，而且 &lt;code&gt;/storage/emulated/0/&lt;/code&gt;  根目录也不见了，奇了怪了&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022043410.jpeg&#34; alt=&#34;&#34; width=&#34;75%&#34; height=&#34;75%&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022043410.jpeg&#34; alt=&#34;&#34; width=&#34;30%&#34; height=&#34;30%&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;分析问题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#分析问题&#34;&gt;#&lt;/a&gt; 分析问题&lt;/h3&gt;
 &lt;p&gt;但是，我一打开 &lt;code&gt;MT管理器&lt;/code&gt; 它又显示 &lt;code&gt;/storage/emulated/0/&lt;/code&gt; ，就很奇怪。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022043404.jpeg&#34; alt=&#34;&#34; width=&#34;75%&#34; height=&#34;75%&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022043404.jpeg&#34; alt=&#34;&#34; width=&#34;30%&#34; height=&#34;30%&#34;&gt;&lt;/p&gt;
 &lt;p&gt;于是带着这个疑问去查了一下资料，发现 &lt;code&gt;/storage/emulated/0/&lt;/code&gt;  和 &lt;code&gt;/storage/emulated/999/&lt;/code&gt;  并不是一个真实存在的目录，只是一个虚拟卷映射。知道是虚拟卷映射就简单了，去找一下真实目录就好。&lt;/p&gt;
 &lt;h3 id=&#34;解决问题根目录在datamedia&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#解决问题根目录在datamedia&#34;&gt;#&lt;/a&gt; 解决问题，根目录在 &lt;code&gt;/data/media/&lt;/code&gt;&lt;/h3&gt;
 &lt;p&gt;发现 &lt;code&gt;/0/&lt;/code&gt;  和 &lt;code&gt;/999/&lt;/code&gt;  目录在 &lt;code&gt;/data/media/&lt;/code&gt;  下&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022043415.jpeg&#34; alt=&#34;&#34; width=&#34;75%&#34; height=&#34;75%&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022043415.jpeg&#34; alt=&#34;&#34; width=&#34;30%&#34; height=&#34;30%&#34;&gt;&lt;/p&gt;
 &lt;p&gt;其实，在 &lt;code&gt;/sdcard&lt;/code&gt;  也有一个本机根目录，甚至你还能在 &lt;code&gt;/storage/ace-999/&lt;/code&gt;  和 &lt;code&gt;/storage/self/primary/&lt;/code&gt;  看到双开根目录和本机根目录&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022043422.jpeg&#34; alt=&#34;&#34; width=&#34;75%&#34; height=&#34;75%&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022045756.jpeg&#34; alt=&#34;&#34; width=&#34;75%&#34; height=&#34;75%&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022043422.jpeg&#34; alt=&#34;&#34; width=&#34;30%&#34; height=&#34;30%&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022045756.jpeg&#34; alt=&#34;&#34; width=&#34;30%&#34; height=&#34;30%&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;综上&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#综上&#34;&gt;#&lt;/a&gt; 综上&lt;/h2&gt;
 &lt;h3 id=&#34;本机根目录&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#本机根目录&#34;&gt;#&lt;/a&gt; 本机根目录&lt;/h3&gt;
 &lt;ol&gt;
@@ -72,7 +88,9 @@
             <category term="Qt5" scheme="https://www.hikki.site/tags/Qt5/" />
             <pubDate>Tue, 26 Apr 2022 11:49:48 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;添加间隔线&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#添加间隔线&#34;&gt;#&lt;/a&gt; 添加间隔线&lt;/h2&gt;
-&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;fileMenu&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;addSeparator&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;#fileMenu 是菜单 bar&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;fileMenu&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;addSeparator&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;#fileMenu 是菜单 bar&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;添加菜单bar&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#添加菜单bar&#34;&gt;#&lt;/a&gt; 添加菜单 bar&lt;/h2&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#实例化菜单条&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;mainMenubar &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;menuBar&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 将菜单命名到列表中&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;menu_item_name &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;fileMenu&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;editMenu&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;formatMenu&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;searchMenu&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;helpMenu&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 给菜单做映射 (也就是实际显示的名称)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;menu_item_bar_name &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;文件&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;编辑&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;格式&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;查看&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;帮助&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 用循环来一次性把所有菜单条执行，减少代码冗余&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; item &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;len&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;menu_item_name&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	menu_item_name&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;item&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; mainMenubar&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;addMenu&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;menu_item_bar_name&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;item&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;添加子菜单&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#添加子菜单&#34;&gt;#&lt;/a&gt; 添加子菜单&lt;/h2&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 将操作名、属性名、快捷键用列表封装起来，用循环进行添加&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;file_name &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;新建(N)&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;打开(O)&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;保存(S)&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;另存为(A)&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;页面设置(U)&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;打印(P)&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;退出(X)&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;file_name_as &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;new&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;open&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;save&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;save_as&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;setup&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;print&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;exit&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;file_shortcut_key &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;Ctrl+N&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;Ctrl+O&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;Ctrl+S&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;Ctrl+P&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 用循环将子菜单添加到菜单         &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; i &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;len&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;file_name_as&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     file_name_as&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; QAction&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;QIcon&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;12.png&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; file_name_as&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     file_name_as&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setShortcut&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;file_shortcut_key&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     file_name_as&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setText&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;file_name&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     &lt;span class=&#34;token comment&#34;&gt;# 将子菜单添加到菜单&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;     menu_item_name&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;addAction&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;file_name_as&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
         </item>
         <item>
             <guid isPermalink="true">https://www.hikki.site/b9893092.html</guid>
@@ -92,7 +110,7 @@
             <category term="博客" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" />
             <category term="搭博客常见错误" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E6%90%AD%E5%8D%9A%E5%AE%A2%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/" />
             <category term="博客" scheme="https://www.hikki.site/tags/%E5%8D%9A%E5%AE%A2/" />
-            <category term="bug" scheme="https://www.hikki.site/tags/bug/" />
+            <category term="BUG" scheme="https://www.hikki.site/tags/BUG/" />
             <pubDate>Mon, 25 Apr 2022 01:51:19 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;errerrorspawn-failed&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#errerrorspawn-failed&#34;&gt;#&lt;/a&gt;  &lt;code&gt;err:Error:Spawn failed&lt;/code&gt;&lt;/h2&gt;
 &lt;p&gt;今晚在发布文章的时候突然出现了这个问题，昨天还是正常的，今晚就报错了，前前后后尝试了好多办法&lt;/p&gt;
@@ -486,7 +504,6 @@
             <link>https://www.hikki.site/ee3e214f.html</link>
             <category term="生活" scheme="https://www.hikki.site/categories/%E7%94%9F%E6%B4%BB/" />
             <category term="好物推荐" scheme="https://www.hikki.site/categories/%E7%94%9F%E6%B4%BB/%E5%A5%BD%E7%89%A9%E6%8E%A8%E8%8D%90/" />
-            <category term="好物推荐" scheme="https://www.hikki.site/tags/%E5%A5%BD%E7%89%A9%E6%8E%A8%E8%8D%90/" />
             <category term="一个小技巧" scheme="https://www.hikki.site/tags/%E4%B8%80%E4%B8%AA%E5%B0%8F%E6%8A%80%E5%B7%A7/" />
             <pubDate>Mon, 11 Apr 2022 01:19:45 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;有时候想贴个二维码出来，但是觉得这个二维码太丑了，然后就发现了个神奇的网站，叫&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jbGkuaW0v&#34;&gt;草料二维码&lt;/span&gt;&lt;/p&gt;
@@ -502,7 +519,7 @@
             <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
             <category term="技术杂谈" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" />
             <category term="一个小技巧" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E4%B8%80%E4%B8%AA%E5%B0%8F%E6%8A%80%E5%B7%A7/" />
-            <category term="一个技巧" scheme="https://www.hikki.site/tags/%E4%B8%80%E4%B8%AA%E6%8A%80%E5%B7%A7/" />
+            <category term="一个小技巧" scheme="https://www.hikki.site/tags/%E4%B8%80%E4%B8%AA%E5%B0%8F%E6%8A%80%E5%B7%A7/" />
             <pubDate>Mon, 11 Apr 2022 00:19:39 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;在运营独立博客的时候，自己原创的文章，经常会被别人转载，又没有标明原作者地址，导致原创作者流量流失了一部分，如果可以标记原创是自己的话，那就非常方便了，比如说加个水印就好一点。刚好 &lt;code&gt;PicGo&lt;/code&gt;  有个插件 &lt;code&gt;watermark&lt;/code&gt;  可以给突破加水印，这就很方便了，不用上传图片自己还要去添加一个水印。&lt;/p&gt;
 &lt;h2 id=&#34;安装watermark&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装watermark&#34;&gt;#&lt;/a&gt; 安装 &lt;code&gt;watermark&lt;/code&gt;&lt;/h2&gt;
@@ -522,24 +539,316 @@
         </item>
         <item>
             <guid isPermalink="true">https://www.hikki.site/3fa3774.html</guid>
-            <title>常用命令指令</title>
+            <title>Linux远程管理常用命令</title>
             <link>https://www.hikki.site/3fa3774.html</link>
             <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
             <category term="技术杂谈" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" />
+            <category term="持续更新" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/" />
+            <category term="Linux常用命令系列" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E7%B3%BB%E5%88%97/" />
             <category term="技术杂谈" scheme="https://www.hikki.site/tags/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" />
             <pubDate>Sun, 10 Apr 2022 12:30:48 +0800</pubDate>
-            <description><![CDATA[ &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;tree &lt;span class=&#34;token builtin class-name&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;#列出当前文件夹下的所有文件&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;tree /f &lt;span class=&#34;token comment&#34;&gt;#显示当前文件夹所有文件&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;tree /a &lt;span class=&#34;token comment&#34;&gt;#显示当前文件夹的所有文件夹&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://www.hikki.site/ef5acbc6.html</guid>
-            <title>4.9日记分享</title>
-            <link>https://www.hikki.site/ef5acbc6.html</link>
-            <category term="生活" scheme="https://www.hikki.site/categories/%E7%94%9F%E6%B4%BB/" />
-            <category term="日记" scheme="https://www.hikki.site/categories/%E7%94%9F%E6%B4%BB/%E6%97%A5%E8%AE%B0/" />
-            <category term="日记" scheme="https://www.hikki.site/tags/%E6%97%A5%E8%AE%B0/" />
-            <pubDate>Sun, 10 Apr 2022 01:00:52 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;49日记分享&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#49日记分享&#34;&gt;#&lt;/a&gt; 4.9 日记分享&lt;/h2&gt;
-&lt;p&gt;自从开始玩博客之后，经常用到 &lt;code&gt;Git&lt;/code&gt; ，感觉非常重要。如今每个企业都基本用到 &lt;code&gt;Git&lt;/code&gt; ，如果就业的时候不会使用 &lt;code&gt;Git&lt;/code&gt; ，感觉还是落后于别人一步的，而且，现在也有时间学习，倒不如现在开始学习一下，顺便玩一玩服务器，可能对 &lt;code&gt;Git&lt;/code&gt;  会更加熟练，话不多说，直接动手开始学习。&lt;/p&gt;
+            <description><![CDATA[ &lt;h2 id=&#34;文件命令&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#文件命令&#34;&gt;#&lt;/a&gt; 文件命令&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;tree &lt;span class=&#34;token builtin class-name&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;#列出当前文件夹下的所有文件&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;tree /f &lt;span class=&#34;token comment&#34;&gt;#显示当前文件夹所有文件&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;tree /a &lt;span class=&#34;token comment&#34;&gt;#显示当前文件夹的所有文件夹&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;关机重启&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#关机重启&#34;&gt;#&lt;/a&gt; 关机 / 重启&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;序号&lt;/th&gt;
+&lt;th&gt;命令&lt;/th&gt;
+&lt;th&gt;对应英文&lt;/th&gt;
+&lt;th&gt;作用&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;01&lt;/td&gt;
+&lt;td&gt;shutdown 选项 时间&lt;/td&gt;
+&lt;td&gt;shutdown&lt;/td&gt;
+&lt;td&gt;关机／重新启动&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;shutdown&lt;/code&gt;  命令可以&lt;strong&gt;安全关闭&lt;/strong&gt;或者&lt;strong&gt;重新启动&lt;/strong&gt;电脑&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;选项&lt;/th&gt;
+&lt;th&gt;含义&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;-r&lt;/td&gt;
+&lt;td&gt;重新启动&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;不指定选项和参数&lt;/strong&gt;，默认表示 &lt;strong&gt;1 分钟&lt;/strong&gt;之后 &lt;strong&gt;关闭电脑&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;远程维护服务器时，最好不要关闭系统，而应该重新启动系统&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 重新启动操作系统，其中 now 表示现在&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;shutdown&lt;/span&gt; -r now&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 立刻关机，其中 now 表示现在&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;shutdown&lt;/span&gt; now&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 系统在今天的 20:25 会关机&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;shutdown&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;20&lt;/span&gt;:25&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 系统再过十分钟后自动关机&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;shutdown&lt;/span&gt; +10&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 取消之前指定的关机计划&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;shutdown&lt;/span&gt; -c&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;查看或配置网卡信息&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#查看或配置网卡信息&#34;&gt;#&lt;/a&gt; 查看或配置网卡信息&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;序号&lt;/th&gt;
+&lt;th&gt;命令&lt;/th&gt;
+&lt;th&gt;对应英文&lt;/th&gt;
+&lt;th&gt;作用&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;01&lt;/td&gt;
+&lt;td&gt;ifconfig&lt;/td&gt;
+&lt;td&gt;configure a network interface&lt;/td&gt;
+&lt;td&gt;查看 / 配置计算机当前的网卡配置信息&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;02&lt;/td&gt;
+&lt;td&gt;ping ip 地址&lt;/td&gt;
+&lt;td&gt;ping&lt;/td&gt;
+&lt;td&gt;检测到目标 ip 地址 的连接是否正常&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;网卡-和-ip-地址&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#网卡-和-ip-地址&#34;&gt;#&lt;/a&gt; 网卡 和 IP 地址&lt;/h3&gt;
+&lt;h4 id=&#34;网卡&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#网卡&#34;&gt;#&lt;/a&gt; 网卡&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;网卡是一个专门负责网络通讯的硬件设备&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IP 地址&lt;/strong&gt;是设置在网卡上的地址信息&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我们可以把 &lt;strong&gt;电脑&lt;/strong&gt; 比作 &lt;strong&gt;电话&lt;/strong&gt;，&lt;strong&gt;网卡&lt;/strong&gt; 相当于 &lt;strong&gt;SIM 卡&lt;/strong&gt;，&lt;strong&gt;IP 地址&lt;/strong&gt; 相当于 &lt;strong&gt;电话号码&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;ip-地址&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#ip-地址&#34;&gt;#&lt;/a&gt; IP 地址&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;每台联网的电脑上&lt;/strong&gt;都有 &lt;strong&gt;IP 地址&lt;/strong&gt;，&lt;strong&gt;是保证电脑之间正常通讯的重要设置&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;注意：每台电脑的 IP 地址不能相同，否则会出现 IP 地址冲突，并且没有办法正常通讯&lt;/p&gt;
+&lt;p&gt;提示：有关 &lt;strong&gt;IP 地址&lt;/strong&gt;的详细内容，在就业班会详细讲解！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;ifconfig&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#ifconfig&#34;&gt;#&lt;/a&gt;  &lt;code&gt;ifconfig&lt;/code&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ifconfig&lt;/code&gt;  可以查看／配置计算机当前的网卡配置信息&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 查看网卡配置信息&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;ifconfig&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 查看网卡对应的 IP 地址&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;ifconfig&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;grep&lt;/span&gt; inet&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;blockquote&gt;
+&lt;p&gt;提示：一台计算机中有可能会有一个 &lt;strong&gt;物理网卡&lt;/strong&gt; 和 &lt;strong&gt;多个虚拟网卡&lt;/strong&gt;，在 Linux 中物理网卡的名字通常以  &lt;code&gt;ensXX&lt;/code&gt;  表示&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;127.0.0.1&lt;/code&gt;  被称为 &lt;strong&gt;本地回环 / 环回地址&lt;/strong&gt;，一般用来测试本机网卡是否正常&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;ping&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#ping&#34;&gt;#&lt;/a&gt;  &lt;code&gt;ping&lt;/code&gt;&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 检测到目标主机是否连接正常&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;ping&lt;/span&gt; IP地址&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 检测本地网卡工作正常&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;ping&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;127.0&lt;/span&gt;.0.1&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ping&lt;/code&gt;  一般用于检测当前计算机到目标计算机之间的网络 &lt;strong&gt;是否通畅&lt;/strong&gt;，&lt;strong&gt;数值越大，速度越慢&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ping&lt;/code&gt;  的工作原理与潜水艇的声纳相似， &lt;code&gt;ping&lt;/code&gt;  这个命令就是取自 &lt;strong&gt;声纳的声音&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;网络管理员之间也常将  &lt;code&gt;ping&lt;/code&gt;  用作动词 —— &lt;strong&gt;ping 一下计算机 X，看他是否开着&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;原理：网络上的机器都有 &lt;strong&gt;唯一确定的 IP 地址&lt;/strong&gt;，我们给&lt;strong&gt;目标 IP 地址&lt;/strong&gt;发送一个数据包，对方就要返回一个数据包，根据返回的数据包以及时间，我们可以确定目标主机的存在&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：在 Linux 中，想要终止一个终端程序的执行，绝大多数都可以使用  &lt;code&gt;CTRL + C&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;远程登录和复制文件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#远程登录和复制文件&#34;&gt;#&lt;/a&gt; 远程登录和复制文件&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;序号&lt;/th&gt;
+&lt;th&gt;命令&lt;/th&gt;
+&lt;th&gt;对应英文&lt;/th&gt;
+&lt;th&gt;作用&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;01&lt;/td&gt;
+&lt;td&gt;ssh 用户名 @ip&lt;/td&gt;
+&lt;td&gt;secure shell&lt;/td&gt;
+&lt;td&gt;关机／重新启动&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;02&lt;/td&gt;
+&lt;td&gt;scp 用户名 @ip: 文件名或路径 用户名 @ip: 文件名或路径&lt;/td&gt;
+&lt;td&gt;secure copy&lt;/td&gt;
+&lt;td&gt;远程复制文件&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;ssh-基础重点&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#ssh-基础重点&#34;&gt;#&lt;/a&gt;  &lt;code&gt;ssh&lt;/code&gt;  基础（重点）&lt;/h3&gt;
+&lt;p&gt;在 Linux 中 SSH 是 &lt;strong&gt;非常常用&lt;/strong&gt; 的工具，通过 &lt;strong&gt;SSH 客户端&lt;/strong&gt; 我们可以连接到运行了 &lt;strong&gt;SSH 服务器&lt;/strong&gt; 的远程机器上&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022042433.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;SSH 客户端&lt;/strong&gt;是一种使用  &lt;code&gt;Secure Shell（SSH）&lt;/code&gt;  协议连接到远程计算机的软件程序&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SSH&lt;/code&gt;  是目前较可靠，&lt;strong&gt;专为远程登录会话和其他网络服务&lt;/strong&gt; 提供安全性的协议
+&lt;ul&gt;
+&lt;li&gt;利用  &lt;code&gt;SSH 协议&lt;/code&gt;  可以有效&lt;strong&gt;防止远程管理过程中的信息泄露&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;通过  &lt;code&gt;SSH 协议&lt;/code&gt;  可以对所有传输的数据进行加密，也能够防止 DNS 欺骗和 IP 欺骗&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SSH&lt;/code&gt;  的另一项优点是传输的数据可以是经过压缩的，所以可以加快传输的速度&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;域名-和-端口号&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#域名-和-端口号&#34;&gt;#&lt;/a&gt; 域名 和 端口号&lt;/h4&gt;
+&lt;h5 id=&#34;域名&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#域名&#34;&gt;#&lt;/a&gt; 域名&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;由一串 &lt;strong&gt;用点分隔&lt;/strong&gt; 的名字组成，例如： &lt;code&gt;www.itcast.cn&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;是 &lt;strong&gt;IP 地址&lt;/strong&gt; 的别名，方便用户记忆&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;端口号&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#端口号&#34;&gt;#&lt;/a&gt; 端口号&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;IP 地址&lt;/strong&gt;：通过 &lt;strong&gt;IP 地址&lt;/strong&gt; 找到网络上的 &lt;strong&gt;计算机&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;端口号&lt;/strong&gt;：通过 &lt;strong&gt;端口号&lt;/strong&gt; 可以找到 &lt;strong&gt;计算机上运行的应用程序&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;SSH 服务器&lt;/strong&gt; 的默认端口号是  &lt;code&gt;22&lt;/code&gt; ，如果是默认端口号，在连接的时候，可以省略&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;常见服务端口号列表：&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;序号&lt;/th&gt;
+&lt;th&gt;服务&lt;/th&gt;
+&lt;th&gt;端口号&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;01&lt;/td&gt;
+&lt;td&gt;SSH 服务器&lt;/td&gt;
+&lt;td&gt;22&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;02&lt;/td&gt;
+&lt;td&gt;Web 服务器&lt;/td&gt;
+&lt;td&gt;80&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;03&lt;/td&gt;
+&lt;td&gt;HTTPS&lt;/td&gt;
+&lt;td&gt;443&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;04&lt;/td&gt;
+&lt;td&gt;FTP 服务器&lt;/td&gt;
+&lt;td&gt;21&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：有关 &lt;strong&gt;端口号&lt;/strong&gt;的详细内容，在就业班会详细讲解！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;ssh-客户端的简单使用&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#ssh-客户端的简单使用&#34;&gt;#&lt;/a&gt; SSH 客户端的简单使用&lt;/h4&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;ssh&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;-p port&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; user@remote&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;user&lt;/code&gt;  是在远程机器上的用户名，如果不指定的话默认为当前用户&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;remote&lt;/code&gt;  是远程机器的地址，可以是 &lt;strong&gt;IP&lt;/strong&gt;／&lt;strong&gt;域名&lt;/strong&gt;，或者是 &lt;strong&gt;后面会提到的别名&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;port&lt;/code&gt;  是 &lt;strong&gt;SSH Server 监听的端口&lt;/strong&gt;，如果不指定，就为默认值  &lt;code&gt;22&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;使用  &lt;code&gt;exit&lt;/code&gt;  退出当前用户的登录&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;注意：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ssh&lt;/code&gt;  这个终端命令只能在  &lt;code&gt;Linux&lt;/code&gt;  或者  &lt;code&gt;UNIX&lt;/code&gt;  系统下使用&lt;/li&gt;
+&lt;li&gt;如果在  &lt;code&gt;Windows&lt;/code&gt;  系统中，可以安装  &lt;code&gt;PuTTY&lt;/code&gt;  或者  &lt;code&gt;XShell&lt;/code&gt;  客户端软件即可&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;在工作中，SSH 服务器的端口号很有可能&lt;strong&gt;不是 22&lt;/strong&gt;，如果遇到这种情况就需要使用  &lt;code&gt;-p&lt;/code&gt;  选项，指定正确的端口号，否则无法正常连接到服务器&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;windows-下-ssh-客户端的安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#windows-下-ssh-客户端的安装&#34;&gt;#&lt;/a&gt; Windows 下 SSH 客户端的安装&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Putty&lt;/code&gt;  &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5jaGlhcmsuZ3JlZW5lbmQub3JnLnVrL35zZ3RhdGhhbS9wdXR0eS9sYXRlc3QuaHRtbA==&#34;&gt;http://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;XShell&lt;/code&gt;  &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3hzaGVsbGNuLmNvbQ==&#34;&gt;http://xshellcn.com&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;建议从官方网站下载正式的安装程序&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;scp掌握&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#scp掌握&#34;&gt;#&lt;/a&gt;  &lt;code&gt;scp&lt;/code&gt; （掌握）&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;scp 就是  &lt;code&gt;secure copy&lt;/code&gt; ，是一个在 Linux 下用来进行 &lt;strong&gt;远程拷贝文件&lt;/strong&gt; 的命令&lt;/li&gt;
+&lt;li&gt;它的&lt;strong&gt;地址格式与 ssh 基本相同&lt;/strong&gt;，&lt;strong&gt;需要注意的是&lt;/strong&gt;，在指定端口时用的是大写的  &lt;code&gt;-P&lt;/code&gt;  而不是小写的&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022042437.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 把本地当前目录下的 01.py 文件 复制到 远程 家目录下的 Desktop/01.py&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 注意：`:` 后面的路径如果不是绝对路径，则以用户的家目录作为参照路径&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;scp&lt;/span&gt; -P port 01.py user@remote:Desktop/01.py&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 把远程 家目录下的 Desktop/01.py 文件 复制到 本地当前目录下的 01.py&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;scp&lt;/span&gt; -P port user@remote:Desktop/01.py 01.py&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 加上 -r 选项可以传送文件夹&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 把当前目录下的 demo 文件夹 复制到 远程 家目录下的 Desktop&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;scp&lt;/span&gt; -r demo user@remote:Desktop&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 把远程 家目录下的 Desktop 复制到 当前目录下的 demo 文件夹&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;scp&lt;/span&gt; -r user@remote:Desktop demo&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;选项&lt;/th&gt;
+&lt;th&gt;含义&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;-r&lt;/td&gt;
+&lt;td&gt;若给出的源文件是目录文件，则 scp 将递归复制该目录下的所有子目录和文件，目标文件必须为一个目录名&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;-P&lt;/td&gt;
+&lt;td&gt;若远程 SSH 服务器的端口不是 22，需要使用大写字母 -P 选项指定端口&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+&lt;p&gt;注意：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;scp&lt;/code&gt;  这个终端命令只能在  &lt;code&gt;Linux&lt;/code&gt;  或者  &lt;code&gt;UNIX&lt;/code&gt;  系统下使用&lt;/li&gt;
+&lt;li&gt;如果在  &lt;code&gt;Windows&lt;/code&gt;  系统中，可以安装  &lt;code&gt;PuTTY&lt;/code&gt; ，使用  &lt;code&gt;pscp&lt;/code&gt;  命令行工具或者安装  &lt;code&gt;FileZilla&lt;/code&gt;  使用  &lt;code&gt;FTP&lt;/code&gt;  进行文件传输&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;filezilla&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#filezilla&#34;&gt;#&lt;/a&gt;  &lt;code&gt;FileZilla&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;官方网站：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuZmlsZXppbGxhLmNuL2Rvd25sb2FkL2NsaWVudA==&#34;&gt;https://www.filezilla.cn/download/client&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;FileZilla&lt;/code&gt;  在传输文件时，使用的是  &lt;code&gt;FTP 服务&lt;/code&gt;  而不是  &lt;code&gt;SSH 服务&lt;/code&gt; ，因此端口号应该设置为  &lt;code&gt;21&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;ssh-高级知道&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#ssh-高级知道&#34;&gt;#&lt;/a&gt; SSH 高级（知道）&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;免密码登录&lt;/li&gt;
+&lt;li&gt;配置别名&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：有关 SSH 配置信息都保存在用户家目录下的  &lt;code&gt;.ssh&lt;/code&gt;  目录下&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;免密码登录&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#免密码登录&#34;&gt;#&lt;/a&gt; 免密码登录&lt;/h4&gt;
+&lt;h5 id=&#34;步骤&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#步骤&#34;&gt;#&lt;/a&gt; 步骤&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;配置公钥
+&lt;ul&gt;
+&lt;li&gt;执行  &lt;code&gt;ssh-keygen&lt;/code&gt;  即可生成 SSH 钥匙，一路回车即可&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;上传公钥到服务器
+&lt;ul&gt;
+&lt;li&gt;执行  &lt;code&gt;ssh-copy-id -p port user@remote&lt;/code&gt; ，可以让远程服务器记住我们的公钥&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;示意图&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#示意图&#34;&gt;#&lt;/a&gt; 示意图&lt;/h5&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022042441.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;非对称加密算法&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;使用 &lt;strong&gt;公钥&lt;/strong&gt; 加密的数据，需要使用 &lt;strong&gt;私钥&lt;/strong&gt; 解密&lt;/li&gt;
+&lt;li&gt;使用 &lt;strong&gt;私钥&lt;/strong&gt; 加密的数据，需要使用 &lt;strong&gt;公钥&lt;/strong&gt; 解密&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;配置别名&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#配置别名&#34;&gt;#&lt;/a&gt; 配置别名&lt;/h4&gt;
+&lt;p&gt;每次都输入  &lt;code&gt;ssh -p port user@remote&lt;/code&gt; ，时间久了会觉得很麻烦，特别是当  &lt;code&gt;user&lt;/code&gt; ,  &lt;code&gt;remote&lt;/code&gt;  和  &lt;code&gt;port&lt;/code&gt;  都得输入，而且还不好记忆&lt;/p&gt;
+&lt;p&gt;而 &lt;strong&gt;配置别名&lt;/strong&gt; 可以让我们进一步偷懒，譬如用： &lt;code&gt;ssh mac&lt;/code&gt;  来替代上面这么一长串，那么就在  &lt;code&gt;~/.ssh/config&lt;/code&gt;  里面追加以下内容：&lt;/p&gt;
+&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Host mac&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    HostName ip地址&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    User itheima&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&#34;marked&#34;&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    Port 22&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;strong&gt;保存之后，即可用  &lt;code&gt;ssh mac&lt;/code&gt;  实现远程登录了， &lt;code&gt;scp&lt;/code&gt;  同样可以使用&lt;/strong&gt;&lt;/p&gt;
  ]]></description>
         </item>
     </channel>
