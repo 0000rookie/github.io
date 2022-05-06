@@ -8,7 +8,7 @@
     <author>
       <name>璃柏涟</name>
     </author>
-    <updated>2022-05-01T15:07:14.000Z</updated>
+    <updated>2022-05-03T15:33:46.000Z</updated>
     <category term="web安全" />
     <category term="笔记" />
     <category term="web" />
@@ -22,6 +22,15 @@
     <category term="后端" />
     <category term="markdown" />
     <category term="搭建个人博客" />
+    <entry>
+        <id>https://www.hikki.site/b2cc2eb5.html</id>
+        <title>javase程序国际化</title>
+        <link rel="alternate" href="https://www.hikki.site/b2cc2eb5.html"/>
+        <content type="html">&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;&lt;/code&gt;&lt;/pre&gt;
+</content>
+        <category term="JAVA" scheme="https://www.hikki.site/tags/JAVA/" />
+        <updated>2022-05-03T15:33:46.000Z</updated>
+    </entry>
     <entry>
         <id>https://www.hikki.site/39c6cce6.html</id>
         <title>私の夢-作文</title>
@@ -549,19 +558,5 @@
         <category term="教程" scheme="https://www.hikki.site/tags/%E6%95%99%E7%A8%8B/" />
         <category term="数据库" scheme="https://www.hikki.site/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" />
         <updated>2022-04-11T17:54:58.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://www.hikki.site/ee3e214f.html</id>
-        <title>QQ/微信/支付宝 收款码美化</title>
-        <link rel="alternate" href="https://www.hikki.site/ee3e214f.html"/>
-        <content type="html">&lt;p&gt;有时候想贴个二维码出来，但是觉得这个二维码太丑了，然后就发现了个神奇的网站，叫&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jbGkuaW0v&#34;&gt;草料二维码&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;可以美化微信、支付宝、钉钉等二维码，文字转二维码等等功能，各种各样。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204120247.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204120248.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-</content>
-        <category term="生活" scheme="https://www.hikki.site/categories/%E7%94%9F%E6%B4%BB/" />
-        <category term="好物推荐" scheme="https://www.hikki.site/categories/%E7%94%9F%E6%B4%BB/%E5%A5%BD%E7%89%A9%E6%8E%A8%E8%8D%90/" />
-        <category term="一个小技巧" scheme="https://www.hikki.site/tags/%E4%B8%80%E4%B8%AA%E5%B0%8F%E6%8A%80%E5%B7%A7/" />
-        <updated>2022-04-10T17:19:45.000Z</updated>
     </entry>
 </feed>
