@@ -299,6 +299,7 @@ Object.assign(HTMLElement.prototype, {
     return this.classList.contains(className)
   }
 });
+
 var NOWPLAYING = null
 const isMobile = /mobile/i.test(window.navigator.userAgent);
 const mediaPlayer = function(t, config) {
@@ -1396,17 +1397,18 @@ const clipBoard = function(str, callback) {
 }
 
 
-
-function friendscircle(){
-  var friends = [
+/*$(".exturl").click(function(){
+    var friends = [
     'https://shoka.lostyu.me/',
     'https://ldwei.top/'
     ];
   //var friend = friends[Math.floor(Math.random()*friends.length)];
   var friend = 'https://shoka.lostyu.me/';
-  //window.open(friend,"_blank");
-   window.location.href="https://shoka.lostyu.me/";
-}
+  window.open(friend,"_blank");
+   //window.location.href="https://shoka.lostyu.me/";
+});*/
+
+
 
 
 
@@ -1648,6 +1650,7 @@ const menuActive = function () {
     }
   });
 }
+
 const cardActive = function() {
   if(!$('.index.wrap'))
     return
@@ -2206,6 +2209,7 @@ const algoliaSearch = function(pjax) {
     }
   });
 }
+
 const domInit = function() {
   $.each('.overview .menu > .item', function(el) {
     siteNav.child('.menu').appendChild(el.cloneNode(true));
