@@ -47,13 +47,6 @@
         <updated>2022-05-09T03:36:50.000Z</updated>
     </entry>
     <entry>
-        <id>https://www.hikki.site/undefined.html</id>
-        <title>计算机科学/编程语言/java/maven报错</title>
-        <link rel="alternate" href="https://www.hikki.site/undefined.html"/>
-        <content type="html"></content>
-        <updated>2022-05-09T03:36:33.000Z</updated>
-    </entry>
-    <entry>
         <id>https://www.hikki.site/8075134e.html</id>
         <title>numpy画复合函数</title>
         <link rel="alternate" href="https://www.hikki.site/8075134e.html"/>
@@ -542,5 +535,18 @@ autopct=’%1.1f%%’) 			# 接受特定 String，指定数值显示方式，默
         <category term="Linux" scheme="https://www.hikki.site/tags/Linux/" />
         <category term="CentoOS" scheme="https://www.hikki.site/tags/CentoOS/" />
         <updated>2022-04-16T07:49:21.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://www.hikki.site/b9e6c7bf.html</id>
+        <title>日记分享2022.4.13</title>
+        <link rel="alternate" href="https://www.hikki.site/b9e6c7bf.html"/>
+        <content type="html">&lt;div class=&#34;note danger&#34;&gt;
+&lt;p&gt;我周三还没开始写作业&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;周一的一堆作业，这周不知道怎么回事，一直都是提不起精神学习，一直在捣鼓自己喜欢的东西，博客，git 等等，对自己喜欢的东西很有兴趣捣鼓，不喜欢的数据结构确实提不起兴趣，喜欢 python、linux 就会很主动去学习。算了算了，今晚好好睡个觉，明天好好学习。&lt;/p&gt;
+</content>
+        <category term="生活" scheme="https://www.hikki.site/categories/%E7%94%9F%E6%B4%BB/" />
+        <category term="日记" scheme="https://www.hikki.site/categories/%E7%94%9F%E6%B4%BB/%E6%97%A5%E8%AE%B0/" />
+        <updated>2022-04-13T15:32:10.000Z</updated>
     </entry>
 </feed>
