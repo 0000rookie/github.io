@@ -1,0 +1,766 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+
+<meta name="yandex-verification" content="0f41f442b8921fd6" /> 
+<meta name="description" content="这是记录璃柏涟的学习情况，其中包括 python、springboot、andriod、root" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/0000rookie/github.io/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="https://cdn.jsdelivr.net/gh/0000rookie/github.io/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="google-site-verification" content="true">
+  <meta name="msvalidate.01" content="true">
+  <meta name="yandex-verification" content="true">
+  <meta name="baidu-site-verification" content="true">
+
+
+<link rel="alternate" type="application/rss+xml" title="璃柏涟の筆記" href="https://www.hikki.site/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="璃柏涟の筆記" href="https://www.hikki.site/atom.xml" />
+<link rel="alternate" type="application/json" title="璃柏涟の筆記" href="https://www.hikki.site/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/0000rookie/github.io/css/app.css?v=0.2.5">
+
+  
+  <meta name="keywords" content="python" />
+
+
+<link rel="canonical" href="https://www.hikki.site/ed51a5a6.html">
+
+
+
+  <title>
+matplotlib制作条形图、直方图 - python - 编程语言 - 计算机科学 |
+筆記 = 璃柏涟の筆記 = 专注学习筆記</title>
+<meta name="generator" content="Hexo 6.1.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">matplotlib制作条形图、直方图
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2022-05-09 08:39:48">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2022-05-09T08:39:48+08:00">2022-05-09</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span class="text">本文字数</span>
+    <span>3.6k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span class="text">阅读时长</span>
+    <span>5 分钟</span>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">筆記</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giph4wqtg4j20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclip4jbpj20zk0m87cv.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipet4bz0yj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclil3m4ej20zk0m8tn8.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipev1x5e4j20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclx6phq6j20zk0m8e36.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span><i class="ic i-angle-right"></i>
+<span  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" itemprop="item" rel="index" title="分类于 计算机科学"><span itemprop="name">计算机科学</span></a>
+<meta itemprop="position" content="1" /></span>
+<i class="ic i-angle-right"></i>
+<span  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" itemprop="item" rel="index" title="分类于 编程语言"><span itemprop="name">编程语言</span></a>
+<meta itemprop="position" content="2" /></span>
+<i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" itemprop="item" rel="index" title="分类于 python"><span itemprop="name">python</span></a>
+<meta itemprop="position" content="3" /></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="https://www.hikki.site/ed51a5a6.html">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/0000rookie/github.io/images/avatar.jpg">
+    <meta itemprop="name" content="璃柏涟">
+    <meta itemprop="description" content="专注学习筆記, 喜欢的东西就努力去追求，万一成功了呢！">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="璃柏涟の筆記">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h2 id="python散点图"><a class="markdownIt-Anchor" href="#python散点图">#</a> python 散点图</h2>
+<h3 id="编写思路"><a class="markdownIt-Anchor" href="#编写思路">#</a> 编写思路</h3>
+<h4 id="单个画板思路"><a class="markdownIt-Anchor" href="#单个画板思路">#</a> 单个画板思路</h4>
+<ol>
+<li>导入相关模块</li>
+<li>获取数据为列表格式 (这是 <code>Y</code>  的值，每一个 <code>X</code>  都能找到一个对应的 <code>Y</code>  值，称为函数)</li>
+<li>设置颜色 (可选)</li>
+<li>添加画板</li>
+<li>设置 <code>Ｘ</code> 轴、 <code>Ｙ</code> 轴长度</li>
+<li>设置 <code>X</code>  的数据</li>
+<li>给画板添加数据</li>
+<li>显示画板</li>
+</ol>
+<h4 id="多个画板思路"><a class="markdownIt-Anchor" href="#多个画板思路">#</a> 多个画板思路</h4>
+<ol>
+<li>
+<p>导入香相关模块</p>
+</li>
+<li>
+<p>获取 <code>lis</code>  数据为列表格式 (这是 <code>Y</code>  的值，每一个 <code>X</code>  都能找到一个对应的 <code>Y</code>  值，称为函数)</p>
+</li>
+<li>
+<p>设置颜色 (可选)</p>
+</li>
+<li>
+<p>添加 <code>子图1-子图n</code>  并设置 <code>X</code> 、 <code>Y</code>  轴长度</p>
+</li>
+<li>
+<p>设置 <code>X</code>  的数据</p>
+</li>
+<li>
+<p>添加画板</p>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>lis<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>    ax1<span class="token punctuation">.</span>scatter<span class="token punctuation">(</span>x<span class="token punctuation">,</span>lis<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span>c<span class="token operator">=</span>colors<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr></table></figure></li>
+<li>
+<p>展示画板</p>
+</li>
+</ol>
+<h3 id="源码"><a class="markdownIt-Anchor" href="#源码">#</a> 源码</h3>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np</pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt</pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre><span class="token comment"># 从 data.csv 文件读取四列数据，结果返回是一个类似列表的数据，但类型不是列表，可当它是列表使用</span></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre>opening<span class="token punctuation">,</span>top<span class="token punctuation">,</span>bottom<span class="token punctuation">,</span>closing<span class="token operator">=</span>np<span class="token punctuation">.</span>loadtxt<span class="token punctuation">(</span><span class="token string">'data.csv'</span><span class="token punctuation">,</span> delimiter<span class="token operator">=</span><span class="token string">','</span><span class="token punctuation">,</span> usecols<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">)</span><span class="token punctuation">,</span> unpack<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre><span class="token comment"># 将数据封装为列表，便于将数据循环添加进画板</span></pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre>lis <span class="token operator">=</span> <span class="token punctuation">[</span>opening<span class="token punctuation">,</span>top<span class="token punctuation">,</span>bottom<span class="token punctuation">,</span>closing<span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="8"></td><td><pre>colors <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'green'</span><span class="token punctuation">,</span><span class="token string">'red'</span><span class="token punctuation">,</span><span class="token string">'b'</span><span class="token punctuation">,</span><span class="token string">'k'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="9"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="10"></td><td><pre>fig1 <span class="token operator">=</span> plt<span class="token punctuation">.</span>figure<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span> 					<span class="token comment"># 可有可无</span></pre></td></tr><tr class="marked"><td data-num="11"></td><td><pre>ax1 <span class="token operator">=</span> plt<span class="token punctuation">.</span>subplot<span class="token punctuation">(</span><span class="token number">211</span><span class="token punctuation">,</span>ylim<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">330</span><span class="token punctuation">,</span><span class="token number">370</span><span class="token punctuation">)</span><span class="token punctuation">,</span>xlim<span class="token operator">=</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">35</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment"># 添加上子图 211</span></pre></td></tr><tr class="marked"><td data-num="12"></td><td><pre>ax2<span class="token operator">=</span>plt<span class="token punctuation">.</span>subplot<span class="token punctuation">(</span><span class="token number">212</span><span class="token punctuation">)</span> 				<span class="token comment"># 添加下子图 212</span></pre></td></tr><tr class="marked"><td data-num="13"></td><td><pre>x <span class="token operator">=</span> np<span class="token punctuation">.</span>arange<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">30</span><span class="token punctuation">)</span> 				<span class="token comment"># 设置 x 轴</span></pre></td></tr><tr class="marked"><td data-num="14"></td><td><pre><span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>lis<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="15"></td><td><pre>    ax1<span class="token punctuation">.</span>scatter<span class="token punctuation">(</span>x<span class="token punctuation">,</span>lis<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span>c<span class="token operator">=</span>colors<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment"># 给上子图添加数据</span></pre></td></tr><tr class="marked"><td data-num="16"></td><td><pre>    ax2<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>x<span class="token punctuation">,</span>lis<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span>c<span class="token operator">=</span>colors<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment"># 给下子图添加数据</span></pre></td></tr><tr class="marked"><td data-num="17"></td><td><pre>plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span> 					<span class="token comment"># 展示画板</span></pre></td></tr></table></figure><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022053015.jpeg" alt=""></p>
+<h2 id="期末成绩分布不读取文件"><a class="markdownIt-Anchor" href="#期末成绩分布不读取文件">#</a> 期末成绩分布 (不读取文件)</h2>
+<h3 id="直方图"><a class="markdownIt-Anchor" href="#直方图">#</a> 直方图</h3>
+<h4 id="编写思路-2"><a class="markdownIt-Anchor" href="#编写思路-2">#</a> 编写思路</h4>
+<ol>
+<li>导入模块</li>
+<li>设置数据 Y</li>
+<li>设置数据 X</li>
+<li>设置中文字体</li>
+<li>设置条形图横还是竖</li>
+<li>显示图例</li>
+<li>设置 X、Y 坐标的标签</li>
+<li>设置标题</li>
+<li>显示面板</li>
+</ol>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np</pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt</pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre>data_y <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">112</span><span class="token punctuation">,</span><span class="token number">155</span><span class="token punctuation">,</span><span class="token number">103</span><span class="token punctuation">,</span><span class="token number">72</span><span class="token punctuation">,</span><span class="token number">24</span><span class="token punctuation">,</span><span class="token number">9</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre>x <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"50分以下"</span><span class="token punctuation">,</span><span class="token string">"50-60分"</span><span class="token punctuation">,</span><span class="token string">"60-70分"</span><span class="token punctuation">,</span><span class="token string">"70-80分"</span><span class="token punctuation">,</span><span class="token string">"80-90分"</span><span class="token punctuation">,</span><span class="token string">"90-100分"</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre><span class="token comment"># 解决 plt 显示中文问题</span></pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre>plt<span class="token punctuation">.</span>rcParams<span class="token punctuation">[</span><span class="token string">'font.sans-serif'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'SimHei'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="8"></td><td><pre><span class="token comment"># plt.rcParams['axes.unicode_minus'] = False</span></pre></td></tr><tr class="marked"><td data-num="9"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="10"></td><td><pre><span class="token comment"># 可以把条形图转至方向 (横)</span></pre></td></tr><tr class="marked"><td data-num="11"></td><td><pre>plt<span class="token punctuation">.</span>bar<span class="token punctuation">(</span>x<span class="token punctuation">,</span> data_y<span class="token punctuation">,</span> <span class="token number">0.5</span><span class="token punctuation">,</span> label<span class="token operator">=</span><span class="token string">'close'</span><span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">'#87CEFA'</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="12"></td><td><pre><span class="token comment"># plt.barh(x, data_y, 0.5, label='close', color='#87CEFA')</span></pre></td></tr><tr class="marked"><td data-num="13"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="14"></td><td><pre>plt<span class="token punctuation">.</span>legend<span class="token punctuation">(</span><span class="token punctuation">)</span> 			<span class="token comment">#显示图例</span></pre></td></tr><tr class="marked"><td data-num="15"></td><td><pre>plt<span class="token punctuation">.</span>xlabel<span class="token punctuation">(</span><span class="token string">'成绩分布'</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="16"></td><td><pre>plt<span class="token punctuation">.</span>ylabel<span class="token punctuation">(</span><span class="token string">'人数'</span><span class="token punctuation">)</span> 		<span class="token comment">#x 轴标签</span></pre></td></tr><tr class="marked"><td data-num="17"></td><td><pre>plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'考试成绩统计'</span><span class="token punctuation">)</span> <span class="token comment">#y 轴标签</span></pre></td></tr><tr class="marked"><td data-num="18"></td><td><pre>plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr></table></figure><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022053009.jpeg" alt=""></p>
+<h3 id="饼图"><a class="markdownIt-Anchor" href="#饼图">#</a> 饼图</h3>
+<h4 id="编写思路-3"><a class="markdownIt-Anchor" href="#编写思路-3">#</a> 编写思路</h4>
+<ol>
+<li>
+<p>导入相关的模块</p>
+</li>
+<li>
+<p>设置数据 X、Y</p>
+</li>
+<li>
+<p>初始化颜色列表 cols []</p>
+</li>
+<li>
+<p>设置中文字体</p>
+</li>
+<li>
+<p>给饼图设置相关参数</p>
+<p>plt.pie(</p>
+<p>data,									   # 数据<br>
+ labels=x, 							   # 数据对应的字段<br>
+ colors=cols, 					 	 # 颜色<br>
+ startangle=180, 			 	  # 旋转角度<br>
+ shadow=	True, 				 # 阴影<br>
+ explode=(0,0,0,0,0,0.1), 	  # 突出某一块，有几个数据就设置几个 0 或者 0.1<br>
+autopct=’%1.1f%%’) 			# 接受特定 String，指定数值显示方式，默认为 None</p>
+</li>
+<li>
+<p>设置标题</p>
+</li>
+<li>
+<p>显示面板</p>
+</li>
+</ol>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np</pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt</pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre>data <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">112</span><span class="token punctuation">,</span><span class="token number">155</span><span class="token punctuation">,</span><span class="token number">103</span><span class="token punctuation">,</span><span class="token number">72</span><span class="token punctuation">,</span><span class="token number">24</span><span class="token punctuation">,</span><span class="token number">9</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre>x <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'50分以下'</span><span class="token punctuation">,</span><span class="token string">'50-60分'</span><span class="token punctuation">,</span><span class="token string">'60-70分'</span><span class="token punctuation">,</span><span class="token string">'70-80分'</span><span class="token punctuation">,</span><span class="token string">'80-90分'</span><span class="token punctuation">,</span><span class="token string">'90-10分'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre>cols<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'c'</span><span class="token punctuation">,</span><span class="token string">'m'</span><span class="token punctuation">,</span><span class="token string">'r'</span><span class="token punctuation">,</span><span class="token string">'b'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre><span class="token comment"># 解决 plt 中文显示的问题</span></pre></td></tr><tr class="marked"><td data-num="8"></td><td><pre>plt<span class="token punctuation">.</span>rcParams<span class="token punctuation">[</span><span class="token string">'font.sans-serif'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'SimHei'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="9"></td><td><pre><span class="token comment"># 制作饼图</span></pre></td></tr><tr class="marked"><td data-num="10"></td><td><pre>plt<span class="token punctuation">.</span>pie<span class="token punctuation">(</span>data<span class="token punctuation">,</span><span class="token comment"># 数据</span></pre></td></tr><tr class="marked"><td data-num="11"></td><td><pre>labels<span class="token operator">=</span>x<span class="token punctuation">,</span> <span class="token comment"># 数据对应的字段</span></pre></td></tr><tr class="marked"><td data-num="12"></td><td><pre>colors<span class="token operator">=</span>cols<span class="token punctuation">,</span> <span class="token comment"># 颜色</span></pre></td></tr><tr class="marked"><td data-num="13"></td><td><pre>startangle<span class="token operator">=</span><span class="token number">180</span><span class="token punctuation">,</span> <span class="token comment"># 旋转角度</span></pre></td></tr><tr class="marked"><td data-num="14"></td><td><pre>shadow<span class="token operator">=</span>	<span class="token boolean">True</span><span class="token punctuation">,</span> <span class="token comment"># 阴影</span></pre></td></tr><tr class="marked"><td data-num="15"></td><td><pre>explode<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0.1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token comment"># 突出某一块，有几个数据就设置几个 0 或者 0.1</span></pre></td></tr><tr class="marked"><td data-num="16"></td><td><pre>autopct<span class="token operator">=</span><span class="token string">'%1.1f%%'</span><span class="token punctuation">)</span> <span class="token comment"># 接受特定 String，指定数值显示方式，默认为 None</span></pre></td></tr><tr class="marked"><td data-num="17"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="18"></td><td><pre>plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'考试成绩统计'</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="19"></td><td><pre>plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr></table></figure><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022054935.jpeg" alt=""></p>
+<h2 id="期末成绩分布读取文件"><a class="markdownIt-Anchor" href="#期末成绩分布读取文件">#</a> 期末成绩分布 (读取文件)</h2>
+<h3 id="饼图1"><a class="markdownIt-Anchor" href="#饼图1">#</a> 饼图<sub class="red"> 1</sub></h3>
+<h4 id="编写思路-4"><a class="markdownIt-Anchor" href="#编写思路-4">#</a> 编写思路</h4>
+<ol>
+<li>
+<p>导入相关模块</p>
+</li>
+<li>
+<p>读取文件数据</p>
+<p>列数 1 的数据，列数 2 的数据 = np.loadtxt (‘scores.csv’, delimiter=’,’, usecols=(列数 1, 列数 2), unpack=True)</p>
+</li>
+<li>
+<p>设置字段 (X)</p>
+</li>
+<li>
+<p>初始化颜色列表</p>
+</li>
+<li>
+<p>设置中文字体</p>
+</li>
+<li>
+<p>设置饼图参数</p>
+</li>
+<li>
+<p>设置标题</p>
+</li>
+<li>
+<p>显示画板</p>
+</li>
+</ol>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np</pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt</pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre><span class="token comment"># usecols=(读取列数)，默认从 0 开始</span></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre>c<span class="token operator">=</span>np<span class="token punctuation">.</span>loadtxt<span class="token punctuation">(</span><span class="token string">'scores.csv'</span><span class="token punctuation">,</span> delimiter<span class="token operator">=</span><span class="token string">','</span><span class="token punctuation">,</span> usecols<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> unpack<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre><span class="token comment"># 设置分数段的参数，每有一个达到该分数段则 + 1</span></pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre>s4<span class="token punctuation">,</span>s5<span class="token punctuation">,</span>s6<span class="token punctuation">,</span>s7<span class="token punctuation">,</span>s8<span class="token punctuation">,</span>s9<span class="token punctuation">,</span>s10<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span></pre></td></tr><tr class="marked"><td data-num="8"></td><td><pre><span class="token keyword">for</span> i <span class="token keyword">in</span> c<span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="9"></td><td><pre>    <span class="token keyword">if</span> i<span class="token operator">&lt;=</span><span class="token number">40</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="10"></td><td><pre>        s4 <span class="token operator">+=</span><span class="token number">1</span></pre></td></tr><tr class="marked"><td data-num="11"></td><td><pre>    <span class="token keyword">elif</span> i<span class="token operator">&lt;=</span><span class="token number">50</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="12"></td><td><pre>        s5<span class="token operator">+=</span><span class="token number">1</span></pre></td></tr><tr class="marked"><td data-num="13"></td><td><pre>    <span class="token keyword">elif</span> i<span class="token operator">&lt;=</span><span class="token number">60</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="14"></td><td><pre>        s6<span class="token operator">+=</span><span class="token number">1</span></pre></td></tr><tr class="marked"><td data-num="15"></td><td><pre>    <span class="token keyword">elif</span> i<span class="token operator">&lt;=</span><span class="token number">70</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="16"></td><td><pre>        s7<span class="token operator">+=</span><span class="token number">1</span></pre></td></tr><tr class="marked"><td data-num="17"></td><td><pre>    <span class="token keyword">elif</span> i<span class="token operator">&lt;=</span><span class="token number">80</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="18"></td><td><pre>        s8<span class="token operator">+=</span><span class="token number">1</span></pre></td></tr><tr class="marked"><td data-num="19"></td><td><pre>    <span class="token keyword">elif</span> i<span class="token operator">&lt;=</span><span class="token number">90</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="20"></td><td><pre>        s9<span class="token operator">+=</span><span class="token number">1</span></pre></td></tr><tr class="marked"><td data-num="21"></td><td><pre>    <span class="token keyword">elif</span> i<span class="token operator">&lt;=</span><span class="token number">100</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="22"></td><td><pre>        s10<span class="token operator">+=</span><span class="token number">1</span></pre></td></tr><tr class="marked"><td data-num="23"></td><td><pre>i <span class="token operator">=</span><span class="token punctuation">[</span>s4<span class="token punctuation">,</span> s5<span class="token punctuation">,</span> s6<span class="token punctuation">,</span> s7<span class="token punctuation">,</span> s8<span class="token punctuation">,</span> s9<span class="token punctuation">,</span> s10<span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="24"></td><td><pre><span class="token comment"># 设置每个分数段的字段</span></pre></td></tr><tr class="marked"><td data-num="25"></td><td><pre>field <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'0-40分'</span><span class="token punctuation">,</span><span class="token string">'40-50分'</span><span class="token punctuation">,</span><span class="token string">'50-60分'</span><span class="token punctuation">,</span><span class="token string">'60-70分'</span><span class="token punctuation">,</span><span class="token string">'70-80分'</span><span class="token punctuation">,</span><span class="token string">'80-90分'</span><span class="token punctuation">,</span><span class="token string">'90-10分'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="26"></td><td><pre>cols<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'c'</span><span class="token punctuation">,</span><span class="token string">'m'</span><span class="token punctuation">,</span><span class="token string">'r'</span><span class="token punctuation">,</span><span class="token string">'b'</span><span class="token punctuation">,</span><span class="token string">'w'</span><span class="token punctuation">,</span><span class="token string">'y'</span><span class="token punctuation">,</span><span class="token string">'g'</span><span class="token punctuation">]</span> <span class="token comment"># 设置颜色列表</span></pre></td></tr><tr class="marked"><td data-num="27"></td><td><pre>plt<span class="token punctuation">.</span>rcParams<span class="token punctuation">[</span><span class="token string">'font.sans-serif'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'SimHei'</span><span class="token punctuation">]</span> <span class="token comment"># 设置中文字体</span></pre></td></tr><tr class="marked"><td data-num="28"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="29"></td><td><pre><span class="token comment"># 设置饼图的基本参数</span></pre></td></tr><tr class="marked"><td data-num="30"></td><td><pre>plt<span class="token punctuation">.</span>pie<span class="token punctuation">(</span>i<span class="token punctuation">,</span>  <span class="token comment"># 数据</span></pre></td></tr><tr class="marked"><td data-num="31"></td><td><pre>        labels<span class="token operator">=</span>field<span class="token punctuation">,</span>  <span class="token comment"># 数据对应的字段</span></pre></td></tr><tr class="marked"><td data-num="32"></td><td><pre>        colors<span class="token operator">=</span>cols<span class="token punctuation">,</span>  <span class="token comment"># 颜色</span></pre></td></tr><tr class="marked"><td data-num="33"></td><td><pre>        startangle<span class="token operator">=</span><span class="token number">180</span><span class="token punctuation">,</span>  <span class="token comment"># 旋转角度</span></pre></td></tr><tr class="marked"><td data-num="34"></td><td><pre>        shadow<span class="token operator">=</span>	<span class="token boolean">True</span><span class="token punctuation">,</span>  <span class="token comment"># 阴影</span></pre></td></tr><tr class="marked"><td data-num="35"></td><td><pre>        explode<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0.1</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">,</span>  <span class="token comment"># 突出某一块，抽出</span></pre></td></tr><tr class="marked"><td data-num="36"></td><td><pre>        autopct<span class="token operator">=</span><span class="token string">'%1.1f%%'</span><span class="token punctuation">)</span> <span class="token comment"># 接受特定 String，指定数值显示方式，默认为 None</span></pre></td></tr><tr class="marked"><td data-num="37"></td><td><pre>plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'考试成绩统计'</span><span class="token punctuation">)</span> <span class="token comment"># 设置标题</span></pre></td></tr><tr class="marked"><td data-num="38"></td><td><pre>plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr></table></figure><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022052953.jpeg" alt=""></p>
+<h3 id="直方图2"><a class="markdownIt-Anchor" href="#直方图2">#</a> 直方图<sub class="red"> 2</sub></h3>
+<h4 id="编写思路-5"><a class="markdownIt-Anchor" href="#编写思路-5">#</a> 编写思路</h4>
+<ol>
+<li>导入相关模块</li>
+<li>获取文件数据</li>
+<li>设置字段 (X)</li>
+<li>初始化颜色列表</li>
+<li>设置中文字体</li>
+<li>设置直方图为竖向</li>
+<li>显示图例</li>
+<li>设置 X、Y 的标签</li>
+<li>设置标题</li>
+<li>显示画板</li>
+</ol>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np</pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt</pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre>c<span class="token operator">=</span>np<span class="token punctuation">.</span>loadtxt<span class="token punctuation">(</span><span class="token string">'scores.csv'</span><span class="token punctuation">,</span> delimiter<span class="token operator">=</span><span class="token string">','</span><span class="token punctuation">,</span> usecols<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> unpack<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre>s4<span class="token punctuation">,</span>s5<span class="token punctuation">,</span>s6<span class="token punctuation">,</span>s7<span class="token punctuation">,</span>s8<span class="token punctuation">,</span>s9<span class="token punctuation">,</span>s10<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span></pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre><span class="token keyword">for</span> i <span class="token keyword">in</span> c<span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre>    <span class="token keyword">if</span> i<span class="token operator">&lt;=</span><span class="token number">40</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="8"></td><td><pre>        s4 <span class="token operator">+=</span><span class="token number">1</span></pre></td></tr><tr class="marked"><td data-num="9"></td><td><pre>    <span class="token keyword">elif</span> i<span class="token operator">&lt;=</span><span class="token number">50</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="10"></td><td><pre>        s5<span class="token operator">+=</span><span class="token number">1</span></pre></td></tr><tr class="marked"><td data-num="11"></td><td><pre>    <span class="token keyword">elif</span> i<span class="token operator">&lt;=</span><span class="token number">60</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="12"></td><td><pre>        s6<span class="token operator">+=</span><span class="token number">1</span></pre></td></tr><tr class="marked"><td data-num="13"></td><td><pre>    <span class="token keyword">elif</span> i<span class="token operator">&lt;=</span><span class="token number">70</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="14"></td><td><pre>        s7<span class="token operator">+=</span><span class="token number">1</span></pre></td></tr><tr class="marked"><td data-num="15"></td><td><pre>    <span class="token keyword">elif</span> i<span class="token operator">&lt;=</span><span class="token number">80</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="16"></td><td><pre>        s8<span class="token operator">+=</span><span class="token number">1</span></pre></td></tr><tr class="marked"><td data-num="17"></td><td><pre>    <span class="token keyword">elif</span> i<span class="token operator">&lt;=</span><span class="token number">90</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="18"></td><td><pre>        s9<span class="token operator">+=</span><span class="token number">1</span></pre></td></tr><tr class="marked"><td data-num="19"></td><td><pre>    <span class="token keyword">elif</span> i<span class="token operator">&lt;=</span><span class="token number">100</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="20"></td><td><pre>        s10<span class="token operator">+=</span><span class="token number">1</span></pre></td></tr><tr class="marked"><td data-num="21"></td><td><pre>i <span class="token operator">=</span><span class="token punctuation">[</span>s4<span class="token punctuation">,</span> s5<span class="token punctuation">,</span> s6<span class="token punctuation">,</span> s7<span class="token punctuation">,</span> s8<span class="token punctuation">,</span> s9<span class="token punctuation">,</span> s10<span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="22"></td><td><pre>field <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'0-40分'</span><span class="token punctuation">,</span><span class="token string">'40-50分'</span><span class="token punctuation">,</span><span class="token string">'50-60分'</span><span class="token punctuation">,</span><span class="token string">'60-70分'</span><span class="token punctuation">,</span><span class="token string">'70-80分'</span><span class="token punctuation">,</span><span class="token string">'80-90分'</span><span class="token punctuation">,</span><span class="token string">'90-100分'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="23"></td><td><pre>cols<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'c'</span><span class="token punctuation">,</span><span class="token string">'m'</span><span class="token punctuation">,</span><span class="token string">'r'</span><span class="token punctuation">,</span><span class="token string">'b'</span><span class="token punctuation">,</span><span class="token string">'w'</span><span class="token punctuation">,</span><span class="token string">'y'</span><span class="token punctuation">,</span><span class="token string">'g'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="24"></td><td><pre>plt<span class="token punctuation">.</span>rcParams<span class="token punctuation">[</span><span class="token string">'font.sans-serif'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'SimHei'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="25"></td><td><pre>plt<span class="token punctuation">.</span>bar<span class="token punctuation">(</span>field<span class="token punctuation">,</span> i<span class="token punctuation">,</span> <span class="token number">0.5</span><span class="token punctuation">,</span> label<span class="token operator">=</span><span class="token string">'close'</span><span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">'#87CEFA'</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="26"></td><td><pre><span class="token comment"># 可以把条形图转至方向 (横)</span></pre></td></tr><tr class="marked"><td data-num="27"></td><td><pre><span class="token comment"># plt.barh(x, data_y, 0.5, label='close', color='#87CEFA')</span></pre></td></tr><tr class="marked"><td data-num="28"></td><td><pre>plt<span class="token punctuation">.</span>legend<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">#显示图例</span></pre></td></tr><tr class="marked"><td data-num="29"></td><td><pre>plt<span class="token punctuation">.</span>xlabel<span class="token punctuation">(</span><span class="token string">'成绩分布'</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="30"></td><td><pre><span class="token comment"># #x 轴标签</span></pre></td></tr><tr class="marked"><td data-num="31"></td><td><pre>plt<span class="token punctuation">.</span>ylabel<span class="token punctuation">(</span><span class="token string">'人数'</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="32"></td><td><pre><span class="token comment"># #y 轴标签</span></pre></td></tr><tr class="marked"><td data-num="33"></td><td><pre>plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'考试成绩统计'</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="34"></td><td><pre>plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr></table></figure><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022055044.jpeg" alt=""></p>
+<div class="note info">
+<p>相关文件下载<span class="exturl" data-url="aHR0cHM6Ly9yb29raWUxNjc5LmxhbnpvdWYuY29tL2kzaEdPMDRqOTgxYw=="> data.csv</span>、<span class="exturl" data-url="aHR0cHM6Ly9yb29raWUxNjc5LmxhbnpvdWYuY29tL2lKVGZ2MDRqOTgyZA==">score.csv</span></p>
+</div>
+
+      <div class="tags">
+          <a href="/tags/python/" rel="tag"><i class="ic i-tag"></i> python</a>
+      </div>
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2022-05-09 15:12:21" itemprop="dateModified" datetime="2022-05-09T15:12:21+08:00">2022-05-09</time>
+  </span>
+  <span id="ed51a5a6.html" class="item leancloud_visitors" data-flag-title="matplotlib制作条形图、直方图" title="阅读次数">
+      <span class="icon">
+        <i class="ic i-eye"></i>
+      </span>
+      <span class="text">阅读次数</span>
+      <span class="leancloud-visitors-count"></span>
+      <span class="text">次</span>
+  </span>
+</div>
+
+
+
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="https://cdn.jsdelivr.net/gh/0000rookie/github.io/images/wechatpay.jpg" alt="璃柏涟 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="https://cdn.jsdelivr.net/gh/0000rookie/github.io/images/alipay.jpg" alt="璃柏涟 支付宝">
+        <p>支付宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>璃柏涟 <i class="ic i-at"><em>@</em></i>璃柏涟の筆記
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="https://www.hikki.site/ed51a5a6.html" title="matplotlib制作条形图、直方图">https://www.hikki.site/ed51a5a6.html</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/9b0876ac.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipey0a334j20zk0m8qpt.jpg" title="GitHub使用技巧">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> 技术杂谈</span>
+  <h3>GitHub使用技巧</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+      
+
+  <a href="/8075134e.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeyvx1d4j20zk0m8hdt.jpg" title="numpy画复合函数">
+  <span class="type">下一篇</span>
+  <span class="category"><i class="ic i-flag"></i> python</span>
+  <h3>numpy画复合函数</h3>
+  </a>
+
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#python%E6%95%A3%E7%82%B9%E5%9B%BE"><span class="toc-number">1.</span> <span class="toc-text"> python 散点图</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BC%96%E5%86%99%E6%80%9D%E8%B7%AF"><span class="toc-number">1.1.</span> <span class="toc-text"> 编写思路</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8D%95%E4%B8%AA%E7%94%BB%E6%9D%BF%E6%80%9D%E8%B7%AF"><span class="toc-number">1.1.1.</span> <span class="toc-text"> 单个画板思路</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%9A%E4%B8%AA%E7%94%BB%E6%9D%BF%E6%80%9D%E8%B7%AF"><span class="toc-number">1.1.2.</span> <span class="toc-text"> 多个画板思路</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%BA%90%E7%A0%81"><span class="toc-number">1.2.</span> <span class="toc-text"> 源码</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%9F%E6%9C%AB%E6%88%90%E7%BB%A9%E5%88%86%E5%B8%83%E4%B8%8D%E8%AF%BB%E5%8F%96%E6%96%87%E4%BB%B6"><span class="toc-number">2.</span> <span class="toc-text"> 期末成绩分布 (不读取文件)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%B4%E6%96%B9%E5%9B%BE"><span class="toc-number">2.1.</span> <span class="toc-text"> 直方图</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BC%96%E5%86%99%E6%80%9D%E8%B7%AF-2"><span class="toc-number">2.1.1.</span> <span class="toc-text"> 编写思路</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A5%BC%E5%9B%BE"><span class="toc-number">2.2.</span> <span class="toc-text"> 饼图</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BC%96%E5%86%99%E6%80%9D%E8%B7%AF-3"><span class="toc-number">2.2.1.</span> <span class="toc-text"> 编写思路</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%9F%E6%9C%AB%E6%88%90%E7%BB%A9%E5%88%86%E5%B8%83%E8%AF%BB%E5%8F%96%E6%96%87%E4%BB%B6"><span class="toc-number">3.</span> <span class="toc-text"> 期末成绩分布 (读取文件)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A5%BC%E5%9B%BE1"><span class="toc-number">3.1.</span> <span class="toc-text"> 饼图 1</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BC%96%E5%86%99%E6%80%9D%E8%B7%AF-4"><span class="toc-number">3.1.1.</span> <span class="toc-text"> 编写思路</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%B4%E6%96%B9%E5%9B%BE2"><span class="toc-number">3.2.</span> <span class="toc-text"> 直方图 2</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BC%96%E5%86%99%E6%80%9D%E8%B7%AF-5"><span class="toc-number">3.2.1.</span> <span class="toc-text"> 编写思路</span></a></li></ol></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+        <ul>
+          <li><a href="/cd7b33aa.html" rel="bookmark" title="Python组合数据类型">Python组合数据类型</a></li><li><a href="/81b2f4bf.html" rel="bookmark" title="python基础">python基础</a></li><li><a href="/1edcfdea.html" rel="bookmark" title="python-math库">python-math库</a></li><li><a href="/37c8254d.html" rel="bookmark" title="python qt5 实现记事本界面">python qt5 实现记事本界面</a></li><li><a href="/b9893092.html" rel="bookmark" title="python Qt5实现记事本基本功能">python Qt5实现记事本基本功能</a></li><li><a href="/c3e9968a.html" rel="bookmark" title="python Qt5基础知识">python Qt5基础知识</a></li><li class="active"><a href="/ed51a5a6.html" rel="bookmark" title="matplotlib制作条形图、直方图">matplotlib制作条形图、直方图</a></li><li><a href="/8075134e.html" rel="bookmark" title="numpy画复合函数">numpy画复合函数</a></li>
+        </ul>
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="璃柏涟"
+      data-src="https://cdn.jsdelivr.net/gh/0000rookie/github.io/images/avatar.jpg">
+  <p class="name" itemprop="name">璃柏涟</p>
+  <div class="description" itemprop="description">喜欢的东西就努力去追求，万一成功了呢！</div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">51</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">19</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">19</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tLzAwMDByb29raWU=" title="https:&#x2F;&#x2F;github.com&#x2F;0000rookie"><i class="ic i-github"></i></span>
+      <span class="exturl item twitter" data-url="aHR0cHM6Ly90d2l0dGVyLmNvbS9hYV8xMzQxMTUxMDU2" title="https:&#x2F;&#x2F;twitter.com&#x2F;aa_1341151056"><i class="ic i-twitter"></i></span>
+      <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS93dS14aWFvLWJhaS05" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;wu-xiao-bai-9"><i class="ic i-zhihu"></i></span>
+      <a href="/aa1341151056@126.com" title="aa1341151056@126.com" class="item email"><i class="ic i-envelope"></i></a>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>关于</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+  </ul>
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-magic"></i>链接</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/links/friend-links/" rel="section"><i class="ic i-link"></i>友链</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/links/johou/" rel="section"><i class="ic i-star"></i>情報</a>
+  </li>
+
+  </ul>
+    
+  <li class="item">
+    <span class="exturl" data-url="aHR0cHM6Ly90cmF2ZWxsaW5ncy5saW5rLw=="><i class="ic i-paper-plane"></i>开往</span>
+  </li>
+
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/9b0876ac.html" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/8075134e.html" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
+</div>
+
+    <span><a href="/aaad0208.html" title="零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E6%90%AD%E5%8D%9A%E5%AE%A2%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/" title="分类于 搭博客常见错误">搭博客常见错误</a>
+</div>
+
+    <span><a href="/28af37eb.html" title="Hexo部署err:Error:Spawn failed错误">Hexo部署err:Error:Spawn failed错误</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
+</div>
+
+    <span><a href="/a6f9d072.html" title="第一篇：注册github---从0基础搭建Hexo博客">第一篇：注册github---从0基础搭建Hexo博客</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
+</div>
+
+    <span><a href="/c32e96d4.html" title="git push origin master失败">git push origin master失败</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
+</div>
+
+    <span><a href="/edaa94fb.html" title="为博客添加免费的CDN加速">为博客添加免费的CDN加速</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
+</div>
+
+    <span><a href="/3d358537.html" title="Linux忘记数据库密码">Linux忘记数据库密码</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
+</div>
+
+    <span><a href="/70ded1a5.html" title="root破解手机限速问题">root破解手机限速问题</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
+</div>
+
+    <span><a href="/1edcfdea.html" title="python-math库">python-math库</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E7%94%9F%E6%B4%BB/" title="分类于 生活">生活</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E7%94%9F%E6%B4%BB/%E6%97%A5%E8%AE%B0/" title="分类于 日记">日记</a>
+</div>
+
+    <span><a href="/ef5acbc6.html" title="4.9日记分享">4.9日记分享</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
+</div>
+
+    <span><a href="/16ad79ec.html" title="学习注册表">学习注册表</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>最新评论</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 
+    <span itemprop="copyrightYear">2022</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">璃柏涟 @ 筆記</span>
+  </div>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="站点总字数">38k 字</span>
+
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="站点阅读时长">51 分钟</span>
+  </div>
+  <div class="powered-by">
+    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  
+  <div class="upyun-logo">
+    <span>本网站由</span>
+    <a class="upyun-logo-ref" href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="blank">
+        <img class="upyun-img" align="bottom" height="18" src="https://i.loli.net/2021/06/19/zgdbal6fjnuEPLO.png" alt="又拍云">
+    </a>
+    <span>提供 CDN 加速/云存储服务</span>
+  </div>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: 'ed51a5a6.html',
+    favicon: {
+      show: "あれんのぼろこ",
+      hide: "可愛い！"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,
+    copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/0000rookie/github.io/js/app.js?v=0.2.5"></script>
+
+
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"live2d-widget-model-koharu"},"display":{"position":"left","width":109,"height":236,"hOffset":40,"vOffset":3},"mobile":{"show":true,"scale":0.2},"react":{"opacityDefault":0.7,"opacityOnHover":0.8},"log":false});</script></body>
+</html>
