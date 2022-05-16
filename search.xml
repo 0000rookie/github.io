@@ -69,6 +69,22 @@
       </categories>
   </entry>
   <entry>
+    <title>QQ/微信/支付宝 收款码美化</title>
+    <url>/ee3e214f.html</url>
+    <content><![CDATA[<p>有时候想贴个二维码出来，但是觉得这个二维码太丑了，然后就发现了个神奇的网站，叫<span class="exturl" data-url="aHR0cHM6Ly9jbGkuaW0v">草料二维码</span></p>
+<p>可以美化微信、支付宝、钉钉等二维码，文字转二维码等等功能，各种各样。</p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204120247.jpeg" alt=""></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204120248.jpeg" alt=""></p>
+]]></content>
+      <categories>
+        <category>生活</category>
+        <category>好物推荐</category>
+      </categories>
+      <tags>
+        <tag>一个小技巧</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>4.9日记分享</title>
     <url>/ef5acbc6.html</url>
     <content><![CDATA[<h2 id="49日记分享"><a class="markdownIt-Anchor" href="#49日记分享">#</a> 4.9 日记分享</h2>
@@ -348,6 +364,43 @@
       </tags>
   </entry>
   <entry>
+    <title>为博客添加免费的CDN加速</title>
+    <url>/edaa94fb.html</url>
+    <content><![CDATA[<h2 id="设置statics"><a class="markdownIt-Anchor" href="#设置statics">#</a> 设置 <code>statics</code></h2>
+<p>在根目录或者 <code>themes</code>  下 <code>_config.yml</code>  文件下配置</p>
+<figure class="highlight yaml"><figcaption data-lang="YAML"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token key atrule">格式：statics</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//cdn.jsdelivr.net/gh/账户名/仓库名/</pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token key atrule">statics</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//cdn.jsdelivr.net/gh/0000rookie/github.io/</pre></td></tr></table></figure><p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204081139.jpg" alt=""></p>
+<h2 id="刷新cdnjsdelivr"><a class="markdownIt-Anchor" href="#刷新cdnjsdelivr">#</a> 刷新 <code>CDN.jsDelivr</code></h2>
+<p>打开浏览器输入你 <code>statics</code>  的资源路径，回车刷新一下。</p>
+<figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tr><td data-num="1"></td><td><pre>https://cdn.jsdelivr.net/gh/0000rookie/github.io/</pre></td></tr><tr><td data-num="2"></td><td><pre>https://cdn.jsdelivr.net/gh/账户名/仓库名/</pre></td></tr></table></figure><div class="note info">
+<p>如果成功了是以下的样子，如果没出现，等几分钟再刷新一下</p>
+</div>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204081149.jpg" alt=""></p>
+<div class="note info">
+<p>这个 <code>url</code>  和 <code>root</code>  是不用管的，一开始我是设置 <code>url</code>  的，但是网站没有出现样式，访问 <code>cdn</code>  的时候返回是无定义</p>
+</div>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204081142.jpg" alt=""></p>
+<div class="note info">
+<p>如果样式还是没出现，打开你网站， <code>F12</code>  调试一下，修改一下你的 <code>CSS</code>  路径，看看是哪里出问题，看报错信息是什么</p>
+</div>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204081152.jpg" alt=""></p>
+<div class="note info">
+<p>如果是出现这个错误，说明你的 <code>statics</code>  路径填错了，找不到你的路径文件</p>
+</div>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204081154.jpg" alt=""></p>
+<div class="note warning">
+<p>以上如有错误，欢迎留言指出</p>
+</div>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>技术杂谈</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>GitHub使用技巧</title>
     <url>/9b0876ac.html</url>
     <content><![CDATA[<h2 id="高级搜索"><a class="markdownIt-Anchor" href="#高级搜索">#</a> 高级搜索</h2>
@@ -411,43 +464,6 @@
       </categories>
       <tags>
         <tag>Andriod</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>为博客添加免费的CDN加速</title>
-    <url>/edaa94fb.html</url>
-    <content><![CDATA[<h2 id="设置statics"><a class="markdownIt-Anchor" href="#设置statics">#</a> 设置 <code>statics</code></h2>
-<p>在根目录或者 <code>themes</code>  下 <code>_config.yml</code>  文件下配置</p>
-<figure class="highlight yaml"><figcaption data-lang="YAML"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token key atrule">格式：statics</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//cdn.jsdelivr.net/gh/账户名/仓库名/</pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token key atrule">statics</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//cdn.jsdelivr.net/gh/0000rookie/github.io/</pre></td></tr></table></figure><p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204081139.jpg" alt=""></p>
-<h2 id="刷新cdnjsdelivr"><a class="markdownIt-Anchor" href="#刷新cdnjsdelivr">#</a> 刷新 <code>CDN.jsDelivr</code></h2>
-<p>打开浏览器输入你 <code>statics</code>  的资源路径，回车刷新一下。</p>
-<figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tr><td data-num="1"></td><td><pre>https://cdn.jsdelivr.net/gh/0000rookie/github.io/</pre></td></tr><tr><td data-num="2"></td><td><pre>https://cdn.jsdelivr.net/gh/账户名/仓库名/</pre></td></tr></table></figure><div class="note info">
-<p>如果成功了是以下的样子，如果没出现，等几分钟再刷新一下</p>
-</div>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204081149.jpg" alt=""></p>
-<div class="note info">
-<p>这个 <code>url</code>  和 <code>root</code>  是不用管的，一开始我是设置 <code>url</code>  的，但是网站没有出现样式，访问 <code>cdn</code>  的时候返回是无定义</p>
-</div>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204081142.jpg" alt=""></p>
-<div class="note info">
-<p>如果样式还是没出现，打开你网站， <code>F12</code>  调试一下，修改一下你的 <code>CSS</code>  路径，看看是哪里出问题，看报错信息是什么</p>
-</div>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204081152.jpg" alt=""></p>
-<div class="note info">
-<p>如果是出现这个错误，说明你的 <code>statics</code>  路径填错了，找不到你的路径文件</p>
-</div>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204081154.jpg" alt=""></p>
-<div class="note warning">
-<p>以上如有错误，欢迎留言指出</p>
-</div>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>技术杂谈</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>教程</tag>
       </tags>
   </entry>
   <entry>
@@ -527,18 +543,6 @@
       </tags>
   </entry>
   <entry>
-    <title>学习注册表</title>
-    <url>/16ad79ec.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>技术杂谈</category>
-      </categories>
-      <tags>
-        <tag>技术杂谈</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>这是大二下的各科作业</title>
     <url>/2b5f7ebb.html</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，这个密码看着不太对，请再试试" data-whm="抱歉，这个文章不能被纠正，不过您还是能看看解密后的内容">
@@ -559,19 +563,40 @@
       </categories>
   </entry>
   <entry>
-    <title>QQ/微信/支付宝 收款码美化</title>
-    <url>/ee3e214f.html</url>
-    <content><![CDATA[<p>有时候想贴个二维码出来，但是觉得这个二维码太丑了，然后就发现了个神奇的网站，叫<span class="exturl" data-url="aHR0cHM6Ly9jbGkuaW0v">草料二维码</span></p>
-<p>可以美化微信、支付宝、钉钉等二维码，文字转二维码等等功能，各种各样。</p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204120247.jpeg" alt=""></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204120248.jpeg" alt=""></p>
-]]></content>
+    <title>学习注册表</title>
+    <url>/16ad79ec.html</url>
+    <content><![CDATA[]]></content>
       <categories>
-        <category>生活</category>
-        <category>好物推荐</category>
+        <category>计算机科学</category>
+        <category>技术杂谈</category>
       </categories>
       <tags>
-        <tag>一个小技巧</tag>
+        <tag>技术杂谈</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>私の夢-作文</title>
+    <url>/39c6cce6.html</url>
+    <content><![CDATA[<h2 id="私の夢-作文"><a class="markdownIt-Anchor" href="#私の夢-作文">#</a> 私の夢－作文</h2>
+<p>​	<ruby>私<rp>【</rp><rt>わたし</rt><rp>】</rp></ruby>たちは<ruby>自分<rp>【</rp><rt>じぶん</rt><rp>】</rp></ruby>の<ruby>夢<rp>【</rp><rt>ゆめ</rt><rp>】</rp></ruby>もいます。<ruby>音楽家<rp>【</rp><rt>おんがくか</rt><rp>】</rp></ruby>になりたい人がいます。<ruby>科学家<rp>【</rp><rt>かがくしゃ</rt><rp>】</rp></ruby>になりたい人もいます。私に言わせれば、私はプログラマーへになりたいです。</p>
+<p>​	<ruby>私<rp>【</rp><rt>わたし</rt><rp>】</rp>の<rt></rt>夢<rp>【</rp><rt>ゆめ</rt><rp>】</rp></ruby>のプログラマーへは、やりたいことをすることができます。<ruby>例<rp>【</rp><rt>たと</rt><rp>】</rp>えば<rt></rt></ruby>、<ruby>自分<rp>【</rp><rt>じぶん</rt><rp>】</rp></ruby>のコンピュータのデスクトップが<ruby>乱雑<rp>【</rp><rt>らんざつ</rt><rp>】</rp></ruby>です。<ruby>私<rp>【</rp><rt>わたし</rt><rp>】</rp></ruby>はプログラムーを<ruby>作成<rp>【</rp><rt>さくせい</rt><rp>】</rp>する<rt></rt></ruby>ことできて、デスクトップを<ruby>整然<rp>【</rp><rt>せいぜん</rt><rp>】</rp>と<rt></rt></ruby>します。</p>
+<p>​	でうから、<ruby>私<rp>【</rp><rt>わたし</rt><rp>】</rp>の<rt></rt>夢<rp>【</rp><rt>ゆめ</rt><rp>】</rp></ruby>はプログラマーへになりたいです。</p>
+<div class="note info">
+<p>译文:</p>
+</div>
+<blockquote>
+<p>​	我们都有自己的梦，有的人想成为音乐家，有的人想成为科学家，对我来说，我想成为程序员。</p>
+<p>​	我梦想的程序员是可以做自己想做的事。例如，自己的电脑桌面乱了，自己可以编写程序整理桌面，使桌面变得整洁。</p>
+<p>​	所以，我的梦想是成为一名程序员。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>基础学科</category>
+        <category>外语</category>
+        <category>日语</category>
+      </categories>
+      <tags>
+        <tag>外语</tag>
       </tags>
   </entry>
   <entry>
@@ -595,6 +620,52 @@
         <category>计算机科学</category>
         <category>博客</category>
         <category>博客的食用方法</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo怎么安装插件</title>
+    <url>/c5de56d5.html</url>
+    <content><![CDATA[<hr>
+<h3 id="hexo怎么安装插件"><a class="markdownIt-Anchor" href="#hexo怎么安装插件">#</a> hexo 怎么安装插件</h3>
+<ol>
+<li>
+<p>打开 hexo 的根目录 <code>Blog</code></p>
+</li>
+<li>
+<p>输入安装地址 (此处我以安装 <code>npm i hexo-algoliasearch</code>  测试)</p>
+<figure class="highlight bash"><figcaption data-lang="bash"><span>npm安装</span></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">npm</span> i hexo-algoliasearch</pre></td></tr></table></figure></li>
+<li>
+<p>安装成功</p>
+</li>
+</ol>
+<p><img data-src="https://tva4.sinaimg.cn/large/0065wfS6ly8h0ntxuxa0oj30jo09njsv.jpg" alt="" title="在Blog打开cmd" height="65%" width="65%"></p>
+<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0ntxktk9zj30cr02gjrc.jpg" alt="" title="在cmd输入安装路径" height="65%" width="65%"></p>
+<p><img data-src="https://tva3.sinaimg.cn/large/0065wfS6ly8h0nty14h5oj30lh07s0tg.jpg" alt="" title="END" height="65%" width="65%"></p>
+<h3 id="hexo怎么卸载插件"><a class="markdownIt-Anchor" href="#hexo怎么卸载插件">#</a> Hexo 怎么卸载插件</h3>
+<ol>
+<li>
+<p>卸载也是在 <code>Blog</code>  打开 cmd，输入 <code>npm uninstall 插件名 --save</code>  即可</p>
+</li>
+<li>
+<p>或者简洁一点 <code>npm un 插件名 --save</code></p>
+</li>
+<li>
+<p>举个例子，我要卸载 <code>hexo-renderer-marked</code>  这个插件</p>
+</li>
+<li>
+<p>在 cmd 输入</p>
+<figure class="highlight bash"><figcaption data-lang="bash"><span>h 插件卸载 </span></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">npm</span> un hexo-renderer-marked --save</pre></td></tr></table></figure></li>
+</ol>
+<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0ntxxz7wqj30lk0650t3.jpg" alt="" title="卸载插件" height="75%" width="75%"></p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>博客</category>
+        <category>模块</category>
       </categories>
       <tags>
         <tag>博客</tag>
@@ -677,160 +748,6 @@
         <category>计算机科学</category>
         <category>博客</category>
         <category>博客的食用方法</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>文章Front-Matter参数设置</title>
-    <url>/a7032750.html</url>
-    <content><![CDATA[<h2 id="h2so4front-matter详解"><a class="markdownIt-Anchor" href="#h2so4front-matter详解">#</a> <span class="red">H<sub>2</sub>SO<sub>4</sub></span>Front-Matter 详解</h2>
-<figure class="highlight markdown"><figcaption data-lang="markdown"><span>n</span></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>title: 文章Front-Matter参数设置  	#文章标题</pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>tags: 							#文章标签</pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>  <span class="token list punctuation">-</span> 博客</pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre>  <span class="token list punctuation">-</span> 教程</pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre>categories:						#文章分类</pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre>  <span class="token list punctuation">-</span> 计算机科学</pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre>  <span class="token list punctuation">-</span> 博客</pre></td></tr><tr class="marked"><td data-num="8"></td><td><pre>sticky: true 					#文章置顶</pre></td></tr><tr><td data-num="9"></td><td><pre>comments: true  				#开启评论</pre></td></tr><tr><td data-num="10"></td><td><pre>audio: false					#关闭音乐播放器</pre></td></tr><tr><td data-num="11"></td><td><pre>date: 2022-04-04 14:22:16  		#文章创建时间，自动生成，或者自己修改时间也可以</pre></td></tr></table></figure><hr>
-<div class="note warning">
-<p>以上如有错误，欢迎留言指出</p>
-</div>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>博客</category>
-        <category>博客的食用方法</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>如何在hexo博客写作</title>
-    <url>/b26ff49b.html</url>
-    <content><![CDATA[<h2 id="前言"><a class="markdownIt-Anchor" href="#前言">#</a> 前言</h2>
-<p><code>hexo</code>  采用的是 <code>markdown</code>  语言的轻量级标记语言，写作时使用 <code>markdown</code> ，它的后缀名是 <code>.md</code>  在 hexo 部署的时候， <code>hexo</code>  会渲染 <code>md文件</code> 形成 <code>HTML</code> ，可以大量减少写作排版时间，从而更加专注写作，而不是专注于排版内容。</p>
-<p>如果你不会 <code>markdown</code>  语言甚至都没听过，没关系， <code>markdown</code>  是一种非常简单的语言，他的语法只有十几种，常用的就不到十来个，非常容易入手，一般人半小时就能学会，下面是官网，你可以自行去了解一下学习一下语法。</p>
-<div class="links"><div class="item" title="Markdown官网" style="--block-color:#FBDE99;"><span class="exturl image" data-url="aHR0cHM6Ly9tYXJrZG93bi5jb20uY24v" data-background-image="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204131202.png"></span>
-          <div class="info">
-          <span class="exturl title" data-url="aHR0cHM6Ly9tYXJrZG93bi5jb20uY24v">Markdown官网</span>
-          <p class="desc">轻量级标记语言</p>
-          </div></div><div class="item" title="Typora官网" style="--block-color:#FDBF5C;"><span class="exturl image" data-url="aHR0cHM6Ly9zdXBwb3J0LnR5cG9yYWlvLmNuL3poL01hcmtkb3duLVJlZmVyZW5jZS8=" data-background-image="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204131213.png"></span>
-          <div class="info">
-          <span class="exturl title" data-url="aHR0cHM6Ly9zdXBwb3J0LnR5cG9yYWlvLmNuL3poL01hcmtkb3duLVJlZmVyZW5jZS8=">Typora官网</span>
-          <p class="desc">支持markdown语法</p>
-          </div></div><div class="item" title="Typora软件下载" style="--block-color:#6AD0CB;"><span class="exturl image" data-url="aHR0cHM6Ly9zdXBwb3J0LnR5cG9yYWlvLmNuLw==" data-background-image="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204131213.png"></span>
-          <div class="info">
-          <span class="exturl title" data-url="aHR0cHM6Ly9zdXBwb3J0LnR5cG9yYWlvLmNuLw==">Typora软件下载</span>
-          <p class="desc">官网下载</p>
-          </div></div></div>
-<hr>
-<p>在这里我使用的是 <code>typora</code> ，如果你有需要，可以去官网下一个，或者你用文本编辑器写作也是可以的， <code>Typora</code>  从 <code>V1.0</code>  版本之后就开始收费了，可以下载 <code>V1.0</code>  之前的版本。</p>
-<p><code>Typora</code>  是一个 <code>markdown</code>  编辑器，极简的风格，让你专注于写作.</p>
-<h2 id="如何创建第一篇文章"><a class="markdownIt-Anchor" href="#如何创建第一篇文章">#</a> 如何创建第一篇文章</h2>
-<h3 id="打开git-bash"><a class="markdownIt-Anchor" href="#打开git-bash">#</a> 打开 git bash</h3>
-<p>在你的博客下打开 <code>git bash here</code></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/202204.jpeg" alt=""></p>
-<h3 id="输入指令"><a class="markdownIt-Anchor" href="#输入指令">#</a> 输入指令</h3>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token comment"># hexo new 文章标题</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token operator">>></span><span class="token operator">></span> hexo new 如何在hexo博客写作</pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre><span class="token comment"># 或者是</span></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre><span class="token comment"># hexo new 文章标题 --path 路径 / 文件名.md</span></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre><span class="token comment"># 或者可以简写一下</span></pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre><span class="token comment"># hexo new 文章标题 -p 路径 / 文件名.md</span></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token operator">>></span><span class="token operator">></span> hexo new <span class="token string">"如何在hexo博客写作"</span> -p 计算机科学/博客/如何在hexo博客写作.md</pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token comment"># tips：如果不设置路径的话，新建文章是默认存储在 \source\_posts\ 这个路径下的。</span></pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token comment"># tips：一般在标题下有空格或者其他字符要给标题加上双引号</span></pre></td></tr></table></figure><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/02.jpg" alt=""></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/03.jpg" alt=""></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/04.jpg" alt=""></p>
-<figure class="highlight yaml"><figcaption data-lang="YAML"><span>mark: 1,2-9</span></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment"># Front——matter 格式</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token key atrule">title</span><span class="token punctuation">:</span> 如何在hexo博客写作 			<span class="token comment">#文章标题</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token key atrule">date</span><span class="token punctuation">:</span> <span class="token datetime number">2022-04-13 11:52:06</span>			<span class="token comment">#文章创建时间</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token key atrule">tags</span><span class="token punctuation">:</span>						<span class="token comment">#文章标签</span></pre></td></tr><tr><td data-num="5"></td><td><pre>  <span class="token punctuation">-</span> 博客</pre></td></tr><tr><td data-num="6"></td><td><pre>  <span class="token punctuation">-</span> 每日一更</pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token key atrule">categories</span><span class="token punctuation">:</span> 					<span class="token comment">#文章类别</span></pre></td></tr><tr><td data-num="8"></td><td><pre>  <span class="token punctuation">-</span> 计算机科学</pre></td></tr><tr><td data-num="9"></td><td><pre>  <span class="token punctuation">-</span> 博客</pre></td></tr><tr><td data-num="10"></td><td><pre>  <span class="token punctuation">-</span> 博客的食用方法</pre></td></tr></table></figure><h3 id="发布文章"><a class="markdownIt-Anchor" href="#发布文章">#</a> 发布文章</h3>
-<p>当你文章写完了，想发布到博客上面，先要把文章部署到 <code>github</code>  上面，然后打开你的博客，博客就会读取 <code>github</code>  仓库的内容了。</p>
-<figure class="highlight bash"><figcaption data-lang="bash"><span>mark: 1,2-7</span></figcaption><table><tr><td data-num="1"></td><td><pre>hexo clean</pre></td></tr><tr><td data-num="2"></td><td><pre> hexo g</pre></td></tr><tr><td data-num="3"></td><td><pre> hexo d</pre></td></tr><tr><td data-num="4"></td><td><pre> <span class="token comment"># 逐步输入以上三条指令，执行完再输入下一条</span></pre></td></tr><tr><td data-num="5"></td><td><pre> <span class="token comment"># 或者一次性输入三条也是可以的，但新手还不建议一次性输入，前期部署可能有时候容易出错</span></pre></td></tr><tr><td data-num="6"></td><td><pre> hexo clean <span class="token operator">&amp;&amp;</span> hexo g <span class="token operator">&amp;&amp;</span> hexo d</pre></td></tr><tr><td data-num="7"></td><td><pre> <span class="token comment"># 部署完了看一下窗口没有出现报错就可以去博客刷新一下内容了，一般需要几分钟才更新内容</span></pre></td></tr></table></figure><p>到这里，就是 <code>hexo</code>  正常的写作顺序啦</p>
-<div class="note info">
-<p>以上如有错误，欢迎指出</p>
-</div>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>博客</category>
-        <category>博客的食用方法</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo怎么安装插件</title>
-    <url>/c5de56d5.html</url>
-    <content><![CDATA[<hr>
-<h3 id="hexo怎么安装插件"><a class="markdownIt-Anchor" href="#hexo怎么安装插件">#</a> hexo 怎么安装插件</h3>
-<ol>
-<li>
-<p>打开 hexo 的根目录 <code>Blog</code></p>
-</li>
-<li>
-<p>输入安装地址 (此处我以安装 <code>npm i hexo-algoliasearch</code>  测试)</p>
-<figure class="highlight bash"><figcaption data-lang="bash"><span>npm安装</span></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">npm</span> i hexo-algoliasearch</pre></td></tr></table></figure></li>
-<li>
-<p>安装成功</p>
-</li>
-</ol>
-<p><img data-src="https://tva4.sinaimg.cn/large/0065wfS6ly8h0ntxuxa0oj30jo09njsv.jpg" alt="" title="在Blog打开cmd" height="65%" width="65%"></p>
-<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0ntxktk9zj30cr02gjrc.jpg" alt="" title="在cmd输入安装路径" height="65%" width="65%"></p>
-<p><img data-src="https://tva3.sinaimg.cn/large/0065wfS6ly8h0nty14h5oj30lh07s0tg.jpg" alt="" title="END" height="65%" width="65%"></p>
-<h3 id="hexo怎么卸载插件"><a class="markdownIt-Anchor" href="#hexo怎么卸载插件">#</a> Hexo 怎么卸载插件</h3>
-<ol>
-<li>
-<p>卸载也是在 <code>Blog</code>  打开 cmd，输入 <code>npm uninstall 插件名 --save</code>  即可</p>
-</li>
-<li>
-<p>或者简洁一点 <code>npm un 插件名 --save</code></p>
-</li>
-<li>
-<p>举个例子，我要卸载 <code>hexo-renderer-marked</code>  这个插件</p>
-</li>
-<li>
-<p>在 cmd 输入</p>
-<figure class="highlight bash"><figcaption data-lang="bash"><span>h 插件卸载 </span></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">npm</span> un hexo-renderer-marked --save</pre></td></tr></table></figure></li>
-</ol>
-<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0ntxxz7wqj30lk0650t3.jpg" alt="" title="卸载插件" height="75%" width="75%"></p>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>博客</category>
-        <category>模块</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>搭建GitHu图床</title>
-    <url>/e85071ad.html</url>
-    <content><![CDATA[<p><strong>问：什么是图床？图床有什么用？</strong></p>
-<p><strong>答：图床就是一个存放你照片的云盘，只要有网络就能打开这张照片</strong></p>
-<h2 id="新建一个仓库"><a class="markdownIt-Anchor" href="#新建一个仓库">#</a> 新建一个仓库</h2>
-<p><strong>用于存放图片的仓库</strong>  俗称图床<br>
-<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021048.jpg" alt=""></p>
-<h2 id="给你图床起个名字"><a class="markdownIt-Anchor" href="#给你图床起个名字">#</a> 给你图床起个名字</h2>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021050.jpg" alt=""></p>
-<h2 id="新建token"><a class="markdownIt-Anchor" href="#新建token">#</a> 新建 token</h2>
-<p><code>settings---&gt;Developer settings---&gt;Personal access tokens---&gt;generate new token</code> <br>
-<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021051.jpg" alt=""><br>
-<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021059.jpg" alt=""><br>
-<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021100.jpg" alt=""><br>
-<em> 这边给大家翻译一下，英文不是很好可以看看</em><br>
-<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021102.jpg" alt=""><br>
-<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021103.jpg" alt=""></p>
-<p><strong>点击复制</strong></p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021105.jpg" alt=""></p>
-<h2 id="配置picgo"><a class="markdownIt-Anchor" href="#配置picgo">#</a> 配置 Picgo</h2>
-<div class="note info">
-<p><strong>我在 imgs 仓库下新建了一个 Hexoimgs 文件夹</strong></p>
-</div>
-<p>粘贴刚刚复制的 <code>token</code>  到 <code>设定Token</code></p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021133.jpg" alt=""></p>
-<p>你 <code>github</code>  上的分支名是什么， <code>PicGO的</code> 设定分支名就写什么</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021131.jpg" alt=""></p>
-<p><strong>设定自定义域名：</strong> <code>0000rookie/imgs</code>  改成你的 <code>用户名/仓库名</code></p>
-<figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tr><td data-num="1"></td><td><pre>http://cdn.jsdelivr.net/gh/0000rookie/imgs</pre></td></tr></table></figure><div class="note success">
-<p><strong>你的图床就搭建完啦</strong></p>
-</div>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>博客</category>
-        <category>模块</category>
       </categories>
       <tags>
         <tag>博客</tag>
@@ -991,6 +908,181 @@
       <tags>
         <tag>博客</tag>
         <tag>记录</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>搭建GitHu图床</title>
+    <url>/e85071ad.html</url>
+    <content><![CDATA[<p><strong>问：什么是图床？图床有什么用？</strong></p>
+<p><strong>答：图床就是一个存放你照片的云盘，只要有网络就能打开这张照片</strong></p>
+<h2 id="新建一个仓库"><a class="markdownIt-Anchor" href="#新建一个仓库">#</a> 新建一个仓库</h2>
+<p><strong>用于存放图片的仓库</strong>  俗称图床<br>
+<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021048.jpg" alt=""></p>
+<h2 id="给你图床起个名字"><a class="markdownIt-Anchor" href="#给你图床起个名字">#</a> 给你图床起个名字</h2>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021050.jpg" alt=""></p>
+<h2 id="新建token"><a class="markdownIt-Anchor" href="#新建token">#</a> 新建 token</h2>
+<p><code>settings---&gt;Developer settings---&gt;Personal access tokens---&gt;generate new token</code> <br>
+<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021051.jpg" alt=""><br>
+<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021059.jpg" alt=""><br>
+<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021100.jpg" alt=""><br>
+<em> 这边给大家翻译一下，英文不是很好可以看看</em><br>
+<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021102.jpg" alt=""><br>
+<img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021103.jpg" alt=""></p>
+<p><strong>点击复制</strong></p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021105.jpg" alt=""></p>
+<h2 id="配置picgo"><a class="markdownIt-Anchor" href="#配置picgo">#</a> 配置 Picgo</h2>
+<div class="note info">
+<p><strong>我在 imgs 仓库下新建了一个 Hexoimgs 文件夹</strong></p>
+</div>
+<p>粘贴刚刚复制的 <code>token</code>  到 <code>设定Token</code></p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021133.jpg" alt=""></p>
+<p>你 <code>github</code>  上的分支名是什么， <code>PicGO的</code> 设定分支名就写什么</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204021131.jpg" alt=""></p>
+<p><strong>设定自定义域名：</strong> <code>0000rookie/imgs</code>  改成你的 <code>用户名/仓库名</code></p>
+<figure class="highlight html"><figcaption data-lang="HTML"></figcaption><table><tr><td data-num="1"></td><td><pre>http://cdn.jsdelivr.net/gh/0000rookie/imgs</pre></td></tr></table></figure><div class="note success">
+<p><strong>你的图床就搭建完啦</strong></p>
+</div>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>博客</category>
+        <category>模块</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何在hexo博客写作</title>
+    <url>/b26ff49b.html</url>
+    <content><![CDATA[<h2 id="前言"><a class="markdownIt-Anchor" href="#前言">#</a> 前言</h2>
+<p><code>hexo</code>  采用的是 <code>markdown</code>  语言的轻量级标记语言，写作时使用 <code>markdown</code> ，它的后缀名是 <code>.md</code>  在 hexo 部署的时候， <code>hexo</code>  会渲染 <code>md文件</code> 形成 <code>HTML</code> ，可以大量减少写作排版时间，从而更加专注写作，而不是专注于排版内容。</p>
+<p>如果你不会 <code>markdown</code>  语言甚至都没听过，没关系， <code>markdown</code>  是一种非常简单的语言，他的语法只有十几种，常用的就不到十来个，非常容易入手，一般人半小时就能学会，下面是官网，你可以自行去了解一下学习一下语法。</p>
+<div class="links"><div class="item" title="Markdown官网" style="--block-color:#FBDE99;"><span class="exturl image" data-url="aHR0cHM6Ly9tYXJrZG93bi5jb20uY24v" data-background-image="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204131202.png"></span>
+          <div class="info">
+          <span class="exturl title" data-url="aHR0cHM6Ly9tYXJrZG93bi5jb20uY24v">Markdown官网</span>
+          <p class="desc">轻量级标记语言</p>
+          </div></div><div class="item" title="Typora官网" style="--block-color:#FDBF5C;"><span class="exturl image" data-url="aHR0cHM6Ly9zdXBwb3J0LnR5cG9yYWlvLmNuL3poL01hcmtkb3duLVJlZmVyZW5jZS8=" data-background-image="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204131213.png"></span>
+          <div class="info">
+          <span class="exturl title" data-url="aHR0cHM6Ly9zdXBwb3J0LnR5cG9yYWlvLmNuL3poL01hcmtkb3duLVJlZmVyZW5jZS8=">Typora官网</span>
+          <p class="desc">支持markdown语法</p>
+          </div></div><div class="item" title="Typora软件下载" style="--block-color:#6AD0CB;"><span class="exturl image" data-url="aHR0cHM6Ly9zdXBwb3J0LnR5cG9yYWlvLmNuLw==" data-background-image="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204131213.png"></span>
+          <div class="info">
+          <span class="exturl title" data-url="aHR0cHM6Ly9zdXBwb3J0LnR5cG9yYWlvLmNuLw==">Typora软件下载</span>
+          <p class="desc">官网下载</p>
+          </div></div></div>
+<hr>
+<p>在这里我使用的是 <code>typora</code> ，如果你有需要，可以去官网下一个，或者你用文本编辑器写作也是可以的， <code>Typora</code>  从 <code>V1.0</code>  版本之后就开始收费了，可以下载 <code>V1.0</code>  之前的版本。</p>
+<p><code>Typora</code>  是一个 <code>markdown</code>  编辑器，极简的风格，让你专注于写作.</p>
+<h2 id="如何创建第一篇文章"><a class="markdownIt-Anchor" href="#如何创建第一篇文章">#</a> 如何创建第一篇文章</h2>
+<h3 id="打开git-bash"><a class="markdownIt-Anchor" href="#打开git-bash">#</a> 打开 git bash</h3>
+<p>在你的博客下打开 <code>git bash here</code></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/202204.jpeg" alt=""></p>
+<h3 id="输入指令"><a class="markdownIt-Anchor" href="#输入指令">#</a> 输入指令</h3>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token comment"># hexo new 文章标题</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token operator">>></span><span class="token operator">></span> hexo new 如何在hexo博客写作</pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre><span class="token comment"># 或者是</span></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre><span class="token comment"># hexo new 文章标题 --path 路径 / 文件名.md</span></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre><span class="token comment"># 或者可以简写一下</span></pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre><span class="token comment"># hexo new 文章标题 -p 路径 / 文件名.md</span></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token operator">>></span><span class="token operator">></span> hexo new <span class="token string">"如何在hexo博客写作"</span> -p 计算机科学/博客/如何在hexo博客写作.md</pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token comment"># tips：如果不设置路径的话，新建文章是默认存储在 \source\_posts\ 这个路径下的。</span></pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token comment"># tips：一般在标题下有空格或者其他字符要给标题加上双引号</span></pre></td></tr></table></figure><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/02.jpg" alt=""></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/03.jpg" alt=""></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/04.jpg" alt=""></p>
+<figure class="highlight yaml"><figcaption data-lang="YAML"><span>mark: 1,2-9</span></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment"># Front——matter 格式</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token key atrule">title</span><span class="token punctuation">:</span> 如何在hexo博客写作 			<span class="token comment">#文章标题</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token key atrule">date</span><span class="token punctuation">:</span> <span class="token datetime number">2022-04-13 11:52:06</span>			<span class="token comment">#文章创建时间</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token key atrule">tags</span><span class="token punctuation">:</span>						<span class="token comment">#文章标签</span></pre></td></tr><tr><td data-num="5"></td><td><pre>  <span class="token punctuation">-</span> 博客</pre></td></tr><tr><td data-num="6"></td><td><pre>  <span class="token punctuation">-</span> 每日一更</pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token key atrule">categories</span><span class="token punctuation">:</span> 					<span class="token comment">#文章类别</span></pre></td></tr><tr><td data-num="8"></td><td><pre>  <span class="token punctuation">-</span> 计算机科学</pre></td></tr><tr><td data-num="9"></td><td><pre>  <span class="token punctuation">-</span> 博客</pre></td></tr><tr><td data-num="10"></td><td><pre>  <span class="token punctuation">-</span> 博客的食用方法</pre></td></tr></table></figure><h3 id="发布文章"><a class="markdownIt-Anchor" href="#发布文章">#</a> 发布文章</h3>
+<p>当你文章写完了，想发布到博客上面，先要把文章部署到 <code>github</code>  上面，然后打开你的博客，博客就会读取 <code>github</code>  仓库的内容了。</p>
+<figure class="highlight bash"><figcaption data-lang="bash"><span>mark: 1,2-7</span></figcaption><table><tr><td data-num="1"></td><td><pre>hexo clean</pre></td></tr><tr><td data-num="2"></td><td><pre> hexo g</pre></td></tr><tr><td data-num="3"></td><td><pre> hexo d</pre></td></tr><tr><td data-num="4"></td><td><pre> <span class="token comment"># 逐步输入以上三条指令，执行完再输入下一条</span></pre></td></tr><tr><td data-num="5"></td><td><pre> <span class="token comment"># 或者一次性输入三条也是可以的，但新手还不建议一次性输入，前期部署可能有时候容易出错</span></pre></td></tr><tr><td data-num="6"></td><td><pre> hexo clean <span class="token operator">&amp;&amp;</span> hexo g <span class="token operator">&amp;&amp;</span> hexo d</pre></td></tr><tr><td data-num="7"></td><td><pre> <span class="token comment"># 部署完了看一下窗口没有出现报错就可以去博客刷新一下内容了，一般需要几分钟才更新内容</span></pre></td></tr></table></figure><p>到这里，就是 <code>hexo</code>  正常的写作顺序啦</p>
+<div class="note info">
+<p>以上如有错误，欢迎指出</p>
+</div>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>博客</category>
+        <category>博客的食用方法</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>文章Front-Matter参数设置</title>
+    <url>/a7032750.html</url>
+    <content><![CDATA[<h2 id="h2so4front-matter详解"><a class="markdownIt-Anchor" href="#h2so4front-matter详解">#</a> <span class="red">H<sub>2</sub>SO<sub>4</sub></span>Front-Matter 详解</h2>
+<figure class="highlight markdown"><figcaption data-lang="markdown"><span>n</span></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>title: 文章Front-Matter参数设置  	#文章标题</pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>tags: 							#文章标签</pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>  <span class="token list punctuation">-</span> 博客</pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre>  <span class="token list punctuation">-</span> 教程</pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre>categories:						#文章分类</pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre>  <span class="token list punctuation">-</span> 计算机科学</pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre>  <span class="token list punctuation">-</span> 博客</pre></td></tr><tr class="marked"><td data-num="8"></td><td><pre>sticky: true 					#文章置顶</pre></td></tr><tr><td data-num="9"></td><td><pre>comments: true  				#开启评论</pre></td></tr><tr><td data-num="10"></td><td><pre>audio: false					#关闭音乐播放器</pre></td></tr><tr><td data-num="11"></td><td><pre>date: 2022-04-04 14:22:16  		#文章创建时间，自动生成，或者自己修改时间也可以</pre></td></tr></table></figure><hr>
+<div class="note warning">
+<p>以上如有错误，欢迎留言指出</p>
+</div>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>博客</category>
+        <category>博客的食用方法</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何给PicGo添加水印</title>
+    <url>/2fbd98c3.html</url>
+    <content><![CDATA[<p>在运营独立博客的时候，自己原创的文章，经常会被别人转载，又没有标明原作者地址，导致原创作者流量流失了一部分，如果可以标记原创是自己的话，那就非常方便了，比如说加个水印就好一点。刚好 <code>PicGo</code>  有个插件 <code>watermark</code>  可以给突破加水印，这就很方便了，不用上传图片自己还要去添加一个水印。</p>
+<h2 id="安装watermark"><a class="markdownIt-Anchor" href="#安装watermark">#</a> 安装 <code>watermark</code></h2>
+<p>安装 <code>watermark</code> ， <code>PicGo</code>  最低版本要 <code>2.2.0</code></p>
+<p>可以直接在 <code>PicGo</code>  插件设置下载</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204110022.jpeg" alt=""></p>
+<h2 id="配置watermark"><a class="markdownIt-Anchor" href="#配置watermark">#</a> 配置 <code>watermark</code></h2>
+<div class="note info">
+<p>有些同学可能在配置 watermark 一直出错，可以试着 <code>字体文件路径</code> 设置和我一样的，把文件拉进去就行</p>
+</div>
+<p>这里放上字体链接，有需要自取，字体来源于 <span class="exturl" data-url="aHR0cHM6Ly93d3cuZm9udHMubmV0LmNuL2ZvbnQtNDAwOTA5Njk5NjAuaHRtbD9wcmV2aWV3VGV4dD13d3cuaGlra2kuc2l0ZQ==">字体天下</span></p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204110023.jpeg" alt=""></p>
+<div class="note warning">
+<p>以上如果有侵害你的权益，请立即联系我</p>
+</div>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>技术杂谈</category>
+        <category>一个小技巧</category>
+      </categories>
+      <tags>
+        <tag>一个小技巧</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git详细使用方法</title>
+    <url>/43d2d741.html</url>
+    <content><![CDATA[<h2 id="初始化仓库"><a class="markdownIt-Anchor" href="#初始化仓库">#</a> 初始化仓库</h2>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">git</span> init 			<span class="token comment">#初始化当前文件夹为仓库，默认是 master 分支</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token function">git</span> <span class="token builtin class-name">help</span> -a 		<span class="token comment"># 显示完全的指令列表</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre><span class="token function">git</span> <span class="token function">add</span> text.txt 	<span class="token comment"># 添加 text.txt 文件加入到 Git 系统的索引中，tips: 可以使用通配符添加 “*” 和 “.”</span></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre><span class="token function">git</span> status			<span class="token comment"># 查看当前 Git 的状态，是否有新文件没有加入到 Git 索引中</span></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre><span class="token function">git</span> commit -m <span class="token string">"操作说明"</span> --author<span class="token operator">=</span><span class="token string">'操作者姓名'</span> --email<span class="token operator">=</span><span class="token string">'操作者邮箱'</span> <span class="token comment">#把已经添加到 Git 索引的所有文件到推送到 repository，一般我们在使用 github 的时候，就是通过这个指令把文件推送到 github 的</span></pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre>gitk 				<span class="token comment"># 启动图形界面查看 repository 有哪些文件</span></pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre><span class="token comment"># 一般在离开 git bash here 的时候习惯用 exit 结束，这样下次回来的时候可以恢复到原来的状态</span></pre></td></tr></table></figure><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204121821.jpeg" alt="" title="本地仓库提交都爱github仓库流程"></p>
+<p><code>config</code>  有三个基本配置的文件，他们分别有优先权之分。</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>.git/config					<span class="token comment">#优先权最高，存在于 Git 本地仓库下的.git 文件内</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>Administrator/.gitconfig	<span class="token comment">#其次，存在于你 PC 当前用户下</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>etc/gitconfig 				<span class="token comment">#优先权最低，存在 Git 安装软件的位置</span></pre></td></tr></table></figure><p><em>存在位置如图所示</em></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204121724.jpeg" alt="" title=".git/config"></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204121743.jpeg" alt="" title="Administrator/.gitconfig"></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204121723.jpeg" alt="" title="etc/gitconfig "></p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>技术杂谈</category>
+        <category>持续更新</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>添加开机自启程序</title>
+    <url>/2cc8588f.html</url>
+    <content><![CDATA[<h2 id="键盘点击winr"><a class="markdownIt-Anchor" href="#键盘点击winr">#</a> 键盘点击 <code>win+R</code></h2>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204071930.jpg" alt=""></p>
+<h2 id="在窗口输入shellstartup"><a class="markdownIt-Anchor" href="#在窗口输入shellstartup">#</a> 在窗口输入 <code>shell:startup</code></h2>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>shell:startup</pre></td></tr></table></figure><p><strong>打开是这个路径</strong>，把你想要开机自启的软件快捷方式拖到这个路径下，以后电脑开机就会自动启动这个程序了</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204071937.jpg" alt=""></p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204071936.jpg" alt=""></p>
+<div class="note warning">
+<p>以上如有错误，欢迎留言指出</p>
+</div>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>技术杂谈</category>
+        <category>一个小技巧</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+        <tag>生活小技巧</tag>
       </tags>
   </entry>
   <entry>
@@ -1507,6 +1599,62 @@
       </tags>
   </entry>
   <entry>
+    <title>第七篇：购买域名---从0基础搭建Hexo博客</title>
+    <url>/6c2393ec.html</url>
+    <content><![CDATA[<h2 id="购买域名"><a class="markdownIt-Anchor" href="#购买域名">#</a> 购买域名</h2>
+<p><strong>打开 [万网官网][<span class="exturl" data-url="aHR0cHM6Ly93YW53YW5nLmFsaXl1bi5jb20=">https://wanwang.aliyun.com</span>]</strong></p>
+<h3 id="注册账号"><a class="markdownIt-Anchor" href="#注册账号">#</a> 注册账号</h3>
+<ol>
+<li>我这里使用的是支付宝登录</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/rygEU1BWAnlkHLw.jpg" alt=""></p>
+<h3 id="输入域名"><a class="markdownIt-Anchor" href="#输入域名">#</a> 输入域名</h3>
+<ol start="2">
+<li>输入自己想要的域名，搜索</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/4CnXuINvtWgTe7Q.jpg" alt=""></p>
+<ol start="3">
+<li>
+<p><img data-src="https://s2.loli.net/2022/03/30/YVbD4TrPzAklFti.jpg" alt=""></p>
+</li>
+<li>
+<p>点击立即购买</p>
+</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/DeVr86NbnHGTs2d.jpg" alt=""></p>
+<ol start="5">
+<li>选择年限。一般第一次是有优惠的，但是你后期如果还想继续使用，续费就非常贵了，可以一次性购买几年或者是 10 年之类的。</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/cWOQ3Lakhi8V2Kt.jpg" alt=""></p>
+<ol start="6">
+<li>将域名持有者选为 “个人”</li>
+<li>新建信息模板</li>
+<li>选择你填的资料</li>
+<li>验证邮箱 (点击 <code>去验证</code> )</li>
+<li>立即购买</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/ykFrIJputCAawbq.jpg" alt=""></p>
+<p><img data-src="https://s2.loli.net/2022/03/30/93TRVgPZxYrnhA7.jpg" alt=""></p>
+<ol start="11">
+<li>支付成功，点击进入域名控制台</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/Q1JWYLqxVKmCshf.jpg" alt=""></p>
+<ol start="12">
+<li>等待审核。(我这边审核大概半小时就好了)</li>
+</ol>
+<p><img data-src="https://s2.loli.net/2022/03/30/KsrTi1u3pqna2Ue.jpg" alt=""></p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>博客</category>
+        <category>零基础搭建Hexo个人博客系列</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>零基础搭建Hexo个人博客系列</title>
     <url>/aaad0208.html</url>
     <content><![CDATA[<h3 id="零基础搭建hexo个人博客系列"><a class="markdownIt-Anchor" href="#零基础搭建hexo个人博客系列">#</a> 零基础搭建 Hexo 个人博客系列</h3>
@@ -1603,91 +1751,14 @@
       </tags>
   </entry>
   <entry>
-    <title>第七篇：购买域名---从0基础搭建Hexo博客</title>
-    <url>/6c2393ec.html</url>
-    <content><![CDATA[<h2 id="购买域名"><a class="markdownIt-Anchor" href="#购买域名">#</a> 购买域名</h2>
-<p><strong>打开 [万网官网][<span class="exturl" data-url="aHR0cHM6Ly93YW53YW5nLmFsaXl1bi5jb20=">https://wanwang.aliyun.com</span>]</strong></p>
-<h3 id="注册账号"><a class="markdownIt-Anchor" href="#注册账号">#</a> 注册账号</h3>
-<ol>
-<li>我这里使用的是支付宝登录</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/rygEU1BWAnlkHLw.jpg" alt=""></p>
-<h3 id="输入域名"><a class="markdownIt-Anchor" href="#输入域名">#</a> 输入域名</h3>
-<ol start="2">
-<li>输入自己想要的域名，搜索</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/4CnXuINvtWgTe7Q.jpg" alt=""></p>
-<ol start="3">
-<li>
-<p><img data-src="https://s2.loli.net/2022/03/30/YVbD4TrPzAklFti.jpg" alt=""></p>
-</li>
-<li>
-<p>点击立即购买</p>
-</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/DeVr86NbnHGTs2d.jpg" alt=""></p>
-<ol start="5">
-<li>选择年限。一般第一次是有优惠的，但是你后期如果还想继续使用，续费就非常贵了，可以一次性购买几年或者是 10 年之类的。</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/cWOQ3Lakhi8V2Kt.jpg" alt=""></p>
-<ol start="6">
-<li>将域名持有者选为 “个人”</li>
-<li>新建信息模板</li>
-<li>选择你填的资料</li>
-<li>验证邮箱 (点击 <code>去验证</code> )</li>
-<li>立即购买</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/ykFrIJputCAawbq.jpg" alt=""></p>
-<p><img data-src="https://s2.loli.net/2022/03/30/93TRVgPZxYrnhA7.jpg" alt=""></p>
-<ol start="11">
-<li>支付成功，点击进入域名控制台</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/Q1JWYLqxVKmCshf.jpg" alt=""></p>
-<ol start="12">
-<li>等待审核。(我这边审核大概半小时就好了)</li>
-</ol>
-<p><img data-src="https://s2.loli.net/2022/03/30/KsrTi1u3pqna2Ue.jpg" alt=""></p>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>博客</category>
-        <category>零基础搭建Hexo个人博客系列</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>私の夢-作文</title>
-    <url>/39c6cce6.html</url>
-    <content><![CDATA[<h2 id="私の夢-作文"><a class="markdownIt-Anchor" href="#私の夢-作文">#</a> 私の夢－作文</h2>
-<p>​	<ruby>私<rp>【</rp><rt>わたし</rt><rp>】</rp></ruby>たちは<ruby>自分<rp>【</rp><rt>じぶん</rt><rp>】</rp></ruby>の<ruby>夢<rp>【</rp><rt>ゆめ</rt><rp>】</rp></ruby>もいます。<ruby>音楽家<rp>【</rp><rt>おんがくか</rt><rp>】</rp></ruby>になりたい人がいます。<ruby>科学家<rp>【</rp><rt>かがくしゃ</rt><rp>】</rp></ruby>になりたい人もいます。私に言わせれば、私はプログラマーへになりたいです。</p>
-<p>​	<ruby>私<rp>【</rp><rt>わたし</rt><rp>】</rp>の<rt></rt>夢<rp>【</rp><rt>ゆめ</rt><rp>】</rp></ruby>のプログラマーへは、やりたいことをすることができます。<ruby>例<rp>【</rp><rt>たと</rt><rp>】</rp>えば<rt></rt></ruby>、<ruby>自分<rp>【</rp><rt>じぶん</rt><rp>】</rp></ruby>のコンピュータのデスクトップが<ruby>乱雑<rp>【</rp><rt>らんざつ</rt><rp>】</rp></ruby>です。<ruby>私<rp>【</rp><rt>わたし</rt><rp>】</rp></ruby>はプログラムーを<ruby>作成<rp>【</rp><rt>さくせい</rt><rp>】</rp>する<rt></rt></ruby>ことできて、デスクトップを<ruby>整然<rp>【</rp><rt>せいぜん</rt><rp>】</rp>と<rt></rt></ruby>します。</p>
-<p>​	でうから、<ruby>私<rp>【</rp><rt>わたし</rt><rp>】</rp>の<rt></rt>夢<rp>【</rp><rt>ゆめ</rt><rp>】</rp></ruby>はプログラマーへになりたいです。</p>
+    <title>JAVA记事本基础</title>
+    <url>/fb13f705.html</url>
+    <content><![CDATA[<h2 id="java记事本"><a class="markdownIt-Anchor" href="#java记事本">#</a> Java 记事本</h2>
 <div class="note info">
-<p>译文:</p>
+<p>适合刚入门 Java 基础不好的同学</p>
 </div>
-<blockquote>
-<p>​	我们都有自己的梦，有的人想成为音乐家，有的人想成为科学家，对我来说，我想成为程序员。</p>
-<p>​	我梦想的程序员是可以做自己想做的事。例如，自己的电脑桌面乱了，自己可以编写程序整理桌面，使桌面变得整洁。</p>
-<p>​	所以，我的梦想是成为一名程序员。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>基础学科</category>
-        <category>外语</category>
-        <category>日语</category>
-      </categories>
-      <tags>
-        <tag>外语</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>javase程序国际化</title>
-    <url>/b2cc2eb5.html</url>
-    <content><![CDATA[<pre><code class="language-java"></code></pre>
-]]></content>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022052729.jpeg" alt=""></p>
+<figure class="highlight java"><figcaption data-lang="java"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token keyword">package</span> <span class="token namespace">cn<span class="token punctuation">.</span>edu<span class="token punctuation">.</span>seig<span class="token punctuation">.</span>home</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>awt<span class="token punctuation">.</span></span><span class="token operator">*</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre><span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>awt<span class="token punctuation">.</span>event<span class="token punctuation">.</span></span><span class="token operator">*</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre><span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>io<span class="token punctuation">.</span></span><span class="token operator">*</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre><span class="token keyword">import</span> <span class="token namespace">javax<span class="token punctuation">.</span>swing<span class="token punctuation">.</span></span><span class="token operator">*</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre> </pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">MainUI</span> <span class="token keyword">extends</span> <span class="token class-name">JFrame</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="8"></td><td><pre> </pre></td></tr><tr class="marked"><td data-num="9"></td><td><pre>	<span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token keyword">long</span> serialVersionUID <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">8533346717300013642L</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="10"></td><td><pre>	</pre></td></tr><tr class="marked"><td data-num="11"></td><td><pre>	<span class="token keyword">private</span> <span class="token class-name">JTextArea</span> jTextArea1<span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="12"></td><td><pre>	<span class="token keyword">private</span> <span class="token class-name">JScrollPane</span> jsp<span class="token punctuation">;</span>	<span class="token comment">// 滚动条</span></pre></td></tr><tr class="marked"><td data-num="13"></td><td><pre>	<span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token class-name">String</span> name<span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="14"></td><td><pre>	<span class="token keyword">private</span> <span class="token class-name">JFileChooser</span> jFC <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JFileChooser</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="15"></td><td><pre> </pre></td></tr><tr class="marked"><td data-num="16"></td><td><pre>	<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="17"></td><td><pre>		<span class="token keyword">new</span> <span class="token class-name">MainUI</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="18"></td><td><pre>	<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="19"></td><td><pre> </pre></td></tr><tr class="marked"><td data-num="20"></td><td><pre>	<span class="token comment">// 初始化界面</span></pre></td></tr><tr class="marked"><td data-num="21"></td><td><pre>	<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="22"></td><td><pre>		<span class="token comment">// 设置窗口大小</span></pre></td></tr><tr class="marked"><td data-num="23"></td><td><pre>		<span class="token function">setSize</span><span class="token punctuation">(</span><span class="token number">800</span><span class="token punctuation">,</span> <span class="token number">600</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="24"></td><td><pre>		<span class="token function">setLocationRelativeTo</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="25"></td><td><pre>		<span class="token comment">// 设置关闭按钮动作不执行任何操作</span></pre></td></tr><tr class="marked"><td data-num="26"></td><td><pre>		<span class="token function">setDefaultCloseOperation</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="27"></td><td><pre>		name <span class="token operator">=</span> <span class="token string">"新建文本文档.txt"</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="28"></td><td><pre>		<span class="token comment">// 设置标志图案</span></pre></td></tr><tr class="marked"><td data-num="29"></td><td><pre>		<span class="token class-name">ImageIcon</span> ii <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ImageIcon</span><span class="token punctuation">(</span><span class="token string">"file\\1.png"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="30"></td><td><pre>		<span class="token function">setIconImage</span><span class="token punctuation">(</span>ii<span class="token punctuation">.</span><span class="token function">getImage</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="31"></td><td><pre>		<span class="token comment">// 设置文件名</span></pre></td></tr><tr class="marked"><td data-num="32"></td><td><pre>		<span class="token function">setTitle</span><span class="token punctuation">(</span>name <span class="token operator">+</span> <span class="token string">" - 记事本"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="33"></td><td><pre>		<span class="token comment">// 添加菜单栏</span></pre></td></tr><tr class="marked"><td data-num="34"></td><td><pre>		<span class="token function">addMenu</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="35"></td><td><pre>		<span class="token comment">// 添加文本框</span></pre></td></tr><tr class="marked"><td data-num="36"></td><td><pre>		jTextArea1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JTextArea</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="37"></td><td><pre>		<span class="token comment">// 添加滚动条</span></pre></td></tr><tr class="marked"><td data-num="38"></td><td><pre>		jsp <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JScrollPane</span><span class="token punctuation">(</span>jTextArea1<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="39"></td><td><pre>		jsp<span class="token punctuation">.</span><span class="token function">setPreferredSize</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Dimension</span><span class="token punctuation">(</span><span class="token number">780</span><span class="token punctuation">,</span> <span class="token number">550</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="40"></td><td><pre>		<span class="token function">add</span><span class="token punctuation">(</span>jsp<span class="token punctuation">,</span> <span class="token class-name">BorderLayout</span><span class="token punctuation">.</span>CENTER<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="41"></td><td><pre>		<span class="token function">setVisible</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 设置窗口可见</span></pre></td></tr><tr class="marked"><td data-num="42"></td><td><pre>		<span class="token function">addWindowListener</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">WindowAdapter</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="43"></td><td><pre>			<span class="token annotation punctuation">@Override</span></pre></td></tr><tr class="marked"><td data-num="44"></td><td><pre>			<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">windowClosing</span><span class="token punctuation">(</span><span class="token class-name">WindowEvent</span> e<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="45"></td><td><pre>				<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">showSaveDialog</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">!=</span> <span class="token class-name">JOptionPane</span><span class="token punctuation">.</span>CANCEL_OPTION<span class="token punctuation">)</span><span class="token comment">// 若不是取消按钮，关闭程序</span></pre></td></tr><tr class="marked"><td data-num="46"></td><td><pre>					<span class="token function">setDefaultCloseOperation</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="47"></td><td><pre>			<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="48"></td><td><pre>		<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="49"></td><td><pre>	<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="50"></td><td><pre> </pre></td></tr><tr class="marked"><td data-num="51"></td><td><pre>	<span class="token comment">// 添加菜单栏</span></pre></td></tr><tr class="marked"><td data-num="52"></td><td><pre>	<span class="token keyword">private</span> <span class="token keyword">void</span> <span class="token function">addMenu</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="53"></td><td><pre>		<span class="token comment">// 添加菜单栏</span></pre></td></tr><tr class="marked"><td data-num="54"></td><td><pre>		<span class="token class-name">JMenuBar</span> jmb <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JMenuBar</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="55"></td><td><pre>		<span class="token comment">// 设置菜单栏位置在顶级窗口的顶部</span></pre></td></tr><tr class="marked"><td data-num="56"></td><td><pre>		<span class="token function">setJMenuBar</span><span class="token punctuation">(</span>jmb<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="57"></td><td><pre>		<span class="token comment">// 菜单栏菜单</span></pre></td></tr><tr class="marked"><td data-num="58"></td><td><pre>		<span class="token class-name">JMenu</span> jm_file <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JMenu</span><span class="token punctuation">(</span><span class="token string">"文件"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="59"></td><td><pre>		<span class="token class-name">JMenu</span> jm_edit <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JMenu</span><span class="token punctuation">(</span><span class="token string">"编辑"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="60"></td><td><pre>		jmb<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>jm_file<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="61"></td><td><pre>		jmb<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>jm_edit<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="62"></td><td><pre>		<span class="token comment">// 给文件菜单添加菜单项</span></pre></td></tr><tr class="marked"><td data-num="63"></td><td><pre>		<span class="token class-name">JMenuItem</span> item1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JMenuItem</span><span class="token punctuation">(</span><span class="token string">"打开"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="64"></td><td><pre>		<span class="token class-name">JMenuItem</span> item2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JMenuItem</span><span class="token punctuation">(</span><span class="token string">"保存"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="65"></td><td><pre>		<span class="token comment">// 将 item1、item2 添加到 jm_file</span></pre></td></tr><tr class="marked"><td data-num="66"></td><td><pre>		jm_file<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>item1<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="67"></td><td><pre>		jm_file<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>item2<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="68"></td><td><pre> </pre></td></tr><tr class="marked"><td data-num="69"></td><td><pre>		<span class="token comment">// "打开" 菜单项添加动作监听器</span></pre></td></tr><tr class="marked"><td data-num="70"></td><td><pre>		item1<span class="token punctuation">.</span><span class="token function">addActionListener</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">ActionListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="71"></td><td><pre>			<span class="token annotation punctuation">@Override</span></pre></td></tr><tr class="marked"><td data-num="72"></td><td><pre>			<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">actionPerformed</span><span class="token punctuation">(</span><span class="token class-name">ActionEvent</span> e<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="73"></td><td><pre>				<span class="token comment">// 是否保存对原文件修改</span></pre></td></tr><tr class="marked"><td data-num="74"></td><td><pre>				<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">showSaveDialog</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token class-name">JOptionPane</span><span class="token punctuation">.</span>CANCEL_OPTION<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span><span class="token comment">// 取消按钮，则返回</span></pre></td></tr><tr class="marked"><td data-num="75"></td><td><pre>					<span class="token keyword">return</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="76"></td><td><pre>				<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="77"></td><td><pre>				<span class="token comment">// 弹出一个 "Open File" 文件选择器对话框</span></pre></td></tr><tr class="marked"><td data-num="78"></td><td><pre>				<span class="token keyword">int</span> select <span class="token operator">=</span> jFC<span class="token punctuation">.</span><span class="token function">showOpenDialog</span><span class="token punctuation">(</span><span class="token class-name">MainUI</span><span class="token punctuation">.</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="79"></td><td><pre>				<span class="token comment">// 选择打开文件，则读写文件</span></pre></td></tr><tr class="marked"><td data-num="80"></td><td><pre>				<span class="token keyword">if</span> <span class="token punctuation">(</span>select <span class="token operator">==</span> <span class="token class-name">JFileChooser</span><span class="token punctuation">.</span>APPROVE_OPTION<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="81"></td><td><pre>					jTextArea1<span class="token punctuation">.</span><span class="token function">setText</span><span class="token punctuation">(</span><span class="token function">readFile</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 写入文本框</span></pre></td></tr><tr class="marked"><td data-num="82"></td><td><pre>					jTextArea1<span class="token punctuation">.</span><span class="token function">setCaretPosition</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 定位光标至行首</span></pre></td></tr><tr class="marked"><td data-num="83"></td><td><pre>				<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="84"></td><td><pre>			<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="85"></td><td><pre>		<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="86"></td><td><pre> </pre></td></tr><tr class="marked"><td data-num="87"></td><td><pre>		<span class="token comment">// “保存” 菜单项添加动作监听器</span></pre></td></tr><tr class="marked"><td data-num="88"></td><td><pre>		item2<span class="token punctuation">.</span><span class="token function">addActionListener</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">ActionListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="89"></td><td><pre>			<span class="token annotation punctuation">@Override</span></pre></td></tr><tr class="marked"><td data-num="90"></td><td><pre>			<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">actionPerformed</span><span class="token punctuation">(</span><span class="token class-name">ActionEvent</span> e<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="91"></td><td><pre>				<span class="token keyword">if</span> <span class="token punctuation">(</span>jFC<span class="token punctuation">.</span><span class="token function">getSelectedFile</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="92"></td><td><pre>					<span class="token function">createFile</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 调用创建文件方法</span></pre></td></tr><tr class="marked"><td data-num="93"></td><td><pre>				<span class="token punctuation">&#125;</span> <span class="token keyword">else</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="94"></td><td><pre>					<span class="token function">showSaveDialog</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 调用文件是否保存方法</span></pre></td></tr><tr class="marked"><td data-num="95"></td><td><pre>				<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="96"></td><td><pre>			<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="97"></td><td><pre>		<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="98"></td><td><pre>	<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="99"></td><td><pre> </pre></td></tr><tr class="marked"><td data-num="100"></td><td><pre>	<span class="token comment">// 读取文件</span></pre></td></tr><tr class="marked"><td data-num="101"></td><td><pre>	<span class="token keyword">private</span> <span class="token class-name">String</span> <span class="token function">readFile</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="102"></td><td><pre>		<span class="token comment">// 声明缓冲字符流变量</span></pre></td></tr><tr class="marked"><td data-num="103"></td><td><pre>		<span class="token class-name">BufferedReader</span> br <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="104"></td><td><pre>		<span class="token class-name">StringBuilder</span> sb <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="105"></td><td><pre>		<span class="token keyword">try</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="106"></td><td><pre>			br <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">BufferedReader</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">FileReader</span><span class="token punctuation">(</span>jFC<span class="token punctuation">.</span><span class="token function">getSelectedFile</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="107"></td><td><pre>			sb <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">StringBuilder</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 创建缓冲字符串</span></pre></td></tr><tr class="marked"><td data-num="108"></td><td><pre>			<span class="token class-name">String</span> str<span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="109"></td><td><pre>			<span class="token keyword">int</span> count <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span><span class="token comment">// 控制添加换行符，与原文保持一致</span></pre></td></tr><tr class="marked"><td data-num="110"></td><td><pre>			<span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>str <span class="token operator">=</span> br<span class="token punctuation">.</span><span class="token function">readLine</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="111"></td><td><pre>				<span class="token keyword">if</span> <span class="token punctuation">(</span>count <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="112"></td><td><pre>					sb<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="113"></td><td><pre>				<span class="token keyword">if</span> <span class="token punctuation">(</span>count<span class="token operator">++</span> <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="114"></td><td><pre>					sb<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">"\n"</span> <span class="token operator">+</span> str<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 添加换行</span></pre></td></tr><tr class="marked"><td data-num="115"></td><td><pre>			<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="116"></td><td><pre>		<span class="token punctuation">&#125;</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">FileNotFoundException</span> e1<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="117"></td><td><pre>			<span class="token comment">// 弹出 “文件未找到” 对话框，返回 null</span></pre></td></tr><tr class="marked"><td data-num="118"></td><td><pre>			<span class="token class-name">JOptionPane</span><span class="token punctuation">.</span><span class="token function">showMessageDialog</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token string">"未找到该文件！"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="119"></td><td><pre>			<span class="token keyword">return</span> <span class="token keyword">null</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="120"></td><td><pre>		<span class="token punctuation">&#125;</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">IOException</span> e1<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="121"></td><td><pre>			<span class="token comment">// 弹出 “文件读取异常” 对话框，返回 null</span></pre></td></tr><tr class="marked"><td data-num="122"></td><td><pre>			<span class="token class-name">JOptionPane</span><span class="token punctuation">.</span><span class="token function">showMessageDialog</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token string">"文件读取异常"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="123"></td><td><pre>			<span class="token keyword">return</span> <span class="token keyword">null</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="124"></td><td><pre>		<span class="token punctuation">&#125;</span> <span class="token keyword">finally</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="125"></td><td><pre>			<span class="token comment">// 关闭字符流</span></pre></td></tr><tr class="marked"><td data-num="126"></td><td><pre>			<span class="token keyword">if</span> <span class="token punctuation">(</span>br <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="127"></td><td><pre>				<span class="token keyword">try</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="128"></td><td><pre>					br<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="129"></td><td><pre>				<span class="token punctuation">&#125;</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">IOException</span> e1<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="130"></td><td><pre>					e1<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="131"></td><td><pre>				<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="132"></td><td><pre>		<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="133"></td><td><pre>		name <span class="token operator">=</span> jFC<span class="token punctuation">.</span><span class="token function">getSelectedFile</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="134"></td><td><pre>		<span class="token function">setTitle</span><span class="token punctuation">(</span>name <span class="token operator">+</span> <span class="token string">" - 记事本"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 设置文件名</span></pre></td></tr><tr class="marked"><td data-num="135"></td><td><pre>		<span class="token keyword">return</span> sb<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="136"></td><td><pre>	<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="137"></td><td><pre> </pre></td></tr><tr class="marked"><td data-num="138"></td><td><pre>	<span class="token comment">// 保存对话框</span></pre></td></tr><tr class="marked"><td data-num="139"></td><td><pre>	<span class="token keyword">private</span> <span class="token keyword">int</span> <span class="token function">showSaveDialog</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="140"></td><td><pre>		<span class="token keyword">int</span> select <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="141"></td><td><pre>		<span class="token comment">// 判断文本框是否为空</span></pre></td></tr><tr class="marked"><td data-num="142"></td><td><pre>		<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>jTextArea1<span class="token punctuation">.</span><span class="token function">getText</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span><span class="token string">""</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="143"></td><td><pre>			<span class="token comment">// 判断文件是否为空</span></pre></td></tr><tr class="marked"><td data-num="144"></td><td><pre>			<span class="token keyword">if</span> <span class="token punctuation">(</span>jFC<span class="token punctuation">.</span><span class="token function">getSelectedFile</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="145"></td><td><pre>				select <span class="token operator">=</span> <span class="token class-name">JOptionPane</span><span class="token punctuation">.</span><span class="token function">showConfirmDialog</span><span class="token punctuation">(</span><span class="token class-name">MainUI</span><span class="token punctuation">.</span><span class="token keyword">this</span><span class="token punctuation">,</span> <span class="token string">"是否保存修改?"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="146"></td><td><pre>				<span class="token keyword">if</span> <span class="token punctuation">(</span>select <span class="token operator">==</span> <span class="token class-name">JOptionPane</span><span class="token punctuation">.</span>YES_OPTION<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="147"></td><td><pre>					<span class="token function">createFile</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 文件不存在，则创建文件</span></pre></td></tr><tr class="marked"><td data-num="148"></td><td><pre>				<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="149"></td><td><pre>			<span class="token punctuation">&#125;</span> <span class="token keyword">else</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="150"></td><td><pre>				<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token function">isSaved</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span><span class="token comment">// 文件未保存</span></pre></td></tr><tr class="marked"><td data-num="151"></td><td><pre>					select <span class="token operator">=</span> <span class="token class-name">JOptionPane</span><span class="token punctuation">.</span><span class="token function">showConfirmDialog</span><span class="token punctuation">(</span><span class="token class-name">MainUI</span><span class="token punctuation">.</span><span class="token keyword">this</span><span class="token punctuation">,</span> <span class="token string">"是否保存修改?"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="152"></td><td><pre>					<span class="token keyword">if</span> <span class="token punctuation">(</span>select <span class="token operator">==</span> <span class="token class-name">JOptionPane</span><span class="token punctuation">.</span>YES_OPTION<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="153"></td><td><pre>						<span class="token function">saveFile</span><span class="token punctuation">(</span>jFC<span class="token punctuation">.</span><span class="token function">getSelectedFile</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="154"></td><td><pre>					<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="155"></td><td><pre>				<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="156"></td><td><pre>			<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="157"></td><td><pre>		<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="158"></td><td><pre>		<span class="token keyword">return</span> select<span class="token punctuation">;</span><span class="token comment">// 返回选项</span></pre></td></tr><tr class="marked"><td data-num="159"></td><td><pre>	<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="160"></td><td><pre> </pre></td></tr><tr class="marked"><td data-num="161"></td><td><pre>	<span class="token comment">// 创建新文件</span></pre></td></tr><tr class="marked"><td data-num="162"></td><td><pre>	<span class="token keyword">private</span> <span class="token keyword">void</span> <span class="token function">createFile</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="163"></td><td><pre>		<span class="token comment">// String name = null;</span></pre></td></tr><tr class="marked"><td data-num="164"></td><td><pre>		<span class="token class-name">File</span> file <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="165"></td><td><pre>		<span class="token comment">// 选择保存或取消</span></pre></td></tr><tr class="marked"><td data-num="166"></td><td><pre>		<span class="token keyword">if</span> <span class="token punctuation">(</span>jFC<span class="token punctuation">.</span><span class="token function">showSaveDialog</span><span class="token punctuation">(</span><span class="token class-name">MainUI</span><span class="token punctuation">.</span><span class="token keyword">this</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token class-name">JFileChooser</span><span class="token punctuation">.</span>APPROVE_OPTION<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="167"></td><td><pre>			file <span class="token operator">=</span> jFC<span class="token punctuation">.</span><span class="token function">getSelectedFile</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 获取选中的文件</span></pre></td></tr><tr class="marked"><td data-num="168"></td><td><pre>		<span class="token punctuation">&#125;</span> <span class="token keyword">else</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="169"></td><td><pre>			<span class="token keyword">return</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="170"></td><td><pre>		<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="171"></td><td><pre>		name <span class="token operator">=</span> jFC<span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span>file<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 获取输入的文件名</span></pre></td></tr><tr class="marked"><td data-num="172"></td><td><pre>		<span class="token keyword">if</span> <span class="token punctuation">(</span>file<span class="token punctuation">.</span><span class="token function">exists</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token comment">// 若选择已有文件 ---- 询问是否要覆盖</span></pre></td></tr><tr class="marked"><td data-num="173"></td><td><pre>			<span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token class-name">JOptionPane</span><span class="token punctuation">.</span><span class="token function">showConfirmDialog</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token string">"该文件已存在,是否覆盖原文件"</span><span class="token punctuation">,</span> <span class="token string">"确认"</span><span class="token punctuation">,</span> <span class="token class-name">JOptionPane</span><span class="token punctuation">.</span>YES_NO_OPTION<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="174"></td><td><pre>			<span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">==</span> <span class="token class-name">JOptionPane</span><span class="token punctuation">.</span>YES_OPTION<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="175"></td><td><pre>				<span class="token function">saveFile</span><span class="token punctuation">(</span>file<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="176"></td><td><pre>			<span class="token punctuation">&#125;</span> <span class="token keyword">else</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="177"></td><td><pre>				jFC<span class="token punctuation">.</span><span class="token function">showSaveDialog</span><span class="token punctuation">(</span><span class="token class-name">MainUI</span><span class="token punctuation">.</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 重新选择</span></pre></td></tr><tr class="marked"><td data-num="178"></td><td><pre>			<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="179"></td><td><pre>		<span class="token punctuation">&#125;</span> <span class="token keyword">else</span> <span class="token punctuation">&#123;</span><span class="token comment">// 文件不存在，则直接保存</span></pre></td></tr><tr class="marked"><td data-num="180"></td><td><pre>			<span class="token function">saveFile</span><span class="token punctuation">(</span>file<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="181"></td><td><pre>		<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="182"></td><td><pre>	<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="183"></td><td><pre> </pre></td></tr><tr class="marked"><td data-num="184"></td><td><pre>	<span class="token comment">// 判断文件是否保存</span></pre></td></tr><tr class="marked"><td data-num="185"></td><td><pre>	<span class="token keyword">private</span> <span class="token class-name">Boolean</span> <span class="token function">isSaved</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="186"></td><td><pre>		<span class="token comment">// 比较内容</span></pre></td></tr><tr class="marked"><td data-num="187"></td><td><pre>		<span class="token keyword">if</span> <span class="token punctuation">(</span>jTextArea1<span class="token punctuation">.</span><span class="token function">getText</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span><span class="token function">readFile</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="188"></td><td><pre>			<span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="189"></td><td><pre>		<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="190"></td><td><pre>		<span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="191"></td><td><pre>	<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="192"></td><td><pre> </pre></td></tr><tr class="marked"><td data-num="193"></td><td><pre>	<span class="token comment">// 保存文件，文件不存在则创建新文件</span></pre></td></tr><tr class="marked"><td data-num="194"></td><td><pre>	<span class="token keyword">private</span> <span class="token keyword">void</span> <span class="token function">saveFile</span><span class="token punctuation">(</span><span class="token class-name">File</span> file<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="195"></td><td><pre>		<span class="token class-name">BufferedWriter</span> bw <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="196"></td><td><pre>		<span class="token keyword">try</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="197"></td><td><pre>			bw <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">BufferedWriter</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">OutputStreamWriter</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">FileOutputStream</span><span class="token punctuation">(</span>file<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="198"></td><td><pre>			bw<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span>jTextArea1<span class="token punctuation">.</span><span class="token function">getText</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 写入文件</span></pre></td></tr><tr class="marked"><td data-num="199"></td><td><pre>			bw<span class="token punctuation">.</span><span class="token function">flush</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="200"></td><td><pre>		<span class="token punctuation">&#125;</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">FileNotFoundException</span> e1<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="201"></td><td><pre>			<span class="token class-name">JOptionPane</span><span class="token punctuation">.</span><span class="token function">showMessageDialog</span><span class="token punctuation">(</span><span class="token class-name">MainUI</span><span class="token punctuation">.</span><span class="token keyword">this</span><span class="token punctuation">,</span> <span class="token string">"文件保存出错"</span> <span class="token operator">+</span> e1<span class="token punctuation">.</span><span class="token function">getMessage</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="202"></td><td><pre>		<span class="token punctuation">&#125;</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">IOException</span> e1<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="203"></td><td><pre>			e1<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="204"></td><td><pre>		<span class="token punctuation">&#125;</span> <span class="token keyword">finally</span> <span class="token punctuation">&#123;</span><span class="token comment">//finally 是表示最后一定会执行的语句</span></pre></td></tr><tr class="marked"><td data-num="205"></td><td><pre>			<span class="token keyword">try</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="206"></td><td><pre>				<span class="token keyword">if</span> <span class="token punctuation">(</span>bw <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="207"></td><td><pre>					bw<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="208"></td><td><pre>			<span class="token punctuation">&#125;</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">IOException</span> e1<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="209"></td><td><pre>			<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="210"></td><td><pre>		<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="211"></td><td><pre>	<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="212"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>计算机科学</category>
         <category>编程语言</category>
@@ -1698,14 +1769,10 @@
       </tags>
   </entry>
   <entry>
-    <title>JAVA记事本基础</title>
-    <url>/fb13f705.html</url>
-    <content><![CDATA[<h2 id="java记事本"><a class="markdownIt-Anchor" href="#java记事本">#</a> Java 记事本</h2>
-<div class="note info">
-<p>适合刚入门 Java 基础不好的同学</p>
-</div>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022052729.jpeg" alt=""></p>
-<figure class="highlight java"><figcaption data-lang="java"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token keyword">package</span> <span class="token namespace">cn<span class="token punctuation">.</span>edu<span class="token punctuation">.</span>seig<span class="token punctuation">.</span>home</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>awt<span class="token punctuation">.</span></span><span class="token operator">*</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre><span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>awt<span class="token punctuation">.</span>event<span class="token punctuation">.</span></span><span class="token operator">*</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre><span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>io<span class="token punctuation">.</span></span><span class="token operator">*</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre><span class="token keyword">import</span> <span class="token namespace">javax<span class="token punctuation">.</span>swing<span class="token punctuation">.</span></span><span class="token operator">*</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre> </pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">MainUI</span> <span class="token keyword">extends</span> <span class="token class-name">JFrame</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="8"></td><td><pre> </pre></td></tr><tr class="marked"><td data-num="9"></td><td><pre>	<span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token keyword">long</span> serialVersionUID <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">8533346717300013642L</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="10"></td><td><pre>	</pre></td></tr><tr class="marked"><td data-num="11"></td><td><pre>	<span class="token keyword">private</span> <span class="token class-name">JTextArea</span> jTextArea1<span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="12"></td><td><pre>	<span class="token keyword">private</span> <span class="token class-name">JScrollPane</span> jsp<span class="token punctuation">;</span>	<span class="token comment">// 滚动条</span></pre></td></tr><tr class="marked"><td data-num="13"></td><td><pre>	<span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token class-name">String</span> name<span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="14"></td><td><pre>	<span class="token keyword">private</span> <span class="token class-name">JFileChooser</span> jFC <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JFileChooser</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="15"></td><td><pre> </pre></td></tr><tr class="marked"><td data-num="16"></td><td><pre>	<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="17"></td><td><pre>		<span class="token keyword">new</span> <span class="token class-name">MainUI</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="18"></td><td><pre>	<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="19"></td><td><pre> </pre></td></tr><tr class="marked"><td data-num="20"></td><td><pre>	<span class="token comment">// 初始化界面</span></pre></td></tr><tr class="marked"><td data-num="21"></td><td><pre>	<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="22"></td><td><pre>		<span class="token comment">// 设置窗口大小</span></pre></td></tr><tr class="marked"><td data-num="23"></td><td><pre>		<span class="token function">setSize</span><span class="token punctuation">(</span><span class="token number">800</span><span class="token punctuation">,</span> <span class="token number">600</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="24"></td><td><pre>		<span class="token function">setLocationRelativeTo</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="25"></td><td><pre>		<span class="token comment">// 设置关闭按钮动作不执行任何操作</span></pre></td></tr><tr class="marked"><td data-num="26"></td><td><pre>		<span class="token function">setDefaultCloseOperation</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="27"></td><td><pre>		name <span class="token operator">=</span> <span class="token string">"新建文本文档.txt"</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="28"></td><td><pre>		<span class="token comment">// 设置标志图案</span></pre></td></tr><tr class="marked"><td data-num="29"></td><td><pre>		<span class="token class-name">ImageIcon</span> ii <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ImageIcon</span><span class="token punctuation">(</span><span class="token string">"file\\1.png"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="30"></td><td><pre>		<span class="token function">setIconImage</span><span class="token punctuation">(</span>ii<span class="token punctuation">.</span><span class="token function">getImage</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="31"></td><td><pre>		<span class="token comment">// 设置文件名</span></pre></td></tr><tr class="marked"><td data-num="32"></td><td><pre>		<span class="token function">setTitle</span><span class="token punctuation">(</span>name <span class="token operator">+</span> <span class="token string">" - 记事本"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="33"></td><td><pre>		<span class="token comment">// 添加菜单栏</span></pre></td></tr><tr class="marked"><td data-num="34"></td><td><pre>		<span class="token function">addMenu</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="35"></td><td><pre>		<span class="token comment">// 添加文本框</span></pre></td></tr><tr class="marked"><td data-num="36"></td><td><pre>		jTextArea1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JTextArea</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="37"></td><td><pre>		<span class="token comment">// 添加滚动条</span></pre></td></tr><tr class="marked"><td data-num="38"></td><td><pre>		jsp <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JScrollPane</span><span class="token punctuation">(</span>jTextArea1<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="39"></td><td><pre>		jsp<span class="token punctuation">.</span><span class="token function">setPreferredSize</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Dimension</span><span class="token punctuation">(</span><span class="token number">780</span><span class="token punctuation">,</span> <span class="token number">550</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="40"></td><td><pre>		<span class="token function">add</span><span class="token punctuation">(</span>jsp<span class="token punctuation">,</span> <span class="token class-name">BorderLayout</span><span class="token punctuation">.</span>CENTER<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="41"></td><td><pre>		<span class="token function">setVisible</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 设置窗口可见</span></pre></td></tr><tr class="marked"><td data-num="42"></td><td><pre>		<span class="token function">addWindowListener</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">WindowAdapter</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="43"></td><td><pre>			<span class="token annotation punctuation">@Override</span></pre></td></tr><tr class="marked"><td data-num="44"></td><td><pre>			<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">windowClosing</span><span class="token punctuation">(</span><span class="token class-name">WindowEvent</span> e<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="45"></td><td><pre>				<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">showSaveDialog</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">!=</span> <span class="token class-name">JOptionPane</span><span class="token punctuation">.</span>CANCEL_OPTION<span class="token punctuation">)</span><span class="token comment">// 若不是取消按钮，关闭程序</span></pre></td></tr><tr class="marked"><td data-num="46"></td><td><pre>					<span class="token function">setDefaultCloseOperation</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="47"></td><td><pre>			<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="48"></td><td><pre>		<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="49"></td><td><pre>	<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="50"></td><td><pre> </pre></td></tr><tr class="marked"><td data-num="51"></td><td><pre>	<span class="token comment">// 添加菜单栏</span></pre></td></tr><tr class="marked"><td data-num="52"></td><td><pre>	<span class="token keyword">private</span> <span class="token keyword">void</span> <span class="token function">addMenu</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="53"></td><td><pre>		<span class="token comment">// 添加菜单栏</span></pre></td></tr><tr class="marked"><td data-num="54"></td><td><pre>		<span class="token class-name">JMenuBar</span> jmb <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JMenuBar</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="55"></td><td><pre>		<span class="token comment">// 设置菜单栏位置在顶级窗口的顶部</span></pre></td></tr><tr class="marked"><td data-num="56"></td><td><pre>		<span class="token function">setJMenuBar</span><span class="token punctuation">(</span>jmb<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="57"></td><td><pre>		<span class="token comment">// 菜单栏菜单</span></pre></td></tr><tr class="marked"><td data-num="58"></td><td><pre>		<span class="token class-name">JMenu</span> jm_file <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JMenu</span><span class="token punctuation">(</span><span class="token string">"文件"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="59"></td><td><pre>		<span class="token class-name">JMenu</span> jm_edit <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JMenu</span><span class="token punctuation">(</span><span class="token string">"编辑"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="60"></td><td><pre>		jmb<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>jm_file<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="61"></td><td><pre>		jmb<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>jm_edit<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="62"></td><td><pre>		<span class="token comment">// 给文件菜单添加菜单项</span></pre></td></tr><tr class="marked"><td data-num="63"></td><td><pre>		<span class="token class-name">JMenuItem</span> item1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JMenuItem</span><span class="token punctuation">(</span><span class="token string">"打开"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="64"></td><td><pre>		<span class="token class-name">JMenuItem</span> item2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JMenuItem</span><span class="token punctuation">(</span><span class="token string">"保存"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="65"></td><td><pre>		<span class="token comment">// 将 item1、item2 添加到 jm_file</span></pre></td></tr><tr class="marked"><td data-num="66"></td><td><pre>		jm_file<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>item1<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="67"></td><td><pre>		jm_file<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>item2<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="68"></td><td><pre> </pre></td></tr><tr class="marked"><td data-num="69"></td><td><pre>		<span class="token comment">// "打开" 菜单项添加动作监听器</span></pre></td></tr><tr class="marked"><td data-num="70"></td><td><pre>		item1<span class="token punctuation">.</span><span class="token function">addActionListener</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">ActionListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="71"></td><td><pre>			<span class="token annotation punctuation">@Override</span></pre></td></tr><tr class="marked"><td data-num="72"></td><td><pre>			<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">actionPerformed</span><span class="token punctuation">(</span><span class="token class-name">ActionEvent</span> e<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="73"></td><td><pre>				<span class="token comment">// 是否保存对原文件修改</span></pre></td></tr><tr class="marked"><td data-num="74"></td><td><pre>				<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">showSaveDialog</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token class-name">JOptionPane</span><span class="token punctuation">.</span>CANCEL_OPTION<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span><span class="token comment">// 取消按钮，则返回</span></pre></td></tr><tr class="marked"><td data-num="75"></td><td><pre>					<span class="token keyword">return</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="76"></td><td><pre>				<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="77"></td><td><pre>				<span class="token comment">// 弹出一个 "Open File" 文件选择器对话框</span></pre></td></tr><tr class="marked"><td data-num="78"></td><td><pre>				<span class="token keyword">int</span> select <span class="token operator">=</span> jFC<span class="token punctuation">.</span><span class="token function">showOpenDialog</span><span class="token punctuation">(</span><span class="token class-name">MainUI</span><span class="token punctuation">.</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="79"></td><td><pre>				<span class="token comment">// 选择打开文件，则读写文件</span></pre></td></tr><tr class="marked"><td data-num="80"></td><td><pre>				<span class="token keyword">if</span> <span class="token punctuation">(</span>select <span class="token operator">==</span> <span class="token class-name">JFileChooser</span><span class="token punctuation">.</span>APPROVE_OPTION<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="81"></td><td><pre>					jTextArea1<span class="token punctuation">.</span><span class="token function">setText</span><span class="token punctuation">(</span><span class="token function">readFile</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 写入文本框</span></pre></td></tr><tr class="marked"><td data-num="82"></td><td><pre>					jTextArea1<span class="token punctuation">.</span><span class="token function">setCaretPosition</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 定位光标至行首</span></pre></td></tr><tr class="marked"><td data-num="83"></td><td><pre>				<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="84"></td><td><pre>			<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="85"></td><td><pre>		<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="86"></td><td><pre> </pre></td></tr><tr class="marked"><td data-num="87"></td><td><pre>		<span class="token comment">// “保存” 菜单项添加动作监听器</span></pre></td></tr><tr class="marked"><td data-num="88"></td><td><pre>		item2<span class="token punctuation">.</span><span class="token function">addActionListener</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">ActionListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="89"></td><td><pre>			<span class="token annotation punctuation">@Override</span></pre></td></tr><tr class="marked"><td data-num="90"></td><td><pre>			<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">actionPerformed</span><span class="token punctuation">(</span><span class="token class-name">ActionEvent</span> e<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="91"></td><td><pre>				<span class="token keyword">if</span> <span class="token punctuation">(</span>jFC<span class="token punctuation">.</span><span class="token function">getSelectedFile</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="92"></td><td><pre>					<span class="token function">createFile</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 调用创建文件方法</span></pre></td></tr><tr class="marked"><td data-num="93"></td><td><pre>				<span class="token punctuation">&#125;</span> <span class="token keyword">else</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="94"></td><td><pre>					<span class="token function">showSaveDialog</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 调用文件是否保存方法</span></pre></td></tr><tr class="marked"><td data-num="95"></td><td><pre>				<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="96"></td><td><pre>			<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="97"></td><td><pre>		<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="98"></td><td><pre>	<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="99"></td><td><pre> </pre></td></tr><tr class="marked"><td data-num="100"></td><td><pre>	<span class="token comment">// 读取文件</span></pre></td></tr><tr class="marked"><td data-num="101"></td><td><pre>	<span class="token keyword">private</span> <span class="token class-name">String</span> <span class="token function">readFile</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="102"></td><td><pre>		<span class="token comment">// 声明缓冲字符流变量</span></pre></td></tr><tr class="marked"><td data-num="103"></td><td><pre>		<span class="token class-name">BufferedReader</span> br <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="104"></td><td><pre>		<span class="token class-name">StringBuilder</span> sb <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="105"></td><td><pre>		<span class="token keyword">try</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="106"></td><td><pre>			br <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">BufferedReader</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">FileReader</span><span class="token punctuation">(</span>jFC<span class="token punctuation">.</span><span class="token function">getSelectedFile</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="107"></td><td><pre>			sb <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">StringBuilder</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 创建缓冲字符串</span></pre></td></tr><tr class="marked"><td data-num="108"></td><td><pre>			<span class="token class-name">String</span> str<span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="109"></td><td><pre>			<span class="token keyword">int</span> count <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span><span class="token comment">// 控制添加换行符，与原文保持一致</span></pre></td></tr><tr class="marked"><td data-num="110"></td><td><pre>			<span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>str <span class="token operator">=</span> br<span class="token punctuation">.</span><span class="token function">readLine</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="111"></td><td><pre>				<span class="token keyword">if</span> <span class="token punctuation">(</span>count <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="112"></td><td><pre>					sb<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="113"></td><td><pre>				<span class="token keyword">if</span> <span class="token punctuation">(</span>count<span class="token operator">++</span> <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="114"></td><td><pre>					sb<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">"\n"</span> <span class="token operator">+</span> str<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 添加换行</span></pre></td></tr><tr class="marked"><td data-num="115"></td><td><pre>			<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="116"></td><td><pre>		<span class="token punctuation">&#125;</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">FileNotFoundException</span> e1<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="117"></td><td><pre>			<span class="token comment">// 弹出 “文件未找到” 对话框，返回 null</span></pre></td></tr><tr class="marked"><td data-num="118"></td><td><pre>			<span class="token class-name">JOptionPane</span><span class="token punctuation">.</span><span class="token function">showMessageDialog</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token string">"未找到该文件！"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="119"></td><td><pre>			<span class="token keyword">return</span> <span class="token keyword">null</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="120"></td><td><pre>		<span class="token punctuation">&#125;</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">IOException</span> e1<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="121"></td><td><pre>			<span class="token comment">// 弹出 “文件读取异常” 对话框，返回 null</span></pre></td></tr><tr class="marked"><td data-num="122"></td><td><pre>			<span class="token class-name">JOptionPane</span><span class="token punctuation">.</span><span class="token function">showMessageDialog</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token string">"文件读取异常"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="123"></td><td><pre>			<span class="token keyword">return</span> <span class="token keyword">null</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="124"></td><td><pre>		<span class="token punctuation">&#125;</span> <span class="token keyword">finally</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="125"></td><td><pre>			<span class="token comment">// 关闭字符流</span></pre></td></tr><tr class="marked"><td data-num="126"></td><td><pre>			<span class="token keyword">if</span> <span class="token punctuation">(</span>br <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="127"></td><td><pre>				<span class="token keyword">try</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="128"></td><td><pre>					br<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="129"></td><td><pre>				<span class="token punctuation">&#125;</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">IOException</span> e1<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="130"></td><td><pre>					e1<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="131"></td><td><pre>				<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="132"></td><td><pre>		<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="133"></td><td><pre>		name <span class="token operator">=</span> jFC<span class="token punctuation">.</span><span class="token function">getSelectedFile</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="134"></td><td><pre>		<span class="token function">setTitle</span><span class="token punctuation">(</span>name <span class="token operator">+</span> <span class="token string">" - 记事本"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 设置文件名</span></pre></td></tr><tr class="marked"><td data-num="135"></td><td><pre>		<span class="token keyword">return</span> sb<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="136"></td><td><pre>	<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="137"></td><td><pre> </pre></td></tr><tr class="marked"><td data-num="138"></td><td><pre>	<span class="token comment">// 保存对话框</span></pre></td></tr><tr class="marked"><td data-num="139"></td><td><pre>	<span class="token keyword">private</span> <span class="token keyword">int</span> <span class="token function">showSaveDialog</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="140"></td><td><pre>		<span class="token keyword">int</span> select <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="141"></td><td><pre>		<span class="token comment">// 判断文本框是否为空</span></pre></td></tr><tr class="marked"><td data-num="142"></td><td><pre>		<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>jTextArea1<span class="token punctuation">.</span><span class="token function">getText</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span><span class="token string">""</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="143"></td><td><pre>			<span class="token comment">// 判断文件是否为空</span></pre></td></tr><tr class="marked"><td data-num="144"></td><td><pre>			<span class="token keyword">if</span> <span class="token punctuation">(</span>jFC<span class="token punctuation">.</span><span class="token function">getSelectedFile</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="145"></td><td><pre>				select <span class="token operator">=</span> <span class="token class-name">JOptionPane</span><span class="token punctuation">.</span><span class="token function">showConfirmDialog</span><span class="token punctuation">(</span><span class="token class-name">MainUI</span><span class="token punctuation">.</span><span class="token keyword">this</span><span class="token punctuation">,</span> <span class="token string">"是否保存修改?"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="146"></td><td><pre>				<span class="token keyword">if</span> <span class="token punctuation">(</span>select <span class="token operator">==</span> <span class="token class-name">JOptionPane</span><span class="token punctuation">.</span>YES_OPTION<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="147"></td><td><pre>					<span class="token function">createFile</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 文件不存在，则创建文件</span></pre></td></tr><tr class="marked"><td data-num="148"></td><td><pre>				<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="149"></td><td><pre>			<span class="token punctuation">&#125;</span> <span class="token keyword">else</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="150"></td><td><pre>				<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token function">isSaved</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span><span class="token comment">// 文件未保存</span></pre></td></tr><tr class="marked"><td data-num="151"></td><td><pre>					select <span class="token operator">=</span> <span class="token class-name">JOptionPane</span><span class="token punctuation">.</span><span class="token function">showConfirmDialog</span><span class="token punctuation">(</span><span class="token class-name">MainUI</span><span class="token punctuation">.</span><span class="token keyword">this</span><span class="token punctuation">,</span> <span class="token string">"是否保存修改?"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="152"></td><td><pre>					<span class="token keyword">if</span> <span class="token punctuation">(</span>select <span class="token operator">==</span> <span class="token class-name">JOptionPane</span><span class="token punctuation">.</span>YES_OPTION<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="153"></td><td><pre>						<span class="token function">saveFile</span><span class="token punctuation">(</span>jFC<span class="token punctuation">.</span><span class="token function">getSelectedFile</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="154"></td><td><pre>					<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="155"></td><td><pre>				<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="156"></td><td><pre>			<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="157"></td><td><pre>		<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="158"></td><td><pre>		<span class="token keyword">return</span> select<span class="token punctuation">;</span><span class="token comment">// 返回选项</span></pre></td></tr><tr class="marked"><td data-num="159"></td><td><pre>	<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="160"></td><td><pre> </pre></td></tr><tr class="marked"><td data-num="161"></td><td><pre>	<span class="token comment">// 创建新文件</span></pre></td></tr><tr class="marked"><td data-num="162"></td><td><pre>	<span class="token keyword">private</span> <span class="token keyword">void</span> <span class="token function">createFile</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="163"></td><td><pre>		<span class="token comment">// String name = null;</span></pre></td></tr><tr class="marked"><td data-num="164"></td><td><pre>		<span class="token class-name">File</span> file <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="165"></td><td><pre>		<span class="token comment">// 选择保存或取消</span></pre></td></tr><tr class="marked"><td data-num="166"></td><td><pre>		<span class="token keyword">if</span> <span class="token punctuation">(</span>jFC<span class="token punctuation">.</span><span class="token function">showSaveDialog</span><span class="token punctuation">(</span><span class="token class-name">MainUI</span><span class="token punctuation">.</span><span class="token keyword">this</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token class-name">JFileChooser</span><span class="token punctuation">.</span>APPROVE_OPTION<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="167"></td><td><pre>			file <span class="token operator">=</span> jFC<span class="token punctuation">.</span><span class="token function">getSelectedFile</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 获取选中的文件</span></pre></td></tr><tr class="marked"><td data-num="168"></td><td><pre>		<span class="token punctuation">&#125;</span> <span class="token keyword">else</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="169"></td><td><pre>			<span class="token keyword">return</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="170"></td><td><pre>		<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="171"></td><td><pre>		name <span class="token operator">=</span> jFC<span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span>file<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 获取输入的文件名</span></pre></td></tr><tr class="marked"><td data-num="172"></td><td><pre>		<span class="token keyword">if</span> <span class="token punctuation">(</span>file<span class="token punctuation">.</span><span class="token function">exists</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token comment">// 若选择已有文件 ---- 询问是否要覆盖</span></pre></td></tr><tr class="marked"><td data-num="173"></td><td><pre>			<span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token class-name">JOptionPane</span><span class="token punctuation">.</span><span class="token function">showConfirmDialog</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token string">"该文件已存在,是否覆盖原文件"</span><span class="token punctuation">,</span> <span class="token string">"确认"</span><span class="token punctuation">,</span> <span class="token class-name">JOptionPane</span><span class="token punctuation">.</span>YES_NO_OPTION<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="174"></td><td><pre>			<span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">==</span> <span class="token class-name">JOptionPane</span><span class="token punctuation">.</span>YES_OPTION<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="175"></td><td><pre>				<span class="token function">saveFile</span><span class="token punctuation">(</span>file<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="176"></td><td><pre>			<span class="token punctuation">&#125;</span> <span class="token keyword">else</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="177"></td><td><pre>				jFC<span class="token punctuation">.</span><span class="token function">showSaveDialog</span><span class="token punctuation">(</span><span class="token class-name">MainUI</span><span class="token punctuation">.</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 重新选择</span></pre></td></tr><tr class="marked"><td data-num="178"></td><td><pre>			<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="179"></td><td><pre>		<span class="token punctuation">&#125;</span> <span class="token keyword">else</span> <span class="token punctuation">&#123;</span><span class="token comment">// 文件不存在，则直接保存</span></pre></td></tr><tr class="marked"><td data-num="180"></td><td><pre>			<span class="token function">saveFile</span><span class="token punctuation">(</span>file<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="181"></td><td><pre>		<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="182"></td><td><pre>	<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="183"></td><td><pre> </pre></td></tr><tr class="marked"><td data-num="184"></td><td><pre>	<span class="token comment">// 判断文件是否保存</span></pre></td></tr><tr class="marked"><td data-num="185"></td><td><pre>	<span class="token keyword">private</span> <span class="token class-name">Boolean</span> <span class="token function">isSaved</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="186"></td><td><pre>		<span class="token comment">// 比较内容</span></pre></td></tr><tr class="marked"><td data-num="187"></td><td><pre>		<span class="token keyword">if</span> <span class="token punctuation">(</span>jTextArea1<span class="token punctuation">.</span><span class="token function">getText</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span><span class="token function">readFile</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="188"></td><td><pre>			<span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="189"></td><td><pre>		<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="190"></td><td><pre>		<span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="191"></td><td><pre>	<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="192"></td><td><pre> </pre></td></tr><tr class="marked"><td data-num="193"></td><td><pre>	<span class="token comment">// 保存文件，文件不存在则创建新文件</span></pre></td></tr><tr class="marked"><td data-num="194"></td><td><pre>	<span class="token keyword">private</span> <span class="token keyword">void</span> <span class="token function">saveFile</span><span class="token punctuation">(</span><span class="token class-name">File</span> file<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="195"></td><td><pre>		<span class="token class-name">BufferedWriter</span> bw <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="196"></td><td><pre>		<span class="token keyword">try</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="197"></td><td><pre>			bw <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">BufferedWriter</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">OutputStreamWriter</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">FileOutputStream</span><span class="token punctuation">(</span>file<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="198"></td><td><pre>			bw<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span>jTextArea1<span class="token punctuation">.</span><span class="token function">getText</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 写入文件</span></pre></td></tr><tr class="marked"><td data-num="199"></td><td><pre>			bw<span class="token punctuation">.</span><span class="token function">flush</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="200"></td><td><pre>		<span class="token punctuation">&#125;</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">FileNotFoundException</span> e1<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="201"></td><td><pre>			<span class="token class-name">JOptionPane</span><span class="token punctuation">.</span><span class="token function">showMessageDialog</span><span class="token punctuation">(</span><span class="token class-name">MainUI</span><span class="token punctuation">.</span><span class="token keyword">this</span><span class="token punctuation">,</span> <span class="token string">"文件保存出错"</span> <span class="token operator">+</span> e1<span class="token punctuation">.</span><span class="token function">getMessage</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="202"></td><td><pre>		<span class="token punctuation">&#125;</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">IOException</span> e1<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="203"></td><td><pre>			e1<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="204"></td><td><pre>		<span class="token punctuation">&#125;</span> <span class="token keyword">finally</span> <span class="token punctuation">&#123;</span><span class="token comment">//finally 是表示最后一定会执行的语句</span></pre></td></tr><tr class="marked"><td data-num="205"></td><td><pre>			<span class="token keyword">try</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="206"></td><td><pre>				<span class="token keyword">if</span> <span class="token punctuation">(</span>bw <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="207"></td><td><pre>					bw<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr class="marked"><td data-num="208"></td><td><pre>			<span class="token punctuation">&#125;</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">IOException</span> e1<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr class="marked"><td data-num="209"></td><td><pre>			<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="210"></td><td><pre>		<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="211"></td><td><pre>	<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="212"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure>]]></content>
+    <title>javase程序国际化</title>
+    <url>/b2cc2eb5.html</url>
+    <content><![CDATA[<pre><code class="language-java"></code></pre>
+]]></content>
       <categories>
         <category>计算机科学</category>
         <category>编程语言</category>
@@ -1763,6 +1830,16 @@
         <tag>python</tag>
         <tag>Qt5</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>python Qt5实现记事本基本功能</title>
+    <url>/b9893092.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>编程语言</category>
+        <category>python</category>
+      </categories>
   </entry>
   <entry>
     <title>matplotlib制作条形图、直方图</title>
@@ -1932,16 +2009,6 @@ autopct=’%1.1f%%’) 			# 接受特定 String，指定数值显示方式，默
       </tags>
   </entry>
   <entry>
-    <title>python Qt5实现记事本基本功能</title>
-    <url>/b9893092.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>编程语言</category>
-        <category>python</category>
-      </categories>
-  </entry>
-  <entry>
     <title>python qt5 实现记事本界面</title>
     <url>/37c8254d.html</url>
     <content><![CDATA[<h2 id="用qt5实现一个简单的记事本界面"><a class="markdownIt-Anchor" href="#用qt5实现一个简单的记事本界面">#</a> 用 qt5 实现一个简单的记事本界面</h2>
@@ -1990,33 +2057,6 @@ autopct=’%1.1f%%’) 			# 接受特定 String，指定数值显示方式，默
       </categories>
       <tags>
         <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>如何给PicGo添加水印</title>
-    <url>/2fbd98c3.html</url>
-    <content><![CDATA[<p>在运营独立博客的时候，自己原创的文章，经常会被别人转载，又没有标明原作者地址，导致原创作者流量流失了一部分，如果可以标记原创是自己的话，那就非常方便了，比如说加个水印就好一点。刚好 <code>PicGo</code>  有个插件 <code>watermark</code>  可以给突破加水印，这就很方便了，不用上传图片自己还要去添加一个水印。</p>
-<h2 id="安装watermark"><a class="markdownIt-Anchor" href="#安装watermark">#</a> 安装 <code>watermark</code></h2>
-<p>安装 <code>watermark</code> ， <code>PicGo</code>  最低版本要 <code>2.2.0</code></p>
-<p>可以直接在 <code>PicGo</code>  插件设置下载</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204110022.jpeg" alt=""></p>
-<h2 id="配置watermark"><a class="markdownIt-Anchor" href="#配置watermark">#</a> 配置 <code>watermark</code></h2>
-<div class="note info">
-<p>有些同学可能在配置 watermark 一直出错，可以试着 <code>字体文件路径</code> 设置和我一样的，把文件拉进去就行</p>
-</div>
-<p>这里放上字体链接，有需要自取，字体来源于 <span class="exturl" data-url="aHR0cHM6Ly93d3cuZm9udHMubmV0LmNuL2ZvbnQtNDAwOTA5Njk5NjAuaHRtbD9wcmV2aWV3VGV4dD13d3cuaGlra2kuc2l0ZQ==">字体天下</span></p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204110023.jpeg" alt=""></p>
-<div class="note warning">
-<p>以上如果有侵害你的权益，请立即联系我</p>
-</div>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>技术杂谈</category>
-        <category>一个小技巧</category>
-      </categories>
-      <tags>
-        <tag>一个小技巧</tag>
       </tags>
   </entry>
   <entry>
@@ -2114,46 +2154,6 @@ autopct=’%1.1f%%’) 			# 接受特定 String，指定数值显示方式，默
       <tags>
         <tag>python</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>添加开机自启程序</title>
-    <url>/2cc8588f.html</url>
-    <content><![CDATA[<h2 id="键盘点击winr"><a class="markdownIt-Anchor" href="#键盘点击winr">#</a> 键盘点击 <code>win+R</code></h2>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204071930.jpg" alt=""></p>
-<h2 id="在窗口输入shellstartup"><a class="markdownIt-Anchor" href="#在窗口输入shellstartup">#</a> 在窗口输入 <code>shell:startup</code></h2>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>shell:startup</pre></td></tr></table></figure><p><strong>打开是这个路径</strong>，把你想要开机自启的软件快捷方式拖到这个路径下，以后电脑开机就会自动启动这个程序了</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204071937.jpg" alt=""></p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204071936.jpg" alt=""></p>
-<div class="note warning">
-<p>以上如有错误，欢迎留言指出</p>
-</div>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>技术杂谈</category>
-        <category>一个小技巧</category>
-      </categories>
-      <tags>
-        <tag>教程</tag>
-        <tag>生活小技巧</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Git详细使用方法</title>
-    <url>/43d2d741.html</url>
-    <content><![CDATA[<h2 id="初始化仓库"><a class="markdownIt-Anchor" href="#初始化仓库">#</a> 初始化仓库</h2>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">git</span> init 			<span class="token comment">#初始化当前文件夹为仓库，默认是 master 分支</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token function">git</span> <span class="token builtin class-name">help</span> -a 		<span class="token comment"># 显示完全的指令列表</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre><span class="token function">git</span> <span class="token function">add</span> text.txt 	<span class="token comment"># 添加 text.txt 文件加入到 Git 系统的索引中，tips: 可以使用通配符添加 “*” 和 “.”</span></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre><span class="token function">git</span> status			<span class="token comment"># 查看当前 Git 的状态，是否有新文件没有加入到 Git 索引中</span></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre><span class="token function">git</span> commit -m <span class="token string">"操作说明"</span> --author<span class="token operator">=</span><span class="token string">'操作者姓名'</span> --email<span class="token operator">=</span><span class="token string">'操作者邮箱'</span> <span class="token comment">#把已经添加到 Git 索引的所有文件到推送到 repository，一般我们在使用 github 的时候，就是通过这个指令把文件推送到 github 的</span></pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre>gitk 				<span class="token comment"># 启动图形界面查看 repository 有哪些文件</span></pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre><span class="token comment"># 一般在离开 git bash here 的时候习惯用 exit 结束，这样下次回来的时候可以恢复到原来的状态</span></pre></td></tr></table></figure><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204121821.jpeg" alt="" title="本地仓库提交都爱github仓库流程"></p>
-<p><code>config</code>  有三个基本配置的文件，他们分别有优先权之分。</p>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>.git/config					<span class="token comment">#优先权最高，存在于 Git 本地仓库下的.git 文件内</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>Administrator/.gitconfig	<span class="token comment">#其次，存在于你 PC 当前用户下</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>etc/gitconfig 				<span class="token comment">#优先权最低，存在 Git 安装软件的位置</span></pre></td></tr></table></figure><p><em>存在位置如图所示</em></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204121724.jpeg" alt="" title=".git/config"></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204121743.jpeg" alt="" title="Administrator/.gitconfig"></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204121723.jpeg" alt="" title="etc/gitconfig "></p>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>技术杂谈</category>
-        <category>持续更新</category>
-      </categories>
   </entry>
   <entry>
     <title>Linux远程管理常用命令</title>
