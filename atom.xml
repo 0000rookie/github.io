@@ -8,7 +8,7 @@
     <author>
       <name>璃柏涟</name>
     </author>
-    <updated>2022-05-15T09:54:33.000Z</updated>
+    <updated>2022-05-17T04:00:03.000Z</updated>
     <category term="web安全" />
     <category term="笔记" />
     <category term="web" />
@@ -22,6 +22,89 @@
     <category term="后端" />
     <category term="markdown" />
     <category term="搭建个人博客" />
+    <entry>
+        <id>https://www.hikki.site/64ed46b0.html</id>
+        <title>win10如何开启远程桌面</title>
+        <link rel="alternate" href="https://www.hikki.site/64ed46b0.html"/>
+        <content type="html">&lt;h2 id=&#34;添加用户组&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#添加用户组&#34;&gt;#&lt;/a&gt; 添加用户组&lt;/h2&gt;
+&lt;h3 id=&#34;查看系统版本&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#查看系统版本&#34;&gt;#&lt;/a&gt; 查看系统版本&lt;/h3&gt;
+&lt;h4 id=&#34;是否是专业版&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#是否是专业版&#34;&gt;#&lt;/a&gt; 是否是专业版&lt;/h4&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022050105.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;如果不是专业版，请移步重装 &lt;code&gt;专业版系统&lt;/code&gt; 再过来开启桌面远程&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022050304.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;查看系统用户&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#查看系统用户&#34;&gt;#&lt;/a&gt; 查看系统用户&lt;/h3&gt;
+&lt;p&gt;我这里已经有一个用户叫 &lt;code&gt;lilbai&lt;/code&gt; ，如果你这里显示的是 &lt;code&gt;Administrator&lt;/code&gt; ，也没事，之后的操作 &lt;code&gt;lilbai&lt;/code&gt;  的时候，你操作 &lt;code&gt;Administrator&lt;/code&gt;  就行&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022050411.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;给用户添加权限&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#给用户添加权限&#34;&gt;#&lt;/a&gt; 给用户添加权限&lt;/h3&gt;
+&lt;h4 id=&#34;打开系统管理&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#打开系统管理&#34;&gt;#&lt;/a&gt; 打开系统管理&lt;/h4&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022050741.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;打开本地用户&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#打开本地用户&#34;&gt;#&lt;/a&gt; 打开本地用户&lt;/h4&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022050805.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;修改密码&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#修改密码&#34;&gt;#&lt;/a&gt; 修改密码&lt;/h4&gt;
+&lt;p&gt;接下来我需要对 &lt;code&gt;lilbai&lt;/code&gt;  这个账号添加权限，如果你查看系统用户的那一步显示的是 &lt;code&gt;Administrator&lt;/code&gt; ，那你就对 &lt;code&gt;Administrator&lt;/code&gt;  操作。&lt;/p&gt;
+&lt;p&gt;因为我忘记了 &lt;code&gt;lilbai&lt;/code&gt;  这个账号的密码，我需要重新设置一下。如果你也忘记密码了，可以重新设置一下密码。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022050907.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;打开用户属性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#打开用户属性&#34;&gt;#&lt;/a&gt; 打开用户属性&lt;/h4&gt;
+&lt;p&gt;如果你查看系统用户的那一步显示的是 &lt;code&gt;Administrator&lt;/code&gt; ，那你就对 &lt;code&gt;Administrator&lt;/code&gt;  操作，也就是图中的第一个。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022050837.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;设置密码永不过期&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#设置密码永不过期&#34;&gt;#&lt;/a&gt; 设置密码永不过期&lt;/h4&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022051258.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;给用户添加组&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#给用户添加组&#34;&gt;#&lt;/a&gt; 给用户添加组&lt;/h4&gt;
+&lt;p&gt;选择 &lt;code&gt;隶属于&lt;/code&gt; ，再点击下方的 &lt;code&gt;添加&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022051330.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;添加users组&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#添加users组&#34;&gt;#&lt;/a&gt; 添加 Users 组&lt;/h4&gt;
+&lt;p&gt;输入之后，点击检查名称，检查名称之后会在输入框出现 &lt;code&gt;DESKTOP-5EJQO9A\Users&lt;/code&gt; ， &lt;code&gt;DESKTOP-5EJQO9A&lt;/code&gt;  是你电脑的名称，每台电脑都不一样的&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022051407.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;添加administrator组&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#添加administrator组&#34;&gt;#&lt;/a&gt; 添加 Administrator 组&lt;/h4&gt;
+&lt;p&gt;输入之后，点击检查名称&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022051411.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;在坚持名称之后会出现这样的画面&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022051420.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;添加remeto-desktop-users组&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#添加remeto-desktop-users组&#34;&gt;#&lt;/a&gt; 添加 Remeto Desktop Users 组&lt;/h4&gt;
+&lt;p&gt;输入之后，点击检查名称。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022051426.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;添加组完成&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#添加组完成&#34;&gt;#&lt;/a&gt; 添加组完成&lt;/h4&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022051956.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;开启远程功能&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#开启远程功能&#34;&gt;#&lt;/a&gt; 开启远程功能&lt;/h2&gt;
+&lt;h3 id=&#34;打开远程桌面设置&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#打开远程桌面设置&#34;&gt;#&lt;/a&gt; 打开远程桌面设置&lt;/h3&gt;
+&lt;p&gt;在键盘按住 &lt;code&gt;win+S&lt;/code&gt;  打开搜索，搜索 &lt;code&gt;远程桌面设置&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022052243.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;启用远程桌面&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#启用远程桌面&#34;&gt;#&lt;/a&gt; 启用远程桌面&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022052553.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;修改电脑名字&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#修改电脑名字&#34;&gt;#&lt;/a&gt; 修改电脑名字&lt;/h3&gt;
+&lt;p&gt;如下图这个名字是我们远程我们的电脑的名字，但是我们在远程的时候，可不想输入这么一大串名字啊，得起个好听好看的啊，所以我们来修改一下电脑名字。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022052715.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;重命名电脑&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#重命名电脑&#34;&gt;#&lt;/a&gt; 重命名电脑&lt;/h3&gt;
+&lt;p&gt;打开 &lt;code&gt;关于&lt;/code&gt; ，选择 &lt;code&gt;重命名这台电脑&lt;/code&gt; ，修改成自己觉得帅气的名字，修改完要重启电脑重命名才会生效&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022053023.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022053132.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;测试远程桌面&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#测试远程桌面&#34;&gt;#&lt;/a&gt; 测试远程桌面&lt;/h2&gt;
+&lt;h3 id=&#34;查看电脑ip地址&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#查看电脑ip地址&#34;&gt;#&lt;/a&gt; 查看电脑 IP 地址&lt;/h3&gt;
+&lt;p&gt;相关操作我们都准备好了，接下来就是测试远程自己的电脑。我们在学校机房的时候想要远程自己的电脑，但是机房电脑是怎么找到 &lt;code&gt;我的电脑&lt;/code&gt; ，学校一大堆电脑，这就需要知道自己电脑的 &lt;code&gt;IP&lt;/code&gt;  地址了， &lt;code&gt;IP&lt;/code&gt;  地址可以让机房的电脑查找到 &lt;code&gt;自己的电脑&lt;/code&gt; ，那怎么知道自己电脑的 &lt;code&gt;IP&lt;/code&gt;  地址呢？&lt;/p&gt;
+&lt;p&gt;在键盘按住 &lt;code&gt;win+R&lt;/code&gt; ，打开这个窗口，输入 &lt;code&gt;cmd&lt;/code&gt; ，然后 &lt;code&gt;回车(Enter)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022053214.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;输入ipconfig&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#输入ipconfig&#34;&gt;#&lt;/a&gt; 输入 &lt;code&gt;ipconfig&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;输入 &lt;code&gt;ipconfig&lt;/code&gt; ，然后回车，这个 &lt;code&gt;IPv4&lt;/code&gt;  就是我们需要的 &lt;code&gt;IP&lt;/code&gt;  地址了&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022053650.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;远程电脑&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#远程电脑&#34;&gt;#&lt;/a&gt; 远程电脑&lt;/h3&gt;
+&lt;p&gt;这一步你可以借你舍友的电脑测试一下远程，在你舍友的电脑上操作以下步骤&lt;/p&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;要注意的是：你电脑和舍友电脑都要连接学校的内网，否则连接失败&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;在键盘按住 &lt;code&gt;win+R&lt;/code&gt; ，打开这个窗口，输入 &lt;code&gt;mstsc&lt;/code&gt; ，然后 &lt;code&gt;回车(Enter)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022053820.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;输入ip地址&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#输入ip地址&#34;&gt;#&lt;/a&gt; 输入 &lt;code&gt;IP&lt;/code&gt;  地址&lt;/h3&gt;
+&lt;p&gt;输入刚刚在 &lt;code&gt;cmd&lt;/code&gt;  获取的 &lt;code&gt;IPv4&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022053825.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;输入电脑名字和密码&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#输入电脑名字和密码&#34;&gt;#&lt;/a&gt; 输入电脑名字和密码&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022053832.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;div class=&#34;note success&#34;&gt;
+&lt;p&gt;这样就远程成功了&lt;/p&gt;
+&lt;/div&gt;
+</content>
+        <category term="教程" scheme="https://www.hikki.site/tags/%E6%95%99%E7%A8%8B/" />
+        <updated>2022-05-17T04:00:03.000Z</updated>
+    </entry>
     <entry>
         <id>https://www.hikki.site/d9e4874a.html</id>
         <title>python文件的读取与写入</title>
@@ -628,32 +711,5 @@ autopct=’%1.1f%%’) 			# 接受特定 String，指定数值显示方式，默
         <category term="BUG" scheme="https://www.hikki.site/tags/BUG/" />
         <category term="python" scheme="https://www.hikki.site/tags/python/" />
         <updated>2022-04-22T16:46:46.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://www.hikki.site/70ded1a5.html</id>
-        <title>root破解手机限速问题</title>
-        <link rel="alternate" href="https://www.hikki.site/70ded1a5.html"/>
-        <content type="html">&lt;h2 id=&#34;前言&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#前言&#34;&gt;#&lt;/a&gt; 前言&lt;/h2&gt;
-&lt;p&gt;首先你要有 &lt;code&gt;root&lt;/code&gt;  才能食用以下教程，而且仅适用 &lt;code&gt;andriod&lt;/code&gt;  手机，苹果手机不支持。&lt;/p&gt;
-&lt;p&gt;我们是通过修改手机接收频段来改善手机信号的，我们手机默认的频段一般是选择比较稳定的，但是，但是，但是如果大家都选这个最稳定的，是不是就容易造成人数过多使用这个频段，造成资源拥堵，资源分配到每个人是不是就变少了呢。&lt;/p&gt;
-&lt;p&gt;这好比高速公路有六车道，现在 1、2、3 车道是新建的，质量最好，4、5、6 车道比较破烂，不好走，容易出事故，官方默认只给大家走 1、2、3 车道，因为还是为了大家的安全着想嘛，这好理解，但是如果到五一放假了，大家是不是都想着出去玩容易造成堵车呢？这时候 4、5、6 车道没人跑，如果我们可以偷偷跑上去是不是可以跑的很快呢？&lt;/p&gt;
-&lt;p&gt;这个例子表示的是：车道就是频段，车就是我们的手机，车速就是网速。&lt;/p&gt;
-&lt;p&gt;但是我们如何去修改这个频段呢？也就是如何去修改车道呢？&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;下载一款软件叫 &lt;code&gt;信号网络大师&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;打开的时候要 &lt;code&gt;root&lt;/code&gt;  权限，选择 &lt;code&gt;允许&lt;/code&gt; ， &lt;code&gt;打开强制功能&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;选择频段&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022045801.jpeg&#34; alt=&#34;&#34; width=&#34;75%&#34; height=&#34;75%&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;选择lte频段&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#选择lte频段&#34;&gt;#&lt;/a&gt; 选择 LTE 频段&lt;/h2&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022040700.jpeg&#34; alt=&#34;&#34; width=&#34;75%&#34; height=&#34;75%&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;修改频段为b1和b3&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#修改频段为b1和b3&#34;&gt;#&lt;/a&gt; 修改频段为 B1 和 B3&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;此处我是联通卡&lt;/strong&gt;，选 B1 和 B3 比较快，也相对稳定很多，5G 也基本没掉线过，非常稳定&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022040740.jpeg&#34; alt=&#34;&#34; width=&#34;75%&#34; height=&#34;75%&#34;&gt;&lt;/p&gt;
-</content>
-        <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-        <category term="技术杂谈" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" />
-        <category term="Andriod" scheme="https://www.hikki.site/tags/Andriod/" />
-        <updated>2022-04-21T15:46:35.000Z</updated>
     </entry>
 </feed>
