@@ -83,7 +83,7 @@ python文件的读取与写入 - python - 编程语言 - 计算机科学 |
       <i class="ic i-pen"></i>
     </span>
     <span class="text">本文字数</span>
-    <span>2k</span>
+    <span>1.6k</span>
     <span class="text">字</span>
   </span>
   <span class="item" title="阅读时长">
@@ -91,7 +91,7 @@ python文件的读取与写入 - python - 编程语言 - 计算机科学 |
       <i class="ic i-clock"></i>
     </span>
     <span class="text">阅读时长</span>
-    <span>3 分钟</span>
+    <span>2 分钟</span>
   </span>
 </div>
 
@@ -124,12 +124,12 @@ python文件的读取与写入 - python - 编程语言 - 计算机科学 |
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicit31ffoj20zk0m8naf.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicitcxhpij20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciukx8a7j20zk0m8aio.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclj9410cj20zk0m8h12.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeu1usa7j20zk0m8b29.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giph4wqtg4j20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeyhsblkj20zk0m81kx.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giph4baakhj20zk0m8h5q.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipet4bz0yj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicliierfjj20zk0m8npd.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipew8gmvyj20zk0m87wh.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipewr8iypj20zk0m8b29.jpg"></li>
         </ul>
       </div>
     </header>
@@ -181,55 +181,20 @@ python文件的读取与写入 - python - 编程语言 - 计算机科学 |
   <div class="body md" itemprop="articleBody">
     
 
-    <pre><code class="lang-python">&quot;&quot;&quot;
-先给rw.txt文件写入 20行文字
-再从rw.txt文件读取这20行文字
-&quot;&quot;&quot;
-
-with open(&#39;../res/rw.txt&#39;,&#39;a+&#39;,encoding=&#39;utf-8&#39;) as f :
-    for line in range(20):
-        f.write(&#39;这是第&#39;+str(line)+&#39;行\n&#39;)
-
-with open(&#39;../res/rw.txt&#39;,&#39;r&#39;,encoding=&#39;utf-8&#39;) as f :
-    for line in f:
-        print(line,end=&quot;&quot;)
-
-#　&quot;with open(&#39;../res/rw.txt&#39;,&#39;r&#39;,encoding=&#39;utf-8&#39;) as f: &quot; 的好处
-# 可以让你变得更懒，它等于
-f = open(&#39;../res/rw.txt&#39;,&#39;r&#39;,encoding=&#39;utf-8&#39;)
-...
-f.close()
-# 可以省略掉f.close()，如果代码块短一点不会忘记关闭流文件，但是如果代码块大一点可能就容易忘记f.close()
-</code></pre>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022052350.jpeg" alt=""></p>
-<h2 id="用文本模式和二进制模式打开的区别"><a href="#用文本模式和二进制模式打开的区别" class="headerlink" title="用文本模式和二进制模式打开的区别"></a>用文本模式和二进制模式打开的区别</h2><h3 id="用文本模式打开"><a href="#用文本模式打开" class="headerlink" title="用文本模式打开"></a>用文本模式打开</h3><pre><code class="lang-python">with open(&#39;../res/rw.txt&#39;,&#39;r&#39;,encoding=&#39;utf-8&#39;) as f :
-    print(f.read())
-</code></pre>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022052358.jpeg" alt=""></p>
-<h3 id="用二进制的模式打开"><a href="#用二进制的模式打开" class="headerlink" title="用二进制的模式打开"></a>用二进制的模式打开</h3><pre><code class="lang-python">with open(&#39;../res/rw.txt&#39;,&#39;rb&#39;) as f :
-    print(f.read())
-</code></pre>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022052343.jpg" alt=""></p>
-<h2 id="常用读取的2种方法"><a href="#常用读取的2种方法" class="headerlink" title="常用读取的2种方法"></a>常用读取的2种方法</h2><h3 id="一次性全读取"><a href="#一次性全读取" class="headerlink" title="一次性全读取"></a>一次性全读取</h3><pre><code class="lang-python">with open(&#39;../res/rw.txt&#39;,&#39;r&#39;,encoding=&#39;utf-8&#39;) as f :
-    print(f.read())
-</code></pre>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022052358.jpeg" alt=""></p>
-<h3 id="逐行读取"><a href="#逐行读取" class="headerlink" title="逐行读取"></a>逐行读取</h3><pre><code class="lang-python">with open(&#39;../res/rw.txt&#39;,&#39;r&#39;,encoding=&#39;utf-8&#39;) as f :
-    for line in f:
-        print(line,end=&quot;&quot;)
-        print(&quot;-&quot;*5+&quot;逐行输出&quot;+&quot;-&quot;*5)
-</code></pre>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022052329.jpeg" alt=""></p>
-<h2 id="常用写入的2种方法"><a href="#常用写入的2种方法" class="headerlink" title="常用写入的2种方法"></a>常用写入的2种方法</h2><h3 id="以列表方法写入文件"><a href="#以列表方法写入文件" class="headerlink" title="以列表方法写入文件"></a>以列表方法写入文件</h3><pre><code class="lang-python">lis = []
-for i in range(10):
-    # 将字符串添加值lis列表末尾
-    lis.append(&#39;这是第&#39;+str(i)+&#39;行\n&#39;)
-with open(&#39;../res/rw.txt&#39;, &#39;a+&#39;, encoding=&#39;utf-8&#39;) as f:
-    # 将整个列表写入到rw.txt文件
-    f.writelines(lis)
-</code></pre>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022050455.jpeg" alt=""></p>
-<div class="table-container">
+    <figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token triple-quoted-string string">"""</pre></td></tr><tr><td data-num="2"></td><td><pre>先给rw.txt文件写入 20行文字</pre></td></tr><tr><td data-num="3"></td><td><pre>再从rw.txt文件读取这20行文字</pre></td></tr><tr><td data-num="4"></td><td><pre>"""</span></pre></td></tr><tr><td data-num="5"></td><td><pre></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">'../res/rw.txt'</span><span class="token punctuation">,</span><span class="token string">'a+'</span><span class="token punctuation">,</span>encoding<span class="token operator">=</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f <span class="token punctuation">:</span></pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token keyword">for</span> line <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr><td data-num="8"></td><td><pre>        f<span class="token punctuation">.</span>write<span class="token punctuation">(</span><span class="token string">'这是第'</span><span class="token operator">+</span><span class="token builtin">str</span><span class="token punctuation">(</span>line<span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">'行\n'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="9"></td><td><pre></pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">'../res/rw.txt'</span><span class="token punctuation">,</span><span class="token string">'r'</span><span class="token punctuation">,</span>encoding<span class="token operator">=</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f <span class="token punctuation">:</span></pre></td></tr><tr><td data-num="11"></td><td><pre>    <span class="token keyword">for</span> line <span class="token keyword">in</span> f<span class="token punctuation">:</span></pre></td></tr><tr><td data-num="12"></td><td><pre>        <span class="token keyword">print</span><span class="token punctuation">(</span>line<span class="token punctuation">,</span>end<span class="token operator">=</span><span class="token string">""</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="13"></td><td><pre>        </pre></td></tr><tr><td data-num="14"></td><td><pre><span class="token comment">#　"with open ('../res/rw.txt','r',encoding='utf-8') as f:" 的好处</span></pre></td></tr><tr><td data-num="15"></td><td><pre><span class="token comment"># 可以让你变得更懒，它等于</span></pre></td></tr><tr><td data-num="16"></td><td><pre>f <span class="token operator">=</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">'../res/rw.txt'</span><span class="token punctuation">,</span><span class="token string">'r'</span><span class="token punctuation">,</span>encoding<span class="token operator">=</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="17"></td><td><pre><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span></pre></td></tr><tr><td data-num="18"></td><td><pre>f<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="19"></td><td><pre><span class="token comment"># 可以省略掉 f.close ()，如果代码块短一点不会忘记关闭流文件，但是如果代码块大一点可能就容易忘记 f.close ()</span></pre></td></tr></table></figure><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022052350.jpeg" alt=""></p>
+<h2 id="用文本模式和二进制模式打开的区别"><a class="markdownIt-Anchor" href="#用文本模式和二进制模式打开的区别">#</a> 用文本模式和二进制模式打开的区别</h2>
+<h3 id="用文本模式打开"><a class="markdownIt-Anchor" href="#用文本模式打开">#</a> 用文本模式打开</h3>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">'../res/rw.txt'</span><span class="token punctuation">,</span><span class="token string">'r'</span><span class="token punctuation">,</span>encoding<span class="token operator">=</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f <span class="token punctuation">:</span></pre></td></tr><tr><td data-num="2"></td><td><pre>    <span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr></table></figure><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022052358.jpeg" alt=""></p>
+<h3 id="用二进制的模式打开"><a class="markdownIt-Anchor" href="#用二进制的模式打开">#</a> 用二进制的模式打开</h3>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">'../res/rw.txt'</span><span class="token punctuation">,</span><span class="token string">'rb'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f <span class="token punctuation">:</span></pre></td></tr><tr><td data-num="2"></td><td><pre>    <span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr></table></figure><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022052343.jpg" alt=""></p>
+<h2 id="常用读取的2种方法"><a class="markdownIt-Anchor" href="#常用读取的2种方法">#</a> 常用读取的 2 种方法</h2>
+<h3 id="一次性全读取"><a class="markdownIt-Anchor" href="#一次性全读取">#</a> 一次性全读取</h3>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">'../res/rw.txt'</span><span class="token punctuation">,</span><span class="token string">'r'</span><span class="token punctuation">,</span>encoding<span class="token operator">=</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f <span class="token punctuation">:</span></pre></td></tr><tr><td data-num="2"></td><td><pre>    <span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr></table></figure><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022052358.jpeg" alt=""></p>
+<h3 id="逐行读取"><a class="markdownIt-Anchor" href="#逐行读取">#</a> 逐行读取</h3>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">'../res/rw.txt'</span><span class="token punctuation">,</span><span class="token string">'r'</span><span class="token punctuation">,</span>encoding<span class="token operator">=</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f <span class="token punctuation">:</span></pre></td></tr><tr><td data-num="2"></td><td><pre>    <span class="token keyword">for</span> line <span class="token keyword">in</span> f<span class="token punctuation">:</span></pre></td></tr><tr><td data-num="3"></td><td><pre>        <span class="token keyword">print</span><span class="token punctuation">(</span>line<span class="token punctuation">,</span>end<span class="token operator">=</span><span class="token string">""</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="4"></td><td><pre>        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"-"</span><span class="token operator">*</span><span class="token number">5</span><span class="token operator">+</span><span class="token string">"逐行输出"</span><span class="token operator">+</span><span class="token string">"-"</span><span class="token operator">*</span><span class="token number">5</span><span class="token punctuation">)</span></pre></td></tr></table></figure><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022052329.jpeg" alt=""></p>
+<h2 id="常用写入的2种方法"><a class="markdownIt-Anchor" href="#常用写入的2种方法">#</a> 常用写入的 2 种方法</h2>
+<h3 id="以列表方法写入文件"><a class="markdownIt-Anchor" href="#以列表方法写入文件">#</a> 以列表方法写入文件</h3>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>lis <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr><td data-num="3"></td><td><pre>    <span class="token comment"># 将字符串添加值 lis 列表末尾</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    lis<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token string">'这是第'</span><span class="token operator">+</span><span class="token builtin">str</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">'行\n'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">'../res/rw.txt'</span><span class="token punctuation">,</span> <span class="token string">'a+'</span><span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token comment"># 将整个列表写入到 rw.txt 文件</span></pre></td></tr><tr><td data-num="7"></td><td><pre>    f<span class="token punctuation">.</span>writelines<span class="token punctuation">(</span>lis<span class="token punctuation">)</span></pre></td></tr></table></figure><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022050455.jpeg" alt=""></p>
 <table>
 <thead>
 <tr>
@@ -240,7 +205,7 @@ with open(&#39;../res/rw.txt&#39;, &#39;a+&#39;, encoding=&#39;utf-8&#39;) as f:
 <tbody>
 <tr>
 <td>r</td>
-<td>只读模式，如果文件不存在，则返回FileNotFoundError</td>
+<td>只读模式，如果文件不存在，则返回 FileNotFoundError</td>
 </tr>
 <tr>
 <td>w</td>
@@ -248,7 +213,7 @@ with open(&#39;../res/rw.txt&#39;, &#39;a+&#39;, encoding=&#39;utf-8&#39;) as f:
 </tr>
 <tr>
 <td>x</td>
-<td>创建写模式。文件不存在则创建，存在则返回异常FileExistsError</td>
+<td>创建写模式。文件不存在则创建，存在则返回异常 FileExistsError</td>
 </tr>
 <tr>
 <td>a</td>
@@ -264,31 +229,18 @@ with open(&#39;../res/rw.txt&#39;, &#39;a+&#39;, encoding=&#39;utf-8&#39;) as f:
 </tr>
 <tr>
 <td>+</td>
-<td>与r/w/x/a 一同使用，在原功能基础上增加同时读写功能</td>
+<td>与 r/w/x/a 一同使用，在原功能基础上增加同时读写功能</td>
 </tr>
 </tbody>
 </table>
-</div>
-<h3 id="以字符串写入文件"><a href="#以字符串写入文件" class="headerlink" title="以字符串写入文件"></a>以字符串写入文件</h3><pre><code class="lang-python">lis = []
-for i in range(10):
-    lis.append(&#39;这是第&#39;+str(i)+&#39;行\n&#39;)
-with open(&#39;../res/rw.txt&#39;, &#39;a+&#39;, encoding=&#39;utf-8&#39;) as f:
-    # 遍历lis列表
-    for line in range(len(lis)):
-        # 将lis的每一个字符串写入rw.txt文件
-        f.write(lis[line])
-</code></pre>
-<h3 id="容易忽略的错误"><a href="#容易忽略的错误" class="headerlink" title="容易忽略的错误"></a>容易忽略的错误</h3><pre><code class="lang-python">with open(&#39;../res/rw.txt&#39;,&#39;a+&#39;,encoding=&#39;utf-8&#39;) as f :
-    for line in range(10):
-        f.write(&#39;这是第&#39;+str(line)+&#39;行\n&#39;)
-        print(f.readline())
-</code></pre>
-<p>:::info</p>
+<h3 id="以字符串写入文件"><a class="markdownIt-Anchor" href="#以字符串写入文件">#</a> 以字符串写入文件</h3>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>lis <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr><td data-num="3"></td><td><pre>    lis<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token string">'这是第'</span><span class="token operator">+</span><span class="token builtin">str</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">'行\n'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">'../res/rw.txt'</span><span class="token punctuation">,</span> <span class="token string">'a+'</span><span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    <span class="token comment"># 遍历 lis 列表</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token keyword">for</span> line <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>lis<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr><td data-num="7"></td><td><pre>        <span class="token comment"># 将 lis 的每一个字符串写入 rw.txt 文件</span></pre></td></tr><tr><td data-num="8"></td><td><pre>        f<span class="token punctuation">.</span>write<span class="token punctuation">(</span>lis<span class="token punctuation">[</span>line<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr></table></figure><h3 id="容易忽略的错误"><a class="markdownIt-Anchor" href="#容易忽略的错误">#</a> 容易忽略的错误</h3>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">'../res/rw.txt'</span><span class="token punctuation">,</span><span class="token string">'a+'</span><span class="token punctuation">,</span>encoding<span class="token operator">=</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f <span class="token punctuation">:</span></pre></td></tr><tr><td data-num="2"></td><td><pre>    <span class="token keyword">for</span> line <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr><td data-num="3"></td><td><pre>        f<span class="token punctuation">.</span>write<span class="token punctuation">(</span><span class="token string">'这是第'</span><span class="token operator">+</span><span class="token builtin">str</span><span class="token punctuation">(</span>line<span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">'行\n'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="4"></td><td><pre>        <span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token punctuation">.</span>readline<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr></table></figure><div class="note info">
 <p>这段代码哪里出错了呢？为什么没显示？</p>
-<p>:::</p>
-<p>:::success</p>
-<p>答：其实是在文件流还没关闭之前，指针一直都是在文件末尾，你一写入内容，就读取内容，指针在末尾读取的内容自然就为空了，读取内容是按照从左往右，从上往下的嘛，所以你应该把指针往前面一点移动，这时候需要用到seek(offset) ，offset可选 [0,1,2] 0—&gt;文件开头， 1—&gt;当前位置 ， 2—&gt; 文件末尾</p>
-<p>:::</p>
+</div>
+<div class="note success">
+<p>答：其实是在文件流还没关闭之前，指针一直都是在文件末尾，你一写入内容，就读取内容，指针在末尾读取的内容自然就为空了，读取内容是按照从左往右，从上往下的嘛，所以你应该把指针往前面一点移动，这时候需要用到 seek (offset) ，offset 可选 [0,1,2] 0–&gt; 文件开头， 1–&gt; 当前位置 ， 2–&gt; 文件末尾</p>
+</div>
 
       <div class="tags">
           <a href="/tags/python/" rel="tag"><i class="ic i-tag"></i> python</a>
@@ -364,7 +316,7 @@ with open(&#39;../res/rw.txt&#39;, &#39;a+&#39;, encoding=&#39;utf-8&#39;) as f:
     <div class="item left">
       
 
-  <a href="/2c1b0cfb.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicm0n457cj20zk0m8e81.jpg" title="计算机系20级计算机科学与技术四班喜迎二十大">
+  <a href="/2c1b0cfb.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclhtuo6nj20zk0m8ttm.jpg" title="计算机系20级计算机科学与技术四班喜迎二十大">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> 生活</span>
   <h3>计算机系20级计算机科学与技术四班喜迎二十大</h3>
@@ -374,7 +326,7 @@ with open(&#39;../res/rw.txt&#39;, &#39;a+&#39;, encoding=&#39;utf-8&#39;) as f:
     <div class="item right">
       
 
-  <a href="/64ed46b0.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicis3attqj20zk0m8k7l.jpg" title="win10如何开启远程桌面">
+  <a href="/64ed46b0.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeybxm1pj20zk0m8niv.jpg" title="win10如何开启远程桌面">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> 技术杂谈</span>
   <h3>win10如何开启远程桌面</h3>
@@ -396,7 +348,7 @@ with open(&#39;../res/rw.txt&#39;, &#39;a+&#39;, encoding=&#39;utf-8&#39;) as f:
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%A8%E6%96%87%E6%9C%AC%E6%A8%A1%E5%BC%8F%E5%92%8C%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%A8%A1%E5%BC%8F%E6%89%93%E5%BC%80%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">1.</span> <span class="toc-text">用文本模式和二进制模式打开的区别</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%A8%E6%96%87%E6%9C%AC%E6%A8%A1%E5%BC%8F%E6%89%93%E5%BC%80"><span class="toc-number">1.1.</span> <span class="toc-text">用文本模式打开</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%A8%E4%BA%8C%E8%BF%9B%E5%88%B6%E7%9A%84%E6%A8%A1%E5%BC%8F%E6%89%93%E5%BC%80"><span class="toc-number">1.2.</span> <span class="toc-text">用二进制的模式打开</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E8%AF%BB%E5%8F%96%E7%9A%842%E7%A7%8D%E6%96%B9%E6%B3%95"><span class="toc-number">2.</span> <span class="toc-text">常用读取的2种方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E6%AC%A1%E6%80%A7%E5%85%A8%E8%AF%BB%E5%8F%96"><span class="toc-number">2.1.</span> <span class="toc-text">一次性全读取</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%90%E8%A1%8C%E8%AF%BB%E5%8F%96"><span class="toc-number">2.2.</span> <span class="toc-text">逐行读取</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%86%99%E5%85%A5%E7%9A%842%E7%A7%8D%E6%96%B9%E6%B3%95"><span class="toc-number">3.</span> <span class="toc-text">常用写入的2种方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A5%E5%88%97%E8%A1%A8%E6%96%B9%E6%B3%95%E5%86%99%E5%85%A5%E6%96%87%E4%BB%B6"><span class="toc-number">3.1.</span> <span class="toc-text">以列表方法写入文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A5%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%86%99%E5%85%A5%E6%96%87%E4%BB%B6"><span class="toc-number">3.2.</span> <span class="toc-text">以字符串写入文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%B9%E6%98%93%E5%BF%BD%E7%95%A5%E7%9A%84%E9%94%99%E8%AF%AF"><span class="toc-number">3.3.</span> <span class="toc-text">容易忽略的错误</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%A8%E6%96%87%E6%9C%AC%E6%A8%A1%E5%BC%8F%E5%92%8C%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%A8%A1%E5%BC%8F%E6%89%93%E5%BC%80%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">1.</span> <span class="toc-text"> 用文本模式和二进制模式打开的区别</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%A8%E6%96%87%E6%9C%AC%E6%A8%A1%E5%BC%8F%E6%89%93%E5%BC%80"><span class="toc-number">1.1.</span> <span class="toc-text"> 用文本模式打开</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%A8%E4%BA%8C%E8%BF%9B%E5%88%B6%E7%9A%84%E6%A8%A1%E5%BC%8F%E6%89%93%E5%BC%80"><span class="toc-number">1.2.</span> <span class="toc-text"> 用二进制的模式打开</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E8%AF%BB%E5%8F%96%E7%9A%842%E7%A7%8D%E6%96%B9%E6%B3%95"><span class="toc-number">2.</span> <span class="toc-text"> 常用读取的 2 种方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E6%AC%A1%E6%80%A7%E5%85%A8%E8%AF%BB%E5%8F%96"><span class="toc-number">2.1.</span> <span class="toc-text"> 一次性全读取</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%90%E8%A1%8C%E8%AF%BB%E5%8F%96"><span class="toc-number">2.2.</span> <span class="toc-text"> 逐行读取</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%86%99%E5%85%A5%E7%9A%842%E7%A7%8D%E6%96%B9%E6%B3%95"><span class="toc-number">3.</span> <span class="toc-text"> 常用写入的 2 种方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A5%E5%88%97%E8%A1%A8%E6%96%B9%E6%B3%95%E5%86%99%E5%85%A5%E6%96%87%E4%BB%B6"><span class="toc-number">3.1.</span> <span class="toc-text"> 以列表方法写入文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A5%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%86%99%E5%85%A5%E6%96%87%E4%BB%B6"><span class="toc-number">3.2.</span> <span class="toc-text"> 以字符串写入文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%B9%E6%98%93%E5%BF%BD%E7%95%A5%E7%9A%84%E9%94%99%E8%AF%AF"><span class="toc-number">3.3.</span> <span class="toc-text"> 容易忽略的错误</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
@@ -414,7 +366,7 @@ with open(&#39;../res/rw.txt&#39;, &#39;a+&#39;, encoding=&#39;utf-8&#39;) as f:
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">56</span>
+        <span class="count">59</span>
         <span class="name">文章</span>
       </a>
     </div>
@@ -426,7 +378,7 @@ with open(&#39;../res/rw.txt&#39;, &#39;a+&#39;, encoding=&#39;utf-8&#39;) as f:
     </div>
     <div class="item tags">
       <a href="/tags/">
-        <span class="count">19</span>
+        <span class="count">21</span>
         <span class="name">标签</span>
       </a>
     </div>
@@ -542,12 +494,12 @@ with open(&#39;../res/rw.txt&#39;, &#39;a+&#39;, encoding=&#39;utf-8&#39;) as f:
 <div class="breadcrumb">
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E6%A8%A1%E5%9D%97/" title="分类于 模块">模块</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
 </div>
 
-    <span><a href="/4d530639.html" title="记录自用hexo模块">记录自用hexo模块</a></span>
+    <span><a href="/81b2f4bf.html" title="python基础">python基础</a></span>
   </li>
 
       
@@ -556,24 +508,12 @@ with open(&#39;../res/rw.txt&#39;, &#39;a+&#39;, encoding=&#39;utf-8&#39;) as f:
 <div class="breadcrumb">
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
 </div>
 
-    <span><a href="/cf63c07.html" title="第四篇：安装Nodejs---从0基础搭建Hexo博客">第四篇：安装Nodejs---从0基础搭建Hexo博客</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E7%94%9F%E6%B4%BB/" title="分类于 生活">生活</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E7%94%9F%E6%B4%BB/%E6%97%A5%E8%AE%B0/" title="分类于 日记">日记</a>
-</div>
-
-    <span><a href="/ef5acbc6.html" title="4.9日记分享">4.9日记分享</a></span>
+    <span><a href="/b332b009.html" title="python爬虫-千千音乐">python爬虫-千千音乐</a></span>
   </li>
 
       
@@ -592,10 +532,35 @@ with open(&#39;../res/rw.txt&#39;, &#39;a+&#39;, encoding=&#39;utf-8&#39;) as f:
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E7%94%9F%E6%B4%BB/" title="分类于 生活">生活</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
 </div>
 
-    <span><a href="/2c1b0cfb.html" title="计算机系20级计算机科学与技术四班喜迎二十大">计算机系20级计算机科学与技术四班喜迎二十大</a></span>
+    <span><a href="/8075134e.html" title="numpy画复合函数">numpy画复合函数</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
+</div>
+
+    <span><a href="/16ad79ec.html" title="学习注册表">学习注册表</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/d9153102.html" title="关于idea的食用技巧">关于idea的食用技巧</a></span>
   </li>
 
       
@@ -606,10 +571,10 @@ with open(&#39;../res/rw.txt&#39;, &#39;a+&#39;, encoding=&#39;utf-8&#39;) as f:
 <i class="ic i-angle-right"></i>
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/" title="分类于 博客的食用方法">博客的食用方法</a>
 </div>
 
-    <span><a href="/aaad0208.html" title="零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a></span>
+    <span><a href="/5d5981b0.html" title="关于shoka主题食用技巧">关于shoka主题食用技巧</a></span>
   </li>
 
       
@@ -623,7 +588,7 @@ with open(&#39;../res/rw.txt&#39;, &#39;a+&#39;, encoding=&#39;utf-8&#39;) as f:
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
 </div>
 
-    <span><a href="/c3e9968a.html" title="python Qt5基础知识">python Qt5基础知识</a></span>
+    <span><a href="/1edcfdea.html" title="python-math库">python-math库</a></span>
   </li>
 
       
@@ -632,36 +597,21 @@ with open(&#39;../res/rw.txt&#39;, &#39;a+&#39;, encoding=&#39;utf-8&#39;) as f:
 <div class="breadcrumb">
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%90%84%E7%A7%8Dbug/" title="分类于 各种bug">各种bug</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
 </div>
 
-    <span><a href="/6c24ad8e.html" title="python安装&#x2F;更新包出现报错">python安装/更新包出现报错</a></span>
+    <span><a href="/859f60bd.html" title="第二篇：安装Git---从0基础搭建Hexo博客">第二篇：安装Git---从0基础搭建Hexo博客</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
 </div>
 
-    <span><a href="/2b5f7ebb.html" title="这是大二下的各科作业">这是大二下的各科作业</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/" title="分类于 持续更新">持续更新</a>
-</div>
-
-    <span><a href="/43d2d741.html" title="Git详细使用方法">Git详细使用方法</a></span>
+    <span><a href="/451161d7.html" title="idea开发必装插件">idea开发必装插件</a></span>
   </li>
 
   </ul>
@@ -686,13 +636,13 @@ with open(&#39;../res/rw.txt&#39;, &#39;a+&#39;, encoding=&#39;utf-8&#39;) as f:
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="站点总字数">55k 字</span>
+    <span title="站点总字数">49k 字</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="站点阅读时长">1:14</span>
+    <span title="站点阅读时长">1:06</span>
   </div>
   <div class="powered-by">
     基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>

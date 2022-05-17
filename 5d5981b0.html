@@ -83,7 +83,7 @@
       <i class="ic i-pen"></i>
     </span>
     <span class="text">本文字数</span>
-    <span>1.4k</span>
+    <span>1k</span>
     <span class="text">字</span>
   </span>
   <span class="item" title="阅读时长">
@@ -91,7 +91,7 @@
       <i class="ic i-clock"></i>
     </span>
     <span class="text">阅读时长</span>
-    <span>2 分钟</span>
+    <span>1 分钟</span>
   </span>
 </div>
 
@@ -124,12 +124,12 @@
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclil3m4ej20zk0m8tn8.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipesx5fdwj20zk0m81kx.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giph47e9vtj20zk0m8x6l.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipevarprfj20zk0m8npd.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclhpw3lwj20zk0m8gvw.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclj9410cj20zk0m8h12.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclg5ms2rj20zk0m8u0x.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclhpw3lwj20zk0m8gvw.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclgrvbd6j20zk0m8qv5.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giph4fomxoj20zk0m8axp.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclh5u05ej20zk0m87df.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicliierfjj20zk0m8npd.jpg"></li>
         </ul>
       </div>
     </header>
@@ -181,130 +181,74 @@
   <div class="body md" itemprop="articleBody">
     
 
-    <h2 id="Front-Matter详解"><a href="#Front-Matter详解" class="headerlink" title="Front-Matter详解"></a>Front-Matter详解</h2><p>``` markdown mark:1,2-8<br>title: 文章Front-Matter参数设置      #文章标题<br>tags:                             #文章标签</p>
-<ul>
-<li>博客</li>
-<li>教程<br>categories:                        #文章分类</li>
-<li>计算机科学</li>
-<li>博客<br>sticky: true                     #文章置顶<br>comments: true                  #开启评论<br>audio: false                    #关闭音乐播放器<br>date: 2022-04-04 14:22:16          #文章创建时间，自动生成，或者自己修改时间也可以<br>```</li>
-</ul>
-<hr>
-<h2 id="个人头像配置"><a href="#个人头像配置" class="headerlink" title="个人头像配置"></a>个人头像配置</h2><p>```yaml mark:1-7<br>sidebar:</p>
-<h1 id="侧边栏的位置"><a href="#侧边栏的位置" class="headerlink" title="侧边栏的位置"></a>侧边栏的位置</h1><p>  position: left</p>
-<h1 id="position-right"><a href="#position-right" class="headerlink" title="position: right"></a>position: right</h1><h1 id="替换默认头像，并在这里设置url"><a href="#替换默认头像，并在这里设置url" class="headerlink" title="替换默认头像，并在这里设置url"></a>替换默认头像，并在这里设置url</h1><p>  avatar: avatar.jpg</p>
-<h1 id="头像路径在-themes-shoka-source-images-avatar-jpg"><a href="#头像路径在-themes-shoka-source-images-avatar-jpg" class="headerlink" title="头像路径在 themes\shoka\source\images\avatar.jpg"></a>头像路径在 themes\shoka\source\images\avatar.jpg</h1><pre><code>
-## 底部widgets
-
-```yaml mark:1-4
-widgets:
-  random_posts: true # 显示随机文章
-  recent_comments: true # 显示最近评论
-  #在shoka/_config.yml修改
-</code></pre><h2 id="note提示块"><a href="#note提示块" class="headerlink" title="note提示块"></a><code>note</code>提示块</h2><p>``` yaml mark:1,2-28<br>:::default<br>默认默认<br>:::</p>
-<p>:::primary<br>基本基本<br>:::</p>
-<p>:::info<br>提示提示<br>:::</p>
-<p>:::success<br>成功成功<br>:::</p>
-<p>:::warning<br>警告警告<br>:::</p>
-<p>:::danger<br>危险危险<br>:::</p>
-<p>:::danger no-icon<br>危险危险<br>:::</p>
-<pre><code>
-:::default
-默认默认
-:::
-
-:::primary
-基本基本
-:::
-
-:::info
-提示提示
-:::
-
-:::success
-成功成功
-:::
-
-:::warning
-警告警告
-:::
-
-:::danger
-危险危险
-:::
-
-:::danger no-icon
-危险危险
-:::
-
-## collapse折叠块
-
-能基于 `markdown-it-container`
-标签为：
-开始行    `+++[风格颜色] [标题文字]`
-结束行    `+++`
-
-```yaml mark:1,2-42
-+++ 默认默认 这里是一段文字
-++ 下划线 ++
-+++
-
-
-+++primary 紫色
-:::info
-参考信息
-:::
-
-- 第一行
-- 第二行
-+++
-
-
-+++info  蓝色
-;;;id3 卡片 1
-这里是卡片 1 的内容
-;;;
-
-;;;id3 卡片 2
-这里是卡片 2 的内容
-;;;
-+++
-
-+++success 绿色
-&#123;% links %&#125;
-- site: 優萌初華
-  url: https://shoka.lostyu.me
-  color: "#e9546b"
-&#123;% endlinks %&#125;
-+++
-
-+++warning 黄色
-!! 警告警告警告警告警告！！&#123;.bulr&#125;
-[label]&#123;.label .success&#125;
-+++
-
-+++danger 红色
-[danger]&#123;.label .danger&#125;
-+++
-</code></pre><p>+++ 默认默认 这里是一段文字<br>++ 下划线 ++</p>
-<p>+++</p>
-<p>+++primary 紫色<br>:::info<br>参考信息<br>:::</p>
+    <h2 id="front-matter详解"><a class="markdownIt-Anchor" href="#front-matter详解">#</a> Front-Matter 详解</h2>
+<figure class="highlight markdown"><figcaption data-lang="markdown"><span>n</span></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>title: 文章Front-Matter参数设置  	#文章标题</pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>tags: 							#文章标签</pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>  <span class="token list punctuation">-</span> 博客</pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre>  <span class="token list punctuation">-</span> 教程</pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre>categories:						#文章分类</pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre>  <span class="token list punctuation">-</span> 计算机科学</pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre>  <span class="token list punctuation">-</span> 博客</pre></td></tr><tr class="marked"><td data-num="8"></td><td><pre>sticky: true 					#文章置顶</pre></td></tr><tr><td data-num="9"></td><td><pre>comments: true  				#开启评论</pre></td></tr><tr><td data-num="10"></td><td><pre>audio: false					#关闭音乐播放器</pre></td></tr><tr><td data-num="11"></td><td><pre>date: 2022-04-04 14:22:16  		#文章创建时间，自动生成，或者自己修改时间也可以</pre></td></tr></table></figure><hr>
+<h2 id="个人头像配置"><a class="markdownIt-Anchor" href="#个人头像配置">#</a> 个人头像配置</h2>
+<figure class="highlight yaml"><figcaption data-lang="YAML"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token key atrule">sidebar</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>  <span class="token comment"># 侧边栏的位置</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>  <span class="token key atrule">position</span><span class="token punctuation">:</span> left</pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre>  <span class="token comment">#position: right</span></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre>  <span class="token comment"># 替换默认头像，并在这里设置 url</span></pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre>  <span class="token key atrule">avatar</span><span class="token punctuation">:</span> avatar.jpg</pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre>  <span class="token comment"># 头像路径在 themes\shoka\source\images\avatar.jpg</span></pre></td></tr></table></figure><h2 id="底部widgets"><a class="markdownIt-Anchor" href="#底部widgets">#</a> 底部 widgets</h2>
+<figure class="highlight yaml"><figcaption data-lang="YAML"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token key atrule">widgets</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>  <span class="token key atrule">random_posts</span><span class="token punctuation">:</span> <span class="token boolean important">true</span> <span class="token comment"># 显示随机文章</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>  <span class="token key atrule">recent_comments</span><span class="token punctuation">:</span> <span class="token boolean important">true</span> <span class="token comment"># 显示最近评论</span></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre>  <span class="token comment">#在 shoka/_config.yml 修改</span></pre></td></tr></table></figure><h2 id="note提示块"><a class="markdownIt-Anchor" href="#note提示块">#</a>  <code>note</code>  提示块</h2>
+<figure class="highlight yaml"><figcaption data-lang="YAML"><span>l</span></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token punctuation">:</span>default</pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>默认默认</pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre><span class="token key atrule">::</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token punctuation">:</span>primary</pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre>基本基本</pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre><span class="token key atrule">::</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="8"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="9"></td><td><pre><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token punctuation">:</span>info</pre></td></tr><tr class="marked"><td data-num="10"></td><td><pre>提示提示</pre></td></tr><tr class="marked"><td data-num="11"></td><td><pre><span class="token key atrule">::</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="12"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="13"></td><td><pre><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token punctuation">:</span>success</pre></td></tr><tr class="marked"><td data-num="14"></td><td><pre>成功成功</pre></td></tr><tr class="marked"><td data-num="15"></td><td><pre><span class="token key atrule">::</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="16"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="17"></td><td><pre><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token punctuation">:</span>warning</pre></td></tr><tr class="marked"><td data-num="18"></td><td><pre>警告警告</pre></td></tr><tr class="marked"><td data-num="19"></td><td><pre><span class="token key atrule">::</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="20"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="21"></td><td><pre><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token punctuation">:</span>danger</pre></td></tr><tr class="marked"><td data-num="22"></td><td><pre>危险危险</pre></td></tr><tr class="marked"><td data-num="23"></td><td><pre><span class="token key atrule">::</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="24"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="25"></td><td><pre><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token punctuation">:</span>danger no<span class="token punctuation">-</span>icon</pre></td></tr><tr class="marked"><td data-num="26"></td><td><pre>危险危险</pre></td></tr><tr class="marked"><td data-num="27"></td><td><pre><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token punctuation">:</span></pre></td></tr></table></figure><div class="note default">
+<p>默认默认</p>
+</div>
+<div class="note primary">
+<p>基本基本</p>
+</div>
+<div class="note info">
+<p>提示提示</p>
+</div>
+<div class="note success">
+<p>成功成功</p>
+</div>
+<div class="note warning">
+<p>警告警告</p>
+</div>
+<div class="note danger">
+<p>危险危险</p>
+</div>
+<div class="note danger no-icon">
+<p>危险危险</p>
+</div>
+<h2 id="collapse折叠块"><a class="markdownIt-Anchor" href="#collapse折叠块">#</a> collapse 折叠块</h2>
+<p>能基于  <code>markdown-it-container</code> <br>
+ 标签为：<br>
+开始行	 <code>+++[风格颜色] [标题文字]</code> <br>
+ 结束行	 <code>+++</code></p>
+<figure class="highlight yaml"><figcaption data-lang="YAML"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>+++ 默认默认 这里是一段文字</pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>++ 下划线 ++</pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>+++</pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre>+++primary 紫色</pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token punctuation">:</span>info</pre></td></tr><tr class="marked"><td data-num="8"></td><td><pre>参考信息</pre></td></tr><tr class="marked"><td data-num="9"></td><td><pre><span class="token key atrule">::</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="10"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="11"></td><td><pre><span class="token punctuation">-</span> 第一行</pre></td></tr><tr class="marked"><td data-num="12"></td><td><pre><span class="token punctuation">-</span> 第二行</pre></td></tr><tr class="marked"><td data-num="13"></td><td><pre>+++</pre></td></tr><tr class="marked"><td data-num="14"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="15"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="16"></td><td><pre>+++info  蓝色</pre></td></tr><tr class="marked"><td data-num="17"></td><td><pre>;;;id3 卡片 1</pre></td></tr><tr class="marked"><td data-num="18"></td><td><pre>这里是卡片 1 的内容</pre></td></tr><tr class="marked"><td data-num="19"></td><td><pre>;;;</pre></td></tr><tr class="marked"><td data-num="20"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="21"></td><td><pre>;;;id3 卡片 2</pre></td></tr><tr class="marked"><td data-num="22"></td><td><pre>这里是卡片 2 的内容</pre></td></tr><tr class="marked"><td data-num="23"></td><td><pre>;;;</pre></td></tr><tr class="marked"><td data-num="24"></td><td><pre>+++</pre></td></tr><tr class="marked"><td data-num="25"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="26"></td><td><pre>+++success 绿色</pre></td></tr><tr class="marked"><td data-num="27"></td><td><pre>&lt;<span class="token tag">!--swig</span>￼0<span class="token punctuation">-</span><span class="token punctuation">-</span><span class="token punctuation">></span></pre></td></tr><tr class="marked"><td data-num="28"></td><td><pre>+++</pre></td></tr><tr class="marked"><td data-num="29"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="30"></td><td><pre>+++warning 黄色</pre></td></tr><tr class="marked"><td data-num="31"></td><td><pre><span class="token tag">!</span><span class="token tag">!</span> 警告警告警告警告警告！！<span class="token punctuation">&#123;</span>.bulr<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="32"></td><td><pre><span class="token punctuation">[</span>label<span class="token punctuation">]</span><span class="token punctuation">&#123;</span>.label .success<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="33"></td><td><pre>+++</pre></td></tr><tr class="marked"><td data-num="34"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="35"></td><td><pre>+++danger 红色</pre></td></tr><tr class="marked"><td data-num="36"></td><td><pre><span class="token punctuation">[</span>danger<span class="token punctuation">]</span><span class="token punctuation">&#123;</span>.label .danger<span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="37"></td><td><pre>+++</pre></td></tr></table></figure><details><summary>默认默认 这里是一段文字</summary><div>
+<p>++ 下划线 ++</p>
+</div></details>
+<details class="primary"><summary>紫色</summary><div>
+<div class="note info">
+<p>参考信息</p>
+</div>
 <ul>
 <li>第一行</li>
-<li>第二行<br>+++</li>
+<li>第二行</li>
 </ul>
-<p>+++info  蓝色<br>;;;id3 卡片 1<br>这里是卡片 1 的内容<br>;;;</p>
-<p>;;;id3 卡片 2<br>这里是卡片 2 的内容<br>;;;<br>+++</p>
-<p>+++success 绿色<br><div class="links"><div class="item" title="優萌初華" style="--block-color:#e9546b;"><span class="exturl image" data-url="aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWU=" data-background-image="https://cdn.jsdelivr.net/gh/0000rookie/github.io/images/404.png"></span>
+</div></details>
+<details class="info"><summary>蓝色</summary><div>
+<div class="tab" data-id="id3" data-title="卡片 1">
+<p>这里是卡片 1 的内容</p>
+</div>
+<div class="tab" data-id="id3" data-title="卡片 2">
+<p>这里是卡片 2 的内容</p>
+</div>
+</div></details>
+<details class="success"><summary>绿色</summary><div>
+<div class="links"><div class="item" title="優萌初華" style="--block-color:#e9546b;"><span class="exturl image" data-url="aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWU=" data-background-image="https://cdn.jsdelivr.net/gh/0000rookie/github.io/images/404.png"></span>
           <div class="info">
           <span class="exturl title" data-url="aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWU=">優萌初華</span>
           <p class="desc">https://shoka.lostyu.me</p>
-          </div></div></div><br>+++</p>
-<p>+++warning 黄色<br>!! 警告警告警告警告警告！！{.bulr}<br>[label]{.label .success}<br>+++</p>
-<p>+++danger 红色<br>[danger]{.label .danger}</p>
-<p>+++</p>
-<p>:::warning</p>
+          </div></div></div>
+</div></details>
+<details class="warning"><summary>黄色</summary><div>
+<p>!! 警告警告警告警告警告！！{.bulr}<br>
+<span class="label success">label</span></p>
+</div></details>
+<details class="danger"><summary>红色</summary><div>
+<p><span class="label danger">danger</span></p>
+</div></details>
+<div class="note warning">
 <p>以上如有错误，欢迎留言指出</p>
-<p>:::</p>
+</div>
 
       <div class="tags">
           <a href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag"><i class="ic i-tag"></i> 博客</a>
@@ -381,7 +325,7 @@ widgets:
     <div class="item left">
       
 
-  <a href="/e85071ad.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeuv80yoj20zk0m8kjl.jpg" title="搭建GitHu图床">
+  <a href="/e85071ad.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclh0m9pdj20zk0m8hdt.jpg" title="搭建GitHu图床">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> 模块</span>
   <h3>搭建GitHu图床</h3>
@@ -391,7 +335,7 @@ widgets:
     <div class="item right">
       
 
-  <a href="/43d2d741.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giph4lm9i7j20zk0m84qp.jpg" title="Git详细使用方法">
+  <a href="/43d2d741.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipewr8iypj20zk0m8b29.jpg" title="Git详细使用方法">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> 持续更新</span>
   <h3>Git详细使用方法</h3>
@@ -413,7 +357,7 @@ widgets:
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Front-Matter%E8%AF%A6%E8%A7%A3"><span class="toc-number">1.</span> <span class="toc-text">Front-Matter详解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%AA%E4%BA%BA%E5%A4%B4%E5%83%8F%E9%85%8D%E7%BD%AE"><span class="toc-number">2.</span> <span class="toc-text">个人头像配置</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BE%A7%E8%BE%B9%E6%A0%8F%E7%9A%84%E4%BD%8D%E7%BD%AE"><span class="toc-number"></span> <span class="toc-text">侧边栏的位置</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#position-right"><span class="toc-number"></span> <span class="toc-text">position: right</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9B%BF%E6%8D%A2%E9%BB%98%E8%AE%A4%E5%A4%B4%E5%83%8F%EF%BC%8C%E5%B9%B6%E5%9C%A8%E8%BF%99%E9%87%8C%E8%AE%BE%E7%BD%AEurl"><span class="toc-number"></span> <span class="toc-text">替换默认头像，并在这里设置url</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%A4%B4%E5%83%8F%E8%B7%AF%E5%BE%84%E5%9C%A8-themes-shoka-source-images-avatar-jpg"><span class="toc-number"></span> <span class="toc-text">头像路径在 themes\shoka\source\images\avatar.jpg</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#note%E6%8F%90%E7%A4%BA%E5%9D%97"><span class="toc-number">1.</span> <span class="toc-text">note提示块</span></a></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#front-matter%E8%AF%A6%E8%A7%A3"><span class="toc-number">1.</span> <span class="toc-text"> Front-Matter 详解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%AA%E4%BA%BA%E5%A4%B4%E5%83%8F%E9%85%8D%E7%BD%AE"><span class="toc-number">2.</span> <span class="toc-text"> 个人头像配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BA%95%E9%83%A8widgets"><span class="toc-number">3.</span> <span class="toc-text"> 底部 widgets</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#note%E6%8F%90%E7%A4%BA%E5%9D%97"><span class="toc-number">4.</span> <span class="toc-text">  note  提示块</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#collapse%E6%8A%98%E5%8F%A0%E5%9D%97"><span class="toc-number">5.</span> <span class="toc-text"> collapse 折叠块</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
@@ -431,7 +375,7 @@ widgets:
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">56</span>
+        <span class="count">59</span>
         <span class="name">文章</span>
       </a>
     </div>
@@ -443,7 +387,7 @@ widgets:
     </div>
     <div class="item tags">
       <a href="/tags/">
-        <span class="count">19</span>
+        <span class="count">21</span>
         <span class="name">标签</span>
       </a>
     </div>
@@ -562,7 +506,25 @@ widgets:
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%90%84%E7%A7%8Dbug/" title="分类于 各种bug">各种bug</a>
 </div>
 
-    <span><a href="/6c24ad8e.html" title="python安装&#x2F;更新包出现报错">python安装/更新包出现报错</a></span>
+    <span><a href="/28af37eb.html" title="Hexo部署err:Error:Spawn failed错误">Hexo部署err:Error:Spawn failed错误</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/f2edc254.html" title="javase基础">javase基础</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/d95d7e09.html" title="我的第一篇博客">我的第一篇博客</a></span>
   </li>
 
       
@@ -574,7 +536,21 @@ widgets:
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
 </div>
 
-    <span><a href="/2b5f7ebb.html" title="这是大二下的各科作业">这是大二下的各科作业</a></span>
+    <span><a href="/111f4f09.html" title="CentOS新增root用户">CentOS新增root用户</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/JAVA/" title="分类于 JAVA">JAVA</a>
+</div>
+
+    <span><a href="/fb13f705.html" title="JAVA记事本基础">JAVA记事本基础</a></span>
   </li>
 
       
@@ -588,7 +564,7 @@ widgets:
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
 </div>
 
-    <span><a href="/aaad0208.html" title="零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a></span>
+    <span><a href="/dc09a46c.html" title="第六篇：将博客部署到GitHub---从0基础搭建Hexo博客">第六篇：将博客部署到GitHub---从0基础搭建Hexo博客</a></span>
   </li>
 
       
@@ -597,54 +573,12 @@ widgets:
 <div class="breadcrumb">
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E4%B8%80%E4%B8%AA%E5%B0%8F%E6%8A%80%E5%B7%A7/" title="分类于 一个小技巧">一个小技巧</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
 </div>
 
-    <span><a href="/2cc8588f.html" title="添加开机自启程序">添加开机自启程序</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/" title="分类于 博客的食用方法">博客的食用方法</a>
-</div>
-
-    <span><a href="/6f010433.html" title="jsdelivr刷新缓存">jsdelivr刷新缓存</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
-</div>
-
-    <span><a href="/859f60bd.html" title="第二篇：安装Git---从0基础搭建Hexo博客">第二篇：安装Git---从0基础搭建Hexo博客</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/" title="分类于 博客的食用方法">博客的食用方法</a>
-</div>
-
-    <span><a href="/5d5981b0.html" title="关于shoka主题食用技巧">关于shoka主题食用技巧</a></span>
+    <span><a href="/37c8254d.html" title="python qt5 实现记事本界面">python qt5 实现记事本界面</a></span>
   </li>
 
       
@@ -663,12 +597,14 @@ widgets:
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E7%94%9F%E6%B4%BB/" title="分类于 生活">生活</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E7%94%9F%E6%B4%BB/%E6%97%A5%E8%AE%B0/" title="分类于 日记">日记</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/" title="分类于 博客的食用方法">博客的食用方法</a>
 </div>
 
-    <span><a href="/b9e6c7bf.html" title="日记分享2022.4.13">日记分享2022.4.13</a></span>
+    <span><a href="/b26ff49b.html" title="如何在hexo博客写作">如何在hexo博客写作</a></span>
   </li>
 
       
@@ -677,12 +613,10 @@ widgets:
 <div class="breadcrumb">
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
 </div>
 
-    <span><a href="/b75a1db6.html" title="第三篇：Git提交文件---从0基础搭建Hexo博客">第三篇：Git提交文件---从0基础搭建Hexo博客</a></span>
+    <span><a href="/70ded1a5.html" title="root破解手机限速问题">root破解手机限速问题</a></span>
   </li>
 
   </ul>
@@ -707,13 +641,13 @@ widgets:
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="站点总字数">55k 字</span>
+    <span title="站点总字数">49k 字</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="站点阅读时长">1:14</span>
+    <span title="站点阅读时长">1:06</span>
   </div>
   <div class="powered-by">
     基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
