@@ -29,6 +29,8 @@
             <guid isPermalink="true">https://www.hikki.site/451161d7.html</guid>
             <title>idea开发必装插件</title>
             <link>https://www.hikki.site/451161d7.html</link>
+            <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+            <category term="技术杂谈" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" />
             <category term="插件" scheme="https://www.hikki.site/tags/%E6%8F%92%E4%BB%B6/" />
             <pubDate>Tue, 17 May 2022 23:32:07 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;变量命名翻译&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#变量命名翻译&#34;&gt;#&lt;/a&gt; 变量命名翻译&lt;/h2&gt;
@@ -47,6 +49,9 @@
             <guid isPermalink="true">https://www.hikki.site/f2edc254.html</guid>
             <title>javase基础</title>
             <link>https://www.hikki.site/f2edc254.html</link>
+            <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+            <category term="编程语言" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" />
+            <category term="java" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/" />
             <pubDate>Tue, 17 May 2022 17:00:53 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;访问控制&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#访问控制&#34;&gt;#&lt;/a&gt; 访问控制&lt;/h2&gt;
 &lt;table&gt;
@@ -97,6 +102,9 @@
             <guid isPermalink="true">https://www.hikki.site/d9153102.html</guid>
             <title>关于idea的食用技巧</title>
             <link>https://www.hikki.site/d9153102.html</link>
+            <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+            <category term="编程语言" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" />
+            <category term="java" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/" />
             <category term="java" scheme="https://www.hikki.site/tags/java/" />
             <pubDate>Tue, 17 May 2022 16:21:35 +0800</pubDate>
             <description><![CDATA[ &lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption data-lang=&#34;java&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;st&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
@@ -598,7 +606,7 @@ autopct=’%1.1f%%’) 			# 接受特定 String，指定数值显示方式，默
             <link>https://www.hikki.site/b2cc2eb5.html</link>
             <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
             <category term="编程语言" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" />
-            <category term="JAVA" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/JAVA/" />
+            <category term="java" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/" />
             <category term="JAVA" scheme="https://www.hikki.site/tags/JAVA/" />
             <pubDate>Tue, 03 May 2022 23:33:46 +0800</pubDate>
             <description><![CDATA[ &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;&lt;/code&gt;&lt;/pre&gt;
@@ -633,7 +641,7 @@ autopct=’%1.1f%%’) 			# 接受特定 String，指定数值显示方式，默
             <link>https://www.hikki.site/fb13f705.html</link>
             <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
             <category term="编程语言" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" />
-            <category term="JAVA" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/JAVA/" />
+            <category term="java" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/" />
             <category term="JAVA" scheme="https://www.hikki.site/tags/JAVA/" />
             <pubDate>Sun, 01 May 2022 15:22:30 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;java记事本&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#java记事本&#34;&gt;#&lt;/a&gt; Java 记事本&lt;/h2&gt;

@@ -13,6 +13,8 @@
             "date_published": "2022-05-17T15:32:07.000Z",
             "content_html": "<h2 id=\"变量命名翻译\"><a class=\"markdownIt-Anchor\" href=\"#变量命名翻译\">#</a> 变量命名翻译</h2>\n<p>我们在给变量命名的时候就很头疼，究竟选哪个好呢？有时候还想不起来是哪个单词，这时候是不是还要去查一下这个单词怎么拼？这款插件就一个快捷键就帮你解决问题</p>\n<h3 id=\"安装\"><a class=\"markdownIt-Anchor\" href=\"#安装\">#</a> 安装</h3>\n<p><img data-src=\"https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022053433.jpeg\" alt=\"\"></p>\n<h3 id=\"快捷键翻译\"><a class=\"markdownIt-Anchor\" href=\"#快捷键翻译\">#</a> 快捷键翻译</h3>\n<p><code>ctrl+shift+Y</code>  快速翻译</p>\n<p><img data-src=\"https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022053545.jpeg\" alt=\"\"></p>\n<h3 id=\"翻译并命名\"><a class=\"markdownIt-Anchor\" href=\"#翻译并命名\">#</a> 翻译并命名</h3>\n<p><code>ctrl+shift+X</code>  快速命名并填上</p>\n<p><img data-src=\"https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022053617.jpeg\" alt=\"\"></p>\n",
             "tags": [
+                "计算机科学",
+                "技术杂谈",
                 "插件"
             ]
         },
@@ -22,7 +24,11 @@
             "title": "javase基础",
             "date_published": "2022-05-17T09:00:53.000Z",
             "content_html": "<h2 id=\"访问控制\"><a class=\"markdownIt-Anchor\" href=\"#访问控制\">#</a> 访问控制</h2>\n<table>\n<thead>\n<tr>\n<th></th>\n<th>private</th>\n<th>default</th>\n<th>protected</th>\n<th>public</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>同一类</td>\n<td>yes</td>\n<td>yes</td>\n<td>yes</td>\n<td>yes</td>\n</tr>\n<tr>\n<td>同一包的类</td>\n<td></td>\n<td>yes</td>\n<td>yes</td>\n<td>yes</td>\n</tr>\n<tr>\n<td>子类</td>\n<td></td>\n<td></td>\n<td>yes</td>\n<td>yes</td>\n</tr>\n<tr>\n<td>其他包中的类</td>\n<td></td>\n<td></td>\n<td></td>\n<td>yes</td>\n</tr>\n</tbody>\n</table>\n<h2 id=\"可变长参数\"><a class=\"markdownIt-Anchor\" href=\"#可变长参数\">#</a> 可变长参数</h2>\n<figure class=\"highlight java\"><figcaption data-lang=\"java\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre><span class=\"token keyword\">public</span> <span class=\"token keyword\">static</span> <span class=\"token keyword\">void</span> <span class=\"token function\">text</span><span class=\"token punctuation\">(</span><span class=\"token class-name\">String</span> <span class=\"token punctuation\">.</span><span class=\"token punctuation\">.</span><span class=\"token punctuation\">.</span> arr<span class=\"token punctuation\">)</span><span class=\"token punctuation\">&#123;</span><span class=\"token punctuation\">&#125;</span></pre></td></tr></table></figure><figure class=\"highlight java\"><figcaption data-lang=\"java\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre><span class=\"token comment\">// 一般把固定参数放在首位，不然在传参的时候，JVM 识别不出来那个是其他</span></pre></td></tr><tr><td data-num=\"2\"></td><td><pre><span class=\"token keyword\">public</span> <span class=\"token keyword\">static</span> <span class=\"token keyword\">void</span> <span class=\"token function\">text</span><span class=\"token punctuation\">(</span><span class=\"token keyword\">int</span> a<span class=\"token punctuation\">,</span><span class=\"token class-name\">String</span> <span class=\"token punctuation\">.</span><span class=\"token punctuation\">.</span><span class=\"token punctuation\">.</span> arr<span class=\"token punctuation\">)</span><span class=\"token punctuation\">&#123;</span><span class=\"token punctuation\">&#125;</span></pre></td></tr></table></figure>",
-            "tags": []
+            "tags": [
+                "计算机科学",
+                "编程语言",
+                "java"
+            ]
         },
         {
             "id": "https://www.hikki.site/d9153102.html",
@@ -31,6 +37,9 @@
             "date_published": "2022-05-17T08:21:35.000Z",
             "content_html": "<figure class=\"highlight java\"><figcaption data-lang=\"java\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre>st</pre></td></tr></table></figure>",
             "tags": [
+                "计算机科学",
+                "编程语言",
+                "java",
                 "java"
             ]
         },
@@ -167,7 +176,7 @@
             "tags": [
                 "计算机科学",
                 "编程语言",
-                "JAVA",
+                "java",
                 "JAVA"
             ]
         },
@@ -193,7 +202,7 @@
             "tags": [
                 "计算机科学",
                 "编程语言",
-                "JAVA",
+                "java",
                 "JAVA"
             ]
         },
