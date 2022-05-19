@@ -7,6 +7,18 @@
     "home_page_url": "https://www.hikki.site",
     "items": [
         {
+            "id": "https://www.hikki.site/4f9c6caa.html",
+            "url": "https://www.hikki.site/4f9c6caa.html",
+            "title": "python爬虫乱码问题",
+            "date_published": "2022-05-19T05:29:04.000Z",
+            "content_html": "<h2 id=\"修改前\"><a class=\"markdownIt-Anchor\" href=\"#修改前\">#</a> 修改前</h2>\n<figure class=\"highlight python\"><figcaption data-lang=\"python\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre><span class=\"token keyword\">import</span> requests</pre></td></tr><tr><td data-num=\"2\"></td><td><pre>url<span class=\"token operator\">=</span><span class=\"token builtin\">input</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">.</span>strip<span class=\"token punctuation\">(</span><span class=\"token string\">' \\t\\n\\r'</span><span class=\"token punctuation\">)</span></pre></td></tr><tr><td data-num=\"3\"></td><td><pre>html <span class=\"token operator\">=</span> requests<span class=\"token punctuation\">.</span>get<span class=\"token punctuation\">(</span>url<span class=\"token punctuation\">)</span></pre></td></tr><tr><td data-num=\"4\"></td><td><pre></pre></td></tr><tr><td data-num=\"5\"></td><td><pre><span class=\"token keyword\">print</span><span class=\"token punctuation\">(</span>html<span class=\"token punctuation\">.</span>text<span class=\"token punctuation\">)</span></pre></td></tr></table></figure><p><img data-src=\"https://cdn.jsdelivr.net/gh/0000rookie/imgs/20220520.jpeg\" alt=\"\"></p>\n<h2 id=\"修改后\"><a class=\"markdownIt-Anchor\" href=\"#修改后\">#</a> 修改后</h2>\n<figure class=\"highlight python\"><figcaption data-lang=\"python\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre><span class=\"token keyword\">import</span> requests</pre></td></tr><tr><td data-num=\"2\"></td><td><pre>url<span class=\"token operator\">=</span><span class=\"token builtin\">input</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">.</span>strip<span class=\"token punctuation\">(</span><span class=\"token string\">' \\t\\n\\r'</span><span class=\"token punctuation\">)</span></pre></td></tr><tr><td data-num=\"3\"></td><td><pre>html <span class=\"token operator\">=</span> requests<span class=\"token punctuation\">.</span>get<span class=\"token punctuation\">(</span>url<span class=\"token punctuation\">)</span></pre></td></tr><tr><td data-num=\"4\"></td><td><pre>html<span class=\"token punctuation\">.</span>encoding<span class=\"token operator\">=</span><span class=\"token punctuation\">(</span><span class=\"token string\">'utf-8'</span><span class=\"token punctuation\">)</span></pre></td></tr><tr><td data-num=\"5\"></td><td><pre><span class=\"token keyword\">print</span><span class=\"token punctuation\">(</span>html<span class=\"token punctuation\">.</span>text<span class=\"token punctuation\">)</span></pre></td></tr></table></figure><p><img data-src=\"http://hikki.test.upcdn.net/20220520.jpeg\" alt=\"\"></p>\n",
+            "tags": [
+                "计算机科学",
+                "编程语言",
+                "python"
+            ]
+        },
+        {
             "id": "https://www.hikki.site/451161d7.html",
             "url": "https://www.hikki.site/451161d7.html",
             "title": "idea开发必装插件",
@@ -242,18 +254,6 @@
                 "python",
                 "python",
                 "Qt5"
-            ]
-        },
-        {
-            "id": "https://www.hikki.site/b9893092.html",
-            "url": "https://www.hikki.site/b9893092.html",
-            "title": "python Qt5实现记事本基本功能",
-            "date_published": "2022-04-26T03:48:57.000Z",
-            "content_html": "",
-            "tags": [
-                "计算机科学",
-                "编程语言",
-                "python"
             ]
         }
     ]
