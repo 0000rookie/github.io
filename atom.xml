@@ -409,8 +409,8 @@
 </content>
         <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
         <category term="各种bug" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%90%84%E7%A7%8Dbug/" />
-        <category term="BUG" scheme="https://www.hikki.site/tags/BUG/" />
         <category term="JAVA" scheme="https://www.hikki.site/tags/JAVA/" />
+        <category term="BUG" scheme="https://www.hikki.site/tags/BUG/" />
         <updated>2022-05-09T03:36:50.000Z</updated>
     </entry>
     <entry>
