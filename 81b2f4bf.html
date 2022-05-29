@@ -83,7 +83,7 @@ python基础 - python - 编程语言 - 计算机科学 |
       <i class="ic i-pen"></i>
     </span>
     <span class="text">本文字数</span>
-    <span>721</span>
+    <span>566</span>
     <span class="text">字</span>
   </span>
   <span class="item" title="阅读时长">
@@ -124,12 +124,12 @@ python基础 - python - 编程语言 - 计算机科学 |
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclxfdlttj20zk0m8npd.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclfdu6exj20zk0m87hw.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giph4lm9i7j20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclhnx9glj20zk0m8npd.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicitspjpbj20zk0m81ky.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipewr8iypj20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicliierfjj20zk0m8npd.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipev1x5e4j20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclfb3vzhj20zk0m8wny.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicis081o9j20zk0m8dmr.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclh5u05ej20zk0m87df.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeuv80yoj20zk0m8kjl.jpg"></li>
         </ul>
       </div>
     </header>
@@ -181,56 +181,15 @@ python基础 - python - 编程语言 - 计算机科学 |
   <div class="body md" itemprop="articleBody">
     
 
-    <h2 id="input的多样式输入"><a href="#input的多样式输入" class="headerlink" title="input的多样式输入"></a>input的多样式输入</h2><pre><code class="lang-python"># 直接在列表中输入，然后再输出列表
-data = [input(&#39;姓名：&#39;), input(&#39;电话：&#39;), input(&#39;学校：&#39;)]
-print(data)
-</code></pre>
-<p>但是输出的是带有列表的格式啊，改一下</p>
+    <h2 id="input的多样式输入"><a class="markdownIt-Anchor" href="#input的多样式输入">#</a> input 的多样式输入</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment"># 直接在列表中输入，然后再输出列表</span></pre></td></tr><tr><td data-num="2"></td><td><pre>data <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">'姓名：'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">'电话：'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">'学校：'</span><span class="token punctuation">)</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">print</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span></pre></td></tr></table></figure><p>但是输出的是带有列表的格式啊，改一下</p>
 <p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/20220519.jpg" alt=""></p>
-<pre><code class="lang-python">data = [input(&#39;姓名：&#39;), input(&#39;电话：&#39;), input(&#39;学校：&#39;)]
-for i in data:
-    print(i)
-</code></pre>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/20220520.jpg" alt=""></p>
-<h2 id="格式化输出"><a href="#格式化输出" class="headerlink" title="格式化输出"></a>格式化输出</h2><p>```python mark:1-8</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>ls=”这是字符串”<br>print(“{}”.format(ls))<br>print(“%ls”   %ls )<br>这是字符串<br>这是字符串</p>
-<h1 id="总结-第二种和C语言输出类似，但是在””后没有逗号的，注意是没有逗号的"><a href="#总结-第二种和C语言输出类似，但是在””后没有逗号的，注意是没有逗号的" class="headerlink" title="总结:第二种和C语言输出类似，但是在””后没有逗号的，注意是没有逗号的"></a>总结:第二种和C语言输出类似，但是在””后没有逗号的，注意是没有逗号的</h1><p>```</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<h2 id="列表出现相同字符次数统计"><a href="#列表出现相同字符次数统计" class="headerlink" title="列表出现相同字符次数统计"></a>列表出现相同字符次数统计</h2><pre><code class="lang-python"># 例子1
-&gt;&gt;&gt;ls=[1,1,1,4,5,6,7]
-&gt;&gt;&gt;print(ls.count(1))
-3
-
-# 例子2
-&gt;&gt;&gt;ls=[&quot;123&quot;,&quot;123&quot;,&quot;111&quot;,&quot;456&quot;]
-&gt;&gt;&gt;print(ls.count(&quot;123&quot;))
-2
-
-# 总结: count可以计算列表中相同的字符串
-</code></pre>
-<h2 id="判断字符是否在列表内"><a href="#判断字符是否在列表内" class="headerlink" title="判断字符是否在列表内"></a>判断字符是否在列表内</h2><p>```python mark:1-5</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>ls=[“123”,”123”,”111”,”456”]<br>print(“123” in ls)<br>True</p>
-<h1 id="总结-通过“-“字符串”-in-数组-”形式可以检查字符串是否在列表中"><a href="#总结-通过“-“字符串”-in-数组-”形式可以检查字符串是否在列表中" class="headerlink" title="总结: 通过“ “字符串” in 数组 ”形式可以检查字符串是否在列表中"></a>总结: 通过“ “字符串” in 数组 ”形式可以检查字符串是否在列表中</h1><p>```</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<h2 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h2><p>```python mark:1-5</p>
-<h1 id="i-n-等于2的n次方"><a href="#i-n-等于2的n次方" class="headerlink" title="i**n 等于2的n次方"></a>i**n 等于2的n次方</h1><blockquote>
-<blockquote>
-<blockquote>
-<p>sum=2<br>print(sum**3)<br>8<br>```</p>
-</blockquote>
-</blockquote>
-</blockquote>
-
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>data <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">'姓名：'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">'电话：'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">'学校：'</span><span class="token punctuation">)</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">for</span> i <span class="token keyword">in</span> data<span class="token punctuation">:</span></pre></td></tr><tr><td data-num="3"></td><td><pre>    <span class="token keyword">print</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span></pre></td></tr></table></figure><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/20220520.jpg" alt=""></p>
+<h2 id="格式化输出"><a class="markdownIt-Anchor" href="#格式化输出">#</a> 格式化输出</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token operator">>></span><span class="token operator">></span>ls<span class="token operator">=</span><span class="token string">"这是字符串"</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token operator">>></span><span class="token operator">></span><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"&#123;&#125;"</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>ls<span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre><span class="token operator">>></span><span class="token operator">></span><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"%ls"</span>   <span class="token operator">%</span>ls <span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre>这是字符串</pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre>这是字符串</pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre><span class="token comment"># 总结：第二种和 C 语言输出类似，但是在 "" 后没有逗号的，注意是没有逗号的</span></pre></td></tr></table></figure><h2 id="列表出现相同字符次数统计"><a class="markdownIt-Anchor" href="#列表出现相同字符次数统计">#</a> 列表出现相同字符次数统计</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment"># 例子 1</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token operator">>></span><span class="token operator">></span>ls<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token operator">>></span><span class="token operator">></span><span class="token keyword">print</span><span class="token punctuation">(</span>ls<span class="token punctuation">.</span>count<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token number">3</span></pre></td></tr><tr><td data-num="5"></td><td><pre></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token comment"># 例子 2</span></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token operator">>></span><span class="token operator">></span>ls<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">"123"</span><span class="token punctuation">,</span><span class="token string">"123"</span><span class="token punctuation">,</span><span class="token string">"111"</span><span class="token punctuation">,</span><span class="token string">"456"</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token operator">>></span><span class="token operator">></span><span class="token keyword">print</span><span class="token punctuation">(</span>ls<span class="token punctuation">.</span>count<span class="token punctuation">(</span><span class="token string">"123"</span><span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token number">2</span></pre></td></tr><tr><td data-num="10"></td><td><pre></pre></td></tr><tr><td data-num="11"></td><td><pre><span class="token comment"># 总结: count 可以计算列表中相同的字符串</span></pre></td></tr></table></figure><h2 id="判断字符是否在列表内"><a class="markdownIt-Anchor" href="#判断字符是否在列表内">#</a> 判断字符是否在列表内</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token operator">>></span><span class="token operator">></span>ls<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">"123"</span><span class="token punctuation">,</span><span class="token string">"123"</span><span class="token punctuation">,</span><span class="token string">"111"</span><span class="token punctuation">,</span><span class="token string">"456"</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token operator">>></span><span class="token operator">></span><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"123"</span> <span class="token keyword">in</span> ls<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre><span class="token boolean">True</span></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre><span class="token comment"># 总结：通过 “"字符串" in 数组” 形式可以检查字符串是否在列表中</span></pre></td></tr></table></figure><h2 id="运算符"><a class="markdownIt-Anchor" href="#运算符">#</a> 运算符</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token comment"># i**n 等于 2 的 n 次方</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token operator">>></span><span class="token operator">></span><span class="token builtin">sum</span><span class="token operator">=</span><span class="token number">2</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre><span class="token operator">>></span><span class="token operator">></span><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">sum</span><span class="token operator">**</span><span class="token number">3</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre><span class="token number">8</span></pre></td></tr></table></figure>
       <div class="tags">
           <a href="/tags/python/" rel="tag"><i class="ic i-tag"></i> python</a>
       </div>
@@ -305,7 +264,7 @@ for i in data:
     <div class="item left">
       
 
-  <a href="/16ad79ec.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipexoj0moj20zk0m8kgu.jpg" title="学习注册表">
+  <a href="/16ad79ec.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giph4wqtg4j20zk0m8x6p.jpg" title="学习注册表">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> 技术杂谈</span>
   <h3>学习注册表</h3>
@@ -315,7 +274,7 @@ for i in data:
     <div class="item right">
       
 
-  <a href="/1edcfdea.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicivghyooj20zk0m8dir.jpg" title="python-math库">
+  <a href="/1edcfdea.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipewkhf1zj20zk0m81kx.jpg" title="python-math库">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> python</span>
   <h3>python-math库</h3>
@@ -337,7 +296,7 @@ for i in data:
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#input%E7%9A%84%E5%A4%9A%E6%A0%B7%E5%BC%8F%E8%BE%93%E5%85%A5"><span class="toc-number">1.</span> <span class="toc-text">input的多样式输入</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%BC%E5%BC%8F%E5%8C%96%E8%BE%93%E5%87%BA"><span class="toc-number">2.</span> <span class="toc-text">格式化输出</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%80%BB%E7%BB%93-%E7%AC%AC%E4%BA%8C%E7%A7%8D%E5%92%8CC%E8%AF%AD%E8%A8%80%E8%BE%93%E5%87%BA%E7%B1%BB%E4%BC%BC%EF%BC%8C%E4%BD%86%E6%98%AF%E5%9C%A8%E2%80%9D%E2%80%9D%E5%90%8E%E6%B2%A1%E6%9C%89%E9%80%97%E5%8F%B7%E7%9A%84%EF%BC%8C%E6%B3%A8%E6%84%8F%E6%98%AF%E6%B2%A1%E6%9C%89%E9%80%97%E5%8F%B7%E7%9A%84"><span class="toc-number"></span> <span class="toc-text">总结:第二种和C语言输出类似，但是在””后没有逗号的，注意是没有逗号的</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%97%E8%A1%A8%E5%87%BA%E7%8E%B0%E7%9B%B8%E5%90%8C%E5%AD%97%E7%AC%A6%E6%AC%A1%E6%95%B0%E7%BB%9F%E8%AE%A1"><span class="toc-number">1.</span> <span class="toc-text">列表出现相同字符次数统计</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%A4%E6%96%AD%E5%AD%97%E7%AC%A6%E6%98%AF%E5%90%A6%E5%9C%A8%E5%88%97%E8%A1%A8%E5%86%85"><span class="toc-number">2.</span> <span class="toc-text">判断字符是否在列表内</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%80%BB%E7%BB%93-%E9%80%9A%E8%BF%87%E2%80%9C-%E2%80%9C%E5%AD%97%E7%AC%A6%E4%B8%B2%E2%80%9D-in-%E6%95%B0%E7%BB%84-%E2%80%9D%E5%BD%A2%E5%BC%8F%E5%8F%AF%E4%BB%A5%E6%A3%80%E6%9F%A5%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%98%AF%E5%90%A6%E5%9C%A8%E5%88%97%E8%A1%A8%E4%B8%AD"><span class="toc-number"></span> <span class="toc-text">总结: 通过“ “字符串” in 数组 ”形式可以检查字符串是否在列表中</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">1.</span> <span class="toc-text">运算符</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#i-n-%E7%AD%89%E4%BA%8E2%E7%9A%84n%E6%AC%A1%E6%96%B9"><span class="toc-number"></span> <span class="toc-text">i**n 等于2的n次方</span></a>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#input%E7%9A%84%E5%A4%9A%E6%A0%B7%E5%BC%8F%E8%BE%93%E5%85%A5"><span class="toc-number">1.</span> <span class="toc-text"> input 的多样式输入</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%BC%E5%BC%8F%E5%8C%96%E8%BE%93%E5%87%BA"><span class="toc-number">2.</span> <span class="toc-text"> 格式化输出</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%97%E8%A1%A8%E5%87%BA%E7%8E%B0%E7%9B%B8%E5%90%8C%E5%AD%97%E7%AC%A6%E6%AC%A1%E6%95%B0%E7%BB%9F%E8%AE%A1"><span class="toc-number">3.</span> <span class="toc-text"> 列表出现相同字符次数统计</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%A4%E6%96%AD%E5%AD%97%E7%AC%A6%E6%98%AF%E5%90%A6%E5%9C%A8%E5%88%97%E8%A1%A8%E5%86%85"><span class="toc-number">4.</span> <span class="toc-text"> 判断字符是否在列表内</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">5.</span> <span class="toc-text"> 运算符</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
@@ -355,7 +314,7 @@ for i in data:
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">62</span>
+        <span class="count">64</span>
         <span class="name">文章</span>
       </a>
     </div>
@@ -367,7 +326,7 @@ for i in data:
     </div>
     <div class="item tags">
       <a href="/tags/">
-        <span class="count">24</span>
+        <span class="count">26</span>
         <span class="name">标签</span>
       </a>
     </div>
@@ -483,10 +442,80 @@ for i in data:
 <div class="breadcrumb">
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
 </div>
 
-    <span><a href="/17554f39.html" title="关于手机双开不显示双开目录999">关于手机双开不显示双开目录999</a></span>
+    <span><a href="/a6f9d072.html" title="第一篇：注册github---从0基础搭建Hexo博客">第一篇：注册github---从0基础搭建Hexo博客</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
+</div>
+
+    <span><a href="/9bf6caef.html" title="第八篇：解析域名---从0基础搭建Hexo博客">第八篇：解析域名---从0基础搭建Hexo博客</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
+</div>
+
+    <span><a href="/a5eefddc.html" title="第九篇：安装主题---从0基础搭建Hexo博客">第九篇：安装主题---从0基础搭建Hexo博客</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%90%84%E7%A7%8Dbug/" title="分类于 各种bug">各种bug</a>
+</div>
+
+    <span><a href="/cdc2e518.html" title="搭建博客常见的错误">搭建博客常见的错误</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
+</div>
+
+    <span><a href="/b332b009.html" title="python爬虫-千千音乐">python爬虫-千千音乐</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/" title="分类于 java">java</a>
+</div>
+
+    <span><a href="/b2cc2eb5.html" title="javase程序国际化">javase程序国际化</a></span>
   </li>
 
       
@@ -509,10 +538,22 @@ for i in data:
 <i class="ic i-angle-right"></i>
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/" title="分类于 java">java</a>
 </div>
 
-    <span><a href="/8075134e.html" title="numpy画复合函数">numpy画复合函数</a></span>
+    <span><a href="/dfaf38bb.html" title="javase连接数据库报错Communications link failure">javase连接数据库报错Communications link failure</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%90%84%E7%A7%8Dbug/" title="分类于 各种bug">各种bug</a>
+</div>
+
+    <span><a href="/28af37eb.html" title="Hexo部署err:Error:Spawn failed错误">Hexo部署err:Error:Spawn failed错误</a></span>
   </li>
 
       
@@ -527,82 +568,6 @@ for i in data:
 </div>
 
     <span><a href="/87b69652.html" title="第五篇：安装Hexo---从0基础搭建Hexo博客">第五篇：安装Hexo---从0基础搭建Hexo博客</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
-</div>
-
-    <span><a href="/cd7b33aa.html" title="Python组合数据类型">Python组合数据类型</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
-</div>
-
-    <span><a href="/81b2f4bf.html" title="python基础">python基础</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
-</div>
-
-    <span><a href="/8d43d157.html" title="如何远程虚拟机">如何远程虚拟机</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E7%94%9F%E6%B4%BB/" title="分类于 生活">生活</a>
-</div>
-
-    <span><a href="/2c1b0cfb.html" title="计算机系20级计算机科学与技术四班喜迎二十大">计算机系20级计算机科学与技术四班喜迎二十大</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
-</div>
-
-    <span><a href="/b332b009.html" title="python爬虫-千千音乐">python爬虫-千千音乐</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E7%94%9F%E6%B4%BB/" title="分类于 生活">生活</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E7%94%9F%E6%B4%BB/%E6%97%A5%E8%AE%B0/" title="分类于 日记">日记</a>
-</div>
-
-    <span><a href="/b9e6c7bf.html" title="日记分享2022.4.13">日记分享2022.4.13</a></span>
   </li>
 
   </ul>
@@ -627,13 +592,13 @@ for i in data:
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="站点总字数">60k 字</span>
+    <span title="站点总字数">53k 字</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="站点阅读时长">1:21</span>
+    <span title="站点阅读时长">1:13</span>
   </div>
   <div class="powered-by">
     基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>

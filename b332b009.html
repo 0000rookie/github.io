@@ -83,7 +83,7 @@ python爬虫-千千音乐 - python - 编程语言 - 计算机科学 |
       <i class="ic i-pen"></i>
     </span>
     <span class="text">本文字数</span>
-    <span>4k</span>
+    <span>3.5k</span>
     <span class="text">字</span>
   </span>
   <span class="item" title="阅读时长">
@@ -124,12 +124,12 @@ python爬虫-千千音乐 - python - 编程语言 - 计算机科学 |
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipet8c1a2j20zk0m8kct.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclize41wj20zk0m87gk.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicis081o9j20zk0m8dmr.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giciundwu5j20zk0m8n9e.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclh3brzpj20zk0m8ann.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipeudstjqj20zk0m8k3r.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipevuctzzj20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeu1usa7j20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipetfk5zwj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclwrdwyaj20zk0m8are.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipew28b65j20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclhnx9glj20zk0m8npd.jpg"></li>
         </ul>
       </div>
     </header>
@@ -181,126 +181,17 @@ python爬虫-千千音乐 - python - 编程语言 - 计算机科学 |
   <div class="body md" itemprop="articleBody">
     
 
-    <h2 id="所需模块"><a href="#所需模块" class="headerlink" title="所需模块"></a>所需模块</h2><ul>
+    <h2 id="所需模块"><a class="markdownIt-Anchor" href="#所需模块">#</a> 所需模块</h2>
+<ul>
 <li>requests</li>
 <li>time</li>
 <li>time</li>
 <li>hashlib</li>
 <li>eyed3</li>
 </ul>
-<h2 id="批量爬取歌单"><a href="#批量爬取歌单" class="headerlink" title="批量爬取歌单"></a>批量爬取歌单</h2><pre><code class="lang-python">import music_tool as mt
-import requests
-import time
-import hashlib
-
-# 一般10位数是时间戳
-# sign=a297a40b4ea2855a17beec0addca5841&amp;appid=16073360&amp;TSID=T10046802964&amp;timestamp=1652362462
-
-search_url = &#39;https://music.91q.com/v1/search&#39;
-# 请求头，模拟浏览器，防止被网站发现是爬虫
-search_headers = &#123;
-    &#39;cookie&#39;: &#39;Hm_lvt_d0ad46e4afeacf34cd12de4c9b553aa6=1652356550; cuid=bb25b798-46c6-5585-a57d-bccaf5d75418; Hm_lpvt_d0ad46e4afeacf34cd12de4c9b553aa6=1652366280&#39;,
-    &#39;referer&#39;: &#39;https://music.91q.com/proxy&#39;,
-    &#39;user-agent&#39;: &#39;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36&#39;
-&#125;
-# 获取歌曲所需的参数：设置请求参数
-appid = &#39;16073360&#39;  # 固定不变
-# 获取歌曲所需的参数：时间戳
-search_timestamp = int(time.time())  
-# 获取歌曲所需的参数：搜索关键字
-word = &#39;薛之谦&#39;
-# 获取歌曲所需的参数：搜索页面的页数
-pageNo = &#39;2&#39;
-# # 获取歌曲所需的参数：r
-r = f&quot;appid=&#123;appid&#125;&amp;pageNo=&#123;pageNo&#125;&amp;pageSize=20&amp;timestamp=&#123;search_timestamp&#125;&amp;type=1&amp;word=&#123;word&#125;0b50b02fd0d73a9c4c8c3a781c30845f&quot;
-# 获取歌曲所需的参数：sign
-sign = hashlib.md5(r.encode(&#39;utf-8&#39;)).hexdigest()
-# 搜索所需要携带参数
-search_params = &#123;
-    &#39;sign&#39;: sign,
-    &#39;word&#39;: word,
-    &#39;type&#39;: &#39;1&#39;,
-    &#39;pageNo&#39;: pageNo,
-    &#39;pageSize&#39;: &#39;20&#39;,
-    &#39;appid&#39;: appid,
-    &#39;timestamp&#39;: search_timestamp
-&#125;
-# 提交get请求
-search_response = requests.get(url=search_url, params=search_params, headers=search_headers)
-# 获取页面的全部歌曲 typeTrack
-list_music = search_response.json()[&#39;data&#39;][&#39;typeTrack&#39;]
-# pprint(list_music)
-
-
-i = 1
-# 循环遍历读取歌曲
-for music in list_music:
-    i += 1
-    TSID = music[&#39;id&#39;]  # 歌曲ID
-    # TSID=&#39;T10049775641&#39;
-    timestamp = int(time.time())
-    url = &quot;https://music.91q.com/v1/song/tracklink&quot;
-    r = f&quot;TSID=&#123;TSID&#125;&amp;appid=&#123;appid&#125;&amp;timestamp=&#123;timestamp&#125;0b50b02fd0d73a9c4c8c3a781c30845f&quot;
-    sign = hashlib.md5(r.encode(&#39;utf-8&#39;)).hexdigest()
-    params = &#123;
-        &#39;sign&#39;: sign,
-        &#39;appid&#39;: appid,
-        &#39;TSID&#39;: TSID,
-        &#39;timestamp&#39;: timestamp
-    &#125;
-    # 对单次请求模拟请求头
-    headers = &#123;
-        &#39;cookie&#39;: &#39;Hm_lvt_d0ad46e4afeacf34cd12de4c9b553aa6=1652356550; cuid=bb25b798-46c6-5585-a57d-bccaf5d75418; Hm_lpvt_d0ad46e4afeacf34cd12de4c9b553aa6=1652366280&#39;,
-        &#39;referer&#39;: &#39;https://music.91q.com/proxy&#39;,
-        &#39;user-agent&#39;: &#39;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36&#39;
-    &#125;
-    # 获取歌曲信息
-    list_res = requests.get(url=url, params=params, headers=headers)
-    music_url = list_res.json()[&#39;data&#39;][&#39;path&#39;]
-    music_name = list_res.json()[&#39;data&#39;][&#39;title&#39;]
-    singer_name = list_res.json()[&#39;data&#39;][&#39;artist&#39;][0][&#39;name&#39;]
-    music_lyric = list_res.json()[&#39;data&#39;][&#39;lyric&#39;]
-    music_pic = list_res.json()[&#39;data&#39;][&#39;pic&#39;]
-
-    # print(list_res.text)
-    # 下载歌曲
-    music_data = requests.get(music_url).content
-    # 下载歌曲封面
-    music_pic_data = requests.get(music_pic).content
-    # 下载歌曲歌词
-    music_lyric_data = requests.get(music_lyric).content
-    # 下载之后写入到文件中
-    with open(f&quot;music_list/&#123;music_name&#125;-&#123;singer_name&#125;.mp3&quot;, mode=&#39;wb&#39;) as f:
-        f.write(music_data)
-    with open(f&quot;music_list/&#123;music_name&#125;-&#123;singer_name&#125;.jpg&quot;, mode=&#39;wb&#39;) as f:
-        f.write(music_pic_data)
-    with open(f&quot;music_list/&#123;music_name&#125;-&#123;singer_name&#125;.lrc&quot;, mode=&#39;wb&#39;) as f:
-        f.write(music_lyric_data)
-    # 对歌曲内容进行修改(可选)
-    msg = mt.edit_music_message(f&quot;music_list/&#123;music_name&#125;-&#123;singer_name&#125;.mp3&quot;, music_name, singer_name, singer_name,
-                                music_name)
-    print(i, singer_name, music_name, msg)
-</code></pre>
-<h2 id="对歌曲修改信息"><a href="#对歌曲修改信息" class="headerlink" title="对歌曲修改信息"></a>对歌曲修改信息</h2><pre><code class="lang-python">import eyed3
-
-def edit_music_message(music_path,music_title,artist,album,album_artist):
-    &quot;&quot;&quot;
-    @param music_path: 歌曲文件路径
-    @param artist: 歌曲作者
-    @param album: 专辑名称
-    @param album_artist: 专辑作者
-    @param music_title:  歌曲名
-    &quot;&quot;&quot;
-    audiofile = eyed3.load(music_path) # 加载歌曲文件
-    audiofile.tag.title = music_title  # 歌曲名
-    audiofile.tag.artist = artist  # 作者
-    audiofile.tag.album = album      # 唱片集
-    audiofile.tag.album_artist = album_artist  # 作者
-    audiofile.tag.track_num = 3     #音轨号，在专辑中排第几
-    audiofile.tag.save() # 保存文件
-    return &#39;歌曲信息修改成功&#39;
-</code></pre>
-
+<h2 id="批量爬取歌单"><a class="markdownIt-Anchor" href="#批量爬取歌单">#</a> 批量爬取歌单</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">import</span> music_tool <span class="token keyword">as</span> mt</pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">import</span> requests</pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">import</span> time</pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token keyword">import</span> hashlib</pre></td></tr><tr><td data-num="5"></td><td><pre></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token comment"># 一般 10 位数是时间戳</span></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token comment"># sign=a297a40b4ea2855a17beec0addca5841&amp;appid=16073360&amp;TSID=T10046802964&amp;timestamp=1652362462</span></pre></td></tr><tr><td data-num="8"></td><td><pre></pre></td></tr><tr><td data-num="9"></td><td><pre>search_url <span class="token operator">=</span> <span class="token string">'https://music.91q.com/v1/search'</span></pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token comment"># 请求头，模拟浏览器，防止被网站发现是爬虫</span></pre></td></tr><tr><td data-num="11"></td><td><pre>search_headers <span class="token operator">=</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="12"></td><td><pre>    <span class="token string">'cookie'</span><span class="token punctuation">:</span> <span class="token string">'Hm_lvt_d0ad46e4afeacf34cd12de4c9b553aa6=1652356550; cuid=bb25b798-46c6-5585-a57d-bccaf5d75418; Hm_lpvt_d0ad46e4afeacf34cd12de4c9b553aa6=1652366280'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="13"></td><td><pre>    <span class="token string">'referer'</span><span class="token punctuation">:</span> <span class="token string">'https://music.91q.com/proxy'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="14"></td><td><pre>    <span class="token string">'user-agent'</span><span class="token punctuation">:</span> <span class="token string">'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36'</span></pre></td></tr><tr><td data-num="15"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="16"></td><td><pre><span class="token comment"># 获取歌曲所需的参数：设置请求参数</span></pre></td></tr><tr><td data-num="17"></td><td><pre>appid <span class="token operator">=</span> <span class="token string">'16073360'</span>  <span class="token comment"># 固定不变</span></pre></td></tr><tr><td data-num="18"></td><td><pre><span class="token comment"># 获取歌曲所需的参数：时间戳</span></pre></td></tr><tr><td data-num="19"></td><td><pre>search_timestamp <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span>time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  </pre></td></tr><tr><td data-num="20"></td><td><pre><span class="token comment"># 获取歌曲所需的参数：搜索关键字</span></pre></td></tr><tr><td data-num="21"></td><td><pre>word <span class="token operator">=</span> <span class="token string">'薛之谦'</span></pre></td></tr><tr><td data-num="22"></td><td><pre><span class="token comment"># 获取歌曲所需的参数：搜索页面的页数</span></pre></td></tr><tr><td data-num="23"></td><td><pre>pageNo <span class="token operator">=</span> <span class="token string">'2'</span></pre></td></tr><tr><td data-num="24"></td><td><pre><span class="token comment"># # 获取歌曲所需的参数：r</span></pre></td></tr><tr><td data-num="25"></td><td><pre>r <span class="token operator">=</span> <span class="token string-interpolation"><span class="token string">f"appid=</span><span class="token interpolation"><span class="token punctuation">&#123;</span>appid<span class="token punctuation">&#125;</span></span><span class="token string">&amp;pageNo=</span><span class="token interpolation"><span class="token punctuation">&#123;</span>pageNo<span class="token punctuation">&#125;</span></span><span class="token string">&amp;pageSize=20&amp;timestamp=</span><span class="token interpolation"><span class="token punctuation">&#123;</span>search_timestamp<span class="token punctuation">&#125;</span></span><span class="token string">&amp;type=1&amp;word=</span><span class="token interpolation"><span class="token punctuation">&#123;</span>word<span class="token punctuation">&#125;</span></span><span class="token string">0b50b02fd0d73a9c4c8c3a781c30845f"</span></span></pre></td></tr><tr><td data-num="26"></td><td><pre><span class="token comment"># 获取歌曲所需的参数：sign</span></pre></td></tr><tr><td data-num="27"></td><td><pre>sign <span class="token operator">=</span> hashlib<span class="token punctuation">.</span>md5<span class="token punctuation">(</span>r<span class="token punctuation">.</span>encode<span class="token punctuation">(</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span>hexdigest<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="28"></td><td><pre><span class="token comment"># 搜索所需要携带参数</span></pre></td></tr><tr><td data-num="29"></td><td><pre>search_params <span class="token operator">=</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="30"></td><td><pre>    <span class="token string">'sign'</span><span class="token punctuation">:</span> sign<span class="token punctuation">,</span></pre></td></tr><tr><td data-num="31"></td><td><pre>    <span class="token string">'word'</span><span class="token punctuation">:</span> word<span class="token punctuation">,</span></pre></td></tr><tr><td data-num="32"></td><td><pre>    <span class="token string">'type'</span><span class="token punctuation">:</span> <span class="token string">'1'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="33"></td><td><pre>    <span class="token string">'pageNo'</span><span class="token punctuation">:</span> pageNo<span class="token punctuation">,</span></pre></td></tr><tr><td data-num="34"></td><td><pre>    <span class="token string">'pageSize'</span><span class="token punctuation">:</span> <span class="token string">'20'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="35"></td><td><pre>    <span class="token string">'appid'</span><span class="token punctuation">:</span> appid<span class="token punctuation">,</span></pre></td></tr><tr><td data-num="36"></td><td><pre>    <span class="token string">'timestamp'</span><span class="token punctuation">:</span> search_timestamp</pre></td></tr><tr><td data-num="37"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="38"></td><td><pre><span class="token comment"># 提交 get 请求</span></pre></td></tr><tr><td data-num="39"></td><td><pre>search_response <span class="token operator">=</span> requests<span class="token punctuation">.</span>get<span class="token punctuation">(</span>url<span class="token operator">=</span>search_url<span class="token punctuation">,</span> params<span class="token operator">=</span>search_params<span class="token punctuation">,</span> headers<span class="token operator">=</span>search_headers<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="40"></td><td><pre><span class="token comment"># 获取页面的全部歌曲 typeTrack</span></pre></td></tr><tr><td data-num="41"></td><td><pre>list_music <span class="token operator">=</span> search_response<span class="token punctuation">.</span>json<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token string">'data'</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">'typeTrack'</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="42"></td><td><pre><span class="token comment"># pprint(list_music)</span></pre></td></tr><tr><td data-num="43"></td><td><pre></pre></td></tr><tr><td data-num="44"></td><td><pre></pre></td></tr><tr><td data-num="45"></td><td><pre>i <span class="token operator">=</span> <span class="token number">1</span></pre></td></tr><tr><td data-num="46"></td><td><pre><span class="token comment"># 循环遍历读取歌曲</span></pre></td></tr><tr><td data-num="47"></td><td><pre><span class="token keyword">for</span> music <span class="token keyword">in</span> list_music<span class="token punctuation">:</span></pre></td></tr><tr><td data-num="48"></td><td><pre>    i <span class="token operator">+=</span> <span class="token number">1</span></pre></td></tr><tr><td data-num="49"></td><td><pre>    TSID <span class="token operator">=</span> music<span class="token punctuation">[</span><span class="token string">'id'</span><span class="token punctuation">]</span>  <span class="token comment"># 歌曲 ID</span></pre></td></tr><tr><td data-num="50"></td><td><pre>    <span class="token comment"># TSID='T10049775641'</span></pre></td></tr><tr><td data-num="51"></td><td><pre>    timestamp <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span>time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="52"></td><td><pre>    url <span class="token operator">=</span> <span class="token string">"https://music.91q.com/v1/song/tracklink"</span></pre></td></tr><tr><td data-num="53"></td><td><pre>    r <span class="token operator">=</span> <span class="token string-interpolation"><span class="token string">f"TSID=</span><span class="token interpolation"><span class="token punctuation">&#123;</span>TSID<span class="token punctuation">&#125;</span></span><span class="token string">&amp;appid=</span><span class="token interpolation"><span class="token punctuation">&#123;</span>appid<span class="token punctuation">&#125;</span></span><span class="token string">&amp;timestamp=</span><span class="token interpolation"><span class="token punctuation">&#123;</span>timestamp<span class="token punctuation">&#125;</span></span><span class="token string">0b50b02fd0d73a9c4c8c3a781c30845f"</span></span></pre></td></tr><tr><td data-num="54"></td><td><pre>    sign <span class="token operator">=</span> hashlib<span class="token punctuation">.</span>md5<span class="token punctuation">(</span>r<span class="token punctuation">.</span>encode<span class="token punctuation">(</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span>hexdigest<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="55"></td><td><pre>    params <span class="token operator">=</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="56"></td><td><pre>        <span class="token string">'sign'</span><span class="token punctuation">:</span> sign<span class="token punctuation">,</span></pre></td></tr><tr><td data-num="57"></td><td><pre>        <span class="token string">'appid'</span><span class="token punctuation">:</span> appid<span class="token punctuation">,</span></pre></td></tr><tr><td data-num="58"></td><td><pre>        <span class="token string">'TSID'</span><span class="token punctuation">:</span> TSID<span class="token punctuation">,</span></pre></td></tr><tr><td data-num="59"></td><td><pre>        <span class="token string">'timestamp'</span><span class="token punctuation">:</span> timestamp</pre></td></tr><tr><td data-num="60"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="61"></td><td><pre>    <span class="token comment"># 对单次请求模拟请求头</span></pre></td></tr><tr><td data-num="62"></td><td><pre>    headers <span class="token operator">=</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="63"></td><td><pre>        <span class="token string">'cookie'</span><span class="token punctuation">:</span> <span class="token string">'Hm_lvt_d0ad46e4afeacf34cd12de4c9b553aa6=1652356550; cuid=bb25b798-46c6-5585-a57d-bccaf5d75418; Hm_lpvt_d0ad46e4afeacf34cd12de4c9b553aa6=1652366280'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="64"></td><td><pre>        <span class="token string">'referer'</span><span class="token punctuation">:</span> <span class="token string">'https://music.91q.com/proxy'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="65"></td><td><pre>        <span class="token string">'user-agent'</span><span class="token punctuation">:</span> <span class="token string">'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36'</span></pre></td></tr><tr><td data-num="66"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="67"></td><td><pre>    <span class="token comment"># 获取歌曲信息</span></pre></td></tr><tr><td data-num="68"></td><td><pre>    list_res <span class="token operator">=</span> requests<span class="token punctuation">.</span>get<span class="token punctuation">(</span>url<span class="token operator">=</span>url<span class="token punctuation">,</span> params<span class="token operator">=</span>params<span class="token punctuation">,</span> headers<span class="token operator">=</span>headers<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="69"></td><td><pre>    music_url <span class="token operator">=</span> list_res<span class="token punctuation">.</span>json<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token string">'data'</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">'path'</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="70"></td><td><pre>    music_name <span class="token operator">=</span> list_res<span class="token punctuation">.</span>json<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token string">'data'</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">'title'</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="71"></td><td><pre>    singer_name <span class="token operator">=</span> list_res<span class="token punctuation">.</span>json<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token string">'data'</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">'artist'</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">'name'</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="72"></td><td><pre>    music_lyric <span class="token operator">=</span> list_res<span class="token punctuation">.</span>json<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token string">'data'</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">'lyric'</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="73"></td><td><pre>    music_pic <span class="token operator">=</span> list_res<span class="token punctuation">.</span>json<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token string">'data'</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">'pic'</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="74"></td><td><pre></pre></td></tr><tr><td data-num="75"></td><td><pre>    <span class="token comment"># print(list_res.text)</span></pre></td></tr><tr><td data-num="76"></td><td><pre>    <span class="token comment"># 下载歌曲</span></pre></td></tr><tr><td data-num="77"></td><td><pre>    music_data <span class="token operator">=</span> requests<span class="token punctuation">.</span>get<span class="token punctuation">(</span>music_url<span class="token punctuation">)</span><span class="token punctuation">.</span>content</pre></td></tr><tr><td data-num="78"></td><td><pre>    <span class="token comment"># 下载歌曲封面</span></pre></td></tr><tr><td data-num="79"></td><td><pre>    music_pic_data <span class="token operator">=</span> requests<span class="token punctuation">.</span>get<span class="token punctuation">(</span>music_pic<span class="token punctuation">)</span><span class="token punctuation">.</span>content</pre></td></tr><tr><td data-num="80"></td><td><pre>    <span class="token comment"># 下载歌曲歌词</span></pre></td></tr><tr><td data-num="81"></td><td><pre>    music_lyric_data <span class="token operator">=</span> requests<span class="token punctuation">.</span>get<span class="token punctuation">(</span>music_lyric<span class="token punctuation">)</span><span class="token punctuation">.</span>content</pre></td></tr><tr><td data-num="82"></td><td><pre>    <span class="token comment"># 下载之后写入到文件中</span></pre></td></tr><tr><td data-num="83"></td><td><pre>    <span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f"music_list/</span><span class="token interpolation"><span class="token punctuation">&#123;</span>music_name<span class="token punctuation">&#125;</span></span><span class="token string">-</span><span class="token interpolation"><span class="token punctuation">&#123;</span>singer_name<span class="token punctuation">&#125;</span></span><span class="token string">.mp3"</span></span><span class="token punctuation">,</span> mode<span class="token operator">=</span><span class="token string">'wb'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span></pre></td></tr><tr><td data-num="84"></td><td><pre>        f<span class="token punctuation">.</span>write<span class="token punctuation">(</span>music_data<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="85"></td><td><pre>    <span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f"music_list/</span><span class="token interpolation"><span class="token punctuation">&#123;</span>music_name<span class="token punctuation">&#125;</span></span><span class="token string">-</span><span class="token interpolation"><span class="token punctuation">&#123;</span>singer_name<span class="token punctuation">&#125;</span></span><span class="token string">.jpg"</span></span><span class="token punctuation">,</span> mode<span class="token operator">=</span><span class="token string">'wb'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span></pre></td></tr><tr><td data-num="86"></td><td><pre>        f<span class="token punctuation">.</span>write<span class="token punctuation">(</span>music_pic_data<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="87"></td><td><pre>    <span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f"music_list/</span><span class="token interpolation"><span class="token punctuation">&#123;</span>music_name<span class="token punctuation">&#125;</span></span><span class="token string">-</span><span class="token interpolation"><span class="token punctuation">&#123;</span>singer_name<span class="token punctuation">&#125;</span></span><span class="token string">.lrc"</span></span><span class="token punctuation">,</span> mode<span class="token operator">=</span><span class="token string">'wb'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span></pre></td></tr><tr><td data-num="88"></td><td><pre>        f<span class="token punctuation">.</span>write<span class="token punctuation">(</span>music_lyric_data<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="89"></td><td><pre>    <span class="token comment"># 对歌曲内容进行修改 (可选)</span></pre></td></tr><tr><td data-num="90"></td><td><pre>    msg <span class="token operator">=</span> mt<span class="token punctuation">.</span>edit_music_message<span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f"music_list/</span><span class="token interpolation"><span class="token punctuation">&#123;</span>music_name<span class="token punctuation">&#125;</span></span><span class="token string">-</span><span class="token interpolation"><span class="token punctuation">&#123;</span>singer_name<span class="token punctuation">&#125;</span></span><span class="token string">.mp3"</span></span><span class="token punctuation">,</span> music_name<span class="token punctuation">,</span> singer_name<span class="token punctuation">,</span> singer_name<span class="token punctuation">,</span></pre></td></tr><tr><td data-num="91"></td><td><pre>                                music_name<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="92"></td><td><pre>    <span class="token keyword">print</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span> singer_name<span class="token punctuation">,</span> music_name<span class="token punctuation">,</span> msg<span class="token punctuation">)</span></pre></td></tr></table></figure><h2 id="对歌曲修改信息"><a class="markdownIt-Anchor" href="#对歌曲修改信息">#</a> 对歌曲修改信息</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">import</span> eyed3</pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">def</span> <span class="token function">edit_music_message</span><span class="token punctuation">(</span>music_path<span class="token punctuation">,</span>music_title<span class="token punctuation">,</span>artist<span class="token punctuation">,</span>album<span class="token punctuation">,</span>album_artist<span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token triple-quoted-string string">"""</pre></td></tr><tr><td data-num="5"></td><td><pre>    @param music_path: 歌曲文件路径</pre></td></tr><tr><td data-num="6"></td><td><pre>    @param artist: 歌曲作者</pre></td></tr><tr><td data-num="7"></td><td><pre>    @param album: 专辑名称</pre></td></tr><tr><td data-num="8"></td><td><pre>    @param album_artist: 专辑作者</pre></td></tr><tr><td data-num="9"></td><td><pre>    @param music_title:  歌曲名</pre></td></tr><tr><td data-num="10"></td><td><pre>    """</span></pre></td></tr><tr><td data-num="11"></td><td><pre>    audiofile <span class="token operator">=</span> eyed3<span class="token punctuation">.</span>load<span class="token punctuation">(</span>music_path<span class="token punctuation">)</span> <span class="token comment"># 加载歌曲文件</span></pre></td></tr><tr><td data-num="12"></td><td><pre>    audiofile<span class="token punctuation">.</span>tag<span class="token punctuation">.</span>title <span class="token operator">=</span> music_title  <span class="token comment"># 歌曲名</span></pre></td></tr><tr><td data-num="13"></td><td><pre>    audiofile<span class="token punctuation">.</span>tag<span class="token punctuation">.</span>artist <span class="token operator">=</span> artist  <span class="token comment"># 作者</span></pre></td></tr><tr><td data-num="14"></td><td><pre>    audiofile<span class="token punctuation">.</span>tag<span class="token punctuation">.</span>album <span class="token operator">=</span> album      <span class="token comment"># 唱片集</span></pre></td></tr><tr><td data-num="15"></td><td><pre>    audiofile<span class="token punctuation">.</span>tag<span class="token punctuation">.</span>album_artist <span class="token operator">=</span> album_artist  <span class="token comment"># 作者</span></pre></td></tr><tr><td data-num="16"></td><td><pre>    audiofile<span class="token punctuation">.</span>tag<span class="token punctuation">.</span>track_num <span class="token operator">=</span> <span class="token number">3</span>     <span class="token comment">#音轨号，在专辑中排第几</span></pre></td></tr><tr><td data-num="17"></td><td><pre>    audiofile<span class="token punctuation">.</span>tag<span class="token punctuation">.</span>save<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment"># 保存文件</span></pre></td></tr><tr><td data-num="18"></td><td><pre>    <span class="token keyword">return</span> <span class="token string">'歌曲信息修改成功'</span></pre></td></tr></table></figure>
       <div class="tags">
           <a href="/tags/python/" rel="tag"><i class="ic i-tag"></i> python</a>
       </div>
@@ -375,7 +266,7 @@ def edit_music_message(music_path,music_title,artist,album,album_artist):
     <div class="item left">
       
 
-  <a href="/6ee1ace5.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipet8c1a2j20zk0m8kct.jpg" title="hexo端口4000被占用">
+  <a href="/6ee1ace5.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicitht3xtj20zk0m8k5v.jpg" title="hexo端口4000被占用">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> 各种bug</span>
   <h3>hexo端口4000被占用</h3>
@@ -385,7 +276,7 @@ def edit_music_message(music_path,music_title,artist,album,album_artist):
     <div class="item right">
       
 
-  <a href="/2c1b0cfb.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipevuctzzj20zk0m84qp.jpg" title="计算机系20级计算机科学与技术四班喜迎二十大">
+  <a href="/2c1b0cfb.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipew28b65j20zk0m8hdt.jpg" title="计算机系20级计算机科学与技术四班喜迎二十大">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> 生活</span>
   <h3>计算机系20级计算机科学与技术四班喜迎二十大</h3>
@@ -407,7 +298,7 @@ def edit_music_message(music_path,music_title,artist,album,album_artist):
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%89%80%E9%9C%80%E6%A8%A1%E5%9D%97"><span class="toc-number">1.</span> <span class="toc-text">所需模块</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%89%B9%E9%87%8F%E7%88%AC%E5%8F%96%E6%AD%8C%E5%8D%95"><span class="toc-number">2.</span> <span class="toc-text">批量爬取歌单</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9%E6%AD%8C%E6%9B%B2%E4%BF%AE%E6%94%B9%E4%BF%A1%E6%81%AF"><span class="toc-number">3.</span> <span class="toc-text">对歌曲修改信息</span></a></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%89%80%E9%9C%80%E6%A8%A1%E5%9D%97"><span class="toc-number">1.</span> <span class="toc-text"> 所需模块</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%89%B9%E9%87%8F%E7%88%AC%E5%8F%96%E6%AD%8C%E5%8D%95"><span class="toc-number">2.</span> <span class="toc-text"> 批量爬取歌单</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9%E6%AD%8C%E6%9B%B2%E4%BF%AE%E6%94%B9%E4%BF%A1%E6%81%AF"><span class="toc-number">3.</span> <span class="toc-text"> 对歌曲修改信息</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
@@ -425,7 +316,7 @@ def edit_music_message(music_path,music_title,artist,album,album_artist):
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">62</span>
+        <span class="count">64</span>
         <span class="name">文章</span>
       </a>
     </div>
@@ -437,7 +328,7 @@ def edit_music_message(music_path,music_title,artist,album,album_artist):
     </div>
     <div class="item tags">
       <a href="/tags/">
-        <span class="count">24</span>
+        <span class="count">26</span>
         <span class="name">标签</span>
       </a>
     </div>
@@ -551,12 +442,28 @@ def edit_music_message(music_path,music_title,artist,album,album_artist):
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E7%94%9F%E6%B4%BB/" title="分类于 生活">生活</a>
+<a href="/categories/%E5%9F%BA%E7%A1%80%E5%AD%A6%E7%A7%91/" title="分类于 基础学科">基础学科</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E7%94%9F%E6%B4%BB/%E5%A5%BD%E7%89%A9%E6%8E%A8%E8%8D%90/" title="分类于 好物推荐">好物推荐</a>
+<a href="/categories/%E5%9F%BA%E7%A1%80%E5%AD%A6%E7%A7%91/%E5%A4%96%E8%AF%AD/" title="分类于 外语">外语</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%9F%BA%E7%A1%80%E5%AD%A6%E7%A7%91/%E5%A4%96%E8%AF%AD/%E6%97%A5%E8%AF%AD/" title="分类于 日语">日语</a>
 </div>
 
-    <span><a href="/ee3e214f.html" title="QQ&#x2F;微信&#x2F;支付宝 收款码美化">QQ/微信/支付宝 收款码美化</a></span>
+    <span><a href="/39c6cce6.html" title="私の夢-作文">私の夢-作文</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/" title="分类于 博客的食用方法">博客的食用方法</a>
+</div>
+
+    <span><a href="/6f010433.html" title="jsdelivr刷新缓存">jsdelivr刷新缓存</a></span>
   </li>
 
       
@@ -570,7 +477,7 @@ def edit_music_message(music_path,music_title,artist,album,album_artist):
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
 </div>
 
-    <span><a href="/8075134e.html" title="numpy画复合函数">numpy画复合函数</a></span>
+    <span><a href="/c3e9968a.html" title="python Qt5基础知识">python Qt5基础知识</a></span>
   </li>
 
       
@@ -596,21 +503,7 @@ def edit_music_message(music_path,music_title,artist,album,album_artist):
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
 </div>
 
-    <span><a href="/ed51a5a6.html" title="matplotlib制作条形图、直方图">matplotlib制作条形图、直方图</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E5%9F%BA%E7%A1%80%E5%AD%A6%E7%A7%91/" title="分类于 基础学科">基础学科</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E5%9F%BA%E7%A1%80%E5%AD%A6%E7%A7%91/%E5%A4%96%E8%AF%AD/" title="分类于 外语">外语</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E5%9F%BA%E7%A1%80%E5%AD%A6%E7%A7%91/%E5%A4%96%E8%AF%AD/%E6%97%A5%E8%AF%AD/" title="分类于 日语">日语</a>
-</div>
-
-    <span><a href="/39c6cce6.html" title="私の夢-作文">私の夢-作文</a></span>
+    <span><a href="/8075134e.html" title="numpy画复合函数">numpy画复合函数</a></span>
   </li>
 
       
@@ -619,10 +512,12 @@ def edit_music_message(music_path,music_title,artist,album,album_artist):
 <div class="breadcrumb">
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/" title="分类于 博客的食用方法">博客的食用方法</a>
 </div>
 
-    <span><a href="/edaa94fb.html" title="为博客添加免费的CDN加速">为博客添加免费的CDN加速</a></span>
+    <span><a href="/b26ff49b.html" title="如何在hexo博客写作">如何在hexo博客写作</a></span>
   </li>
 
       
@@ -633,34 +528,10 @@ def edit_music_message(music_path,music_title,artist,album,album_artist):
 <i class="ic i-angle-right"></i>
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/" title="分类于 java">java</a>
 </div>
 
-    <span><a href="/37c8254d.html" title="python qt5 实现记事本界面">python qt5 实现记事本界面</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
-</div>
-
-    <span><a href="/17554f39.html" title="关于手机双开不显示双开目录999">关于手机双开不显示双开目录999</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%90%84%E7%A7%8Dbug/" title="分类于 各种bug">各种bug</a>
-</div>
-
-    <span><a href="/cdc2e518.html" title="搭建博客常见的错误">搭建博客常见的错误</a></span>
+    <span><a href="/b2cc2eb5.html" title="javase程序国际化">javase程序国际化</a></span>
   </li>
 
       
@@ -675,6 +546,34 @@ def edit_music_message(music_path,music_title,artist,album,album_artist):
 </div>
 
     <span><a href="/a5eefddc.html" title="第九篇：安装主题---从0基础搭建Hexo博客">第九篇：安装主题---从0基础搭建Hexo博客</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/" title="分类于 博客的食用方法">博客的食用方法</a>
+</div>
+
+    <span><a href="/a7032750.html" title="文章Front-Matter参数设置">文章Front-Matter参数设置</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
+</div>
+
+    <span><a href="/b9893092.html" title="python Qt5实现记事本基本功能">python Qt5实现记事本基本功能</a></span>
   </li>
 
   </ul>
@@ -699,13 +598,13 @@ def edit_music_message(music_path,music_title,artist,album,album_artist):
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="站点总字数">60k 字</span>
+    <span title="站点总字数">53k 字</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="站点阅读时长">1:21</span>
+    <span title="站点阅读时长">1:13</span>
   </div>
   <div class="powered-by">
     基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
