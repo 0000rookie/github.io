@@ -607,8 +607,8 @@
             <link>https://www.hikki.site/a96b8873.html</link>
             <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
             <category term="各种bug" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%90%84%E7%A7%8Dbug/" />
-            <category term="JAVA" scheme="https://www.hikki.site/tags/JAVA/" />
             <category term="BUG" scheme="https://www.hikki.site/tags/BUG/" />
+            <category term="JAVA" scheme="https://www.hikki.site/tags/JAVA/" />
             <pubDate>Mon, 09 May 2022 11:36:50 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;报错内容1&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#报错内容1&#34;&gt;#&lt;/a&gt; 报错内容&lt;sub class=&#34;red&#34;&gt; 1&lt;/sub&gt;&lt;/h2&gt;
 &lt;p&gt;[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project lab11: Compilation failure: Compilation failure:&lt;/p&gt;
