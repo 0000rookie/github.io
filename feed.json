@@ -7,6 +7,16 @@
     "home_page_url": "https://www.hikki.site",
     "items": [
         {
+            "id": "https://www.hikki.site/f3d93395.html",
+            "url": "https://www.hikki.site/f3d93395.html",
+            "title": "fatal: Could not read from remote repository.",
+            "date_published": "2022-06-10T10:20:22.000Z",
+            "content_html": "<h2 id=\"解决办法\"><a class=\"markdownIt-Anchor\" href=\"#解决办法\">#</a> 解决办法</h2>\n<h3 id=\"生成新的rsa\"><a class=\"markdownIt-Anchor\" href=\"#生成新的rsa\">#</a> 生成新的 <code>rsa</code></h3>\n<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"><span>Git连接失败</span></figcaption><table><tr><td data-num=\"1\"></td><td><pre>ssh-keygen -t rsa -C <span class=\"token string\">\"aa1***56@gmail.com\"</span> </pre></td></tr><tr><td data-num=\"2\"></td><td><pre><span class=\"token comment\"># 你的 github 邮箱</span></pre></td></tr></table></figure><h3 id=\"将rsa复制到github\"><a class=\"markdownIt-Anchor\" href=\"#将rsa复制到github\">#</a> 将 <code>rsa</code>  复制到 <code>GitHub</code></h3>\n<p><img data-src=\"http://hikki.test.upcdn.net/202206102503.jpeg\" alt=\"\"></p>\n<p><img data-src=\"http://hikki.test.upcdn.net/202206102510.jpeg\" alt=\"\"></p>\n",
+            "tags": [
+                "Git"
+            ]
+        },
+        {
             "id": "https://www.hikki.site/dcc37883.html",
             "url": "https://www.hikki.site/dcc37883.html",
             "title": "docker删除镜像",
@@ -239,18 +249,6 @@
                 "计算机科学",
                 "各种bug",
                 "博客",
-                "BUG"
-            ]
-        },
-        {
-            "id": "https://www.hikki.site/6c24ad8e.html",
-            "url": "https://www.hikki.site/6c24ad8e.html",
-            "title": "python安装/更新包出现报错",
-            "date_published": "2022-05-12T16:24:09.000Z",
-            "content_html": "<h2 id=\"warning-retrying-retrytotal4-connectnone-readnone-redirectnone-statusnone-after-connection-broken-by-proxyerrorcannot-connect-to-proxy-oserror0-error-pypisimpleeyed3\"><a class=\"markdownIt-Anchor\" href=\"#warning-retrying-retrytotal4-connectnone-readnone-redirectnone-statusnone-after-connection-broken-by-proxyerrorcannot-connect-to-proxy-oserror0-error-pypisimpleeyed3\">#</a> WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by ‘ProxyError(‘Cannot connect to proxy.’, OSError(0, ‘Error’))’: /pypi/simple/eyed3/</h2>\n<p>出现错误如图所示</p>\n<p><img data-src=\"https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022053531.png\" alt=\"\"></p>\n<h2 id=\"解决方法\"><a class=\"markdownIt-Anchor\" href=\"#解决方法\">#</a> 解决方法：</h2>\n<h3 id=\"方法一\"><a class=\"markdownIt-Anchor\" href=\"#方法一\">#</a> 方法一</h3>\n<p>关闭你的梯子就解决问题了，哈哈</p>\n<h3 id=\"方法二\"><a class=\"markdownIt-Anchor\" href=\"#方法二\">#</a> 方法二</h3>\n<p>指定源下载</p>\n<figure class=\"highlight apl\"><figcaption data-lang=\"APL\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre>pip install requests <span class=\"token function\">-</span>i http<span class=\"token dfn builtin\">:</span><span class=\"token monadic-operator operator\">/</span><span class=\"token monadic-operator operator\">/</span>pypi<span class=\"token dyadic-operator operator\">.</span>douban<span class=\"token dyadic-operator operator\">.</span>com<span class=\"token monadic-operator operator\">/</span>simple <span class=\"token function\">-</span><span class=\"token function\">-</span>trusted<span class=\"token function\">-</span>host pypi<span class=\"token dyadic-operator operator\">.</span>douban<span class=\"token dyadic-operator operator\">.</span>com</pre></td></tr></table></figure><p>我的源是阿里云的源，我挂了梯子就用不了，关了梯子就可以了。</p>\n<figure class=\"highlight apl\"><figcaption data-lang=\"APL\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre>国内的pip源，如下：</pre></td></tr><tr><td data-num=\"2\"></td><td><pre></pre></td></tr><tr><td data-num=\"3\"></td><td><pre>阿里云 http<span class=\"token dfn builtin\">:</span><span class=\"token monadic-operator operator\">/</span><span class=\"token monadic-operator operator\">/</span>mirrors<span class=\"token dyadic-operator operator\">.</span>aliyun<span class=\"token dyadic-operator operator\">.</span>com<span class=\"token monadic-operator operator\">/</span>pypi<span class=\"token monadic-operator operator\">/</span>simple<span class=\"token monadic-operator operator\">/</span></pre></td></tr><tr><td data-num=\"4\"></td><td><pre></pre></td></tr><tr><td data-num=\"5\"></td><td><pre>中国科技大学 https<span class=\"token dfn builtin\">:</span><span class=\"token monadic-operator operator\">/</span><span class=\"token monadic-operator operator\">/</span>pypi<span class=\"token dyadic-operator operator\">.</span>mirrors<span class=\"token dyadic-operator operator\">.</span>ustc<span class=\"token dyadic-operator operator\">.</span>edu<span class=\"token dyadic-operator operator\">.</span>cn<span class=\"token monadic-operator operator\">/</span>simple<span class=\"token monadic-operator operator\">/</span></pre></td></tr><tr><td data-num=\"6\"></td><td><pre></pre></td></tr><tr><td data-num=\"7\"></td><td><pre>豆瓣<span class=\"token punctuation\">(</span>douban<span class=\"token punctuation\">)</span> http<span class=\"token dfn builtin\">:</span><span class=\"token monadic-operator operator\">/</span><span class=\"token monadic-operator operator\">/</span>pypi<span class=\"token dyadic-operator operator\">.</span>douban<span class=\"token dyadic-operator operator\">.</span>com<span class=\"token monadic-operator operator\">/</span>simple<span class=\"token monadic-operator operator\">/</span></pre></td></tr><tr><td data-num=\"8\"></td><td><pre></pre></td></tr><tr><td data-num=\"9\"></td><td><pre>清华大学 https<span class=\"token dfn builtin\">:</span><span class=\"token monadic-operator operator\">/</span><span class=\"token monadic-operator operator\">/</span>pypi<span class=\"token dyadic-operator operator\">.</span>tuna<span class=\"token dyadic-operator operator\">.</span>tsinghua<span class=\"token dyadic-operator operator\">.</span>edu<span class=\"token dyadic-operator operator\">.</span>cn<span class=\"token monadic-operator operator\">/</span>simple<span class=\"token monadic-operator operator\">/</span></pre></td></tr><tr><td data-num=\"10\"></td><td><pre></pre></td></tr><tr><td data-num=\"11\"></td><td><pre>中国科学技术大学 http<span class=\"token dfn builtin\">:</span><span class=\"token monadic-operator operator\">/</span><span class=\"token monadic-operator operator\">/</span>pypi<span class=\"token dyadic-operator operator\">.</span>mirrors<span class=\"token dyadic-operator operator\">.</span>ustc<span class=\"token dyadic-operator operator\">.</span>edu<span class=\"token dyadic-operator operator\">.</span>cn<span class=\"token monadic-operator operator\">/</span>simple<span class=\"token monadic-operator operator\">/</span></pre></td></tr></table></figure>",
-            "tags": [
-                "计算机科学",
-                "各种bug",
                 "BUG"
             ]
         }
