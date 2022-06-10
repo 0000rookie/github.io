@@ -29,6 +29,9 @@
             <guid isPermalink="true">https://www.hikki.site/dcc37883.html</guid>
             <title>docker删除镜像</title>
             <link>https://www.hikki.site/dcc37883.html</link>
+            <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+            <category term="技术杂谈" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" />
+            <category term="服务器" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E6%9C%8D%E5%8A%A1%E5%99%A8/" />
             <pubDate>Wed, 08 Jun 2022 00:13:26 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;删除镜像四步法&lt;/p&gt;
 &lt;ol&gt;
@@ -47,6 +50,9 @@
             <guid isPermalink="true">https://www.hikki.site/c5deac78.html</guid>
             <title>Ubuntu怎么开启FTP(菜鸡篇)</title>
             <link>https://www.hikki.site/c5deac78.html</link>
+            <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+            <category term="技术杂谈" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" />
+            <category term="服务器" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E6%9C%8D%E5%8A%A1%E5%99%A8/" />
             <pubDate>Tue, 07 Jun 2022 17:49:23 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;安装vsftpd&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装vsftpd&#34;&gt;#&lt;/a&gt; 安装 vsftpd&lt;/h2&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;yum &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt; -y vsftpd &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;apt&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt; vsftpd&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;出现&lt;/p&gt;
