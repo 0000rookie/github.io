@@ -11,11 +11,12 @@
             "url": "https://www.hikki.site/9a6dde1d.html",
             "title": "基础Vim修改文件",
             "date_published": "2022-06-11T14:06:11.000Z",
-            "content_html": "",
+            "content_html": "<h2 id=\"基本的增删改查\"><a class=\"markdownIt-Anchor\" href=\"#基本的增删改查\">#</a> 基本的增删改查</h2>\n<h3 id=\"进入vim模式\"><a class=\"markdownIt-Anchor\" href=\"#进入vim模式\">#</a> 进入 Vim 模式</h3>\n<p>我现在要用 <code>vim</code>  编辑器打开 <code>text.txt</code>  这个文件</p>\n<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"><span>打开text.txt文件</span></figcaption><table><tr><td data-num=\"1\"></td><td><pre><span class=\"token function\">vi</span> text.txt</pre></td></tr></table></figure><p>刚进入时</p>\n<p><img data-src=\"http://hikki.test.upcdn.net/202206114524.jpeg\" alt=\"\"></p>\n",
             "tags": [
                 "计算机科学",
                 "技术杂谈",
-                "服务器"
+                "服务器",
+                "Vim"
             ]
         },
         {

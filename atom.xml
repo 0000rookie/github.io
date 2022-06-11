@@ -26,10 +26,16 @@
         <id>https://www.hikki.site/9a6dde1d.html</id>
         <title>基础Vim修改文件</title>
         <link rel="alternate" href="https://www.hikki.site/9a6dde1d.html"/>
-        <content type="html"></content>
+        <content type="html">&lt;h2 id=&#34;基本的增删改查&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#基本的增删改查&#34;&gt;#&lt;/a&gt; 基本的增删改查&lt;/h2&gt;
+&lt;h3 id=&#34;进入vim模式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#进入vim模式&#34;&gt;#&lt;/a&gt; 进入 Vim 模式&lt;/h3&gt;
+&lt;p&gt;我现在要用 &lt;code&gt;vim&lt;/code&gt;  编辑器打开 &lt;code&gt;text.txt&lt;/code&gt;  这个文件&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;打开text.txt文件&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;vi&lt;/span&gt; text.txt&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;刚进入时&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/202206114524.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+</content>
         <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
         <category term="技术杂谈" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" />
         <category term="服务器" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E6%9C%8D%E5%8A%A1%E5%99%A8/" />
+        <category term="Vim" scheme="https://www.hikki.site/tags/Vim/" />
         <updated>2022-06-11T14:06:11.000Z</updated>
     </entry>
     <entry>
