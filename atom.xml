@@ -27,6 +27,9 @@
         <title>基础Vim修改文件</title>
         <link rel="alternate" href="https://www.hikki.site/9a6dde1d.html"/>
         <content type="html"></content>
+        <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+        <category term="技术杂谈" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" />
+        <category term="服务器" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E6%9C%8D%E5%8A%A1%E5%99%A8/" />
         <updated>2022-06-11T14:06:11.000Z</updated>
     </entry>
     <entry>
@@ -79,9 +82,9 @@
 &lt;/div&gt;
 &lt;p&gt;&lt;code&gt;vsftp&lt;/code&gt;  配置文件在 &lt;code&gt;/etc/vsftpd.conf&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;如果你不会修改文件？可参考这篇文章&lt;/p&gt;
-&lt;div class=&#34;links&#34;&gt;&lt;div class=&#34;item&#34; title=&#34;Vim修改文件&#34; style=&#34;--block-color:#d43f8d;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly8xMjM=&#34; data-background-image=&#34;http://hikki.test.upcdn.net/202206054042.jpeg&#34;&gt;&lt;/span&gt;
+&lt;div class=&#34;links&#34;&gt;&lt;div class=&#34;item&#34; title=&#34;Vim修改文件&#34; style=&#34;--block-color:#d43f8d;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9oaWtraS5zaXRlLzlhNmRkZTFkLmh0bWw=&#34; data-background-image=&#34;http://hikki.test.upcdn.net/202206054042.jpeg&#34;&gt;&lt;/span&gt;
           &lt;div class=&#34;info&#34;&gt;
-          &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly8xMjM=&#34;&gt;Vim修改文件&lt;/span&gt;
+          &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly9oaWtraS5zaXRlLzlhNmRkZTFkLmh0bWw=&#34;&gt;Vim修改文件&lt;/span&gt;
           &lt;p class=&#34;desc&#34;&gt;Linux简单修改文件&lt;/p&gt;
           &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;这是我的配置，你也可以直接复制进去你的配置文件&lt;/p&gt;
