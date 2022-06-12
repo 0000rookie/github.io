@@ -8,7 +8,7 @@
     <author>
       <name>璃柏涟</name>
     </author>
-    <updated>2022-06-12T09:22:15.000Z</updated>
+    <updated>2022-06-12T14:38:34.000Z</updated>
     <category term="web安全" />
     <category term="笔记" />
     <category term="web" />
@@ -22,6 +22,82 @@
     <category term="后端" />
     <category term="markdown" />
     <category term="搭建个人博客" />
+    <entry>
+        <id>https://www.hikki.site/4fce5997.html</id>
+        <title>docker安装qBittorrent</title>
+        <link rel="alternate" href="https://www.hikki.site/4fce5997.html"/>
+        <content type="html">&lt;h2 id=&#34;拉取qBittorrent镜像&#34;&gt;&lt;a href=&#34;#拉取qBittorrent镜像&#34; class=&#34;headerlink&#34; title=&#34;拉取qBittorrent镜像&#34;&gt;&lt;/a&gt;拉取qBittorrent镜像&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;lang-bash&#34;&gt;docker pull linuxserver/qbittorrent
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/202206125600.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;创建目录并编写docker-compose文件&#34;&gt;&lt;a href=&#34;#创建目录并编写docker-compose文件&#34; class=&#34;headerlink&#34; title=&#34;创建目录并编写docker-compose文件&#34;&gt;&lt;/a&gt;创建目录并编写docker-compose文件&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;lang-bash&#34;&gt;cd ~
+mkdir qBittorrent #创建qbitorrent数据文件夹
+cd qBittorrent
+mkdir config downloads #创建配置文件目录与下载目录
+vim docker-compose.yml #创建并编辑文件
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/202206125943.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;进入vim编辑器后，把这个粘贴进去(Ctrl+Insert)&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;lang-bash&#34;&gt;version: &amp;quot;2&amp;quot;
+services:
+  qbittorrent:
+    image: linuxserver/qbittorrent
+    container_name: qbittorrent
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Shanghai # 你的时区
+      - UMASK_SET=022
+      - WEBUI_PORT=8081 # 将此处修改成你欲使用的 WEB 管理平台端口 
+    volumes:
+      - /home/qb/config:/config # 绝对路径请修改为自己的config文件夹
+      - /home/d:/downloads # 绝对路径请修改为自己的downloads文件夹
+    ports:
+      # 要使用的映射下载端口与内部下载端口，可保持默认，安装完成后在管理页面仍然可以改成其他端口。
+      - 6881:6881 
+      - 6881:6881/udp
+      # 此处WEB UI 目标端口与内部端口务必保证相同，见问题1
+      - 8081:8081
+    restart: unless-stopped
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;执行docker-compose&#34;&gt;&lt;a href=&#34;#执行docker-compose&#34; class=&#34;headerlink&#34; title=&#34;执行docker-compose&#34;&gt;&lt;/a&gt;执行docker-compose&lt;/h2&gt;&lt;p&gt;如果还没安装docker-compose，请先安装&lt;code&gt;apt install docker-compose&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;lang-bash&#34;&gt;docker-compose up -d
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/202206125620.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;开放防火墙端口8081&#34;&gt;&lt;a href=&#34;#开放防火墙端口8081&#34; class=&#34;headerlink&#34; title=&#34;开放防火墙端口8081&#34;&gt;&lt;/a&gt;开放防火墙端口8081&lt;/h2&gt;&lt;p&gt;如果你是云服务器可能还要去云服务器安全组开放端口，我这里的防火墙是用&lt;code&gt;ufw&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;lang-bash&#34;&gt;ufw allow 8081
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/202206125832.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;登录qBittorrent并设置中文&#34;&gt;&lt;a href=&#34;#登录qBittorrent并设置中文&#34; class=&#34;headerlink&#34; title=&#34;登录qBittorrent并设置中文&#34;&gt;&lt;/a&gt;登录qBittorrent并设置中文&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;lang-bash&#34;&gt;# 开放端口后，访问 你的ip:8081 即可进入管理页面。
+# 默认用户名:admin
+# 默认密码：adminadmin
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;语言默认是英文，修改成中文&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/202206120640.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/202206120939.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;修改完记得滑下去点击&lt;code&gt;save&lt;/code&gt;(保存)&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/202206120945.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;:::success&lt;/p&gt;
+&lt;p&gt;这样就设置成功啦！！！！！！！&lt;/p&gt;
+&lt;p&gt;:::&lt;/p&gt;
+&lt;h2 id=&#34;可能出现错误&#34;&gt;&lt;a href=&#34;#可能出现错误&#34; class=&#34;headerlink&#34; title=&#34;可能出现错误&#34;&gt;&lt;/a&gt;可能出现错误&lt;/h2&gt;&lt;h3 id=&#34;docker-compose-yml文件的路径没填正确&#34;&gt;&lt;a href=&#34;#docker-compose-yml文件的路径没填正确&#34; class=&#34;headerlink&#34; title=&#34;docker-compose.yml文件的路径没填正确&#34;&gt;&lt;/a&gt;docker-compose.yml文件的路径没填正确&lt;/h3&gt;&lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/202206125649.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;未安装docker-compose&#34;&gt;&lt;a href=&#34;#未安装docker-compose&#34; class=&#34;headerlink&#34; title=&#34;未安装docker-compose&#34;&gt;&lt;/a&gt;未安装docker-compose&lt;/h3&gt;&lt;p&gt;安装&lt;code&gt;docker-compose&lt;/code&gt;就可以了&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;lang-bash&#34;&gt;apt install docker-compose
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/202206125735.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;下载没反应—-gt-修改监听端口&#34;&gt;&lt;a href=&#34;#下载没反应—-gt-修改监听端口&#34; class=&#34;headerlink&#34; title=&#34;下载没反应—&amp;gt;修改监听端口&#34;&gt;&lt;/a&gt;下载没反应—&amp;gt;修改监听端口&lt;/h2&gt;&lt;p&gt;有些PT站是屏蔽某些端口的，像我用的PT站是默认屏蔽&lt;code&gt;6881&lt;/code&gt;端口的，修改一下就可以了&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/202206121259.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;修改端口在PT站的开放范围内就好了，可能有些云服务器也会限制某些端口，也要在服务器的允许端口范围内&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/202206121034.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+</content>
+        <updated>2022-06-12T14:38:34.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://www.hikki.site/220ce39c.html</id>
+        <title>计算机网络原理(谢希仁第八版)答案</title>
+        <link rel="alternate" href="https://www.hikki.site/220ce39c.html"/>
+        <content type="html"></content>
+        <updated>2022-06-12T13:56:29.000Z</updated>
+    </entry>
     <entry>
         <id>https://www.hikki.site/3050703f.html</id>
         <title>python批量修改文件名</title>
@@ -2014,157 +2090,5 @@ public static void text(int a,String ... arr)&amp;#123;&amp;#125;
         <category term="技术杂谈" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" />
         <category term="教程" scheme="https://www.hikki.site/tags/%E6%95%99%E7%A8%8B/" />
         <updated>2022-05-17T04:00:03.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://www.hikki.site/d9e4874a.html</id>
-        <title>python文件的读取与写入</title>
-        <link rel="alternate" href="https://www.hikki.site/d9e4874a.html"/>
-        <content type="html">&lt;pre&gt;&lt;code class=&#34;lang-python&#34;&gt;&amp;quot;&amp;quot;&amp;quot;
-先给rw.txt文件写入 20行文字
-再从rw.txt文件读取这20行文字
-&amp;quot;&amp;quot;&amp;quot;
-
-with open(&amp;#39;../res/rw.txt&amp;#39;,&amp;#39;a+&amp;#39;,encoding=&amp;#39;utf-8&amp;#39;) as f :
-    for line in range(20):
-        f.write(&amp;#39;这是第&amp;#39;+str(line)+&amp;#39;行\n&amp;#39;)
-
-with open(&amp;#39;../res/rw.txt&amp;#39;,&amp;#39;r&amp;#39;,encoding=&amp;#39;utf-8&amp;#39;) as f :
-    for line in f:
-        print(line,end=&amp;quot;&amp;quot;)
-
-#　&amp;quot;with open(&amp;#39;../res/rw.txt&amp;#39;,&amp;#39;r&amp;#39;,encoding=&amp;#39;utf-8&amp;#39;) as f: &amp;quot; 的好处
-# 可以让你变得更懒，它等于
-f = open(&amp;#39;../res/rw.txt&amp;#39;,&amp;#39;r&amp;#39;,encoding=&amp;#39;utf-8&amp;#39;)
-...
-f.close()
-# 可以省略掉f.close()，如果代码块短一点不会忘记关闭流文件，但是如果代码块大一点可能就容易忘记f.close()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022052350.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;用文本模式和二进制模式打开的区别&#34;&gt;&lt;a href=&#34;#用文本模式和二进制模式打开的区别&#34; class=&#34;headerlink&#34; title=&#34;用文本模式和二进制模式打开的区别&#34;&gt;&lt;/a&gt;用文本模式和二进制模式打开的区别&lt;/h2&gt;&lt;h3 id=&#34;用文本模式打开&#34;&gt;&lt;a href=&#34;#用文本模式打开&#34; class=&#34;headerlink&#34; title=&#34;用文本模式打开&#34;&gt;&lt;/a&gt;用文本模式打开&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;lang-python&#34;&gt;with open(&amp;#39;../res/rw.txt&amp;#39;,&amp;#39;r&amp;#39;,encoding=&amp;#39;utf-8&amp;#39;) as f :
-    print(f.read())
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022052358.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;用二进制的模式打开&#34;&gt;&lt;a href=&#34;#用二进制的模式打开&#34; class=&#34;headerlink&#34; title=&#34;用二进制的模式打开&#34;&gt;&lt;/a&gt;用二进制的模式打开&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;lang-python&#34;&gt;with open(&amp;#39;../res/rw.txt&amp;#39;,&amp;#39;rb&amp;#39;) as f :
-    print(f.read())
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022052343.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;常用读取的2种方法&#34;&gt;&lt;a href=&#34;#常用读取的2种方法&#34; class=&#34;headerlink&#34; title=&#34;常用读取的2种方法&#34;&gt;&lt;/a&gt;常用读取的2种方法&lt;/h2&gt;&lt;h3 id=&#34;一次性全读取&#34;&gt;&lt;a href=&#34;#一次性全读取&#34; class=&#34;headerlink&#34; title=&#34;一次性全读取&#34;&gt;&lt;/a&gt;一次性全读取&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;lang-python&#34;&gt;with open(&amp;#39;../res/rw.txt&amp;#39;,&amp;#39;r&amp;#39;,encoding=&amp;#39;utf-8&amp;#39;) as f :
-    print(f.read())
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022052358.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;逐行读取&#34;&gt;&lt;a href=&#34;#逐行读取&#34; class=&#34;headerlink&#34; title=&#34;逐行读取&#34;&gt;&lt;/a&gt;逐行读取&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;lang-python&#34;&gt;with open(&amp;#39;../res/rw.txt&amp;#39;,&amp;#39;r&amp;#39;,encoding=&amp;#39;utf-8&amp;#39;) as f :
-    for line in f:
-        print(line,end=&amp;quot;&amp;quot;)
-        print(&amp;quot;-&amp;quot;*5+&amp;quot;逐行输出&amp;quot;+&amp;quot;-&amp;quot;*5)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022052329.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;常用写入的2种方法&#34;&gt;&lt;a href=&#34;#常用写入的2种方法&#34; class=&#34;headerlink&#34; title=&#34;常用写入的2种方法&#34;&gt;&lt;/a&gt;常用写入的2种方法&lt;/h2&gt;&lt;h3 id=&#34;以列表方法写入文件&#34;&gt;&lt;a href=&#34;#以列表方法写入文件&#34; class=&#34;headerlink&#34; title=&#34;以列表方法写入文件&#34;&gt;&lt;/a&gt;以列表方法写入文件&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;lang-python&#34;&gt;lis = []
-for i in range(10):
-    # 将字符串添加值lis列表末尾
-    lis.append(&amp;#39;这是第&amp;#39;+str(i)+&amp;#39;行\n&amp;#39;)
-with open(&amp;#39;../res/rw.txt&amp;#39;, &amp;#39;a+&amp;#39;, encoding=&amp;#39;utf-8&amp;#39;) as f:
-    # 将整个列表写入到rw.txt文件
-    f.writelines(lis)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022050455.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;div class=&#34;table-container&#34;&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;文件打开模式&lt;/th&gt;
-&lt;th&gt;含义&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;r&lt;/td&gt;
-&lt;td&gt;只读模式，如果文件不存在，则返回FileNotFoundError&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;w&lt;/td&gt;
-&lt;td&gt;覆盖写模式，文件不存在则创建，存在则完全覆盖&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;x&lt;/td&gt;
-&lt;td&gt;创建写模式。文件不存在则创建，存在则返回异常FileExistsError&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;a&lt;/td&gt;
-&lt;td&gt;追加写模式，文件存在则创建，存在则在后追加内容&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;b&lt;/td&gt;
-&lt;td&gt;二进制文件模式&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;t&lt;/td&gt;
-&lt;td&gt;文本文件模式。默认值&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;+&lt;/td&gt;
-&lt;td&gt;与r/w/x/a 一同使用，在原功能基础上增加同时读写功能&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;/div&gt;
-&lt;h3 id=&#34;以字符串写入文件&#34;&gt;&lt;a href=&#34;#以字符串写入文件&#34; class=&#34;headerlink&#34; title=&#34;以字符串写入文件&#34;&gt;&lt;/a&gt;以字符串写入文件&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;lang-python&#34;&gt;lis = []
-for i in range(10):
-    lis.append(&amp;#39;这是第&amp;#39;+str(i)+&amp;#39;行\n&amp;#39;)
-with open(&amp;#39;../res/rw.txt&amp;#39;, &amp;#39;a+&amp;#39;, encoding=&amp;#39;utf-8&amp;#39;) as f:
-    # 遍历lis列表
-    for line in range(len(lis)):
-        # 将lis的每一个字符串写入rw.txt文件
-        f.write(lis[line])
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;容易忽略的错误&#34;&gt;&lt;a href=&#34;#容易忽略的错误&#34; class=&#34;headerlink&#34; title=&#34;容易忽略的错误&#34;&gt;&lt;/a&gt;容易忽略的错误&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;lang-python&#34;&gt;with open(&amp;#39;../res/rw.txt&amp;#39;,&amp;#39;a+&amp;#39;,encoding=&amp;#39;utf-8&amp;#39;) as f :
-    for line in range(10):
-        f.write(&amp;#39;这是第&amp;#39;+str(line)+&amp;#39;行\n&amp;#39;)
-        print(f.readline())
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;:::info&lt;/p&gt;
-&lt;p&gt;这段代码哪里出错了呢？为什么没显示？&lt;/p&gt;
-&lt;p&gt;:::&lt;/p&gt;
-&lt;p&gt;:::success&lt;/p&gt;
-&lt;p&gt;答：其实是在文件流还没关闭之前，指针一直都是在文件末尾，你一写入内容，就读取内容，指针在末尾读取的内容自然就为空了，读取内容是按照从左往右，从上往下的嘛，所以你应该把指针往前面一点移动，这时候需要用到seek(offset) ，offset可选 [0,1,2] 0—&amp;gt;文件开头， 1—&amp;gt;当前位置 ， 2—&amp;gt; 文件末尾&lt;/p&gt;
-&lt;p&gt;:::&lt;/p&gt;
-</content>
-        <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-        <category term="编程语言" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" />
-        <category term="python" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" />
-        <category term="python" scheme="https://www.hikki.site/tags/python/" />
-        <updated>2022-05-15T09:54:33.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://www.hikki.site/2c1b0cfb.html</id>
-        <title>计算机系20级计算机科学与技术四班喜迎二十大</title>
-        <link rel="alternate" href="https://www.hikki.site/2c1b0cfb.html"/>
-        <content type="html">&lt;p&gt;​    &lt;/p&gt;
-&lt;h2 id=&#34;“喜迎二十大、永远跟党走、奋进新征程”主题班会&#34;&gt;&lt;a href=&#34;#“喜迎二十大、永远跟党走、奋进新征程”主题班会&#34; class=&#34;headerlink&#34; title=&#34;“喜迎二十大、永远跟党走、奋进新征程”主题班会&#34;&gt;&lt;/a&gt;“喜迎二十大、永远跟党走、奋进新征程”主题班会&lt;/h2&gt;&lt;h3 id=&#34;活动意义：&#34;&gt;&lt;a href=&#34;#活动意义：&#34; class=&#34;headerlink&#34; title=&#34;活动意义：&#34;&gt;&lt;/a&gt;活动意义：&lt;/h3&gt;&lt;p&gt;以习近平新时代中国特色社会主义思想为指导，全面贯彻党的十九大和十九届历次全会精神，深入落实习近平总书记关于青年工作的重要思想，引导青少年深刻感悟“两个确立”的决定性意义，增强“四个意识”、坚定“四个自信”、做到“两个维护”，为实现第二个百年奋斗目标、实现中华民族伟大复兴的中国梦凝聚起强大青春力量。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022055953.jpeg&#34; alt=&#34;&#34;&gt;{width=”75%” height=”75%”}&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022050010.jpeg&#34; alt=&#34;&#34;&gt;{width=”75%” height=”75%”}&lt;/p&gt;
-&lt;h2 id=&#34;班内乒乓球赛&#34;&gt;&lt;a href=&#34;#班内乒乓球赛&#34; class=&#34;headerlink&#34; title=&#34;班内乒乓球赛&#34;&gt;&lt;/a&gt;班内乒乓球赛&lt;/h2&gt;&lt;h3 id=&#34;活动意义：-1&#34;&gt;&lt;a href=&#34;#活动意义：-1&#34; class=&#34;headerlink&#34; title=&#34;活动意义：&#34;&gt;&lt;/a&gt;活动意义：&lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;发扬国球风采。&lt;/li&gt;
-&lt;li&gt;培养学生的运动特长。&lt;/li&gt;
-&lt;li&gt;提高学生对待体育活动的兴趣和参与积极性，限度地使希望锻炼身体的人得到不同层面的满足。&lt;/li&gt;
-&lt;li&gt;增强学生的身体素质，发掘培养具有潜质的学生。&lt;/li&gt;
-&lt;li&gt;增强学生的心理挑战能力和积极向上的精神风貌。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022050140.jpeg&#34; alt=&#34;&#34;&gt;{width=”60%” height=”60%”}&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022050216.jpeg&#34; alt=&#34;&#34;&gt;{width=”75%” height=”75%”}&lt;/p&gt;
-&lt;h2 id=&#34;校内清扫志愿活动&#34;&gt;&lt;a href=&#34;#校内清扫志愿活动&#34; class=&#34;headerlink&#34; title=&#34;校内清扫志愿活动&#34;&gt;&lt;/a&gt;校内清扫志愿活动&lt;/h2&gt;&lt;h3 id=&#34;活动意义：-2&#34;&gt;&lt;a href=&#34;#活动意义：-2&#34; class=&#34;headerlink&#34; title=&#34;活动意义：&#34;&gt;&lt;/a&gt;活动意义：&lt;/h3&gt;&lt;p&gt;20级计算机科学与技术四班一直秉承“服务他人，奉献社会”的原则，服务社会。在活动中了解社会、认知社会、传播文明，服务社会。使大学生树立正确的人生观，价值观，世界观。用自己的实际行动为社会主义新农村建设添砖加瓦。一方面增强同学们学习雷锋的意识，激发当代大学生学习雷锋劲射的热情，提升广大青年的思想境界，配合学校和社区创建良好的环境。另一方面激发学院志愿者的服务精神，促进“奉献、友爱、互助、进步”的志愿服务精神的传播，将志愿服务与社区、校园和我们身边的环境结合起来。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022050123.jpeg&#34; alt=&#34;&#34;&gt;{width=”75%” height=”75%”}&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022050103.jpeg&#34; alt=&#34;&#34;&gt;{width=”75%” height=”75%”}&lt;/p&gt;
-&lt;h2 id=&#34;学习强国活动&#34;&gt;&lt;a href=&#34;#学习强国活动&#34; class=&#34;headerlink&#34; title=&#34;学习强国活动&#34;&gt;&lt;/a&gt;学习强国活动&lt;/h2&gt;&lt;h3 id=&#34;活动意义：-3&#34;&gt;&lt;a href=&#34;#活动意义：-3&#34; class=&#34;headerlink&#34; title=&#34;活动意义：&#34;&gt;&lt;/a&gt;活动意义：&lt;/h3&gt;&lt;p&gt;让同学们在日常的学习中，增加一些课外常识，了解国内的国家政策，扩大知识面。学习党知识，了解党的相关政策。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022050642.png&#34; alt=&#34;&#34;&gt;{width=”45%” height=”45%”}&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022050648.png&#34; alt=&#34;&#34;&gt;{width=”45%” height=”45%”}&lt;/p&gt;
-&lt;h2 id=&#34;党史答题主题摆摊活动&#34;&gt;&lt;a href=&#34;#党史答题主题摆摊活动&#34; class=&#34;headerlink&#34; title=&#34;党史答题主题摆摊活动&#34;&gt;&lt;/a&gt;党史答题主题摆摊活动&lt;/h2&gt;&lt;h3 id=&#34;活动意义：-4&#34;&gt;&lt;a href=&#34;#活动意义：-4&#34; class=&#34;headerlink&#34; title=&#34;活动意义：&#34;&gt;&lt;/a&gt;活动意义：&lt;/h3&gt;&lt;p&gt;促进同学们进一步学习党史知识，丰富校园生活。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022050026.jpeg&#34; alt=&#34;&#34;&gt;{width=”75%” height=”75%”}&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022050236.png&#34; alt=&#34;&#34;&gt;{width=”65%” height=”65%”}&lt;/p&gt;
-&lt;h2 id=&#34;个人博客搭建&#34;&gt;&lt;a href=&#34;#个人博客搭建&#34; class=&#34;headerlink&#34; title=&#34;个人博客搭建&#34;&gt;&lt;/a&gt;个人博客搭建&lt;/h2&gt;&lt;h3 id=&#34;活动意义：-5&#34;&gt;&lt;a href=&#34;#活动意义：-5&#34; class=&#34;headerlink&#34; title=&#34;活动意义：&#34;&gt;&lt;/a&gt;活动意义：&lt;/h3&gt;&lt;p&gt;通过带领同学们搭建个人博客，可以使同学们之间的交流更加频繁，促进同学之间关系更加和善友爱，可以了解到如何使用&lt;code&gt;GitHub&lt;/code&gt;，数据之间的交互，以及对前端的一定认识，以及在写博客过程中不断学习，学习如何使用&lt;code&gt;markdown&lt;/code&gt;语法、&lt;code&gt;yml&lt;/code&gt;等格式的语法，再后期写博客时不断对学习上的总结，促进同学们更加爱喜欢学习。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022051526.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022051531.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-</content>
-        <category term="生活" scheme="https://www.hikki.site/categories/%E7%94%9F%E6%B4%BB/" />
-        <updated>2022-05-14T14:40:50.000Z</updated>
     </entry>
 </feed>
