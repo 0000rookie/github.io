@@ -83,7 +83,7 @@ Python组合数据类型 - python - 编程语言 - 计算机科学 |
       <i class="ic i-pen"></i>
     </span>
     <span class="text">本文字数</span>
-    <span>2.4k</span>
+    <span>2.2k</span>
     <span class="text">字</span>
   </span>
   <span class="item" title="阅读时长">
@@ -124,12 +124,12 @@ Python组合数据类型 - python - 编程语言 - 计算机科学 |
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclxxcb6rj20zk0m8b29.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclffsa1cj20zk0m811l.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeu7txpzj20zk0m81kx.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giciryrr3rj20zk0m8nhk.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipex2cdtbj20zk0m8x6p.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclfdu6exj20zk0m87hw.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclxfdlttj20zk0m8npd.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclwrdwyaj20zk0m8are.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclga70tsj20zk0m84mr.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclhtuo6nj20zk0m8ttm.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicliwyw55j20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipev1x5e4j20zk0m8b29.jpg"></li>
         </ul>
       </div>
     </header>
@@ -181,81 +181,25 @@ Python组合数据类型 - python - 编程语言 - 计算机科学 |
   <div class="body md" itemprop="articleBody">
     
 
-    <p>:::info</p>
+    <div class="note info">
 <p>每天记录自己学习情况</p>
-<p>:::</p>
-<h2 id="列表检查是否存在重复元素"><a href="#列表检查是否存在重复元素" class="headerlink" title="列表检查是否存在重复元素"></a>列表检查是否存在重复元素</h2><p>编写函数，用列表为参数，判断有无重复元素，若有就返回<code>True</code>，否则，返回<code>False</code>，并调用函数来验证。可使用以下列表来进行验证：</p>
+</div>
+<h2 id="列表检查是否存在重复元素"><a class="markdownIt-Anchor" href="#列表检查是否存在重复元素">#</a> 列表检查是否存在重复元素</h2>
+<p>编写函数，用列表为参数，判断有无重复元素，若有就返回 <code>True</code> ，否则，返回 <code>False</code> ，并调用函数来验证。可使用以下列表来进行验证：</p>
 <p>lst_1 = [1, 3, 4, 5, 1, 45]</p>
 <p>lst_2 = [‘N’, ‘B’, ‘A’, ‘2022’]</p>
-<p>```python mark:1,2-27<br>lst_1 = [1, 3, 4, 5, 1, 45]<br>lst_2 = [‘N’, ‘B’, ‘A’, ‘2022’]<br>lst_1.sort()<br>lst_2.sort()</p>
-<p>def prin(x):<br>    print(“[“, end=””)<br>    for i in range(len(x)):<br>        print(x[i], end=””)<br>        if i &lt; len(x) - 1:<br>            print(end=”,”)<br>        else:<br>            print(“]”, end=”  “)<br>    for l in range(len(x)):<br>        if x[l] == x[l - 1]:<br>            FF = “有重复元素”<br>            break<br>        else:<br>            FF = “无重复元素”<br>    print(FF)</p>
-<p>prin(lst_1)<br>prin(lst_2)</p>
-<pre><code>
-
-
-## 集合检查是否存在重复元素
-
-编写函数，用列表为参数，利用集合元素的无重复性来判断列表有无重复元素，若有就返回`True`，否则，返回`False`，并调用函数来验证
-
-```python mark:1,2-25
-lst_1 = [1, 2, 4, 5, 1, 4445]
-lst_2 = [&#39;N&#39;, &#39;B&#39;, &#39;A&#39;, &#39;2022&#39;]
-
-def lstt(x):
-    lst1 = list(set(x))
-    if len(lst1) &lt; len(x):
-        return True
-    else:
-        return False
-
-result1 = lstt(lst_1)
-result2 = lstt(lst_2)
-
-def print1(result, lst):
-    if result == True:
-        print(&#39;列表：&#123;&#125;有 重复元素&#39;.format(lst))
-    else:
-        print(&#39;列表：&#123;&#125;无 重复元素&#39;.format(lst))
-
-print1(result1, lst_1)
-print1(result2, lst_2)
-</code></pre><h2 id="生日悖论"><a href="#生日悖论" class="headerlink" title="生日悖论"></a>生日悖论</h2><p>现假定一年只有<code>365</code>天，不考虑闰年情况。请先阅读<span class="exturl" data-url="aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTclOTQlOUYlRTYlOTclQTUlRTYlODIlOTYlRTglQUUlQkEvMjcxNTI5MA==">生日悖论</span> 相关知识，再按下列要求编程模拟检验：<br>(1)编写函数<code>createBirthday()：</code>使用随机函数生成某人的生日，结果为字符串，由<code>01.01</code>到<code>12.31</code>表示，月份.天均为两位数，中间用点号(.)隔开；<br>(2)编写函数<code>groupBirthdays(n)：</code>调用<code>createBirthday()</code>生成团队成员的生日，用列表方式返回，其中：<code>n为</code>团队成员数；<br>(3)主函数：输入团队成员数，调用<code>groupBirthdays(n)</code>和创建<code>isRepeat()</code>函数查重，模拟<code>100000</code>次，计算至少有两人生日相同的比例</p>
-<p>```python mark:1,2-45<br>import random as r</p>
-<p>num = 100000<br>def createBirthday():<br>    birthday = []<br>    month = str(r.randint(1, 12)).rjust(2, ‘0’)<br>    day = str(r.uniform(0.01, 0.31))[1:4]<br>    birthday = month + day</p>
-<pre><code># print(birthday)
-# print(type(birthday))
-return birthday
-</code></pre><p>def groupBirthdays(n):<br>    lst = []<br>    for i in range(n):<br>        lst.append(createBirthday())</p>
-<pre><code># print(lst)
-return lst
-</code></pre><p>def isRepeat(x):<br>    if len(x) == len(set(x)):<br>        return False  # 不重复<br>    else:<br>        return True  # 重复</p>
-<p>def main():<br>    x = int(input(“请输入团队人数：”))<br>    nums = 0<br>    for i in range(100000):<br>        times = isRepeat(groupBirthdays(x))<br>        if times == True:<br>            nums += 1<br>        else:<br>            continue<br>    y = str(nums / 100000 * 100)[:5]<br>    print(“假设一个团队有{}人，用随机模拟{}次，其中至少有两人生日相同的比例为{}%”.format(x, 100000, y))</p>
-<p>for i in range(3):<br>    main()</p>
-<pre><code>
-## 文字出现频率
-
-编写程序，对文档”习总书记在北京大学师生座谈会上的讲话.txt”进行分析，按出现频率的降序打印字符(前20位)。
-
-```python mark:1,2-16
-import jieba
-
-txt = open(&quot;F:\\习总书记在北京大学师生座谈会上的讲话 .txt&quot;,&quot;r&quot;,encoding=&#39;gbk&#39;,errors=&#39;ignore&#39;).read()
-lst = jieba.lcut(txt)
-cout = &#123;&#125;
-for ls in lst:
-    ls = ls.replace(&#39; &#39;,&#39;&#39;)
-    if len(ls) == 1:
-        continue
-    else:
-        cout[ls] = cout.get(ls,0)+1
-items = list(cout.items())
-items.sort(key=lambda x: x[1], reverse=True)
-for item in range(20):
-    word, count = items[item]
-    print(&quot;词语:【&#123;&#125;】,出现次数:&#123;&#125;&quot;.format(word, count))
-</code></pre><p>:::warning</p>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>lst_1 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">45</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>lst_2 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'N'</span><span class="token punctuation">,</span> <span class="token string">'B'</span><span class="token punctuation">,</span> <span class="token string">'A'</span><span class="token punctuation">,</span> <span class="token string">'2022'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>lst_1<span class="token punctuation">.</span>sort<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre>lst_2<span class="token punctuation">.</span>sort<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre><span class="token keyword">def</span> <span class="token function">prin</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre>    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"["</span><span class="token punctuation">,</span> end<span class="token operator">=</span><span class="token string">""</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="8"></td><td><pre>    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="9"></td><td><pre>        <span class="token keyword">print</span><span class="token punctuation">(</span>x<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> end<span class="token operator">=</span><span class="token string">""</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="10"></td><td><pre>        <span class="token keyword">if</span> i <span class="token operator">&lt;</span> <span class="token builtin">len</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="11"></td><td><pre>            <span class="token keyword">print</span><span class="token punctuation">(</span>end<span class="token operator">=</span><span class="token string">","</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="12"></td><td><pre>        <span class="token keyword">else</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="13"></td><td><pre>            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"]"</span><span class="token punctuation">,</span> end<span class="token operator">=</span><span class="token string">"  "</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="14"></td><td><pre>    <span class="token keyword">for</span> l <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="15"></td><td><pre>        <span class="token keyword">if</span> x<span class="token punctuation">[</span>l<span class="token punctuation">]</span> <span class="token operator">==</span> x<span class="token punctuation">[</span>l <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="16"></td><td><pre>            FF <span class="token operator">=</span> <span class="token string">"有重复元素"</span></pre></td></tr><tr class="marked"><td data-num="17"></td><td><pre>            <span class="token keyword">break</span></pre></td></tr><tr class="marked"><td data-num="18"></td><td><pre>        <span class="token keyword">else</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="19"></td><td><pre>            FF <span class="token operator">=</span> <span class="token string">"无重复元素"</span></pre></td></tr><tr class="marked"><td data-num="20"></td><td><pre>    <span class="token keyword">print</span><span class="token punctuation">(</span>FF<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="21"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="22"></td><td><pre>prin<span class="token punctuation">(</span>lst_1<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="23"></td><td><pre>prin<span class="token punctuation">(</span>lst_2<span class="token punctuation">)</span></pre></td></tr></table></figure><h2 id="集合检查是否存在重复元素"><a class="markdownIt-Anchor" href="#集合检查是否存在重复元素">#</a> 集合检查是否存在重复元素</h2>
+<p>编写函数，用列表为参数，利用集合元素的无重复性来判断列表有无重复元素，若有就返回 <code>True</code> ，否则，返回 <code>False</code> ，并调用函数来验证</p>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>lst_1 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">4445</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>lst_2 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'N'</span><span class="token punctuation">,</span> <span class="token string">'B'</span><span class="token punctuation">,</span> <span class="token string">'A'</span><span class="token punctuation">,</span> <span class="token string">'2022'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre><span class="token keyword">def</span> <span class="token function">lstt</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre>    lst1 <span class="token operator">=</span> <span class="token builtin">list</span><span class="token punctuation">(</span><span class="token builtin">set</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre>    <span class="token keyword">if</span> <span class="token builtin">len</span><span class="token punctuation">(</span>lst1<span class="token punctuation">)</span> <span class="token operator">&lt;</span> <span class="token builtin">len</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre>        <span class="token keyword">return</span> <span class="token boolean">True</span></pre></td></tr><tr class="marked"><td data-num="8"></td><td><pre>    <span class="token keyword">else</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="9"></td><td><pre>        <span class="token keyword">return</span> <span class="token boolean">False</span></pre></td></tr><tr class="marked"><td data-num="10"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="11"></td><td><pre>result1 <span class="token operator">=</span> lstt<span class="token punctuation">(</span>lst_1<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="12"></td><td><pre>result2 <span class="token operator">=</span> lstt<span class="token punctuation">(</span>lst_2<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="13"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="14"></td><td><pre><span class="token keyword">def</span> <span class="token function">print1</span><span class="token punctuation">(</span>result<span class="token punctuation">,</span> lst<span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="15"></td><td><pre>    <span class="token keyword">if</span> result <span class="token operator">==</span> <span class="token boolean">True</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="16"></td><td><pre>        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'列表：&#123;&#125;有 重复元素'</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>lst<span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="17"></td><td><pre>    <span class="token keyword">else</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="18"></td><td><pre>        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'列表：&#123;&#125;无 重复元素'</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>lst<span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="19"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="20"></td><td><pre>print1<span class="token punctuation">(</span>result1<span class="token punctuation">,</span> lst_1<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="21"></td><td><pre>print1<span class="token punctuation">(</span>result2<span class="token punctuation">,</span> lst_2<span class="token punctuation">)</span></pre></td></tr></table></figure><h2 id="生日悖论"><a class="markdownIt-Anchor" href="#生日悖论">#</a> 生日悖论</h2>
+<p>现假定一年只有 <code>365</code>  天，不考虑闰年情况。请先阅读<span class="exturl" data-url="aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTclOTQlOUYlRTYlOTclQTUlRTYlODIlOTYlRTglQUUlQkEvMjcxNTI5MA==">生日悖论</span> 相关知识，再按下列要求编程模拟检验：<br>
+(1) 编写函数 <code>createBirthday()：</code> 使用随机函数生成某人的生日，结果为字符串，由 <code>01.01</code>  到 <code>12.31</code>  表示，月份。天均为两位数，中间用点号 (.) 隔开；<br>
+(2) 编写函数 <code>groupBirthdays(n)：</code> 调用 <code>createBirthday()</code>  生成团队成员的生日，用列表方式返回，其中： <code>n为</code> 团队成员数；<br>
+(3) 主函数：输入团队成员数，调用 <code>groupBirthdays(n)</code>  和创建 <code>isRepeat()</code>  函数查重，模拟 <code>100000</code>  次，计算至少有两人生日相同的比例</p>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token keyword">import</span> random <span class="token keyword">as</span> r</pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>num <span class="token operator">=</span> <span class="token number">100000</span></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre><span class="token keyword">def</span> <span class="token function">createBirthday</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre>    birthday <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre>    month <span class="token operator">=</span> <span class="token builtin">str</span><span class="token punctuation">(</span>r<span class="token punctuation">.</span>randint<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">12</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span>rjust<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">'0'</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre>    day <span class="token operator">=</span> <span class="token builtin">str</span><span class="token punctuation">(</span>r<span class="token punctuation">.</span>uniform<span class="token punctuation">(</span><span class="token number">0.01</span><span class="token punctuation">,</span> <span class="token number">0.31</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token number">4</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="8"></td><td><pre>    birthday <span class="token operator">=</span> month <span class="token operator">+</span> day</pre></td></tr><tr class="marked"><td data-num="9"></td><td><pre>    <span class="token comment"># print(birthday)</span></pre></td></tr><tr class="marked"><td data-num="10"></td><td><pre>    <span class="token comment"># print(type(birthday))</span></pre></td></tr><tr class="marked"><td data-num="11"></td><td><pre>    <span class="token keyword">return</span> birthday</pre></td></tr><tr class="marked"><td data-num="12"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="13"></td><td><pre><span class="token keyword">def</span> <span class="token function">groupBirthdays</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="14"></td><td><pre>    lst <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="15"></td><td><pre>    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="16"></td><td><pre>        lst<span class="token punctuation">.</span>append<span class="token punctuation">(</span>createBirthday<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="17"></td><td><pre>    <span class="token comment"># print(lst)</span></pre></td></tr><tr class="marked"><td data-num="18"></td><td><pre>    <span class="token keyword">return</span> lst</pre></td></tr><tr class="marked"><td data-num="19"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="20"></td><td><pre><span class="token keyword">def</span> <span class="token function">isRepeat</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="21"></td><td><pre>    <span class="token keyword">if</span> <span class="token builtin">len</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token builtin">len</span><span class="token punctuation">(</span><span class="token builtin">set</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="22"></td><td><pre>        <span class="token keyword">return</span> <span class="token boolean">False</span>  <span class="token comment"># 不重复</span></pre></td></tr><tr class="marked"><td data-num="23"></td><td><pre>    <span class="token keyword">else</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="24"></td><td><pre>        <span class="token keyword">return</span> <span class="token boolean">True</span>  <span class="token comment"># 重复</span></pre></td></tr><tr class="marked"><td data-num="25"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="26"></td><td><pre><span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="27"></td><td><pre>    x <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"请输入团队人数："</span><span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="28"></td><td><pre>    nums <span class="token operator">=</span> <span class="token number">0</span></pre></td></tr><tr class="marked"><td data-num="29"></td><td><pre>    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">100000</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="30"></td><td><pre>        times <span class="token operator">=</span> isRepeat<span class="token punctuation">(</span>groupBirthdays<span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="31"></td><td><pre>        <span class="token keyword">if</span> times <span class="token operator">==</span> <span class="token boolean">True</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="32"></td><td><pre>            nums <span class="token operator">+=</span> <span class="token number">1</span></pre></td></tr><tr class="marked"><td data-num="33"></td><td><pre>        <span class="token keyword">else</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="34"></td><td><pre>            <span class="token keyword">continue</span></pre></td></tr><tr class="marked"><td data-num="35"></td><td><pre>    y <span class="token operator">=</span> <span class="token builtin">str</span><span class="token punctuation">(</span>nums <span class="token operator">/</span> <span class="token number">100000</span> <span class="token operator">*</span> <span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token number">5</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="36"></td><td><pre>    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"假设一个团队有&#123;&#125;人，用随机模拟&#123;&#125;次，其中至少有两人生日相同的比例为&#123;&#125;%"</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> <span class="token number">100000</span><span class="token punctuation">,</span> y<span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="37"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="38"></td><td><pre><span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="39"></td><td><pre>    main<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr></table></figure><h2 id="文字出现频率"><a class="markdownIt-Anchor" href="#文字出现频率">#</a> 文字出现频率</h2>
+<p>编写程序，对文档” 习总书记在北京大学师生座谈会上的讲话.txt” 进行分析，按出现频率的降序打印字符 (前 20 位)。</p>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token keyword">import</span> jieba</pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>txt <span class="token operator">=</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">"F:\\习总书记在北京大学师生座谈会上的讲话 .txt"</span><span class="token punctuation">,</span><span class="token string">"r"</span><span class="token punctuation">,</span>encoding<span class="token operator">=</span><span class="token string">'gbk'</span><span class="token punctuation">,</span>errors<span class="token operator">=</span><span class="token string">'ignore'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre>lst <span class="token operator">=</span> jieba<span class="token punctuation">.</span>lcut<span class="token punctuation">(</span>txt<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre>cout <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span></pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre><span class="token keyword">for</span> ls <span class="token keyword">in</span> lst<span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre>    ls <span class="token operator">=</span> ls<span class="token punctuation">.</span>replace<span class="token punctuation">(</span><span class="token string">' '</span><span class="token punctuation">,</span><span class="token string">''</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="8"></td><td><pre>    <span class="token keyword">if</span> <span class="token builtin">len</span><span class="token punctuation">(</span>ls<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="9"></td><td><pre>        <span class="token keyword">continue</span></pre></td></tr><tr class="marked"><td data-num="10"></td><td><pre>    <span class="token keyword">else</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="11"></td><td><pre>        cout<span class="token punctuation">[</span>ls<span class="token punctuation">]</span> <span class="token operator">=</span> cout<span class="token punctuation">.</span>get<span class="token punctuation">(</span>ls<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token number">1</span></pre></td></tr><tr class="marked"><td data-num="12"></td><td><pre>items <span class="token operator">=</span> <span class="token builtin">list</span><span class="token punctuation">(</span>cout<span class="token punctuation">.</span>items<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="13"></td><td><pre>items<span class="token punctuation">.</span>sort<span class="token punctuation">(</span>key<span class="token operator">=</span><span class="token keyword">lambda</span> x<span class="token punctuation">:</span> x<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> reverse<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="14"></td><td><pre><span class="token keyword">for</span> item <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="15"></td><td><pre>    word<span class="token punctuation">,</span> count <span class="token operator">=</span> items<span class="token punctuation">[</span>item<span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="16"></td><td><pre>    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"词语:【&#123;&#125;】,出现次数:&#123;&#125;"</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>word<span class="token punctuation">,</span> count<span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr></table></figure><div class="note warning">
 <p>以上如有错误，欢迎留言指出</p>
-<p>:::</p>
+</div>
 
       <div class="tags">
           <a href="/tags/python/" rel="tag"><i class="ic i-tag"></i> python</a>
@@ -331,7 +275,7 @@ for item in range(20):
     <div class="item left">
       
 
-  <a href="/2cc8588f.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeyvx1d4j20zk0m8hdt.jpg" title="添加开机自启程序">
+  <a href="/2cc8588f.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclx29mstj20zk0m8hdt.jpg" title="添加开机自启程序">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> 一个小技巧</span>
   <h3>添加开机自启程序</h3>
@@ -341,7 +285,7 @@ for item in range(20):
     <div class="item right">
       
 
-  <a href="/edaa94fb.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclg5ms2rj20zk0m8u0x.jpg" title="为博客添加免费的CDN加速">
+  <a href="/edaa94fb.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclhpw3lwj20zk0m8gvw.jpg" title="为博客添加免费的CDN加速">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> 技术杂谈</span>
   <h3>为博客添加免费的CDN加速</h3>
@@ -363,7 +307,7 @@ for item in range(20):
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%97%E8%A1%A8%E6%A3%80%E6%9F%A5%E6%98%AF%E5%90%A6%E5%AD%98%E5%9C%A8%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0"><span class="toc-number">1.</span> <span class="toc-text">列表检查是否存在重复元素</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%9F%E6%97%A5%E6%82%96%E8%AE%BA"><span class="toc-number">2.</span> <span class="toc-text">生日悖论</span></a></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%97%E8%A1%A8%E6%A3%80%E6%9F%A5%E6%98%AF%E5%90%A6%E5%AD%98%E5%9C%A8%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0"><span class="toc-number">1.</span> <span class="toc-text"> 列表检查是否存在重复元素</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9B%86%E5%90%88%E6%A3%80%E6%9F%A5%E6%98%AF%E5%90%A6%E5%AD%98%E5%9C%A8%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0"><span class="toc-number">2.</span> <span class="toc-text"> 集合检查是否存在重复元素</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%9F%E6%97%A5%E6%82%96%E8%AE%BA"><span class="toc-number">3.</span> <span class="toc-text"> 生日悖论</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E5%AD%97%E5%87%BA%E7%8E%B0%E9%A2%91%E7%8E%87"><span class="toc-number">4.</span> <span class="toc-text"> 文字出现频率</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
@@ -514,91 +458,7 @@ for item in range(20):
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
 </div>
 
-    <span><a href="/cd7b33aa.html" title="Python组合数据类型">Python组合数据类型</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E6%9C%8D%E5%8A%A1%E5%99%A8/" title="分类于 服务器">服务器</a>
-</div>
-
-    <span><a href="/9a6dde1d.html" title="基础Vim修改文件">基础Vim修改文件</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
-</div>
-
-    <span><a href="/6c2393ec.html" title="第七篇：购买域名---从0基础搭建Hexo博客">第七篇：购买域名---从0基础搭建Hexo博客</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
-</div>
-
-    <span><a href="/4f9c6caa.html" title="python爬虫乱码问题">python爬虫乱码问题</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
-</div>
-
-    <span><a href="/dc09a46c.html" title="第六篇：将博客部署到GitHub---从0基础搭建Hexo博客">第六篇：将博客部署到GitHub---从0基础搭建Hexo博客</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
-</div>
-
-    <span><a href="/37c8254d.html" title="python qt5 实现记事本界面">python qt5 实现记事本界面</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/" title="分类于 java">java</a>
-</div>
-
-    <span><a href="/f2edc254.html" title="javase基础">javase基础</a></span>
+    <span><a href="/b9893092.html" title="python Qt5实现记事本基本功能">python Qt5实现记事本基本功能</a></span>
   </li>
 
       
@@ -610,7 +470,7 @@ for item in range(20):
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%90%84%E7%A7%8Dbug/" title="分类于 各种bug">各种bug</a>
 </div>
 
-    <span><a href="/6ee1ace5.html" title="hexo端口4000被占用">hexo端口4000被占用</a></span>
+    <span><a href="/c32e96d4.html" title="git push origin master失败">git push origin master失败</a></span>
   </li>
 
       
@@ -619,12 +479,10 @@ for item in range(20):
 <div class="breadcrumb">
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
 </div>
 
-    <span><a href="/1edcfdea.html" title="python-math库">python-math库</a></span>
+    <span><a href="/eae60a43.html" title="大学选修科目">大学选修科目</a></span>
   </li>
 
       
@@ -633,12 +491,94 @@ for item in range(20):
 <div class="breadcrumb">
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/" title="分类于 java">java</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%90%84%E7%A7%8Dbug/" title="分类于 各种bug">各种bug</a>
 </div>
 
-    <span><a href="/b2cc2eb5.html" title="javase程序国际化">javase程序国际化</a></span>
+    <span><a href="/6c24ad8e.html" title="python安装&#x2F;更新包出现报错">python安装/更新包出现报错</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E7%94%9F%E6%B4%BB/" title="分类于 生活">生活</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E7%94%9F%E6%B4%BB/%E5%A5%BD%E7%89%A9%E6%8E%A8%E8%8D%90/" title="分类于 好物推荐">好物推荐</a>
+</div>
+
+    <span><a href="/ee3e214f.html" title="QQ&#x2F;微信&#x2F;支付宝 收款码美化">QQ/微信/支付宝 收款码美化</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E6%A8%A1%E5%9D%97/" title="分类于 模块">模块</a>
+</div>
+
+    <span><a href="/e85071ad.html" title="搭建GitHu图床">搭建GitHu图床</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E6%9C%8D%E5%8A%A1%E5%99%A8/" title="分类于 服务器">服务器</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E6%9C%8D%E5%8A%A1%E5%99%A8/docker/" title="分类于 docker">docker</a>
+</div>
+
+    <span><a href="/bc681fc7.html" title="Ubuntu安装Docker">Ubuntu安装Docker</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E6%9C%8D%E5%8A%A1%E5%99%A8/" title="分类于 服务器">服务器</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E6%9C%8D%E5%8A%A1%E5%99%A8/docker/" title="分类于 docker">docker</a>
+</div>
+
+    <span><a href="/dcc37883.html" title="docker删除镜像">docker删除镜像</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
+</div>
+
+    <span><a href="/17554f39.html" title="关于手机双开不显示双开目录999">关于手机双开不显示双开目录999</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
+</div>
+
+    <span><a href="/cf63c07.html" title="第四篇：安装Nodejs---从0基础搭建Hexo博客">第四篇：安装Nodejs---从0基础搭建Hexo博客</a></span>
   </li>
 
   </ul>
@@ -663,13 +603,13 @@ for item in range(20):
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="站点总字数">115k 字</span>
+    <span title="站点总字数">108k 字</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="站点阅读时长">2:37</span>
+    <span title="站点阅读时长">2:27</span>
   </div>
   <div class="powered-by">
     基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
