@@ -12,7 +12,12 @@
             "title": "key",
             "date_published": "2022-06-18T10:24:01.000Z",
             "content_html": "<h3 id=\"database-properties文件\"><a href=\"#database-properties文件\" class=\"headerlink\" title=\"database.properties文件\"></a><code>database.properties</code>文件</h3><pre><code class=\"lang-java\">driver = com.mysql.jdbc.Driver\nurl = jdbc:mysql://localhost:3306/yootk?useUnicode=true&amp;characterEncoding=utf-8\nusername=root\npassword=root\n</code></pre>\n<h3 id=\"报错内容\"><a href=\"#报错内容\" class=\"headerlink\" title=\"报错内容\"></a>报错内容</h3><pre><code class=\"lang-java\">Caused by: java.util.MissingResourceException: Can&#39;t find resource for bundle java.util.PropertyResourceBundle, key host\n</code></pre>\n",
-            "tags": []
+            "tags": [
+                "计算机科学",
+                "编程语言",
+                "java",
+                "bug"
+            ]
         },
         {
             "id": "https://www.hikki.site/4fce5997.html",

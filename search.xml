@@ -58,6 +58,16 @@
       </tags>
   </entry>
   <entry>
+    <title>4.9日记分享</title>
+    <url>/ef5acbc6.html</url>
+    <content><![CDATA[<h2 id="4-9日记分享"><a href="#4-9日记分享" class="headerlink" title="4.9日记分享"></a>4.9日记分享</h2><p>自从开始玩博客之后，经常用到<code>Git</code>，感觉非常重要。如今每个企业都基本用到<code>Git</code>，如果就业的时候不会使用<code>Git</code>，感觉还是落后于别人一步的，而且，现在也有时间学习，倒不如现在开始学习一下，顺便玩一玩服务器，可能对<code>Git</code>会更加熟练，话不多说，直接动手开始学习。</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+        <category>日记</category>
+      </categories>
+  </entry>
+  <entry>
     <title>日记分享2022.4.13</title>
     <url>/b9e6c7bf.html</url>
     <content><![CDATA[<p>:::danger</p>
@@ -71,14 +81,351 @@
       </categories>
   </entry>
   <entry>
-    <title>4.9日记分享</title>
-    <url>/ef5acbc6.html</url>
-    <content><![CDATA[<h2 id="4-9日记分享"><a href="#4-9日记分享" class="headerlink" title="4.9日记分享"></a>4.9日记分享</h2><p>自从开始玩博客之后，经常用到<code>Git</code>，感觉非常重要。如今每个企业都基本用到<code>Git</code>，如果就业的时候不会使用<code>Git</code>，感觉还是落后于别人一步的，而且，现在也有时间学习，倒不如现在开始学习一下，顺便玩一玩服务器，可能对<code>Git</code>会更加熟练，话不多说，直接动手开始学习。</p>
+    <title>Hexo部署err:Error:Spawn failed错误</title>
+    <url>/28af37eb.html</url>
+    <content><![CDATA[<h2 id="err-Error-Spawn-failed"><a href="#err-Error-Spawn-failed" class="headerlink" title="err:Error:Spawn failed"></a><code>err:Error:Spawn failed</code></h2><p>今晚在发布文章的时候突然出现了这个问题，昨天还是正常的，今晚就报错了，前前后后尝试了好多办法</p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022045305.jpeg" alt=""></p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><h3 id="删除id-rsa、id-rsa-pub、known-hosts"><a href="#删除id-rsa、id-rsa-pub、known-hosts" class="headerlink" title="删除id_rsa、id_rsa.pub、known_hosts"></a>删除<code>id_rsa</code>、<code>id_rsa.pub</code>、<code>known_hosts</code></h3><p>打开<code>C:\Users\Administrator\.ssh</code>路径,删除<code>id_rsa</code>、<code>id_rsa.pub</code>、<code>known_hosts</code></p>
+<h3 id="在bash重新生成rsa文件"><a href="#在bash重新生成rsa文件" class="headerlink" title="在bash重新生成rsa文件"></a>在<code>bash</code>重新生成rsa文件</h3><pre><code class="lang-bash">&gt;&gt;&gt;ssh-keygen -t rsa
+</code></pre>
+<h3 id="打开github-gt-setting-gt-SSH-and-GPG-keys-gt-New-ssh-key"><a href="#打开github-gt-setting-gt-SSH-and-GPG-keys-gt-New-ssh-key" class="headerlink" title="打开github---&gt;setting---&gt;SSH and GPG keys---&gt;New ssh key"></a>打开<code>github---&gt;setting---&gt;SSH and GPG keys---&gt;New ssh key</code></h3><p>打开<code>.ssh</code>路径，将<code>id_rsa.pub</code>的内容复制到新创建的<code>ssh key</code>里面</p>
+<h3 id="测试是否连接到github"><a href="#测试是否连接到github" class="headerlink" title="测试是否连接到github"></a>测试是否连接到<code>github</code></h3><p>```bash mark:1-12</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>ssh -T git@github.com<br>ssh: connect to host github.com port 22: Connection timed out #连接失败</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h1 id="如果是出现以下则说明成功，以下的文章就不用看了"><a href="#如果是出现以下则说明成功，以下的文章就不用看了" class="headerlink" title="如果是出现以下则说明成功，以下的文章就不用看了"></a>如果是出现以下则说明成功，以下的文章就不用看了</h1><p>The authenticity of host ‘[ssh.github.com]:443 ([20.205.243.160]:443)’ can’t be established.<br>ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.<br>This key is not known by any other names<br>Are you sure you want to continue connecting (yes/no/[fingerprint])? # 此时在此输入yes回车就行</p>
+<pre><code>
+---
+
+如果你失败了，接着往下
+
+### 新建`config`文件
+
+![](https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022045733.jpeg)
+
+### 在`config`文件输入下面内容
+
+![](https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022045818.jpeg)
+
+```yaml mark:1-5
+Host github.com
+User *****@gmail.com  #登录github的邮箱，这段文字不复制到文件
+Hostname ssh.github.com
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/id_rsa
+Port 443
+</code></pre><h3 id="连接github"><a href="#连接github" class="headerlink" title="连接github"></a>连接<code>github</code></h3><pre><code class="lang-bash">&gt;&gt;&gt;ssh -T git@github.com #此时出现以下页面成功啦
+The authenticity of host &#39;[ssh.github.com]:443 ([20.205.243.160]:443)&#39; can&#39;t be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes # 此处输入yes
+Warning: Permanently added &#39;[ssh.github.com]:443&#39; (ED25519) to the list of known hosts.
+Hi 0000rookie! You&#39;ve successfully authenticated, but GitHub does not provide shell access.
+</code></pre>
 ]]></content>
       <categories>
-        <category>生活</category>
-        <category>日记</category>
+        <category>计算机科学</category>
+        <category>各种bug</category>
       </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>BUG</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>安装qt5的时候报错</title>
+    <url>/af3d5cf5.html</url>
+    <content><![CDATA[<h2 id="报错内容-ERROR-spyder-4-0-1-requires-pyqtwebengine-3-which-is"><a href="#报错内容-ERROR-spyder-4-0-1-requires-pyqtwebengine-3-which-is" class="headerlink" title="报错内容: ERROR: spyder 4.0.1 requires pyqtwebengine= 3, which is"></a>报错内容: ERROR: spyder 4.0.1 requires pyqtwebengine<5.13; python_version >= 3, which is</h2><p>  not installed. ERROR: spyder 4.0.1 has requirement pyqt5<5.13; python_version >= 3, but you’ll have pyqt5 5.15.6 which is incompatible.</p>
+<p>原因是<code>Spyder</code>不是最新版本</p>
+<p>```bash mark:1-8</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>pip install pyqt5 #报错内容如下<br>ERROR: spyder 4.0.1 requires pyqtwebengine<5.13; python_version >= “3”, which is not installed.<br>ERROR: spyder 4.0.1 has requirement pyqt5<5.13; python_version >= “3”, but you’ll have pyqt5 5.15.6 which is incompatible.<br>```</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h2 id="查询spyder版本"><a href="#查询spyder版本" class="headerlink" title="查询spyder版本"></a>查询spyder版本</h2><p>更新版本，通过<code>pip install spyder==*</code>查询版本</p>
+<p>```bash mark:1-2</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>pip install spyder==<em><br>ERROR: Could not find a version that satisfies the requirement spyder==</em> (from versions: 2.3.0, 2.3.1, 2.3.2, 2.3.3, 2.3.4, 2.3.5.2, 2.3.6, 2.3.7, 2.3.8, 2.3.9, 3.0.0b2, 3.0.0b3, 3.0.0b4, 3.0.0b5, 3.0.0b6, 3.0.0b7, 3.0.0, 3.0.1, 3.0.2, 3.1.0, 3.1.1, 3.1.2, 3.1.3, 3.1.4, 3.2.0, 3.2.1, 3.2.2, 3.2.3, 3.2.4, 3.2.5, 3.2.6, 3.2.7, 3.2.8, 3.3.0, 3.3.1, 3.3.2, 3.3.3, 3.3.4, 3.3.5, 3.3.6, 4.0.0b1, 4.0.0b2, 4.0.0b3, 4.0.0b4, 4.0.0b5, 4.0.0b6, 4.0.0b7, 4.0.0rc1, 4.0.0rc2, 4.0.0rc3, 4.0.0, 4.0.1, 4.1.0, 4.1.1, 4.1.2, 4.1.3, 4.1.4, 4.1.5, 4.1.6, 4.2.0, 4.2.1, 4.2.2, 4.2.3, 4.2.4, 4.2.5, 5.0.0a1, 5.0.0a2, 5.0.0a3, 5.0.0a4, 5.0.0a5, 5.0.0a6, 5.0.0a7, 5.0.0, 5.0.1, 5.0.2, 5.0.3, 5.0.4, 5.0.5, 5.1.0, 5.1.1, 5.1.2, 5.1.3, 5.1.4, 5.1.5, 5.2.0, 5.2.1, 5.2.2, 5.3.0)<br>ERROR: No matching distribution found for spyder==*<br>```</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h2 id="安装5-3-0版本"><a href="#安装5-3-0版本" class="headerlink" title="安装5.3.0版本"></a>安装5.3.0版本</h2><p>```bash mark:1-2</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>pip install spyder==5.3.0<br>```</p>
+</blockquote>
+</blockquote>
+</blockquote>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>各种bug</category>
+      </categories>
+      <tags>
+        <tag>BUG</tag>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Maven build失败 MAVEN:单元测试报错</title>
+    <url>/a96b8873.html</url>
+    <content><![CDATA[<h2 id="报错内容-1-red"><a href="#报错内容-1-red" class="headerlink" title="报错内容~1~{.red}"></a>报错内容~1~{.red}</h2><p>[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project lab11: Compilation failure: Compilation failure:  </p>
+<p>[ERROR] 不再支持源选项 5。请使用 7 或更高版本。 </p>
+<p>[ERROR] 不再支持目标选项 5。请使用 7 或更高版本。</p>
+<h3 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h3><p>在pom.xml添加插件级可以解决</p>
+<pre><code class="lang-xml">  &lt;build&gt;
+   &lt;plugins&gt;
+       &lt;plugin&gt;
+           &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+           &lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;
+           &lt;configuration&gt;
+               &lt;source&gt;1.8&lt;/source&gt;
+               &lt;target&gt;1.8&lt;/target&gt;
+               &lt;encoding&gt;UTF-8&lt;/encoding&gt;
+           &lt;/configuration&gt;
+       &lt;/plugin&gt;
+   &lt;/plugins&gt;
+&lt;/build&gt;
+</code></pre>
+<h2 id="报错内容-2-red"><a href="#报错内容-2-red" class="headerlink" title="报错内容~2~{.red}"></a>报错内容~2~{.red}</h2><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022051525.jpeg" alt=""></p>
+<h3 id="解决办法-1"><a href="#解决办法-1" class="headerlink" title="解决办法"></a>解决办法</h3><p>其实在pom.xml依赖有重复了，删掉就没问题了</p>
+<h2 id="单元测试成功"><a href="#单元测试成功" class="headerlink" title="单元测试成功"></a>单元测试成功</h2><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022051530.jpeg" alt=""></p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>各种bug</category>
+      </categories>
+      <tags>
+        <tag>BUG</tag>
+        <tag>JAVA</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>git push origin master失败</title>
+    <url>/c32e96d4.html</url>
+    <content><![CDATA[<h2 id="关于我想备份blog这件事"><a href="#关于我想备份blog这件事" class="headerlink" title="关于我想备份blog这件事"></a>关于我想备份<code>blog</code>这件事</h2><p>+++primary 我要怎么备份blog文件？？？</p>
+<p>:::primary</p>
+<p>这几天在想，万一那天我想在别的电脑上写博客，或者是我电脑突然抽风硬盘坏了，我的博客数据岂不是没了？？？</p>
+<p>又或者我什么时候不小心删错了文件，岂不是出大问题？？？</p>
+<p>:::</p>
+<p>带着这个问题，我一开始是找了几个<code>PC端</code>自动本地备份的程序，但效果不太理想。</p>
+<p>定时备份:不能保证你在设置定时的这段时间内进行<code>hexo d</code>多少次，如果定时备份的时间设置过短，理论上对硬盘的读写会拖慢其他程序的运行。</p>
+<p>所以在想，如果有一个程序可以监控我<code>blog</code>下的文件变化，每变化一次就进行记录一次，进行增量备份一次，这是我想到最完美的办法，带着这个想法，我似乎找到了一个方法。</p>
+<p>+++</p>
+<p>+++danger 持续集成服务</p>
+<p>此处引用百度百科：持续集成是一种软件开发实践，即团队开发成员经常集成他们的工作，通常每个成员每天至少集成一次，也就意味着每天可能会发生多次集成。每次集成都通过自动化的构建（包括编译，发布，自动化测试）来验证，从而尽早地发现集成错误。</p>
+<p>简单来说，就是这个服务绑定了<code>GitHub</code>，我们每提交一次代码到<code>GitHub</code>，它都会抓取一次我们的仓库，检查新代码，然后提供一个运行环境，执行测试，完成构建，还能部署到服务器。</p>
+<p>+++</p>
+<p>然后我这次在准备提交文件到我新建的<code>hexo-backups</code>仓库的时候，出错了，就记录一下错误。</p>
+<h2 id="git-pash-origin-master失败"><a href="#git-pash-origin-master失败" class="headerlink" title="git pash origin master失败"></a><code>git pash origin master</code>失败</h2><p>第一次遇见这个问题，我还以为是<code>.gitignore</code>文件的<code>.DS_Store</code>文件不存在？然后我删掉这个文件，好像还是继续报一样的错误，然后排除这个可能。</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204082309.jpg" alt="" title="git pash origin master失败"></p>
+<h2 id="新建文件测试"><a href="#新建文件测试" class="headerlink" title="新建文件测试"></a>新建文件测试</h2><p>然后新建文件测试一下，看是不是文件没有被加载到缓存区，发现结果已经加载到缓冲区了</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204082313.jpg" alt="" title="测试文件"></p>
+<h2 id="添加origin"><a href="#添加origin" class="headerlink" title="添加origin"></a>添加origin</h2><p>一开始我没有删除旧的origin，我直接添加了，直接报错。实际操作应该删除旧的origin的，再添加新的origin</p>
+<p>```bash 删除origin mark:1,2-3</p>
+<h1 id="删除origin"><a href="#删除origin" class="headerlink" title="删除origin"></a>删除origin</h1><p>git remote remove origin</p>
+<pre><code>
+```bash 添加origin mark:1,2-3
+# 此处的 git@github.com:0000rookie/Hexo-backups.git 是仓库的SSH
+git add git@github.com:0000rookie/Hexo-backups.git
+</code></pre><p><code>bash 查看origin mark:1,2-3
+git origin -v</code></p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204082315.jpg" alt="" title="添加控制器"></p>
+<h2 id="重新commit"><a href="#重新commit" class="headerlink" title="重新commit"></a>重新commit</h2><p>是的，我真的以为我只是修改一下<code>origin</code>就处理好了</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204082324.jpg" alt="" title="重新commit"></p>
+<h2 id="git-push-f-origin-master提交成功"><a href="#git-push-f-origin-master提交成功" class="headerlink" title="git push -f origin master提交成功"></a><code>git push -f origin master</code>提交成功</h2><p>奇怪的是，我试试用<code>git push -f origin master</code>就成功了</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204082326.jpg" alt="" title="git push -f origin master"></p>
+<p>:::success</p>
+<p>目前还不知道是什么原因导致错误，如果你知道，欢迎留言告诉我！！！</p>
+<p>:::</p>
+<p>:::warning</p>
+<p>以上如有错误，欢迎留言指出</p>
+<p>:::</p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>各种bug</category>
+      </categories>
+      <tags>
+        <tag>BUG</tag>
+        <tag>教程</tag>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>搭建博客常见的错误</title>
+    <url>/cdc2e518.html</url>
+    <content><![CDATA[<h2 id="404错误"><a href="#404错误" class="headerlink" title="404错误"></a>404错误</h2><p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng20220401163558.png" alt="404"></p>
+<h3 id="分两种情况"><a href="#分两种情况" class="headerlink" title="分两种情况"></a>分两种情况</h3><h4 id="还未修改域名"><a href="#还未修改域名" class="headerlink" title="还未修改域名"></a>还未修改域名</h4><ol>
+<li><p>打开<code>GitHub</code>仓库看文件是否已经上传成功，成功如图。</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng20220401164116.jpg" alt=""></p>
+</li>
+<li><p>如果仓库是空的，说明你没上传成功。</p>
+<ul>
+<li>检查<code>blog</code> 文件夹下的<code>_config.yml</code>文件<code>deploy:</code>的配置有没有正确。如下</li>
+</ul>
+<p>```bash mark:1-4<br>deploy:<br>  type: git<br>  repo: git@github.com:0000rookie/github.io.git<br>  branch: main</p>
+<pre><code>
+- 重新部署到`github`仓库。
+
+```bash mark:1-3
+hexo clean  #清除缓存文件 db.json 和已生成的静态文件 public
+hexo g      #生成网站静态文件到默认设置的 public 文件夹(hexo generate 的缩写)
+hexo d      #自动生成网站静态文件，并部署到设定的仓库(hexo deploy 的缩写)
+</code></pre><ul>
+<li><p>在部署过程中，查看git窗口看有没有报错的地方，如有报错，查看报错内容，如果没有，此时查看<code>github</code>仓库有没有更新文件。</p>
+</li>
+<li><p>如果还是没看到有更新内容，看看<code>github</code>分支是不是<code>main</code>，有些同学的分支是<code>master</code>，需要选择分支和部署的分支一致</p>
+</li>
+</ul>
+</li>
+</ol>
+<p>还有可能的错误是<code>hexo</code>安装有文件缺失，要重新安装一遍。打开<code>E:\studyAPP\node_js\node_global</code>路径插件是否成功安装<code>Hexo</code>插件了，如果没成功，那就重新安装一遍。</p>
+<p>````bash mark:1<br>npm install -g hexo-cli</p>
+<pre><code class="lang-`">
+重装还是不行的话，大概率就是你的Nodejs系统环境没配好，重新回到第四篇配置`Nodejs`环境。
+
+![404](http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204011654.jpg)
+
+如果成功安装`Hexo`插件了。再查看一下`blog`下的`_config.yml`文件，`deploy`有没有设置正确，输入格式有没有正确(每一个小红点都是空格)
+
+![](http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204011701.jpg)
+
+
+
+**如果还是404页面**，再检查一下`hexo-deployer-git`是不是安装成功，重新安装一遍
+
+```bash
+npm install hexo-deployer-git --save
+</code></pre>
+<h3 id="已修改域名"><a href="#已修改域名" class="headerlink" title="已修改域名"></a>已修改域名</h3><p>大多数都是<code>Blog/source/CNAME</code>文件没有<strong>命名</strong>好或者是<strong>域名填写错误</strong></p>
+<p><code>CNAME</code>是没有后缀的文件</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204021406.jpg" alt=""></p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204021407.jpg" alt=""></p>
+<p>如果不清楚该文件是不是有后缀的，可以这样打开选项查看</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204021412.jpg" alt=""></p>
+<p>:::info</p>
+<p>本文章是记录自己安装过程中遇到的错误，总结错误，今后再遇到错误也可以回头参考一下，本文还会继续更新</p>
+<p>:::</p>
+<p>:::warning</p>
+<p>以上如有错误，欢迎留言指出</p>
+<p>:::</p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>各种bug</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>教程</tag>
+        <tag>BUg</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python安装/更新包出现报错</title>
+    <url>/6c24ad8e.html</url>
+    <content><![CDATA[<h2 id="WARNING-Retrying-Retry-total-4-connect-None-read-None-redirect-None-status-None-after-connection-broken-by-‘ProxyError-‘Cannot-connect-to-proxy-’-OSError-0-‘Error’-’-pypi-simple-eyed3"><a href="#WARNING-Retrying-Retry-total-4-connect-None-read-None-redirect-None-status-None-after-connection-broken-by-‘ProxyError-‘Cannot-connect-to-proxy-’-OSError-0-‘Error’-’-pypi-simple-eyed3" class="headerlink" title="WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by ‘ProxyError(‘Cannot connect to proxy.’, OSError(0, ‘Error’))’: /pypi/simple/eyed3/"></a>WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by ‘ProxyError(‘Cannot connect to proxy.’, OSError(0, ‘Error’))’: /pypi/simple/eyed3/</h2><p>出现错误如图所示</p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022053531.png" alt=""></p>
+<h2 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h2><h3 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h3><p>关闭你的梯子就解决问题了，哈哈</p>
+<h3 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h3><p>指定源下载</p>
+<pre><code class="lang-apl">pip install requests -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
+</code></pre>
+<p>我的源是阿里云的源，我挂了梯子就用不了，关了梯子就可以了。</p>
+<pre><code class="lang-apl">国内的pip源，如下：
+
+阿里云 http://mirrors.aliyun.com/pypi/simple/
+
+中国科技大学 https://pypi.mirrors.ustc.edu.cn/simple/
+
+豆瓣(douban) http://pypi.douban.com/simple/
+
+清华大学 https://pypi.tuna.tsinghua.edu.cn/simple/
+
+中国科学技术大学 http://pypi.mirrors.ustc.edu.cn/simple/
+</code></pre>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>各种bug</category>
+      </categories>
+      <tags>
+        <tag>BUG</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo端口4000被占用</title>
+    <url>/6ee1ace5.html</url>
+    <content><![CDATA[<h2 id="报错内容：Port-4000-has-been-used-Try-other-port-instead"><a href="#报错内容：Port-4000-has-been-used-Try-other-port-instead" class="headerlink" title="报错内容：Port 4000 has been used. Try other port instead."></a>报错内容：Port 4000 has been used. Try other port instead.</h2><p>译文：4000端口已被占用。尝试其他端口</p>
+<pre><code class="lang-bash">&gt;&gt;&gt; hexo s
+FATAL Port 4000 has been used. Try other port instead.
+FATAL &#123;
+  err: Error: listen EADDRINUSE: address already in use :::4000
+      at Server.setupListenHandle [as _listen2] (net.js:1331:16)
+      at listenInCluster (net.js:1379:12)
+      at Server.listen (net.js:1465:7)
+      at E:\Blog\node_modules\hexo-server\lib\server.js:68:12
+      at Promise._execute (E:\Blog\node_modules\bluebird\js\release\debuggability.js:384:9)
+      at Promise._resolveFromExecutor (E:\Blog\node_modules\bluebird\js\release\promise.js:518:18)
+      at new Promise (E:\Blog\node_modules\bluebird\js\release\promise.js:103:10)
+      at checkPort (E:\Blog\node_modules\hexo-server\lib\server.js:65:10)
+      at Hexo.module.exports (E:\Blog\node_modules\hexo-server\lib\server.js:17:10)
+      at Hexo.tryCatcher (E:\Blog\node_modules\bluebird\js\release\util.js:16:23)
+      at Hexo.&lt;anonymous&gt; (E:\Blog\node_modules\bluebird\js\release\method.js:15:34)
+      at Hexo.call (E:\Blog\node_modules\hexo\lib\hexo\index.js:258:27)
+      at E:\studyAPP\node_js\node_global\node_modules\hexo-cli\lib\hexo.js:60:17
+      at tryCatcher (E:\studyAPP\node_js\node_global\node_modules\hexo-cli\node_modules\bluebird\js\release\util.js:16:23)
+      at Promise._settlePromiseFromHandler (E:\studyAPP\node_js\node_global\node_modules\hexo-cli\node_modules\bluebird\js\release\promise.js:547:31)
+      at Promise._settlePromise (E:\studyAPP\node_js\node_global\node_modules\hexo-cli\node_modules\bluebird\js\release\promise.js:604:18)
+      at Promise._settlePromise0 (E:\studyAPP\node_js\node_global\node_modules\hexo-cli\node_modules\bluebird\js\release\promise.js:649:10)
+      at Promise._settlePromises (E:\studyAPP\node_js\node_global\node_modules\hexo-cli\node_modules\bluebird\js\release\promise.js:729:18)
+      at _drainQueueStep (E:\studyAPP\node_js\node_global\node_modules\hexo-cli\node_modules\bluebird\js\release\async.js:93:12)
+      at _drainQueue (E:\studyAPP\node_js\node_global\node_modules\hexo-cli\node_modules\bluebird\js\release\async.js:86:9)
+      at Async._drainQueues (E:\studyAPP\node_js\node_global\node_modules\hexo-cli\node_modules\bluebird\js\release\async.js:102:5)
+      at Immediate.Async.drainQueues (E:\studyAPP\node_js\node_global\node_modules\hexo-cli\node_modules\bluebird\js\release\async.js:15:14) &#123;
+    code: &#39;EADDRINUSE&#39;,
+    errno: -4091,
+    syscall: &#39;listen&#39;,
+    address: &#39;::&#39;,
+    port: 4000
+  &#125;
+&#125; Something&#39;s wrong. Maybe you can find the solution here: %s https://hexo.io/docs/troubleshooting.html
+</code></pre>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022050306.jpeg" alt=""></p>
+<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><h3 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h3><p>杀掉<code>4000</code>被占用的端口，让<code>hexo</code>运行<code>4000</code>端口</p>
+<pre><code class="lang-bash"># 查看4000端口是什么程序占用
+&gt;&gt;&gt; netstat -ano | findstr &quot;4000&quot; 
+# 杀掉4000端口正在运行的程序
+&gt;&gt;&gt; taskkill -PID 15868 -F
+</code></pre>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022050215.jpeg" alt=""></p>
+<h3 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h3><p>在<code>_config.yml</code>修改hexo默认端口，在<code>hexo s</code>的时候就不是<code>4000</code>端口了</p>
+<pre><code class="lang-yaml">server:
+  port: 4001
+  compress: true
+  header: true
+</code></pre>
+<h3 id="方法三"><a href="#方法三" class="headerlink" title="方法三"></a>方法三</h3><p>指定端口运行，这里指定5000端口运行</p>
+<pre><code class="lang-bash">&gt;&gt;&gt; hexo server -p 5000
+</code></pre>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>各种bug</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>BUG</tag>
+      </tags>
   </entry>
   <entry>
     <title>CentOS新增root用户</title>
@@ -127,8 +474,8 @@
         <category>技术杂谈</category>
       </categories>
       <tags>
-        <tag>Linux</tag>
         <tag>教程</tag>
+        <tag>Linux</tag>
         <tag>数据库</tag>
       </tags>
   </entry>
@@ -360,32 +707,6 @@ https://cdn.jsdelivr.net/gh/账户名/仓库名/
       </tags>
   </entry>
   <entry>
-    <title>大学选修科目</title>
-    <url>/eae60a43.html</url>
-    <content><![CDATA[<h2 id="选课"><a href="#选课" class="headerlink" title="选课"></a>选课</h2><div class="links"><div class="item" title="插花艺术--必选" style="--block-color:#a6c1ee;"><span class="exturl image" data-url="aHR0cDovL2NsYXNzLnNlaWcuZWR1LmNuOjcwMDEvc2lzZS9jb21tb24vY291cnNlX3ZpZXcuanNwP2lkPTQzODk=" data-background-image="http://hikki.test.upcdn.net/202206054042.jpeg"></span>
-          <div class="info">
-          <span class="exturl title" data-url="aHR0cDovL2NsYXNzLnNlaWcuZWR1LmNuOjcwMDEvc2lzZS9jb21tb24vY291cnNlX3ZpZXcuanNwP2lkPTQzODk=">插花艺术--必选</span>
-          <p class="desc">DD0044 & 2学分 & 考查</p>
-          </div></div><div class="item" title="系统运维实战" style="--block-color:#a18cd1;"><span class="exturl image" data-url="aHR0cDovL2NsYXNzLnNlaWcuZWR1LmNuOjcwMDEvc2lzZS9jb21tb24vY291cnNlX3ZpZXcuanNwP2lkPTQ2Njk=" data-background-image="http://hikki.test.upcdn.net/202206054042.jpeg"></span>
-          <div class="info">
-          <span class="exturl title" data-url="aHR0cDovL2NsYXNzLnNlaWcuZWR1LmNuOjcwMDEvc2lzZS9jb21tb24vY291cnNlX3ZpZXcuanNwP2lkPTQ2Njk=">系统运维实战</span>
-          <p class="desc">CC0006& 2学分 & 考查</p>
-          </div></div><div class="item" title="虚拟化平台部署" style="--block-color:#ffd1ff;"><span class="exturl image" data-url="aHR0cDovL2NsYXNzLnNlaWcuZWR1LmNuOjcwMDEvc2lzZS9jb21tb24vY291cnNlX3ZpZXcuanNwP2lkPTM2MDI=" data-background-image="http://hikki.test.upcdn.net/202206054042.jpeg"></span>
-          <div class="info">
-          <span class="exturl title" data-url="aHR0cDovL2NsYXNzLnNlaWcuZWR1LmNuOjcwMDEvc2lzZS9jb21tb24vY291cnNlX3ZpZXcuanNwP2lkPTM2MDI=">虚拟化平台部署</span>
-          <p class="desc">NH3006 & 2学分 & 考查(难度稍大，待选)</p>
-          </div></div><div class="item" title="Node.js服务端编程" style="--block-color:#fad0c4;"><span class="exturl image" data-url="aHR0cDovL2NsYXNzLnNlaWcuZWR1LmNuOjcwMDEvc2lzZS9jb21tb24vY291cnNlX3ZpZXcuanNwP2lkPTI2ODk=" data-background-image="http://hikki.test.upcdn.net/202206054042.jpeg"></span>
-          <div class="info">
-          <span class="exturl title" data-url="aHR0cDovL2NsYXNzLnNlaWcuZWR1LmNuOjcwMDEvc2lzZS9jb21tb24vY291cnNlX3ZpZXcuanNwP2lkPTI2ODk=">Node.js服务端编程</span>
-          <p class="desc">GS3003 & 4学分 & 考查</p>
-          </div></div></div>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>技术杂谈</category>
-      </categories>
-  </entry>
-  <entry>
     <title>如何远程虚拟机</title>
     <url>/8d43d157.html</url>
     <content><![CDATA[<h2 id="查询虚拟机IP地址"><a href="#查询虚拟机IP地址" class="headerlink" title="查询虚拟机IP地址"></a>查询虚拟机IP地址</h2><p>```bash mark:1-10</p>
@@ -437,350 +758,53 @@ https://cdn.jsdelivr.net/gh/账户名/仓库名/
       </tags>
   </entry>
   <entry>
-    <title>Hexo部署err:Error:Spawn failed错误</title>
-    <url>/28af37eb.html</url>
-    <content><![CDATA[<h2 id="err-Error-Spawn-failed"><a href="#err-Error-Spawn-failed" class="headerlink" title="err:Error:Spawn failed"></a><code>err:Error:Spawn failed</code></h2><p>今晚在发布文章的时候突然出现了这个问题，昨天还是正常的，今晚就报错了，前前后后尝试了好多办法</p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022045305.jpeg" alt=""></p>
-<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><h3 id="删除id-rsa、id-rsa-pub、known-hosts"><a href="#删除id-rsa、id-rsa-pub、known-hosts" class="headerlink" title="删除id_rsa、id_rsa.pub、known_hosts"></a>删除<code>id_rsa</code>、<code>id_rsa.pub</code>、<code>known_hosts</code></h3><p>打开<code>C:\Users\Administrator\.ssh</code>路径,删除<code>id_rsa</code>、<code>id_rsa.pub</code>、<code>known_hosts</code></p>
-<h3 id="在bash重新生成rsa文件"><a href="#在bash重新生成rsa文件" class="headerlink" title="在bash重新生成rsa文件"></a>在<code>bash</code>重新生成rsa文件</h3><pre><code class="lang-bash">&gt;&gt;&gt;ssh-keygen -t rsa
-</code></pre>
-<h3 id="打开github-gt-setting-gt-SSH-and-GPG-keys-gt-New-ssh-key"><a href="#打开github-gt-setting-gt-SSH-and-GPG-keys-gt-New-ssh-key" class="headerlink" title="打开github---&gt;setting---&gt;SSH and GPG keys---&gt;New ssh key"></a>打开<code>github---&gt;setting---&gt;SSH and GPG keys---&gt;New ssh key</code></h3><p>打开<code>.ssh</code>路径，将<code>id_rsa.pub</code>的内容复制到新创建的<code>ssh key</code>里面</p>
-<h3 id="测试是否连接到github"><a href="#测试是否连接到github" class="headerlink" title="测试是否连接到github"></a>测试是否连接到<code>github</code></h3><p>```bash mark:1-12</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>ssh -T git@github.com<br>ssh: connect to host github.com port 22: Connection timed out #连接失败</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<h1 id="如果是出现以下则说明成功，以下的文章就不用看了"><a href="#如果是出现以下则说明成功，以下的文章就不用看了" class="headerlink" title="如果是出现以下则说明成功，以下的文章就不用看了"></a>如果是出现以下则说明成功，以下的文章就不用看了</h1><p>The authenticity of host ‘[ssh.github.com]:443 ([20.205.243.160]:443)’ can’t be established.<br>ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.<br>This key is not known by any other names<br>Are you sure you want to continue connecting (yes/no/[fingerprint])? # 此时在此输入yes回车就行</p>
-<pre><code>
----
-
-如果你失败了，接着往下
-
-### 新建`config`文件
-
-![](https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022045733.jpeg)
-
-### 在`config`文件输入下面内容
-
-![](https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022045818.jpeg)
-
-```yaml mark:1-5
-Host github.com
-User *****@gmail.com  #登录github的邮箱，这段文字不复制到文件
-Hostname ssh.github.com
-PreferredAuthentications publickey
-IdentityFile ~/.ssh/id_rsa
-Port 443
-</code></pre><h3 id="连接github"><a href="#连接github" class="headerlink" title="连接github"></a>连接<code>github</code></h3><pre><code class="lang-bash">&gt;&gt;&gt;ssh -T git@github.com #此时出现以下页面成功啦
-The authenticity of host &#39;[ssh.github.com]:443 ([20.205.243.160]:443)&#39; can&#39;t be established.
-ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
-This key is not known by any other names
-Are you sure you want to continue connecting (yes/no/[fingerprint])? yes # 此处输入yes
-Warning: Permanently added &#39;[ssh.github.com]:443&#39; (ED25519) to the list of known hosts.
-Hi 0000rookie! You&#39;ve successfully authenticated, but GitHub does not provide shell access.
-</code></pre>
+    <title>大学选修科目</title>
+    <url>/eae60a43.html</url>
+    <content><![CDATA[<h2 id="选课"><a href="#选课" class="headerlink" title="选课"></a>选课</h2><div class="links"><div class="item" title="插花艺术--必选" style="--block-color:#a6c1ee;"><span class="exturl image" data-url="aHR0cDovL2NsYXNzLnNlaWcuZWR1LmNuOjcwMDEvc2lzZS9jb21tb24vY291cnNlX3ZpZXcuanNwP2lkPTQzODk=" data-background-image="http://hikki.test.upcdn.net/202206054042.jpeg"></span>
+          <div class="info">
+          <span class="exturl title" data-url="aHR0cDovL2NsYXNzLnNlaWcuZWR1LmNuOjcwMDEvc2lzZS9jb21tb24vY291cnNlX3ZpZXcuanNwP2lkPTQzODk=">插花艺术--必选</span>
+          <p class="desc">DD0044 & 2学分 & 考查</p>
+          </div></div><div class="item" title="系统运维实战" style="--block-color:#a18cd1;"><span class="exturl image" data-url="aHR0cDovL2NsYXNzLnNlaWcuZWR1LmNuOjcwMDEvc2lzZS9jb21tb24vY291cnNlX3ZpZXcuanNwP2lkPTQ2Njk=" data-background-image="http://hikki.test.upcdn.net/202206054042.jpeg"></span>
+          <div class="info">
+          <span class="exturl title" data-url="aHR0cDovL2NsYXNzLnNlaWcuZWR1LmNuOjcwMDEvc2lzZS9jb21tb24vY291cnNlX3ZpZXcuanNwP2lkPTQ2Njk=">系统运维实战</span>
+          <p class="desc">CC0006& 2学分 & 考查</p>
+          </div></div><div class="item" title="虚拟化平台部署" style="--block-color:#ffd1ff;"><span class="exturl image" data-url="aHR0cDovL2NsYXNzLnNlaWcuZWR1LmNuOjcwMDEvc2lzZS9jb21tb24vY291cnNlX3ZpZXcuanNwP2lkPTM2MDI=" data-background-image="http://hikki.test.upcdn.net/202206054042.jpeg"></span>
+          <div class="info">
+          <span class="exturl title" data-url="aHR0cDovL2NsYXNzLnNlaWcuZWR1LmNuOjcwMDEvc2lzZS9jb21tb24vY291cnNlX3ZpZXcuanNwP2lkPTM2MDI=">虚拟化平台部署</span>
+          <p class="desc">NH3006 & 2学分 & 考查(难度稍大，待选)</p>
+          </div></div><div class="item" title="Node.js服务端编程" style="--block-color:#fad0c4;"><span class="exturl image" data-url="aHR0cDovL2NsYXNzLnNlaWcuZWR1LmNuOjcwMDEvc2lzZS9jb21tb24vY291cnNlX3ZpZXcuanNwP2lkPTI2ODk=" data-background-image="http://hikki.test.upcdn.net/202206054042.jpeg"></span>
+          <div class="info">
+          <span class="exturl title" data-url="aHR0cDovL2NsYXNzLnNlaWcuZWR1LmNuOjcwMDEvc2lzZS9jb21tb24vY291cnNlX3ZpZXcuanNwP2lkPTI2ODk=">Node.js服务端编程</span>
+          <p class="desc">GS3003 & 4学分 & 考查</p>
+          </div></div></div>
 ]]></content>
       <categories>
         <category>计算机科学</category>
-        <category>各种bug</category>
+        <category>技术杂谈</category>
       </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>BUG</tag>
-      </tags>
   </entry>
   <entry>
-    <title>Maven build失败 MAVEN:单元测试报错</title>
-    <url>/a96b8873.html</url>
-    <content><![CDATA[<h2 id="报错内容-1-red"><a href="#报错内容-1-red" class="headerlink" title="报错内容~1~{.red}"></a>报错内容~1~{.red}</h2><p>[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project lab11: Compilation failure: Compilation failure:  </p>
-<p>[ERROR] 不再支持源选项 5。请使用 7 或更高版本。 </p>
-<p>[ERROR] 不再支持目标选项 5。请使用 7 或更高版本。</p>
-<h3 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h3><p>在pom.xml添加插件级可以解决</p>
-<pre><code class="lang-xml">  &lt;build&gt;
-   &lt;plugins&gt;
-       &lt;plugin&gt;
-           &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
-           &lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;
-           &lt;configuration&gt;
-               &lt;source&gt;1.8&lt;/source&gt;
-               &lt;target&gt;1.8&lt;/target&gt;
-               &lt;encoding&gt;UTF-8&lt;/encoding&gt;
-           &lt;/configuration&gt;
-       &lt;/plugin&gt;
-   &lt;/plugins&gt;
-&lt;/build&gt;
-</code></pre>
-<h2 id="报错内容-2-red"><a href="#报错内容-2-red" class="headerlink" title="报错内容~2~{.red}"></a>报错内容~2~{.red}</h2><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022051525.jpeg" alt=""></p>
-<h3 id="解决办法-1"><a href="#解决办法-1" class="headerlink" title="解决办法"></a>解决办法</h3><p>其实在pom.xml依赖有重复了，删掉就没问题了</p>
-<h2 id="单元测试成功"><a href="#单元测试成功" class="headerlink" title="单元测试成功"></a>单元测试成功</h2><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022051530.jpeg" alt=""></p>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>各种bug</category>
-      </categories>
-      <tags>
-        <tag>BUG</tag>
-        <tag>JAVA</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>git push origin master失败</title>
-    <url>/c32e96d4.html</url>
-    <content><![CDATA[<h2 id="关于我想备份blog这件事"><a href="#关于我想备份blog这件事" class="headerlink" title="关于我想备份blog这件事"></a>关于我想备份<code>blog</code>这件事</h2><p>+++primary 我要怎么备份blog文件？？？</p>
-<p>:::primary</p>
-<p>这几天在想，万一那天我想在别的电脑上写博客，或者是我电脑突然抽风硬盘坏了，我的博客数据岂不是没了？？？</p>
-<p>又或者我什么时候不小心删错了文件，岂不是出大问题？？？</p>
-<p>:::</p>
-<p>带着这个问题，我一开始是找了几个<code>PC端</code>自动本地备份的程序，但效果不太理想。</p>
-<p>定时备份:不能保证你在设置定时的这段时间内进行<code>hexo d</code>多少次，如果定时备份的时间设置过短，理论上对硬盘的读写会拖慢其他程序的运行。</p>
-<p>所以在想，如果有一个程序可以监控我<code>blog</code>下的文件变化，每变化一次就进行记录一次，进行增量备份一次，这是我想到最完美的办法，带着这个想法，我似乎找到了一个方法。</p>
-<p>+++</p>
-<p>+++danger 持续集成服务</p>
-<p>此处引用百度百科：持续集成是一种软件开发实践，即团队开发成员经常集成他们的工作，通常每个成员每天至少集成一次，也就意味着每天可能会发生多次集成。每次集成都通过自动化的构建（包括编译，发布，自动化测试）来验证，从而尽早地发现集成错误。</p>
-<p>简单来说，就是这个服务绑定了<code>GitHub</code>，我们每提交一次代码到<code>GitHub</code>，它都会抓取一次我们的仓库，检查新代码，然后提供一个运行环境，执行测试，完成构建，还能部署到服务器。</p>
-<p>+++</p>
-<p>然后我这次在准备提交文件到我新建的<code>hexo-backups</code>仓库的时候，出错了，就记录一下错误。</p>
-<h2 id="git-pash-origin-master失败"><a href="#git-pash-origin-master失败" class="headerlink" title="git pash origin master失败"></a><code>git pash origin master</code>失败</h2><p>第一次遇见这个问题，我还以为是<code>.gitignore</code>文件的<code>.DS_Store</code>文件不存在？然后我删掉这个文件，好像还是继续报一样的错误，然后排除这个可能。</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204082309.jpg" alt="" title="git pash origin master失败"></p>
-<h2 id="新建文件测试"><a href="#新建文件测试" class="headerlink" title="新建文件测试"></a>新建文件测试</h2><p>然后新建文件测试一下，看是不是文件没有被加载到缓存区，发现结果已经加载到缓冲区了</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204082313.jpg" alt="" title="测试文件"></p>
-<h2 id="添加origin"><a href="#添加origin" class="headerlink" title="添加origin"></a>添加origin</h2><p>一开始我没有删除旧的origin，我直接添加了，直接报错。实际操作应该删除旧的origin的，再添加新的origin</p>
-<p>```bash 删除origin mark:1,2-3</p>
-<h1 id="删除origin"><a href="#删除origin" class="headerlink" title="删除origin"></a>删除origin</h1><p>git remote remove origin</p>
-<pre><code>
-```bash 添加origin mark:1,2-3
-# 此处的 git@github.com:0000rookie/Hexo-backups.git 是仓库的SSH
-git add git@github.com:0000rookie/Hexo-backups.git
-</code></pre><p><code>bash 查看origin mark:1,2-3
-git origin -v</code></p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204082315.jpg" alt="" title="添加控制器"></p>
-<h2 id="重新commit"><a href="#重新commit" class="headerlink" title="重新commit"></a>重新commit</h2><p>是的，我真的以为我只是修改一下<code>origin</code>就处理好了</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204082324.jpg" alt="" title="重新commit"></p>
-<h2 id="git-push-f-origin-master提交成功"><a href="#git-push-f-origin-master提交成功" class="headerlink" title="git push -f origin master提交成功"></a><code>git push -f origin master</code>提交成功</h2><p>奇怪的是，我试试用<code>git push -f origin master</code>就成功了</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204082326.jpg" alt="" title="git push -f origin master"></p>
-<p>:::success</p>
-<p>目前还不知道是什么原因导致错误，如果你知道，欢迎留言告诉我！！！</p>
-<p>:::</p>
-<p>:::warning</p>
-<p>以上如有错误，欢迎留言指出</p>
-<p>:::</p>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>各种bug</category>
-      </categories>
-      <tags>
-        <tag>教程</tag>
-        <tag>BUG</tag>
-        <tag>Git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>安装qt5的时候报错</title>
-    <url>/af3d5cf5.html</url>
-    <content><![CDATA[<h2 id="报错内容-ERROR-spyder-4-0-1-requires-pyqtwebengine-3-which-is"><a href="#报错内容-ERROR-spyder-4-0-1-requires-pyqtwebengine-3-which-is" class="headerlink" title="报错内容: ERROR: spyder 4.0.1 requires pyqtwebengine= 3, which is"></a>报错内容: ERROR: spyder 4.0.1 requires pyqtwebengine<5.13; python_version >= 3, which is</h2><p>  not installed. ERROR: spyder 4.0.1 has requirement pyqt5<5.13; python_version >= 3, but you’ll have pyqt5 5.15.6 which is incompatible.</p>
-<p>原因是<code>Spyder</code>不是最新版本</p>
-<p>```bash mark:1-8</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>pip install pyqt5 #报错内容如下<br>ERROR: spyder 4.0.1 requires pyqtwebengine<5.13; python_version >= “3”, which is not installed.<br>ERROR: spyder 4.0.1 has requirement pyqt5<5.13; python_version >= “3”, but you’ll have pyqt5 5.15.6 which is incompatible.<br>```</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<h2 id="查询spyder版本"><a href="#查询spyder版本" class="headerlink" title="查询spyder版本"></a>查询spyder版本</h2><p>更新版本，通过<code>pip install spyder==*</code>查询版本</p>
-<p>```bash mark:1-2</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>pip install spyder==<em><br>ERROR: Could not find a version that satisfies the requirement spyder==</em> (from versions: 2.3.0, 2.3.1, 2.3.2, 2.3.3, 2.3.4, 2.3.5.2, 2.3.6, 2.3.7, 2.3.8, 2.3.9, 3.0.0b2, 3.0.0b3, 3.0.0b4, 3.0.0b5, 3.0.0b6, 3.0.0b7, 3.0.0, 3.0.1, 3.0.2, 3.1.0, 3.1.1, 3.1.2, 3.1.3, 3.1.4, 3.2.0, 3.2.1, 3.2.2, 3.2.3, 3.2.4, 3.2.5, 3.2.6, 3.2.7, 3.2.8, 3.3.0, 3.3.1, 3.3.2, 3.3.3, 3.3.4, 3.3.5, 3.3.6, 4.0.0b1, 4.0.0b2, 4.0.0b3, 4.0.0b4, 4.0.0b5, 4.0.0b6, 4.0.0b7, 4.0.0rc1, 4.0.0rc2, 4.0.0rc3, 4.0.0, 4.0.1, 4.1.0, 4.1.1, 4.1.2, 4.1.3, 4.1.4, 4.1.5, 4.1.6, 4.2.0, 4.2.1, 4.2.2, 4.2.3, 4.2.4, 4.2.5, 5.0.0a1, 5.0.0a2, 5.0.0a3, 5.0.0a4, 5.0.0a5, 5.0.0a6, 5.0.0a7, 5.0.0, 5.0.1, 5.0.2, 5.0.3, 5.0.4, 5.0.5, 5.1.0, 5.1.1, 5.1.2, 5.1.3, 5.1.4, 5.1.5, 5.2.0, 5.2.1, 5.2.2, 5.3.0)<br>ERROR: No matching distribution found for spyder==*<br>```</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<h2 id="安装5-3-0版本"><a href="#安装5-3-0版本" class="headerlink" title="安装5.3.0版本"></a>安装5.3.0版本</h2><p>```bash mark:1-2</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>pip install spyder==5.3.0<br>```</p>
-</blockquote>
-</blockquote>
-</blockquote>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>各种bug</category>
-      </categories>
-      <tags>
-        <tag>BUG</tag>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>python安装/更新包出现报错</title>
-    <url>/6c24ad8e.html</url>
-    <content><![CDATA[<h2 id="WARNING-Retrying-Retry-total-4-connect-None-read-None-redirect-None-status-None-after-connection-broken-by-‘ProxyError-‘Cannot-connect-to-proxy-’-OSError-0-‘Error’-’-pypi-simple-eyed3"><a href="#WARNING-Retrying-Retry-total-4-connect-None-read-None-redirect-None-status-None-after-connection-broken-by-‘ProxyError-‘Cannot-connect-to-proxy-’-OSError-0-‘Error’-’-pypi-simple-eyed3" class="headerlink" title="WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by ‘ProxyError(‘Cannot connect to proxy.’, OSError(0, ‘Error’))’: /pypi/simple/eyed3/"></a>WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by ‘ProxyError(‘Cannot connect to proxy.’, OSError(0, ‘Error’))’: /pypi/simple/eyed3/</h2><p>出现错误如图所示</p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022053531.png" alt=""></p>
-<h2 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h2><h3 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h3><p>关闭你的梯子就解决问题了，哈哈</p>
-<h3 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h3><p>指定源下载</p>
-<pre><code class="lang-apl">pip install requests -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
-</code></pre>
-<p>我的源是阿里云的源，我挂了梯子就用不了，关了梯子就可以了。</p>
-<pre><code class="lang-apl">国内的pip源，如下：
-
-阿里云 http://mirrors.aliyun.com/pypi/simple/
-
-中国科技大学 https://pypi.mirrors.ustc.edu.cn/simple/
-
-豆瓣(douban) http://pypi.douban.com/simple/
-
-清华大学 https://pypi.tuna.tsinghua.edu.cn/simple/
-
-中国科学技术大学 http://pypi.mirrors.ustc.edu.cn/simple/
-</code></pre>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>各种bug</category>
-      </categories>
-      <tags>
-        <tag>BUG</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>搭建博客常见的错误</title>
-    <url>/cdc2e518.html</url>
-    <content><![CDATA[<h2 id="404错误"><a href="#404错误" class="headerlink" title="404错误"></a>404错误</h2><p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng20220401163558.png" alt="404"></p>
-<h3 id="分两种情况"><a href="#分两种情况" class="headerlink" title="分两种情况"></a>分两种情况</h3><h4 id="还未修改域名"><a href="#还未修改域名" class="headerlink" title="还未修改域名"></a>还未修改域名</h4><ol>
-<li><p>打开<code>GitHub</code>仓库看文件是否已经上传成功，成功如图。</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng20220401164116.jpg" alt=""></p>
-</li>
-<li><p>如果仓库是空的，说明你没上传成功。</p>
-<ul>
-<li>检查<code>blog</code> 文件夹下的<code>_config.yml</code>文件<code>deploy:</code>的配置有没有正确。如下</li>
-</ul>
-<p>```bash mark:1-4<br>deploy:<br>  type: git<br>  repo: git@github.com:0000rookie/github.io.git<br>  branch: main</p>
-<pre><code>
-- 重新部署到`github`仓库。
-
-```bash mark:1-3
-hexo clean  #清除缓存文件 db.json 和已生成的静态文件 public
-hexo g      #生成网站静态文件到默认设置的 public 文件夹(hexo generate 的缩写)
-hexo d      #自动生成网站静态文件，并部署到设定的仓库(hexo deploy 的缩写)
-</code></pre><ul>
-<li><p>在部署过程中，查看git窗口看有没有报错的地方，如有报错，查看报错内容，如果没有，此时查看<code>github</code>仓库有没有更新文件。</p>
-</li>
-<li><p>如果还是没看到有更新内容，看看<code>github</code>分支是不是<code>main</code>，有些同学的分支是<code>master</code>，需要选择分支和部署的分支一致</p>
-</li>
-</ul>
-</li>
-</ol>
-<p>还有可能的错误是<code>hexo</code>安装有文件缺失，要重新安装一遍。打开<code>E:\studyAPP\node_js\node_global</code>路径插件是否成功安装<code>Hexo</code>插件了，如果没成功，那就重新安装一遍。</p>
-<p>````bash mark:1<br>npm install -g hexo-cli</p>
-<pre><code class="lang-`">
-重装还是不行的话，大概率就是你的Nodejs系统环境没配好，重新回到第四篇配置`Nodejs`环境。
-
-![404](http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204011654.jpg)
-
-如果成功安装`Hexo`插件了。再查看一下`blog`下的`_config.yml`文件，`deploy`有没有设置正确，输入格式有没有正确(每一个小红点都是空格)
-
-![](http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204011701.jpg)
-
-
-
-**如果还是404页面**，再检查一下`hexo-deployer-git`是不是安装成功，重新安装一遍
-
-```bash
-npm install hexo-deployer-git --save
-</code></pre>
-<h3 id="已修改域名"><a href="#已修改域名" class="headerlink" title="已修改域名"></a>已修改域名</h3><p>大多数都是<code>Blog/source/CNAME</code>文件没有<strong>命名</strong>好或者是<strong>域名填写错误</strong></p>
-<p><code>CNAME</code>是没有后缀的文件</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204021406.jpg" alt=""></p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204021407.jpg" alt=""></p>
-<p>如果不清楚该文件是不是有后缀的，可以这样打开选项查看</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204021412.jpg" alt=""></p>
+    <title>私の夢-作文</title>
+    <url>/39c6cce6.html</url>
+    <content><![CDATA[<h2 id="私の夢－作文"><a href="#私の夢－作文" class="headerlink" title="私の夢－作文"></a>私の夢－作文</h2><p>​    {私^わたし}たちは{自分^じぶん}の{夢^ゆめ}もいます。{音楽家^おんがくか}になりたい人がいます。{科学家^かがくしゃ}になりたい人もいます。私に言わせれば、私はプログラマーへになりたいです。</p>
+<p>​    {私の夢^わたしのゆめ}のプログラマーへは、やりたいことをすることができます。{例えば^たとえば}、{自分^じぶん}のコンピュータのデスクトップが{乱雑^らんざつ}です。{私^わたし}はプログラムーを{作成する^さくせいする}ことできて、デスクトップを{整然と^せいぜんと}します。</p>
+<p>​    でうから、{私の夢^わたしのゆめ}はプログラマーへになりたいです。</p>
 <p>:::info</p>
-<p>本文章是记录自己安装过程中遇到的错误，总结错误，今后再遇到错误也可以回头参考一下，本文还会继续更新</p>
+<p>译文:</p>
 <p>:::</p>
-<p>:::warning</p>
-<p>以上如有错误，欢迎留言指出</p>
-<p>:::</p>
+<blockquote>
+<p>​    我们都有自己的梦，有的人想成为音乐家，有的人想成为科学家，对我来说，我想成为程序员。</p>
+<p>​    我梦想的程序员是可以做自己想做的事。例如，自己的电脑桌面乱了，自己可以编写程序整理桌面，使桌面变得整洁。</p>
+<p>​    所以，我的梦想是成为一名程序员。</p>
+</blockquote>
 ]]></content>
       <categories>
-        <category>计算机科学</category>
-        <category>各种bug</category>
+        <category>基础学科</category>
+        <category>外语</category>
+        <category>日语</category>
       </categories>
       <tags>
-        <tag>博客</tag>
-        <tag>教程</tag>
-        <tag>BUg</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo端口4000被占用</title>
-    <url>/6ee1ace5.html</url>
-    <content><![CDATA[<h2 id="报错内容：Port-4000-has-been-used-Try-other-port-instead"><a href="#报错内容：Port-4000-has-been-used-Try-other-port-instead" class="headerlink" title="报错内容：Port 4000 has been used. Try other port instead."></a>报错内容：Port 4000 has been used. Try other port instead.</h2><p>译文：4000端口已被占用。尝试其他端口</p>
-<pre><code class="lang-bash">&gt;&gt;&gt; hexo s
-FATAL Port 4000 has been used. Try other port instead.
-FATAL &#123;
-  err: Error: listen EADDRINUSE: address already in use :::4000
-      at Server.setupListenHandle [as _listen2] (net.js:1331:16)
-      at listenInCluster (net.js:1379:12)
-      at Server.listen (net.js:1465:7)
-      at E:\Blog\node_modules\hexo-server\lib\server.js:68:12
-      at Promise._execute (E:\Blog\node_modules\bluebird\js\release\debuggability.js:384:9)
-      at Promise._resolveFromExecutor (E:\Blog\node_modules\bluebird\js\release\promise.js:518:18)
-      at new Promise (E:\Blog\node_modules\bluebird\js\release\promise.js:103:10)
-      at checkPort (E:\Blog\node_modules\hexo-server\lib\server.js:65:10)
-      at Hexo.module.exports (E:\Blog\node_modules\hexo-server\lib\server.js:17:10)
-      at Hexo.tryCatcher (E:\Blog\node_modules\bluebird\js\release\util.js:16:23)
-      at Hexo.&lt;anonymous&gt; (E:\Blog\node_modules\bluebird\js\release\method.js:15:34)
-      at Hexo.call (E:\Blog\node_modules\hexo\lib\hexo\index.js:258:27)
-      at E:\studyAPP\node_js\node_global\node_modules\hexo-cli\lib\hexo.js:60:17
-      at tryCatcher (E:\studyAPP\node_js\node_global\node_modules\hexo-cli\node_modules\bluebird\js\release\util.js:16:23)
-      at Promise._settlePromiseFromHandler (E:\studyAPP\node_js\node_global\node_modules\hexo-cli\node_modules\bluebird\js\release\promise.js:547:31)
-      at Promise._settlePromise (E:\studyAPP\node_js\node_global\node_modules\hexo-cli\node_modules\bluebird\js\release\promise.js:604:18)
-      at Promise._settlePromise0 (E:\studyAPP\node_js\node_global\node_modules\hexo-cli\node_modules\bluebird\js\release\promise.js:649:10)
-      at Promise._settlePromises (E:\studyAPP\node_js\node_global\node_modules\hexo-cli\node_modules\bluebird\js\release\promise.js:729:18)
-      at _drainQueueStep (E:\studyAPP\node_js\node_global\node_modules\hexo-cli\node_modules\bluebird\js\release\async.js:93:12)
-      at _drainQueue (E:\studyAPP\node_js\node_global\node_modules\hexo-cli\node_modules\bluebird\js\release\async.js:86:9)
-      at Async._drainQueues (E:\studyAPP\node_js\node_global\node_modules\hexo-cli\node_modules\bluebird\js\release\async.js:102:5)
-      at Immediate.Async.drainQueues (E:\studyAPP\node_js\node_global\node_modules\hexo-cli\node_modules\bluebird\js\release\async.js:15:14) &#123;
-    code: &#39;EADDRINUSE&#39;,
-    errno: -4091,
-    syscall: &#39;listen&#39;,
-    address: &#39;::&#39;,
-    port: 4000
-  &#125;
-&#125; Something&#39;s wrong. Maybe you can find the solution here: %s https://hexo.io/docs/troubleshooting.html
-</code></pre>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022050306.jpeg" alt=""></p>
-<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><h3 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h3><p>杀掉<code>4000</code>被占用的端口，让<code>hexo</code>运行<code>4000</code>端口</p>
-<pre><code class="lang-bash"># 查看4000端口是什么程序占用
-&gt;&gt;&gt; netstat -ano | findstr &quot;4000&quot; 
-# 杀掉4000端口正在运行的程序
-&gt;&gt;&gt; taskkill -PID 15868 -F
-</code></pre>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022050215.jpeg" alt=""></p>
-<h3 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h3><p>在<code>_config.yml</code>修改hexo默认端口，在<code>hexo s</code>的时候就不是<code>4000</code>端口了</p>
-<pre><code class="lang-yaml">server:
-  port: 4001
-  compress: true
-  header: true
-</code></pre>
-<h3 id="方法三"><a href="#方法三" class="headerlink" title="方法三"></a>方法三</h3><p>指定端口运行，这里指定5000端口运行</p>
-<pre><code class="lang-bash">&gt;&gt;&gt; hexo server -p 5000
-</code></pre>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>各种bug</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>BUG</tag>
+        <tag>外语</tag>
       </tags>
   </entry>
   <entry>
@@ -813,30 +837,6 @@ FATAL &#123;
       <tags>
         <tag>博客</tag>
         <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>私の夢-作文</title>
-    <url>/39c6cce6.html</url>
-    <content><![CDATA[<h2 id="私の夢－作文"><a href="#私の夢－作文" class="headerlink" title="私の夢－作文"></a>私の夢－作文</h2><p>​    {私^わたし}たちは{自分^じぶん}の{夢^ゆめ}もいます。{音楽家^おんがくか}になりたい人がいます。{科学家^かがくしゃ}になりたい人もいます。私に言わせれば、私はプログラマーへになりたいです。</p>
-<p>​    {私の夢^わたしのゆめ}のプログラマーへは、やりたいことをすることができます。{例えば^たとえば}、{自分^じぶん}のコンピュータのデスクトップが{乱雑^らんざつ}です。{私^わたし}はプログラムーを{作成する^さくせいする}ことできて、デスクトップを{整然と^せいぜんと}します。</p>
-<p>​    でうから、{私の夢^わたしのゆめ}はプログラマーへになりたいです。</p>
-<p>:::info</p>
-<p>译文:</p>
-<p>:::</p>
-<blockquote>
-<p>​    我们都有自己的梦，有的人想成为音乐家，有的人想成为科学家，对我来说，我想成为程序员。</p>
-<p>​    我梦想的程序员是可以做自己想做的事。例如，自己的电脑桌面乱了，自己可以编写程序整理桌面，使桌面变得整洁。</p>
-<p>​    所以，我的梦想是成为一名程序员。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>基础学科</category>
-        <category>外语</category>
-        <category>日语</category>
-      </categories>
-      <tags>
-        <tag>外语</tag>
       </tags>
   </entry>
   <entry>
@@ -978,47 +978,6 @@ widgets:
       </tags>
   </entry>
   <entry>
-    <title>Hexo怎么安装插件</title>
-    <url>/c5de56d5.html</url>
-    <content><![CDATA[<hr>
-<h3 id="hexo怎么安装插件"><a href="#hexo怎么安装插件" class="headerlink" title="hexo怎么安装插件"></a>hexo怎么安装插件</h3><ol>
-<li><p>打开hexo的根目录<code>Blog</code></p>
-</li>
-<li><p>输入安装地址(此处我以安装<code>npm i hexo-algoliasearch</code>测试)</p>
-<p><code>bash npm安装 mark:1
-npm i hexo-algoliasearch</code></p>
-</li>
-<li><p>安装成功</p>
-</li>
-</ol>
-<p><img data-src="https://tva4.sinaimg.cn/large/0065wfS6ly8h0ntxuxa0oj30jo09njsv.jpg" alt="" title="在Blog打开cmd">{height=”65%” width=”65%”}</p>
-<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0ntxktk9zj30cr02gjrc.jpg" alt="" title="在cmd输入安装路径">{height=”65%” width=”65%”}</p>
-<p><img data-src="https://tva3.sinaimg.cn/large/0065wfS6ly8h0nty14h5oj30lh07s0tg.jpg" alt="" title="END">{height=”65%” width=”65%”}</p>
-<h3 id="Hexo怎么卸载插件"><a href="#Hexo怎么卸载插件" class="headerlink" title="Hexo怎么卸载插件"></a>Hexo怎么卸载插件</h3><ol>
-<li><p>卸载也是在<code>Blog</code>打开cmd，输入<code>npm uninstall 插件名 --save</code>即可</p>
-</li>
-<li><p>或者简洁一点<code>npm un 插件名 --save</code></p>
-</li>
-<li><p>举个例子，我要卸载<code>hexo-renderer-marked</code>这个插件</p>
-</li>
-<li><p>在cmd输入</p>
-<p><code>bash 插件卸载 mark:1 
-npm un hexo-renderer-marked --save</code></p>
-</li>
-</ol>
-<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0ntxxz7wqj30lk0650t3.jpg" alt="" title="卸载插件">{height=”75%” width=”75%”}</p>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>博客</category>
-        <category>模块</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>如何在hexo博客写作</title>
     <url>/b26ff49b.html</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><code>hexo</code>采用的是<code>markdown</code>语言的轻量级标记语言，写作时使用<code>markdown</code>，它的后缀名是<code>.md</code>在hexo部署的时候，<code>hexo</code>会渲染<code>md文件</code>形成<code>HTML</code>，可以大量减少写作排版时间，从而更加专注写作，而不是专注于排版内容。</p>
@@ -1083,6 +1042,72 @@ npm un hexo-renderer-marked --save</code></p>
       </tags>
   </entry>
   <entry>
+    <title>文章Front-Matter参数设置</title>
+    <url>/a7032750.html</url>
+    <content><![CDATA[<h2 id="H-2-SO-4-red-Front-Matter详解"><a href="#H-2-SO-4-red-Front-Matter详解" class="headerlink" title="[H~2~SO~4~]{.red}Front-Matter详解"></a>[H~2~SO~4~]{.red}Front-Matter详解</h2><p>``` markdown mark:1,2-8<br>title: 文章Front-Matter参数设置      #文章标题<br>tags:                             #文章标签</p>
+<ul>
+<li>博客</li>
+<li>教程<br>categories:                        #文章分类</li>
+<li>计算机科学</li>
+<li>博客<br>sticky: true                     #文章置顶<br>comments: true                  #开启评论<br>audio: false                    #关闭音乐播放器<br>date: 2022-04-04 14:22:16          #文章创建时间，自动生成，或者自己修改时间也可以<br>```</li>
+</ul>
+<hr>
+<p>:::warning</p>
+<p>以上如有错误，欢迎留言指出</p>
+<p>:::</p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>博客</category>
+        <category>博客的食用方法</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo怎么安装插件</title>
+    <url>/c5de56d5.html</url>
+    <content><![CDATA[<hr>
+<h3 id="hexo怎么安装插件"><a href="#hexo怎么安装插件" class="headerlink" title="hexo怎么安装插件"></a>hexo怎么安装插件</h3><ol>
+<li><p>打开hexo的根目录<code>Blog</code></p>
+</li>
+<li><p>输入安装地址(此处我以安装<code>npm i hexo-algoliasearch</code>测试)</p>
+<p><code>bash npm安装 mark:1
+npm i hexo-algoliasearch</code></p>
+</li>
+<li><p>安装成功</p>
+</li>
+</ol>
+<p><img data-src="https://tva4.sinaimg.cn/large/0065wfS6ly8h0ntxuxa0oj30jo09njsv.jpg" alt="" title="在Blog打开cmd">{height=”65%” width=”65%”}</p>
+<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0ntxktk9zj30cr02gjrc.jpg" alt="" title="在cmd输入安装路径">{height=”65%” width=”65%”}</p>
+<p><img data-src="https://tva3.sinaimg.cn/large/0065wfS6ly8h0nty14h5oj30lh07s0tg.jpg" alt="" title="END">{height=”65%” width=”65%”}</p>
+<h3 id="Hexo怎么卸载插件"><a href="#Hexo怎么卸载插件" class="headerlink" title="Hexo怎么卸载插件"></a>Hexo怎么卸载插件</h3><ol>
+<li><p>卸载也是在<code>Blog</code>打开cmd，输入<code>npm uninstall 插件名 --save</code>即可</p>
+</li>
+<li><p>或者简洁一点<code>npm un 插件名 --save</code></p>
+</li>
+<li><p>举个例子，我要卸载<code>hexo-renderer-marked</code>这个插件</p>
+</li>
+<li><p>在cmd输入</p>
+<p><code>bash 插件卸载 mark:1 
+npm un hexo-renderer-marked --save</code></p>
+</li>
+</ol>
+<p><img data-src="https://tva2.sinaimg.cn/large/0065wfS6ly8h0ntxxz7wqj30lk0650t3.jpg" alt="" title="卸载插件">{height=”75%” width=”75%”}</p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>博客</category>
+        <category>模块</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>搭建GitHu图床</title>
     <url>/e85071ad.html</url>
     <content><![CDATA[<p><strong>问：什么是图床？图床有什么用？</strong></p>
@@ -1110,31 +1135,6 @@ npm un hexo-renderer-marked --save</code></p>
         <category>计算机科学</category>
         <category>博客</category>
         <category>模块</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>文章Front-Matter参数设置</title>
-    <url>/a7032750.html</url>
-    <content><![CDATA[<h2 id="H-2-SO-4-red-Front-Matter详解"><a href="#H-2-SO-4-red-Front-Matter详解" class="headerlink" title="[H~2~SO~4~]{.red}Front-Matter详解"></a>[H~2~SO~4~]{.red}Front-Matter详解</h2><p>``` markdown mark:1,2-8<br>title: 文章Front-Matter参数设置      #文章标题<br>tags:                             #文章标签</p>
-<ul>
-<li>博客</li>
-<li>教程<br>categories:                        #文章分类</li>
-<li>计算机科学</li>
-<li>博客<br>sticky: true                     #文章置顶<br>comments: true                  #开启评论<br>audio: false                    #关闭音乐播放器<br>date: 2022-04-04 14:22:16          #文章创建时间，自动生成，或者自己修改时间也可以<br>```</li>
-</ul>
-<hr>
-<p>:::warning</p>
-<p>以上如有错误，欢迎留言指出</p>
-<p>:::</p>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>博客</category>
-        <category>博客的食用方法</category>
       </categories>
       <tags>
         <tag>博客</tag>
@@ -1416,6 +1416,92 @@ git push origin main</code></p>
       </tags>
   </entry>
   <entry>
+    <title>第二篇：安装Git---从0基础搭建Hexo博客</title>
+    <url>/859f60bd.html</url>
+    <content><![CDATA[<h3 id="以下会用到的软件"><a href="#以下会用到的软件" class="headerlink" title="以下会用到的软件"></a>以下会用到的软件</h3><p><strong>必装 [Git][<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbV3jgIFbTm9kZS5qc11baHR0cHM6Ly9ub2RlanMub3JnL2Vu">https://git-scm.com]、[Node.js][https://nodejs.org/en</span>]</strong> <em>(点击打开)</em></p>
+<p><strong>建议装[notepad3][<span class="exturl" data-url="aHR0cHM6Ly9yb29raWUxNjc5LmxhbnpvdWYuY29tL2lIbW1hMDI2bnZkZw==">https://rookie1679.lanzouf.com/iHmma026nvdg</span>]</strong> <em>(点击打开)</em></p>
+<hr>
+<h3 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h3><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022052758.jpeg" alt=""></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022052811.jpeg" alt=""></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022052825.jpeg" alt=""></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022052901.jpeg" alt=""></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022052911.jpeg" alt=""></p>
+<p>:::info</p>
+<p>如果没有其他需求，一直点击Next就可以了</p>
+<p>:::</p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022052919.jpeg" alt=""></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022053013.jpeg" alt=""></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022053022.jpeg" alt=""></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022053036.jpeg" alt=""></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022053058.jpeg" alt=""></p>
+<p><strong>鼠标右看到如图说明安装成功了，打开<code>Git bash here</code></strong></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022053110.jpeg" alt=""></p>
+<p><strong>输入<code>git</code>测试是否真的安装成功</strong></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022053118.jpeg" alt=""></p>
+<p><strong>安装<code>git</code>结束</strong></p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>博客</category>
+        <category>零基础搭建Hexo个人博客系列</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第五篇：安装Hexo---从0基础搭建Hexo博客</title>
+    <url>/87b69652.html</url>
+    <content><![CDATA[<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><h3 id="新建一个仓库"><a href="#新建一个仓库" class="headerlink" title="新建一个仓库"></a>新建一个仓库</h3><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022053224.jpeg" alt=""></p>
+<h3 id="给仓库起个名"><a href="#给仓库起个名" class="headerlink" title="给仓库起个名"></a>给仓库起个名</h3><p>格式为  <code>账号名.github.io</code></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022053256.jpeg" alt=""></p>
+<h3 id="打开stetings"><a href="#打开stetings" class="headerlink" title="打开stetings"></a>打开<code>stetings</code></h3><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022053307.jpeg" alt=""></p>
+<h3 id="打开GitHub-pages"><a href="#打开GitHub-pages" class="headerlink" title="打开GitHub pages"></a>打开GitHub pages</h3><p>滑到下面，找到这个<code>GitHub pages</code> ，点击打开</p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022053325.jpeg" alt=""></p>
+<p>出现以下图说明成功了</p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022053334.jpeg" alt=""></p>
+<h3 id="新建blog文件夹"><a href="#新建blog文件夹" class="headerlink" title="新建blog文件夹"></a>新建blog文件夹</h3><p>新建一个<code>blog</code>文件夹，在<code>blog</code>文件夹打开<code>Git Bash Here</code></p>
+<h3 id="安装hexo-cli插件"><a href="#安装hexo-cli插件" class="headerlink" title="安装hexo-cli插件"></a><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022053344.jpeg" alt="">安装<code>hexo-cli</code>插件</h3><p>``` bash mark:1<br>npm install -g hexo-cli</p>
+<pre><code>
+![](https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022053410.jpg)
+
+
+
+### 初始化博客
+
+```bash mark:1
+hexo init
+</code></pre><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022053447.jpeg" alt=""></p>
+<h3 id="静态部署博客"><a href="#静态部署博客" class="headerlink" title="静态部署博客"></a>静态部署博客</h3><p>```bash mark：1<br>hexo g</p>
+<pre><code>
+![](https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022053502.jpeg)
+
+### 打开本地服务器
+
+```bash mark:1
+hexo s
+</code></pre><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022053529.jpg" alt=""></p>
+<h3 id="查看博客"><a href="#查看博客" class="headerlink" title="查看博客"></a>查看博客</h3><p>浏览器输入<code>localhost:4000</code>查看</p>
+<pre><code class="lang-bash">localhost:4000
+</code></pre>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022053517.jpeg" alt=""></p>
+<h3 id="停止本地服务器"><a href="#停止本地服务器" class="headerlink" title="停止本地服务器"></a>停止本地服务器</h3><p><code>ctrl+s</code>，停止本地服务器运行</p>
+<p>:::success</p>
+<p><strong>目前博客已经基本完成了</strong></p>
+<p>:::</p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>博客</category>
+        <category>零基础搭建Hexo个人博客系列</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>第四篇：安装Nodejs---从0基础搭建Hexo博客</title>
     <url>/cf63c07.html</url>
     <content><![CDATA[<h2 id="Node-js安装及配置环境"><a href="#Node-js安装及配置环境" class="headerlink" title="Node.js安装及配置环境"></a>Node.js安装及配置环境</h2><h3 id="node-js安装"><a href="#node-js安装" class="headerlink" title="node.js安装"></a><code>node.js</code>安装</h3><ol>
@@ -1579,88 +1665,6 @@ git clone https://github.com/Fechin/hexo-theme-diaspora.git themes/diaspora</cod
       </tags>
   </entry>
   <entry>
-    <title>第五篇：安装Hexo---从0基础搭建Hexo博客</title>
-    <url>/87b69652.html</url>
-    <content><![CDATA[<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><h3 id="新建一个仓库"><a href="#新建一个仓库" class="headerlink" title="新建一个仓库"></a>新建一个仓库</h3><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022053224.jpeg" alt=""></p>
-<h3 id="给仓库起个名"><a href="#给仓库起个名" class="headerlink" title="给仓库起个名"></a>给仓库起个名</h3><p>格式为  <code>账号名.github.io</code></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022053256.jpeg" alt=""></p>
-<h3 id="打开stetings"><a href="#打开stetings" class="headerlink" title="打开stetings"></a>打开<code>stetings</code></h3><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022053307.jpeg" alt=""></p>
-<h3 id="打开GitHub-pages"><a href="#打开GitHub-pages" class="headerlink" title="打开GitHub pages"></a>打开GitHub pages</h3><p>滑到下面，找到这个<code>GitHub pages</code> ，点击打开</p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022053325.jpeg" alt=""></p>
-<p>出现以下图说明成功了</p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022053334.jpeg" alt=""></p>
-<h3 id="新建blog文件夹"><a href="#新建blog文件夹" class="headerlink" title="新建blog文件夹"></a>新建blog文件夹</h3><p>新建一个<code>blog</code>文件夹，在<code>blog</code>文件夹打开<code>Git Bash Here</code></p>
-<h3 id="安装hexo-cli插件"><a href="#安装hexo-cli插件" class="headerlink" title="安装hexo-cli插件"></a><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022053344.jpeg" alt="">安装<code>hexo-cli</code>插件</h3><p>``` bash mark:1<br>npm install -g hexo-cli</p>
-<pre><code>
-![](https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022053410.jpg)
-
-
-
-### 初始化博客
-
-```bash mark:1
-hexo init
-</code></pre><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022053447.jpeg" alt=""></p>
-<h3 id="静态部署博客"><a href="#静态部署博客" class="headerlink" title="静态部署博客"></a>静态部署博客</h3><p>```bash mark：1<br>hexo g</p>
-<pre><code>
-![](https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022053502.jpeg)
-
-### 打开本地服务器
-
-```bash mark:1
-hexo s
-</code></pre><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022053529.jpg" alt=""></p>
-<h3 id="查看博客"><a href="#查看博客" class="headerlink" title="查看博客"></a>查看博客</h3><p>浏览器输入<code>localhost:4000</code>查看</p>
-<pre><code class="lang-bash">localhost:4000
-</code></pre>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022053517.jpeg" alt=""></p>
-<h3 id="停止本地服务器"><a href="#停止本地服务器" class="headerlink" title="停止本地服务器"></a>停止本地服务器</h3><p><code>ctrl+s</code>，停止本地服务器运行</p>
-<p>:::success</p>
-<p><strong>目前博客已经基本完成了</strong></p>
-<p>:::</p>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>博客</category>
-        <category>零基础搭建Hexo个人博客系列</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第一篇：注册github---从0基础搭建Hexo博客</title>
-    <url>/a6f9d072.html</url>
-    <content><![CDATA[<p>:::info</p>
-<p>可能有些同学打开GitHub会很慢，甚至打不开，有需要加速GitHub(科学上网)的需要可以联系我，免费</p>
-<p>aa1341151056@126.com</p>
-<p>:::</p>
-<h3 id="注册GitHub"><a href="#注册GitHub" class="headerlink" title="注册GitHub"></a>注册GitHub</h3><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022050748.jpeg" alt=""></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022050809.jpeg" alt=""></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022050823.jpeg" alt=""></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022050856.jpeg" alt=""></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022050917.jpeg" alt=""></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022050932.jpeg" alt=""></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022050958.jpeg" alt=""></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022051017.jpeg" alt=""></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022051032.jpeg" alt=""></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022051043.jpeg" alt=""></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022051057.jpeg" alt=""></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022051110.jpeg" alt=""></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022051123.jpeg" alt=""></p>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>博客</category>
-        <category>零基础搭建Hexo个人博客系列</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>第六篇：将博客部署到GitHub---从0基础搭建Hexo博客</title>
     <url>/dc09a46c.html</url>
     <content><![CDATA[<h2 id="将Hexo部署到github"><a href="#将Hexo部署到github" class="headerlink" title="将Hexo部署到github"></a>将Hexo部署到github</h2><ol>
@@ -1720,29 +1724,25 @@ https://aliang518.github.io/</code></p>
       </tags>
   </entry>
   <entry>
-    <title>第二篇：安装Git---从0基础搭建Hexo博客</title>
-    <url>/859f60bd.html</url>
-    <content><![CDATA[<h3 id="以下会用到的软件"><a href="#以下会用到的软件" class="headerlink" title="以下会用到的软件"></a>以下会用到的软件</h3><p><strong>必装 [Git][<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbV3jgIFbTm9kZS5qc11baHR0cHM6Ly9ub2RlanMub3JnL2Vu">https://git-scm.com]、[Node.js][https://nodejs.org/en</span>]</strong> <em>(点击打开)</em></p>
-<p><strong>建议装[notepad3][<span class="exturl" data-url="aHR0cHM6Ly9yb29raWUxNjc5LmxhbnpvdWYuY29tL2lIbW1hMDI2bnZkZw==">https://rookie1679.lanzouf.com/iHmma026nvdg</span>]</strong> <em>(点击打开)</em></p>
-<hr>
-<h3 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h3><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022052758.jpeg" alt=""></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022052811.jpeg" alt=""></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022052825.jpeg" alt=""></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022052901.jpeg" alt=""></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022052911.jpeg" alt=""></p>
-<p>:::info</p>
-<p>如果没有其他需求，一直点击Next就可以了</p>
+    <title>第一篇：注册github---从0基础搭建Hexo博客</title>
+    <url>/a6f9d072.html</url>
+    <content><![CDATA[<p>:::info</p>
+<p>可能有些同学打开GitHub会很慢，甚至打不开，有需要加速GitHub(科学上网)的需要可以联系我，免费</p>
+<p>aa1341151056@126.com</p>
 <p>:::</p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022052919.jpeg" alt=""></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022053013.jpeg" alt=""></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022053022.jpeg" alt=""></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022053036.jpeg" alt=""></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022053058.jpeg" alt=""></p>
-<p><strong>鼠标右看到如图说明安装成功了，打开<code>Git bash here</code></strong></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022053110.jpeg" alt=""></p>
-<p><strong>输入<code>git</code>测试是否真的安装成功</strong></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022053118.jpeg" alt=""></p>
-<p><strong>安装<code>git</code>结束</strong></p>
+<h3 id="注册GitHub"><a href="#注册GitHub" class="headerlink" title="注册GitHub"></a>注册GitHub</h3><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022050748.jpeg" alt=""></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022050809.jpeg" alt=""></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022050823.jpeg" alt=""></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022050856.jpeg" alt=""></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022050917.jpeg" alt=""></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022050932.jpeg" alt=""></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022050958.jpeg" alt=""></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022051017.jpeg" alt=""></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022051032.jpeg" alt=""></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022051043.jpeg" alt=""></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022051057.jpeg" alt=""></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022051110.jpeg" alt=""></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022051123.jpeg" alt=""></p>
 ]]></content>
       <categories>
         <category>计算机科学</category>
@@ -1890,31 +1890,6 @@ ping aliang518.github.io</code></p>
       </tags>
   </entry>
   <entry>
-    <title>如何给PicGo添加水印</title>
-    <url>/2fbd98c3.html</url>
-    <content><![CDATA[<p>在运营独立博客的时候，自己原创的文章，经常会被别人转载，又没有标明原作者地址，导致原创作者流量流失了一部分，如果可以标记原创是自己的话，那就非常方便了，比如说加个水印就好一点。刚好<code>PicGo</code>有个插件<code>watermark</code>可以给突破加水印，这就很方便了，不用上传图片自己还要去添加一个水印。</p>
-<h2 id="安装watermark"><a href="#安装watermark" class="headerlink" title="安装watermark"></a>安装<code>watermark</code></h2><p>安装<code>watermark</code>，<code>PicGo</code>最低版本要<code>2.2.0</code></p>
-<p>可以直接在<code>PicGo</code>插件设置下载</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204110022.jpeg" alt=""></p>
-<h2 id="配置watermark"><a href="#配置watermark" class="headerlink" title="配置watermark"></a>配置<code>watermark</code></h2><p>:::info</p>
-<p>有些同学可能在配置watermark一直出错，可以试着<code>字体文件路径</code>设置和我一样的，把文件拉进去就行</p>
-<p>:::</p>
-<p>这里放上字体链接，有需要自取,字体来源于 <span class="exturl" data-url="aHR0cHM6Ly93d3cuZm9udHMubmV0LmNuL2ZvbnQtNDAwOTA5Njk5NjAuaHRtbD9wcmV2aWV3VGV4dD13d3cuaGlra2kuc2l0ZQ==">字体天下</span></p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204110023.jpeg" alt=""></p>
-<p>:::warning</p>
-<p>以上如果有侵害你的权益，请立即联系我</p>
-<p>:::</p>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>技术杂谈</category>
-        <category>一个小技巧</category>
-      </categories>
-      <tags>
-        <tag>一个小技巧</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>零基础搭建Hexo个人博客系列</title>
     <url>/aaad0208.html</url>
     <content><![CDATA[<h3 id="零基础搭建Hexo个人博客系列"><a href="#零基础搭建Hexo个人博客系列" class="headerlink" title="零基础搭建Hexo个人博客系列"></a>零基础搭建Hexo个人博客系列</h3><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>:::primary</p>
@@ -2015,45 +1990,505 @@ ping aliang518.github.io</code></p>
       </tags>
   </entry>
   <entry>
-    <title>添加开机自启程序</title>
-    <url>/2cc8588f.html</url>
-    <content><![CDATA[<h2 id="键盘点击win-R"><a href="#键盘点击win-R" class="headerlink" title="键盘点击win+R"></a>键盘点击<code>win+R</code></h2><p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204071930.jpg" alt=""></p>
-<h2 id="在窗口输入shell-startup"><a href="#在窗口输入shell-startup" class="headerlink" title="在窗口输入shell:startup"></a>在窗口输入<code>shell:startup</code></h2><pre><code class="lang-bash">shell:startup
-</code></pre>
-<p><strong>打开是这个路径</strong>，把你想要开机自启的软件快捷方式拖到这个路径下，以后电脑开机就会自动启动这个程序了</p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204071937.jpg" alt=""></p>
-<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204071936.jpg" alt=""></p>
-<p>:::warning</p>
-<p>以上如有错误，欢迎留言指出</p>
+    <title>JAVA记事本基础</title>
+    <url>/fb13f705.html</url>
+    <content><![CDATA[<h2 id="Java记事本"><a href="#Java记事本" class="headerlink" title="Java记事本"></a>Java记事本</h2><p>:::info</p>
+<p>适合刚入门Java基础不好的同学</p>
 <p>:::</p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022052729.jpeg" alt=""></p>
+<p>```java mark:1-250<br>package cn.edu.seig.home;<br>import java.awt.<em>;<br>import java.awt.event.</em>;<br>import java.io.<em>;<br>import javax.swing.</em>;</p>
+<p>public class MainUI extends JFrame {</p>
+<pre><code>private static final long serialVersionUID = -8533346717300013642L;
+
+private JTextArea jTextArea1;
+private JScrollPane jsp;    //滚动条
+private static String name;
+private JFileChooser jFC = new JFileChooser();
+
+public static void main(String[] args) &#123;
+    new MainUI().init();
+&#125;
+
+// 初始化界面
+public void init() &#123;
+    //设置窗口大小
+    setSize(800, 600);
+    setLocationRelativeTo(null);
+    // 设置关闭按钮动作不执行任何操作
+    setDefaultCloseOperation(0);
+    name = &quot;新建文本文档.txt&quot;;
+    // 设置标志图案
+    ImageIcon ii = new ImageIcon(&quot;file\\1.png&quot;);
+    setIconImage(ii.getImage());
+    // 设置文件名
+    setTitle(name + &quot; - 记事本&quot;);
+    // 添加菜单栏
+    addMenu();
+    // 添加文本框
+    jTextArea1 = new JTextArea();
+    // 添加滚动条
+    jsp = new JScrollPane(jTextArea1);
+    jsp.setPreferredSize(new Dimension(780, 550));
+    add(jsp, BorderLayout.CENTER);
+    setVisible(true);// 设置窗口可见
+    addWindowListener(new WindowAdapter() &#123;
+        @Override
+        public void windowClosing(WindowEvent e) &#123;
+            if (showSaveDialog() != JOptionPane.CANCEL_OPTION)// 若不是取消按钮，关闭程序
+                setDefaultCloseOperation(3);
+        &#125;
+    &#125;);
+&#125;
+
+// 添加菜单栏
+private void addMenu() &#123;
+    // 添加菜单栏
+    JMenuBar jmb = new JMenuBar();
+    // 设置菜单栏位置在顶级窗口的顶部
+    setJMenuBar(jmb);
+    // 菜单栏菜单
+    JMenu jm_file = new JMenu(&quot;文件&quot;);
+    JMenu jm_edit = new JMenu(&quot;编辑&quot;);
+    jmb.add(jm_file);
+    jmb.add(jm_edit);
+    // 给文件菜单添加菜单项
+    JMenuItem item1 = new JMenuItem(&quot;打开&quot;);
+    JMenuItem item2 = new JMenuItem(&quot;保存&quot;);
+    //将item1、item2添加到jm_file
+    jm_file.add(item1);
+    jm_file.add(item2);
+
+    // &quot;打开&quot;菜单项添加动作监听器
+    item1.addActionListener(new ActionListener() &#123;
+        @Override
+        public void actionPerformed(ActionEvent e) &#123;
+            // 是否保存对原文件修改
+            if (showSaveDialog() == JOptionPane.CANCEL_OPTION) &#123;// 取消按钮，则返回
+                return;
+            &#125;
+            // 弹出一个 &quot;Open File&quot; 文件选择器对话框
+            int select = jFC.showOpenDialog(MainUI.this);
+            // 选择打开文件，则读写文件
+            if (select == JFileChooser.APPROVE_OPTION) &#123;
+                jTextArea1.setText(readFile());// 写入文本框
+                jTextArea1.setCaretPosition(0);// 定位光标至行首
+            &#125;
+        &#125;
+    &#125;);
+
+    // “保存”菜单项添加动作监听器
+    item2.addActionListener(new ActionListener() &#123;
+        @Override
+        public void actionPerformed(ActionEvent e) &#123;
+            if (jFC.getSelectedFile() == null) &#123;
+                createFile();//调用创建文件方法
+            &#125; else &#123;
+                showSaveDialog();//调用文件是否保存方法
+            &#125;
+        &#125;
+    &#125;);
+&#125;
+
+// 读取文件
+private String readFile() &#123;
+    // 声明缓冲字符流变量
+    BufferedReader br = null;
+    StringBuilder sb = null;
+    try &#123;
+        br = new BufferedReader(new FileReader(jFC.getSelectedFile()));
+        sb = new StringBuilder();// 创建缓冲字符串
+        String str;
+        int count = 0;//控制添加换行符，与原文保持一致
+        while ((str = br.readLine()) != null) &#123;
+            if (count == 0)
+                sb.append(str);
+            if (count++ != 0)
+                sb.append(&quot;\n&quot; + str);// 添加换行
+        &#125;
+    &#125; catch (FileNotFoundException e1) &#123;
+        // 弹出“文件未找到”对话框，返回null
+        JOptionPane.showMessageDialog(null, &quot;未找到该文件！&quot;);
+        return null;
+    &#125; catch (IOException e1) &#123;
+        // 弹出“文件读取异常”对话框，返回null
+        JOptionPane.showMessageDialog(null, &quot;文件读取异常&quot;);
+        return null;
+    &#125; finally &#123;
+        // 关闭字符流
+        if (br != null)
+            try &#123;
+                br.close();
+            &#125; catch (IOException e1) &#123;
+                e1.printStackTrace();
+            &#125;
+    &#125;
+    name = jFC.getSelectedFile().getName();
+    setTitle(name + &quot; - 记事本&quot;);//设置文件名
+    return sb.toString();
+&#125;
+
+// 保存对话框
+private int showSaveDialog() &#123;
+    int select = 0;
+    // 判断文本框是否为空
+    if (!jTextArea1.getText().equals(&quot;&quot;)) &#123;
+        // 判断文件是否为空
+        if (jFC.getSelectedFile() == null) &#123;
+            select = JOptionPane.showConfirmDialog(MainUI.this, &quot;是否保存修改?&quot;);
+            if (select == JOptionPane.YES_OPTION) &#123;
+                createFile();//文件不存在，则创建文件
+            &#125;
+        &#125; else &#123;
+            if (!isSaved()) &#123;// 文件未保存
+                select = JOptionPane.showConfirmDialog(MainUI.this, &quot;是否保存修改?&quot;);
+                if (select == JOptionPane.YES_OPTION) &#123;
+                    saveFile(jFC.getSelectedFile());
+                &#125;
+            &#125;
+        &#125;
+    &#125;
+    return select;// 返回选项
+&#125;
+
+// 创建新文件
+private void createFile() &#123;
+    // String name = null;
+    File file = null;
+    // 选择保存或取消
+    if (jFC.showSaveDialog(MainUI.this) == JFileChooser.APPROVE_OPTION) &#123;
+        file = jFC.getSelectedFile();// 获取选中的文件
+    &#125; else &#123;
+        return;
+    &#125;
+    name = jFC.getName(file);// 获取输入的文件名
+    if (file.exists()) &#123; // 若选择已有文件----询问是否要覆盖
+        int i = JOptionPane.showConfirmDialog(null, &quot;该文件已存在,是否覆盖原文件&quot;, &quot;确认&quot;, JOptionPane.YES_NO_OPTION);
+        if (i == JOptionPane.YES_OPTION) &#123;
+            saveFile(file);
+        &#125; else &#123;
+            jFC.showSaveDialog(MainUI.this);// 重新选择
+        &#125;
+    &#125; else &#123;//文件不存在，则直接保存
+        saveFile(file);
+    &#125;
+&#125;
+
+// 判断文件是否保存
+private Boolean isSaved() &#123;
+    // 比较内容
+    if (jTextArea1.getText().equals(readFile())) &#123;
+        return true;
+    &#125;
+    return false;
+&#125;
+
+// 保存文件,文件不存在则创建新文件
+private void saveFile(File file) &#123;
+    BufferedWriter bw = null;
+    try &#123;
+        bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file)));
+        bw.write(jTextArea1.getText());//写入文件
+        bw.flush();
+    &#125; catch (FileNotFoundException e1) &#123;
+        JOptionPane.showMessageDialog(MainUI.this, &quot;文件保存出错&quot; + e1.getMessage());
+    &#125; catch (IOException e1) &#123;
+        e1.printStackTrace();
+    &#125; finally &#123;//finally是表示最后一定会执行的语句
+        try &#123;
+            if (bw != null)
+                bw.close();
+        &#125; catch (IOException e1) &#123;
+        &#125;
+    &#125;
+&#125;
+</code></pre><p>}<br>```</p>
 ]]></content>
       <categories>
         <category>计算机科学</category>
-        <category>技术杂谈</category>
-        <category>一个小技巧</category>
+        <category>编程语言</category>
+        <category>java</category>
       </categories>
       <tags>
-        <tag>教程</tag>
-        <tag>生活小技巧</tag>
+        <tag>JAVA</tag>
       </tags>
   </entry>
   <entry>
-    <title>docker使用指令记录</title>
-    <url>/2802e5c6.html</url>
-    <content><![CDATA[<h2 id="删除image"><a href="#删除image" class="headerlink" title="删除image"></a>删除image</h2><h3 id="通过ID删除镜像"><a href="#通过ID删除镜像" class="headerlink" title="通过ID删除镜像"></a>通过ID删除镜像</h3><pre><code class="lang-bash">docker rmi ID # 删除镜像样例
-docker rmi 0e901e68141f # 删除镜像，如果ID太长不想输入，只输入ID的一半也是可以的
+    <title>javase基础</title>
+    <url>/f2edc254.html</url>
+    <content><![CDATA[<h2 id="访问控制"><a href="#访问控制" class="headerlink" title="访问控制"></a>访问控制</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th>private</th>
+<th>default</th>
+<th>protected</th>
+<th>public</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>同一类</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>同一包的类</td>
+<td></td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>子类</td>
+<td></td>
+<td></td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>其他包中的类</td>
+<td></td>
+<td></td>
+<td></td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="可变长参数"><a href="#可变长参数" class="headerlink" title="可变长参数"></a>可变长参数</h2><pre><code class="lang-java">public static void text(String ... arr)&#123;&#125;
 </code></pre>
-<h3 id="通过TAG删除镜像"><a href="#通过TAG删除镜像" class="headerlink" title="通过TAG删除镜像"></a>通过TAG删除镜像</h3><pre><code class="lang-bash">docker rmi REPOSITORY:TAG # 删除镜像样例
-docker rmi nginx:latest # 删除镜像
-docker images # 查看镜像
+<pre><code class="lang-java">// 一般把固定参数放在首位，不然在传参的时候，JVM识别不出来那个是其他
+public static void text(int a,String ... arr)&#123;&#125;
 </code></pre>
-<p><img data-src="http://hikki.test.upcdn.net/202206055208.jpeg" alt=""></p>
 ]]></content>
       <categories>
         <category>计算机科学</category>
-        <category>技术杂谈</category>
-        <category>docker</category>
+        <category>编程语言</category>
+        <category>java</category>
       </categories>
+  </entry>
+  <entry>
+    <title>javase触发事件</title>
+    <url>/73480a46.html</url>
+    <content><![CDATA[<p>:::info</p>
+<p>创建界面我是用windowBuilder的</p>
+<p>:::</p>
+<h2 id="创建界面"><a href="#创建界面" class="headerlink" title="创建界面"></a>创建界面</h2><p>不懂怎么创建可以看文章末尾</p>
+<pre><code class="lang-java">import java.awt.EventQueue;
+import javax.swing.JFrame;
+
+public class Window_text &#123;
+
+    private JFrame frame;
+
+    /**
+     * Launch the application.
+     */
+    public static void main(String[] args) &#123;
+        EventQueue.invokeLater(new Runnable() &#123;
+            public void run() &#123;
+                try &#123;
+                    Window_text window = new Window_text();
+                    window.frame.setVisible(true);
+                &#125; catch (Exception e) &#123;
+                    e.printStackTrace();
+                &#125;
+            &#125;
+        &#125;);
+    &#125;
+
+    /**
+     * Create the application.
+     */
+    public Window_text() &#123;
+        initialize();
+    &#125;
+
+    /**
+     * Initialize the contents of the frame.
+     */
+    private void initialize() &#123;
+        frame = new JFrame();
+        frame.setBounds(100, 100, 450, 300);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    &#125;
+
+&#125;
+</code></pre>
+<p><img data-src="http://hikki.test.upcdn.net/202205230350.jpeg" alt=""></p>
+<h2 id="触发事件"><a href="#触发事件" class="headerlink" title="触发事件"></a>触发事件</h2><pre><code class="lang-java">import java.awt.EventQueue;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class Window_text &#123;
+
+    private JFrame frame;
+    //新建面板
+    public JPanel panel = new JPanel();
+
+    /**
+     * Launch the application.
+     */
+    public static void main(String[] args) &#123;
+        EventQueue.invokeLater(new Runnable() &#123;
+            public void run() &#123;
+                try &#123;
+                    Window_text window = new Window_text();
+                    window.frame.setVisible(true);
+                &#125; catch (Exception e) &#123;
+                    e.printStackTrace();
+                &#125;
+            &#125;
+        &#125;);
+    &#125;
+
+    /**
+     * Create the application.
+     */
+    public Window_text() &#123;
+        initialize();
+    &#125;
+
+
+    /**
+     * Initialize the contents of the frame.
+     */
+    private void initialize() &#123;
+        frame = new JFrame();
+        frame.setBounds(100, 100, 450, 300);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        //以下全是新增代码
+        frame.getContentPane().setLayout(null);
+        panel.setBounds(0, 0, 103, 263);
+        frame.getContentPane().add(panel);
+        panel.setLayout(null);
+
+        JButton btnNewButton = new JButton(&quot;btn&quot;);
+        btnNewButton.setBounds(0, 95, 97, 23);
+        panel.add(btnNewButton);
+        // 绑定事件
+        btnNewButton.addActionListener(new B1());
+    &#125;
+
+    /**
+     * 点击按钮触发的事件
+     * @author Lilbai518
+     *
+     */
+    class B1 implements ActionListener&#123;
+
+        public void actionPerformed(ActionEvent e) &#123;
+            // TODO 自动生成的方法存根
+
+            JPanel right = new JPanel();
+            right.setBounds(104, 0, 332, 263);
+            frame.getContentPane().add(right);
+            right.setLayout(null);
+
+            JLabel right_label = new JLabel(&quot;成功啦&quot;);
+            right_label.setFont(new Font(&quot;楷体&quot;, Font.PLAIN, 28));
+            right_label.setBounds(91, 88, 193, 61);
+            right.add(right_label);
+            right_label.setLayout(null);
+        &#125;
+    &#125;    
+&#125;
+</code></pre>
+<p><img data-src="http://hikki.test.upcdn.net/202205230401.jpeg" alt=""></p>
+<h2 id="如何新建WindowBuilder"><a href="#如何新建WindowBuilder" class="headerlink" title="如何新建WindowBuilder"></a>如何新建<code>WindowBuilder</code></h2><p>如何你还没安装<code>WindowBuilder</code>的话，先去安装再来打开</p>
+<p><img data-src="http://hikki.test.upcdn.net/202205231146.jpeg" alt=""></p>
+<p><img data-src="http://hikki.test.upcdn.net/202205231157.jpeg" alt=""></p>
+<p><img data-src="http://hikki.test.upcdn.net/202205231208.jpeg" alt=""></p>
+<p><img data-src="http://hikki.test.upcdn.net/202205231212.jpeg" alt=""></p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>编程语言</category>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>javase</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>javase程序国际化</title>
+    <url>/b2cc2eb5.html</url>
+    <content><![CDATA[<p><code>java Locale类 mark:1-20</code></p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>编程语言</category>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>JAVA</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>javase连接数据库报错Communications link failure</title>
+    <url>/dfaf38bb.html</url>
+    <content><![CDATA[<h2 id="DAO类"><a href="#DAO类" class="headerlink" title="DAO类"></a>DAO类</h2><p>```java mark:1-50<br>package Dao;<br>import javax.swing.<em>;<br>import java.sql.</em>;<br>public class DAO {<br>    private static final DAO dao = new DAO();<br>    static {<br>        try {<br>            Class.forName(“com.mysql.jdbc.Driver”);<br>        } catch (ClassNotFoundException e) {<br>            JOptionPane.showMessageDialog(null, “驱动加载失败”+ e.getMessage());<br>            e.printStackTrace();<br>        }<br>    }<br>    public static Connection getConn() {<br>        try {<br>            Connection conn = null;<br>            String url = “jdbc:mysql://localhost:3306/news?serverTimezone=UTC”;<br>            String username = “root”;<br>            String password = “root”;<br>            conn = DriverManager.getConnection(url, username, password);<br>            return conn;<br>        } catch (Exception e) {<br>            JOptionPane.showMessageDialog(null,”数据库连接失败!”+ e.getMessage());<br>            return null;<br>        }<br>    }</p>
+<pre><code>public static void main(String[] args) &#123;
+    System.out.println(getConn());
+&#125;
+</code></pre><p>}</p>
+<pre><code>
+## pom.xml配置
+
+```java mark:1-50
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot;
+         xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
+    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+
+    &lt;groupId&gt;org.example&lt;/groupId&gt;
+    &lt;artifactId&gt;blog&lt;/artifactId&gt;
+    &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;
+
+    &lt;properties&gt;
+        &lt;maven.compiler.source&gt;18&lt;/maven.compiler.source&gt;
+        &lt;maven.compiler.target&gt;18&lt;/maven.compiler.target&gt;
+    &lt;/properties&gt;
+
+    &lt;dependencies&gt;
+        &lt;!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java --&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;mysql&lt;/groupId&gt;
+            &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;
+            &lt;version&gt;8.0.29&lt;/version&gt;
+        &lt;/dependency&gt;
+
+    &lt;/dependencies&gt;
+
+&lt;/project&gt;
+</code></pre><p>报错内容</p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/202205265603.jpg" alt=""></p>
+<h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><p>我一开始启动的是<code>MySQL8.0.12</code>，然后试一下启动<code>MySQL5.7.26</code>突然可以了</p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/202205265540.jpeg" alt=""></p>
+<h2 id="可能还会报错内容"><a href="#可能还会报错内容" class="headerlink" title="可能还会报错内容"></a>可能还会报错内容</h2><p>在<code>url</code>加上<code>?serverTimezone=UTC</code>这一句，如下</p>
+<p><code>java mark:1-2
+ String url = &quot;jdbc:mysql://localhost:3306/news?serverTimezone=UTC&quot;;</code></p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>编程语言</category>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>JavaSE</tag>
+      </tags>
   </entry>
   <entry>
     <title>Python组合数据类型</title>
@@ -2141,6 +2576,55 @@ for item in range(20):
       </categories>
       <tags>
         <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于idea的食用技巧</title>
+    <url>/d9153102.html</url>
+    <content><![CDATA[<pre><code class="lang-java">st
+</code></pre>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>编程语言</category>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python Qt5基础知识</title>
+    <url>/c3e9968a.html</url>
+    <content><![CDATA[<h2 id="添加间隔线"><a href="#添加间隔线" class="headerlink" title="添加间隔线"></a>添加间隔线</h2><p>```python mark:1-5<br>fileMenu.addSeparator() #fileMenu是菜单bar</p>
+<pre><code>
+## 添加菜单bar
+
+```python mark:1-10
+#实例化菜单条
+mainMenubar = self.menuBar()
+# 将菜单命名到列表中
+menu_item_name = [&#39;fileMenu&#39;, &#39;editMenu&#39;, &#39;formatMenu&#39;, &#39;searchMenu&#39;, &#39;helpMenu&#39;]
+# 给菜单做映射(也就是实际显示的名称)
+menu_item_bar_name = [&#39;文件&#39;, &#39;编辑&#39;, &#39;格式&#39;, &#39;查看&#39;, &#39;帮助&#39;]
+# 用循环来一次性把所有菜单条执行，减少代码冗余
+for item in range(len(menu_item_name)):
+    menu_item_name[item] = mainMenubar.addMenu(menu_item_bar_name[item])
+</code></pre><h2 id="添加子菜单"><a href="#添加子菜单" class="headerlink" title="添加子菜单"></a>添加子菜单</h2><p>```python mark:1-25</p>
+<h1 id="将操作名、属性名、快捷键用列表封装起来，用循环进行添加"><a href="#将操作名、属性名、快捷键用列表封装起来，用循环进行添加" class="headerlink" title="将操作名、属性名、快捷键用列表封装起来，用循环进行添加"></a>将操作名、属性名、快捷键用列表封装起来，用循环进行添加</h1><p>file_name = [‘新建(N)’, ‘打开(O)’, ‘保存(S)’, ‘另存为(A)’, ‘页面设置(U)’, ‘打印(P)’, ‘退出(X)’]<br>file_name_as = [‘new’, ‘open’, ‘save’, ‘save_as’, ‘setup’, ‘print’, ‘exit’]<br>file_shortcut_key = [‘Ctrl+N’, ‘Ctrl+O’, ‘Ctrl+S’, ‘’, ‘’, ‘Ctrl+P’, ‘’]</p>
+<h1 id="用循环将子菜单添加到菜单"><a href="#用循环将子菜单添加到菜单" class="headerlink" title="用循环将子菜单添加到菜单"></a>用循环将子菜单添加到菜单</h1><p>for i in range(len(file_name_as)):<br>     file_name_as[i] = QAction(QIcon(‘12.png’), file_name_as[i], self)<br>     file_name_as[i].setShortcut(file_shortcut_key[i])<br>     file_name_as[i].setText(file_name[i])</p>
+<pre><code> # 将子菜单添加到菜单
+ menu_item_name[0].addAction(file_name_as[i])
+</code></pre><p>```</p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>编程语言</category>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>Qt5</tag>
       </tags>
   </entry>
   <entry>
@@ -2342,50 +2826,6 @@ plt.show()
       </tags>
   </entry>
   <entry>
-    <title>python Qt5基础知识</title>
-    <url>/c3e9968a.html</url>
-    <content><![CDATA[<h2 id="添加间隔线"><a href="#添加间隔线" class="headerlink" title="添加间隔线"></a>添加间隔线</h2><p>```python mark:1-5<br>fileMenu.addSeparator() #fileMenu是菜单bar</p>
-<pre><code>
-## 添加菜单bar
-
-```python mark:1-10
-#实例化菜单条
-mainMenubar = self.menuBar()
-# 将菜单命名到列表中
-menu_item_name = [&#39;fileMenu&#39;, &#39;editMenu&#39;, &#39;formatMenu&#39;, &#39;searchMenu&#39;, &#39;helpMenu&#39;]
-# 给菜单做映射(也就是实际显示的名称)
-menu_item_bar_name = [&#39;文件&#39;, &#39;编辑&#39;, &#39;格式&#39;, &#39;查看&#39;, &#39;帮助&#39;]
-# 用循环来一次性把所有菜单条执行，减少代码冗余
-for item in range(len(menu_item_name)):
-    menu_item_name[item] = mainMenubar.addMenu(menu_item_bar_name[item])
-</code></pre><h2 id="添加子菜单"><a href="#添加子菜单" class="headerlink" title="添加子菜单"></a>添加子菜单</h2><p>```python mark:1-25</p>
-<h1 id="将操作名、属性名、快捷键用列表封装起来，用循环进行添加"><a href="#将操作名、属性名、快捷键用列表封装起来，用循环进行添加" class="headerlink" title="将操作名、属性名、快捷键用列表封装起来，用循环进行添加"></a>将操作名、属性名、快捷键用列表封装起来，用循环进行添加</h1><p>file_name = [‘新建(N)’, ‘打开(O)’, ‘保存(S)’, ‘另存为(A)’, ‘页面设置(U)’, ‘打印(P)’, ‘退出(X)’]<br>file_name_as = [‘new’, ‘open’, ‘save’, ‘save_as’, ‘setup’, ‘print’, ‘exit’]<br>file_shortcut_key = [‘Ctrl+N’, ‘Ctrl+O’, ‘Ctrl+S’, ‘’, ‘’, ‘Ctrl+P’, ‘’]</p>
-<h1 id="用循环将子菜单添加到菜单"><a href="#用循环将子菜单添加到菜单" class="headerlink" title="用循环将子菜单添加到菜单"></a>用循环将子菜单添加到菜单</h1><p>for i in range(len(file_name_as)):<br>     file_name_as[i] = QAction(QIcon(‘12.png’), file_name_as[i], self)<br>     file_name_as[i].setShortcut(file_shortcut_key[i])<br>     file_name_as[i].setText(file_name[i])</p>
-<pre><code> # 将子菜单添加到菜单
- menu_item_name[0].addAction(file_name_as[i])
-</code></pre><p>```</p>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>编程语言</category>
-        <category>python</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>Qt5</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>python Qt5实现记事本基本功能</title>
-    <url>/b9893092.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>编程语言</category>
-        <category>python</category>
-      </categories>
-  </entry>
-  <entry>
     <title>numpy画复合函数</title>
     <url>/8075134e.html</url>
     <content><![CDATA[<h2 id="函数-1-red"><a href="#函数-1-red" class="headerlink" title="函数~1~{.red}"></a>函数~1~{.red}</h2><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022051002.png" alt="">{width=”10%” height=”10%”}</p>
@@ -2419,6 +2859,16 @@ plt.show()            # 显示面板
       <tags>
         <tag>python</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>python Qt5实现记事本基本功能</title>
+    <url>/b9893092.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>编程语言</category>
+        <category>python</category>
+      </categories>
   </entry>
   <entry>
     <title>python qt5 实现记事本界面</title>
@@ -2755,30 +3205,6 @@ with open(&#39;../res/rw.txt&#39;, &#39;a+&#39;, encoding=&#39;utf-8&#39;) as f:
       </tags>
   </entry>
   <entry>
-    <title>Git详细使用方法</title>
-    <url>/43d2d741.html</url>
-    <content><![CDATA[<h2 id="初始化仓库"><a href="#初始化仓库" class="headerlink" title="初始化仓库"></a>初始化仓库</h2><p>```bash mark:1,2-50<br>git init             #初始化当前文件夹为仓库，默认是master分支<br>git help -a         # 显示完全的指令列表<br>git add text.txt     # 添加text.txt文件加入到Git系统的索引中，tips:可以使用通配符添加“*”和“.”<br>git status            # 查看当前Git的状态，是否有新文件没有加入到Git索引中<br>git commit -m “操作说明” —author=’操作者姓名’ —email=’操作者邮箱’ #把已经添加到Git索引的所有文件到推送到repository，一般我们在使用github的时候，就是通过这个指令把文件推送到github的<br>gitk                 # 启动图形界面查看repository有哪些文件</p>
-<h1 id="一般在离开git-bash-here的时候习惯用exit结束-这样下次回来的时候可以恢复到原来的状态"><a href="#一般在离开git-bash-here的时候习惯用exit结束-这样下次回来的时候可以恢复到原来的状态" class="headerlink" title="一般在离开git bash here的时候习惯用exit结束,这样下次回来的时候可以恢复到原来的状态"></a>一般在离开git bash here的时候习惯用exit结束,这样下次回来的时候可以恢复到原来的状态</h1><pre><code>
-![](https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204121821.jpeg &quot;本地仓库提交都爱github仓库流程&quot;)
-
-`config`有三个基本配置的文件，他们分别有优先权之分。
-
-```bash mark:1,2-5
-.git/config                    #优先权最高，存在于Git本地仓库下的.git文件内
-Administrator/.gitconfig    #其次，存在于你PC当前用户下
-etc/gitconfig                 #优先权最低,存在Git安装软件的位置
-</code></pre><p><em>存在位置如图所示</em></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204121724.jpeg" alt="" title=".git/config"></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204121743.jpeg" alt="" title="Administrator/.gitconfig"></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204121723.jpeg" alt="" title="etc/gitconfig "></p>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>技术杂谈</category>
-        <category>持续更新</category>
-      </categories>
-  </entry>
-  <entry>
     <title>python爬虫乱码问题</title>
     <url>/4f9c6caa.html</url>
     <content><![CDATA[<h2 id="修改前"><a href="#修改前" class="headerlink" title="修改前"></a>修改前</h2><pre><code class="lang-python">import requests
@@ -2935,227 +3361,94 @@ def edit_music_message(music_path,music_title,artist,album,album_artist):
       </tags>
   </entry>
   <entry>
-    <title>JAVA记事本基础</title>
-    <url>/fb13f705.html</url>
-    <content><![CDATA[<h2 id="Java记事本"><a href="#Java记事本" class="headerlink" title="Java记事本"></a>Java记事本</h2><p>:::info</p>
-<p>适合刚入门Java基础不好的同学</p>
-<p>:::</p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022052729.jpeg" alt=""></p>
-<p>```java mark:1-250<br>package cn.edu.seig.home;<br>import java.awt.<em>;<br>import java.awt.event.</em>;<br>import java.io.<em>;<br>import javax.swing.</em>;</p>
-<p>public class MainUI extends JFrame {</p>
-<pre><code>private static final long serialVersionUID = -8533346717300013642L;
-
-private JTextArea jTextArea1;
-private JScrollPane jsp;    //滚动条
-private static String name;
-private JFileChooser jFC = new JFileChooser();
-
-public static void main(String[] args) &#123;
-    new MainUI().init();
-&#125;
-
-// 初始化界面
-public void init() &#123;
-    //设置窗口大小
-    setSize(800, 600);
-    setLocationRelativeTo(null);
-    // 设置关闭按钮动作不执行任何操作
-    setDefaultCloseOperation(0);
-    name = &quot;新建文本文档.txt&quot;;
-    // 设置标志图案
-    ImageIcon ii = new ImageIcon(&quot;file\\1.png&quot;);
-    setIconImage(ii.getImage());
-    // 设置文件名
-    setTitle(name + &quot; - 记事本&quot;);
-    // 添加菜单栏
-    addMenu();
-    // 添加文本框
-    jTextArea1 = new JTextArea();
-    // 添加滚动条
-    jsp = new JScrollPane(jTextArea1);
-    jsp.setPreferredSize(new Dimension(780, 550));
-    add(jsp, BorderLayout.CENTER);
-    setVisible(true);// 设置窗口可见
-    addWindowListener(new WindowAdapter() &#123;
-        @Override
-        public void windowClosing(WindowEvent e) &#123;
-            if (showSaveDialog() != JOptionPane.CANCEL_OPTION)// 若不是取消按钮，关闭程序
-                setDefaultCloseOperation(3);
-        &#125;
-    &#125;);
-&#125;
-
-// 添加菜单栏
-private void addMenu() &#123;
-    // 添加菜单栏
-    JMenuBar jmb = new JMenuBar();
-    // 设置菜单栏位置在顶级窗口的顶部
-    setJMenuBar(jmb);
-    // 菜单栏菜单
-    JMenu jm_file = new JMenu(&quot;文件&quot;);
-    JMenu jm_edit = new JMenu(&quot;编辑&quot;);
-    jmb.add(jm_file);
-    jmb.add(jm_edit);
-    // 给文件菜单添加菜单项
-    JMenuItem item1 = new JMenuItem(&quot;打开&quot;);
-    JMenuItem item2 = new JMenuItem(&quot;保存&quot;);
-    //将item1、item2添加到jm_file
-    jm_file.add(item1);
-    jm_file.add(item2);
-
-    // &quot;打开&quot;菜单项添加动作监听器
-    item1.addActionListener(new ActionListener() &#123;
-        @Override
-        public void actionPerformed(ActionEvent e) &#123;
-            // 是否保存对原文件修改
-            if (showSaveDialog() == JOptionPane.CANCEL_OPTION) &#123;// 取消按钮，则返回
-                return;
-            &#125;
-            // 弹出一个 &quot;Open File&quot; 文件选择器对话框
-            int select = jFC.showOpenDialog(MainUI.this);
-            // 选择打开文件，则读写文件
-            if (select == JFileChooser.APPROVE_OPTION) &#123;
-                jTextArea1.setText(readFile());// 写入文本框
-                jTextArea1.setCaretPosition(0);// 定位光标至行首
-            &#125;
-        &#125;
-    &#125;);
-
-    // “保存”菜单项添加动作监听器
-    item2.addActionListener(new ActionListener() &#123;
-        @Override
-        public void actionPerformed(ActionEvent e) &#123;
-            if (jFC.getSelectedFile() == null) &#123;
-                createFile();//调用创建文件方法
-            &#125; else &#123;
-                showSaveDialog();//调用文件是否保存方法
-            &#125;
-        &#125;
-    &#125;);
-&#125;
-
-// 读取文件
-private String readFile() &#123;
-    // 声明缓冲字符流变量
-    BufferedReader br = null;
-    StringBuilder sb = null;
-    try &#123;
-        br = new BufferedReader(new FileReader(jFC.getSelectedFile()));
-        sb = new StringBuilder();// 创建缓冲字符串
-        String str;
-        int count = 0;//控制添加换行符，与原文保持一致
-        while ((str = br.readLine()) != null) &#123;
-            if (count == 0)
-                sb.append(str);
-            if (count++ != 0)
-                sb.append(&quot;\n&quot; + str);// 添加换行
-        &#125;
-    &#125; catch (FileNotFoundException e1) &#123;
-        // 弹出“文件未找到”对话框，返回null
-        JOptionPane.showMessageDialog(null, &quot;未找到该文件！&quot;);
-        return null;
-    &#125; catch (IOException e1) &#123;
-        // 弹出“文件读取异常”对话框，返回null
-        JOptionPane.showMessageDialog(null, &quot;文件读取异常&quot;);
-        return null;
-    &#125; finally &#123;
-        // 关闭字符流
-        if (br != null)
-            try &#123;
-                br.close();
-            &#125; catch (IOException e1) &#123;
-                e1.printStackTrace();
-            &#125;
-    &#125;
-    name = jFC.getSelectedFile().getName();
-    setTitle(name + &quot; - 记事本&quot;);//设置文件名
-    return sb.toString();
-&#125;
-
-// 保存对话框
-private int showSaveDialog() &#123;
-    int select = 0;
-    // 判断文本框是否为空
-    if (!jTextArea1.getText().equals(&quot;&quot;)) &#123;
-        // 判断文件是否为空
-        if (jFC.getSelectedFile() == null) &#123;
-            select = JOptionPane.showConfirmDialog(MainUI.this, &quot;是否保存修改?&quot;);
-            if (select == JOptionPane.YES_OPTION) &#123;
-                createFile();//文件不存在，则创建文件
-            &#125;
-        &#125; else &#123;
-            if (!isSaved()) &#123;// 文件未保存
-                select = JOptionPane.showConfirmDialog(MainUI.this, &quot;是否保存修改?&quot;);
-                if (select == JOptionPane.YES_OPTION) &#123;
-                    saveFile(jFC.getSelectedFile());
-                &#125;
-            &#125;
-        &#125;
-    &#125;
-    return select;// 返回选项
-&#125;
-
-// 创建新文件
-private void createFile() &#123;
-    // String name = null;
-    File file = null;
-    // 选择保存或取消
-    if (jFC.showSaveDialog(MainUI.this) == JFileChooser.APPROVE_OPTION) &#123;
-        file = jFC.getSelectedFile();// 获取选中的文件
-    &#125; else &#123;
-        return;
-    &#125;
-    name = jFC.getName(file);// 获取输入的文件名
-    if (file.exists()) &#123; // 若选择已有文件----询问是否要覆盖
-        int i = JOptionPane.showConfirmDialog(null, &quot;该文件已存在,是否覆盖原文件&quot;, &quot;确认&quot;, JOptionPane.YES_NO_OPTION);
-        if (i == JOptionPane.YES_OPTION) &#123;
-            saveFile(file);
-        &#125; else &#123;
-            jFC.showSaveDialog(MainUI.this);// 重新选择
-        &#125;
-    &#125; else &#123;//文件不存在，则直接保存
-        saveFile(file);
-    &#125;
-&#125;
-
-// 判断文件是否保存
-private Boolean isSaved() &#123;
-    // 比较内容
-    if (jTextArea1.getText().equals(readFile())) &#123;
-        return true;
-    &#125;
-    return false;
-&#125;
-
-// 保存文件,文件不存在则创建新文件
-private void saveFile(File file) &#123;
-    BufferedWriter bw = null;
-    try &#123;
-        bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file)));
-        bw.write(jTextArea1.getText());//写入文件
-        bw.flush();
-    &#125; catch (FileNotFoundException e1) &#123;
-        JOptionPane.showMessageDialog(MainUI.this, &quot;文件保存出错&quot; + e1.getMessage());
-    &#125; catch (IOException e1) &#123;
-        e1.printStackTrace();
-    &#125; finally &#123;//finally是表示最后一定会执行的语句
-        try &#123;
-            if (bw != null)
-                bw.close();
-        &#125; catch (IOException e1) &#123;
-        &#125;
-    &#125;
-&#125;
-</code></pre><p>}<br>```</p>
+    <title>docker使用指令记录</title>
+    <url>/2802e5c6.html</url>
+    <content><![CDATA[<h2 id="删除image"><a href="#删除image" class="headerlink" title="删除image"></a>删除image</h2><h3 id="通过ID删除镜像"><a href="#通过ID删除镜像" class="headerlink" title="通过ID删除镜像"></a>通过ID删除镜像</h3><pre><code class="lang-bash">docker rmi ID # 删除镜像样例
+docker rmi 0e901e68141f # 删除镜像，如果ID太长不想输入，只输入ID的一半也是可以的
+</code></pre>
+<h3 id="通过TAG删除镜像"><a href="#通过TAG删除镜像" class="headerlink" title="通过TAG删除镜像"></a>通过TAG删除镜像</h3><pre><code class="lang-bash">docker rmi REPOSITORY:TAG # 删除镜像样例
+docker rmi nginx:latest # 删除镜像
+docker images # 查看镜像
+</code></pre>
+<p><img data-src="http://hikki.test.upcdn.net/202206055208.jpeg" alt=""></p>
 ]]></content>
       <categories>
         <category>计算机科学</category>
-        <category>编程语言</category>
-        <category>java</category>
+        <category>技术杂谈</category>
+        <category>docker</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>如何给PicGo添加水印</title>
+    <url>/2fbd98c3.html</url>
+    <content><![CDATA[<p>在运营独立博客的时候，自己原创的文章，经常会被别人转载，又没有标明原作者地址，导致原创作者流量流失了一部分，如果可以标记原创是自己的话，那就非常方便了，比如说加个水印就好一点。刚好<code>PicGo</code>有个插件<code>watermark</code>可以给突破加水印，这就很方便了，不用上传图片自己还要去添加一个水印。</p>
+<h2 id="安装watermark"><a href="#安装watermark" class="headerlink" title="安装watermark"></a>安装<code>watermark</code></h2><p>安装<code>watermark</code>，<code>PicGo</code>最低版本要<code>2.2.0</code></p>
+<p>可以直接在<code>PicGo</code>插件设置下载</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204110022.jpeg" alt=""></p>
+<h2 id="配置watermark"><a href="#配置watermark" class="headerlink" title="配置watermark"></a>配置<code>watermark</code></h2><p>:::info</p>
+<p>有些同学可能在配置watermark一直出错，可以试着<code>字体文件路径</code>设置和我一样的，把文件拉进去就行</p>
+<p>:::</p>
+<p>这里放上字体链接，有需要自取,字体来源于 <span class="exturl" data-url="aHR0cHM6Ly93d3cuZm9udHMubmV0LmNuL2ZvbnQtNDAwOTA5Njk5NjAuaHRtbD9wcmV2aWV3VGV4dD13d3cuaGlra2kuc2l0ZQ==">字体天下</span></p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/amliamng202204110023.jpeg" alt=""></p>
+<p>:::warning</p>
+<p>以上如果有侵害你的权益，请立即联系我</p>
+<p>:::</p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>技术杂谈</category>
+        <category>一个小技巧</category>
       </categories>
       <tags>
-        <tag>JAVA</tag>
+        <tag>一个小技巧</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>添加开机自启程序</title>
+    <url>/2cc8588f.html</url>
+    <content><![CDATA[<h2 id="键盘点击win-R"><a href="#键盘点击win-R" class="headerlink" title="键盘点击win+R"></a>键盘点击<code>win+R</code></h2><p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204071930.jpg" alt=""></p>
+<h2 id="在窗口输入shell-startup"><a href="#在窗口输入shell-startup" class="headerlink" title="在窗口输入shell:startup"></a>在窗口输入<code>shell:startup</code></h2><pre><code class="lang-bash">shell:startup
+</code></pre>
+<p><strong>打开是这个路径</strong>，把你想要开机自启的软件快捷方式拖到这个路径下，以后电脑开机就会自动启动这个程序了</p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204071937.jpg" alt=""></p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204071936.jpg" alt=""></p>
+<p>:::warning</p>
+<p>以上如有错误，欢迎留言指出</p>
+<p>:::</p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>技术杂谈</category>
+        <category>一个小技巧</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+        <tag>生活小技巧</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git详细使用方法</title>
+    <url>/43d2d741.html</url>
+    <content><![CDATA[<h2 id="初始化仓库"><a href="#初始化仓库" class="headerlink" title="初始化仓库"></a>初始化仓库</h2><p>```bash mark:1,2-50<br>git init             #初始化当前文件夹为仓库，默认是master分支<br>git help -a         # 显示完全的指令列表<br>git add text.txt     # 添加text.txt文件加入到Git系统的索引中，tips:可以使用通配符添加“*”和“.”<br>git status            # 查看当前Git的状态，是否有新文件没有加入到Git索引中<br>git commit -m “操作说明” —author=’操作者姓名’ —email=’操作者邮箱’ #把已经添加到Git索引的所有文件到推送到repository，一般我们在使用github的时候，就是通过这个指令把文件推送到github的<br>gitk                 # 启动图形界面查看repository有哪些文件</p>
+<h1 id="一般在离开git-bash-here的时候习惯用exit结束-这样下次回来的时候可以恢复到原来的状态"><a href="#一般在离开git-bash-here的时候习惯用exit结束-这样下次回来的时候可以恢复到原来的状态" class="headerlink" title="一般在离开git bash here的时候习惯用exit结束,这样下次回来的时候可以恢复到原来的状态"></a>一般在离开git bash here的时候习惯用exit结束,这样下次回来的时候可以恢复到原来的状态</h1><pre><code>
+![](https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204121821.jpeg &quot;本地仓库提交都爱github仓库流程&quot;)
+
+`config`有三个基本配置的文件，他们分别有优先权之分。
+
+```bash mark:1,2-5
+.git/config                    #优先权最高，存在于Git本地仓库下的.git文件内
+Administrator/.gitconfig    #其次，存在于你PC当前用户下
+etc/gitconfig                 #优先权最低,存在Git安装软件的位置
+</code></pre><p><em>存在位置如图所示</em></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204121724.jpeg" alt="" title=".git/config"></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204121743.jpeg" alt="" title="Administrator/.gitconfig"></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204121723.jpeg" alt="" title="etc/gitconfig "></p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>技术杂谈</category>
+        <category>持续更新</category>
+      </categories>
   </entry>
   <entry>
     <title>fatal: Could not read from remote repository.</title>
@@ -3172,299 +3465,6 @@ private void saveFile(File file) &#123;
       </categories>
       <tags>
         <tag>Git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>javase基础</title>
-    <url>/f2edc254.html</url>
-    <content><![CDATA[<h2 id="访问控制"><a href="#访问控制" class="headerlink" title="访问控制"></a>访问控制</h2><div class="table-container">
-<table>
-<thead>
-<tr>
-<th></th>
-<th>private</th>
-<th>default</th>
-<th>protected</th>
-<th>public</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>同一类</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-</tr>
-<tr>
-<td>同一包的类</td>
-<td></td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-</tr>
-<tr>
-<td>子类</td>
-<td></td>
-<td></td>
-<td>yes</td>
-<td>yes</td>
-</tr>
-<tr>
-<td>其他包中的类</td>
-<td></td>
-<td></td>
-<td></td>
-<td>yes</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h2 id="可变长参数"><a href="#可变长参数" class="headerlink" title="可变长参数"></a>可变长参数</h2><pre><code class="lang-java">public static void text(String ... arr)&#123;&#125;
-</code></pre>
-<pre><code class="lang-java">// 一般把固定参数放在首位，不然在传参的时候，JVM识别不出来那个是其他
-public static void text(int a,String ... arr)&#123;&#125;
-</code></pre>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>编程语言</category>
-        <category>java</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>javase触发事件</title>
-    <url>/73480a46.html</url>
-    <content><![CDATA[<p>:::info</p>
-<p>创建界面我是用windowBuilder的</p>
-<p>:::</p>
-<h2 id="创建界面"><a href="#创建界面" class="headerlink" title="创建界面"></a>创建界面</h2><p>不懂怎么创建可以看文章末尾</p>
-<pre><code class="lang-java">import java.awt.EventQueue;
-import javax.swing.JFrame;
-
-public class Window_text &#123;
-
-    private JFrame frame;
-
-    /**
-     * Launch the application.
-     */
-    public static void main(String[] args) &#123;
-        EventQueue.invokeLater(new Runnable() &#123;
-            public void run() &#123;
-                try &#123;
-                    Window_text window = new Window_text();
-                    window.frame.setVisible(true);
-                &#125; catch (Exception e) &#123;
-                    e.printStackTrace();
-                &#125;
-            &#125;
-        &#125;);
-    &#125;
-
-    /**
-     * Create the application.
-     */
-    public Window_text() &#123;
-        initialize();
-    &#125;
-
-    /**
-     * Initialize the contents of the frame.
-     */
-    private void initialize() &#123;
-        frame = new JFrame();
-        frame.setBounds(100, 100, 450, 300);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    &#125;
-
-&#125;
-</code></pre>
-<p><img data-src="http://hikki.test.upcdn.net/202205230350.jpeg" alt=""></p>
-<h2 id="触发事件"><a href="#触发事件" class="headerlink" title="触发事件"></a>触发事件</h2><pre><code class="lang-java">import java.awt.EventQueue;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.JButton;
-import javax.swing.JLabel;
-import java.awt.Font;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
-public class Window_text &#123;
-
-    private JFrame frame;
-    //新建面板
-    public JPanel panel = new JPanel();
-
-    /**
-     * Launch the application.
-     */
-    public static void main(String[] args) &#123;
-        EventQueue.invokeLater(new Runnable() &#123;
-            public void run() &#123;
-                try &#123;
-                    Window_text window = new Window_text();
-                    window.frame.setVisible(true);
-                &#125; catch (Exception e) &#123;
-                    e.printStackTrace();
-                &#125;
-            &#125;
-        &#125;);
-    &#125;
-
-    /**
-     * Create the application.
-     */
-    public Window_text() &#123;
-        initialize();
-    &#125;
-
-
-    /**
-     * Initialize the contents of the frame.
-     */
-    private void initialize() &#123;
-        frame = new JFrame();
-        frame.setBounds(100, 100, 450, 300);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-        //以下全是新增代码
-        frame.getContentPane().setLayout(null);
-        panel.setBounds(0, 0, 103, 263);
-        frame.getContentPane().add(panel);
-        panel.setLayout(null);
-
-        JButton btnNewButton = new JButton(&quot;btn&quot;);
-        btnNewButton.setBounds(0, 95, 97, 23);
-        panel.add(btnNewButton);
-        // 绑定事件
-        btnNewButton.addActionListener(new B1());
-    &#125;
-
-    /**
-     * 点击按钮触发的事件
-     * @author Lilbai518
-     *
-     */
-    class B1 implements ActionListener&#123;
-
-        public void actionPerformed(ActionEvent e) &#123;
-            // TODO 自动生成的方法存根
-
-            JPanel right = new JPanel();
-            right.setBounds(104, 0, 332, 263);
-            frame.getContentPane().add(right);
-            right.setLayout(null);
-
-            JLabel right_label = new JLabel(&quot;成功啦&quot;);
-            right_label.setFont(new Font(&quot;楷体&quot;, Font.PLAIN, 28));
-            right_label.setBounds(91, 88, 193, 61);
-            right.add(right_label);
-            right_label.setLayout(null);
-        &#125;
-    &#125;    
-&#125;
-</code></pre>
-<p><img data-src="http://hikki.test.upcdn.net/202205230401.jpeg" alt=""></p>
-<h2 id="如何新建WindowBuilder"><a href="#如何新建WindowBuilder" class="headerlink" title="如何新建WindowBuilder"></a>如何新建<code>WindowBuilder</code></h2><p>如何你还没安装<code>WindowBuilder</code>的话，先去安装再来打开</p>
-<p><img data-src="http://hikki.test.upcdn.net/202205231146.jpeg" alt=""></p>
-<p><img data-src="http://hikki.test.upcdn.net/202205231157.jpeg" alt=""></p>
-<p><img data-src="http://hikki.test.upcdn.net/202205231208.jpeg" alt=""></p>
-<p><img data-src="http://hikki.test.upcdn.net/202205231212.jpeg" alt=""></p>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>编程语言</category>
-        <category>java</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-        <tag>javase</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>javase程序国际化</title>
-    <url>/b2cc2eb5.html</url>
-    <content><![CDATA[<p><code>java Locale类 mark:1-20</code></p>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>编程语言</category>
-        <category>java</category>
-      </categories>
-      <tags>
-        <tag>JAVA</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于idea的食用技巧</title>
-    <url>/d9153102.html</url>
-    <content><![CDATA[<pre><code class="lang-java">st
-</code></pre>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>编程语言</category>
-        <category>java</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>javase连接数据库报错Communications link failure</title>
-    <url>/dfaf38bb.html</url>
-    <content><![CDATA[<h2 id="DAO类"><a href="#DAO类" class="headerlink" title="DAO类"></a>DAO类</h2><p>```java mark:1-50<br>package Dao;<br>import javax.swing.<em>;<br>import java.sql.</em>;<br>public class DAO {<br>    private static final DAO dao = new DAO();<br>    static {<br>        try {<br>            Class.forName(“com.mysql.jdbc.Driver”);<br>        } catch (ClassNotFoundException e) {<br>            JOptionPane.showMessageDialog(null, “驱动加载失败”+ e.getMessage());<br>            e.printStackTrace();<br>        }<br>    }<br>    public static Connection getConn() {<br>        try {<br>            Connection conn = null;<br>            String url = “jdbc:mysql://localhost:3306/news?serverTimezone=UTC”;<br>            String username = “root”;<br>            String password = “root”;<br>            conn = DriverManager.getConnection(url, username, password);<br>            return conn;<br>        } catch (Exception e) {<br>            JOptionPane.showMessageDialog(null,”数据库连接失败!”+ e.getMessage());<br>            return null;<br>        }<br>    }</p>
-<pre><code>public static void main(String[] args) &#123;
-    System.out.println(getConn());
-&#125;
-</code></pre><p>}</p>
-<pre><code>
-## pom.xml配置
-
-```java mark:1-50
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot;
-         xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
-         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
-    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
-
-    &lt;groupId&gt;org.example&lt;/groupId&gt;
-    &lt;artifactId&gt;blog&lt;/artifactId&gt;
-    &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;
-
-    &lt;properties&gt;
-        &lt;maven.compiler.source&gt;18&lt;/maven.compiler.source&gt;
-        &lt;maven.compiler.target&gt;18&lt;/maven.compiler.target&gt;
-    &lt;/properties&gt;
-
-    &lt;dependencies&gt;
-        &lt;!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java --&gt;
-        &lt;dependency&gt;
-            &lt;groupId&gt;mysql&lt;/groupId&gt;
-            &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;
-            &lt;version&gt;8.0.29&lt;/version&gt;
-        &lt;/dependency&gt;
-
-    &lt;/dependencies&gt;
-
-&lt;/project&gt;
-</code></pre><p>报错内容</p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/202205265603.jpg" alt=""></p>
-<h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><p>我一开始启动的是<code>MySQL8.0.12</code>，然后试一下启动<code>MySQL5.7.26</code>突然可以了</p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/202205265540.jpeg" alt=""></p>
-<h2 id="可能还会报错内容"><a href="#可能还会报错内容" class="headerlink" title="可能还会报错内容"></a>可能还会报错内容</h2><p>在<code>url</code>加上<code>?serverTimezone=UTC</code>这一句，如下</p>
-<p><code>java mark:1-2
- String url = &quot;jdbc:mysql://localhost:3306/news?serverTimezone=UTC&quot;;</code></p>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>编程语言</category>
-        <category>java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-        <tag>JavaSE</tag>
       </tags>
   </entry>
   <entry>
@@ -3488,347 +3488,6 @@ public class Window_text &#123;
       </categories>
       <tags>
         <tag>Linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基础Vim修改文件</title>
-    <url>/9a6dde1d.html</url>
-    <content><![CDATA[<h2 id="基本的增删改查"><a href="#基本的增删改查" class="headerlink" title="基本的增删改查"></a>基本的增删改查</h2><h3 id="进入Vim模式"><a href="#进入Vim模式" class="headerlink" title="进入Vim模式"></a>进入Vim模式</h3><p>我现在要用<code>vim</code>编辑器打开<code>text.txt</code>这个文件</p>
-<p><code>bash 打开text.txt文件
-vi text.txt</code></p>
-<p>刚进入时</p>
-<p><img data-src="http://hikki.test.upcdn.net/202206114524.jpeg" alt=""></p>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>技术杂谈</category>
-        <category>服务器</category>
-      </categories>
-      <tags>
-        <tag>Vim</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux远程管理常用命令</title>
-    <url>/3fa3774.html</url>
-    <content><![CDATA[<h2 id="文件命令"><a href="#文件命令" class="headerlink" title="文件命令"></a>文件命令</h2><p>```bash mark:1,2-5<br>tree . #列出当前文件夹下的所有文件<br>tree /f #显示当前文件夹所有文件<br>tree /a #显示当前文件夹的所有文件夹</p>
-<pre><code>
-## 关机/重启
-
-| 序号 | 命令               | 对应英文 | 作用           |
-| ---- | ------------------ | -------- | -------------- |
-| 01   | shutdown 选项 时间 | shutdown | 关机／重新启动 |
-
-- `shutdown`命令可以**安全关闭**或者**重新启动**电脑
-
-| 选项 | 含义     |
-| ---- | -------- |
-| -r   | 重新启动 |
-
-:::info
-
-* **不指定选项和参数**，默认表示 **1 分钟**之后 **关闭电脑**
-* 远程维护服务器时，最好不要关闭系统，而应该重新启动系统
-
-:::
-
-```bash
-# 重新启动操作系统，其中 now 表示现在
-$ shutdown -r now
-
-# 立刻关机，其中 now 表示现在
-$ shutdown now
-
-# 系统在今天的 20:25 会关机
-$ shutdown 20:25
-
-# 系统再过十分钟后自动关机
-$ shutdown +10
-
-# 取消之前指定的关机计划
-$ shutdown -c
-</code></pre><h2 id="查看或配置网卡信息"><a href="#查看或配置网卡信息" class="headerlink" title="查看或配置网卡信息"></a>查看或配置网卡信息</h2><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>序号</th>
-<th>命令</th>
-<th>对应英文</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>01</td>
-<td>ifconfig</td>
-<td>configure a network interface</td>
-<td>查看/配置计算机当前的网卡配置信息</td>
-</tr>
-<tr>
-<td>02</td>
-<td>ping ip地址</td>
-<td>ping</td>
-<td>检测到目标 ip地址 的连接是否正常</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h3 id="网卡-和-IP-地址"><a href="#网卡-和-IP-地址" class="headerlink" title="网卡 和 IP 地址"></a>网卡 和 IP 地址</h3><h4 id="网卡"><a href="#网卡" class="headerlink" title="网卡"></a>网卡</h4><ul>
-<li>网卡是一个专门负责网络通讯的硬件设备</li>
-<li><strong>IP 地址</strong>是设置在网卡上的地址信息</li>
-</ul>
-<blockquote>
-<p>我们可以把 <strong>电脑</strong> 比作 <strong>电话</strong>，<strong>网卡</strong> 相当于 <strong>SIM 卡</strong>，<strong>IP 地址</strong> 相当于 <strong>电话号码</strong></p>
-</blockquote>
-<h4 id="IP-地址"><a href="#IP-地址" class="headerlink" title="IP 地址"></a>IP 地址</h4><ul>
-<li><strong>每台联网的电脑上</strong>都有 <strong>IP 地址</strong>，<strong>是保证电脑之间正常通讯的重要设置</strong></li>
-</ul>
-<blockquote>
-<p>注意：每台电脑的 IP 地址不能相同，否则会出现 IP 地址冲突，并且没有办法正常通讯</p>
-<p>提示：有关 <strong>IP 地址</strong>的详细内容，在就业班会详细讲解！</p>
-</blockquote>
-<h3 id="ifconfig"><a href="#ifconfig" class="headerlink" title="ifconfig"></a><code>ifconfig</code></h3><ul>
-<li><code>ifconfig</code> 可以查看／配置计算机当前的网卡配置信息</li>
-</ul>
-<pre><code class="lang-bash"># 查看网卡配置信息
-$ ifconfig
-
-# 查看网卡对应的 IP 地址
-$ ifconfig | grep inet
-</code></pre>
-<blockquote>
-<p>提示：一台计算机中有可能会有一个 <strong>物理网卡</strong> 和 <strong>多个虚拟网卡</strong>，在 Linux 中物理网卡的名字通常以 <code>ensXX</code> 表示</p>
-</blockquote>
-<ul>
-<li><code>127.0.0.1</code> 被称为 <strong>本地回环/环回地址</strong>，一般用来测试本机网卡是否正常</li>
-</ul>
-<h3 id="ping"><a href="#ping" class="headerlink" title="ping"></a><code>ping</code></h3><pre><code class="lang-bash"># 检测到目标主机是否连接正常
-$ ping IP地址
-
-# 检测本地网卡工作正常
-$ ping 127.0.0.1
-</code></pre>
-<ul>
-<li><code>ping</code> 一般用于检测当前计算机到目标计算机之间的网络 <strong>是否通畅</strong>，<strong>数值越大，速度越慢</strong></li>
-</ul>
-<blockquote>
-<ul>
-<li><code>ping</code> 的工作原理与潜水艇的声纳相似，<code>ping</code> 这个命令就是取自 <strong>声纳的声音</strong> </li>
-<li>网络管理员之间也常将 <code>ping</code> 用作动词 —— <strong>ping 一下计算机X，看他是否开着</strong></li>
-</ul>
-</blockquote>
-<p>原理：网络上的机器都有 <strong>唯一确定的 IP 地址</strong>，我们给<strong>目标 IP 地址</strong>发送一个数据包，对方就要返回一个数据包，根据返回的数据包以及时间，我们可以确定目标主机的存在</p>
-<blockquote>
-<p>提示：在 Linux 中，想要终止一个终端程序的执行，绝大多数都可以使用 <code>CTRL + C</code></p>
-</blockquote>
-<h2 id="远程登录和复制文件"><a href="#远程登录和复制文件" class="headerlink" title="远程登录和复制文件"></a>远程登录和复制文件</h2><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>序号</th>
-<th>命令</th>
-<th>对应英文</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>01</td>
-<td>ssh 用户名@ip</td>
-<td>secure shell</td>
-<td>关机／重新启动</td>
-</tr>
-<tr>
-<td>02</td>
-<td>scp 用户名@ip:文件名或路径 用户名@ip:文件名或路径</td>
-<td>secure copy</td>
-<td>远程复制文件</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h3 id="ssh-基础（重点）"><a href="#ssh-基础（重点）" class="headerlink" title="ssh 基础（重点）"></a><code>ssh</code> 基础（重点）</h3><p>在 Linux 中 SSH 是 <strong>非常常用</strong> 的工具，通过 <strong>SSH 客户端</strong> 我们可以连接到运行了 <strong>SSH 服务器</strong> 的远程机器上</p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022042433.png" alt=""></p>
-<ul>
-<li><strong>SSH 客户端</strong>是一种使用 <code>Secure Shell（SSH）</code> 协议连接到远程计算机的软件程序</li>
-<li><code>SSH</code> 是目前较可靠，<strong>专为远程登录会话和其他网络服务</strong> 提供安全性的协议<ul>
-<li>利用 <code>SSH 协议</code> 可以有效<strong>防止远程管理过程中的信息泄露</strong></li>
-<li>通过 <code>SSH 协议</code> 可以对所有传输的数据进行加密，也能够防止 DNS 欺骗和 IP 欺骗</li>
-</ul>
-</li>
-<li><code>SSH</code> 的另一项优点是传输的数据可以是经过压缩的，所以可以加快传输的速度</li>
-</ul>
-<h4 id="域名-和-端口号"><a href="#域名-和-端口号" class="headerlink" title="域名 和 端口号"></a>域名 和 端口号</h4><h5 id="域名"><a href="#域名" class="headerlink" title="域名"></a>域名</h5><ul>
-<li>由一串 <strong>用点分隔</strong> 的名字组成，例如：<code>www.itcast.cn</code></li>
-<li>是 <strong>IP 地址</strong> 的别名，方便用户记忆</li>
-</ul>
-<h5 id="端口号"><a href="#端口号" class="headerlink" title="端口号"></a>端口号</h5><ul>
-<li><strong>IP 地址</strong>：通过 <strong>IP 地址</strong> 找到网络上的 <strong>计算机</strong></li>
-<li><p><strong>端口号</strong>：通过 <strong>端口号</strong> 可以找到 <strong>计算机上运行的应用程序</strong></p>
-<ul>
-<li><strong>SSH 服务器</strong> 的默认端口号是 <code>22</code>，如果是默认端口号，在连接的时候，可以省略</li>
-</ul>
-</li>
-<li><p>常见服务端口号列表：</p>
-</li>
-</ul>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>序号</th>
-<th>服务</th>
-<th>端口号</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>01</td>
-<td>SSH 服务器</td>
-<td>22</td>
-</tr>
-<tr>
-<td>02</td>
-<td>Web 服务器</td>
-<td>80</td>
-</tr>
-<tr>
-<td>03</td>
-<td>HTTPS</td>
-<td>443</td>
-</tr>
-<tr>
-<td>04</td>
-<td>FTP 服务器</td>
-<td>21</td>
-</tr>
-</tbody>
-</table>
-</div>
-<blockquote>
-<p>提示：有关 <strong>端口号</strong>的详细内容，在就业班会详细讲解！</p>
-</blockquote>
-<h4 id="SSH-客户端的简单使用"><a href="#SSH-客户端的简单使用" class="headerlink" title="SSH 客户端的简单使用"></a>SSH 客户端的简单使用</h4><pre><code class="lang-bash">ssh [-p port] user@remote
-</code></pre>
-<ul>
-<li><code>user</code> 是在远程机器上的用户名，如果不指定的话默认为当前用户</li>
-<li><code>remote</code> 是远程机器的地址，可以是 <strong>IP</strong>／<strong>域名</strong>，或者是 <strong>后面会提到的别名</strong></li>
-<li><code>port</code> 是 <strong>SSH Server 监听的端口</strong>，如果不指定，就为默认值 <code>22</code></li>
-</ul>
-<blockquote>
-<p>提示：</p>
-<ul>
-<li>使用 <code>exit</code> 退出当前用户的登录</li>
-</ul>
-<p>注意：</p>
-<ul>
-<li><code>ssh</code> 这个终端命令只能在 <code>Linux</code> 或者 <code>UNIX</code> 系统下使用</li>
-<li>如果在 <code>Windows</code> 系统中，可以安装 <code>PuTTY</code> 或者 <code>XShell</code> 客户端软件即可</li>
-</ul>
-<p>提示：</p>
-<ul>
-<li>在工作中，SSH 服务器的端口号很有可能<strong>不是 22</strong>，如果遇到这种情况就需要使用 <code>-p</code> 选项，指定正确的端口号，否则无法正常连接到服务器</li>
-</ul>
-</blockquote>
-<h4 id="Windows-下-SSH-客户端的安装"><a href="#Windows-下-SSH-客户端的安装" class="headerlink" title="Windows 下 SSH 客户端的安装"></a>Windows 下 SSH 客户端的安装</h4><ul>
-<li><code>Putty</code> <span class="exturl" data-url="aHR0cDovL3d3dy5jaGlhcmsuZ3JlZW5lbmQub3JnLnVrL35zZ3RhdGhhbS9wdXR0eS9sYXRlc3QuaHRtbA==">http://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html</span></li>
-<li><code>XShell</code> <span class="exturl" data-url="aHR0cDovL3hzaGVsbGNuLmNvbQ==">http://xshellcn.com</span></li>
-</ul>
-<p>:::info</p>
-<p>建议从官方网站下载正式的安装程序</p>
-<p>:::</p>
-<h3 id="scp（掌握）"><a href="#scp（掌握）" class="headerlink" title="scp（掌握）"></a><code>scp</code>（掌握）</h3><ul>
-<li>scp 就是 <code>secure copy</code>，是一个在 Linux 下用来进行 <strong>远程拷贝文件</strong> 的命令</li>
-<li>它的<strong>地址格式与 ssh 基本相同</strong>，<strong>需要注意的是</strong>，在指定端口时用的是大写的 <code>-P</code> 而不是小写的</li>
-</ul>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022042437.png" alt=""></p>
-<pre><code class="lang-bash"># 把本地当前目录下的 01.py 文件 复制到 远程 家目录下的 Desktop/01.py
-# 注意：`:` 后面的路径如果不是绝对路径，则以用户的家目录作为参照路径
-scp -P port 01.py user@remote:Desktop/01.py
-
-# 把远程 家目录下的 Desktop/01.py 文件 复制到 本地当前目录下的 01.py
-scp -P port user@remote:Desktop/01.py 01.py
-
-# 加上 -r 选项可以传送文件夹
-# 把当前目录下的 demo 文件夹 复制到 远程 家目录下的 Desktop
-scp -r demo user@remote:Desktop
-
-# 把远程 家目录下的 Desktop 复制到 当前目录下的 demo 文件夹
-scp -r user@remote:Desktop demo
-</code></pre>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>选项</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>-r</td>
-<td>若给出的源文件是目录文件，则 scp 将递归复制该目录下的所有子目录和文件，目标文件必须为一个目录名</td>
-</tr>
-<tr>
-<td>-P</td>
-<td>若远程 SSH 服务器的端口不是 22，需要使用大写字母 -P 选项指定端口</td>
-</tr>
-</tbody>
-</table>
-</div>
-<blockquote>
-<p>注意：</p>
-<ul>
-<li><code>scp</code> 这个终端命令只能在 <code>Linux</code> 或者 <code>UNIX</code> 系统下使用</li>
-<li>如果在 <code>Windows</code> 系统中，可以安装 <code>PuTTY</code>，使用 <code>pscp</code> 命令行工具或者安装 <code>FileZilla</code> 使用 <code>FTP</code> 进行文件传输</li>
-</ul>
-</blockquote>
-<h4 id="FileZilla"><a href="#FileZilla" class="headerlink" title="FileZilla"></a><code>FileZilla</code></h4><ul>
-<li>官方网站：<span class="exturl" data-url="aHR0cHM6Ly93d3cuZmlsZXppbGxhLmNuL2Rvd25sb2FkL2NsaWVudA==">https://www.filezilla.cn/download/client</span></li>
-<li><code>FileZilla</code> 在传输文件时，使用的是 <code>FTP 服务</code> 而不是 <code>SSH 服务</code>，因此端口号应该设置为 <code>21</code></li>
-</ul>
-<h3 id="SSH-高级（知道）"><a href="#SSH-高级（知道）" class="headerlink" title="SSH 高级（知道）"></a>SSH 高级（知道）</h3><ul>
-<li>免密码登录</li>
-<li>配置别名</li>
-</ul>
-<blockquote>
-<p>提示：有关 SSH 配置信息都保存在用户家目录下的 <code>.ssh</code> 目录下</p>
-</blockquote>
-<h4 id="免密码登录"><a href="#免密码登录" class="headerlink" title="免密码登录"></a>免密码登录</h4><h5 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h5><ul>
-<li>配置公钥<ul>
-<li>执行 <code>ssh-keygen</code> 即可生成 SSH 钥匙，一路回车即可</li>
-</ul>
-</li>
-<li>上传公钥到服务器<ul>
-<li>执行 <code>ssh-copy-id -p port user@remote</code>，可以让远程服务器记住我们的公钥</li>
-</ul>
-</li>
-</ul>
-<h5 id="示意图"><a href="#示意图" class="headerlink" title="示意图"></a>示意图</h5><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022042441.png" alt=""></p>
-<blockquote>
-<p>非对称加密算法</p>
-<ul>
-<li>使用 <strong>公钥</strong> 加密的数据，需要使用 <strong>私钥</strong> 解密</li>
-<li>使用 <strong>私钥</strong> 加密的数据，需要使用 <strong>公钥</strong> 解密</li>
-</ul>
-</blockquote>
-<h4 id="配置别名"><a href="#配置别名" class="headerlink" title="配置别名"></a>配置别名</h4><p>每次都输入 <code>ssh -p port user@remote</code>，时间久了会觉得很麻烦，特别是当 <code>user</code>, <code>remote</code> 和 <code>port</code> 都得输入，而且还不好记忆</p>
-<p>而 <strong>配置别名</strong> 可以让我们进一步偷懒，譬如用：<code>ssh mac</code> 来替代上面这么一长串，那么就在 <code>~/.ssh/config</code> 里面追加以下内容：</p>
-<p><code>yaml mark:1-4
-Host mac
-    HostName ip地址
-    User itheima
-    Port 22</code></p>
-<p><strong>保存之后，即可用 <code>ssh mac</code> 实现远程登录了，<code>scp</code> 同样可以使用</strong></p>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>技术杂谈</category>
-        <category>持续更新</category>
-        <category>Linux常用命令系列</category>
-      </categories>
-      <tags>
-        <tag>技术杂谈</tag>
       </tags>
   </entry>
   <entry>
@@ -4881,6 +4540,42 @@ ftp&gt; exit
       </tags>
   </entry>
   <entry>
+    <title>基础Vim修改文件</title>
+    <url>/9a6dde1d.html</url>
+    <content><![CDATA[<h2 id="基本的增删改查"><a href="#基本的增删改查" class="headerlink" title="基本的增删改查"></a>基本的增删改查</h2><h3 id="进入Vim模式"><a href="#进入Vim模式" class="headerlink" title="进入Vim模式"></a>进入Vim模式</h3><p>我现在要用<code>vim</code>编辑器打开<code>text.txt</code>这个文件</p>
+<p><code>bash 打开text.txt文件
+vi text.txt</code></p>
+<p>刚进入时</p>
+<p><img data-src="http://hikki.test.upcdn.net/202206114524.jpeg" alt=""></p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>技术杂谈</category>
+        <category>服务器</category>
+      </categories>
+      <tags>
+        <tag>Vim</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>key</title>
+    <url>/8a90aba9.html</url>
+    <content><![CDATA[<h3 id="database-properties文件"><a href="#database-properties文件" class="headerlink" title="database.properties文件"></a><code>database.properties</code>文件</h3><pre><code class="lang-java">driver = com.mysql.jdbc.Driver
+url = jdbc:mysql://localhost:3306/yootk?useUnicode=true&amp;characterEncoding=utf-8
+username=root
+password=root
+</code></pre>
+<h3 id="报错内容"><a href="#报错内容" class="headerlink" title="报错内容"></a>报错内容</h3><pre><code class="lang-java">Caused by: java.util.MissingResourceException: Can&#39;t find resource for bundle java.util.PropertyResourceBundle, key host
+</code></pre>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>编程语言</category>
+        <category>java</category>
+        <category>bug</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Word调整目录编号和标题空隙</title>
     <url>/30d35056.html</url>
     <content><![CDATA[<p>我们在Word生成目录的时候经常会碰到，目录中的编号和标题空隙离得太远，或者是靠的太近，还有些页码奇奇怪怪的。今天刚好遇到了，就总结一下。</p>
@@ -4914,16 +4609,357 @@ ftp&gt; exit
       </tags>
   </entry>
   <entry>
-    <title>key</title>
-    <url>/8a90aba9.html</url>
-    <content><![CDATA[<h3 id="database-properties文件"><a href="#database-properties文件" class="headerlink" title="database.properties文件"></a><code>database.properties</code>文件</h3><pre><code class="lang-java">driver = com.mysql.jdbc.Driver
-url = jdbc:mysql://localhost:3306/yootk?useUnicode=true&amp;characterEncoding=utf-8
-username=root
-password=root
+    <title>Linux远程管理常用命令</title>
+    <url>/3fa3774.html</url>
+    <content><![CDATA[<h2 id="文件命令"><a href="#文件命令" class="headerlink" title="文件命令"></a>文件命令</h2><p>```bash mark:1,2-5<br>tree . #列出当前文件夹下的所有文件<br>tree /f #显示当前文件夹所有文件<br>tree /a #显示当前文件夹的所有文件夹</p>
+<pre><code>
+## 关机/重启
+
+| 序号 | 命令               | 对应英文 | 作用           |
+| ---- | ------------------ | -------- | -------------- |
+| 01   | shutdown 选项 时间 | shutdown | 关机／重新启动 |
+
+- `shutdown`命令可以**安全关闭**或者**重新启动**电脑
+
+| 选项 | 含义     |
+| ---- | -------- |
+| -r   | 重新启动 |
+
+:::info
+
+* **不指定选项和参数**，默认表示 **1 分钟**之后 **关闭电脑**
+* 远程维护服务器时，最好不要关闭系统，而应该重新启动系统
+
+:::
+
+```bash
+# 重新启动操作系统，其中 now 表示现在
+$ shutdown -r now
+
+# 立刻关机，其中 now 表示现在
+$ shutdown now
+
+# 系统在今天的 20:25 会关机
+$ shutdown 20:25
+
+# 系统再过十分钟后自动关机
+$ shutdown +10
+
+# 取消之前指定的关机计划
+$ shutdown -c
+</code></pre><h2 id="查看或配置网卡信息"><a href="#查看或配置网卡信息" class="headerlink" title="查看或配置网卡信息"></a>查看或配置网卡信息</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>命令</th>
+<th>对应英文</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>ifconfig</td>
+<td>configure a network interface</td>
+<td>查看/配置计算机当前的网卡配置信息</td>
+</tr>
+<tr>
+<td>02</td>
+<td>ping ip地址</td>
+<td>ping</td>
+<td>检测到目标 ip地址 的连接是否正常</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="网卡-和-IP-地址"><a href="#网卡-和-IP-地址" class="headerlink" title="网卡 和 IP 地址"></a>网卡 和 IP 地址</h3><h4 id="网卡"><a href="#网卡" class="headerlink" title="网卡"></a>网卡</h4><ul>
+<li>网卡是一个专门负责网络通讯的硬件设备</li>
+<li><strong>IP 地址</strong>是设置在网卡上的地址信息</li>
+</ul>
+<blockquote>
+<p>我们可以把 <strong>电脑</strong> 比作 <strong>电话</strong>，<strong>网卡</strong> 相当于 <strong>SIM 卡</strong>，<strong>IP 地址</strong> 相当于 <strong>电话号码</strong></p>
+</blockquote>
+<h4 id="IP-地址"><a href="#IP-地址" class="headerlink" title="IP 地址"></a>IP 地址</h4><ul>
+<li><strong>每台联网的电脑上</strong>都有 <strong>IP 地址</strong>，<strong>是保证电脑之间正常通讯的重要设置</strong></li>
+</ul>
+<blockquote>
+<p>注意：每台电脑的 IP 地址不能相同，否则会出现 IP 地址冲突，并且没有办法正常通讯</p>
+<p>提示：有关 <strong>IP 地址</strong>的详细内容，在就业班会详细讲解！</p>
+</blockquote>
+<h3 id="ifconfig"><a href="#ifconfig" class="headerlink" title="ifconfig"></a><code>ifconfig</code></h3><ul>
+<li><code>ifconfig</code> 可以查看／配置计算机当前的网卡配置信息</li>
+</ul>
+<pre><code class="lang-bash"># 查看网卡配置信息
+$ ifconfig
+
+# 查看网卡对应的 IP 地址
+$ ifconfig | grep inet
 </code></pre>
-<h3 id="报错内容"><a href="#报错内容" class="headerlink" title="报错内容"></a>报错内容</h3><pre><code class="lang-java">Caused by: java.util.MissingResourceException: Can&#39;t find resource for bundle java.util.PropertyResourceBundle, key host
+<blockquote>
+<p>提示：一台计算机中有可能会有一个 <strong>物理网卡</strong> 和 <strong>多个虚拟网卡</strong>，在 Linux 中物理网卡的名字通常以 <code>ensXX</code> 表示</p>
+</blockquote>
+<ul>
+<li><code>127.0.0.1</code> 被称为 <strong>本地回环/环回地址</strong>，一般用来测试本机网卡是否正常</li>
+</ul>
+<h3 id="ping"><a href="#ping" class="headerlink" title="ping"></a><code>ping</code></h3><pre><code class="lang-bash"># 检测到目标主机是否连接正常
+$ ping IP地址
+
+# 检测本地网卡工作正常
+$ ping 127.0.0.1
+</code></pre>
+<ul>
+<li><code>ping</code> 一般用于检测当前计算机到目标计算机之间的网络 <strong>是否通畅</strong>，<strong>数值越大，速度越慢</strong></li>
+</ul>
+<blockquote>
+<ul>
+<li><code>ping</code> 的工作原理与潜水艇的声纳相似，<code>ping</code> 这个命令就是取自 <strong>声纳的声音</strong> </li>
+<li>网络管理员之间也常将 <code>ping</code> 用作动词 —— <strong>ping 一下计算机X，看他是否开着</strong></li>
+</ul>
+</blockquote>
+<p>原理：网络上的机器都有 <strong>唯一确定的 IP 地址</strong>，我们给<strong>目标 IP 地址</strong>发送一个数据包，对方就要返回一个数据包，根据返回的数据包以及时间，我们可以确定目标主机的存在</p>
+<blockquote>
+<p>提示：在 Linux 中，想要终止一个终端程序的执行，绝大多数都可以使用 <code>CTRL + C</code></p>
+</blockquote>
+<h2 id="远程登录和复制文件"><a href="#远程登录和复制文件" class="headerlink" title="远程登录和复制文件"></a>远程登录和复制文件</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>命令</th>
+<th>对应英文</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>ssh 用户名@ip</td>
+<td>secure shell</td>
+<td>关机／重新启动</td>
+</tr>
+<tr>
+<td>02</td>
+<td>scp 用户名@ip:文件名或路径 用户名@ip:文件名或路径</td>
+<td>secure copy</td>
+<td>远程复制文件</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="ssh-基础（重点）"><a href="#ssh-基础（重点）" class="headerlink" title="ssh 基础（重点）"></a><code>ssh</code> 基础（重点）</h3><p>在 Linux 中 SSH 是 <strong>非常常用</strong> 的工具，通过 <strong>SSH 客户端</strong> 我们可以连接到运行了 <strong>SSH 服务器</strong> 的远程机器上</p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022042433.png" alt=""></p>
+<ul>
+<li><strong>SSH 客户端</strong>是一种使用 <code>Secure Shell（SSH）</code> 协议连接到远程计算机的软件程序</li>
+<li><code>SSH</code> 是目前较可靠，<strong>专为远程登录会话和其他网络服务</strong> 提供安全性的协议<ul>
+<li>利用 <code>SSH 协议</code> 可以有效<strong>防止远程管理过程中的信息泄露</strong></li>
+<li>通过 <code>SSH 协议</code> 可以对所有传输的数据进行加密，也能够防止 DNS 欺骗和 IP 欺骗</li>
+</ul>
+</li>
+<li><code>SSH</code> 的另一项优点是传输的数据可以是经过压缩的，所以可以加快传输的速度</li>
+</ul>
+<h4 id="域名-和-端口号"><a href="#域名-和-端口号" class="headerlink" title="域名 和 端口号"></a>域名 和 端口号</h4><h5 id="域名"><a href="#域名" class="headerlink" title="域名"></a>域名</h5><ul>
+<li>由一串 <strong>用点分隔</strong> 的名字组成，例如：<code>www.itcast.cn</code></li>
+<li>是 <strong>IP 地址</strong> 的别名，方便用户记忆</li>
+</ul>
+<h5 id="端口号"><a href="#端口号" class="headerlink" title="端口号"></a>端口号</h5><ul>
+<li><strong>IP 地址</strong>：通过 <strong>IP 地址</strong> 找到网络上的 <strong>计算机</strong></li>
+<li><p><strong>端口号</strong>：通过 <strong>端口号</strong> 可以找到 <strong>计算机上运行的应用程序</strong></p>
+<ul>
+<li><strong>SSH 服务器</strong> 的默认端口号是 <code>22</code>，如果是默认端口号，在连接的时候，可以省略</li>
+</ul>
+</li>
+<li><p>常见服务端口号列表：</p>
+</li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>服务</th>
+<th>端口号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>SSH 服务器</td>
+<td>22</td>
+</tr>
+<tr>
+<td>02</td>
+<td>Web 服务器</td>
+<td>80</td>
+</tr>
+<tr>
+<td>03</td>
+<td>HTTPS</td>
+<td>443</td>
+</tr>
+<tr>
+<td>04</td>
+<td>FTP 服务器</td>
+<td>21</td>
+</tr>
+</tbody>
+</table>
+</div>
+<blockquote>
+<p>提示：有关 <strong>端口号</strong>的详细内容，在就业班会详细讲解！</p>
+</blockquote>
+<h4 id="SSH-客户端的简单使用"><a href="#SSH-客户端的简单使用" class="headerlink" title="SSH 客户端的简单使用"></a>SSH 客户端的简单使用</h4><pre><code class="lang-bash">ssh [-p port] user@remote
+</code></pre>
+<ul>
+<li><code>user</code> 是在远程机器上的用户名，如果不指定的话默认为当前用户</li>
+<li><code>remote</code> 是远程机器的地址，可以是 <strong>IP</strong>／<strong>域名</strong>，或者是 <strong>后面会提到的别名</strong></li>
+<li><code>port</code> 是 <strong>SSH Server 监听的端口</strong>，如果不指定，就为默认值 <code>22</code></li>
+</ul>
+<blockquote>
+<p>提示：</p>
+<ul>
+<li>使用 <code>exit</code> 退出当前用户的登录</li>
+</ul>
+<p>注意：</p>
+<ul>
+<li><code>ssh</code> 这个终端命令只能在 <code>Linux</code> 或者 <code>UNIX</code> 系统下使用</li>
+<li>如果在 <code>Windows</code> 系统中，可以安装 <code>PuTTY</code> 或者 <code>XShell</code> 客户端软件即可</li>
+</ul>
+<p>提示：</p>
+<ul>
+<li>在工作中，SSH 服务器的端口号很有可能<strong>不是 22</strong>，如果遇到这种情况就需要使用 <code>-p</code> 选项，指定正确的端口号，否则无法正常连接到服务器</li>
+</ul>
+</blockquote>
+<h4 id="Windows-下-SSH-客户端的安装"><a href="#Windows-下-SSH-客户端的安装" class="headerlink" title="Windows 下 SSH 客户端的安装"></a>Windows 下 SSH 客户端的安装</h4><ul>
+<li><code>Putty</code> <span class="exturl" data-url="aHR0cDovL3d3dy5jaGlhcmsuZ3JlZW5lbmQub3JnLnVrL35zZ3RhdGhhbS9wdXR0eS9sYXRlc3QuaHRtbA==">http://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html</span></li>
+<li><code>XShell</code> <span class="exturl" data-url="aHR0cDovL3hzaGVsbGNuLmNvbQ==">http://xshellcn.com</span></li>
+</ul>
+<p>:::info</p>
+<p>建议从官方网站下载正式的安装程序</p>
+<p>:::</p>
+<h3 id="scp（掌握）"><a href="#scp（掌握）" class="headerlink" title="scp（掌握）"></a><code>scp</code>（掌握）</h3><ul>
+<li>scp 就是 <code>secure copy</code>，是一个在 Linux 下用来进行 <strong>远程拷贝文件</strong> 的命令</li>
+<li>它的<strong>地址格式与 ssh 基本相同</strong>，<strong>需要注意的是</strong>，在指定端口时用的是大写的 <code>-P</code> 而不是小写的</li>
+</ul>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022042437.png" alt=""></p>
+<pre><code class="lang-bash"># 把本地当前目录下的 01.py 文件 复制到 远程 家目录下的 Desktop/01.py
+# 注意：`:` 后面的路径如果不是绝对路径，则以用户的家目录作为参照路径
+scp -P port 01.py user@remote:Desktop/01.py
+
+# 把远程 家目录下的 Desktop/01.py 文件 复制到 本地当前目录下的 01.py
+scp -P port user@remote:Desktop/01.py 01.py
+
+# 加上 -r 选项可以传送文件夹
+# 把当前目录下的 demo 文件夹 复制到 远程 家目录下的 Desktop
+scp -r demo user@remote:Desktop
+
+# 把远程 家目录下的 Desktop 复制到 当前目录下的 demo 文件夹
+scp -r user@remote:Desktop demo
+</code></pre>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-r</td>
+<td>若给出的源文件是目录文件，则 scp 将递归复制该目录下的所有子目录和文件，目标文件必须为一个目录名</td>
+</tr>
+<tr>
+<td>-P</td>
+<td>若远程 SSH 服务器的端口不是 22，需要使用大写字母 -P 选项指定端口</td>
+</tr>
+</tbody>
+</table>
+</div>
+<blockquote>
+<p>注意：</p>
+<ul>
+<li><code>scp</code> 这个终端命令只能在 <code>Linux</code> 或者 <code>UNIX</code> 系统下使用</li>
+<li>如果在 <code>Windows</code> 系统中，可以安装 <code>PuTTY</code>，使用 <code>pscp</code> 命令行工具或者安装 <code>FileZilla</code> 使用 <code>FTP</code> 进行文件传输</li>
+</ul>
+</blockquote>
+<h4 id="FileZilla"><a href="#FileZilla" class="headerlink" title="FileZilla"></a><code>FileZilla</code></h4><ul>
+<li>官方网站：<span class="exturl" data-url="aHR0cHM6Ly93d3cuZmlsZXppbGxhLmNuL2Rvd25sb2FkL2NsaWVudA==">https://www.filezilla.cn/download/client</span></li>
+<li><code>FileZilla</code> 在传输文件时，使用的是 <code>FTP 服务</code> 而不是 <code>SSH 服务</code>，因此端口号应该设置为 <code>21</code></li>
+</ul>
+<h3 id="SSH-高级（知道）"><a href="#SSH-高级（知道）" class="headerlink" title="SSH 高级（知道）"></a>SSH 高级（知道）</h3><ul>
+<li>免密码登录</li>
+<li>配置别名</li>
+</ul>
+<blockquote>
+<p>提示：有关 SSH 配置信息都保存在用户家目录下的 <code>.ssh</code> 目录下</p>
+</blockquote>
+<h4 id="免密码登录"><a href="#免密码登录" class="headerlink" title="免密码登录"></a>免密码登录</h4><h5 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h5><ul>
+<li>配置公钥<ul>
+<li>执行 <code>ssh-keygen</code> 即可生成 SSH 钥匙，一路回车即可</li>
+</ul>
+</li>
+<li>上传公钥到服务器<ul>
+<li>执行 <code>ssh-copy-id -p port user@remote</code>，可以让远程服务器记住我们的公钥</li>
+</ul>
+</li>
+</ul>
+<h5 id="示意图"><a href="#示意图" class="headerlink" title="示意图"></a>示意图</h5><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022042441.png" alt=""></p>
+<blockquote>
+<p>非对称加密算法</p>
+<ul>
+<li>使用 <strong>公钥</strong> 加密的数据，需要使用 <strong>私钥</strong> 解密</li>
+<li>使用 <strong>私钥</strong> 加密的数据，需要使用 <strong>公钥</strong> 解密</li>
+</ul>
+</blockquote>
+<h4 id="配置别名"><a href="#配置别名" class="headerlink" title="配置别名"></a>配置别名</h4><p>每次都输入 <code>ssh -p port user@remote</code>，时间久了会觉得很麻烦，特别是当 <code>user</code>, <code>remote</code> 和 <code>port</code> 都得输入，而且还不好记忆</p>
+<p>而 <strong>配置别名</strong> 可以让我们进一步偷懒，譬如用：<code>ssh mac</code> 来替代上面这么一长串，那么就在 <code>~/.ssh/config</code> 里面追加以下内容：</p>
+<p><code>yaml mark:1-4
+Host mac
+    HostName ip地址
+    User itheima
+    Port 22</code></p>
+<p><strong>保存之后，即可用 <code>ssh mac</code> 实现远程登录了，<code>scp</code> 同样可以使用</strong></p>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>技术杂谈</category>
+        <category>持续更新</category>
+        <category>Linux常用命令系列</category>
+      </categories>
+      <tags>
+        <tag>技术杂谈</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>docker删除镜像</title>
+    <url>/dcc37883.html</url>
+    <content><![CDATA[<p>删除镜像四步法</p>
+<ol>
+<li>查看容器运行情况</li>
+<li>停止容器</li>
+<li>删除容器</li>
+<li>删除镜像</li>
+</ol>
+<h2 id="查看容器运行情况"><a href="#查看容器运行情况" class="headerlink" title="查看容器运行情况"></a>查看容器运行情况</h2><p>```bash 查看容器ID<br>docker ps </p>
+<pre><code>
+## 停止容器
+
+```bash
+docker stop 容器ID
+</code></pre><h2 id="删除容器"><a href="#删除容器" class="headerlink" title="删除容器"></a>删除容器</h2><pre><code class="lang-bash">docker ps -a # 查看容器ID，‘-a’表示查看全部容器
+docker rm 容器ID
+</code></pre>
+<h2 id="删除镜像"><a href="#删除镜像" class="headerlink" title="删除镜像"></a>删除镜像</h2><pre><code class="lang-bash">docker images # 表示查看所有镜像
+docker rmi 镜像ID
 </code></pre>
 ]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>技术杂谈</category>
+        <category>服务器</category>
+        <category>docker</category>
+      </categories>
   </entry>
   <entry>
     <title>Ubuntu安装Docker</title>
@@ -5307,36 +5343,6 @@ root@ecs-205380:~#
       <tags>
         <tag>服务器</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>docker删除镜像</title>
-    <url>/dcc37883.html</url>
-    <content><![CDATA[<p>删除镜像四步法</p>
-<ol>
-<li>查看容器运行情况</li>
-<li>停止容器</li>
-<li>删除容器</li>
-<li>删除镜像</li>
-</ol>
-<h2 id="查看容器运行情况"><a href="#查看容器运行情况" class="headerlink" title="查看容器运行情况"></a>查看容器运行情况</h2><p>```bash 查看容器ID<br>docker ps </p>
-<pre><code>
-## 停止容器
-
-```bash
-docker stop 容器ID
-</code></pre><h2 id="删除容器"><a href="#删除容器" class="headerlink" title="删除容器"></a>删除容器</h2><pre><code class="lang-bash">docker ps -a # 查看容器ID，‘-a’表示查看全部容器
-docker rm 容器ID
-</code></pre>
-<h2 id="删除镜像"><a href="#删除镜像" class="headerlink" title="删除镜像"></a>删除镜像</h2><pre><code class="lang-bash">docker images # 表示查看所有镜像
-docker rmi 镜像ID
-</code></pre>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>技术杂谈</category>
-        <category>服务器</category>
-        <category>docker</category>
-      </categories>
   </entry>
   <entry>
     <title>docker安装qBittorrent</title>
