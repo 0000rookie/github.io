@@ -122,12 +122,12 @@ docker安装qBittorrent - docker - 服务器 - 技术杂谈 - 计算机科学 |
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipevo9j1jj20zk0m8e81.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicmnywqgpj20zk0m8dwx.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclh0m9pdj20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicm0fdw5cj20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipesng5oej20zk0m87d4.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipetfk5zwj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giph4wqtg4j20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giph4fomxoj20zk0m8axp.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giph47e9vtj20zk0m8x6l.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicm0n457cj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicis3attqj20zk0m8k7l.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicitcxhpij20zk0m8hdt.jpg"></li>
         </ul>
       </div>
     </header>
@@ -182,67 +182,36 @@ docker安装qBittorrent - docker - 服务器 - 技术杂谈 - 计算机科学 |
   <div class="body md" itemprop="articleBody">
     
 
-    <h2 id="拉取qBittorrent镜像"><a href="#拉取qBittorrent镜像" class="headerlink" title="拉取qBittorrent镜像"></a>拉取qBittorrent镜像</h2><pre><code class="lang-bash">docker pull linuxserver/qbittorrent
-</code></pre>
-<p><img data-src="http://hikki.test.upcdn.net/202206125600.jpeg" alt=""></p>
-<h2 id="创建目录并编写docker-compose文件"><a href="#创建目录并编写docker-compose文件" class="headerlink" title="创建目录并编写docker-compose文件"></a>创建目录并编写docker-compose文件</h2><pre><code class="lang-bash">cd ~
-mkdir qBittorrent #创建qbitorrent数据文件夹
-cd qBittorrent
-mkdir config downloads #创建配置文件目录与下载目录
-vim docker-compose.yml #创建并编辑文件
-</code></pre>
-<p><img data-src="http://hikki.test.upcdn.net/202206125943.jpg" alt=""></p>
-<p>进入vim编辑器后，把这个粘贴进去(Ctrl+Insert)</p>
-<pre><code class="lang-bash">version: &quot;2&quot;
-services:
-  qbittorrent:
-    image: linuxserver/qbittorrent
-    container_name: qbittorrent
-    environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Asia/Shanghai # 你的时区
-      - UMASK_SET=022
-      - WEBUI_PORT=8081 # 将此处修改成你欲使用的 WEB 管理平台端口 
-    volumes:
-      - /home/qb/config:/config # 绝对路径请修改为自己的config文件夹
-      - /home/d:/downloads # 绝对路径请修改为自己的downloads文件夹
-    ports:
-      # 要使用的映射下载端口与内部下载端口，可保持默认，安装完成后在管理页面仍然可以改成其他端口。
-      - 6881:6881 
-      - 6881:6881/udp
-      # 此处WEB UI 目标端口与内部端口务必保证相同，见问题1
-      - 8081:8081
-    restart: unless-stopped
-</code></pre>
-<h2 id="执行docker-compose"><a href="#执行docker-compose" class="headerlink" title="执行docker-compose"></a>执行docker-compose</h2><p>如果还没安装docker-compose，请先安装<code>apt install docker-compose</code></p>
-<pre><code class="lang-bash">docker-compose up -d
-</code></pre>
-<p><img data-src="http://hikki.test.upcdn.net/202206125620.jpg" alt=""></p>
-<h2 id="开放防火墙端口8081"><a href="#开放防火墙端口8081" class="headerlink" title="开放防火墙端口8081"></a>开放防火墙端口8081</h2><p>如果你是云服务器可能还要去云服务器安全组开放端口，我这里的防火墙是用<code>ufw</code></p>
-<pre><code class="lang-bash">ufw allow 8081
-</code></pre>
-<p><img data-src="http://hikki.test.upcdn.net/202206125832.jpg" alt=""></p>
-<h2 id="登录qBittorrent并设置中文"><a href="#登录qBittorrent并设置中文" class="headerlink" title="登录qBittorrent并设置中文"></a>登录qBittorrent并设置中文</h2><pre><code class="lang-bash"># 开放端口后，访问 你的ip:8081 即可进入管理页面。
-# 默认用户名:admin
-# 默认密码：adminadmin
-</code></pre>
-<p>语言默认是英文，修改成中文</p>
+    <h2 id="拉取qbittorrent镜像"><a class="markdownIt-Anchor" href="#拉取qbittorrent镜像">#</a> 拉取 qBittorrent 镜像</h2>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token function">docker</span> pull linuxserver/qbittorrent</pre></td></tr></table></figure><p><img data-src="http://hikki.test.upcdn.net/202206125600.jpeg" alt=""></p>
+<h2 id="创建目录并编写docker-compose文件"><a class="markdownIt-Anchor" href="#创建目录并编写docker-compose文件">#</a> 创建目录并编写 docker-compose 文件</h2>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token builtin class-name">cd</span> ~</pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token function">mkdir</span> qBittorrent <span class="token comment">#创建 qbitorrent 数据文件夹</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token builtin class-name">cd</span> qBittorrent</pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token function">mkdir</span> config downloads <span class="token comment">#创建配置文件目录与下载目录</span></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token function">vim</span> docker-compose.yml <span class="token comment">#创建并编辑文件</span></pre></td></tr></table></figure><p><img data-src="http://hikki.test.upcdn.net/202206125943.jpg" alt=""></p>
+<p>进入 vim 编辑器后，把这个粘贴进去 (Ctrl+Insert)</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>version: <span class="token string">"2"</span></pre></td></tr><tr><td data-num="2"></td><td><pre>services:</pre></td></tr><tr><td data-num="3"></td><td><pre>  qbittorrent:</pre></td></tr><tr><td data-num="4"></td><td><pre>    image: linuxserver/qbittorrent</pre></td></tr><tr><td data-num="5"></td><td><pre>    container_name: qbittorrent</pre></td></tr><tr><td data-num="6"></td><td><pre>    environment:</pre></td></tr><tr><td data-num="7"></td><td><pre>      - <span class="token assign-left variable">PUID</span><span class="token operator">=</span><span class="token number">1000</span></pre></td></tr><tr><td data-num="8"></td><td><pre>      - <span class="token assign-left variable">PGID</span><span class="token operator">=</span><span class="token number">1000</span></pre></td></tr><tr><td data-num="9"></td><td><pre>      - <span class="token assign-left variable">TZ</span><span class="token operator">=</span>Asia/Shanghai <span class="token comment"># 你的时区</span></pre></td></tr><tr><td data-num="10"></td><td><pre>      - <span class="token assign-left variable">UMASK_SET</span><span class="token operator">=</span>022</pre></td></tr><tr><td data-num="11"></td><td><pre>      - <span class="token assign-left variable">WEBUI_PORT</span><span class="token operator">=</span><span class="token number">8081</span> <span class="token comment"># 将此处修改成你欲使用的 WEB 管理平台端口 </span></pre></td></tr><tr><td data-num="12"></td><td><pre>    volumes:</pre></td></tr><tr><td data-num="13"></td><td><pre>      - /home/qb/config:/config <span class="token comment"># 绝对路径请修改为自己的 config 文件夹</span></pre></td></tr><tr><td data-num="14"></td><td><pre>      - /home/d:/downloads <span class="token comment"># 绝对路径请修改为自己的 downloads 文件夹</span></pre></td></tr><tr><td data-num="15"></td><td><pre>    ports:</pre></td></tr><tr><td data-num="16"></td><td><pre>      <span class="token comment"># 要使用的映射下载端口与内部下载端口，可保持默认，安装完成后在管理页面仍然可以改成其他端口。</span></pre></td></tr><tr><td data-num="17"></td><td><pre>      - <span class="token number">6881</span>:6881 </pre></td></tr><tr><td data-num="18"></td><td><pre>      - <span class="token number">6881</span>:6881/udp</pre></td></tr><tr><td data-num="19"></td><td><pre>      <span class="token comment"># 此处 WEB UI 目标端口与内部端口务必保证相同，见问题 1</span></pre></td></tr><tr><td data-num="20"></td><td><pre>      - <span class="token number">8081</span>:8081</pre></td></tr><tr><td data-num="21"></td><td><pre>    restart: unless-stopped</pre></td></tr></table></figure><h2 id="执行docker-compose"><a class="markdownIt-Anchor" href="#执行docker-compose">#</a> 执行 docker-compose</h2>
+<p>如果还没安装 docker-compose，请先安装 <code>apt install docker-compose</code></p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token function">docker-compose</span> up -d</pre></td></tr></table></figure><p><img data-src="http://hikki.test.upcdn.net/202206125620.jpg" alt=""></p>
+<h2 id="开放防火墙端口8081"><a class="markdownIt-Anchor" href="#开放防火墙端口8081">#</a> 开放防火墙端口 8081</h2>
+<p>如果你是云服务器可能还要去云服务器安全组开放端口，我这里的防火墙是用 <code>ufw</code></p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>ufw allow <span class="token number">8081</span></pre></td></tr></table></figure><p><img data-src="http://hikki.test.upcdn.net/202206125832.jpg" alt=""></p>
+<h2 id="登录qbittorrent并设置中文"><a class="markdownIt-Anchor" href="#登录qbittorrent并设置中文">#</a> 登录 qBittorrent 并设置中文</h2>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment"># 开放端口后，访问 你的 ip:8081 即可进入管理页面。</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token comment"># 默认用户名:admin</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token comment"># 默认密码：adminadmin</span></pre></td></tr></table></figure><p>语言默认是英文，修改成中文</p>
 <p><img data-src="http://hikki.test.upcdn.net/202206120640.jpeg" alt=""></p>
 <p><img data-src="http://hikki.test.upcdn.net/202206120939.jpeg" alt=""></p>
-<p>修改完记得滑下去点击<code>save</code>(保存)</p>
+<p>修改完记得滑下去点击 <code>save</code>  (保存)</p>
 <p><img data-src="http://hikki.test.upcdn.net/202206120945.jpeg" alt=""></p>
-<p>:::success</p>
+<div class="note success">
 <p>这样就设置成功啦！！！！！！！</p>
-<p>:::</p>
-<h2 id="可能出现错误"><a href="#可能出现错误" class="headerlink" title="可能出现错误"></a>可能出现错误</h2><h3 id="docker-compose-yml文件的路径没填正确"><a href="#docker-compose-yml文件的路径没填正确" class="headerlink" title="docker-compose.yml文件的路径没填正确"></a>docker-compose.yml文件的路径没填正确</h3><p><img data-src="http://hikki.test.upcdn.net/202206125649.jpg" alt=""></p>
-<h3 id="未安装docker-compose"><a href="#未安装docker-compose" class="headerlink" title="未安装docker-compose"></a>未安装docker-compose</h3><p>安装<code>docker-compose</code>就可以了</p>
-<pre><code class="lang-bash">apt install docker-compose
-</code></pre>
-<p><img data-src="http://hikki.test.upcdn.net/202206125735.jpg" alt=""></p>
-<h2 id="下载没反应—-gt-修改监听端口"><a href="#下载没反应—-gt-修改监听端口" class="headerlink" title="下载没反应—&gt;修改监听端口"></a>下载没反应—&gt;修改监听端口</h2><p>有些PT站是屏蔽某些端口的，像我用的PT站是默认屏蔽<code>6881</code>端口的，修改一下就可以了</p>
+</div>
+<h2 id="可能出现错误"><a class="markdownIt-Anchor" href="#可能出现错误">#</a> 可能出现错误</h2>
+<h3 id="docker-composeyml文件的路径没填正确"><a class="markdownIt-Anchor" href="#docker-composeyml文件的路径没填正确">#</a> docker-compose.yml 文件的路径没填正确</h3>
+<p><img data-src="http://hikki.test.upcdn.net/202206125649.jpg" alt=""></p>
+<h3 id="未安装docker-compose"><a class="markdownIt-Anchor" href="#未安装docker-compose">#</a> 未安装 docker-compose</h3>
+<p>安装 <code>docker-compose</code>  就可以了</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token function">apt</span> <span class="token function">install</span> <span class="token function">docker-compose</span></pre></td></tr></table></figure><p><img data-src="http://hikki.test.upcdn.net/202206125735.jpg" alt=""></p>
+<h2 id="下载没反应修改监听端口"><a class="markdownIt-Anchor" href="#下载没反应修改监听端口">#</a> 下载没反应–&gt; 修改监听端口</h2>
+<p>有些 PT 站是屏蔽某些端口的，像我用的 PT 站是默认屏蔽 <code>6881</code>  端口的，修改一下就可以了</p>
 <p><img data-src="http://hikki.test.upcdn.net/202206121259.jpeg" alt=""></p>
-<p>修改端口在PT站的开放范围内就好了，可能有些云服务器也会限制某些端口，也要在服务器的允许端口范围内</p>
+<p>修改端口在 PT 站的开放范围内就好了，可能有些云服务器也会限制某些端口，也要在服务器的允许端口范围内</p>
 <p><img data-src="http://hikki.test.upcdn.net/202206121034.jpeg" alt=""></p>
 
   </div>
@@ -316,7 +285,7 @@ services:
     <div class="item left">
       
 
-  <a href="/3050703f.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicitcxhpij20zk0m8hdt.jpg" title="python批量修改文件名">
+  <a href="/3050703f.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicitf0kl1j20zk0m87fe.jpg" title="python批量修改文件名">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> python</span>
   <h3>python批量修改文件名</h3>
@@ -326,7 +295,7 @@ services:
     <div class="item right">
       
 
-  <a href="/8a90aba9.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipesx5fdwj20zk0m81kx.jpg" title="key">
+  <a href="/8a90aba9.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicm07ih54j20zk0m84qp.jpg" title="key">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> bug</span>
   <h3>key</h3>
@@ -348,7 +317,7 @@ services:
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8B%89%E5%8F%96qBittorrent%E9%95%9C%E5%83%8F"><span class="toc-number">1.</span> <span class="toc-text">拉取qBittorrent镜像</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E7%9B%AE%E5%BD%95%E5%B9%B6%E7%BC%96%E5%86%99docker-compose%E6%96%87%E4%BB%B6"><span class="toc-number">2.</span> <span class="toc-text">创建目录并编写docker-compose文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%89%A7%E8%A1%8Cdocker-compose"><span class="toc-number">3.</span> <span class="toc-text">执行docker-compose</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%80%E6%94%BE%E9%98%B2%E7%81%AB%E5%A2%99%E7%AB%AF%E5%8F%A38081"><span class="toc-number">4.</span> <span class="toc-text">开放防火墙端口8081</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%99%BB%E5%BD%95qBittorrent%E5%B9%B6%E8%AE%BE%E7%BD%AE%E4%B8%AD%E6%96%87"><span class="toc-number">5.</span> <span class="toc-text">登录qBittorrent并设置中文</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%AF%E8%83%BD%E5%87%BA%E7%8E%B0%E9%94%99%E8%AF%AF"><span class="toc-number">6.</span> <span class="toc-text">可能出现错误</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#docker-compose-yml%E6%96%87%E4%BB%B6%E7%9A%84%E8%B7%AF%E5%BE%84%E6%B2%A1%E5%A1%AB%E6%AD%A3%E7%A1%AE"><span class="toc-number">6.1.</span> <span class="toc-text">docker-compose.yml文件的路径没填正确</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%AA%E5%AE%89%E8%A3%85docker-compose"><span class="toc-number">6.2.</span> <span class="toc-text">未安装docker-compose</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD%E6%B2%A1%E5%8F%8D%E5%BA%94%E2%80%94-gt-%E4%BF%AE%E6%94%B9%E7%9B%91%E5%90%AC%E7%AB%AF%E5%8F%A3"><span class="toc-number">7.</span> <span class="toc-text">下载没反应—&gt;修改监听端口</span></a></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8B%89%E5%8F%96qbittorrent%E9%95%9C%E5%83%8F"><span class="toc-number">1.</span> <span class="toc-text"> 拉取 qBittorrent 镜像</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E7%9B%AE%E5%BD%95%E5%B9%B6%E7%BC%96%E5%86%99docker-compose%E6%96%87%E4%BB%B6"><span class="toc-number">2.</span> <span class="toc-text"> 创建目录并编写 docker-compose 文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%89%A7%E8%A1%8Cdocker-compose"><span class="toc-number">3.</span> <span class="toc-text"> 执行 docker-compose</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%80%E6%94%BE%E9%98%B2%E7%81%AB%E5%A2%99%E7%AB%AF%E5%8F%A38081"><span class="toc-number">4.</span> <span class="toc-text"> 开放防火墙端口 8081</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%99%BB%E5%BD%95qbittorrent%E5%B9%B6%E8%AE%BE%E7%BD%AE%E4%B8%AD%E6%96%87"><span class="toc-number">5.</span> <span class="toc-text"> 登录 qBittorrent 并设置中文</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%AF%E8%83%BD%E5%87%BA%E7%8E%B0%E9%94%99%E8%AF%AF"><span class="toc-number">6.</span> <span class="toc-text"> 可能出现错误</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#docker-composeyml%E6%96%87%E4%BB%B6%E7%9A%84%E8%B7%AF%E5%BE%84%E6%B2%A1%E5%A1%AB%E6%AD%A3%E7%A1%AE"><span class="toc-number">6.1.</span> <span class="toc-text"> docker-compose.yml 文件的路径没填正确</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%AA%E5%AE%89%E8%A3%85docker-compose"><span class="toc-number">6.2.</span> <span class="toc-text"> 未安装 docker-compose</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD%E6%B2%A1%E5%8F%8D%E5%BA%94%E4%BF%AE%E6%94%B9%E7%9B%91%E5%90%AC%E7%AB%AF%E5%8F%A3"><span class="toc-number">7.</span> <span class="toc-text"> 下载没反应–&gt; 修改监听端口</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
@@ -366,7 +335,7 @@ services:
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">74</span>
+        <span class="count">75</span>
         <span class="name">文章</span>
       </a>
     </div>
@@ -494,24 +463,14 @@ services:
 <div class="breadcrumb">
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/" title="分类于 持续更新">持续更新</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E7%B3%BB%E5%88%97/" title="分类于 Linux常用命令系列">Linux常用命令系列</a>
 </div>
 
-    <span><a href="/b75a1db6.html" title="第三篇：Git提交文件---从0基础搭建Hexo博客">第三篇：Git提交文件---从0基础搭建Hexo博客</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E7%94%9F%E6%B4%BB/" title="分类于 生活">生活</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E7%94%9F%E6%B4%BB/%E6%97%A5%E8%AE%B0/" title="分类于 日记">日记</a>
-</div>
-
-    <span><a href="/ef5acbc6.html" title="4.9日记分享">4.9日记分享</a></span>
+    <span><a href="/3fa3774.html" title="Linux远程管理常用命令">Linux远程管理常用命令</a></span>
   </li>
 
       
@@ -520,12 +479,10 @@ services:
 <div class="breadcrumb">
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
 </div>
 
-    <span><a href="/a5eefddc.html" title="第九篇：安装主题---从0基础搭建Hexo博客">第九篇：安装主题---从0基础搭建Hexo博客</a></span>
+    <span><a href="/111f4f09.html" title="CentOS新增root用户">CentOS新增root用户</a></span>
   </li>
 
       
@@ -536,10 +493,10 @@ services:
 <i class="ic i-angle-right"></i>
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/" title="分类于 java">java</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
 </div>
 
-    <span><a href="/fb13f705.html" title="JAVA记事本基础">JAVA记事本基础</a></span>
+    <span><a href="/1edcfdea.html" title="python-math库">python-math库</a></span>
   </li>
 
       
@@ -548,12 +505,40 @@ services:
 <div class="breadcrumb">
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%90%84%E7%A7%8Dbug/" title="分类于 各种bug">各种bug</a>
 </div>
 
-    <span><a href="/6c2393ec.html" title="第七篇：购买域名---从0基础搭建Hexo博客">第七篇：购买域名---从0基础搭建Hexo博客</a></span>
+    <span><a href="/6ee1ace5.html" title="hexo端口4000被占用">hexo端口4000被占用</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E6%9C%8D%E5%8A%A1%E5%99%A8/" title="分类于 服务器">服务器</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E6%9C%8D%E5%8A%A1%E5%99%A8/docker/" title="分类于 docker">docker</a>
+</div>
+
+    <span><a href="/dcc37883.html" title="docker删除镜像">docker删除镜像</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
+</div>
+
+    <span><a href="/3050703f.html" title="python批量修改文件名">python批量修改文件名</a></span>
   </li>
 
       
@@ -574,12 +559,12 @@ services:
 <div class="breadcrumb">
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/" title="分类于 博客的食用方法">博客的食用方法</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
 </div>
 
-    <span><a href="/b26ff49b.html" title="如何在hexo博客写作">如何在hexo博客写作</a></span>
+    <span><a href="/b9893092.html" title="python Qt5实现记事本基本功能">python Qt5实现记事本基本功能</a></span>
   </li>
 
       
@@ -593,19 +578,7 @@ services:
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
 </div>
 
-    <span><a href="/b332b009.html" title="python爬虫-千千音乐">python爬虫-千千音乐</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
-</div>
-
-    <span><a href="/8d43d157.html" title="如何远程虚拟机">如何远程虚拟机</a></span>
+    <span><a href="/4f9c6caa.html" title="python爬虫乱码问题">python爬虫乱码问题</a></span>
   </li>
 
       
@@ -616,10 +589,10 @@ services:
 <i class="ic i-angle-right"></i>
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/" title="分类于 博客的食用方法">博客的食用方法</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E6%A8%A1%E5%9D%97/" title="分类于 模块">模块</a>
 </div>
 
-    <span><a href="/6f010433.html" title="jsdelivr刷新缓存">jsdelivr刷新缓存</a></span>
+    <span><a href="/c5de56d5.html" title="Hexo怎么安装插件">Hexo怎么安装插件</a></span>
   </li>
 
   </ul>
@@ -644,13 +617,13 @@ services:
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="站点总字数">115k 字</span>
+    <span title="站点总字数">108k 字</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="站点阅读时长">2:37</span>
+    <span title="站点阅读时长">2:27</span>
   </div>
   <div class="powered-by">
     基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>

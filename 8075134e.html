@@ -83,7 +83,7 @@ numpy画复合函数 - python - 编程语言 - 计算机科学 |
       <i class="ic i-pen"></i>
     </span>
     <span class="text">本文字数</span>
-    <span>745</span>
+    <span>520</span>
     <span class="text">字</span>
   </span>
   <span class="item" title="阅读时长">
@@ -124,12 +124,12 @@ numpy画复合函数 - python - 编程语言 - 计算机科学 |
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giph47e9vtj20zk0m8x6l.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclwrdwyaj20zk0m8are.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclfb3vzhj20zk0m8wny.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclx6phq6j20zk0m8e36.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeudstjqj20zk0m8k3r.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giph4fomxoj20zk0m8axp.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipet8c1a2j20zk0m8kct.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclga70tsj20zk0m84mr.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipetlbztpj20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclil3m4ej20zk0m8tn8.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipex2cdtbj20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclip4jbpj20zk0m87cv.jpg"></li>
         </ul>
       </div>
     </header>
@@ -181,29 +181,11 @@ numpy画复合函数 - python - 编程语言 - 计算机科学 |
   <div class="body md" itemprop="articleBody">
     
 
-    <h2 id="函数-1-red"><a href="#函数-1-red" class="headerlink" title="函数~1~{.red}"></a>函数~1~{.red}</h2><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022051002.png" alt="">{width=”10%” height=”10%”}</p>
-<p>```python mark:1-10<br>import numpy as np<br>import matplotlib.pyplot as plt</p>
-<p>x = np.arange(-5,5,0.01)    # 设置X的值<br>y = 1/(1+np.exp(-x))         # 设置Y的值，一个Y都有一个X与他对应<br>plt.xlim(-6,6)         #　设置Ｘ轴的范围<br>plt.ylim(0.0,1.0)         # 设置Y轴的范围<br>plt.plot(x,y)             # 将X、Y的值添加到面板中<br>plt.show()             # 显示面板</p>
-<pre><code>
-## 函数~2~&#123;.red&#125;
-
-![](https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022051939.png)&#123;width=&quot;20%&quot; height=&quot;20%&quot;&#125;
-
-```python mark:1-15
-import numpy as np
-import matplotlib.pyplot as plt
-
-def func(x):
-    return np.cos(2*np.pi*x)*np.exp(-x)+1
-left_x = int(input(&quot;请输入下限值：&quot;))
-right_x = int(input(&quot;请输入上限值：&quot;))
-x = np.arange(left_x,right_x,0.01) # 设置X的值
-y = func(x)             # 设置Y的值，一个Y都有一个X与他对应
-plt.xlim(left_x,right_x)     # 设置X轴的范围
-plt.ylim(-15000,25000)             # 设置Y轴的范围
-plt.plot(x,y)             # 将X、Y的值添加到面板中
-plt.show()            # 显示面板
-</code></pre>
+    <h2 id="函数1"><a class="markdownIt-Anchor" href="#函数1">#</a> 函数<sub class="red"> 1</sub></h2>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022051002.png" alt="" width="10%" height="10%"></p>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np</pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt</pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre>x <span class="token operator">=</span> np<span class="token punctuation">.</span>arange<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">0.01</span><span class="token punctuation">)</span>	<span class="token comment"># 设置 X 的值</span></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre>y <span class="token operator">=</span> <span class="token number">1</span><span class="token operator">/</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token operator">+</span>np<span class="token punctuation">.</span>exp<span class="token punctuation">(</span><span class="token operator">-</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span> 		<span class="token comment"># 设置 Y 的值，一个 Y 都有一个 X 与他对应</span></pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre>plt<span class="token punctuation">.</span>xlim<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">)</span> 		<span class="token comment">#　设置Ｘ轴的范围</span></pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre>plt<span class="token punctuation">.</span>ylim<span class="token punctuation">(</span><span class="token number">0.0</span><span class="token punctuation">,</span><span class="token number">1.0</span><span class="token punctuation">)</span> 		<span class="token comment"># 设置 Y 轴的范围</span></pre></td></tr><tr class="marked"><td data-num="8"></td><td><pre>plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>x<span class="token punctuation">,</span>y<span class="token punctuation">)</span> 			<span class="token comment"># 将 X、Y 的值添加到面板中</span></pre></td></tr><tr class="marked"><td data-num="9"></td><td><pre>plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span> 			<span class="token comment"># 显示面板</span></pre></td></tr></table></figure><h2 id="函数2"><a class="markdownIt-Anchor" href="#函数2">#</a> 函数<sub class="red"> 2</sub></h2>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022051939.png" alt="" width="20%" height="20%"></p>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np</pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt</pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre><span class="token keyword">def</span> <span class="token function">func</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre>    <span class="token keyword">return</span> np<span class="token punctuation">.</span>cos<span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">*</span>np<span class="token punctuation">.</span>pi<span class="token operator">*</span>x<span class="token punctuation">)</span><span class="token operator">*</span>np<span class="token punctuation">.</span>exp<span class="token punctuation">(</span><span class="token operator">-</span>x<span class="token punctuation">)</span><span class="token operator">+</span><span class="token number">1</span></pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre>left_x <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"请输入下限值："</span><span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre>right_x <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">"请输入上限值："</span><span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="8"></td><td><pre>x <span class="token operator">=</span> np<span class="token punctuation">.</span>arange<span class="token punctuation">(</span>left_x<span class="token punctuation">,</span>right_x<span class="token punctuation">,</span><span class="token number">0.01</span><span class="token punctuation">)</span> <span class="token comment"># 设置 X 的值</span></pre></td></tr><tr class="marked"><td data-num="9"></td><td><pre>y <span class="token operator">=</span> func<span class="token punctuation">(</span>x<span class="token punctuation">)</span> 			<span class="token comment"># 设置 Y 的值，一个 Y 都有一个 X 与他对应</span></pre></td></tr><tr class="marked"><td data-num="10"></td><td><pre>plt<span class="token punctuation">.</span>xlim<span class="token punctuation">(</span>left_x<span class="token punctuation">,</span>right_x<span class="token punctuation">)</span> 	<span class="token comment"># 设置 X 轴的范围</span></pre></td></tr><tr class="marked"><td data-num="11"></td><td><pre>plt<span class="token punctuation">.</span>ylim<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">15000</span><span class="token punctuation">,</span><span class="token number">25000</span><span class="token punctuation">)</span>			 <span class="token comment"># 设置 Y 轴的范围</span></pre></td></tr><tr class="marked"><td data-num="12"></td><td><pre>plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>x<span class="token punctuation">,</span>y<span class="token punctuation">)</span> 			<span class="token comment"># 将 X、Y 的值添加到面板中</span></pre></td></tr><tr class="marked"><td data-num="13"></td><td><pre>plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>			<span class="token comment"># 显示面板</span></pre></td></tr></table></figure>
       <div class="tags">
           <a href="/tags/python/" rel="tag"><i class="ic i-tag"></i> python</a>
       </div>
@@ -278,7 +260,7 @@ plt.show()            # 显示面板
     <div class="item left">
       
 
-  <a href="/ed51a5a6.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeuv80yoj20zk0m8kjl.jpg" title="matplotlib制作条形图、直方图">
+  <a href="/ed51a5a6.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclxxcb6rj20zk0m8b29.jpg" title="matplotlib制作条形图、直方图">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> python</span>
   <h3>matplotlib制作条形图、直方图</h3>
@@ -288,7 +270,7 @@ plt.show()            # 显示面板
     <div class="item right">
       
 
-  <a href="/a96b8873.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipesrnqv3j20zk0m8ava.jpg" title="Maven build失败 MAVEN:单元测试报错">
+  <a href="/a96b8873.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclx29mstj20zk0m8hdt.jpg" title="Maven build失败 MAVEN:单元测试报错">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> 各种bug</span>
   <h3>Maven build失败 MAVEN:单元测试报错</h3>
@@ -310,7 +292,7 @@ plt.show()            # 显示面板
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%87%BD%E6%95%B0-1-red"><span class="toc-number">1.</span> <span class="toc-text">函数~1~{.red}</span></a></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%87%BD%E6%95%B01"><span class="toc-number">1.</span> <span class="toc-text"> 函数 1</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%87%BD%E6%95%B02"><span class="toc-number">2.</span> <span class="toc-text"> 函数 2</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
@@ -328,7 +310,7 @@ plt.show()            # 显示面板
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">74</span>
+        <span class="count">75</span>
         <span class="name">文章</span>
       </a>
     </div>
@@ -456,36 +438,12 @@ plt.show()            # 显示面板
 <div class="breadcrumb">
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/" title="分类于 java">java</a>
 </div>
 
-    <span><a href="/17554f39.html" title="关于手机双开不显示双开目录999">关于手机双开不显示双开目录999</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
-</div>
-
-    <span><a href="/cf63c07.html" title="第四篇：安装Nodejs---从0基础搭建Hexo博客">第四篇：安装Nodejs---从0基础搭建Hexo博客</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%90%84%E7%A7%8Dbug/" title="分类于 各种bug">各种bug</a>
-</div>
-
-    <span><a href="/28af37eb.html" title="Hexo部署err:Error:Spawn failed错误">Hexo部署err:Error:Spawn failed错误</a></span>
+    <span><a href="/f2edc254.html" title="javase基础">javase基础</a></span>
   </li>
 
       
@@ -499,7 +457,7 @@ plt.show()            # 显示面板
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
 </div>
 
-    <span><a href="/ed51a5a6.html" title="matplotlib制作条形图、直方图">matplotlib制作条形图、直方图</a></span>
+    <span><a href="/3050703f.html" title="python批量修改文件名">python批量修改文件名</a></span>
   </li>
 
       
@@ -520,12 +478,12 @@ plt.show()            # 显示面板
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<a href="/categories/%E7%94%9F%E6%B4%BB/" title="分类于 生活">生活</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
+<a href="/categories/%E7%94%9F%E6%B4%BB/%E6%97%A5%E8%AE%B0/" title="分类于 日记">日记</a>
 </div>
 
-    <span><a href="/451161d7.html" title="idea开发必装插件">idea开发必装插件</a></span>
+    <span><a href="/b9e6c7bf.html" title="日记分享2022.4.13">日记分享2022.4.13</a></span>
   </li>
 
       
@@ -534,12 +492,14 @@ plt.show()            # 显示面板
 <div class="breadcrumb">
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E6%9C%8D%E5%8A%A1%E5%99%A8/" title="分类于 服务器">服务器</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E6%9C%8D%E5%8A%A1%E5%99%A8/docker/" title="分类于 docker">docker</a>
 </div>
 
-    <span><a href="/d9e4874a.html" title="python文件的读取与写入">python文件的读取与写入</a></span>
+    <span><a href="/4fce5997.html" title="docker安装qBittorrent">docker安装qBittorrent</a></span>
   </li>
 
       
@@ -553,7 +513,21 @@ plt.show()            # 显示面板
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
 </div>
 
-    <span><a href="/859f60bd.html" title="第二篇：安装Git---从0基础搭建Hexo博客">第二篇：安装Git---从0基础搭建Hexo博客</a></span>
+    <span><a href="/a5eefddc.html" title="第九篇：安装主题---从0基础搭建Hexo博客">第九篇：安装主题---从0基础搭建Hexo博客</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%9F%BA%E7%A1%80%E5%AD%A6%E7%A7%91/" title="分类于 基础学科">基础学科</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%9F%BA%E7%A1%80%E5%AD%A6%E7%A7%91/%E5%A4%96%E8%AF%AD/" title="分类于 外语">外语</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%9F%BA%E7%A1%80%E5%AD%A6%E7%A7%91/%E5%A4%96%E8%AF%AD/%E6%97%A5%E8%AF%AD/" title="分类于 日语">日语</a>
+</div>
+
+    <span><a href="/39c6cce6.html" title="私の夢-作文">私の夢-作文</a></span>
   </li>
 
       
@@ -562,12 +536,14 @@ plt.show()            # 显示面板
 <div class="breadcrumb">
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/" title="分类于 博客的食用方法">博客的食用方法</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E5%8A%9E%E5%85%AC%E8%BD%AF%E4%BB%B6/" title="分类于 办公软件">办公软件</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E5%8A%9E%E5%85%AC%E8%BD%AF%E4%BB%B6/Word/" title="分类于 Word">Word</a>
 </div>
 
-    <span><a href="/6f010433.html" title="jsdelivr刷新缓存">jsdelivr刷新缓存</a></span>
+    <span><a href="/30d35056.html" title="Word调整目录编号和标题空隙">Word调整目录编号和标题空隙</a></span>
   </li>
 
       
@@ -576,12 +552,22 @@ plt.show()            # 显示面板
 <div class="breadcrumb">
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E6%A8%A1%E5%9D%97/" title="分类于 模块">模块</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
 </div>
 
-    <span><a href="/4d530639.html" title="记录自用hexo模块">记录自用hexo模块</a></span>
+    <span><a href="/111f4f09.html" title="CentOS新增root用户">CentOS新增root用户</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%90%84%E7%A7%8Dbug/" title="分类于 各种bug">各种bug</a>
+</div>
+
+    <span><a href="/a96b8873.html" title="Maven build失败 MAVEN:单元测试报错">Maven build失败 MAVEN:单元测试报错</a></span>
   </li>
 
   </ul>
@@ -606,13 +592,13 @@ plt.show()            # 显示面板
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="站点总字数">115k 字</span>
+    <span title="站点总字数">108k 字</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="站点阅读时长">2:37</span>
+    <span title="站点阅读时长">2:27</span>
   </div>
   <div class="powered-by">
     基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
