@@ -83,7 +83,7 @@ Maven build失败 MAVEN:单元测试报错 - 各种bug - 计算机科学 |
       <i class="ic i-pen"></i>
     </span>
     <span class="text">本文字数</span>
-    <span>633</span>
+    <span>568</span>
     <span class="text">字</span>
   </span>
   <span class="item" title="阅读时长">
@@ -124,12 +124,12 @@ Maven build失败 MAVEN:单元测试报错 - 各种bug - 计算机科学 |
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipex2cdtbj20zk0m8x6p.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicivghyooj20zk0m8dir.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipeu1usa7j20zk0m8b29.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicm07ih54j20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giciryrr3rj20zk0m8nhk.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipew28b65j20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipew28b65j20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicm07ih54j20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipewf5l51j20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeu7txpzj20zk0m81kx.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclize41wj20zk0m87gk.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipevarprfj20zk0m8npd.jpg"></li>
         </ul>
       </div>
     </header>
@@ -178,27 +178,18 @@ Maven build失败 MAVEN:单元测试报错 - 各种bug - 计算机科学 |
   <div class="body md" itemprop="articleBody">
     
 
-    <h2 id="报错内容-1-red"><a href="#报错内容-1-red" class="headerlink" title="报错内容~1~{.red}"></a>报错内容~1~{.red}</h2><p>[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project lab11: Compilation failure: Compilation failure:  </p>
-<p>[ERROR] 不再支持源选项 5。请使用 7 或更高版本。 </p>
+    <h2 id="报错内容1"><a class="markdownIt-Anchor" href="#报错内容1">#</a> 报错内容<sub class="red"> 1</sub></h2>
+<p>[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project lab11: Compilation failure: Compilation failure:</p>
+<p>[ERROR] 不再支持源选项 5。请使用 7 或更高版本。</p>
 <p>[ERROR] 不再支持目标选项 5。请使用 7 或更高版本。</p>
-<h3 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h3><p>在pom.xml添加插件级可以解决</p>
-<pre><code class="lang-xml">  &lt;build&gt;
-   &lt;plugins&gt;
-       &lt;plugin&gt;
-           &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
-           &lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;
-           &lt;configuration&gt;
-               &lt;source&gt;1.8&lt;/source&gt;
-               &lt;target&gt;1.8&lt;/target&gt;
-               &lt;encoding&gt;UTF-8&lt;/encoding&gt;
-           &lt;/configuration&gt;
-       &lt;/plugin&gt;
-   &lt;/plugins&gt;
-&lt;/build&gt;
-</code></pre>
-<h2 id="报错内容-2-red"><a href="#报错内容-2-red" class="headerlink" title="报错内容~2~{.red}"></a>报错内容~2~{.red}</h2><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022051525.jpeg" alt=""></p>
-<h3 id="解决办法-1"><a href="#解决办法-1" class="headerlink" title="解决办法"></a>解决办法</h3><p>其实在pom.xml依赖有重复了，删掉就没问题了</p>
-<h2 id="单元测试成功"><a href="#单元测试成功" class="headerlink" title="单元测试成功"></a>单元测试成功</h2><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022051530.jpeg" alt=""></p>
+<h3 id="解决办法"><a class="markdownIt-Anchor" href="#解决办法">#</a> 解决办法</h3>
+<p>在 pom.xml 添加插件级可以解决</p>
+<figure class="highlight xml"><figcaption data-lang="XML"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>build</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="2"></td><td><pre>   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>plugins</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="3"></td><td><pre>       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>plugin</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="4"></td><td><pre>           <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">></span></span>org.apache.maven.plugins<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="5"></td><td><pre>           <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">></span></span>maven-compiler-plugin<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="6"></td><td><pre>           <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>configuration</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="7"></td><td><pre>               <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>source</span><span class="token punctuation">></span></span>1.8<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>source</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="8"></td><td><pre>               <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>target</span><span class="token punctuation">></span></span>1.8<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>target</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="9"></td><td><pre>               <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>encoding</span><span class="token punctuation">></span></span>UTF-8<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>encoding</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="10"></td><td><pre>           <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>configuration</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="11"></td><td><pre>       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>plugin</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="12"></td><td><pre>   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>plugins</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="13"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>build</span><span class="token punctuation">></span></span></pre></td></tr></table></figure><h2 id="报错内容2"><a class="markdownIt-Anchor" href="#报错内容2">#</a> 报错内容<sub class="red"> 2</sub></h2>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022051525.jpeg" alt=""></p>
+<h3 id="解决办法-2"><a class="markdownIt-Anchor" href="#解决办法-2">#</a> 解决办法</h3>
+<p>其实在 pom.xml 依赖有重复了，删掉就没问题了</p>
+<h2 id="单元测试成功"><a class="markdownIt-Anchor" href="#单元测试成功">#</a> 单元测试成功</h2>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022051530.jpeg" alt=""></p>
 
       <div class="tags">
           <a href="/tags/BUG/" rel="tag"><i class="ic i-tag"></i> BUG</a>
@@ -275,7 +266,7 @@ Maven build失败 MAVEN:单元测试报错 - 各种bug - 计算机科学 |
     <div class="item left">
       
 
-  <a href="/8075134e.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclil3m4ej20zk0m8tn8.jpg" title="numpy画复合函数">
+  <a href="/8075134e.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giph47e9vtj20zk0m8x6l.jpg" title="numpy画复合函数">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> python</span>
   <h3>numpy画复合函数</h3>
@@ -285,7 +276,7 @@ Maven build失败 MAVEN:单元测试报错 - 各种bug - 计算机科学 |
     <div class="item right">
       
 
-  <a href="/6c24ad8e.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeyonbf9j20zk0m8e81.jpg" title="python安装&#x2F;更新包出现报错">
+  <a href="/6c24ad8e.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicitht3xtj20zk0m8k5v.jpg" title="python安装&#x2F;更新包出现报错">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> 各种bug</span>
   <h3>python安装/更新包出现报错</h3>
@@ -307,7 +298,7 @@ Maven build失败 MAVEN:单元测试报错 - 各种bug - 计算机科学 |
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8A%A5%E9%94%99%E5%86%85%E5%AE%B9-1-red"><span class="toc-number">1.</span> <span class="toc-text">报错内容~1~{.red}</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95"><span class="toc-number">1.1.</span> <span class="toc-text">解决办法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8A%A5%E9%94%99%E5%86%85%E5%AE%B9-2-red"><span class="toc-number">2.</span> <span class="toc-text">报错内容~2~{.red}</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95-1"><span class="toc-number">2.1.</span> <span class="toc-text">解决办法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%88%90%E5%8A%9F"><span class="toc-number">3.</span> <span class="toc-text">单元测试成功</span></a></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8A%A5%E9%94%99%E5%86%85%E5%AE%B91"><span class="toc-number">1.</span> <span class="toc-text"> 报错内容 1</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95"><span class="toc-number">1.1.</span> <span class="toc-text"> 解决办法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8A%A5%E9%94%99%E5%86%85%E5%AE%B92"><span class="toc-number">2.</span> <span class="toc-text"> 报错内容 2</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95-2"><span class="toc-number">2.1.</span> <span class="toc-text"> 解决办法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%88%90%E5%8A%9F"><span class="toc-number">3.</span> <span class="toc-text"> 单元测试成功</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
@@ -325,19 +316,19 @@ Maven build失败 MAVEN:单元测试报错 - 各种bug - 计算机科学 |
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">76</span>
+        <span class="count">77</span>
         <span class="name">文章</span>
       </a>
     </div>
     <div class="item categories">
       <a href="/categories/">
-        <span class="count">25</span>
+        <span class="count">26</span>
         <span class="name">分类</span>
       </a>
     </div>
     <div class="item tags">
       <a href="/tags/">
-        <span class="count">27</span>
+        <span class="count">28</span>
         <span class="name">标签</span>
       </a>
     </div>
@@ -458,59 +449,7 @@ Maven build失败 MAVEN:单元测试报错 - 各种bug - 计算机科学 |
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
 </div>
 
-    <span><a href="/dc09a46c.html" title="第六篇：将博客部署到GitHub---从0基础搭建Hexo博客">第六篇：将博客部署到GitHub---从0基础搭建Hexo博客</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
-</div>
-
-    <span><a href="/4dbd02f9.html" title="win10关机指令">win10关机指令</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
-</div>
-
-    <span><a href="/b9893092.html" title="python Qt5实现记事本基本功能">python Qt5实现记事本基本功能</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
-</div>
-
-    <span><a href="/d9e4874a.html" title="python文件的读取与写入">python文件的读取与写入</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%90%84%E7%A7%8Dbug/" title="分类于 各种bug">各种bug</a>
-</div>
-
-    <span><a href="/28af37eb.html" title="Hexo部署err:Error:Spawn failed错误">Hexo部署err:Error:Spawn failed错误</a></span>
+    <span><a href="/9bf6caef.html" title="第八篇：解析域名---从0基础搭建Hexo博客">第八篇：解析域名---从0基础搭建Hexo博客</a></span>
   </li>
 
       
@@ -521,10 +460,10 @@ Maven build失败 MAVEN:单元测试报错 - 各种bug - 计算机科学 |
 <i class="ic i-angle-right"></i>
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/" title="分类于 博客的食用方法">博客的食用方法</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
 </div>
 
-    <span><a href="/5d5981b0.html" title="关于shoka主题食用技巧">关于shoka主题食用技巧</a></span>
+    <span><a href="/b75a1db6.html" title="第三篇：Git提交文件---从0基础搭建Hexo博客">第三篇：Git提交文件---从0基础搭建Hexo博客</a></span>
   </li>
 
       
@@ -534,11 +473,9 @@ Maven build失败 MAVEN:单元测试报错 - 各种bug - 计算机科学 |
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/docker/" title="分类于 docker">docker</a>
 </div>
 
-    <span><a href="/2802e5c6.html" title="docker使用指令记录">docker使用指令记录</a></span>
+    <span><a href="/16ad79ec.html" title="学习注册表">学习注册表</a></span>
   </li>
 
       
@@ -547,10 +484,38 @@ Maven build失败 MAVEN:单元测试报错 - 各种bug - 计算机科学 |
 <div class="breadcrumb">
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%90%84%E7%A7%8Dbug/" title="分类于 各种bug">各种bug</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
 </div>
 
-    <span><a href="/a96b8873.html" title="Maven build失败 MAVEN:单元测试报错">Maven build失败 MAVEN:单元测试报错</a></span>
+    <span><a href="/3d358537.html" title="Linux忘记数据库密码">Linux忘记数据库密码</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
+</div>
+
+    <span><a href="/1edcfdea.html" title="python-math库">python-math库</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E6%A8%A1%E5%9D%97/" title="分类于 模块">模块</a>
+</div>
+
+    <span><a href="/c5de56d5.html" title="Hexo怎么安装插件">Hexo怎么安装插件</a></span>
   </li>
 
       
@@ -564,7 +529,7 @@ Maven build失败 MAVEN:单元测试报错 - 各种bug - 计算机科学 |
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/" title="分类于 java">java</a>
 </div>
 
-    <span><a href="/f2edc254.html" title="javase基础">javase基础</a></span>
+    <span><a href="/dfaf38bb.html" title="javase连接数据库报错Communications link failure">javase连接数据库报错Communications link failure</a></span>
   </li>
 
       
@@ -576,7 +541,33 @@ Maven build失败 MAVEN:单元测试报错 - 各种bug - 计算机科学 |
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
 </div>
 
-    <span><a href="/eae60a43.html" title="大学选修科目">大学选修科目</a></span>
+    <span><a href="/9b0876ac.html" title="GitHub使用技巧">GitHub使用技巧</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E7%94%9F%E6%B4%BB/" title="分类于 生活">生活</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E7%94%9F%E6%B4%BB/%E6%97%A5%E8%AE%B0/" title="分类于 日记">日记</a>
+</div>
+
+    <span><a href="/ef5acbc6.html" title="4.9日记分享">4.9日记分享</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/" title="分类于 持续更新">持续更新</a>
+</div>
+
+    <span><a href="/f3d93395.html" title="fatal: Could not read from remote repository.">fatal: Could not read from remote repository.</a></span>
   </li>
 
   </ul>
@@ -601,13 +592,13 @@ Maven build失败 MAVEN:单元测试报错 - 各种bug - 计算机科学 |
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="站点总字数">116k 字</span>
+    <span title="站点总字数">109k 字</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="站点阅读时长">2:38</span>
+    <span title="站点阅读时长">2:28</span>
   </div>
   <div class="powered-by">
     基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
