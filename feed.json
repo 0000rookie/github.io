@@ -7,12 +7,29 @@
     "home_page_url": "https://www.hikki.site",
     "items": [
         {
+            "id": "https://www.hikki.site/85111a4c.html",
+            "url": "https://www.hikki.site/85111a4c.html",
+            "title": "关闭Java数据库SSL安全提示",
+            "date_published": "2022-06-24T06:16:48.000Z",
+            "content_html": "<h2 id=\"ssl安全提示\"><a class=\"markdownIt-Anchor\" href=\"#ssl安全提示\">#</a> SSL 安全提示</h2>\n<p>强迫症的我受不了啊，必须去掉</p>\n<p><img data-src=\"http://hikki.test.upcdn.net/06-24_14-17-56.jpg\" alt=\"\"></p>\n<figure class=\"highlight java\"><figcaption data-lang=\"java\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre><span class=\"token class-name\">Fri</span> <span class=\"token class-name\">Jun</span> <span class=\"token number\">24</span> <span class=\"token number\">14</span><span class=\"token operator\">:</span><span class=\"token number\">21</span><span class=\"token operator\">:</span><span class=\"token number\">32</span> CST <span class=\"token number\">2022</span> WARN<span class=\"token operator\">:</span> <span class=\"token class-name\">Establishing</span> SSL connection without server's identity verification is not <span class=\"token class-name\"><span class=\"token namespace\">recommended<span class=\"token punctuation\">.</span></span> According</span> <span class=\"token keyword\">to</span> <span class=\"token class-name\">MySQL</span> <span class=\"token number\">5.5</span><span class=\"token number\">.45</span><span class=\"token operator\">+</span><span class=\"token punctuation\">,</span> <span class=\"token number\">5.6</span><span class=\"token number\">.26</span><span class=\"token operator\">+</span> and <span class=\"token number\">5.7</span><span class=\"token number\">.6</span><span class=\"token operator\">+</span> requirements SSL connection must be established by <span class=\"token keyword\">default</span> <span class=\"token keyword\">if</span> explicit option isn't <span class=\"token class-name\"><span class=\"token namespace\">set<span class=\"token punctuation\">.</span></span> For</span> compliance <span class=\"token keyword\">with</span> <span class=\"token namespace\">existing</span> applications not using SSL the verifyServerCertificate property is set <span class=\"token keyword\">to</span> <span class=\"token char\">'false'</span><span class=\"token punctuation\">.</span> <span class=\"token class-name\">You</span> need either <span class=\"token keyword\">to</span> <span class=\"token namespace\">explicitly</span> disable SSL by setting useSSL<span class=\"token operator\">=</span><span class=\"token boolean\">false</span><span class=\"token punctuation\">,</span> or set useSSL<span class=\"token operator\">=</span><span class=\"token boolean\">true</span> and provide truststore <span class=\"token keyword\">for</span> server certificate verification<span class=\"token punctuation\">.</span></pre></td></tr></table></figure><h2 id=\"解决方法\"><a class=\"markdownIt-Anchor\" href=\"#解决方法\">#</a> 解决方法</h2>\n<p>在连接数据库的 <code>url</code>  加上 <code>&amp;verifyServerCertificate=false&amp;useSSL=false</code>  这样的</p>\n<figure class=\"highlight java\"><figcaption data-lang=\"java\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre>driver<span class=\"token operator\">=</span><span class=\"token class-name\"><span class=\"token namespace\">com<span class=\"token punctuation\">.</span>mysql<span class=\"token punctuation\">.</span>jdbc<span class=\"token punctuation\">.</span></span>Driver</span></pre></td></tr><tr><td data-num=\"2\"></td><td><pre>url<span class=\"token operator\">=</span>jdbc<span class=\"token operator\">:</span>mysql<span class=\"token operator\">:</span><span class=\"token operator\">/</span><span class=\"token operator\">/</span>localhost<span class=\"token operator\">:</span><span class=\"token number\">3306</span><span class=\"token operator\">/</span>yootk<span class=\"token operator\">?</span>useUnicode<span class=\"token operator\">=</span><span class=\"token boolean\">true</span><span class=\"token operator\">&amp;</span>characterEncoding<span class=\"token operator\">=</span>utf<span class=\"token operator\">-</span><span class=\"token number\">8</span><span class=\"token operator\">&amp;</span>verifyServerCertificate<span class=\"token operator\">=</span><span class=\"token boolean\">false</span><span class=\"token operator\">&amp;</span>useSSL<span class=\"token operator\">=</span><span class=\"token boolean\">false</span></pre></td></tr><tr><td data-num=\"3\"></td><td><pre>username<span class=\"token operator\">=</span>root</pre></td></tr><tr><td data-num=\"4\"></td><td><pre>password<span class=\"token operator\">=</span>root</pre></td></tr></table></figure><p><img data-src=\"http://hikki.test.upcdn.net/06-24_14-18-36.jpg\" alt=\"\"></p>\n<p><img data-src=\"http://hikki.test.upcdn.net/06-24_14-18-56.jpg\" alt=\"\"></p>\n",
+            "tags": [
+                "计算机科学",
+                "编程语言",
+                "java",
+                "Java"
+            ]
+        },
+        {
             "id": "https://www.hikki.site/3dddb2b0.html",
             "url": "https://www.hikki.site/3dddb2b0.html",
             "title": "intellij乱码",
             "date_published": "2022-06-22T14:35:33.000Z",
             "content_html": "<h2 id=\"方法一\"><a class=\"markdownIt-Anchor\" href=\"#方法一\">#</a> 方法一</h2>\n<p>打开设置设置文件编码为 <code>utf-8</code></p>\n<p><img data-src=\"http://hikki.test.upcdn.net/20220622224054.jpeg\" alt=\"\"></p>\n<h2 id=\"方法二\"><a class=\"markdownIt-Anchor\" href=\"#方法二\">#</a> 方法二</h2>\n<p>设置虚拟机加载为 <code>utf-8</code></p>\n<figure class=\"highlight java\"><figcaption data-lang=\"java\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre><span class=\"token operator\">-</span><span class=\"token class-name\">Dfile</span><span class=\"token punctuation\">.</span>encoding<span class=\"token operator\">=</span>UTF<span class=\"token operator\">-</span><span class=\"token number\">8</span></pre></td></tr></table></figure><p><img data-src=\"http://hikki.test.upcdn.net/20220622224040.jpeg\" alt=\"\"></p>\n<p><img data-src=\"http://hikki.test.upcdn.net/20220622224048.jpeg\" alt=\"\"></p>\n",
-            "tags": []
+            "tags": [
+                "计算机科学",
+                "编程语言",
+                "java"
+            ]
         },
         {
             "id": "https://www.hikki.site/8a90aba9.html",
@@ -242,19 +259,6 @@
             "tags": [
                 "计算机科学",
                 "编程语言",
-                "java"
-            ]
-        },
-        {
-            "id": "https://www.hikki.site/d9153102.html",
-            "url": "https://www.hikki.site/d9153102.html",
-            "title": "关于idea的食用技巧",
-            "date_published": "2022-05-17T08:21:35.000Z",
-            "content_html": "<figure class=\"highlight java\"><figcaption data-lang=\"java\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre>st</pre></td></tr></table></figure>",
-            "tags": [
-                "计算机科学",
-                "编程语言",
-                "java",
                 "java"
             ]
         }
