@@ -83,7 +83,7 @@ Hexo部署err:Error:Spawn failed错误 - 各种bug - 计算机科学 |
       <i class="ic i-pen"></i>
     </span>
     <span class="text">本文字数</span>
-    <span>1.5k</span>
+    <span>1.3k</span>
     <span class="text">字</span>
   </span>
   <span class="item" title="阅读时长">
@@ -124,12 +124,12 @@ Hexo部署err:Error:Spawn failed错误 - 各种bug - 计算机科学 |
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipevgoki5j20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclimtf7dj20zk0m8qav.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipeun65urj20zk0m81ii.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giciuja1j1j20zk0m8kjl.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicitspjpbj20zk0m81ky.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicis3attqj20zk0m8k7l.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giciuv0socj20zk0m8qes.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicit31ffoj20zk0m8naf.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicliwyw55j20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicm0fdw5cj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipexw3o58j20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicli9lfebj20zk0m84qp.jpg"></li>
         </ul>
       </div>
     </header>
@@ -178,50 +178,24 @@ Hexo部署err:Error:Spawn failed错误 - 各种bug - 计算机科学 |
   <div class="body md" itemprop="articleBody">
     
 
-    <h2 id="err-Error-Spawn-failed"><a href="#err-Error-Spawn-failed" class="headerlink" title="err:Error:Spawn failed"></a><code>err:Error:Spawn failed</code></h2><p>今晚在发布文章的时候突然出现了这个问题，昨天还是正常的，今晚就报错了，前前后后尝试了好多办法</p>
+    <h2 id="errerrorspawn-failed"><a class="markdownIt-Anchor" href="#errerrorspawn-failed">#</a>  <code>err:Error:Spawn failed</code></h2>
+<p>今晚在发布文章的时候突然出现了这个问题，昨天还是正常的，今晚就报错了，前前后后尝试了好多办法</p>
 <p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022045305.jpeg" alt=""></p>
-<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><h3 id="删除id-rsa、id-rsa-pub、known-hosts"><a href="#删除id-rsa、id-rsa-pub、known-hosts" class="headerlink" title="删除id_rsa、id_rsa.pub、known_hosts"></a>删除<code>id_rsa</code>、<code>id_rsa.pub</code>、<code>known_hosts</code></h3><p>打开<code>C:\Users\Administrator\.ssh</code>路径,删除<code>id_rsa</code>、<code>id_rsa.pub</code>、<code>known_hosts</code></p>
-<h3 id="在bash重新生成rsa文件"><a href="#在bash重新生成rsa文件" class="headerlink" title="在bash重新生成rsa文件"></a>在<code>bash</code>重新生成rsa文件</h3><pre><code class="lang-bash">&gt;&gt;&gt;ssh-keygen -t rsa
-</code></pre>
-<h3 id="打开github-gt-setting-gt-SSH-and-GPG-keys-gt-New-ssh-key"><a href="#打开github-gt-setting-gt-SSH-and-GPG-keys-gt-New-ssh-key" class="headerlink" title="打开github---&gt;setting---&gt;SSH and GPG keys---&gt;New ssh key"></a>打开<code>github---&gt;setting---&gt;SSH and GPG keys---&gt;New ssh key</code></h3><p>打开<code>.ssh</code>路径，将<code>id_rsa.pub</code>的内容复制到新创建的<code>ssh key</code>里面</p>
-<h3 id="测试是否连接到github"><a href="#测试是否连接到github" class="headerlink" title="测试是否连接到github"></a>测试是否连接到<code>github</code></h3><p>```bash mark:1-12</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>ssh -T git@github.com<br>ssh: connect to host github.com port 22: Connection timed out #连接失败</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<h1 id="如果是出现以下则说明成功，以下的文章就不用看了"><a href="#如果是出现以下则说明成功，以下的文章就不用看了" class="headerlink" title="如果是出现以下则说明成功，以下的文章就不用看了"></a>如果是出现以下则说明成功，以下的文章就不用看了</h1><p>The authenticity of host ‘[ssh.github.com]:443 ([20.205.243.160]:443)’ can’t be established.<br>ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.<br>This key is not known by any other names<br>Are you sure you want to continue connecting (yes/no/[fingerprint])? # 此时在此输入yes回车就行</p>
-<pre><code>
----
-
-如果你失败了，接着往下
-
-### 新建`config`文件
-
-![](https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022045733.jpeg)
-
-### 在`config`文件输入下面内容
-
-![](https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022045818.jpeg)
-
-```yaml mark:1-5
-Host github.com
-User *****@gmail.com  #登录github的邮箱，这段文字不复制到文件
-Hostname ssh.github.com
-PreferredAuthentications publickey
-IdentityFile ~/.ssh/id_rsa
-Port 443
-</code></pre><h3 id="连接github"><a href="#连接github" class="headerlink" title="连接github"></a>连接<code>github</code></h3><pre><code class="lang-bash">&gt;&gt;&gt;ssh -T git@github.com #此时出现以下页面成功啦
-The authenticity of host &#39;[ssh.github.com]:443 ([20.205.243.160]:443)&#39; can&#39;t be established.
-ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
-This key is not known by any other names
-Are you sure you want to continue connecting (yes/no/[fingerprint])? yes # 此处输入yes
-Warning: Permanently added &#39;[ssh.github.com]:443&#39; (ED25519) to the list of known hosts.
-Hi 0000rookie! You&#39;ve successfully authenticated, but GitHub does not provide shell access.
-</code></pre>
-
+<h2 id="解决方案"><a class="markdownIt-Anchor" href="#解决方案">#</a> 解决方案</h2>
+<h3 id="删除id_rsa-id_rsapub-known_hosts"><a class="markdownIt-Anchor" href="#删除id_rsa-id_rsapub-known_hosts">#</a> 删除 <code>id_rsa</code> 、 <code>id_rsa.pub</code> 、 <code>known_hosts</code></h3>
+<p>打开 <code>C:\Users\Administrator\.ssh</code>  路径，删除 <code>id_rsa</code> 、 <code>id_rsa.pub</code> 、 <code>known_hosts</code></p>
+<h3 id="在bash重新生成rsa文件"><a class="markdownIt-Anchor" href="#在bash重新生成rsa文件">#</a> 在 <code>bash</code>  重新生成 rsa 文件</h3>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token operator">>></span><span class="token operator">></span>ssh-keygen -t rsa</pre></td></tr></table></figure><h3 id="打开github-setting-ssh-and-gpg-keys-new-ssh-key"><a class="markdownIt-Anchor" href="#打开github-setting-ssh-and-gpg-keys-new-ssh-key">#</a> 打开 <code>github---&gt;setting---&gt;SSH and GPG keys---&gt;New ssh key</code></h3>
+<p>打开 <code>.ssh</code>  路径，将 <code>id_rsa.pub</code>  的内容复制到新创建的 <code>ssh key</code>  里面</p>
+<h3 id="测试是否连接到github"><a class="markdownIt-Anchor" href="#测试是否连接到github">#</a> 测试是否连接到 <code>github</code></h3>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token operator">>></span><span class="token operator">></span>ssh -T git@github.com</pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>ssh: connect to <span class="token function">host</span> github.com port <span class="token number">22</span>: Connection timed out <span class="token comment">#连接失败</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre><span class="token comment"># 如果是出现以下则说明成功，以下的文章就不用看了</span></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre>The authenticity of <span class="token function">host</span> <span class="token string">'[ssh.github.com]:443 ([20.205.243.160]:443)'</span> can't be established.</pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre>ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.</pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre>This key is not known by any other names</pre></td></tr><tr class="marked"><td data-num="8"></td><td><pre>Are you sure you want to <span class="token builtin class-name">continue</span> connecting <span class="token punctuation">(</span>yes/no/<span class="token punctuation">[</span>fingerprint<span class="token punctuation">]</span><span class="token punctuation">)</span>? <span class="token comment"># 此时在此输入 yes 回车就行</span></pre></td></tr></table></figure><hr>
+<p>如果你失败了，接着往下</p>
+<h3 id="新建config文件"><a class="markdownIt-Anchor" href="#新建config文件">#</a> 新建 <code>config</code>  文件</h3>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022045733.jpeg" alt=""></p>
+<h3 id="在config文件输入下面内容"><a class="markdownIt-Anchor" href="#在config文件输入下面内容">#</a> 在 <code>config</code>  文件输入下面内容</h3>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022045818.jpeg" alt=""></p>
+<figure class="highlight yaml"><figcaption data-lang="YAML"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>Host github.com</pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>User <span class="token important">*****@gmail.com</span>  <span class="token comment">#登录 github 的邮箱，这段文字不复制到文件</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>Hostname ssh.github.com</pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre>PreferredAuthentications publickey</pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre>IdentityFile ~/.ssh/id_rsa</pre></td></tr><tr><td data-num="6"></td><td><pre>Port 443</pre></td></tr></table></figure><h3 id="连接github"><a class="markdownIt-Anchor" href="#连接github">#</a> 连接 <code>github</code></h3>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token operator">>></span><span class="token operator">></span>ssh -T git@github.com <span class="token comment">#此时出现以下页面成功啦</span></pre></td></tr><tr><td data-num="2"></td><td><pre>The authenticity of <span class="token function">host</span> <span class="token string">'[ssh.github.com]:443 ([20.205.243.160]:443)'</span> can<span class="token string">'t be established.</pre></td></tr><tr><td data-num="3"></td><td><pre>ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.</pre></td></tr><tr><td data-num="4"></td><td><pre>This key is not known by any other names</pre></td></tr><tr><td data-num="5"></td><td><pre>Are you sure you want to continue connecting (yes/no/[fingerprint])? yes # 此处输入yes</pre></td></tr><tr><td data-num="6"></td><td><pre>Warning: Permanently added '</span><span class="token punctuation">[</span>ssh.github.com<span class="token punctuation">]</span>:443<span class="token string">' (ED25519) to the list of known hosts.</pre></td></tr><tr><td data-num="7"></td><td><pre>Hi 0000rookie! You'</span>ve successfully authenticated, but GitHub does not provide shell access.</pre></td></tr></table></figure>
       <div class="tags">
           <a href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag"><i class="ic i-tag"></i> 博客</a>
           <a href="/tags/BUG/" rel="tag"><i class="ic i-tag"></i> BUG</a>
@@ -297,7 +271,7 @@ Hi 0000rookie! You&#39;ve successfully authenticated, but GitHub does not provid
     <div class="item left">
       
 
-  <a href="/37c8254d.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclhtuo6nj20zk0m8ttm.jpg" title="python qt5 实现记事本界面">
+  <a href="/37c8254d.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeuibk9fj20zk0m8ay2.jpg" title="python qt5 实现记事本界面">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> python</span>
   <h3>python qt5 实现记事本界面</h3>
@@ -307,7 +281,7 @@ Hi 0000rookie! You&#39;ve successfully authenticated, but GitHub does not provid
     <div class="item right">
       
 
-  <a href="/b9893092.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicliwyw55j20zk0m8hdt.jpg" title="python Qt5实现记事本基本功能">
+  <a href="/b9893092.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giciundwu5j20zk0m8n9e.jpg" title="python Qt5实现记事本基本功能">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> python</span>
   <h3>python Qt5实现记事本基本功能</h3>
@@ -329,7 +303,7 @@ Hi 0000rookie! You&#39;ve successfully authenticated, but GitHub does not provid
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#err-Error-Spawn-failed"><span class="toc-number">1.</span> <span class="toc-text">err:Error:Spawn failed</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="toc-number">2.</span> <span class="toc-text">解决方案</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A0%E9%99%A4id-rsa%E3%80%81id-rsa-pub%E3%80%81known-hosts"><span class="toc-number">2.1.</span> <span class="toc-text">删除id_rsa、id_rsa.pub、known_hosts</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9C%A8bash%E9%87%8D%E6%96%B0%E7%94%9F%E6%88%90rsa%E6%96%87%E4%BB%B6"><span class="toc-number">2.2.</span> <span class="toc-text">在bash重新生成rsa文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%93%E5%BC%80github-gt-setting-gt-SSH-and-GPG-keys-gt-New-ssh-key"><span class="toc-number">2.3.</span> <span class="toc-text">打开github---&gt;setting---&gt;SSH and GPG keys---&gt;New ssh key</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95%E6%98%AF%E5%90%A6%E8%BF%9E%E6%8E%A5%E5%88%B0github"><span class="toc-number">2.4.</span> <span class="toc-text">测试是否连接到github</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%A6%82%E6%9E%9C%E6%98%AF%E5%87%BA%E7%8E%B0%E4%BB%A5%E4%B8%8B%E5%88%99%E8%AF%B4%E6%98%8E%E6%88%90%E5%8A%9F%EF%BC%8C%E4%BB%A5%E4%B8%8B%E7%9A%84%E6%96%87%E7%AB%A0%E5%B0%B1%E4%B8%8D%E7%94%A8%E7%9C%8B%E4%BA%86"><span class="toc-number"></span> <span class="toc-text">如果是出现以下则说明成功，以下的文章就不用看了</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9E%E6%8E%A5github"><span class="toc-number">0.1.</span> <span class="toc-text">连接github</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#errerrorspawn-failed"><span class="toc-number">1.</span> <span class="toc-text">  err:Error:Spawn failed</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="toc-number">2.</span> <span class="toc-text"> 解决方案</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A0%E9%99%A4id_rsa-id_rsapub-known_hosts"><span class="toc-number">2.1.</span> <span class="toc-text"> 删除 id_rsa 、 id_rsa.pub 、 known_hosts</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9C%A8bash%E9%87%8D%E6%96%B0%E7%94%9F%E6%88%90rsa%E6%96%87%E4%BB%B6"><span class="toc-number">2.2.</span> <span class="toc-text"> 在 bash  重新生成 rsa 文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%93%E5%BC%80github-setting-ssh-and-gpg-keys-new-ssh-key"><span class="toc-number">2.3.</span> <span class="toc-text"> 打开 github---&gt;setting---&gt;SSH and GPG keys---&gt;New ssh key</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95%E6%98%AF%E5%90%A6%E8%BF%9E%E6%8E%A5%E5%88%B0github"><span class="toc-number">2.4.</span> <span class="toc-text"> 测试是否连接到 github</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B0%E5%BB%BAconfig%E6%96%87%E4%BB%B6"><span class="toc-number">2.5.</span> <span class="toc-text"> 新建 config  文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9C%A8config%E6%96%87%E4%BB%B6%E8%BE%93%E5%85%A5%E4%B8%8B%E9%9D%A2%E5%86%85%E5%AE%B9"><span class="toc-number">2.6.</span> <span class="toc-text"> 在 config  文件输入下面内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9E%E6%8E%A5github"><span class="toc-number">2.7.</span> <span class="toc-text"> 连接 github</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
@@ -480,19 +454,7 @@ Hi 0000rookie! You&#39;ve successfully authenticated, but GitHub does not provid
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
 </div>
 
-    <span><a href="/37c8254d.html" title="python qt5 实现记事本界面">python qt5 实现记事本界面</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
-</div>
-
-    <span><a href="/17554f39.html" title="关于手机双开不显示双开目录999">关于手机双开不显示双开目录999</a></span>
+    <span><a href="/8075134e.html" title="numpy画复合函数">numpy画复合函数</a></span>
   </li>
 
       
@@ -506,61 +468,17 @@ Hi 0000rookie! You&#39;ve successfully authenticated, but GitHub does not provid
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
 </div>
 
-    <span><a href="/ed51a5a6.html" title="matplotlib制作条形图、直方图">matplotlib制作条形图、直方图</a></span>
+    <span><a href="/1edcfdea.html" title="python-math库">python-math库</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/" title="分类于 java">java</a>
+<a href="/categories/%E7%94%9F%E6%B4%BB/" title="分类于 生活">生活</a>
 </div>
 
-    <span><a href="/3dddb2b0.html" title="intellij乱码">intellij乱码</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/" title="分类于 java">java</a>
-</div>
-
-    <span><a href="/73480a46.html" title="javase触发事件">javase触发事件</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
-</div>
-
-    <span><a href="/8d43d157.html" title="如何远程虚拟机">如何远程虚拟机</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
-</div>
-
-    <span><a href="/d9e4874a.html" title="python文件的读取与写入">python文件的读取与写入</a></span>
+    <span><a href="/b8c864c4.html" title="2022广州软件学院高考新生必看">2022广州软件学院高考新生必看</a></span>
   </li>
 
       
@@ -582,13 +500,9 @@ Hi 0000rookie! You&#39;ve successfully authenticated, but GitHub does not provid
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E5%8A%9E%E5%85%AC%E8%BD%AF%E4%BB%B6/" title="分类于 办公软件">办公软件</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E5%8A%9E%E5%85%AC%E8%BD%AF%E4%BB%B6/Word/" title="分类于 Word">Word</a>
 </div>
 
-    <span><a href="/30d35056.html" title="Word调整目录编号和标题空隙">Word调整目录编号和标题空隙</a></span>
+    <span><a href="/3d358537.html" title="Linux忘记数据库密码">Linux忘记数据库密码</a></span>
   </li>
 
       
@@ -597,10 +511,61 @@ Hi 0000rookie! You&#39;ve successfully authenticated, but GitHub does not provid
 <div class="breadcrumb">
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%90%84%E7%A7%8Dbug/" title="分类于 各种bug">各种bug</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E4%B8%80%E4%B8%AA%E5%B0%8F%E6%8A%80%E5%B7%A7/" title="分类于 一个小技巧">一个小技巧</a>
 </div>
 
-    <span><a href="/af3d5cf5.html" title="安装qt5的时候报错">安装qt5的时候报错</a></span>
+    <span><a href="/2cc8588f.html" title="添加开机自启程序">添加开机自启程序</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/d95d7e09.html" title="我的第一篇博客">我的第一篇博客</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
+</div>
+
+    <span><a href="/a6f9d072.html" title="第一篇：注册github---从0基础搭建Hexo博客">第一篇：注册github---从0基础搭建Hexo博客</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
+</div>
+
+    <span><a href="/a5eefddc.html" title="第九篇：安装主题---从0基础搭建Hexo博客">第九篇：安装主题---从0基础搭建Hexo博客</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%9F%BA%E7%A1%80%E5%AD%A6%E7%A7%91/" title="分类于 基础学科">基础学科</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%9F%BA%E7%A1%80%E5%AD%A6%E7%A7%91/%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/" title="分类于 期末复习">期末复习</a>
+</div>
+
+    <span><a href="/87a258b3.html" title="2022期末复习资料">2022期末复习资料</a></span>
   </li>
 
   </ul>
@@ -625,13 +590,13 @@ Hi 0000rookie! You&#39;ve successfully authenticated, but GitHub does not provid
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="站点总字数">119k 字</span>
+    <span title="站点总字数">111k 字</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="站点阅读时长">2:41</span>
+    <span title="站点阅读时长">2:31</span>
   </div>
   <div class="powered-by">
     基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
