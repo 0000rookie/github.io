@@ -83,7 +83,7 @@ git push origin master失败 - 各种bug - 计算机科学 |
       <i class="ic i-pen"></i>
     </span>
     <span class="text">本文字数</span>
-    <span>1.1k</span>
+    <span>1.2k</span>
     <span class="text">字</span>
   </span>
   <span class="item" title="阅读时长">
@@ -91,7 +91,7 @@ git push origin master失败 - 各种bug - 计算机科学 |
       <i class="ic i-clock"></i>
     </span>
     <span class="text">阅读时长</span>
-    <span>1 分钟</span>
+    <span>2 分钟</span>
   </span>
 </div>
 
@@ -124,12 +124,12 @@ git push origin master失败 - 各种bug - 计算机科学 |
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclhnx9glj20zk0m8npd.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicitht3xtj20zk0m8k5v.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicit4jrvuj20zk0m8785.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclhtuo6nj20zk0m8ttm.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicm0fdw5cj20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciub8ja1j20zk0m81ky.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giciub8ja1j20zk0m81ky.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicitf0kl1j20zk0m87fe.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipesng5oej20zk0m87d4.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipexbei4hj20zk0m8npd.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipev1x5e4j20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicli9lfebj20zk0m84qp.jpg"></li>
         </ul>
       </div>
     </header>
@@ -178,42 +178,44 @@ git push origin master失败 - 各种bug - 计算机科学 |
   <div class="body md" itemprop="articleBody">
     
 
-    <h2 id="关于我想备份blog这件事"><a class="markdownIt-Anchor" href="#关于我想备份blog这件事">#</a> 关于我想备份 <code>blog</code>  这件事</h2>
-<details class="primary"><summary>我要怎么备份blog文件？？？</summary><div>
-<div class="note primary">
+    <h2 id="关于我想备份blog这件事"><a href="#关于我想备份blog这件事" class="headerlink" title="关于我想备份blog这件事"></a>关于我想备份<code>blog</code>这件事</h2><p>+++primary 我要怎么备份blog文件？？？</p>
+<p>:::primary</p>
 <p>这几天在想，万一那天我想在别的电脑上写博客，或者是我电脑突然抽风硬盘坏了，我的博客数据岂不是没了？？？</p>
 <p>又或者我什么时候不小心删错了文件，岂不是出大问题？？？</p>
-</div>
-<p>带着这个问题，我一开始是找了几个 <code>PC端</code> 自动本地备份的程序，但效果不太理想。</p>
-<p>定时备份：不能保证你在设置定时的这段时间内进行 <code>hexo d</code>  多少次，如果定时备份的时间设置过短，理论上对硬盘的读写会拖慢其他程序的运行。</p>
-<p>所以在想，如果有一个程序可以监控我 <code>blog</code>  下的文件变化，每变化一次就进行记录一次，进行增量备份一次，这是我想到最完美的办法，带着这个想法，我似乎找到了一个方法。</p>
-</div></details>
-<details class="danger"><summary>持续集成服务</summary><div>
+<p>:::</p>
+<p>带着这个问题，我一开始是找了几个<code>PC端</code>自动本地备份的程序，但效果不太理想。</p>
+<p>定时备份:不能保证你在设置定时的这段时间内进行<code>hexo d</code>多少次，如果定时备份的时间设置过短，理论上对硬盘的读写会拖慢其他程序的运行。</p>
+<p>所以在想，如果有一个程序可以监控我<code>blog</code>下的文件变化，每变化一次就进行记录一次，进行增量备份一次，这是我想到最完美的办法，带着这个想法，我似乎找到了一个方法。</p>
+<p>+++</p>
+<p>+++danger 持续集成服务</p>
 <p>此处引用百度百科：持续集成是一种软件开发实践，即团队开发成员经常集成他们的工作，通常每个成员每天至少集成一次，也就意味着每天可能会发生多次集成。每次集成都通过自动化的构建（包括编译，发布，自动化测试）来验证，从而尽早地发现集成错误。</p>
-<p>简单来说，就是这个服务绑定了 <code>GitHub</code> ，我们每提交一次代码到 <code>GitHub</code> ，它都会抓取一次我们的仓库，检查新代码，然后提供一个运行环境，执行测试，完成构建，还能部署到服务器。</p>
-</div></details>
-<p>然后我这次在准备提交文件到我新建的 <code>hexo-backups</code>  仓库的时候，出错了，就记录一下错误。</p>
-<h2 id="git-pash-origin-master失败"><a class="markdownIt-Anchor" href="#git-pash-origin-master失败">#</a>  <code>git pash origin master</code>  失败</h2>
-<p>第一次遇见这个问题，我还以为是 <code>.gitignore</code>  文件的 <code>.DS_Store</code>  文件不存在？然后我删掉这个文件，好像还是继续报一样的错误，然后排除这个可能。</p>
+<p>简单来说，就是这个服务绑定了<code>GitHub</code>，我们每提交一次代码到<code>GitHub</code>，它都会抓取一次我们的仓库，检查新代码，然后提供一个运行环境，执行测试，完成构建，还能部署到服务器。</p>
+<p>+++</p>
+<p>然后我这次在准备提交文件到我新建的<code>hexo-backups</code>仓库的时候，出错了，就记录一下错误。</p>
+<h2 id="git-pash-origin-master失败"><a href="#git-pash-origin-master失败" class="headerlink" title="git pash origin master失败"></a><code>git pash origin master</code>失败</h2><p>第一次遇见这个问题，我还以为是<code>.gitignore</code>文件的<code>.DS_Store</code>文件不存在？然后我删掉这个文件，好像还是继续报一样的错误，然后排除这个可能。</p>
 <p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204082309.jpg" alt="" title="git pash origin master失败"></p>
-<h2 id="新建文件测试"><a class="markdownIt-Anchor" href="#新建文件测试">#</a> 新建文件测试</h2>
-<p>然后新建文件测试一下，看是不是文件没有被加载到缓存区，发现结果已经加载到缓冲区了</p>
+<h2 id="新建文件测试"><a href="#新建文件测试" class="headerlink" title="新建文件测试"></a>新建文件测试</h2><p>然后新建文件测试一下，看是不是文件没有被加载到缓存区，发现结果已经加载到缓冲区了</p>
 <p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204082313.jpg" alt="" title="测试文件"></p>
-<h2 id="添加origin"><a class="markdownIt-Anchor" href="#添加origin">#</a> 添加 origin</h2>
-<p>一开始我没有删除旧的 origin，我直接添加了，直接报错。实际操作应该删除旧的 origin 的，再添加新的 origin</p>
-<figure class="highlight bash"><figcaption data-lang="bash"><span>删除origin</span></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token comment"># 删除 origin</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token function">git</span> remote remove origin</pre></td></tr></table></figure><figure class="highlight bash"><figcaption data-lang="bash"><span>添加origin</span></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token comment"># 此处的 git@github.com:0000rookie/Hexo-backups.git 是仓库的 SSH</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre><span class="token function">git</span> <span class="token function">add</span> git@github.com:0000rookie/Hexo-backups.git</pre></td></tr></table></figure><figure class="highlight bash"><figcaption data-lang="bash"><span>查看origin</span></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">git</span> origin -v</pre></td></tr></table></figure><p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204082315.jpg" alt="" title="添加控制器"></p>
-<h2 id="重新commit"><a class="markdownIt-Anchor" href="#重新commit">#</a> 重新 commit</h2>
-<p>是的，我真的以为我只是修改一下 <code>origin</code>  就处理好了</p>
+<h2 id="添加origin"><a href="#添加origin" class="headerlink" title="添加origin"></a>添加origin</h2><p>一开始我没有删除旧的origin，我直接添加了，直接报错。实际操作应该删除旧的origin的，再添加新的origin</p>
+<p>```bash 删除origin mark:1,2-3</p>
+<h1 id="删除origin"><a href="#删除origin" class="headerlink" title="删除origin"></a>删除origin</h1><p>git remote remove origin</p>
+<pre><code>
+```bash 添加origin mark:1,2-3
+# 此处的 git@github.com:0000rookie/Hexo-backups.git 是仓库的SSH
+git add git@github.com:0000rookie/Hexo-backups.git
+</code></pre><p><code>bash 查看origin mark:1,2-3
+git origin -v</code></p>
+<p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204082315.jpg" alt="" title="添加控制器"></p>
+<h2 id="重新commit"><a href="#重新commit" class="headerlink" title="重新commit"></a>重新commit</h2><p>是的，我真的以为我只是修改一下<code>origin</code>就处理好了</p>
 <p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204082324.jpg" alt="" title="重新commit"></p>
-<h2 id="git-push-f-origin-master提交成功"><a class="markdownIt-Anchor" href="#git-push-f-origin-master提交成功">#</a>  <code>git push -f origin master</code>  提交成功</h2>
-<p>奇怪的是，我试试用 <code>git push -f origin master</code>  就成功了</p>
+<h2 id="git-push-f-origin-master提交成功"><a href="#git-push-f-origin-master提交成功" class="headerlink" title="git push -f origin master提交成功"></a><code>git push -f origin master</code>提交成功</h2><p>奇怪的是，我试试用<code>git push -f origin master</code>就成功了</p>
 <p><img data-src="http://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/pmlipmng202204082326.jpg" alt="" title="git push -f origin master"></p>
-<div class="note success">
+<p>:::success</p>
 <p>目前还不知道是什么原因导致错误，如果你知道，欢迎留言告诉我！！！</p>
-</div>
-<div class="note warning">
+<p>:::</p>
+<p>:::warning</p>
 <p>以上如有错误，欢迎留言指出</p>
-</div>
+<p>:::</p>
 
       <div class="tags">
           <a href="/tags/BUG/" rel="tag"><i class="ic i-tag"></i> BUG</a>
@@ -291,7 +293,7 @@ git push origin master失败 - 各种bug - 计算机科学 |
     <div class="item left">
       
 
-  <a href="/edaa94fb.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipetfk5zwj20zk0m8e81.jpg" title="为博客添加免费的CDN加速">
+  <a href="/edaa94fb.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipesng5oej20zk0m87d4.jpg" title="为博客添加免费的CDN加速">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> 技术杂谈</span>
   <h3>为博客添加免费的CDN加速</h3>
@@ -301,7 +303,7 @@ git push origin master失败 - 各种bug - 计算机科学 |
     <div class="item right">
       
 
-  <a href="/ef5acbc6.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipey84bjtj20zk0m8hdt.jpg" title="4.9日记分享">
+  <a href="/ef5acbc6.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicit31ffoj20zk0m8naf.jpg" title="4.9日记分享">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> 日记</span>
   <h3>4.9日记分享</h3>
@@ -323,7 +325,7 @@ git push origin master失败 - 各种bug - 计算机科学 |
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E%E6%88%91%E6%83%B3%E5%A4%87%E4%BB%BDblog%E8%BF%99%E4%BB%B6%E4%BA%8B"><span class="toc-number">1.</span> <span class="toc-text"> 关于我想备份 blog  这件事</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#git-pash-origin-master%E5%A4%B1%E8%B4%A5"><span class="toc-number">2.</span> <span class="toc-text">  git pash origin master  失败</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E6%B5%8B%E8%AF%95"><span class="toc-number">3.</span> <span class="toc-text"> 新建文件测试</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0origin"><span class="toc-number">4.</span> <span class="toc-text"> 添加 origin</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%87%8D%E6%96%B0commit"><span class="toc-number">5.</span> <span class="toc-text"> 重新 commit</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#git-push-f-origin-master%E6%8F%90%E4%BA%A4%E6%88%90%E5%8A%9F"><span class="toc-number">6.</span> <span class="toc-text">  git push -f origin master  提交成功</span></a></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E%E6%88%91%E6%83%B3%E5%A4%87%E4%BB%BDblog%E8%BF%99%E4%BB%B6%E4%BA%8B"><span class="toc-number">1.</span> <span class="toc-text">关于我想备份blog这件事</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#git-pash-origin-master%E5%A4%B1%E8%B4%A5"><span class="toc-number">2.</span> <span class="toc-text">git pash origin master失败</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E6%B5%8B%E8%AF%95"><span class="toc-number">3.</span> <span class="toc-text">新建文件测试</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0origin"><span class="toc-number">4.</span> <span class="toc-text">添加origin</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%A0%E9%99%A4origin"><span class="toc-number"></span> <span class="toc-text">删除origin</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%87%8D%E6%96%B0commit"><span class="toc-number">1.</span> <span class="toc-text">重新commit</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#git-push-f-origin-master%E6%8F%90%E4%BA%A4%E6%88%90%E5%8A%9F"><span class="toc-number">2.</span> <span class="toc-text">git push -f origin master提交成功</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
@@ -469,40 +471,12 @@ git push origin master失败 - 各种bug - 计算机科学 |
 <div class="breadcrumb">
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E4%B8%80%E4%B8%AA%E5%B0%8F%E6%8A%80%E5%B7%A7/" title="分类于 一个小技巧">一个小技巧</a>
-</div>
-
-    <span><a href="/2cc8588f.html" title="添加开机自启程序">添加开机自启程序</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/" title="分类于 java">java</a>
-</div>
-
-    <span><a href="/73480a46.html" title="javase触发事件">javase触发事件</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E6%A8%A1%E5%9D%97/" title="分类于 模块">模块</a>
 </div>
 
-    <span><a href="/859f60bd.html" title="第二篇：安装Git---从0基础搭建Hexo博客">第二篇：安装Git---从0基础搭建Hexo博客</a></span>
+    <span><a href="/c5de56d5.html" title="Hexo怎么安装插件">Hexo怎么安装插件</a></span>
   </li>
 
       
@@ -525,38 +499,10 @@ git push origin master失败 - 各种bug - 计算机科学 |
 <i class="ic i-angle-right"></i>
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/" title="分类于 java">java</a>
-</div>
-
-    <span><a href="/85111a4c.html" title="关闭Java数据库SSL安全提示">关闭Java数据库SSL安全提示</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/" title="分类于 博客的食用方法">博客的食用方法</a>
-</div>
-
-    <span><a href="/5d5981b0.html" title="关于shoka主题食用技巧">关于shoka主题食用技巧</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
-<i class="ic i-angle-right"></i>
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
 </div>
 
-    <span><a href="/8075134e.html" title="numpy画复合函数">numpy画复合函数</a></span>
+    <span><a href="/ed51a5a6.html" title="matplotlib制作条形图、直方图">matplotlib制作条形图、直方图</a></span>
   </li>
 
       
@@ -579,12 +525,52 @@ git push origin master失败 - 各种bug - 计算机科学 |
 <div class="breadcrumb">
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E4%B8%80%E4%B8%AA%E5%B0%8F%E6%8A%80%E5%B7%A7/" title="分类于 一个小技巧">一个小技巧</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
 </div>
 
-    <span><a href="/2fbd98c3.html" title="如何给PicGo添加水印">如何给PicGo添加水印</a></span>
+    <span><a href="/6c2393ec.html" title="第七篇：购买域名---从0基础搭建Hexo博客">第七篇：购买域名---从0基础搭建Hexo博客</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%90%84%E7%A7%8Dbug/" title="分类于 各种bug">各种bug</a>
+</div>
+
+    <span><a href="/6c24ad8e.html" title="python安装&#x2F;更新包出现报错">python安装/更新包出现报错</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/" title="分类于 博客的食用方法">博客的食用方法</a>
+</div>
+
+    <span><a href="/a7032750.html" title="文章Front-Matter参数设置">文章Front-Matter参数设置</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/" title="分类于 博客的食用方法">博客的食用方法</a>
+</div>
+
+    <span><a href="/6f010433.html" title="jsdelivr刷新缓存">jsdelivr刷新缓存</a></span>
   </li>
 
       
@@ -596,7 +582,19 @@ git push origin master失败 - 各种bug - 计算机科学 |
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
 </div>
 
-    <span><a href="/9b0876ac.html" title="GitHub使用技巧">GitHub使用技巧</a></span>
+    <span><a href="/8d43d157.html" title="如何远程虚拟机">如何远程虚拟机</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%90%84%E7%A7%8Dbug/" title="分类于 各种bug">各种bug</a>
+</div>
+
+    <span><a href="/a96b8873.html" title="Maven build失败 MAVEN:单元测试报错">Maven build失败 MAVEN:单元测试报错</a></span>
   </li>
 
   </ul>
@@ -621,13 +619,13 @@ git push origin master失败 - 各种bug - 计算机科学 |
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="站点总字数">111k 字</span>
+    <span title="站点总字数">119k 字</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="站点阅读时长">2:31</span>
+    <span title="站点阅读时长">2:41</span>
   </div>
   <div class="powered-by">
     基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
