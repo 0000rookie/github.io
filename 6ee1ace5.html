@@ -83,7 +83,7 @@ hexo端口4000被占用 - 各种bug - 计算机科学 |
       <i class="ic i-pen"></i>
     </span>
     <span class="text">本文字数</span>
-    <span>2.6k</span>
+    <span>2.7k</span>
     <span class="text">字</span>
   </span>
   <span class="item" title="阅读时长">
@@ -124,12 +124,12 @@ hexo端口4000被占用 - 各种bug - 计算机科学 |
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipexoj0moj20zk0m8kgu.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeubcbajj20zk0m8h1h.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclgi503lj20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicivghyooj20zk0m8dir.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclhfehz7j20zk0m8u0x.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giciszlczyj20zk0m816d.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclffsa1cj20zk0m811l.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeyonbf9j20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipey84bjtj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicit31ffoj20zk0m8naf.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclflwv2aj20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipetfk5zwj20zk0m8e81.jpg"></li>
         </ul>
       </div>
     </header>
@@ -178,18 +178,59 @@ hexo端口4000被占用 - 各种bug - 计算机科学 |
   <div class="body md" itemprop="articleBody">
     
 
-    <h2 id="报错内容port-4000-has-been-used-try-other-port-instead"><a class="markdownIt-Anchor" href="#报错内容port-4000-has-been-used-try-other-port-instead">#</a> 报错内容：Port 4000 has been used. Try other port instead.</h2>
-<p>译文：4000 端口已被占用。尝试其他端口</p>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token operator">>></span><span class="token operator">></span> hexo s</pre></td></tr><tr><td data-num="2"></td><td><pre>FATAL Port <span class="token number">4000</span> has been used. Try other port instead.</pre></td></tr><tr><td data-num="3"></td><td><pre>FATAL <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>  err: Error: listen EADDRINUSE: address already <span class="token keyword">in</span> use :::4000</pre></td></tr><tr><td data-num="5"></td><td><pre>      at Server.setupListenHandle <span class="token punctuation">[</span>as _listen2<span class="token punctuation">]</span> <span class="token punctuation">(</span>net.js:1331:16<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="6"></td><td><pre>      at listenInCluster <span class="token punctuation">(</span>net.js:1379:12<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="7"></td><td><pre>      at Server.listen <span class="token punctuation">(</span>net.js:1465:7<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="8"></td><td><pre>      at E:<span class="token punctuation">\</span>Blog<span class="token punctuation">\</span>node_modules<span class="token punctuation">\</span>hexo-server<span class="token punctuation">\</span>lib<span class="token punctuation">\</span>server.js:68:12</pre></td></tr><tr><td data-num="9"></td><td><pre>      at Promise._execute <span class="token punctuation">(</span>E:<span class="token punctuation">\</span>Blog<span class="token punctuation">\</span>node_modules<span class="token punctuation">\</span>bluebird<span class="token punctuation">\</span>js<span class="token punctuation">\</span>release<span class="token punctuation">\</span>debuggability.js:384:9<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="10"></td><td><pre>      at Promise._resolveFromExecutor <span class="token punctuation">(</span>E:<span class="token punctuation">\</span>Blog<span class="token punctuation">\</span>node_modules<span class="token punctuation">\</span>bluebird<span class="token punctuation">\</span>js<span class="token punctuation">\</span>release<span class="token punctuation">\</span>promise.js:518:18<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="11"></td><td><pre>      at new Promise <span class="token punctuation">(</span>E:<span class="token punctuation">\</span>Blog<span class="token punctuation">\</span>node_modules<span class="token punctuation">\</span>bluebird<span class="token punctuation">\</span>js<span class="token punctuation">\</span>release<span class="token punctuation">\</span>promise.js:103:10<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="12"></td><td><pre>      at checkPort <span class="token punctuation">(</span>E:<span class="token punctuation">\</span>Blog<span class="token punctuation">\</span>node_modules<span class="token punctuation">\</span>hexo-server<span class="token punctuation">\</span>lib<span class="token punctuation">\</span>server.js:65:10<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="13"></td><td><pre>      at Hexo.module.exports <span class="token punctuation">(</span>E:<span class="token punctuation">\</span>Blog<span class="token punctuation">\</span>node_modules<span class="token punctuation">\</span>hexo-server<span class="token punctuation">\</span>lib<span class="token punctuation">\</span>server.js:17:10<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="14"></td><td><pre>      at Hexo.tryCatcher <span class="token punctuation">(</span>E:<span class="token punctuation">\</span>Blog<span class="token punctuation">\</span>node_modules<span class="token punctuation">\</span>bluebird<span class="token punctuation">\</span>js<span class="token punctuation">\</span>release<span class="token punctuation">\</span>util.js:16:23<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="15"></td><td><pre>      at Hexo.<span class="token operator">&lt;</span>anonymous<span class="token operator">></span> <span class="token punctuation">(</span>E:<span class="token punctuation">\</span>Blog<span class="token punctuation">\</span>node_modules<span class="token punctuation">\</span>bluebird<span class="token punctuation">\</span>js<span class="token punctuation">\</span>release<span class="token punctuation">\</span>method.js:15:34<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="16"></td><td><pre>      at Hexo.call <span class="token punctuation">(</span>E:<span class="token punctuation">\</span>Blog<span class="token punctuation">\</span>node_modules<span class="token punctuation">\</span>hexo<span class="token punctuation">\</span>lib<span class="token punctuation">\</span>hexo<span class="token punctuation">\</span>index.js:258:27<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="17"></td><td><pre>      at E:<span class="token punctuation">\</span>studyAPP<span class="token punctuation">\</span>node_js<span class="token punctuation">\</span>node_global<span class="token punctuation">\</span>node_modules<span class="token punctuation">\</span>hexo-cli<span class="token punctuation">\</span>lib<span class="token punctuation">\</span>hexo.js:60:17</pre></td></tr><tr><td data-num="18"></td><td><pre>      at tryCatcher <span class="token punctuation">(</span>E:<span class="token punctuation">\</span>studyAPP<span class="token punctuation">\</span>node_js<span class="token punctuation">\</span>node_global<span class="token punctuation">\</span>node_modules<span class="token punctuation">\</span>hexo-cli<span class="token punctuation">\</span>node_modules<span class="token punctuation">\</span>bluebird<span class="token punctuation">\</span>js<span class="token punctuation">\</span>release<span class="token punctuation">\</span>util.js:16:23<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="19"></td><td><pre>      at Promise._settlePromiseFromHandler <span class="token punctuation">(</span>E:<span class="token punctuation">\</span>studyAPP<span class="token punctuation">\</span>node_js<span class="token punctuation">\</span>node_global<span class="token punctuation">\</span>node_modules<span class="token punctuation">\</span>hexo-cli<span class="token punctuation">\</span>node_modules<span class="token punctuation">\</span>bluebird<span class="token punctuation">\</span>js<span class="token punctuation">\</span>release<span class="token punctuation">\</span>promise.js:547:31<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="20"></td><td><pre>      at Promise._settlePromise <span class="token punctuation">(</span>E:<span class="token punctuation">\</span>studyAPP<span class="token punctuation">\</span>node_js<span class="token punctuation">\</span>node_global<span class="token punctuation">\</span>node_modules<span class="token punctuation">\</span>hexo-cli<span class="token punctuation">\</span>node_modules<span class="token punctuation">\</span>bluebird<span class="token punctuation">\</span>js<span class="token punctuation">\</span>release<span class="token punctuation">\</span>promise.js:604:18<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="21"></td><td><pre>      at Promise._settlePromise0 <span class="token punctuation">(</span>E:<span class="token punctuation">\</span>studyAPP<span class="token punctuation">\</span>node_js<span class="token punctuation">\</span>node_global<span class="token punctuation">\</span>node_modules<span class="token punctuation">\</span>hexo-cli<span class="token punctuation">\</span>node_modules<span class="token punctuation">\</span>bluebird<span class="token punctuation">\</span>js<span class="token punctuation">\</span>release<span class="token punctuation">\</span>promise.js:649:10<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="22"></td><td><pre>      at Promise._settlePromises <span class="token punctuation">(</span>E:<span class="token punctuation">\</span>studyAPP<span class="token punctuation">\</span>node_js<span class="token punctuation">\</span>node_global<span class="token punctuation">\</span>node_modules<span class="token punctuation">\</span>hexo-cli<span class="token punctuation">\</span>node_modules<span class="token punctuation">\</span>bluebird<span class="token punctuation">\</span>js<span class="token punctuation">\</span>release<span class="token punctuation">\</span>promise.js:729:18<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="23"></td><td><pre>      at _drainQueueStep <span class="token punctuation">(</span>E:<span class="token punctuation">\</span>studyAPP<span class="token punctuation">\</span>node_js<span class="token punctuation">\</span>node_global<span class="token punctuation">\</span>node_modules<span class="token punctuation">\</span>hexo-cli<span class="token punctuation">\</span>node_modules<span class="token punctuation">\</span>bluebird<span class="token punctuation">\</span>js<span class="token punctuation">\</span>release<span class="token punctuation">\</span>async.js:93:12<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="24"></td><td><pre>      at _drainQueue <span class="token punctuation">(</span>E:<span class="token punctuation">\</span>studyAPP<span class="token punctuation">\</span>node_js<span class="token punctuation">\</span>node_global<span class="token punctuation">\</span>node_modules<span class="token punctuation">\</span>hexo-cli<span class="token punctuation">\</span>node_modules<span class="token punctuation">\</span>bluebird<span class="token punctuation">\</span>js<span class="token punctuation">\</span>release<span class="token punctuation">\</span>async.js:86:9<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="25"></td><td><pre>      at Async._drainQueues <span class="token punctuation">(</span>E:<span class="token punctuation">\</span>studyAPP<span class="token punctuation">\</span>node_js<span class="token punctuation">\</span>node_global<span class="token punctuation">\</span>node_modules<span class="token punctuation">\</span>hexo-cli<span class="token punctuation">\</span>node_modules<span class="token punctuation">\</span>bluebird<span class="token punctuation">\</span>js<span class="token punctuation">\</span>release<span class="token punctuation">\</span>async.js:102:5<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="26"></td><td><pre>      at Immediate.Async.drainQueues <span class="token punctuation">(</span>E:<span class="token punctuation">\</span>studyAPP<span class="token punctuation">\</span>node_js<span class="token punctuation">\</span>node_global<span class="token punctuation">\</span>node_modules<span class="token punctuation">\</span>hexo-cli<span class="token punctuation">\</span>node_modules<span class="token punctuation">\</span>bluebird<span class="token punctuation">\</span>js<span class="token punctuation">\</span>release<span class="token punctuation">\</span>async.js:15:14<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="27"></td><td><pre>    code: <span class="token string">'EADDRINUSE'</span>,</pre></td></tr><tr><td data-num="28"></td><td><pre>    errno: -4091,</pre></td></tr><tr><td data-num="29"></td><td><pre>    syscall: <span class="token string">'listen'</span>,</pre></td></tr><tr><td data-num="30"></td><td><pre>    address: <span class="token string">'::'</span>,</pre></td></tr><tr><td data-num="31"></td><td><pre>    port: <span class="token number">4000</span></pre></td></tr><tr><td data-num="32"></td><td><pre>  <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="33"></td><td><pre><span class="token punctuation">&#125;</span> Something's wrong. Maybe you can <span class="token function">find</span> the solution here: %s https://hexo.io/docs/troubleshooting.html</pre></td></tr></table></figure><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022050306.jpeg" alt=""></p>
-<h2 id="解决方法"><a class="markdownIt-Anchor" href="#解决方法">#</a> 解决方法</h2>
-<h3 id="方法一"><a class="markdownIt-Anchor" href="#方法一">#</a> 方法一</h3>
-<p>杀掉 <code>4000</code>  被占用的端口，让 <code>hexo</code>  运行 <code>4000</code>  端口</p>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment"># 查看 4000 端口是什么程序占用</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token operator">>></span><span class="token operator">></span> <span class="token function">netstat</span> -ano <span class="token operator">|</span> findstr <span class="token string">"4000"</span> </pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token comment"># 杀掉 4000 端口正在运行的程序</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token operator">>></span><span class="token operator">></span> taskkill -PID <span class="token number">15868</span> -F</pre></td></tr></table></figure><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022050215.jpeg" alt=""></p>
-<h3 id="方法二"><a class="markdownIt-Anchor" href="#方法二">#</a> 方法二</h3>
-<p>在 <code>_config.yml</code>  修改 hexo 默认端口，在 <code>hexo s </code> 的时候就不是 <code>4000</code>  端口了</p>
-<figure class="highlight yaml"><figcaption data-lang="YAML"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token key atrule">server</span><span class="token punctuation">:</span></pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token key atrule">port</span><span class="token punctuation">:</span> <span class="token number">4001</span></pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token key atrule">compress</span><span class="token punctuation">:</span> <span class="token boolean important">true</span></pre></td></tr><tr><td data-num="4"></td><td><pre>  <span class="token key atrule">header</span><span class="token punctuation">:</span> <span class="token boolean important">true</span></pre></td></tr></table></figure><h3 id="方法三"><a class="markdownIt-Anchor" href="#方法三">#</a> 方法三</h3>
-<p>指定端口运行，这里指定 5000 端口运行</p>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token operator">>></span><span class="token operator">></span> hexo server -p <span class="token number">5000</span></pre></td></tr></table></figure>
+    <h2 id="报错内容：Port-4000-has-been-used-Try-other-port-instead"><a href="#报错内容：Port-4000-has-been-used-Try-other-port-instead" class="headerlink" title="报错内容：Port 4000 has been used. Try other port instead."></a>报错内容：Port 4000 has been used. Try other port instead.</h2><p>译文：4000端口已被占用。尝试其他端口</p>
+<pre><code class="lang-bash">&gt;&gt;&gt; hexo s
+FATAL Port 4000 has been used. Try other port instead.
+FATAL &#123;
+  err: Error: listen EADDRINUSE: address already in use :::4000
+      at Server.setupListenHandle [as _listen2] (net.js:1331:16)
+      at listenInCluster (net.js:1379:12)
+      at Server.listen (net.js:1465:7)
+      at E:\Blog\node_modules\hexo-server\lib\server.js:68:12
+      at Promise._execute (E:\Blog\node_modules\bluebird\js\release\debuggability.js:384:9)
+      at Promise._resolveFromExecutor (E:\Blog\node_modules\bluebird\js\release\promise.js:518:18)
+      at new Promise (E:\Blog\node_modules\bluebird\js\release\promise.js:103:10)
+      at checkPort (E:\Blog\node_modules\hexo-server\lib\server.js:65:10)
+      at Hexo.module.exports (E:\Blog\node_modules\hexo-server\lib\server.js:17:10)
+      at Hexo.tryCatcher (E:\Blog\node_modules\bluebird\js\release\util.js:16:23)
+      at Hexo.&lt;anonymous&gt; (E:\Blog\node_modules\bluebird\js\release\method.js:15:34)
+      at Hexo.call (E:\Blog\node_modules\hexo\lib\hexo\index.js:258:27)
+      at E:\studyAPP\node_js\node_global\node_modules\hexo-cli\lib\hexo.js:60:17
+      at tryCatcher (E:\studyAPP\node_js\node_global\node_modules\hexo-cli\node_modules\bluebird\js\release\util.js:16:23)
+      at Promise._settlePromiseFromHandler (E:\studyAPP\node_js\node_global\node_modules\hexo-cli\node_modules\bluebird\js\release\promise.js:547:31)
+      at Promise._settlePromise (E:\studyAPP\node_js\node_global\node_modules\hexo-cli\node_modules\bluebird\js\release\promise.js:604:18)
+      at Promise._settlePromise0 (E:\studyAPP\node_js\node_global\node_modules\hexo-cli\node_modules\bluebird\js\release\promise.js:649:10)
+      at Promise._settlePromises (E:\studyAPP\node_js\node_global\node_modules\hexo-cli\node_modules\bluebird\js\release\promise.js:729:18)
+      at _drainQueueStep (E:\studyAPP\node_js\node_global\node_modules\hexo-cli\node_modules\bluebird\js\release\async.js:93:12)
+      at _drainQueue (E:\studyAPP\node_js\node_global\node_modules\hexo-cli\node_modules\bluebird\js\release\async.js:86:9)
+      at Async._drainQueues (E:\studyAPP\node_js\node_global\node_modules\hexo-cli\node_modules\bluebird\js\release\async.js:102:5)
+      at Immediate.Async.drainQueues (E:\studyAPP\node_js\node_global\node_modules\hexo-cli\node_modules\bluebird\js\release\async.js:15:14) &#123;
+    code: &#39;EADDRINUSE&#39;,
+    errno: -4091,
+    syscall: &#39;listen&#39;,
+    address: &#39;::&#39;,
+    port: 4000
+  &#125;
+&#125; Something&#39;s wrong. Maybe you can find the solution here: %s https://hexo.io/docs/troubleshooting.html
+</code></pre>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022050306.jpeg" alt=""></p>
+<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><h3 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h3><p>杀掉<code>4000</code>被占用的端口，让<code>hexo</code>运行<code>4000</code>端口</p>
+<pre><code class="lang-bash"># 查看4000端口是什么程序占用
+&gt;&gt;&gt; netstat -ano | findstr &quot;4000&quot; 
+# 杀掉4000端口正在运行的程序
+&gt;&gt;&gt; taskkill -PID 15868 -F
+</code></pre>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022050215.jpeg" alt=""></p>
+<h3 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h3><p>在<code>_config.yml</code>修改hexo默认端口，在<code>hexo s</code>的时候就不是<code>4000</code>端口了</p>
+<pre><code class="lang-yaml">server:
+  port: 4001
+  compress: true
+  header: true
+</code></pre>
+<h3 id="方法三"><a href="#方法三" class="headerlink" title="方法三"></a>方法三</h3><p>指定端口运行，这里指定5000端口运行</p>
+<pre><code class="lang-bash">&gt;&gt;&gt; hexo server -p 5000
+</code></pre>
+
       <div class="tags">
           <a href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag"><i class="ic i-tag"></i> 博客</a>
           <a href="/tags/BUG/" rel="tag"><i class="ic i-tag"></i> BUG</a>
@@ -265,7 +306,7 @@ hexo端口4000被占用 - 各种bug - 计算机科学 |
     <div class="item left">
       
 
-  <a href="/6c24ad8e.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclx6phq6j20zk0m8e36.jpg" title="python安装&#x2F;更新包出现报错">
+  <a href="/6c24ad8e.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipew8gmvyj20zk0m87wh.jpg" title="python安装&#x2F;更新包出现报错">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> 各种bug</span>
   <h3>python安装/更新包出现报错</h3>
@@ -275,7 +316,7 @@ hexo端口4000被占用 - 各种bug - 计算机科学 |
     <div class="item right">
       
 
-  <a href="/b332b009.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipesng5oej20zk0m87d4.jpg" title="python爬虫-千千音乐">
+  <a href="/b332b009.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipevo9j1jj20zk0m8e81.jpg" title="python爬虫-千千音乐">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> python</span>
   <h3>python爬虫-千千音乐</h3>
@@ -297,7 +338,7 @@ hexo端口4000被占用 - 各种bug - 计算机科学 |
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8A%A5%E9%94%99%E5%86%85%E5%AE%B9port-4000-has-been-used-try-other-port-instead"><span class="toc-number">1.</span> <span class="toc-text"> 报错内容：Port 4000 has been used. Try other port instead.</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95"><span class="toc-number">2.</span> <span class="toc-text"> 解决方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%E4%B8%80"><span class="toc-number">2.1.</span> <span class="toc-text"> 方法一</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%E4%BA%8C"><span class="toc-number">2.2.</span> <span class="toc-text"> 方法二</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%E4%B8%89"><span class="toc-number">2.3.</span> <span class="toc-text"> 方法三</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8A%A5%E9%94%99%E5%86%85%E5%AE%B9%EF%BC%9APort-4000-has-been-used-Try-other-port-instead"><span class="toc-number">1.</span> <span class="toc-text">报错内容：Port 4000 has been used. Try other port instead.</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95"><span class="toc-number">2.</span> <span class="toc-text">解决方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%E4%B8%80"><span class="toc-number">2.1.</span> <span class="toc-text">方法一</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%E4%BA%8C"><span class="toc-number">2.2.</span> <span class="toc-text">方法二</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%E4%B8%89"><span class="toc-number">2.3.</span> <span class="toc-text">方法三</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
@@ -444,23 +485,11 @@ hexo端口4000被占用 - 各种bug - 计算机科学 |
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E6%9C%8D%E5%8A%A1%E5%99%A8/" title="分类于 服务器">服务器</a>
 </div>
 
-    <span><a href="/3d358537.html" title="Linux忘记数据库密码">Linux忘记数据库密码</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/" title="分类于 java">java</a>
-</div>
-
-    <span><a href="/dfaf38bb.html" title="javase连接数据库报错Communications link failure">javase连接数据库报错Communications link failure</a></span>
+    <span><a href="/c5deac78.html" title="Ubuntu怎么开启FTP(菜鸡篇)">Ubuntu怎么开启FTP(菜鸡篇)</a></span>
   </li>
 
       
@@ -474,7 +503,7 @@ hexo端口4000被占用 - 各种bug - 计算机科学 |
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
 </div>
 
-    <span><a href="/b9893092.html" title="python Qt5实现记事本基本功能">python Qt5实现记事本基本功能</a></span>
+    <span><a href="/4f9c6caa.html" title="python爬虫乱码问题">python爬虫乱码问题</a></span>
   </li>
 
       
@@ -483,28 +512,12 @@ hexo端口4000被占用 - 各种bug - 计算机科学 |
 <div class="breadcrumb">
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/docker/" title="分类于 docker">docker</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
 </div>
 
-    <span><a href="/2802e5c6.html" title="docker使用指令记录">docker使用指令记录</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/" title="分类于 持续更新">持续更新</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E7%B3%BB%E5%88%97/" title="分类于 Linux常用命令系列">Linux常用命令系列</a>
-</div>
-
-    <span><a href="/3fa3774.html" title="Linux远程管理常用命令">Linux远程管理常用命令</a></span>
+    <span><a href="/81b2f4bf.html" title="python基础">python基础</a></span>
   </li>
 
       
@@ -518,7 +531,47 @@ hexo端口4000被占用 - 各种bug - 计算机科学 |
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
 </div>
 
-    <span><a href="/a6f9d072.html" title="第一篇：注册github---从0基础搭建Hexo博客">第一篇：注册github---从0基础搭建Hexo博客</a></span>
+    <span><a href="/aaad0208.html" title="零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/" title="分类于 持续更新">持续更新</a>
+</div>
+
+    <span><a href="/43d2d741.html" title="Git详细使用方法">Git详细使用方法</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E4%B8%80%E4%B8%AA%E5%B0%8F%E6%8A%80%E5%B7%A7/" title="分类于 一个小技巧">一个小技巧</a>
+</div>
+
+    <span><a href="/2cc8588f.html" title="添加开机自启程序">添加开机自启程序</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E7%94%9F%E6%B4%BB/" title="分类于 生活">生活</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E7%94%9F%E6%B4%BB/%E5%A5%BD%E7%89%A9%E6%8E%A8%E8%8D%90/" title="分类于 好物推荐">好物推荐</a>
+</div>
+
+    <span><a href="/ee3e214f.html" title="QQ&#x2F;微信&#x2F;支付宝 收款码美化">QQ/微信/支付宝 收款码美化</a></span>
   </li>
 
       
@@ -530,9 +583,11 @@ hexo端口4000被占用 - 各种bug - 计算机科学 |
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
 <i class="ic i-angle-right"></i>
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/" title="分类于 java">java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/fail/" title="分类于 fail">fail</a>
 </div>
 
-    <span><a href="/f2edc254.html" title="javase基础">javase基础</a></span>
+    <span><a href="/3dddb2b0.html" title="intellij乱码">intellij乱码</a></span>
   </li>
 
       
@@ -541,24 +596,14 @@ hexo端口4000被占用 - 各种bug - 计算机科学 |
 <div class="breadcrumb">
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E6%A8%A1%E5%9D%97/" title="分类于 模块">模块</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/" title="分类于 java">java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/fail/" title="分类于 fail">fail</a>
 </div>
 
-    <span><a href="/e85071ad.html" title="搭建GitHu图床">搭建GitHu图床</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E7%94%9F%E6%B4%BB/" title="分类于 生活">生活</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E7%94%9F%E6%B4%BB/%E6%97%A5%E8%AE%B0/" title="分类于 日记">日记</a>
-</div>
-
-    <span><a href="/b9e6c7bf.html" title="日记分享2022.4.13">日记分享2022.4.13</a></span>
+    <span><a href="/85111a4c.html" title="关闭Java数据库SSL安全提示">关闭Java数据库SSL安全提示</a></span>
   </li>
 
       
@@ -567,10 +612,12 @@ hexo端口4000被占用 - 各种bug - 计算机科学 |
 <div class="breadcrumb">
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
 </div>
 
-    <span><a href="/eae60a43.html" title="大学选修科目">大学选修科目</a></span>
+    <span><a href="/cd7b33aa.html" title="Python组合数据类型">Python组合数据类型</a></span>
   </li>
 
   </ul>
@@ -595,13 +642,13 @@ hexo端口4000被占用 - 各种bug - 计算机科学 |
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="站点总字数">112k 字</span>
+    <span title="站点总字数">120k 字</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="站点阅读时长">2:33</span>
+    <span title="站点阅读时长">2:43</span>
   </div>
   <div class="powered-by">
     基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
