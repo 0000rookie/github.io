@@ -29,6 +29,8 @@
             <guid isPermalink="true">https://www.hikki.site/b7d12f04.html</guid>
             <title>window系统查看端口并杀掉</title>
             <link>https://www.hikki.site/b7d12f04.html</link>
+            <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+            <category term="技术杂谈" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" />
             <pubDate>Mon, 04 Jul 2022 14:52:01 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;查看全部端口情况&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#查看全部端口情况&#34;&gt;#&lt;/a&gt; 查看全部端口情况&lt;/h2&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;netstat&lt;/span&gt; -ano&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/20220704150846.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
