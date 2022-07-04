@@ -14,7 +14,8 @@
             "content_html": "<h2 id=\"查看全部端口情况\"><a class=\"markdownIt-Anchor\" href=\"#查看全部端口情况\">#</a> 查看全部端口情况</h2>\n<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre><span class=\"token function\">netstat</span> -ano</pre></td></tr></table></figure><p><img data-src=\"http://hikki.test.upcdn.net/20220704150846.jpeg\" alt=\"\"></p>\n<h2 id=\"查找端口\"><a class=\"markdownIt-Anchor\" href=\"#查找端口\">#</a> 查找端口</h2>\n<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre><span class=\"token function\">netstat</span> -ano<span class=\"token operator\">|</span>findstr <span class=\"token string\">\"622\"</span></pre></td></tr></table></figure><p>最后边有个 <code>4560</code>  是 <code>PID</code> ，可以通过 <code>PID</code>  查找出对应的进程</p>\n<p><img data-src=\"http://hikki.test.upcdn.net/20220704150859.jpeg\" alt=\"\"></p>\n<h2 id=\"查找端口对应进程\"><a class=\"markdownIt-Anchor\" href=\"#查找端口对应进程\">#</a> 查找端口对应进程</h2>\n<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre>tasklist <span class=\"token operator\">|</span> findstr <span class=\"token string\">\"4560\"</span></pre></td></tr></table></figure><p><img data-src=\"http://hikki.test.upcdn.net/03.jpg\" alt=\"\"></p>\n<h2 id=\"结束该进程\"><a class=\"markdownIt-Anchor\" href=\"#结束该进程\">#</a> 结束该进程</h2>\n<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre>taskkill /f /t /im svchost.exe</pre></td></tr></table></figure><p><img data-src=\"http://hikki.test.upcdn.net/20220704151253.jpeg\" alt=\"\"></p>\n<h2 id=\"或者可以通过pid来查找占用进程\"><a class=\"markdownIt-Anchor\" href=\"#或者可以通过pid来查找占用进程\">#</a> 或者可以通过 PID 来查找占用进程</h2>\n<p><img data-src=\"http://hikki.test.upcdn.net/20220704151640.jpeg\" alt=\"\"></p>\n",
             "tags": [
                 "计算机科学",
-                "技术杂谈"
+                "技术杂谈",
+                "window"
             ]
         },
         {
@@ -25,7 +26,9 @@
             "content_html": "",
             "tags": [
                 "计算机科学",
-                "技术杂谈"
+                "技术杂谈",
+                "办公软件",
+                "Excel"
             ]
         },
         {
@@ -116,7 +119,6 @@
             "tags": [
                 "计算机科学",
                 "技术杂谈",
-                "服务器",
                 "docker"
             ]
         },
@@ -142,7 +144,7 @@
             "tags": [
                 "计算机科学",
                 "技术杂谈",
-                "服务器",
+                "Linux",
                 "Vim"
             ]
         },
@@ -155,7 +157,7 @@
             "tags": [
                 "计算机科学",
                 "技术杂谈",
-                "持续更新",
+                "GitHub",
                 "Git"
             ]
         },
@@ -168,7 +170,6 @@
             "tags": [
                 "计算机科学",
                 "技术杂谈",
-                "服务器",
                 "docker"
             ]
         },
@@ -181,7 +182,7 @@
             "tags": [
                 "计算机科学",
                 "技术杂谈",
-                "服务器",
+                "Linux",
                 "Linux",
                 "服务器"
             ]
@@ -195,7 +196,7 @@
             "tags": [
                 "计算机科学",
                 "技术杂谈",
-                "服务器",
+                "Linux",
                 "Linux"
             ]
         },
@@ -231,7 +232,6 @@
             "tags": [
                 "计算机科学",
                 "技术杂谈",
-                "服务器",
                 "docker",
                 "服务器"
             ]
@@ -244,7 +244,8 @@
             "content_html": "<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre><span class=\"token function\">shutdown</span> -s <span class=\"token comment\"># 设置一分钟后自动关机</span></pre></td></tr><tr><td data-num=\"2\"></td><td><pre><span class=\"token function\">shutdown</span> -s -t <span class=\"token number\">7200</span> <span class=\"token comment\"># 设置 7200s 后自动关机</span></pre></td></tr><tr><td data-num=\"3\"></td><td><pre><span class=\"token function\">shutdown</span> -a  <span class=\"token comment\">#取消关机指令</span></pre></td></tr></table></figure>",
             "tags": [
                 "计算机科学",
-                "技术杂谈"
+                "技术杂谈",
+                "window"
             ]
         },
         {
