@@ -8,7 +8,7 @@
     <author>
       <name>璃柏涟</name>
     </author>
-    <updated>2022-07-07T08:30:20.000Z</updated>
+    <updated>2022-07-07T18:56:56.000Z</updated>
     <category term="web安全" />
     <category term="笔记" />
     <category term="web" />
@@ -22,6 +22,53 @@
     <category term="后端" />
     <category term="markdown" />
     <category term="搭建个人博客" />
+    <entry>
+        <id>https://www.hikki.site/cdd384e5.html</id>
+        <title>win10指定文件默认方式打开</title>
+        <link rel="alternate" href="https://www.hikki.site/cdd384e5.html"/>
+        <content type="html">&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;以下使用修改 PDF 格式文件用 &lt;code&gt;PDF-XChange Editor&lt;/code&gt;  打开为例子&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;方法一&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#方法一&#34;&gt;#&lt;/a&gt; 方法一&lt;/h2&gt;
+&lt;h3 id=&#34;打开文件属性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#打开文件属性&#34;&gt;#&lt;/a&gt; 打开文件属性&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/20220708160500.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;更改打开方式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#更改打开方式&#34;&gt;#&lt;/a&gt; 更改打开方式&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/20220708160531.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;选择你想用某个软件打开&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#选择你想用某个软件打开&#34;&gt;#&lt;/a&gt; 选择你想用某个软件打开&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/20220708160615.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;点击应用确定&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#点击应用确定&#34;&gt;#&lt;/a&gt; 点击应用–&amp;gt; 确定&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/20220708160709.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;方法二使用绿色软件打开&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#方法二使用绿色软件打开&#34;&gt;#&lt;/a&gt; 方法二：使用绿色软件打开&lt;/h2&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;也就是不需要安装的软件，在方法一找不到这个 &lt;code&gt;PDF-XChange Editor&lt;/code&gt;  软件&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;和方法一差不多&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;打开文件属性-2&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#打开文件属性-2&#34;&gt;#&lt;/a&gt; 打开文件属性&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/20220708160500.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/20220708160500.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;更改打开方式-2&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#更改打开方式-2&#34;&gt;#&lt;/a&gt; 更改打开方式&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/20220708160531.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;更多应用&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#更多应用&#34;&gt;#&lt;/a&gt; 更多应用&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/20220708161807.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;在这台电脑上查找其他应用&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#在这台电脑上查找其他应用&#34;&gt;#&lt;/a&gt; 在这台电脑上查找其他应用&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/20220708161934.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;选择该软件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#选择该软件&#34;&gt;#&lt;/a&gt; 选择该软件&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/20220708162017.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;应用该软件并确定&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#应用该软件并确定&#34;&gt;#&lt;/a&gt; 应用该软件并确定&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/20220708162024.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;方法三在设置修改&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#方法三在设置修改&#34;&gt;#&lt;/a&gt; 方法三：在设置修改&lt;/h2&gt;
+&lt;h3 id=&#34;打开设置应用&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#打开设置应用&#34;&gt;#&lt;/a&gt; 打开设置–&amp;gt; 应用&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/20220708162106.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;默认应用按文件类型指定默认应用&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#默认应用按文件类型指定默认应用&#34;&gt;#&lt;/a&gt; 默认应用–&amp;gt; 按文件类型指定默认应用&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/20220708162322.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;修改pdf选择打开的软件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#修改pdf选择打开的软件&#34;&gt;#&lt;/a&gt; 修改.pdf 选择打开的软件&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/20220708162357.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;总结&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#总结&#34;&gt;#&lt;/a&gt; 总结&lt;/h2&gt;
+&lt;p&gt;以上是以 PDF 格式文件修改默认打开方式，如果你是其他文件也是以此方式修改，比如 &lt;code&gt;TXT&lt;/code&gt; 、 &lt;code&gt;md&lt;/code&gt;  等格式的文件也是可以用以上的三种方式。&lt;/p&gt;
+&lt;p&gt;其中方法二是万能的，比如你的软件是解压就能直接使用，不需要安装的，那么，你也可以使用方法二来设置为默认打开软件。&lt;/p&gt;
+</content>
+        <updated>2022-07-07T18:56:56.000Z</updated>
+    </entry>
     <entry>
         <id>https://www.hikki.site/b241aa8.html</id>
         <title>暑假Java Web计划</title>
@@ -698,15 +745,5 @@
         <category term="docker" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/docker/" />
         <category term="服务器" scheme="https://www.hikki.site/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" />
         <updated>2022-06-04T16:47:53.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://www.hikki.site/4dbd02f9.html</id>
-        <title>win10关机指令</title>
-        <link rel="alternate" href="https://www.hikki.site/4dbd02f9.html"/>
-        <content type="html">&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;shutdown&lt;/span&gt; -s &lt;span class=&#34;token comment&#34;&gt;# 设置一分钟后自动关机&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;shutdown&lt;/span&gt; -s -t &lt;span class=&#34;token number&#34;&gt;7200&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;# 设置 7200s 后自动关机&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;shutdown&lt;/span&gt; -a  &lt;span class=&#34;token comment&#34;&gt;#取消关机指令&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
-        <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-        <category term="技术杂谈" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" />
-        <category term="window" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/window/" />
-        <updated>2022-06-01T07:06:24.000Z</updated>
     </entry>
 </feed>

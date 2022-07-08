@@ -7,6 +7,14 @@
     "home_page_url": "https://www.hikki.site",
     "items": [
         {
+            "id": "https://www.hikki.site/cdd384e5.html",
+            "url": "https://www.hikki.site/cdd384e5.html",
+            "title": "win10指定文件默认方式打开",
+            "date_published": "2022-07-07T18:56:56.000Z",
+            "content_html": "<div class=\"note info\">\n<p>以下使用修改 PDF 格式文件用 <code>PDF-XChange Editor</code>  打开为例子</p>\n</div>\n<h2 id=\"方法一\"><a class=\"markdownIt-Anchor\" href=\"#方法一\">#</a> 方法一</h2>\n<h3 id=\"打开文件属性\"><a class=\"markdownIt-Anchor\" href=\"#打开文件属性\">#</a> 打开文件属性</h3>\n<p><img data-src=\"http://hikki.test.upcdn.net/20220708160500.png\" alt=\"\"></p>\n<h3 id=\"更改打开方式\"><a class=\"markdownIt-Anchor\" href=\"#更改打开方式\">#</a> 更改打开方式</h3>\n<p><img data-src=\"http://hikki.test.upcdn.net/20220708160531.png\" alt=\"\"></p>\n<h3 id=\"选择你想用某个软件打开\"><a class=\"markdownIt-Anchor\" href=\"#选择你想用某个软件打开\">#</a> 选择你想用某个软件打开</h3>\n<p><img data-src=\"http://hikki.test.upcdn.net/20220708160615.png\" alt=\"\"></p>\n<h3 id=\"点击应用确定\"><a class=\"markdownIt-Anchor\" href=\"#点击应用确定\">#</a> 点击应用–&gt; 确定</h3>\n<p><img data-src=\"http://hikki.test.upcdn.net/20220708160709.png\" alt=\"\"></p>\n<h2 id=\"方法二使用绿色软件打开\"><a class=\"markdownIt-Anchor\" href=\"#方法二使用绿色软件打开\">#</a> 方法二：使用绿色软件打开</h2>\n<div class=\"note info\">\n<p>也就是不需要安装的软件，在方法一找不到这个 <code>PDF-XChange Editor</code>  软件</p>\n</div>\n<p><strong>和方法一差不多</strong></p>\n<h3 id=\"打开文件属性-2\"><a class=\"markdownIt-Anchor\" href=\"#打开文件属性-2\">#</a> 打开文件属性</h3>\n<p><img data-src=\"http://hikki.test.upcdn.net/20220708160500.png\" alt=\"\"></p>\n<p><img data-src=\"http://hikki.test.upcdn.net/20220708160500.png\" alt=\"\"></p>\n<h3 id=\"更改打开方式-2\"><a class=\"markdownIt-Anchor\" href=\"#更改打开方式-2\">#</a> 更改打开方式</h3>\n<p><img data-src=\"http://hikki.test.upcdn.net/20220708160531.png\" alt=\"\"></p>\n<h3 id=\"更多应用\"><a class=\"markdownIt-Anchor\" href=\"#更多应用\">#</a> 更多应用</h3>\n<p><img data-src=\"http://hikki.test.upcdn.net/20220708161807.png\" alt=\"\"></p>\n<h3 id=\"在这台电脑上查找其他应用\"><a class=\"markdownIt-Anchor\" href=\"#在这台电脑上查找其他应用\">#</a> 在这台电脑上查找其他应用</h3>\n<p><img data-src=\"http://hikki.test.upcdn.net/20220708161934.png\" alt=\"\"></p>\n<h3 id=\"选择该软件\"><a class=\"markdownIt-Anchor\" href=\"#选择该软件\">#</a> 选择该软件</h3>\n<p><img data-src=\"http://hikki.test.upcdn.net/20220708162017.png\" alt=\"\"></p>\n<h3 id=\"应用该软件并确定\"><a class=\"markdownIt-Anchor\" href=\"#应用该软件并确定\">#</a> 应用该软件并确定</h3>\n<p><img data-src=\"http://hikki.test.upcdn.net/20220708162024.png\" alt=\"\"></p>\n<h2 id=\"方法三在设置修改\"><a class=\"markdownIt-Anchor\" href=\"#方法三在设置修改\">#</a> 方法三：在设置修改</h2>\n<h3 id=\"打开设置应用\"><a class=\"markdownIt-Anchor\" href=\"#打开设置应用\">#</a> 打开设置–&gt; 应用</h3>\n<p><img data-src=\"http://hikki.test.upcdn.net/20220708162106.png\" alt=\"\"></p>\n<h3 id=\"默认应用按文件类型指定默认应用\"><a class=\"markdownIt-Anchor\" href=\"#默认应用按文件类型指定默认应用\">#</a> 默认应用–&gt; 按文件类型指定默认应用</h3>\n<p><img data-src=\"http://hikki.test.upcdn.net/20220708162322.png\" alt=\"\"></p>\n<h3 id=\"修改pdf选择打开的软件\"><a class=\"markdownIt-Anchor\" href=\"#修改pdf选择打开的软件\">#</a> 修改.pdf 选择打开的软件</h3>\n<p><img data-src=\"http://hikki.test.upcdn.net/20220708162357.png\" alt=\"\"></p>\n<h2 id=\"总结\"><a class=\"markdownIt-Anchor\" href=\"#总结\">#</a> 总结</h2>\n<p>以上是以 PDF 格式文件修改默认打开方式，如果你是其他文件也是以此方式修改，比如 <code>TXT</code> 、 <code>md</code>  等格式的文件也是可以用以上的三种方式。</p>\n<p>其中方法二是万能的，比如你的软件是解压就能直接使用，不需要安装的，那么，你也可以使用方法二来设置为默认打开软件。</p>\n",
+            "tags": []
+        },
+        {
             "id": "https://www.hikki.site/b241aa8.html",
             "url": "https://www.hikki.site/b241aa8.html",
             "title": "暑假Java Web计划",
@@ -247,18 +255,6 @@
                 "技术杂谈",
                 "docker",
                 "服务器"
-            ]
-        },
-        {
-            "id": "https://www.hikki.site/4dbd02f9.html",
-            "url": "https://www.hikki.site/4dbd02f9.html",
-            "title": "win10关机指令",
-            "date_published": "2022-06-01T07:06:24.000Z",
-            "content_html": "<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre><span class=\"token function\">shutdown</span> -s <span class=\"token comment\"># 设置一分钟后自动关机</span></pre></td></tr><tr><td data-num=\"2\"></td><td><pre><span class=\"token function\">shutdown</span> -s -t <span class=\"token number\">7200</span> <span class=\"token comment\"># 设置 7200s 后自动关机</span></pre></td></tr><tr><td data-num=\"3\"></td><td><pre><span class=\"token function\">shutdown</span> -a  <span class=\"token comment\">#取消关机指令</span></pre></td></tr></table></figure>",
-            "tags": [
-                "计算机科学",
-                "技术杂谈",
-                "window"
             ]
         }
     ]
