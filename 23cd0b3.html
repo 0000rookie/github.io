@@ -84,7 +84,7 @@ win10鼠标右键文件、文件夹、桌面菜单添加程序 - window - 技术
       <i class="ic i-pen"></i>
     </span>
     <span class="text">本文字数</span>
-    <span>143</span>
+    <span>587</span>
     <span class="text">字</span>
   </span>
   <span class="item" title="阅读时长">
@@ -125,12 +125,12 @@ win10鼠标右键文件、文件夹、桌面菜单添加程序 - window - 技术
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclgi503lj20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclj61ylzj20zk0m8b29.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipetlbztpj20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipev1x5e4j20zk0m8b29.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclh3brzpj20zk0m8ann.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclip4jbpj20zk0m87cv.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipex2cdtbj20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giciszlczyj20zk0m816d.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipet4bz0yj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giciryrr3rj20zk0m8nhk.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeuv80yoj20zk0m8kjl.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicitf0kl1j20zk0m87fe.jpg"></li>
         </ul>
       </div>
     </header>
@@ -189,8 +189,37 @@ win10鼠标右键文件、文件夹、桌面菜单添加程序 - window - 技术
 <p><strong>空白处右键</strong> (或者桌面空白处)：  <code>HKEY_CLASSES_ROOT/Directory/background/shell</code></p>
 <p><strong>文件夹右键</strong>：  <code>HKEY_CLASSES_ROOT/Directory/shell</code></p>
 <p><strong>文件上右键</strong>：  <code>HKEY_CLASSES_ROOT/*/shell</code></p>
+<p><code>需求：</code> 在文件夹右键菜单添加一个 <code>VS Code</code></p>
+<p><img data-src="http://hikki.test.upcdn.net/2022/07/11-21:17:1515.jpg" alt=""></p>
+<h2 id="打开注册表"><a class="markdownIt-Anchor" href="#打开注册表">#</a> 打开注册表</h2>
+<h3 id="winr"><a class="markdownIt-Anchor" href="#winr">#</a> win+R</h3>
+<p>输入 <code>regedit</code>  回车</p>
 <p><img data-src="http://hikki.test.upcdn.net/2022/07/1020014141.png" alt=""></p>
+<p>打开  <code>HKEY_CLASSES_ROOT/Directory/shell</code>  这个路径。</p>
+<p>选择 <code>shell</code></p>
 <p><img data-src="http://hikki.test.upcdn.net/2022/07/10-20025757.png" alt=""></p>
+<h2 id="新建项并命名为vs-code"><a class="markdownIt-Anchor" href="#新建项并命名为vs-code">#</a> 新建项并命名为 VS Code</h2>
+<p><img data-src="http://hikki.test.upcdn.net/2022/07/11-21:21:4242.png" alt=""></p>
+<h2 id="将项名改为vs-code"><a class="markdownIt-Anchor" href="#将项名改为vs-code">#</a> 将项名改为 VS Code</h2>
+<p>点击新建的项，双击右边的 <code>(默认)</code> ，将数值数据改为 <code>VS Code</code></p>
+<p><img data-src="http://hikki.test.upcdn.net/2022/07/11-21:23:077.png" alt=""></p>
+<h2 id="新建字符串值"><a class="markdownIt-Anchor" href="#新建字符串值">#</a> 新建字符串值</h2>
+<p>在右边空白处 <code>右键</code> 新建一个字符串值</p>
+<p><img data-src="http://hikki.test.upcdn.net/2022/07/11-21:23:3737.png" alt=""></p>
+<h2 id="修改新建的字符串值"><a class="markdownIt-Anchor" href="#修改新建的字符串值">#</a> 修改新建的字符串值</h2>
+<p>将新建的字符串值得名称改为 <code>Icon</code> 。</p>
+<p>值改为你的软件安装地址 (是带有 <code>.exe</code>  后缀的)</p>
+<p><img data-src="http://hikki.test.upcdn.net/2022/07/11-21:23:4343.png" alt=""></p>
+<h2 id="在vs-code下新建子项"><a class="markdownIt-Anchor" href="#在vs-code下新建子项">#</a> 在 VS Code 下新建子项</h2>
+<p>选择 <code>VS Code</code> ，右键新建一个项，并改名为 <code>command</code></p>
+<p><img data-src="http://hikki.test.upcdn.net/2022/07/11-21:23:5252.png" alt=""></p>
+<h2 id="编辑command的值"><a class="markdownIt-Anchor" href="#编辑command的值">#</a> 编辑 command 的值</h2>
+<p>选中 <code>command</code> ，双击右边的 <code>默认</code> ，修改数值数据为以下格式：</p>
+<p><code>&quot;你的软件安装路径&quot; &quot;--working-dir&quot; &quot;%1&quot;</code> (直接复制过去只修改自己的安装路径即可)</p>
+<figure class="highlight yaml"><figcaption data-lang="YAML"></figcaption><table><tr><td data-num="1"></td><td><pre>"E<span class="token punctuation">:</span>\studyAPP\Microsoft VS Code\Code.exe" "<span class="token punctuation">-</span><span class="token punctuation">-</span>working<span class="token punctuation">-</span>dir" "%1"</pre></td></tr></table></figure><p><img data-src="http://hikki.test.upcdn.net/2022/07/11-21:23:5656.png" alt=""></p>
+<div class="note info">
+<p>添加成功</p>
+</div>
 
   </div>
 
@@ -202,7 +231,7 @@ win10鼠标右键文件、文件夹、桌面菜单添加程序 - window - 技术
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">更新于</span>
-    <time title="修改时间：2022-07-11 00:54:25" itemprop="dateModified" datetime="2022-07-11T00:54:25+08:00">2022-07-11</time>
+    <time title="修改时间：2022-07-11 21:36:51" itemprop="dateModified" datetime="2022-07-11T21:36:51+08:00">2022-07-11</time>
   </span>
   <span id="23cd0b3.html" class="item leancloud_visitors" data-flag-title="win10鼠标右键文件、文件夹、桌面菜单添加程序" title="阅读次数">
       <span class="icon">
@@ -263,7 +292,7 @@ win10鼠标右键文件、文件夹、桌面菜单添加程序 - window - 技术
     <div class="item left">
       
 
-  <a href="/cbd16032.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giph47e9vtj20zk0m8x6l.jpg" title="2022年概率论与数理统计">
+  <a href="/cbd16032.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicljgocqbj20zk0m8e81.jpg" title="2022年概率论与数理统计">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> 期末复习</span>
   <h3>2022年概率论与数理统计</h3>
@@ -273,7 +302,7 @@ win10鼠标右键文件、文件夹、桌面菜单添加程序 - window - 技术
     <div class="item right">
       
 
-  <a href="/5af0544e.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicitf0kl1j20zk0m87fe.jpg" title="PicGo上传失败 TypeError:Cannot destructure property &#96;position&#96; of undefined&#96; or &#96;null&#96;.">
+  <a href="/5af0544e.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giciundwu5j20zk0m8n9e.jpg" title="PicGo上传失败 TypeError:Cannot destructure property &#96;position&#96; of undefined&#96; or &#96;null&#96;.">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> fail</span>
   <h3>PicGo上传失败 TypeError:Cannot destructure property `position` of undefined` or `null`.</h3>
@@ -295,7 +324,7 @@ win10鼠标右键文件、文件夹、桌面菜单添加程序 - window - 技术
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%86%E8%A7%A3%E6%B7%BB%E5%8A%A0%E7%A8%8B%E5%BA%8F%E6%89%80%E5%9C%A8%E7%9A%84%E7%9B%AE%E5%BD%95%E5%9C%B0%E5%9D%80"><span class="toc-number">1.</span> <span class="toc-text"> 了解添加程序所在的目录地址</span></a></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%86%E8%A7%A3%E6%B7%BB%E5%8A%A0%E7%A8%8B%E5%BA%8F%E6%89%80%E5%9C%A8%E7%9A%84%E7%9B%AE%E5%BD%95%E5%9C%B0%E5%9D%80"><span class="toc-number">1.</span> <span class="toc-text"> 了解添加程序所在的目录地址</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%89%93%E5%BC%80%E6%B3%A8%E5%86%8C%E8%A1%A8"><span class="toc-number">2.</span> <span class="toc-text"> 打开注册表</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#winr"><span class="toc-number">2.1.</span> <span class="toc-text"> win+R</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B0%E5%BB%BA%E9%A1%B9%E5%B9%B6%E5%91%BD%E5%90%8D%E4%B8%BAvs-code"><span class="toc-number">3.</span> <span class="toc-text"> 新建项并命名为 VS Code</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B0%86%E9%A1%B9%E5%90%8D%E6%94%B9%E4%B8%BAvs-code"><span class="toc-number">4.</span> <span class="toc-text"> 将项名改为 VS Code</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B0%E5%BB%BA%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%80%BC"><span class="toc-number">5.</span> <span class="toc-text"> 新建字符串值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E6%96%B0%E5%BB%BA%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%80%BC"><span class="toc-number">6.</span> <span class="toc-text"> 修改新建的字符串值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9C%A8vs-code%E4%B8%8B%E6%96%B0%E5%BB%BA%E5%AD%90%E9%A1%B9"><span class="toc-number">7.</span> <span class="toc-text"> 在 VS Code 下新建子项</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BC%96%E8%BE%91command%E7%9A%84%E5%80%BC"><span class="toc-number">8.</span> <span class="toc-text"> 编辑 command 的值</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
@@ -313,7 +342,7 @@ win10鼠标右键文件、文件夹、桌面菜单添加程序 - window - 技术
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">88</span>
+        <span class="count">90</span>
         <span class="name">文章</span>
       </a>
     </div>
@@ -441,68 +470,12 @@ win10鼠标右键文件、文件夹、桌面菜单添加程序 - window - 技术
 <div class="breadcrumb">
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/" title="分类于 博客的食用方法">博客的食用方法</a>
-</div>
-
-    <span><a href="/b26ff49b.html" title="如何在hexo博客写作">如何在hexo博客写作</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E5%8A%9E%E5%85%AC%E8%BD%AF%E4%BB%B6/" title="分类于 办公软件">办公软件</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E5%8A%9E%E5%85%AC%E8%BD%AF%E4%BB%B6/Word/" title="分类于 Word">Word</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/window/" title="分类于 window">window</a>
 </div>
 
-    <span><a href="/30d35056.html" title="Word调整目录编号和标题空隙">Word调整目录编号和标题空隙</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E5%9F%BA%E7%A1%80%E5%AD%A6%E7%A7%91/" title="分类于 基础学科">基础学科</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E5%9F%BA%E7%A1%80%E5%AD%A6%E7%A7%91/%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/" title="分类于 期末复习">期末复习</a>
-</div>
-
-    <span><a href="/cbd16032.html" title="2022年概率论与数理统计">2022年概率论与数理统计</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
-</div>
-
-    <span><a href="/a5eefddc.html" title="第九篇：安装主题---从0基础搭建Hexo博客">第九篇：安装主题---从0基础搭建Hexo博客</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/Linux/" title="分类于 Linux">Linux</a>
-</div>
-
-    <span><a href="/111f4f09.html" title="CentOS新增root用户">CentOS新增root用户</a></span>
+    <span><a href="/4dbd02f9.html" title="win10关机指令">win10关机指令</a></span>
   </li>
 
       
@@ -523,38 +496,14 @@ win10鼠标右键文件、文件夹、桌面菜单添加程序 - window - 技术
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E7%94%9F%E6%B4%BB/" title="分类于 生活">生活</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E7%94%9F%E6%B4%BB/%E6%97%A5%E8%AE%B0/" title="分类于 日记">日记</a>
-</div>
-
-    <span><a href="/b9e6c7bf.html" title="日记分享2022.4.13">日记分享2022.4.13</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E5%9F%BA%E7%A1%80%E5%AD%A6%E7%A7%91/" title="分类于 基础学科">基础学科</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E5%9F%BA%E7%A1%80%E5%AD%A6%E7%A7%91/%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/" title="分类于 期末复习">期末复习</a>
-</div>
-
-    <span><a href="/87a258b3.html" title="2022期末复习资料">2022期末复习资料</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/" title="分类于 博客的食用方法">博客的食用方法</a>
 </div>
 
-    <span><a href="/859f60bd.html" title="第二篇：安装Git---从0基础搭建Hexo博客">第二篇：安装Git---从0基础搭建Hexo博客</a></span>
+    <span><a href="/b26ff49b.html" title="如何在hexo博客写作">如何在hexo博客写作</a></span>
   </li>
 
       
@@ -568,7 +517,91 @@ win10鼠标右键文件、文件夹、桌面菜单添加程序 - window - 技术
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/docker/" title="分类于 docker">docker</a>
 </div>
 
-    <span><a href="/2802e5c6.html" title="docker使用指令记录">docker使用指令记录</a></span>
+    <span><a href="/bc681fc7.html" title="Ubuntu安装Docker">Ubuntu安装Docker</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
+</div>
+
+    <span><a href="/dc09a46c.html" title="第六篇：将博客部署到GitHub---从0基础搭建Hexo博客">第六篇：将博客部署到GitHub---从0基础搭建Hexo博客</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E7%94%9F%E6%B4%BB/" title="分类于 生活">生活</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E7%94%9F%E6%B4%BB/%E6%97%A5%E8%AE%B0/" title="分类于 日记">日记</a>
+</div>
+
+    <span><a href="/b9e6c7bf.html" title="日记分享2022.4.13">日记分享2022.4.13</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/" title="分类于 java">java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/fail/" title="分类于 fail">fail</a>
+</div>
+
+    <span><a href="/5c23aa63.html" title="Maven识别失败">Maven识别失败</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/" title="分类于 博客的食用方法">博客的食用方法</a>
+</div>
+
+    <span><a href="/a7032750.html" title="文章Front-Matter参数设置">文章Front-Matter参数设置</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
+</div>
+
+    <span><a href="/4f9c6caa.html" title="python爬虫乱码问题">python爬虫乱码问题</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/window/" title="分类于 window">window</a>
+</div>
+
+    <span><a href="/2cc8588f.html" title="添加开机自启程序">添加开机自启程序</a></span>
   </li>
 
   </ul>
@@ -593,19 +626,19 @@ win10鼠标右键文件、文件夹、桌面菜单添加程序 - window - 技术
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="站点总字数">118k 字</span>
+    <span title="站点总字数">120k 字</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="站点阅读时长">2:40</span>
+    <span title="站点阅读时长">2:43</span>
   </div>
   <div class="powered-by">
     基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
   
 
-<span>
+<span id="busuanzi_container_site_uv">
     &nbsp;&nbsp;&nbsp;&nbsp;您是第<span id="busuanzi_value_site_uv"></span>个访问本站的小伙伴
 </span>
 
