@@ -8,7 +8,7 @@
     <author>
       <name>璃柏涟</name>
     </author>
-    <updated>2022-07-10T12:35:04.000Z</updated>
+    <updated>2022-07-11T03:38:16.000Z</updated>
     <category term="web安全" />
     <category term="笔记" />
     <category term="web" />
@@ -22,6 +22,22 @@
     <category term="后端" />
     <category term="markdown" />
     <category term="搭建个人博客" />
+    <entry>
+        <id>https://www.hikki.site/a71cff7d.html</id>
+        <title>屏幕显示键盘按键软件</title>
+        <link rel="alternate" href="https://www.hikki.site/a71cff7d.html"/>
+        <content type="html">&lt;h2 id=&#34;carnac&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#carnac&#34;&gt;#&lt;/a&gt; Carnac&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;效果图&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/2022/07/11-11392222.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;最近有需求用到 &lt;code&gt;屏幕显示键盘按键&lt;/code&gt; ，发现 &lt;code&gt;Carnac&lt;/code&gt;  挺好用， &lt;code&gt;KeyCastOW &lt;/code&gt; 也试过，但感觉不尽人意，有些组合键不能显示出来， &lt;code&gt;Carnac&lt;/code&gt;  直接安装就能使用。&lt;/p&gt;
+&lt;p&gt;可以通过调节来显示到屏幕不同的位置，方便解决一些特殊场景的问题。&lt;/p&gt;
+&lt;p&gt;下面是我的配置，供参考&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/2022/07/11-11544949.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/2022/07/11-11:56:5454.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+</content>
+        <category term="好物安利" scheme="https://www.hikki.site/tags/%E5%A5%BD%E7%89%A9%E5%AE%89%E5%88%A9/" />
+        <updated>2022-07-11T03:38:16.000Z</updated>
+    </entry>
     <entry>
         <id>https://www.hikki.site/c797c821.html</id>
         <title>NodeJs系列-Day01-文件系统</title>
@@ -49,6 +65,9 @@
 &lt;li&gt;以及路径的拼接等等&lt;/li&gt;
 &lt;/ul&gt;
 </content>
+        <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+        <category term="编程语言" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" />
+        <category term="nodejs" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/nodejs/" />
         <category term="NodeJs" scheme="https://www.hikki.site/tags/NodeJs/" />
         <updated>2022-07-10T12:35:04.000Z</updated>
     </entry>
@@ -62,6 +81,8 @@
 &lt;p&gt;经过分析，错误，发现是 &lt;code&gt;picgo-plugin-watermark&lt;/code&gt;  这个模块的错误，就是添加水印的模块出错了，导致上传失败，只要把这个模块禁用一下就可以了。&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/2022/07/10-20053838.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 </content>
+        <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+        <category term="fail" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/fail/" />
         <updated>2022-07-10T11:37:36.000Z</updated>
     </entry>
     <entry>
@@ -75,6 +96,9 @@
 &lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/2022/07/1020014141.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;http://hikki.test.upcdn.net/2022/07/10-20025757.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 </content>
+        <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
+        <category term="技术杂谈" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" />
+        <category term="window" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/window/" />
         <updated>2022-07-10T08:00:20.000Z</updated>
     </entry>
     <entry>
@@ -725,26 +749,5 @@
         <category term="GitHub" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/GitHub/" />
         <category term="Git" scheme="https://www.hikki.site/tags/Git/" />
         <updated>2022-06-10T10:20:22.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://www.hikki.site/dcc37883.html</id>
-        <title>docker删除镜像</title>
-        <link rel="alternate" href="https://www.hikki.site/dcc37883.html"/>
-        <content type="html">&lt;p&gt;删除镜像四步法&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;查看容器运行情况&lt;/li&gt;
-&lt;li&gt;停止容器&lt;/li&gt;
-&lt;li&gt;删除容器&lt;/li&gt;
-&lt;li&gt;删除镜像&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;查看容器运行情况&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#查看容器运行情况&#34;&gt;#&lt;/a&gt; 查看容器运行情况&lt;/h2&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;查看容器ID&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;ps&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;停止容器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#停止容器&#34;&gt;#&lt;/a&gt; 停止容器&lt;/h2&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt; stop 容器ID&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;删除容器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#删除容器&#34;&gt;#&lt;/a&gt; 删除容器&lt;/h2&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;ps&lt;/span&gt; -a &lt;span class=&#34;token comment&#34;&gt;# 查看容器 ID，‘-a’表示查看全部容器&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;rm&lt;/span&gt; 容器ID&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;删除镜像&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#删除镜像&#34;&gt;#&lt;/a&gt; 删除镜像&lt;/h2&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt; images &lt;span class=&#34;token comment&#34;&gt;# 表示查看所有镜像&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt; rmi 镜像ID&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
-        <category term="计算机科学" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" />
-        <category term="技术杂谈" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" />
-        <category term="docker" scheme="https://www.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/docker/" />
-        <updated>2022-06-07T16:13:26.000Z</updated>
     </entry>
 </feed>
