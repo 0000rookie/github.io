@@ -86,7 +86,7 @@ Linux远程管理常用命令 - Linux - 技术杂谈 - 计算机科学 |
       <i class="ic i-pen"></i>
     </span>
     <span class="text">本文字数</span>
-    <span>3.1k</span>
+    <span>3.3k</span>
     <span class="text">字</span>
   </span>
   <span class="item" title="阅读时长">
@@ -127,12 +127,12 @@ Linux远程管理常用命令 - Linux - 技术杂谈 - 计算机科学 |
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicitspjpbj20zk0m81ky.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclj9410cj20zk0m8h12.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclfdu6exj20zk0m87hw.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipet8c1a2j20zk0m8kct.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeu7txpzj20zk0m81kx.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclgrvbd6j20zk0m8qv5.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciusoyjnj219g0u0x56.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclfb3vzhj20zk0m8wny.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipexj2jgzj20zk0m8b09.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclhpw3lwj20zk0m8gvw.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giph4wqtg4j20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipewkhf1zj20zk0m81kx.jpg"></li>
         </ul>
       </div>
     </header>
@@ -187,50 +187,43 @@ Linux远程管理常用命令 - Linux - 技术杂谈 - 计算机科学 |
   <div class="body md" itemprop="articleBody">
     
 
-    <h2 id="文件命令"><a class="markdownIt-Anchor" href="#文件命令">#</a> 文件命令</h2>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>tree <span class="token builtin class-name">.</span> <span class="token comment">#列出当前文件夹下的所有文件</span></pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>tree /f <span class="token comment">#显示当前文件夹所有文件</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>tree /a <span class="token comment">#显示当前文件夹的所有文件夹</span></pre></td></tr></table></figure><h2 id="关机重启"><a class="markdownIt-Anchor" href="#关机重启">#</a> 关机 / 重启</h2>
-<table>
-<thead>
-<tr>
-<th>序号</th>
-<th>命令</th>
-<th>对应英文</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>01</td>
-<td>shutdown 选项 时间</td>
-<td>shutdown</td>
-<td>关机／重新启动</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li><code>shutdown</code>  命令可以<strong>安全关闭</strong>或者<strong>重新启动</strong>电脑</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>选项</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>-r</td>
-<td>重新启动</td>
-</tr>
-</tbody>
-</table>
-<div class="note info">
-<ul>
-<li><strong>不指定选项和参数</strong>，默认表示 <strong>1 分钟</strong>之后 <strong>关闭电脑</strong></li>
-<li>远程维护服务器时，最好不要关闭系统，而应该重新启动系统</li>
-</ul>
-</div>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment"># 重新启动操作系统，其中 now 表示现在</span></pre></td></tr><tr><td data-num="2"></td><td><pre>$ <span class="token function">shutdown</span> -r now</pre></td></tr><tr><td data-num="3"></td><td><pre></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token comment"># 立刻关机，其中 now 表示现在</span></pre></td></tr><tr><td data-num="5"></td><td><pre>$ <span class="token function">shutdown</span> now</pre></td></tr><tr><td data-num="6"></td><td><pre></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token comment"># 系统在今天的 20:25 会关机</span></pre></td></tr><tr><td data-num="8"></td><td><pre>$ <span class="token function">shutdown</span> <span class="token number">20</span>:25</pre></td></tr><tr><td data-num="9"></td><td><pre></pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token comment"># 系统再过十分钟后自动关机</span></pre></td></tr><tr><td data-num="11"></td><td><pre>$ <span class="token function">shutdown</span> +10</pre></td></tr><tr><td data-num="12"></td><td><pre></pre></td></tr><tr><td data-num="13"></td><td><pre><span class="token comment"># 取消之前指定的关机计划</span></pre></td></tr><tr><td data-num="14"></td><td><pre>$ <span class="token function">shutdown</span> -c</pre></td></tr></table></figure><h2 id="查看或配置网卡信息"><a class="markdownIt-Anchor" href="#查看或配置网卡信息">#</a> 查看或配置网卡信息</h2>
+    <h2 id="文件命令"><a href="#文件命令" class="headerlink" title="文件命令"></a>文件命令</h2><p>```bash mark:1,2-5<br>tree . #列出当前文件夹下的所有文件<br>tree /f #显示当前文件夹所有文件<br>tree /a #显示当前文件夹的所有文件夹</p>
+<pre><code>
+## 关机/重启
+
+| 序号 | 命令               | 对应英文 | 作用           |
+| ---- | ------------------ | -------- | -------------- |
+| 01   | shutdown 选项 时间 | shutdown | 关机／重新启动 |
+
+- `shutdown`命令可以**安全关闭**或者**重新启动**电脑
+
+| 选项 | 含义     |
+| ---- | -------- |
+| -r   | 重新启动 |
+
+:::info
+
+* **不指定选项和参数**，默认表示 **1 分钟**之后 **关闭电脑**
+* 远程维护服务器时，最好不要关闭系统，而应该重新启动系统
+
+:::
+
+```bash
+# 重新启动操作系统，其中 now 表示现在
+$ shutdown -r now
+
+# 立刻关机，其中 now 表示现在
+$ shutdown now
+
+# 系统在今天的 20:25 会关机
+$ shutdown 20:25
+
+# 系统再过十分钟后自动关机
+$ shutdown +10
+
+# 取消之前指定的关机计划
+$ shutdown -c
+</code></pre><h2 id="查看或配置网卡信息"><a href="#查看或配置网卡信息" class="headerlink" title="查看或配置网卡信息"></a>查看或配置网卡信息</h2><div class="table-container">
 <table>
 <thead>
 <tr>
@@ -245,58 +238,66 @@ Linux远程管理常用命令 - Linux - 技术杂谈 - 计算机科学 |
 <td>01</td>
 <td>ifconfig</td>
 <td>configure a network interface</td>
-<td>查看 / 配置计算机当前的网卡配置信息</td>
+<td>查看/配置计算机当前的网卡配置信息</td>
 </tr>
 <tr>
 <td>02</td>
-<td>ping ip 地址</td>
+<td>ping ip地址</td>
 <td>ping</td>
-<td>检测到目标 ip 地址 的连接是否正常</td>
+<td>检测到目标 ip地址 的连接是否正常</td>
 </tr>
 </tbody>
 </table>
-<h3 id="网卡-和-ip-地址"><a class="markdownIt-Anchor" href="#网卡-和-ip-地址">#</a> 网卡 和 IP 地址</h3>
-<h4 id="网卡"><a class="markdownIt-Anchor" href="#网卡">#</a> 网卡</h4>
-<ul>
+</div>
+<h3 id="网卡-和-IP-地址"><a href="#网卡-和-IP-地址" class="headerlink" title="网卡 和 IP 地址"></a>网卡 和 IP 地址</h3><h4 id="网卡"><a href="#网卡" class="headerlink" title="网卡"></a>网卡</h4><ul>
 <li>网卡是一个专门负责网络通讯的硬件设备</li>
 <li><strong>IP 地址</strong>是设置在网卡上的地址信息</li>
 </ul>
 <blockquote>
 <p>我们可以把 <strong>电脑</strong> 比作 <strong>电话</strong>，<strong>网卡</strong> 相当于 <strong>SIM 卡</strong>，<strong>IP 地址</strong> 相当于 <strong>电话号码</strong></p>
 </blockquote>
-<h4 id="ip-地址"><a class="markdownIt-Anchor" href="#ip-地址">#</a> IP 地址</h4>
-<ul>
+<h4 id="IP-地址"><a href="#IP-地址" class="headerlink" title="IP 地址"></a>IP 地址</h4><ul>
 <li><strong>每台联网的电脑上</strong>都有 <strong>IP 地址</strong>，<strong>是保证电脑之间正常通讯的重要设置</strong></li>
 </ul>
 <blockquote>
 <p>注意：每台电脑的 IP 地址不能相同，否则会出现 IP 地址冲突，并且没有办法正常通讯</p>
 <p>提示：有关 <strong>IP 地址</strong>的详细内容，在就业班会详细讲解！</p>
 </blockquote>
-<h3 id="ifconfig"><a class="markdownIt-Anchor" href="#ifconfig">#</a>  <code>ifconfig</code></h3>
-<ul>
-<li><code>ifconfig</code>  可以查看／配置计算机当前的网卡配置信息</li>
+<h3 id="ifconfig"><a href="#ifconfig" class="headerlink" title="ifconfig"></a><code>ifconfig</code></h3><ul>
+<li><code>ifconfig</code> 可以查看／配置计算机当前的网卡配置信息</li>
 </ul>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment"># 查看网卡配置信息</span></pre></td></tr><tr><td data-num="2"></td><td><pre>$ <span class="token function">ifconfig</span></pre></td></tr><tr><td data-num="3"></td><td><pre></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token comment"># 查看网卡对应的 IP 地址</span></pre></td></tr><tr><td data-num="5"></td><td><pre>$ <span class="token function">ifconfig</span> <span class="token operator">|</span> <span class="token function">grep</span> inet</pre></td></tr></table></figure><blockquote>
-<p>提示：一台计算机中有可能会有一个 <strong>物理网卡</strong> 和 <strong>多个虚拟网卡</strong>，在 Linux 中物理网卡的名字通常以  <code>ensXX</code>  表示</p>
+<pre><code class="lang-bash"># 查看网卡配置信息
+$ ifconfig
+
+# 查看网卡对应的 IP 地址
+$ ifconfig | grep inet
+</code></pre>
+<blockquote>
+<p>提示：一台计算机中有可能会有一个 <strong>物理网卡</strong> 和 <strong>多个虚拟网卡</strong>，在 Linux 中物理网卡的名字通常以 <code>ensXX</code> 表示</p>
 </blockquote>
 <ul>
-<li><code>127.0.0.1</code>  被称为 <strong>本地回环 / 环回地址</strong>，一般用来测试本机网卡是否正常</li>
+<li><code>127.0.0.1</code> 被称为 <strong>本地回环/环回地址</strong>，一般用来测试本机网卡是否正常</li>
 </ul>
-<h3 id="ping"><a class="markdownIt-Anchor" href="#ping">#</a>  <code>ping</code></h3>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment"># 检测到目标主机是否连接正常</span></pre></td></tr><tr><td data-num="2"></td><td><pre>$ <span class="token function">ping</span> IP地址</pre></td></tr><tr><td data-num="3"></td><td><pre></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token comment"># 检测本地网卡工作正常</span></pre></td></tr><tr><td data-num="5"></td><td><pre>$ <span class="token function">ping</span> <span class="token number">127.0</span>.0.1</pre></td></tr></table></figure><ul>
-<li><code>ping</code>  一般用于检测当前计算机到目标计算机之间的网络 <strong>是否通畅</strong>，<strong>数值越大，速度越慢</strong></li>
+<h3 id="ping"><a href="#ping" class="headerlink" title="ping"></a><code>ping</code></h3><pre><code class="lang-bash"># 检测到目标主机是否连接正常
+$ ping IP地址
+
+# 检测本地网卡工作正常
+$ ping 127.0.0.1
+</code></pre>
+<ul>
+<li><code>ping</code> 一般用于检测当前计算机到目标计算机之间的网络 <strong>是否通畅</strong>，<strong>数值越大，速度越慢</strong></li>
 </ul>
 <blockquote>
 <ul>
-<li><code>ping</code>  的工作原理与潜水艇的声纳相似， <code>ping</code>  这个命令就是取自 <strong>声纳的声音</strong></li>
-<li>网络管理员之间也常将  <code>ping</code>  用作动词 —— <strong>ping 一下计算机 X，看他是否开着</strong></li>
+<li><code>ping</code> 的工作原理与潜水艇的声纳相似，<code>ping</code> 这个命令就是取自 <strong>声纳的声音</strong> </li>
+<li>网络管理员之间也常将 <code>ping</code> 用作动词 —— <strong>ping 一下计算机X，看他是否开着</strong></li>
 </ul>
 </blockquote>
 <p>原理：网络上的机器都有 <strong>唯一确定的 IP 地址</strong>，我们给<strong>目标 IP 地址</strong>发送一个数据包，对方就要返回一个数据包，根据返回的数据包以及时间，我们可以确定目标主机的存在</p>
 <blockquote>
-<p>提示：在 Linux 中，想要终止一个终端程序的执行，绝大多数都可以使用  <code>CTRL + C</code></p>
+<p>提示：在 Linux 中，想要终止一个终端程序的执行，绝大多数都可以使用 <code>CTRL + C</code></p>
 </blockquote>
-<h2 id="远程登录和复制文件"><a class="markdownIt-Anchor" href="#远程登录和复制文件">#</a> 远程登录和复制文件</h2>
+<h2 id="远程登录和复制文件"><a href="#远程登录和复制文件" class="headerlink" title="远程登录和复制文件"></a>远程登录和复制文件</h2><div class="table-container">
 <table>
 <thead>
 <tr>
@@ -309,52 +310,45 @@ Linux远程管理常用命令 - Linux - 技术杂谈 - 计算机科学 |
 <tbody>
 <tr>
 <td>01</td>
-<td>ssh 用户名 @ip</td>
+<td>ssh 用户名@ip</td>
 <td>secure shell</td>
 <td>关机／重新启动</td>
 </tr>
 <tr>
 <td>02</td>
-<td>scp 用户名 @ip: 文件名或路径 用户名 @ip: 文件名或路径</td>
+<td>scp 用户名@ip:文件名或路径 用户名@ip:文件名或路径</td>
 <td>secure copy</td>
 <td>远程复制文件</td>
 </tr>
 </tbody>
 </table>
-<h3 id="ssh-基础重点"><a class="markdownIt-Anchor" href="#ssh-基础重点">#</a>  <code>ssh</code>  基础（重点）</h3>
-<p>在 Linux 中 SSH 是 <strong>非常常用</strong> 的工具，通过 <strong>SSH 客户端</strong> 我们可以连接到运行了 <strong>SSH 服务器</strong> 的远程机器上</p>
+</div>
+<h3 id="ssh-基础（重点）"><a href="#ssh-基础（重点）" class="headerlink" title="ssh 基础（重点）"></a><code>ssh</code> 基础（重点）</h3><p>在 Linux 中 SSH 是 <strong>非常常用</strong> 的工具，通过 <strong>SSH 客户端</strong> 我们可以连接到运行了 <strong>SSH 服务器</strong> 的远程机器上</p>
 <p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022042433.png" alt=""></p>
 <ul>
-<li><strong>SSH 客户端</strong>是一种使用  <code>Secure Shell（SSH）</code>  协议连接到远程计算机的软件程序</li>
-<li><code>SSH</code>  是目前较可靠，<strong>专为远程登录会话和其他网络服务</strong> 提供安全性的协议
-<ul>
-<li>利用  <code>SSH 协议</code>  可以有效<strong>防止远程管理过程中的信息泄露</strong></li>
-<li>通过  <code>SSH 协议</code>  可以对所有传输的数据进行加密，也能够防止 DNS 欺骗和 IP 欺骗</li>
+<li><strong>SSH 客户端</strong>是一种使用 <code>Secure Shell（SSH）</code> 协议连接到远程计算机的软件程序</li>
+<li><code>SSH</code> 是目前较可靠，<strong>专为远程登录会话和其他网络服务</strong> 提供安全性的协议<ul>
+<li>利用 <code>SSH 协议</code> 可以有效<strong>防止远程管理过程中的信息泄露</strong></li>
+<li>通过 <code>SSH 协议</code> 可以对所有传输的数据进行加密，也能够防止 DNS 欺骗和 IP 欺骗</li>
 </ul>
 </li>
-<li><code>SSH</code>  的另一项优点是传输的数据可以是经过压缩的，所以可以加快传输的速度</li>
+<li><code>SSH</code> 的另一项优点是传输的数据可以是经过压缩的，所以可以加快传输的速度</li>
 </ul>
-<h4 id="域名-和-端口号"><a class="markdownIt-Anchor" href="#域名-和-端口号">#</a> 域名 和 端口号</h4>
-<h5 id="域名"><a class="markdownIt-Anchor" href="#域名">#</a> 域名</h5>
-<ul>
-<li>由一串 <strong>用点分隔</strong> 的名字组成，例如： <code>www.itcast.cn</code></li>
+<h4 id="域名-和-端口号"><a href="#域名-和-端口号" class="headerlink" title="域名 和 端口号"></a>域名 和 端口号</h4><h5 id="域名"><a href="#域名" class="headerlink" title="域名"></a>域名</h5><ul>
+<li>由一串 <strong>用点分隔</strong> 的名字组成，例如：<code>www.itcast.cn</code></li>
 <li>是 <strong>IP 地址</strong> 的别名，方便用户记忆</li>
 </ul>
-<h5 id="端口号"><a class="markdownIt-Anchor" href="#端口号">#</a> 端口号</h5>
+<h5 id="端口号"><a href="#端口号" class="headerlink" title="端口号"></a>端口号</h5><ul>
+<li><strong>IP 地址</strong>：通过 <strong>IP 地址</strong> 找到网络上的 <strong>计算机</strong></li>
+<li><p><strong>端口号</strong>：通过 <strong>端口号</strong> 可以找到 <strong>计算机上运行的应用程序</strong></p>
 <ul>
-<li>
-<p><strong>IP 地址</strong>：通过 <strong>IP 地址</strong> 找到网络上的 <strong>计算机</strong></p>
-</li>
-<li>
-<p><strong>端口号</strong>：通过 <strong>端口号</strong> 可以找到 <strong>计算机上运行的应用程序</strong></p>
-<ul>
-<li><strong>SSH 服务器</strong> 的默认端口号是  <code>22</code> ，如果是默认端口号，在连接的时候，可以省略</li>
+<li><strong>SSH 服务器</strong> 的默认端口号是 <code>22</code>，如果是默认端口号，在连接的时候，可以省略</li>
 </ul>
 </li>
-<li>
-<p>常见服务端口号列表：</p>
+<li><p>常见服务端口号列表：</p>
 </li>
 </ul>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -386,45 +380,60 @@ Linux远程管理常用命令 - Linux - 技术杂谈 - 计算机科学 |
 </tr>
 </tbody>
 </table>
+</div>
 <blockquote>
 <p>提示：有关 <strong>端口号</strong>的详细内容，在就业班会详细讲解！</p>
 </blockquote>
-<h4 id="ssh-客户端的简单使用"><a class="markdownIt-Anchor" href="#ssh-客户端的简单使用">#</a> SSH 客户端的简单使用</h4>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token function">ssh</span> <span class="token punctuation">[</span>-p port<span class="token punctuation">]</span> user@remote</pre></td></tr></table></figure><ul>
-<li><code>user</code>  是在远程机器上的用户名，如果不指定的话默认为当前用户</li>
-<li><code>remote</code>  是远程机器的地址，可以是 <strong>IP</strong>／<strong>域名</strong>，或者是 <strong>后面会提到的别名</strong></li>
-<li><code>port</code>  是 <strong>SSH Server 监听的端口</strong>，如果不指定，就为默认值  <code>22</code></li>
+<h4 id="SSH-客户端的简单使用"><a href="#SSH-客户端的简单使用" class="headerlink" title="SSH 客户端的简单使用"></a>SSH 客户端的简单使用</h4><pre><code class="lang-bash">ssh [-p port] user@remote
+</code></pre>
+<ul>
+<li><code>user</code> 是在远程机器上的用户名，如果不指定的话默认为当前用户</li>
+<li><code>remote</code> 是远程机器的地址，可以是 <strong>IP</strong>／<strong>域名</strong>，或者是 <strong>后面会提到的别名</strong></li>
+<li><code>port</code> 是 <strong>SSH Server 监听的端口</strong>，如果不指定，就为默认值 <code>22</code></li>
 </ul>
 <blockquote>
 <p>提示：</p>
 <ul>
-<li>使用  <code>exit</code>  退出当前用户的登录</li>
+<li>使用 <code>exit</code> 退出当前用户的登录</li>
 </ul>
 <p>注意：</p>
 <ul>
-<li><code>ssh</code>  这个终端命令只能在  <code>Linux</code>  或者  <code>UNIX</code>  系统下使用</li>
-<li>如果在  <code>Windows</code>  系统中，可以安装  <code>PuTTY</code>  或者  <code>XShell</code>  客户端软件即可</li>
+<li><code>ssh</code> 这个终端命令只能在 <code>Linux</code> 或者 <code>UNIX</code> 系统下使用</li>
+<li>如果在 <code>Windows</code> 系统中，可以安装 <code>PuTTY</code> 或者 <code>XShell</code> 客户端软件即可</li>
 </ul>
 <p>提示：</p>
 <ul>
-<li>在工作中，SSH 服务器的端口号很有可能<strong>不是 22</strong>，如果遇到这种情况就需要使用  <code>-p</code>  选项，指定正确的端口号，否则无法正常连接到服务器</li>
+<li>在工作中，SSH 服务器的端口号很有可能<strong>不是 22</strong>，如果遇到这种情况就需要使用 <code>-p</code> 选项，指定正确的端口号，否则无法正常连接到服务器</li>
 </ul>
 </blockquote>
-<h4 id="windows-下-ssh-客户端的安装"><a class="markdownIt-Anchor" href="#windows-下-ssh-客户端的安装">#</a> Windows 下 SSH 客户端的安装</h4>
-<ul>
-<li><code>Putty</code>  <span class="exturl" data-url="aHR0cDovL3d3dy5jaGlhcmsuZ3JlZW5lbmQub3JnLnVrL35zZ3RhdGhhbS9wdXR0eS9sYXRlc3QuaHRtbA==">http://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html</span></li>
-<li><code>XShell</code>  <span class="exturl" data-url="aHR0cDovL3hzaGVsbGNuLmNvbQ==">http://xshellcn.com</span></li>
+<h4 id="Windows-下-SSH-客户端的安装"><a href="#Windows-下-SSH-客户端的安装" class="headerlink" title="Windows 下 SSH 客户端的安装"></a>Windows 下 SSH 客户端的安装</h4><ul>
+<li><code>Putty</code> <span class="exturl" data-url="aHR0cDovL3d3dy5jaGlhcmsuZ3JlZW5lbmQub3JnLnVrL35zZ3RhdGhhbS9wdXR0eS9sYXRlc3QuaHRtbA==">http://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html</span></li>
+<li><code>XShell</code> <span class="exturl" data-url="aHR0cDovL3hzaGVsbGNuLmNvbQ==">http://xshellcn.com</span></li>
 </ul>
-<div class="note info">
+<p>:::info</p>
 <p>建议从官方网站下载正式的安装程序</p>
-</div>
-<h3 id="scp掌握"><a class="markdownIt-Anchor" href="#scp掌握">#</a>  <code>scp</code> （掌握）</h3>
-<ul>
-<li>scp 就是  <code>secure copy</code> ，是一个在 Linux 下用来进行 <strong>远程拷贝文件</strong> 的命令</li>
-<li>它的<strong>地址格式与 ssh 基本相同</strong>，<strong>需要注意的是</strong>，在指定端口时用的是大写的  <code>-P</code>  而不是小写的</li>
+<p>:::</p>
+<h3 id="scp（掌握）"><a href="#scp（掌握）" class="headerlink" title="scp（掌握）"></a><code>scp</code>（掌握）</h3><ul>
+<li>scp 就是 <code>secure copy</code>，是一个在 Linux 下用来进行 <strong>远程拷贝文件</strong> 的命令</li>
+<li>它的<strong>地址格式与 ssh 基本相同</strong>，<strong>需要注意的是</strong>，在指定端口时用的是大写的 <code>-P</code> 而不是小写的</li>
 </ul>
 <p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022042437.png" alt=""></p>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment"># 把本地当前目录下的 01.py 文件 复制到 远程 家目录下的 Desktop/01.py</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token comment"># 注意：`:` 后面的路径如果不是绝对路径，则以用户的家目录作为参照路径</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token function">scp</span> -P port 01.py user@remote:Desktop/01.py</pre></td></tr><tr><td data-num="4"></td><td><pre></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token comment"># 把远程 家目录下的 Desktop/01.py 文件 复制到 本地当前目录下的 01.py</span></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token function">scp</span> -P port user@remote:Desktop/01.py 01.py</pre></td></tr><tr><td data-num="7"></td><td><pre></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token comment"># 加上 -r 选项可以传送文件夹</span></pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token comment"># 把当前目录下的 demo 文件夹 复制到 远程 家目录下的 Desktop</span></pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token function">scp</span> -r demo user@remote:Desktop</pre></td></tr><tr><td data-num="11"></td><td><pre></pre></td></tr><tr><td data-num="12"></td><td><pre><span class="token comment"># 把远程 家目录下的 Desktop 复制到 当前目录下的 demo 文件夹</span></pre></td></tr><tr><td data-num="13"></td><td><pre><span class="token function">scp</span> -r user@remote:Desktop demo</pre></td></tr></table></figure><table>
+<pre><code class="lang-bash"># 把本地当前目录下的 01.py 文件 复制到 远程 家目录下的 Desktop/01.py
+# 注意：`:` 后面的路径如果不是绝对路径，则以用户的家目录作为参照路径
+scp -P port 01.py user@remote:Desktop/01.py
+
+# 把远程 家目录下的 Desktop/01.py 文件 复制到 本地当前目录下的 01.py
+scp -P port user@remote:Desktop/01.py 01.py
+
+# 加上 -r 选项可以传送文件夹
+# 把当前目录下的 demo 文件夹 复制到 远程 家目录下的 Desktop
+scp -r demo user@remote:Desktop
+
+# 把远程 家目录下的 Desktop 复制到 当前目录下的 demo 文件夹
+scp -r user@remote:Desktop demo
+</code></pre>
+<div class="table-container">
+<table>
 <thead>
 <tr>
 <th>选项</th>
@@ -442,42 +451,36 @@ Linux远程管理常用命令 - Linux - 技术杂谈 - 计算机科学 |
 </tr>
 </tbody>
 </table>
+</div>
 <blockquote>
 <p>注意：</p>
 <ul>
-<li><code>scp</code>  这个终端命令只能在  <code>Linux</code>  或者  <code>UNIX</code>  系统下使用</li>
-<li>如果在  <code>Windows</code>  系统中，可以安装  <code>PuTTY</code> ，使用  <code>pscp</code>  命令行工具或者安装  <code>FileZilla</code>  使用  <code>FTP</code>  进行文件传输</li>
+<li><code>scp</code> 这个终端命令只能在 <code>Linux</code> 或者 <code>UNIX</code> 系统下使用</li>
+<li>如果在 <code>Windows</code> 系统中，可以安装 <code>PuTTY</code>，使用 <code>pscp</code> 命令行工具或者安装 <code>FileZilla</code> 使用 <code>FTP</code> 进行文件传输</li>
 </ul>
 </blockquote>
-<h4 id="filezilla"><a class="markdownIt-Anchor" href="#filezilla">#</a>  <code>FileZilla</code></h4>
-<ul>
+<h4 id="FileZilla"><a href="#FileZilla" class="headerlink" title="FileZilla"></a><code>FileZilla</code></h4><ul>
 <li>官方网站：<span class="exturl" data-url="aHR0cHM6Ly93d3cuZmlsZXppbGxhLmNuL2Rvd25sb2FkL2NsaWVudA==">https://www.filezilla.cn/download/client</span></li>
-<li><code>FileZilla</code>  在传输文件时，使用的是  <code>FTP 服务</code>  而不是  <code>SSH 服务</code> ，因此端口号应该设置为  <code>21</code></li>
+<li><code>FileZilla</code> 在传输文件时，使用的是 <code>FTP 服务</code> 而不是 <code>SSH 服务</code>，因此端口号应该设置为 <code>21</code></li>
 </ul>
-<h3 id="ssh-高级知道"><a class="markdownIt-Anchor" href="#ssh-高级知道">#</a> SSH 高级（知道）</h3>
-<ul>
+<h3 id="SSH-高级（知道）"><a href="#SSH-高级（知道）" class="headerlink" title="SSH 高级（知道）"></a>SSH 高级（知道）</h3><ul>
 <li>免密码登录</li>
 <li>配置别名</li>
 </ul>
 <blockquote>
-<p>提示：有关 SSH 配置信息都保存在用户家目录下的  <code>.ssh</code>  目录下</p>
+<p>提示：有关 SSH 配置信息都保存在用户家目录下的 <code>.ssh</code> 目录下</p>
 </blockquote>
-<h4 id="免密码登录"><a class="markdownIt-Anchor" href="#免密码登录">#</a> 免密码登录</h4>
-<h5 id="步骤"><a class="markdownIt-Anchor" href="#步骤">#</a> 步骤</h5>
-<ul>
-<li>配置公钥
-<ul>
-<li>执行  <code>ssh-keygen</code>  即可生成 SSH 钥匙，一路回车即可</li>
+<h4 id="免密码登录"><a href="#免密码登录" class="headerlink" title="免密码登录"></a>免密码登录</h4><h5 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h5><ul>
+<li>配置公钥<ul>
+<li>执行 <code>ssh-keygen</code> 即可生成 SSH 钥匙，一路回车即可</li>
 </ul>
 </li>
-<li>上传公钥到服务器
-<ul>
-<li>执行  <code>ssh-copy-id -p port user@remote</code> ，可以让远程服务器记住我们的公钥</li>
+<li>上传公钥到服务器<ul>
+<li>执行 <code>ssh-copy-id -p port user@remote</code>，可以让远程服务器记住我们的公钥</li>
 </ul>
 </li>
 </ul>
-<h5 id="示意图"><a class="markdownIt-Anchor" href="#示意图">#</a> 示意图</h5>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022042441.png" alt=""></p>
+<h5 id="示意图"><a href="#示意图" class="headerlink" title="示意图"></a>示意图</h5><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022042441.png" alt=""></p>
 <blockquote>
 <p>非对称加密算法</p>
 <ul>
@@ -485,10 +488,14 @@ Linux远程管理常用命令 - Linux - 技术杂谈 - 计算机科学 |
 <li>使用 <strong>私钥</strong> 加密的数据，需要使用 <strong>公钥</strong> 解密</li>
 </ul>
 </blockquote>
-<h4 id="配置别名"><a class="markdownIt-Anchor" href="#配置别名">#</a> 配置别名</h4>
-<p>每次都输入  <code>ssh -p port user@remote</code> ，时间久了会觉得很麻烦，特别是当  <code>user</code> ,  <code>remote</code>  和  <code>port</code>  都得输入，而且还不好记忆</p>
-<p>而 <strong>配置别名</strong> 可以让我们进一步偷懒，譬如用： <code>ssh mac</code>  来替代上面这么一长串，那么就在  <code>~/.ssh/config</code>  里面追加以下内容：</p>
-<figure class="highlight yaml"><figcaption data-lang="YAML"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>Host mac</pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>    HostName ip地址</pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>    User itheima</pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre>    Port 22</pre></td></tr></table></figure><p><strong>保存之后，即可用  <code>ssh mac</code>  实现远程登录了， <code>scp</code>  同样可以使用</strong></p>
+<h4 id="配置别名"><a href="#配置别名" class="headerlink" title="配置别名"></a>配置别名</h4><p>每次都输入 <code>ssh -p port user@remote</code>，时间久了会觉得很麻烦，特别是当 <code>user</code>, <code>remote</code> 和 <code>port</code> 都得输入，而且还不好记忆</p>
+<p>而 <strong>配置别名</strong> 可以让我们进一步偷懒，譬如用：<code>ssh mac</code> 来替代上面这么一长串，那么就在 <code>~/.ssh/config</code> 里面追加以下内容：</p>
+<p><code>yaml mark:1-4
+Host mac
+    HostName ip地址
+    User itheima
+    Port 22</code></p>
+<p><strong>保存之后，即可用 <code>ssh mac</code> 实现远程登录了，<code>scp</code> 同样可以使用</strong></p>
 
       <div class="tags">
           <a href="/tags/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" rel="tag"><i class="ic i-tag"></i> 技术杂谈</a>
@@ -564,7 +571,7 @@ Linux远程管理常用命令 - Linux - 技术杂谈 - 计算机科学 |
     <div class="item left">
       
 
-  <a href="/ef5acbc6.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giciub8ja1j20zk0m81ky.jpg" title="4.9日记分享">
+  <a href="/ef5acbc6.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicliierfjj20zk0m8npd.jpg" title="4.9日记分享">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> 日记</span>
   <h3>4.9日记分享</h3>
@@ -574,7 +581,7 @@ Linux远程管理常用命令 - Linux - 技术杂谈 - 计算机科学 |
     <div class="item right">
       
 
-  <a href="/2fbd98c3.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclh5u05ej20zk0m87df.jpg" title="如何给PicGo添加水印">
+  <a href="/2fbd98c3.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicmnywqgpj20zk0m8dwx.jpg" title="如何给PicGo添加水印">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> 技术杂谈</span>
   <h3>如何给PicGo添加水印</h3>
@@ -596,7 +603,7 @@ Linux远程管理常用命令 - Linux - 技术杂谈 - 计算机科学 |
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E5%91%BD%E4%BB%A4"><span class="toc-number">1.</span> <span class="toc-text"> 文件命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E6%9C%BA%E9%87%8D%E5%90%AF"><span class="toc-number">2.</span> <span class="toc-text"> 关机 &#x2F; 重启</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E6%88%96%E9%85%8D%E7%BD%AE%E7%BD%91%E5%8D%A1%E4%BF%A1%E6%81%AF"><span class="toc-number">3.</span> <span class="toc-text"> 查看或配置网卡信息</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BD%91%E5%8D%A1-%E5%92%8C-ip-%E5%9C%B0%E5%9D%80"><span class="toc-number">3.1.</span> <span class="toc-text"> 网卡 和 IP 地址</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BD%91%E5%8D%A1"><span class="toc-number">3.1.1.</span> <span class="toc-text"> 网卡</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ip-%E5%9C%B0%E5%9D%80"><span class="toc-number">3.1.2.</span> <span class="toc-text"> IP 地址</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ifconfig"><span class="toc-number">3.2.</span> <span class="toc-text">  ifconfig</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ping"><span class="toc-number">3.3.</span> <span class="toc-text">  ping</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9C%E7%A8%8B%E7%99%BB%E5%BD%95%E5%92%8C%E5%A4%8D%E5%88%B6%E6%96%87%E4%BB%B6"><span class="toc-number">4.</span> <span class="toc-text"> 远程登录和复制文件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#ssh-%E5%9F%BA%E7%A1%80%E9%87%8D%E7%82%B9"><span class="toc-number">4.1.</span> <span class="toc-text">  ssh  基础（重点）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9F%9F%E5%90%8D-%E5%92%8C-%E7%AB%AF%E5%8F%A3%E5%8F%B7"><span class="toc-number">4.1.1.</span> <span class="toc-text"> 域名 和 端口号</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%9F%9F%E5%90%8D"><span class="toc-number">4.1.1.1.</span> <span class="toc-text"> 域名</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%AB%AF%E5%8F%A3%E5%8F%B7"><span class="toc-number">4.1.1.2.</span> <span class="toc-text"> 端口号</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ssh-%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8"><span class="toc-number">4.1.2.</span> <span class="toc-text"> SSH 客户端的简单使用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#windows-%E4%B8%8B-ssh-%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%9A%84%E5%AE%89%E8%A3%85"><span class="toc-number">4.1.3.</span> <span class="toc-text"> Windows 下 SSH 客户端的安装</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#scp%E6%8E%8C%E6%8F%A1"><span class="toc-number">4.2.</span> <span class="toc-text">  scp （掌握）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#filezilla"><span class="toc-number">4.2.1.</span> <span class="toc-text">  FileZilla</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ssh-%E9%AB%98%E7%BA%A7%E7%9F%A5%E9%81%93"><span class="toc-number">4.3.</span> <span class="toc-text"> SSH 高级（知道）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%8D%E5%AF%86%E7%A0%81%E7%99%BB%E5%BD%95"><span class="toc-number">4.3.1.</span> <span class="toc-text"> 免密码登录</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%AD%A5%E9%AA%A4"><span class="toc-number">4.3.1.1.</span> <span class="toc-text"> 步骤</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%A4%BA%E6%84%8F%E5%9B%BE"><span class="toc-number">4.3.1.2.</span> <span class="toc-text"> 示意图</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E5%88%AB%E5%90%8D"><span class="toc-number">4.3.2.</span> <span class="toc-text"> 配置别名</span></a></li></ol></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E5%91%BD%E4%BB%A4"><span class="toc-number">1.</span> <span class="toc-text">文件命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E6%88%96%E9%85%8D%E7%BD%AE%E7%BD%91%E5%8D%A1%E4%BF%A1%E6%81%AF"><span class="toc-number">2.</span> <span class="toc-text">查看或配置网卡信息</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BD%91%E5%8D%A1-%E5%92%8C-IP-%E5%9C%B0%E5%9D%80"><span class="toc-number">2.1.</span> <span class="toc-text">网卡 和 IP 地址</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BD%91%E5%8D%A1"><span class="toc-number">2.1.1.</span> <span class="toc-text">网卡</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#IP-%E5%9C%B0%E5%9D%80"><span class="toc-number">2.1.2.</span> <span class="toc-text">IP 地址</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ifconfig"><span class="toc-number">2.2.</span> <span class="toc-text">ifconfig</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ping"><span class="toc-number">2.3.</span> <span class="toc-text">ping</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9C%E7%A8%8B%E7%99%BB%E5%BD%95%E5%92%8C%E5%A4%8D%E5%88%B6%E6%96%87%E4%BB%B6"><span class="toc-number">3.</span> <span class="toc-text">远程登录和复制文件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#ssh-%E5%9F%BA%E7%A1%80%EF%BC%88%E9%87%8D%E7%82%B9%EF%BC%89"><span class="toc-number">3.1.</span> <span class="toc-text">ssh 基础（重点）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9F%9F%E5%90%8D-%E5%92%8C-%E7%AB%AF%E5%8F%A3%E5%8F%B7"><span class="toc-number">3.1.1.</span> <span class="toc-text">域名 和 端口号</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%9F%9F%E5%90%8D"><span class="toc-number">3.1.1.1.</span> <span class="toc-text">域名</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%AB%AF%E5%8F%A3%E5%8F%B7"><span class="toc-number">3.1.1.2.</span> <span class="toc-text">端口号</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#SSH-%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8"><span class="toc-number">3.1.2.</span> <span class="toc-text">SSH 客户端的简单使用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Windows-%E4%B8%8B-SSH-%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%9A%84%E5%AE%89%E8%A3%85"><span class="toc-number">3.1.3.</span> <span class="toc-text">Windows 下 SSH 客户端的安装</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#scp%EF%BC%88%E6%8E%8C%E6%8F%A1%EF%BC%89"><span class="toc-number">3.2.</span> <span class="toc-text">scp（掌握）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#FileZilla"><span class="toc-number">3.2.1.</span> <span class="toc-text">FileZilla</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SSH-%E9%AB%98%E7%BA%A7%EF%BC%88%E7%9F%A5%E9%81%93%EF%BC%89"><span class="toc-number">3.3.</span> <span class="toc-text">SSH 高级（知道）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%8D%E5%AF%86%E7%A0%81%E7%99%BB%E5%BD%95"><span class="toc-number">3.3.1.</span> <span class="toc-text">免密码登录</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%AD%A5%E9%AA%A4"><span class="toc-number">3.3.1.1.</span> <span class="toc-text">步骤</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%A4%BA%E6%84%8F%E5%9B%BE"><span class="toc-number">3.3.1.2.</span> <span class="toc-text">示意图</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E5%88%AB%E5%90%8D"><span class="toc-number">3.3.2.</span> <span class="toc-text">配置别名</span></a></li></ol></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
@@ -614,7 +621,7 @@ Linux远程管理常用命令 - Linux - 技术杂谈 - 计算机科学 |
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">90</span>
+        <span class="count">91</span>
         <span class="name">文章</span>
       </a>
     </div>
@@ -742,10 +749,68 @@ Linux远程管理常用命令 - Linux - 技术杂谈 - 计算机科学 |
 <div class="breadcrumb">
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/fail/" title="分类于 fail">fail</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
 </div>
 
-    <span><a href="/c32e96d4.html" title="git push origin master失败">git push origin master失败</a></span>
+    <span><a href="/451161d7.html" title="idea开发必装插件">idea开发必装插件</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/" title="分类于 java">java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/fail/" title="分类于 fail">fail</a>
+</div>
+
+    <span><a href="/85111a4c.html" title="关闭Java数据库SSL安全提示">关闭Java数据库SSL安全提示</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/window/" title="分类于 window">window</a>
+</div>
+
+    <span><a href="/64ed46b0.html" title="win10如何开启远程桌面">win10如何开启远程桌面</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/" title="分类于 java">java</a>
+</div>
+
+    <span><a href="/b2cc2eb5.html" title="javase程序国际化">javase程序国际化</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/Linux/" title="分类于 Linux">Linux</a>
+</div>
+
+    <span><a href="/3d358537.html" title="Linux忘记数据库密码">Linux忘记数据库密码</a></span>
   </li>
 
       
@@ -768,38 +833,12 @@ Linux远程管理常用命令 - Linux - 技术杂谈 - 计算机科学 |
 <div class="breadcrumb">
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/window/" title="分类于 window">window</a>
-</div>
-
-    <span><a href="/64ed46b0.html" title="win10如何开启远程桌面">win10如何开启远程桌面</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E5%9F%BA%E7%A1%80%E5%AD%A6%E7%A7%91/" title="分类于 基础学科">基础学科</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E5%9F%BA%E7%A1%80%E5%AD%A6%E7%A7%91/%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/" title="分类于 期末复习">期末复习</a>
-</div>
-
-    <span><a href="/cbd16032.html" title="2022年概率论与数理统计">2022年概率论与数理统计</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E6%A8%A1%E5%9D%97/" title="分类于 模块">模块</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
 </div>
 
-    <span><a href="/e85071ad.html" title="搭建GitHu图床">搭建GitHu图床</a></span>
+    <span><a href="/a6f9d072.html" title="第一篇：注册github---从0基础搭建Hexo博客">第一篇：注册github---从0基础搭建Hexo博客</a></span>
   </li>
 
       
@@ -810,10 +849,10 @@ Linux远程管理常用命令 - Linux - 技术杂谈 - 计算机科学 |
 <i class="ic i-angle-right"></i>
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/window/" title="分类于 window">window</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/docker/" title="分类于 docker">docker</a>
 </div>
 
-    <span><a href="/cdd384e5.html" title="win10指定文件默认方式打开">win10指定文件默认方式打开</a></span>
+    <span><a href="/4fce5997.html" title="docker安装qBittorrent">docker安装qBittorrent</a></span>
   </li>
 
       
@@ -822,12 +861,14 @@ Linux远程管理常用命令 - Linux - 技术杂谈 - 计算机科学 |
 <div class="breadcrumb">
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E5%8A%9E%E5%85%AC%E8%BD%AF%E4%BB%B6/" title="分类于 办公软件">办公软件</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E5%8A%9E%E5%85%AC%E8%BD%AF%E4%BB%B6/Word/" title="分类于 Word">Word</a>
 </div>
 
-    <span><a href="/aaad0208.html" title="零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a></span>
+    <span><a href="/30d35056.html" title="Word调整目录编号和标题空隙">Word调整目录编号和标题空隙</a></span>
   </li>
 
       
@@ -836,40 +877,12 @@ Linux远程管理常用命令 - Linux - 技术杂谈 - 计算机科学 |
 <div class="breadcrumb">
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E6%A8%A1%E5%9D%97/" title="分类于 模块">模块</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/Andriod/" title="分类于 Andriod">Andriod</a>
 </div>
 
-    <span><a href="/c5de56d5.html" title="Hexo怎么安装插件">Hexo怎么安装插件</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
-</div>
-
-    <span><a href="/1edcfdea.html" title="python-math库">python-math库</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
-</div>
-
-    <span><a href="/dc09a46c.html" title="第六篇：将博客部署到GitHub---从0基础搭建Hexo博客">第六篇：将博客部署到GitHub---从0基础搭建Hexo博客</a></span>
+    <span><a href="/17554f39.html" title="关于手机双开不显示双开目录999">关于手机双开不显示双开目录999</a></span>
   </li>
 
   </ul>
@@ -894,13 +907,13 @@ Linux远程管理常用命令 - Linux - 技术杂谈 - 计算机科学 |
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="站点总字数">122k 字</span>
+    <span title="站点总字数">130k 字</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="站点阅读时长">2:46</span>
+    <span title="站点阅读时长">2:57</span>
   </div>
   <div class="powered-by">
     基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>

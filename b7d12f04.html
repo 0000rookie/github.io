@@ -84,7 +84,7 @@ window系统查看端口并杀掉 - window - 技术杂谈 - 计算机科学 |
       <i class="ic i-pen"></i>
     </span>
     <span class="text">本文字数</span>
-    <span>158</span>
+    <span>173</span>
     <span class="text">字</span>
   </span>
   <span class="item" title="阅读时长">
@@ -125,12 +125,12 @@ window系统查看端口并杀掉 - window - 技术杂谈 - 计算机科学 |
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giciub8ja1j20zk0m81ky.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclwuom7cj20zk0m8dvn.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipexj2jgzj20zk0m8b09.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipesrnqv3j20zk0m8ava.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipevarprfj20zk0m8npd.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeybxm1pj20zk0m8niv.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclwrdwyaj20zk0m8are.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicljitigmj20zk0m87fp.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclimtf7dj20zk0m8qav.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciuv0socj20zk0m8qes.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipexw3o58j20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipey84bjtj20zk0m8hdt.jpg"></li>
         </ul>
       </div>
     </header>
@@ -185,17 +185,20 @@ window系统查看端口并杀掉 - window - 技术杂谈 - 计算机科学 |
   <div class="body md" itemprop="articleBody">
     
 
-    <h2 id="查看全部端口情况"><a class="markdownIt-Anchor" href="#查看全部端口情况">#</a> 查看全部端口情况</h2>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token function">netstat</span> -ano</pre></td></tr></table></figure><p><img data-src="http://hikki.test.upcdn.net/20220704150846.jpeg" alt=""></p>
-<h2 id="查找端口"><a class="markdownIt-Anchor" href="#查找端口">#</a> 查找端口</h2>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token function">netstat</span> -ano<span class="token operator">|</span>findstr <span class="token string">"622"</span></pre></td></tr></table></figure><p>最后边有个 <code>4560</code>  是 <code>PID</code> ，可以通过 <code>PID</code>  查找出对应的进程</p>
+    <h2 id="查看全部端口情况"><a href="#查看全部端口情况" class="headerlink" title="查看全部端口情况"></a>查看全部端口情况</h2><pre><code class="lang-bash">netstat -ano
+</code></pre>
+<p><img data-src="http://hikki.test.upcdn.net/20220704150846.jpeg" alt=""></p>
+<h2 id="查找端口"><a href="#查找端口" class="headerlink" title="查找端口"></a>查找端口</h2><pre><code class="lang-bash">netstat -ano|findstr &quot;622&quot;
+</code></pre>
+<p>最后边有个<code>4560</code>是<code>PID</code>，可以通过<code>PID</code>查找出对应的进程</p>
 <p><img data-src="http://hikki.test.upcdn.net/20220704150859.jpeg" alt=""></p>
-<h2 id="查找端口对应进程"><a class="markdownIt-Anchor" href="#查找端口对应进程">#</a> 查找端口对应进程</h2>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>tasklist <span class="token operator">|</span> findstr <span class="token string">"4560"</span></pre></td></tr></table></figure><p><img data-src="http://hikki.test.upcdn.net/03.jpg" alt=""></p>
-<h2 id="结束该进程"><a class="markdownIt-Anchor" href="#结束该进程">#</a> 结束该进程</h2>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>taskkill /f /t /im svchost.exe</pre></td></tr></table></figure><p><img data-src="http://hikki.test.upcdn.net/20220704151253.jpeg" alt=""></p>
-<h2 id="或者可以通过pid来查找占用进程"><a class="markdownIt-Anchor" href="#或者可以通过pid来查找占用进程">#</a> 或者可以通过 PID 来查找占用进程</h2>
-<p><img data-src="http://hikki.test.upcdn.net/20220704151640.jpeg" alt=""></p>
+<h2 id="查找端口对应进程"><a href="#查找端口对应进程" class="headerlink" title="查找端口对应进程"></a>查找端口对应进程</h2><pre><code class="lang-bash">tasklist | findstr &quot;4560&quot;
+</code></pre>
+<p><img data-src="http://hikki.test.upcdn.net/03.jpg" alt=""></p>
+<h2 id="结束该进程"><a href="#结束该进程" class="headerlink" title="结束该进程"></a>结束该进程</h2><pre><code class="lang-bash">taskkill /f /t /im svchost.exe
+</code></pre>
+<p><img data-src="http://hikki.test.upcdn.net/20220704151253.jpeg" alt=""></p>
+<h2 id="或者可以通过PID来查找占用进程"><a href="#或者可以通过PID来查找占用进程" class="headerlink" title="或者可以通过PID来查找占用进程"></a>或者可以通过PID来查找占用进程</h2><p><img data-src="http://hikki.test.upcdn.net/20220704151640.jpeg" alt=""></p>
 
   </div>
 
@@ -268,7 +271,7 @@ window系统查看端口并杀掉 - window - 技术杂谈 - 计算机科学 |
     <div class="item left">
       
 
-  <a href="/b08de8d3.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicivghyooj20zk0m8dir.jpg" title="Excel常用技巧">
+  <a href="/b08de8d3.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giciundwu5j20zk0m8n9e.jpg" title="Excel常用技巧">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> Excel</span>
   <h3>Excel常用技巧</h3>
@@ -278,7 +281,7 @@ window系统查看端口并杀掉 - window - 技术杂谈 - 计算机科学 |
     <div class="item right">
       
 
-  <a href="/b241aa8.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipey0a334j20zk0m8qpt.jpg" title="暑假Java Web计划">
+  <a href="/b241aa8.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipetlbztpj20zk0m84qp.jpg" title="暑假Java Web计划">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> java</span>
   <h3>暑假Java Web计划</h3>
@@ -300,7 +303,7 @@ window系统查看端口并杀掉 - window - 技术杂谈 - 计算机科学 |
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E5%85%A8%E9%83%A8%E7%AB%AF%E5%8F%A3%E6%83%85%E5%86%B5"><span class="toc-number">1.</span> <span class="toc-text"> 查看全部端口情况</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9F%A5%E6%89%BE%E7%AB%AF%E5%8F%A3"><span class="toc-number">2.</span> <span class="toc-text"> 查找端口</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9F%A5%E6%89%BE%E7%AB%AF%E5%8F%A3%E5%AF%B9%E5%BA%94%E8%BF%9B%E7%A8%8B"><span class="toc-number">3.</span> <span class="toc-text"> 查找端口对应进程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E6%9D%9F%E8%AF%A5%E8%BF%9B%E7%A8%8B"><span class="toc-number">4.</span> <span class="toc-text"> 结束该进程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%88%96%E8%80%85%E5%8F%AF%E4%BB%A5%E9%80%9A%E8%BF%87pid%E6%9D%A5%E6%9F%A5%E6%89%BE%E5%8D%A0%E7%94%A8%E8%BF%9B%E7%A8%8B"><span class="toc-number">5.</span> <span class="toc-text"> 或者可以通过 PID 来查找占用进程</span></a></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E5%85%A8%E9%83%A8%E7%AB%AF%E5%8F%A3%E6%83%85%E5%86%B5"><span class="toc-number">1.</span> <span class="toc-text">查看全部端口情况</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9F%A5%E6%89%BE%E7%AB%AF%E5%8F%A3"><span class="toc-number">2.</span> <span class="toc-text">查找端口</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9F%A5%E6%89%BE%E7%AB%AF%E5%8F%A3%E5%AF%B9%E5%BA%94%E8%BF%9B%E7%A8%8B"><span class="toc-number">3.</span> <span class="toc-text">查找端口对应进程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E6%9D%9F%E8%AF%A5%E8%BF%9B%E7%A8%8B"><span class="toc-number">4.</span> <span class="toc-text">结束该进程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%88%96%E8%80%85%E5%8F%AF%E4%BB%A5%E9%80%9A%E8%BF%87PID%E6%9D%A5%E6%9F%A5%E6%89%BE%E5%8D%A0%E7%94%A8%E8%BF%9B%E7%A8%8B"><span class="toc-number">5.</span> <span class="toc-text">或者可以通过PID来查找占用进程</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
@@ -318,7 +321,7 @@ window系统查看端口并杀掉 - window - 技术杂谈 - 计算机科学 |
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">90</span>
+        <span class="count">91</span>
         <span class="name">文章</span>
       </a>
     </div>
@@ -448,10 +451,10 @@ window系统查看端口并杀掉 - window - 技术杂谈 - 计算机科学 |
 <i class="ic i-angle-right"></i>
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/" title="分类于 博客的食用方法">博客的食用方法</a>
 </div>
 
-    <span><a href="/aaad0208.html" title="零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a></span>
+    <span><a href="/6f010433.html" title="jsdelivr刷新缓存">jsdelivr刷新缓存</a></span>
   </li>
 
       
@@ -465,7 +468,7 @@ window系统查看端口并杀掉 - window - 技术杂谈 - 计算机科学 |
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
 </div>
 
-    <span><a href="/8075134e.html" title="numpy画复合函数">numpy画复合函数</a></span>
+    <span><a href="/1edcfdea.html" title="python-math库">python-math库</a></span>
   </li>
 
       
@@ -474,12 +477,75 @@ window系统查看端口并杀掉 - window - 技术杂谈 - 计算机科学 |
 <div class="breadcrumb">
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/Andriod/" title="分类于 Andriod">Andriod</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/" title="分类于 博客的食用方法">博客的食用方法</a>
 </div>
 
-    <span><a href="/17554f39.html" title="关于手机双开不显示双开目录999">关于手机双开不显示双开目录999</a></span>
+    <span><a href="/b26ff49b.html" title="如何在hexo博客写作">如何在hexo博客写作</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/b03846b2.html" title="好用的PDF软件">好用的PDF软件</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%9F%BA%E7%A1%80%E5%AD%A6%E7%A7%91/" title="分类于 基础学科">基础学科</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%9F%BA%E7%A1%80%E5%AD%A6%E7%A7%91/%E5%A4%96%E8%AF%AD/" title="分类于 外语">外语</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%9F%BA%E7%A1%80%E5%AD%A6%E7%A7%91/%E5%A4%96%E8%AF%AD/%E6%97%A5%E8%AF%AD/" title="分类于 日语">日语</a>
+</div>
+
+    <span><a href="/39c6cce6.html" title="日本语-作文">日本语-作文</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%9F%BA%E7%A1%80%E5%AD%A6%E7%A7%91/" title="分类于 基础学科">基础学科</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%9F%BA%E7%A1%80%E5%AD%A6%E7%A7%91/%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/" title="分类于 期末复习">期末复习</a>
+</div>
+
+    <span><a href="/87a258b3.html" title="2022期末复习资料">2022期末复习资料</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E6%A8%A1%E5%9D%97/" title="分类于 模块">模块</a>
+</div>
+
+    <span><a href="/c5de56d5.html" title="Hexo怎么安装插件">Hexo怎么安装插件</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
+</div>
+
+    <span><a href="/3050703f.html" title="python批量修改文件名">python批量修改文件名</a></span>
   </li>
 
       
@@ -502,80 +568,10 @@ window系统查看端口并杀掉 - window - 技术杂谈 - 计算机科学 |
 <i class="ic i-angle-right"></i>
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/Linux/" title="分类于 Linux">Linux</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/GitHub/" title="分类于 GitHub">GitHub</a>
 </div>
 
-    <span><a href="/9a6dde1d.html" title="基础Vim修改文件">基础Vim修改文件</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/" title="分类于 博客的食用方法">博客的食用方法</a>
-</div>
-
-    <span><a href="/a7032750.html" title="文章Front-Matter参数设置">文章Front-Matter参数设置</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/Linux/" title="分类于 Linux">Linux</a>
-</div>
-
-    <span><a href="/45ba05c7.html" title="linux安装防火墙">linux安装防火墙</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/" title="分类于 java">java</a>
-</div>
-
-    <span><a href="/f2edc254.html" title="javase基础">javase基础</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/window/" title="分类于 window">window</a>
-</div>
-
-    <span><a href="/23cd0b3.html" title="win10鼠标右键文件、文件夹、桌面菜单添加程序">win10鼠标右键文件、文件夹、桌面菜单添加程序</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/docker/" title="分类于 docker">docker</a>
-</div>
-
-    <span><a href="/bc681fc7.html" title="Ubuntu安装Docker">Ubuntu安装Docker</a></span>
+    <span><a href="/9b0876ac.html" title="GitHub使用技巧">GitHub使用技巧</a></span>
   </li>
 
   </ul>
@@ -600,13 +596,13 @@ window系统查看端口并杀掉 - window - 技术杂谈 - 计算机科学 |
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="站点总字数">122k 字</span>
+    <span title="站点总字数">130k 字</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="站点阅读时长">2:46</span>
+    <span title="站点阅读时长">2:57</span>
   </div>
   <div class="powered-by">
     基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>

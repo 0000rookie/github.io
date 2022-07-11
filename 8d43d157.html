@@ -86,7 +86,7 @@
       <i class="ic i-pen"></i>
     </span>
     <span class="text">本文字数</span>
-    <span>563</span>
+    <span>564</span>
     <span class="text">字</span>
   </span>
   <span class="item" title="阅读时长">
@@ -127,12 +127,12 @@
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclfw2t96j20zk0m8x6p.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giciuv0socj20zk0m8qes.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giph4fomxoj20zk0m8axp.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicljitigmj20zk0m87fp.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicis081o9j20zk0m8dmr.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeybxm1pj20zk0m8niv.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclfdu6exj20zk0m87hw.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipet8c1a2j20zk0m8kct.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclh3brzpj20zk0m8ann.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicljgocqbj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipew8gmvyj20zk0m87wh.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeuibk9fj20zk0m8ay2.jpg"></li>
         </ul>
       </div>
     </header>
@@ -184,32 +184,33 @@
   <div class="body md" itemprop="articleBody">
     
 
-    <h2 id="查询虚拟机ip地址"><a class="markdownIt-Anchor" href="#查询虚拟机ip地址">#</a> 查询虚拟机 IP 地址</h2>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token operator">>></span><span class="token operator">></span>ifconfig</pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre>ens33: <span class="token assign-left variable">flags</span><span class="token operator">=</span><span class="token number">416</span><span class="token operator"><span class="token file-descriptor important">3</span>&lt;</span>UP,BROADCAST,RUNNING,MULTICAST<span class="token operator">></span>  mtu <span class="token number">1500</span></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre>        inet <span class="token number">192.168</span>.253.132  netmask <span class="token number">255.255</span>.255.0  broadcast <span class="token number">192.168</span>.253.255</pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre>        inet6 fe80::a4de:8d41:623a:fe18  prefixlen <span class="token number">64</span>  scopeid 0x2<span class="token operator"><span class="token file-descriptor important">0</span>&lt;</span>link<span class="token operator">></span></pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre>        ether 00:0c:29:e6:1b:b9  txqueuelen <span class="token number">1000</span>  <span class="token punctuation">(</span>Ethernet<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre>        RX packets <span class="token number">11173</span>  bytes <span class="token number">16432024</span> <span class="token punctuation">(</span><span class="token number">15.6</span> MiB<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre>        RX errors <span class="token number">0</span>  dropped <span class="token number">0</span>  overruns <span class="token number">0</span>  frame <span class="token number">0</span></pre></td></tr><tr class="marked"><td data-num="8"></td><td><pre>        TX packets <span class="token number">4965</span>  bytes <span class="token number">316559</span> <span class="token punctuation">(</span><span class="token number">309.1</span> KiB<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="9"></td><td><pre>        TX errors <span class="token number">0</span>  dropped <span class="token number">0</span> overruns <span class="token number">0</span>  carrier <span class="token number">0</span>  collisions <span class="token number">0</span></pre></td></tr></table></figure><p>我的 IP 地址是 <code>192.168.253.132</code></p>
-<div class="note warning">
-<p>我这里使用的是 CentOS Linux 7</p>
-</div>
+    <h2 id="查询虚拟机IP地址"><a href="#查询虚拟机IP地址" class="headerlink" title="查询虚拟机IP地址"></a>查询虚拟机IP地址</h2><p>```bash mark:1-10</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>ifconfig<br>ens33: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500<br>        inet 192.168.253.132  netmask 255.255.255.0  broadcast 192.168.253.255<br>        inet6 fe80::a4de:8d41:623a:fe18  prefixlen 64  scopeid 0x20<link><br>        ether 00:0c:29:e6:1b:b9  txqueuelen 1000  (Ethernet)<br>        RX packets 11173  bytes 16432024 (15.6 MiB)<br>        RX errors 0  dropped 0  overruns 0  frame 0<br>        TX packets 4965  bytes 316559 (309.1 KiB)<br>        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0<br>```</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>我的IP地址是<code>192.168.253.132</code></p>
+<p>:::warning</p>
+<p>我这里使用的是CentOS Linux 7</p>
+<p>:::</p>
 <p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022051207.jpeg" alt=""></p>
-<h2 id="新建远程连接"><a class="markdownIt-Anchor" href="#新建远程连接">#</a> 新建远程连接</h2>
-<div class="note info">
-<p>我这里使用的是 <code>Xshell</code>  (<span class="exturl" data-url="aHR0cHM6Ly93d3cueHNoZWxsLmNvbS96aC9mcmVlLWZvci1ob21lLXNjaG9vbC8=">https://www.xshell.com/zh/free-for-home-school/</span>)  可以申请免费非商用用途</p>
-</div>
+<h2 id="新建远程连接"><a href="#新建远程连接" class="headerlink" title="新建远程连接"></a>新建远程连接</h2><p>:::info</p>
+<p>我这里使用的是<code>Xshell</code> (<span class="exturl" data-url="aHR0cHM6Ly93d3cueHNoZWxsLmNvbS96aC9mcmVlLWZvci1ob21lLXNjaG9vbC8=">https://www.xshell.com/zh/free-for-home-school/</span>)  可以申请免费非商用用途</p>
+<p>:::</p>
 <p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022051228.jpeg" alt=""></p>
-<h2 id="远程连接"><a class="markdownIt-Anchor" href="#远程连接">#</a> 远程连接</h2>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022051235.jpeg" alt=""></p>
+<h2 id="远程连接"><a href="#远程连接" class="headerlink" title="远程连接"></a>远程连接</h2><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022051235.jpeg" alt=""></p>
 <p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022051246.jpeg" alt=""></p>
-<h2 id="输入虚拟机用户名"><a class="markdownIt-Anchor" href="#输入虚拟机用户名">#</a> 输入虚拟机用户名</h2>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022051256.jpeg" alt=""></p>
-<h2 id="输入密码"><a class="markdownIt-Anchor" href="#输入密码">#</a> 输入密码</h2>
-<p>输入虚拟机账号对应的密码</p>
+<h2 id="输入虚拟机用户名"><a href="#输入虚拟机用户名" class="headerlink" title="输入虚拟机用户名"></a>输入虚拟机用户名</h2><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022051256.jpeg" alt=""></p>
+<h2 id="输入密码"><a href="#输入密码" class="headerlink" title="输入密码"></a>输入密码</h2><p>输入虚拟机账号对应的密码</p>
 <p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022051303.jpeg" alt=""></p>
-<h2 id="远程成功"><a class="markdownIt-Anchor" href="#远程成功">#</a> 远程成功</h2>
-<div class="note success">
+<h2 id="远程成功"><a href="#远程成功" class="headerlink" title="远程成功"></a>远程成功</h2><p>:::success</p>
 <p>远程成功啦</p>
-</div>
+<p>:::</p>
 <p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022051313.jpeg" alt=""></p>
-<h2 id="退出远程"><a class="markdownIt-Anchor" href="#退出远程">#</a> 退出远程</h2>
-<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022051322.jpeg" alt=""></p>
+<h2 id="退出远程"><a href="#退出远程" class="headerlink" title="退出远程"></a>退出远程</h2><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022051322.jpeg" alt=""></p>
 
       <div class="tags">
           <a href="/tags/Linux/" rel="tag"><i class="ic i-tag"></i> Linux</a>
@@ -285,7 +286,7 @@
     <div class="item left">
       
 
-  <a href="/17554f39.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipevuctzzj20zk0m84qp.jpg" title="关于手机双开不显示双开目录999">
+  <a href="/17554f39.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclil3m4ej20zk0m8tn8.jpg" title="关于手机双开不显示双开目录999">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> Andriod</span>
   <h3>关于手机双开不显示双开目录999</h3>
@@ -295,7 +296,7 @@
     <div class="item right">
       
 
-  <a href="/fb13f705.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeyonbf9j20zk0m8e81.jpg" title="JAVA记事本基础">
+  <a href="/fb13f705.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipey0a334j20zk0m8qpt.jpg" title="JAVA记事本基础">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> java</span>
   <h3>JAVA记事本基础</h3>
@@ -317,7 +318,7 @@
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9F%A5%E8%AF%A2%E8%99%9A%E6%8B%9F%E6%9C%BAip%E5%9C%B0%E5%9D%80"><span class="toc-number">1.</span> <span class="toc-text"> 查询虚拟机 IP 地址</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B0%E5%BB%BA%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5"><span class="toc-number">2.</span> <span class="toc-text"> 新建远程连接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5"><span class="toc-number">3.</span> <span class="toc-text"> 远程连接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BE%93%E5%85%A5%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%94%A8%E6%88%B7%E5%90%8D"><span class="toc-number">4.</span> <span class="toc-text"> 输入虚拟机用户名</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BE%93%E5%85%A5%E5%AF%86%E7%A0%81"><span class="toc-number">5.</span> <span class="toc-text"> 输入密码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9C%E7%A8%8B%E6%88%90%E5%8A%9F"><span class="toc-number">6.</span> <span class="toc-text"> 远程成功</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%80%80%E5%87%BA%E8%BF%9C%E7%A8%8B"><span class="toc-number">7.</span> <span class="toc-text"> 退出远程</span></a></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9F%A5%E8%AF%A2%E8%99%9A%E6%8B%9F%E6%9C%BAIP%E5%9C%B0%E5%9D%80"><span class="toc-number">1.</span> <span class="toc-text">查询虚拟机IP地址</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B0%E5%BB%BA%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5"><span class="toc-number">2.</span> <span class="toc-text">新建远程连接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5"><span class="toc-number">3.</span> <span class="toc-text">远程连接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BE%93%E5%85%A5%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%94%A8%E6%88%B7%E5%90%8D"><span class="toc-number">4.</span> <span class="toc-text">输入虚拟机用户名</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BE%93%E5%85%A5%E5%AF%86%E7%A0%81"><span class="toc-number">5.</span> <span class="toc-text">输入密码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9C%E7%A8%8B%E6%88%90%E5%8A%9F"><span class="toc-number">6.</span> <span class="toc-text">远程成功</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%80%80%E5%87%BA%E8%BF%9C%E7%A8%8B"><span class="toc-number">7.</span> <span class="toc-text">退出远程</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
@@ -335,7 +336,7 @@
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">90</span>
+        <span class="count">91</span>
         <span class="name">文章</span>
       </a>
     </div>
@@ -461,95 +462,14 @@
   <li class="item">
     
 <div class="breadcrumb">
-</div>
-
-    <span><a href="/d95d7e09.html" title="我的第一篇博客">我的第一篇博客</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/" title="分类于 java">java</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/fail/" title="分类于 fail">fail</a>
-</div>
-
-    <span><a href="/8a90aba9.html" title="key">key</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/docker/" title="分类于 docker">docker</a>
-</div>
-
-    <span><a href="/4fce5997.html" title="docker安装qBittorrent">docker安装qBittorrent</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E6%A8%A1%E5%9D%97/" title="分类于 模块">模块</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
 </div>
 
-    <span><a href="/4d530639.html" title="记录自用hexo模块">记录自用hexo模块</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/window/" title="分类于 window">window</a>
-</div>
-
-    <span><a href="/23cd0b3.html" title="win10鼠标右键文件、文件夹、桌面菜单添加程序">win10鼠标右键文件、文件夹、桌面菜单添加程序</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
-</div>
-
-    <span><a href="/c3e9968a.html" title="python Qt5基础知识">python Qt5基础知识</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/Andriod/" title="分类于 Andriod">Andriod</a>
-</div>
-
-    <span><a href="/17554f39.html" title="关于手机双开不显示双开目录999">关于手机双开不显示双开目录999</a></span>
+    <span><a href="/a6f9d072.html" title="第一篇：注册github---从0基础搭建Hexo博客">第一篇：注册github---从0基础搭建Hexo博客</a></span>
   </li>
 
       
@@ -568,12 +488,56 @@
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E7%94%9F%E6%B4%BB/" title="分类于 生活">生活</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E7%94%9F%E6%B4%BB/%E6%97%A5%E8%AE%B0/" title="分类于 日记">日记</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/window/" title="分类于 window">window</a>
 </div>
 
-    <span><a href="/ef5acbc6.html" title="4.9日记分享">4.9日记分享</a></span>
+    <span><a href="/b7d12f04.html" title="window系统查看端口并杀掉">window系统查看端口并杀掉</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
+</div>
+
+    <span><a href="/cd7b33aa.html" title="Python组合数据类型">Python组合数据类型</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%9F%BA%E7%A1%80%E5%AD%A6%E7%A7%91/" title="分类于 基础学科">基础学科</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%9F%BA%E7%A1%80%E5%AD%A6%E7%A7%91/%E5%A4%96%E8%AF%AD/" title="分类于 外语">外语</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%9F%BA%E7%A1%80%E5%AD%A6%E7%A7%91/%E5%A4%96%E8%AF%AD/%E6%97%A5%E8%AF%AD/" title="分类于 日语">日语</a>
+</div>
+
+    <span><a href="/39c6cce6.html" title="日本语-作文">日本语-作文</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/" title="分类于 博客的食用方法">博客的食用方法</a>
+</div>
+
+    <span><a href="/a7032750.html" title="文章Front-Matter参数设置">文章Front-Matter参数设置</a></span>
   </li>
 
       
@@ -587,7 +551,47 @@
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
 </div>
 
-    <span><a href="/a5eefddc.html" title="第九篇：安装主题---从0基础搭建Hexo博客">第九篇：安装主题---从0基础搭建Hexo博客</a></span>
+    <span><a href="/b75a1db6.html" title="第三篇：Git提交文件---从0基础搭建Hexo博客">第三篇：Git提交文件---从0基础搭建Hexo博客</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E5%8A%9E%E5%85%AC%E8%BD%AF%E4%BB%B6/" title="分类于 办公软件">办公软件</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E5%8A%9E%E5%85%AC%E8%BD%AF%E4%BB%B6/Excel/" title="分类于 Excel">Excel</a>
+</div>
+
+    <span><a href="/b08de8d3.html" title="Excel常用技巧">Excel常用技巧</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E7%94%9F%E6%B4%BB/" title="分类于 生活">生活</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E7%94%9F%E6%B4%BB/%E5%A5%BD%E7%89%A9%E5%AE%89%E5%88%A9/" title="分类于 好物安利">好物安利</a>
+</div>
+
+    <span><a href="/ee3e214f.html" title="QQ&#x2F;微信&#x2F;支付宝 收款码美化">QQ/微信/支付宝 收款码美化</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E7%94%9F%E6%B4%BB/" title="分类于 生活">生活</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E7%94%9F%E6%B4%BB/%E6%97%A5%E8%AE%B0/" title="分类于 日记">日记</a>
+</div>
+
+    <span><a href="/b9e6c7bf.html" title="日记分享2022.4.13">日记分享2022.4.13</a></span>
   </li>
 
   </ul>
@@ -612,13 +616,13 @@
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="站点总字数">122k 字</span>
+    <span title="站点总字数">130k 字</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="站点阅读时长">2:46</span>
+    <span title="站点阅读时长">2:57</span>
   </div>
   <div class="powered-by">
     基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>

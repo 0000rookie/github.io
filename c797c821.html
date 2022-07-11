@@ -86,7 +86,7 @@ NodeJs系列-Day01-文件处理 - nodejs - 编程语言 - 计算机科学 |
       <i class="ic i-pen"></i>
     </span>
     <span class="text">本文字数</span>
-    <span>3.5k</span>
+    <span>4k</span>
     <span class="text">字</span>
   </span>
   <span class="item" title="阅读时长">
@@ -127,12 +127,12 @@ NodeJs系列-Day01-文件处理 - nodejs - 编程语言 - 计算机科学 |
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclhfehz7j20zk0m8u0x.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicliwyw55j20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclj9410cj20zk0m8h12.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipet4bz0yj20zk0m8e81.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeyonbf9j20zk0m8e81.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giciusoyjnj219g0u0x56.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclil3m4ej20zk0m8tn8.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipey0a334j20zk0m8qpt.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclgi503lj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciryrr3rj20zk0m8nhk.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciub8ja1j20zk0m81ky.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeubcbajj20zk0m8h1h.jpg"></li>
         </ul>
       </div>
     </header>
@@ -187,44 +187,139 @@ NodeJs系列-Day01-文件处理 - nodejs - 编程语言 - 计算机科学 |
   <div class="body md" itemprop="articleBody">
     
 
-    <h2 id="如何执行nodejs文件"><a class="markdownIt-Anchor" href="#如何执行nodejs文件">#</a> 如何执行 Nodejs 文件</h2>
-<div class="note info">
-<p>tips：执行文件时，要注意执行文件的路径是否正确，还有 <code>js</code>  文件在引用资源的时候是否使用正确，js 文件引用的文件相对路径是对于执行命令的位置来说的。</p>
-</div>
-<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tr><td data-num="1"></td><td><pre>node js文件 <span class="token comment">// 例如</span></pre></td></tr><tr><td data-num="2"></td><td><pre>node test<span class="token punctuation">.</span>js</pre></td></tr></table></figure><h3 id="如何打印到显示器"><a class="markdownIt-Anchor" href="#如何打印到显示器">#</a> 如何打印到显示器？</h3>
-<p>Node.js 是一个基于 Chrome JavaScript 运行时建立的一个平台。</p>
-<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tr><td data-num="1"></td><td><pre>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>执行文件 01file.js</strong></p>
-<figure class="highlight javascript"><figcaption data-lang="javascript"><span>01file.js文件</span><span class="exturl" data-url="aHR0cHM6Ly93d3cucnVub29iLmNvbS9ub2RlanMvbm9kZWpzLWZzLmh0bWw=">参考链接</span></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">var</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"fs"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 引入模块 fs</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token comment">// 异步</span></pre></td></tr><tr><td data-num="3"></td><td><pre>fs<span class="token punctuation">.</span><span class="token function">readFile</span><span class="token punctuation">(</span><span class="token string">'../file/123.txt'</span><span class="token punctuation">,</span><span class="token string">'utf-8'</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span>data</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token keyword">if</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="5"></td><td><pre>        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"读取失败！"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="7"></td><td><pre>    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"异步读取：\n"</span><span class="token operator">+</span>data<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="9"></td><td><pre></pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token comment">// 同步</span></pre></td></tr><tr><td data-num="11"></td><td><pre><span class="token keyword">var</span> data<span class="token operator">=</span>fs<span class="token punctuation">.</span><span class="token function">readFileSync</span><span class="token punctuation">(</span><span class="token string">'../file/123.txt'</span><span class="token punctuation">,</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="12"></td><td><pre>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"同步读取:\n"</span><span class="token operator">+</span>data<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="13"></td><td><pre></pre></td></tr><tr><td data-num="14"></td><td><pre></pre></td></tr><tr><td data-num="15"></td><td><pre><span class="token keyword">var</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"fs"</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="16"></td><td><pre>fs<span class="token punctuation">.</span><span class="token function">stat</span><span class="token punctuation">(</span><span class="token string">"../file/123.txt"</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span>stats</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="17"></td><td><pre>    <span class="token keyword">if</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="18"></td><td><pre>        <span class="token keyword">return</span> console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="19"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="20"></td><td><pre>    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"是否为文件"</span><span class="token operator">+</span>stats<span class="token punctuation">.</span><span class="token function">isFile</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="21"></td><td><pre>    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"是否为文件夹"</span><span class="token operator">+</span>stats<span class="token punctuation">.</span><span class="token function">isDirectory</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="22"></td><td><pre><span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr></table></figure><p><strong>文件内容 123.txt</strong></p>
-<figure class="highlight yaml"><figcaption data-lang="YAML"><span>123.txt文件</span></figcaption><table><tr><td data-num="1"></td><td><pre>王さん=100</pre></td></tr><tr><td data-num="2"></td><td><pre>刘さん=99</pre></td></tr><tr><td data-num="3"></td><td><pre>吴さん=98</pre></td></tr></table></figure><h2 id="读取文件fsreadfile"><a class="markdownIt-Anchor" href="#读取文件fsreadfile">#</a> 读取文件 fs.readFile ()</h2>
-<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">var</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"fs"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token comment">// 异步</span></pre></td></tr><tr><td data-num="3"></td><td><pre>fs<span class="token punctuation">.</span><span class="token function">readFile</span><span class="token punctuation">(</span><span class="token string">'../file/123.txt'</span><span class="token punctuation">,</span><span class="token string">'utf-8'</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span>data</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token keyword">if</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="5"></td><td><pre>        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"读取失败！"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="7"></td><td><pre>    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"异步读取：\n"</span><span class="token operator">+</span>data<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="9"></td><td><pre></pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token comment">// 同步</span></pre></td></tr><tr><td data-num="11"></td><td><pre><span class="token keyword">var</span> data<span class="token operator">=</span>fs<span class="token punctuation">.</span><span class="token function">readFileSync</span><span class="token punctuation">(</span><span class="token string">'../file/123.txt'</span><span class="token punctuation">,</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="12"></td><td><pre>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"同步读取:\n"</span><span class="token operator">+</span>data<span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>输出结果</strong></p>
+    <h2 id="如何执行Nodejs文件"><a href="#如何执行Nodejs文件" class="headerlink" title="如何执行Nodejs文件"></a>如何执行Nodejs文件</h2><p>:::info</p>
+<p>tips：执行文件时，要注意执行文件的路径是否正确，还有<code>js</code>文件在引用资源的时候是否使用正确，js文件引用的文件相对路径是对于执行命令的位置来说的。</p>
+<p>:::</p>
+<pre><code class="lang-javascript">node js文件 //例如
+node test.js
+</code></pre>
+<h3 id="如何打印到显示器？"><a href="#如何打印到显示器？" class="headerlink" title="如何打印到显示器？"></a>如何打印到显示器？</h3><p>Node.js 是一个基于 Chrome JavaScript 运行时建立的一个平台。</p>
+<pre><code class="lang-javascript">console.log()
+</code></pre>
+<p><strong>执行文件 01file.js</strong></p>
+<p>```javascript 01file.js文件 <span class="exturl" data-url="aHR0cHM6Ly93d3cucnVub29iLmNvbS9ub2RlanMvbm9kZWpzLWZzLmh0bWw=">https://www.runoob.com/nodejs/nodejs-fs.html</span> 参考链接<br>var fs = require(“fs”);//引入模块fs<br>//异步<br>fs.readFile(‘../file/123.txt’,’utf-8’,function(err,data){<br>    if(err){<br>        console.log(“读取失败！”);<br>    }<br>    console.log(“异步读取：\n”+data)<br>});</p>
+<p>//同步<br>var data=fs.readFileSync(‘../file/123.txt’,’utf-8’)<br>console.log(“同步读取:\n”+data)</p>
+<p>var fs = require(“fs”)<br>fs.stat(“../file/123.txt”,function(err,stats){<br>    if(err){<br>        return console.error(err)<br>    }<br>    console.log(“是否为文件”+stats.isFile())<br>    console.log(“是否为文件夹”+stats.isDirectory())<br>});</p>
+<pre><code>
+**文件内容 123.txt**
+
+```yaml 123.txt文件
+王さん=100
+刘さん=99
+吴さん=98
+</code></pre><h2 id="读取文件fs-readFile"><a href="#读取文件fs-readFile" class="headerlink" title="读取文件fs.readFile()"></a>读取文件fs.readFile()</h2><pre><code class="lang-javascript">var fs = require(&quot;fs&quot;);
+//异步
+fs.readFile(&#39;../file/123.txt&#39;,&#39;utf-8&#39;,function(err,data)&#123;
+    if(err)&#123;
+        console.log(&quot;读取失败！&quot;);
+    &#125;
+    console.log(&quot;异步读取：\n&quot;+data)
+&#125;);
+
+//同步
+var data=fs.readFileSync(&#39;../file/123.txt&#39;,&#39;utf-8&#39;)
+console.log(&quot;同步读取:\n&quot;+data)
+</code></pre>
+<p><strong>输出结果</strong></p>
 <p><img data-src="http://hikki.test.upcdn.net/2022/07/10-21224848.jpg" alt=""></p>
-<h2 id="写入文件fswritefile"><a class="markdownIt-Anchor" href="#写入文件fswritefile">#</a> 写入文件 fs.writeFile ()</h2>
-<div class="note info">
-<p>tips:fs.writeFile () 并不能创建文件夹，只能创建文件，想创建文件夹使用 fs.mkdir ()</p>
-</div>
-<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment">// 写入文件</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">var</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"fs"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">var</span> data<span class="token operator">=</span> <span class="token string">"我是写入的内容"</span></pre></td></tr><tr><td data-num="4"></td><td><pre>fs<span class="token punctuation">.</span><span class="token function">writeFile</span><span class="token punctuation">(</span><span class="token string">"../file/writeFile.txt"</span><span class="token punctuation">,</span>data<span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">err</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    <span class="token keyword">if</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="6"></td><td><pre>        <span class="token keyword">return</span> console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="8"></td><td><pre>    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"写入成功！"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="9"></td><td><pre>    fs<span class="token punctuation">.</span><span class="token function">readFile</span><span class="token punctuation">(</span><span class="token string">"../file/writeFile.txt"</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span>dat</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="10"></td><td><pre>        <span class="token keyword">if</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="11"></td><td><pre>            <span class="token keyword">return</span> console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="12"></td><td><pre>            <span class="token comment">// 判断是否有错误，有错误则输出错误</span></pre></td></tr><tr><td data-num="13"></td><td><pre>        <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="14"></td><td><pre>        <span class="token comment">// 输出内容，如果不使用 toString () 方法，则直接输出缓冲对象，如下图</span></pre></td></tr><tr><td data-num="15"></td><td><pre>        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>dat<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="16"></td><td><pre>    <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="17"></td><td><pre><span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr></table></figure><p><img data-src="http://hikki.test.upcdn.net/2022/07/10-21422525.jpg" alt=""></p>
-<h2 id="判断文件或者文件夹类型"><a class="markdownIt-Anchor" href="#判断文件或者文件夹类型">#</a> 判断文件或者文件夹类型</h2>
-<ul>
+<h2 id="写入文件fs-writeFile"><a href="#写入文件fs-writeFile" class="headerlink" title="写入文件fs.writeFile()"></a>写入文件fs.writeFile()</h2><p>:::info</p>
+<p>tips:fs.writeFile()并不能创建文件夹，只能创建文件，想创建文件夹使用fs.mkdir()</p>
+<p>:::</p>
+<pre><code class="lang-javascript">//写入文件
+var fs = require(&quot;fs&quot;);
+var data= &quot;我是写入的内容&quot;
+fs.writeFile(&quot;../file/writeFile.txt&quot;,data,function(err)&#123;
+    if(err)&#123;
+        return console.error(err);
+    &#125;
+    console.log(&quot;写入成功！&quot;);
+    fs.readFile(&quot;../file/writeFile.txt&quot;,function(err,dat)&#123;
+        if(err)&#123;
+            return console.error(err);
+            //判断是否有错误，有错误则输出错误
+        &#125;
+        //输出内容，如果不使用toString()方法，则直接输出缓冲对象，如下图
+        console.log(dat.toString());
+    &#125;);
+&#125;);
+</code></pre>
+<p><img data-src="http://hikki.test.upcdn.net/2022/07/10-21422525.jpg" alt=""></p>
+<h2 id="判断文件或者文件夹类型"><a href="#判断文件或者文件夹类型" class="headerlink" title="判断文件或者文件夹类型"></a>判断文件或者文件夹类型</h2><ul>
 <li>stats.isFile()</li>
 <li>stats.isDirectory()</li>
 </ul>
-<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">var</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"fs"</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token comment">// 引入模块 fs</span></pre></td></tr><tr><td data-num="3"></td><td><pre>fs<span class="token punctuation">.</span><span class="token function">stat</span><span class="token punctuation">(</span><span class="token string">"../file/123.txt"</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span>stats</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token keyword">if</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="5"></td><td><pre>        <span class="token keyword">return</span> console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="6"></td><td><pre>        <span class="token comment">// 判断文件是否错误，如果出错则输出错误信息</span></pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="8"></td><td><pre>    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"判断是否为文件"</span><span class="token operator">+</span>stats<span class="token punctuation">.</span><span class="token function">isFile</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="9"></td><td><pre>    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"判断是否为文件夹"</span><span class="token operator">+</span>stats<span class="token punctuation">.</span><span class="token function">isDirectory</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr></table></figure><p><strong>输出结果</strong></p>
+<pre><code class="lang-javascript">var fs = require(&quot;fs&quot;)
+//引入模块fs
+fs.stat(&quot;../file/123.txt&quot;,function(err,stats)&#123;
+    if(err)&#123;
+        return console.error(err)
+        //判断文件是否错误，如果出错则输出错误信息
+    &#125;
+    console.log(&quot;判断是否为文件&quot;+stats.isFile())
+    console.log(&quot;判断是否为文件夹&quot;+stats.isDirectory())
+&#125;);
+</code></pre>
+<p><strong>输出结果</strong></p>
 <p><img data-src="http://hikki.test.upcdn.net/2022/07/10-2121022.jpg" alt=""></p>
-<h2 id="创建目录fsmkdir"><a class="markdownIt-Anchor" href="#创建目录fsmkdir">#</a> 创建目录 fs.mkdir ()</h2>
-<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment">// 创建目录</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">var</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"fs"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="3"></td><td><pre>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"创建目录"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>fs<span class="token punctuation">.</span><span class="token function">mkdir</span><span class="token punctuation">(</span><span class="token string">"../file/test/"</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">err</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    <span class="token keyword">if</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="6"></td><td><pre>        <span class="token keyword">return</span> console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="8"></td><td><pre>    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"目录创建成功！"</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr></table></figure><h2 id="读取目录下内容fsreaddir"><a class="markdownIt-Anchor" href="#读取目录下内容fsreaddir">#</a> 读取目录下内容 fs.readdir ()</h2>
-<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment">// 读取目录下的内容</span></pre></td></tr><tr><td data-num="2"></td><td><pre>fs<span class="token punctuation">.</span><span class="token function">readdir</span><span class="token punctuation">(</span><span class="token string">"../file/"</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span>data</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="3"></td><td><pre>    <span class="token keyword">if</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>        <span class="token keyword">return</span> console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    data<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">file</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="7"></td><td><pre>        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>file<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="8"></td><td><pre>    <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr></table></figure><h2 id="缓冲区buffer"><a class="markdownIt-Anchor" href="#缓冲区buffer">#</a> 缓冲区 Buffer.</h2>
-<ul>
+<h2 id="创建目录fs-mkdir"><a href="#创建目录fs-mkdir" class="headerlink" title="创建目录fs.mkdir()"></a>创建目录fs.mkdir()</h2><pre><code class="lang-javascript">//创建目录
+var fs = require(&quot;fs&quot;);
+console.log(&quot;创建目录&quot;);
+fs.mkdir(&quot;../file/test/&quot;,function(err)&#123;
+    if(err)&#123;
+        return console.error(err);
+    &#125;
+    console.log(&quot;目录创建成功！&quot;)
+&#125;);
+</code></pre>
+<h2 id="读取目录下内容fs-readdir"><a href="#读取目录下内容fs-readdir" class="headerlink" title="读取目录下内容fs.readdir()"></a>读取目录下内容fs.readdir()</h2><pre><code class="lang-javascript">//读取目录下的内容
+fs.readdir(&quot;../file/&quot;,function(err,data)&#123;
+    if(err)&#123;
+        return console.error(err);
+    &#125;
+    data.forEach(function(file)&#123;
+        console.log(file);
+    &#125;);
+&#125;);
+</code></pre>
+<h2 id="缓冲区Buffer"><a href="#缓冲区Buffer" class="headerlink" title="缓冲区Buffer."></a>缓冲区Buffer.</h2><ul>
 <li>Buffer.from(param)</li>
 <li>Buffer.alloc(3)</li>
 <li>str.toString()</li>
 </ul>
-<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment">// 将字符串转换成 Buffer</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">var</span> str<span class="token operator">=</span><span class="token string">"abcd"</span></pre></td></tr><tr><td data-num="3"></td><td><pre>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="4"></td><td><pre>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>Buffer<span class="token punctuation">.</span><span class="token function">from</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="5"></td><td><pre></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token comment">// 创建指定大小的 Buffer，初始值为 00</span></pre></td></tr><tr><td data-num="7"></td><td><pre>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>Buffer<span class="token punctuation">.</span><span class="token function">alloc</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token comment">// 将 Buffer 转换成字符串</span></pre></td></tr><tr><td data-num="9"></td><td><pre>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>str<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="10"></td><td><pre></pre></td></tr><tr><td data-num="11"></td><td><pre><span class="token comment">// 字符串长度和 Buffer 长度不一样</span></pre></td></tr><tr><td data-num="12"></td><td><pre><span class="token keyword">var</span> str2 <span class="token operator">=</span> <span class="token string">"中国，I LOVE YOU"</span></pre></td></tr><tr><td data-num="13"></td><td><pre>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>str2<span class="token operator">+</span><span class="token string">"长度:"</span><span class="token operator">+</span>str2<span class="token punctuation">.</span>length<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="14"></td><td><pre><span class="token keyword">var</span> ic <span class="token operator">=</span> Buffer<span class="token punctuation">.</span><span class="token function">from</span><span class="token punctuation">(</span>str2<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="15"></td><td><pre><span class="token comment">// 当 Buffer 类型接在字符串类型上，Buffer 会自动转换成字符串类型</span></pre></td></tr><tr><td data-num="16"></td><td><pre>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>ic<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="17"></td><td><pre>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>ic<span class="token operator">+</span><span class="token string">"长度:"</span><span class="token operator">+</span>ic<span class="token punctuation">.</span>length<span class="token punctuation">)</span></pre></td></tr></table></figure><h2 id="流式文件加载"><a class="markdownIt-Anchor" href="#流式文件加载">#</a> 流式文件加载</h2>
-<ul>
+<pre><code class="lang-javascript">//将字符串转换成Buffer
+var str=&quot;abcd&quot;
+console.log(str)
+console.log(Buffer.from(str))
+
+//创建指定大小的Buffer，初始值为 00
+console.log(Buffer.alloc(3))
+//将Buffer转换成字符串
+console.log(str.toString())
+
+//字符串长度和Buffer长度不一样
+var str2 = &quot;中国，I LOVE YOU&quot;
+console.log(str2+&quot;长度:&quot;+str2.length)
+var ic = Buffer.from(str2)
+//当Buffer类型接在字符串类型上，Buffer会自动转换成字符串类型
+console.log(ic)
+console.log(ic+&quot;长度:&quot;+ic.length)
+</code></pre>
+<h2 id="流式文件加载"><a href="#流式文件加载" class="headerlink" title="流式文件加载"></a>流式文件加载</h2><ul>
 <li>fs.createReadStream()</li>
 <li>fs.createWriteStream()</li>
 </ul>
-<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment">// 用流式文件加载到内存中</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">var</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"fs"</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">var</span> rs<span class="token operator">=</span> fs<span class="token punctuation">.</span><span class="token function">createReadStream</span><span class="token punctuation">(</span><span class="token string">"../file/小猪佩奇第一季.mp4"</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token keyword">var</span> ws<span class="token operator">=</span> fs<span class="token punctuation">.</span><span class="token function">createWriteStream</span><span class="token punctuation">(</span><span class="token string">"../file/小猪佩奇.mp4"</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="5"></td><td><pre></pre></td></tr><tr><td data-num="6"></td><td><pre>rs<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'data'</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">data</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="7"></td><td><pre>    ws<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token punctuation">&#125;</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token comment">// 或者可以更方便一点</span></pre></td></tr><tr><td data-num="10"></td><td><pre>rs<span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span>ws<span class="token punctuation">)</span></pre></td></tr></table></figure><h2 id="总结"><a class="markdownIt-Anchor" href="#总结">#</a> 总结</h2>
-<p>第一天主要是学习了一些基本的文件操作，以及熟悉在 Nodejs 环境下的一些语法结构。</p>
+<pre><code class="lang-javascript">//用流式文件加载到内存中
+var fs = require(&quot;fs&quot;)
+var rs= fs.createReadStream(&quot;../file/小猪佩奇第一季.mp4&quot;)
+var ws= fs.createWriteStream(&quot;../file/小猪佩奇.mp4&quot;)
+
+rs.on(&#39;data&#39;,function(data)&#123;
+    ws.write(data)
+&#125;)
+//或者可以更方便一点
+rs.pipe(ws)
+</code></pre>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>第一天主要是学习了一些基本的文件操作，以及熟悉在Nodejs环境下的一些语法结构。</p>
 <ul>
 <li>文件的读取</li>
 <li>文件的写入</li>
@@ -232,16 +327,32 @@ NodeJs系列-Day01-文件处理 - nodejs - 编程语言 - 计算机科学 |
 <li>以及路径的拼接等等</li>
 </ul>
 <hr>
-<h2 id="补充"><a class="markdownIt-Anchor" href="#补充">#</a> 补充</h2>
-<p><code>2022/07/11</code>  补充</p>
-<h3 id="路径拼接pathjoin"><a class="markdownIt-Anchor" href="#路径拼接pathjoin">#</a> 路径拼接 path.join ()</h3>
-<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment">// 使用 path.jion (path [,newPath,newPath,...]) 拼接路径</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">var</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"fs"</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">var</span> path <span class="token operator">=</span><span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"path"</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token keyword">const</span> pathStr <span class="token operator">=</span> path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">"../file/test/123/"</span><span class="token punctuation">,</span><span class="token string">"../"</span><span class="token punctuation">,</span><span class="token string">"./a/c/d"</span><span class="token punctuation">,</span><span class="token string">"./"</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="5"></td><td><pre>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"pathStr路径:"</span><span class="token operator">+</span>pathStr<span class="token punctuation">)</span></pre></td></tr></table></figure><h3 id="路径定位"><a class="markdownIt-Anchor" href="#路径定位">#</a> 路径定位</h3>
-<ul>
+<h2 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h2><p><code>2022/07/11</code>补充</p>
+<h3 id="路径拼接path-join"><a href="#路径拼接path-join" class="headerlink" title="路径拼接path.join()"></a>路径拼接path.join()</h3><pre><code class="lang-javascript">//使用path.jion(path[,newPath,newPath,...])拼接路径
+var fs = require(&quot;fs&quot;)
+var path =require(&quot;path&quot;)
+const pathStr = path.join(&quot;../file/test/123/&quot;,&quot;../&quot;,&quot;./a/c/d&quot;,&quot;./&quot;)
+console.log(&quot;pathStr路径:&quot;+pathStr)
+</code></pre>
+<h3 id="路径定位"><a href="#路径定位" class="headerlink" title="路径定位"></a>路径定位</h3><ul>
 <li>__dirname</li>
-<li>__filename // 只获取文件名，不包括后缀</li>
+<li>__filename //只获取文件名，不包括后缀</li>
 </ul>
-<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment">// 定位到当前执行文件的文件夹下的上一层</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">const</span> newPath<span class="token operator">=</span>path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span><span class="token string">"../"</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="3"></td><td><pre>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"newPath路径:"</span><span class="token operator">+</span>newPath<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token comment">//__dirname 和__filename 分别是定位当前文件夹和定位到当前执行文件位置</span></pre></td></tr><tr><td data-num="5"></td><td><pre>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"定位到当前文件夹路径："</span><span class="token operator">+</span>__dirname<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="6"></td><td><pre>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"定位到当前执行文件："</span><span class="token operator">+</span>__filename<span class="token punctuation">)</span></pre></td></tr></table></figure><h3 id="获取中文文件名"><a class="markdownIt-Anchor" href="#获取中文文件名">#</a> 获取中文文件名</h3>
-<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"path"</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token comment">// 获取中文文件名包括后缀，如果第</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">const</span> newPath <span class="token operator">=</span> path<span class="token punctuation">.</span><span class="token function">basename</span><span class="token punctuation">(</span><span class="token string">"C:\\Users\\Administrator\\Desktop\\学习\\NodeJs\\file\\123.txt"</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token comment">//const newPath = path.basename ("C:\\Users\\Administrator\\Desktop\\ 学习 \\NodeJs\\file\\123.txt",".txt")</span></pre></td></tr><tr><td data-num="5"></td><td><pre>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>__filename<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="6"></td><td><pre>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>newPath<span class="token punctuation">)</span></pre></td></tr></table></figure>
+<pre><code class="lang-javascript">//定位到当前执行文件的文件夹下的上一层
+const newPath=path.join(__dirname,&quot;../&quot;)
+console.log(&quot;newPath路径:&quot;+newPath)
+//__dirname和__filename分别是定位当前文件夹和定位到当前执行文件位置
+console.log(&quot;定位到当前文件夹路径：&quot;+__dirname)
+console.log(&quot;定位到当前执行文件：&quot;+__filename)
+</code></pre>
+<h3 id="获取中文文件名"><a href="#获取中文文件名" class="headerlink" title="获取中文文件名"></a>获取中文文件名</h3><pre><code class="lang-javascript">const path = require(&quot;path&quot;)
+//获取中文文件名包括后缀，如果第
+const newPath = path.basename(&quot;C:\\Users\\Administrator\\Desktop\\学习\\NodeJs\\file\\123.txt&quot;)
+//const newPath = path.basename(&quot;C:\\Users\\Administrator\\Desktop\\学习\\NodeJs\\file\\123.txt&quot;,&quot;.txt&quot;)
+console.log(__filename)
+console.log(newPath)
+</code></pre>
+
       <div class="tags">
           <a href="/tags/NodeJs/" rel="tag"><i class="ic i-tag"></i> NodeJs</a>
       </div>
@@ -316,7 +427,7 @@ NodeJs系列-Day01-文件处理 - nodejs - 编程语言 - 计算机科学 |
     <div class="item left">
       
 
-  <a href="/5af0544e.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicm0n457cj20zk0m8e81.jpg" title="PicGo上传失败 TypeError:Cannot destructure property &#96;position&#96; of undefined&#96; or &#96;null&#96;.">
+  <a href="/5af0544e.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclxfdlttj20zk0m8npd.jpg" title="PicGo上传失败 TypeError:Cannot destructure property &#96;position&#96; of undefined&#96; or &#96;null&#96;.">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> fail</span>
   <h3>PicGo上传失败 TypeError:Cannot destructure property `position` of undefined` or `null`.</h3>
@@ -326,7 +437,7 @@ NodeJs系列-Day01-文件处理 - nodejs - 编程语言 - 计算机科学 |
     <div class="item right">
       
 
-  <a href="/a71cff7d.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipey0a334j20zk0m8qpt.jpg" title="屏幕显示键盘按键软件">
+  <a href="/a71cff7d.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeu1usa7j20zk0m8b29.jpg" title="屏幕显示键盘按键软件">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> 好物安利</span>
   <h3>屏幕显示键盘按键软件</h3>
@@ -348,7 +459,7 @@ NodeJs系列-Day01-文件处理 - nodejs - 编程语言 - 计算机科学 |
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E6%89%A7%E8%A1%8Cnodejs%E6%96%87%E4%BB%B6"><span class="toc-number">1.</span> <span class="toc-text"> 如何执行 Nodejs 文件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E6%89%93%E5%8D%B0%E5%88%B0%E6%98%BE%E7%A4%BA%E5%99%A8"><span class="toc-number">1.1.</span> <span class="toc-text"> 如何打印到显示器？</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%BB%E5%8F%96%E6%96%87%E4%BB%B6fsreadfile"><span class="toc-number">2.</span> <span class="toc-text"> 读取文件 fs.readFile ()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%99%E5%85%A5%E6%96%87%E4%BB%B6fswritefile"><span class="toc-number">3.</span> <span class="toc-text"> 写入文件 fs.writeFile ()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%A4%E6%96%AD%E6%96%87%E4%BB%B6%E6%88%96%E8%80%85%E6%96%87%E4%BB%B6%E5%A4%B9%E7%B1%BB%E5%9E%8B"><span class="toc-number">4.</span> <span class="toc-text"> 判断文件或者文件夹类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E7%9B%AE%E5%BD%95fsmkdir"><span class="toc-number">5.</span> <span class="toc-text"> 创建目录 fs.mkdir ()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%BB%E5%8F%96%E7%9B%AE%E5%BD%95%E4%B8%8B%E5%86%85%E5%AE%B9fsreaddir"><span class="toc-number">6.</span> <span class="toc-text"> 读取目录下内容 fs.readdir ()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BC%93%E5%86%B2%E5%8C%BAbuffer"><span class="toc-number">7.</span> <span class="toc-text"> 缓冲区 Buffer.</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%81%E5%BC%8F%E6%96%87%E4%BB%B6%E5%8A%A0%E8%BD%BD"><span class="toc-number">8.</span> <span class="toc-text"> 流式文件加载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">9.</span> <span class="toc-text"> 总结</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A1%A5%E5%85%85"><span class="toc-number">10.</span> <span class="toc-text"> 补充</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B7%AF%E5%BE%84%E6%8B%BC%E6%8E%A5pathjoin"><span class="toc-number">10.1.</span> <span class="toc-text"> 路径拼接 path.join ()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B7%AF%E5%BE%84%E5%AE%9A%E4%BD%8D"><span class="toc-number">10.2.</span> <span class="toc-text"> 路径定位</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96%E4%B8%AD%E6%96%87%E6%96%87%E4%BB%B6%E5%90%8D"><span class="toc-number">10.3.</span> <span class="toc-text"> 获取中文文件名</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E6%89%A7%E8%A1%8CNodejs%E6%96%87%E4%BB%B6"><span class="toc-number">1.</span> <span class="toc-text">如何执行Nodejs文件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E6%89%93%E5%8D%B0%E5%88%B0%E6%98%BE%E7%A4%BA%E5%99%A8%EF%BC%9F"><span class="toc-number">1.1.</span> <span class="toc-text">如何打印到显示器？</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%BB%E5%8F%96%E6%96%87%E4%BB%B6fs-readFile"><span class="toc-number">2.</span> <span class="toc-text">读取文件fs.readFile()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%99%E5%85%A5%E6%96%87%E4%BB%B6fs-writeFile"><span class="toc-number">3.</span> <span class="toc-text">写入文件fs.writeFile()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%A4%E6%96%AD%E6%96%87%E4%BB%B6%E6%88%96%E8%80%85%E6%96%87%E4%BB%B6%E5%A4%B9%E7%B1%BB%E5%9E%8B"><span class="toc-number">4.</span> <span class="toc-text">判断文件或者文件夹类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E7%9B%AE%E5%BD%95fs-mkdir"><span class="toc-number">5.</span> <span class="toc-text">创建目录fs.mkdir()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%BB%E5%8F%96%E7%9B%AE%E5%BD%95%E4%B8%8B%E5%86%85%E5%AE%B9fs-readdir"><span class="toc-number">6.</span> <span class="toc-text">读取目录下内容fs.readdir()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BC%93%E5%86%B2%E5%8C%BABuffer"><span class="toc-number">7.</span> <span class="toc-text">缓冲区Buffer.</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%81%E5%BC%8F%E6%96%87%E4%BB%B6%E5%8A%A0%E8%BD%BD"><span class="toc-number">8.</span> <span class="toc-text">流式文件加载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">9.</span> <span class="toc-text">总结</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A1%A5%E5%85%85"><span class="toc-number">10.</span> <span class="toc-text">补充</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B7%AF%E5%BE%84%E6%8B%BC%E6%8E%A5path-join"><span class="toc-number">10.1.</span> <span class="toc-text">路径拼接path.join()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B7%AF%E5%BE%84%E5%AE%9A%E4%BD%8D"><span class="toc-number">10.2.</span> <span class="toc-text">路径定位</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96%E4%B8%AD%E6%96%87%E6%96%87%E4%BB%B6%E5%90%8D"><span class="toc-number">10.3.</span> <span class="toc-text">获取中文文件名</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
@@ -366,7 +477,7 @@ NodeJs系列-Day01-文件处理 - nodejs - 编程语言 - 计算机科学 |
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">90</span>
+        <span class="count">91</span>
         <span class="name">文章</span>
       </a>
     </div>
@@ -492,22 +603,14 @@ NodeJs系列-Day01-文件处理 - nodejs - 编程语言 - 计算机科学 |
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E7%94%9F%E6%B4%BB/" title="分类于 生活">生活</a>
-</div>
-
-    <span><a href="/2c1b0cfb.html" title="计算机系20级计算机科学与技术四班喜迎二十大">计算机系20级计算机科学与技术四班喜迎二十大</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E7%94%9F%E6%B4%BB/" title="分类于 生活">生活</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E7%94%9F%E6%B4%BB/%E6%97%A5%E8%AE%B0/" title="分类于 日记">日记</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/window/" title="分类于 window">window</a>
 </div>
 
-    <span><a href="/ef5acbc6.html" title="4.9日记分享">4.9日记分享</a></span>
+    <span><a href="/4dbd02f9.html" title="win10关机指令">win10关机指令</a></span>
   </li>
 
       
@@ -521,7 +624,21 @@ NodeJs系列-Day01-文件处理 - nodejs - 编程语言 - 计算机科学 |
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
 </div>
 
-    <span><a href="/a5eefddc.html" title="第九篇：安装主题---从0基础搭建Hexo博客">第九篇：安装主题---从0基础搭建Hexo博客</a></span>
+    <span><a href="/87b69652.html" title="第五篇：安装Hexo---从0基础搭建Hexo博客">第五篇：安装Hexo---从0基础搭建Hexo博客</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
+</div>
+
+    <span><a href="/b9893092.html" title="python Qt5实现记事本基本功能">python Qt5实现记事本基本功能</a></span>
   </li>
 
       
@@ -531,13 +648,9 @@ NodeJs系列-Day01-文件处理 - nodejs - 编程语言 - 计算机科学 |
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E5%8A%9E%E5%85%AC%E8%BD%AF%E4%BB%B6/" title="分类于 办公软件">办公软件</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E5%8A%9E%E5%85%AC%E8%BD%AF%E4%BB%B6/Excel/" title="分类于 Excel">Excel</a>
 </div>
 
-    <span><a href="/b08de8d3.html" title="Excel常用技巧">Excel常用技巧</a></span>
+    <span><a href="/451161d7.html" title="idea开发必装插件">idea开发必装插件</a></span>
   </li>
 
       
@@ -547,23 +660,9 @@ NodeJs系列-Day01-文件处理 - nodejs - 编程语言 - 计算机科学 |
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/window/" title="分类于 window">window</a>
 </div>
 
-    <span><a href="/23cd0b3.html" title="win10鼠标右键文件、文件夹、桌面菜单添加程序">win10鼠标右键文件、文件夹、桌面菜单添加程序</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E5%9F%BA%E7%A1%80%E5%AD%A6%E7%A7%91/" title="分类于 基础学科">基础学科</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E5%9F%BA%E7%A1%80%E5%AD%A6%E7%A7%91/%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/" title="分类于 期末复习">期末复习</a>
-</div>
-
-    <span><a href="/cbd16032.html" title="2022年概率论与数理统计">2022年概率论与数理统计</a></span>
+    <span><a href="/d9153102.html" title="VS Code必备插件">VS Code必备插件</a></span>
   </li>
 
       
@@ -572,24 +671,26 @@ NodeJs系列-Day01-文件处理 - nodejs - 编程语言 - 计算机科学 |
 <div class="breadcrumb">
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/Andriod/" title="分类于 Andriod">Andriod</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/" title="分类于 博客的食用方法">博客的食用方法</a>
 </div>
 
-    <span><a href="/70ded1a5.html" title="root破解手机限速问题">root破解手机限速问题</a></span>
+    <span><a href="/a7032750.html" title="文章Front-Matter参数设置">文章Front-Matter参数设置</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E7%94%9F%E6%B4%BB/" title="分类于 生活">生活</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E7%94%9F%E6%B4%BB/%E5%A5%BD%E7%89%A9%E5%AE%89%E5%88%A9/" title="分类于 好物安利">好物安利</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/" title="分类于 博客的食用方法">博客的食用方法</a>
 </div>
 
-    <span><a href="/a71cff7d.html" title="屏幕显示键盘按键软件">屏幕显示键盘按键软件</a></span>
+    <span><a href="/6f010433.html" title="jsdelivr刷新缓存">jsdelivr刷新缓存</a></span>
   </li>
 
       
@@ -613,9 +714,27 @@ NodeJs系列-Day01-文件处理 - nodejs - 编程语言 - 计算机科学 |
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/Linux/" title="分类于 Linux">Linux</a>
 </div>
 
-    <span><a href="/8d43d157.html" title="如何使用Xshell远程虚拟机">如何使用Xshell远程虚拟机</a></span>
+    <span><a href="/3d358537.html" title="Linux忘记数据库密码">Linux忘记数据库密码</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/" title="分类于 java">java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/fail/" title="分类于 fail">fail</a>
+</div>
+
+    <span><a href="/dfaf38bb.html" title="javase连接数据库报错Communications link failure">javase连接数据库报错Communications link failure</a></span>
   </li>
 
   </ul>
@@ -640,13 +759,13 @@ NodeJs系列-Day01-文件处理 - nodejs - 编程语言 - 计算机科学 |
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="站点总字数">122k 字</span>
+    <span title="站点总字数">130k 字</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="站点阅读时长">2:46</span>
+    <span title="站点阅读时长">2:57</span>
   </div>
   <div class="powered-by">
     基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>

@@ -86,7 +86,7 @@ CentOS新增root用户 - Linux - 技术杂谈 - 计算机科学 |
       <i class="ic i-pen"></i>
     </span>
     <span class="text">本文字数</span>
-    <span>143</span>
+    <span>225</span>
     <span class="text">字</span>
   </span>
   <span class="item" title="阅读时长">
@@ -127,12 +127,12 @@ CentOS新增root用户 - Linux - 技术杂谈 - 计算机科学 |
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipexw3o58j20zk0m8e81.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclgi503lj20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclfb3vzhj20zk0m8wny.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipexj2jgzj20zk0m8b09.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclg5ms2rj20zk0m8u0x.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipetv6p75j20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciryrr3rj20zk0m8nhk.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicitspjpbj20zk0m81ky.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipewkhf1zj20zk0m81kx.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicitf0kl1j20zk0m87fe.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclimtf7dj20zk0m8qav.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giph4fomxoj20zk0m8axp.jpg"></li>
         </ul>
       </div>
     </header>
@@ -187,12 +187,21 @@ CentOS新增root用户 - Linux - 技术杂谈 - 计算机科学 |
   <div class="body md" itemprop="articleBody">
     
 
-    <h2 id="进入root"><a class="markdownIt-Anchor" href="#进入root">#</a> 进入 root</h2>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token function">su</span> root  				<span class="token comment"># 进入 root 时需要输入密码，密码是不显示的</span></pre></td></tr><tr><td data-num="2"></td><td><pre>gedit /etc/sudoers		<span class="token comment"># 打开 sudoers 文件</span></pre></td></tr></table></figure><p><img data-src="http://hikki.test.upcdn.net/20220704011617.jpeg" alt=""></p>
-<h2 id="添加新用户"><a class="markdownIt-Anchor" href="#添加新用户">#</a> 添加新用户</h2>
-<p>滑到最下面找到 <code>root</code></p>
-<p>在 <code>root</code>  下面添加</p>
-<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre>新用户名 <span class="token assign-left variable">ALL</span><span class="token operator">=</span><span class="token punctuation">(</span>ALL<span class="token punctuation">)</span> ALL </pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token comment"># 新用户必须要存在才能添加</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token comment"># lilbai518 这个用户，我之前已经创建过了</span></pre></td></tr></table></figure><p><img data-src="http://hikki.test.upcdn.net/20220704011640.jpeg" alt=""></p>
+    <h2 id="进入root"><a href="#进入root" class="headerlink" title="进入root"></a>进入root</h2><p>```bash mark:1<br>su root                  # 进入root时需要输入密码，密码是不显示的<br>gedit /etc/sudoers        # 打开sudoers文件</p>
+<pre><code>
+![](http://hikki.test.upcdn.net/20220704011617.jpeg)
+
+## 添加新用户
+
+滑到最下面找到`root`
+
+在`root`下面添加
+
+```bash mark:1
+新用户名 ALL=(ALL) ALL 
+# 新用户必须要存在才能添加
+# lilbai518这个用户，我之前已经创建过了
+</code></pre><p><img data-src="http://hikki.test.upcdn.net/20220704011640.jpeg" alt=""></p>
 <p><img data-src="http://hikki.test.upcdn.net/20220704011650.jpeg" alt=""></p>
 
       <div class="tags">
@@ -270,7 +279,7 @@ CentOS新增root用户 - Linux - 技术杂谈 - 计算机科学 |
     <div class="item left">
       
 
-  <a href="/b9e6c7bf.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicitf0kl1j20zk0m87fe.jpg" title="日记分享2022.4.13">
+  <a href="/b9e6c7bf.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicitcxhpij20zk0m8hdt.jpg" title="日记分享2022.4.13">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> 日记</span>
   <h3>日记分享2022.4.13</h3>
@@ -280,7 +289,7 @@ CentOS新增root用户 - Linux - 技术杂谈 - 计算机科学 |
     <div class="item right">
       
 
-  <a href="/81b2f4bf.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicm0n457cj20zk0m8e81.jpg" title="python基础">
+  <a href="/81b2f4bf.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipetv6p75j20zk0m8x6p.jpg" title="python基础">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> python</span>
   <h3>python基础</h3>
@@ -302,7 +311,7 @@ CentOS新增root用户 - Linux - 技术杂谈 - 计算机科学 |
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9B%E5%85%A5root"><span class="toc-number">1.</span> <span class="toc-text"> 进入 root</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E6%96%B0%E7%94%A8%E6%88%B7"><span class="toc-number">2.</span> <span class="toc-text"> 添加新用户</span></a></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9B%E5%85%A5root"><span class="toc-number">1.</span> <span class="toc-text">进入root</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
@@ -320,7 +329,7 @@ CentOS新增root用户 - Linux - 技术杂谈 - 计算机科学 |
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">90</span>
+        <span class="count">91</span>
         <span class="name">文章</span>
       </a>
     </div>
@@ -449,23 +458,9 @@ CentOS新增root用户 - Linux - 技术杂谈 - 计算机科学 |
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/window/" title="分类于 window">window</a>
 </div>
 
-    <span><a href="/64ed46b0.html" title="win10如何开启远程桌面">win10如何开启远程桌面</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
-</div>
-
-    <span><a href="/eae60a43.html" title="大学选修科目">大学选修科目</a></span>
+    <span><a href="/edaa94fb.html" title="为博客添加免费的CDN加速">为博客添加免费的CDN加速</a></span>
   </li>
 
       
@@ -479,7 +474,7 @@ CentOS新增root用户 - Linux - 技术杂谈 - 计算机科学 |
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
 </div>
 
-    <span><a href="/cf63c07.html" title="第四篇：安装Nodejs---从0基础搭建Hexo博客">第四篇：安装Nodejs---从0基础搭建Hexo博客</a></span>
+    <span><a href="/a5eefddc.html" title="第九篇：安装主题---从0基础搭建Hexo博客">第九篇：安装主题---从0基础搭建Hexo博客</a></span>
   </li>
 
       
@@ -488,10 +483,10 @@ CentOS新增root用户 - Linux - 技术杂谈 - 计算机科学 |
 <div class="breadcrumb">
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/fail/" title="分类于 fail">fail</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
 </div>
 
-    <span><a href="/5af0544e.html" title="PicGo上传失败 TypeError:Cannot destructure property &#96;position&#96; of undefined&#96; or &#96;null&#96;.">PicGo上传失败 TypeError:Cannot destructure property `position` of undefined` or `null`.</a></span>
+    <span><a href="/d845073d.html" title="utf8和utf-8的区别">utf8和utf-8的区别</a></span>
   </li>
 
       
@@ -505,7 +500,7 @@ CentOS新增root用户 - Linux - 技术杂谈 - 计算机科学 |
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
 </div>
 
-    <span><a href="/3050703f.html" title="python批量修改文件名">python批量修改文件名</a></span>
+    <span><a href="/b332b009.html" title="python爬虫-千千音乐">python爬虫-千千音乐</a></span>
   </li>
 
       
@@ -516,10 +511,10 @@ CentOS新增root用户 - Linux - 技术杂谈 - 计算机科学 |
 <i class="ic i-angle-right"></i>
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/GitHub/" title="分类于 GitHub">GitHub</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/window/" title="分类于 window">window</a>
 </div>
 
-    <span><a href="/f3d93395.html" title="fatal: Could not read from remote repository.">fatal: Could not read from remote repository.</a></span>
+    <span><a href="/4dbd02f9.html" title="win10关机指令">win10关机指令</a></span>
   </li>
 
       
@@ -535,7 +530,23 @@ CentOS新增root用户 - Linux - 技术杂谈 - 计算机科学 |
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/fail/" title="分类于 fail">fail</a>
 </div>
 
-    <span><a href="/5c23aa63.html" title="Maven识别失败">Maven识别失败</a></span>
+    <span><a href="/3dddb2b0.html" title="intellij乱码">intellij乱码</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/" title="分类于 java">java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/fail/" title="分类于 fail">fail</a>
+</div>
+
+    <span><a href="/85111a4c.html" title="关闭Java数据库SSL安全提示">关闭Java数据库SSL安全提示</a></span>
   </li>
 
       
@@ -546,10 +557,24 @@ CentOS新增root用户 - Linux - 技术杂谈 - 计算机科学 |
 <i class="ic i-angle-right"></i>
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/Linux/" title="分类于 Linux">Linux</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/docker/" title="分类于 docker">docker</a>
 </div>
 
-    <span><a href="/3fa3774.html" title="Linux远程管理常用命令">Linux远程管理常用命令</a></span>
+    <span><a href="/4fce5997.html" title="docker安装qBittorrent">docker安装qBittorrent</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
+</div>
+
+    <span><a href="/9bf6caef.html" title="第八篇：解析域名---从0基础搭建Hexo博客">第八篇：解析域名---从0基础搭建Hexo博客</a></span>
   </li>
 
       
@@ -559,19 +584,13 @@ CentOS新增root用户 - Linux - 技术杂谈 - 计算机科学 |
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E5%8A%9E%E5%85%AC%E8%BD%AF%E4%BB%B6/" title="分类于 办公软件">办公软件</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E5%8A%9E%E5%85%AC%E8%BD%AF%E4%BB%B6/Word/" title="分类于 Word">Word</a>
 </div>
 
-    <span><a href="/451161d7.html" title="idea开发必装插件">idea开发必装插件</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E7%94%9F%E6%B4%BB/" title="分类于 生活">生活</a>
-</div>
-
-    <span><a href="/2c1b0cfb.html" title="计算机系20级计算机科学与技术四班喜迎二十大">计算机系20级计算机科学与技术四班喜迎二十大</a></span>
+    <span><a href="/30d35056.html" title="Word调整目录编号和标题空隙">Word调整目录编号和标题空隙</a></span>
   </li>
 
   </ul>
@@ -596,13 +615,13 @@ CentOS新增root用户 - Linux - 技术杂谈 - 计算机科学 |
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="站点总字数">122k 字</span>
+    <span title="站点总字数">130k 字</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="站点阅读时长">2:46</span>
+    <span title="站点阅读时长">2:57</span>
   </div>
   <div class="powered-by">
     基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
