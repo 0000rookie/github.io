@@ -85,7 +85,7 @@ python qt5 实现记事本界面 - python - 编程语言 - 计算机科学 |
       <i class="ic i-pen"></i>
     </span>
     <span class="text">本文字数</span>
-    <span>3.5k</span>
+    <span>2.8k</span>
     <span class="text">字</span>
   </span>
   <span class="item" title="阅读时长">
@@ -93,7 +93,7 @@ python qt5 实现记事本界面 - python - 编程语言 - 计算机科学 |
       <i class="ic i-clock"></i>
     </span>
     <span class="text">阅读时长</span>
-    <span>5 分钟</span>
+    <span>4 分钟</span>
   </span>
 </div>
 
@@ -126,12 +126,12 @@ python qt5 实现记事本界面 - python - 编程语言 - 计算机科学 |
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclj9410cj20zk0m8h12.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeyhsblkj20zk0m81kx.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicit4jrvuj20zk0m8785.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclip4jbpj20zk0m87cv.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeudstjqj20zk0m8k3r.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giciuja1j1j20zk0m8kjl.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipet8c1a2j20zk0m8kct.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclhnx9glj20zk0m8npd.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giciuv0socj20zk0m8qes.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclga70tsj20zk0m84mr.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclflwv2aj20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giciub8ja1j20zk0m81ky.jpg"></li>
         </ul>
       </div>
     </header>
@@ -186,97 +186,9 @@ python qt5 实现记事本界面 - python - 编程语言 - 计算机科学 |
   <div class="body md" itemprop="articleBody">
     
 
-    <h2 id="用qt5实现一个简单的记事本界面"><a href="#用qt5实现一个简单的记事本界面" class="headerlink" title="用qt5实现一个简单的记事本界面"></a>用qt5实现一个简单的记事本界面</h2><p>要求：实现有<code>Menubar</code>和<code>Menuitems</code>和快捷键</p>
-<p>````python mark:1-100<br>import sys</p>
-<p>from PyQt5.QtGui import QCursor, QIcon<br>from PyQt5.QtWidgets import QApplication, QMenu, QMainWindow, QAction</p>
-<p>class menu(QMainWindow):</p>
-<pre><code># 初始化面板大小
-def __init__(self):
-    super(menu, self).__init__()
-    self.title = &#39;notepad--&#39;
-    self.left = 500
-    self.top = 1000
-    self.width = 600
-    self.height = 600
-    self.initUI()
-
-
-def initUI(self):
-    self.setWindowTitle(self.title)
-    self.setGeometry(self.top, self.left, self.width, self.height)
-    # 实例化菜单条
-    mainMenubar = self.menuBar()
-
-    # 将 menuitems添加到menubar并命名
-    menu_item_name = [&#39;fileMenu&#39;, &#39;editMenu&#39;, &#39;formatMenu&#39;, &#39;searchMenu&#39;, &#39;helpMenu&#39;]
-    menu_item_bar_name = [&#39;文件&#39;, &#39;编辑&#39;, &#39;格式&#39;, &#39;查看&#39;, &#39;帮助&#39;]
-    for l in range(len(menu_item_name)):
-        menu_item_name[l] = mainMenubar.addMenu(menu_item_bar_name[l])
-
-    # 将操作名、属性名、快捷键用列表封装起来，用循环进行添加，此处有不足之处就是循环不能合一，后续有能力再优化一下
-    file_name = [&#39;新建(N)&#39;, &#39;打开(O)&#39;, &#39;保存(S)&#39;, &#39;另存为(A)&#39;, &#39;页面设置(U)&#39;, &#39;打印(P)&#39;, &#39;退出(X)&#39;]
-    file_name_as = [&#39;new&#39;, &#39;open&#39;, &#39;save&#39;, &#39;save_as&#39;, &#39;setup&#39;, &#39;print&#39;, &#39;exit&#39;]
-    file_shortcut_key = [&#39;Ctrl+N&#39;, &#39;Ctrl+O&#39;, &#39;Ctrl+S&#39;, &#39;&#39;, &#39;&#39;, &#39;Ctrl+P&#39;, &#39;&#39;]
-
-    edit_name = [&#39;撤销(U)&#39;, &#39;剪切(T)&#39;, &#39;复制(C)&#39;, &#39;粘贴(V)&#39;, &#39;删除(L)&#39;, &#39;查找(F)&#39;, &#39;查找下一个(N)&#39;, &#39;替换(R)&#39;, &#39;转到(G)&#39;, &#39;全选(A)&#39;,
-                 &#39;时间/日期(D)&#39;]
-    edit_name_as = [&#39;repeal&#39;, &#39;cut&#39;, &#39;copy&#39;, &#39;paste&#39;, &#39;dele&#39;, &#39;search&#39;, &#39;search_one&#39;, &#39;replace&#39;, &#39;goto&#39;,
-                    &#39;check_all&#39;, &#39;datetimes&#39;]
-    edit_shortcut_key = [&#39;Ctrl+Z&#39;, &#39;Ctrl+X&#39;, &#39;Ctrl+C&#39;, &#39;Ctrl+V&#39;, &#39;Del&#39;, &#39;Ctrl+F&#39;, &#39;F3&#39;, &#39;Ctrl+H&#39;, &#39;Ctrl+G&#39;,
-                         &#39;Ctrl+A&#39;, &#39;F5&#39;]
-
-    format_name = [&#39;自动换行(W)&#39;, &#39;字体(F)&#39;]
-    format_name_as = [&#39;lines&#39;, &#39;font&#39;]
-    format_shortcut_key = [&#39;&#39;, &#39;&#39;]
-
-    search_name = [&#39;状态栏(S)&#39;]
-    search_name_as = [&#39;statusbar&#39;]
-    search_shortcut_key = [&#39;&#39;]
-
-    help_name = [&#39;查看帮助(H)&#39;, &#39;关于记事本(A)&#39;]
-    help_name_as = [&#39;lookhelp&#39;, &#39;about&#39;]
-    help_shortcut_key = [&#39;&#39;, &#39;&#39;]
-
-    # 用循环将子菜单添加到菜单
-    for i in range(len(file_name_as)):
-        file_name_as[i] = QAction(QIcon(&#39;12.png&#39;), file_name_as[i], self)
-        file_name_as[i].setShortcut(file_shortcut_key[i])
-        file_name_as[i].setText(file_name[i])
-        # 将子菜单添加到菜单
-        menu_item_name[0].addAction(file_name_as[i])
-
-    for i in range(len(edit_name_as)):
-        edit_name_as[i] = QAction(QIcon(&#39;12.png&#39;), edit_name_as[i], self)
-        edit_name_as[i].setShortcut(edit_shortcut_key[i])
-        edit_name_as[i].setText(edit_name[i])
-        # 将子菜单添加到菜单
-        menu_item_name[1].addAction(edit_name_as[i])
-
-    for i in range(len(format_name_as)):
-        format_name_as[i] = QAction(QIcon(&#39;12.png&#39;), format_name_as[i], self)
-        format_name_as[i].setShortcut(format_shortcut_key[i])
-        format_name_as[i].setText(format_name[i])
-        # 将子菜单添加到菜单
-        menu_item_name[2].addAction(format_name_as[i])
-
-    for i in range(len(search_name_as)):
-        search_name_as[i] = QAction(QIcon(&#39;12.png&#39;), search_name_as[i], self)
-        search_name_as[i].setShortcut(search_shortcut_key[i])
-        search_name_as[i].setText(search_name[i])
-        # 将子菜单添加到菜单
-        menu_item_name[3].addAction(search_name_as[i])
-
-    for i in range(len(help_name_as)):
-        help_name_as[i] = QAction(QIcon(&#39;12.png&#39;), help_name_as[i], self)
-        help_name_as[i].setShortcut(help_shortcut_key[i])
-        help_name_as[i].setText(help_name[i])
-        # 将子菜单添加到菜单
-        menu_item_name[4].addAction(help_name_as[i])
-
-    self.show()
-</code></pre><p>if <strong>name</strong> == ‘<strong>main</strong>‘:<br>    app = QApplication(sys.argv)<br>    s = menu()<br>    sys.exit(app.exec_())</p>
-<p>````</p>
-<p><strong>预览图</strong></p>
+    <h2 id="用qt5实现一个简单的记事本界面"><a class="markdownIt-Anchor" href="#用qt5实现一个简单的记事本界面">#</a> 用 qt5 实现一个简单的记事本界面</h2>
+<p>要求：实现有 <code>Menubar</code>  和 <code>Menuitems</code>  和快捷键</p>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr class="marked"><td data-num="1"></td><td><pre><span class="token keyword">import</span> sys</pre></td></tr><tr class="marked"><td data-num="2"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="3"></td><td><pre><span class="token keyword">from</span> PyQt5<span class="token punctuation">.</span>QtGui <span class="token keyword">import</span> QCursor<span class="token punctuation">,</span> QIcon</pre></td></tr><tr class="marked"><td data-num="4"></td><td><pre><span class="token keyword">from</span> PyQt5<span class="token punctuation">.</span>QtWidgets <span class="token keyword">import</span> QApplication<span class="token punctuation">,</span> QMenu<span class="token punctuation">,</span> QMainWindow<span class="token punctuation">,</span> QAction</pre></td></tr><tr class="marked"><td data-num="5"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="6"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="7"></td><td><pre><span class="token keyword">class</span> <span class="token class-name">menu</span><span class="token punctuation">(</span>QMainWindow<span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="8"></td><td><pre>    <span class="token comment"># 初始化面板大小</span></pre></td></tr><tr class="marked"><td data-num="9"></td><td><pre>    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="10"></td><td><pre>        <span class="token builtin">super</span><span class="token punctuation">(</span>menu<span class="token punctuation">,</span> self<span class="token punctuation">)</span><span class="token punctuation">.</span>__init__<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="11"></td><td><pre>        self<span class="token punctuation">.</span>title <span class="token operator">=</span> <span class="token string">'notepad--'</span></pre></td></tr><tr class="marked"><td data-num="12"></td><td><pre>        self<span class="token punctuation">.</span>left <span class="token operator">=</span> <span class="token number">500</span></pre></td></tr><tr class="marked"><td data-num="13"></td><td><pre>        self<span class="token punctuation">.</span>top <span class="token operator">=</span> <span class="token number">1000</span></pre></td></tr><tr class="marked"><td data-num="14"></td><td><pre>        self<span class="token punctuation">.</span>width <span class="token operator">=</span> <span class="token number">600</span></pre></td></tr><tr class="marked"><td data-num="15"></td><td><pre>        self<span class="token punctuation">.</span>height <span class="token operator">=</span> <span class="token number">600</span></pre></td></tr><tr class="marked"><td data-num="16"></td><td><pre>        self<span class="token punctuation">.</span>initUI<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="17"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="18"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="19"></td><td><pre>    <span class="token keyword">def</span> <span class="token function">initUI</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="20"></td><td><pre>        self<span class="token punctuation">.</span>setWindowTitle<span class="token punctuation">(</span>self<span class="token punctuation">.</span>title<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="21"></td><td><pre>        self<span class="token punctuation">.</span>setGeometry<span class="token punctuation">(</span>self<span class="token punctuation">.</span>top<span class="token punctuation">,</span> self<span class="token punctuation">.</span>left<span class="token punctuation">,</span> self<span class="token punctuation">.</span>width<span class="token punctuation">,</span> self<span class="token punctuation">.</span>height<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="22"></td><td><pre>        <span class="token comment"># 实例化菜单条</span></pre></td></tr><tr class="marked"><td data-num="23"></td><td><pre>        mainMenubar <span class="token operator">=</span> self<span class="token punctuation">.</span>menuBar<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="24"></td><td><pre>        </pre></td></tr><tr class="marked"><td data-num="25"></td><td><pre>        <span class="token comment"># 将 menuitems 添加到 menubar 并命名</span></pre></td></tr><tr class="marked"><td data-num="26"></td><td><pre>        menu_item_name <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'fileMenu'</span><span class="token punctuation">,</span> <span class="token string">'editMenu'</span><span class="token punctuation">,</span> <span class="token string">'formatMenu'</span><span class="token punctuation">,</span> <span class="token string">'searchMenu'</span><span class="token punctuation">,</span> <span class="token string">'helpMenu'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="27"></td><td><pre>        menu_item_bar_name <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'文件'</span><span class="token punctuation">,</span> <span class="token string">'编辑'</span><span class="token punctuation">,</span> <span class="token string">'格式'</span><span class="token punctuation">,</span> <span class="token string">'查看'</span><span class="token punctuation">,</span> <span class="token string">'帮助'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="28"></td><td><pre>        <span class="token keyword">for</span> l <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>menu_item_name<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="29"></td><td><pre>            menu_item_name<span class="token punctuation">[</span>l<span class="token punctuation">]</span> <span class="token operator">=</span> mainMenubar<span class="token punctuation">.</span>addMenu<span class="token punctuation">(</span>menu_item_bar_name<span class="token punctuation">[</span>l<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="30"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="31"></td><td><pre>        <span class="token comment"># 将操作名、属性名、快捷键用列表封装起来，用循环进行添加，此处有不足之处就是循环不能合一，后续有能力再优化一下</span></pre></td></tr><tr class="marked"><td data-num="32"></td><td><pre>        file_name <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'新建(N)'</span><span class="token punctuation">,</span> <span class="token string">'打开(O)'</span><span class="token punctuation">,</span> <span class="token string">'保存(S)'</span><span class="token punctuation">,</span> <span class="token string">'另存为(A)'</span><span class="token punctuation">,</span> <span class="token string">'页面设置(U)'</span><span class="token punctuation">,</span> <span class="token string">'打印(P)'</span><span class="token punctuation">,</span> <span class="token string">'退出(X)'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="33"></td><td><pre>        file_name_as <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'new'</span><span class="token punctuation">,</span> <span class="token string">'open'</span><span class="token punctuation">,</span> <span class="token string">'save'</span><span class="token punctuation">,</span> <span class="token string">'save_as'</span><span class="token punctuation">,</span> <span class="token string">'setup'</span><span class="token punctuation">,</span> <span class="token string">'print'</span><span class="token punctuation">,</span> <span class="token string">'exit'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="34"></td><td><pre>        file_shortcut_key <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'Ctrl+N'</span><span class="token punctuation">,</span> <span class="token string">'Ctrl+O'</span><span class="token punctuation">,</span> <span class="token string">'Ctrl+S'</span><span class="token punctuation">,</span> <span class="token string">''</span><span class="token punctuation">,</span> <span class="token string">''</span><span class="token punctuation">,</span> <span class="token string">'Ctrl+P'</span><span class="token punctuation">,</span> <span class="token string">''</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="35"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="36"></td><td><pre>        edit_name <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'撤销(U)'</span><span class="token punctuation">,</span> <span class="token string">'剪切(T)'</span><span class="token punctuation">,</span> <span class="token string">'复制(C)'</span><span class="token punctuation">,</span> <span class="token string">'粘贴(V)'</span><span class="token punctuation">,</span> <span class="token string">'删除(L)'</span><span class="token punctuation">,</span> <span class="token string">'查找(F)'</span><span class="token punctuation">,</span> <span class="token string">'查找下一个(N)'</span><span class="token punctuation">,</span> <span class="token string">'替换(R)'</span><span class="token punctuation">,</span> <span class="token string">'转到(G)'</span><span class="token punctuation">,</span> <span class="token string">'全选(A)'</span><span class="token punctuation">,</span></pre></td></tr><tr class="marked"><td data-num="37"></td><td><pre>                     <span class="token string">'时间/日期(D)'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="38"></td><td><pre>        edit_name_as <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'repeal'</span><span class="token punctuation">,</span> <span class="token string">'cut'</span><span class="token punctuation">,</span> <span class="token string">'copy'</span><span class="token punctuation">,</span> <span class="token string">'paste'</span><span class="token punctuation">,</span> <span class="token string">'dele'</span><span class="token punctuation">,</span> <span class="token string">'search'</span><span class="token punctuation">,</span> <span class="token string">'search_one'</span><span class="token punctuation">,</span> <span class="token string">'replace'</span><span class="token punctuation">,</span> <span class="token string">'goto'</span><span class="token punctuation">,</span></pre></td></tr><tr class="marked"><td data-num="39"></td><td><pre>                        <span class="token string">'check_all'</span><span class="token punctuation">,</span> <span class="token string">'datetimes'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="40"></td><td><pre>        edit_shortcut_key <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'Ctrl+Z'</span><span class="token punctuation">,</span> <span class="token string">'Ctrl+X'</span><span class="token punctuation">,</span> <span class="token string">'Ctrl+C'</span><span class="token punctuation">,</span> <span class="token string">'Ctrl+V'</span><span class="token punctuation">,</span> <span class="token string">'Del'</span><span class="token punctuation">,</span> <span class="token string">'Ctrl+F'</span><span class="token punctuation">,</span> <span class="token string">'F3'</span><span class="token punctuation">,</span> <span class="token string">'Ctrl+H'</span><span class="token punctuation">,</span> <span class="token string">'Ctrl+G'</span><span class="token punctuation">,</span></pre></td></tr><tr class="marked"><td data-num="41"></td><td><pre>                             <span class="token string">'Ctrl+A'</span><span class="token punctuation">,</span> <span class="token string">'F5'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="42"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="43"></td><td><pre>        format_name <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'自动换行(W)'</span><span class="token punctuation">,</span> <span class="token string">'字体(F)'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="44"></td><td><pre>        format_name_as <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'lines'</span><span class="token punctuation">,</span> <span class="token string">'font'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="45"></td><td><pre>        format_shortcut_key <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">''</span><span class="token punctuation">,</span> <span class="token string">''</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="46"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="47"></td><td><pre>        search_name <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'状态栏(S)'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="48"></td><td><pre>        search_name_as <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'statusbar'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="49"></td><td><pre>        search_shortcut_key <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">''</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="50"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="51"></td><td><pre>        help_name <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'查看帮助(H)'</span><span class="token punctuation">,</span> <span class="token string">'关于记事本(A)'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="52"></td><td><pre>        help_name_as <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'lookhelp'</span><span class="token punctuation">,</span> <span class="token string">'about'</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="53"></td><td><pre>        help_shortcut_key <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">''</span><span class="token punctuation">,</span> <span class="token string">''</span><span class="token punctuation">]</span></pre></td></tr><tr class="marked"><td data-num="54"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="55"></td><td><pre>        <span class="token comment"># 用循环将子菜单添加到菜单</span></pre></td></tr><tr class="marked"><td data-num="56"></td><td><pre>        <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>file_name_as<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="57"></td><td><pre>            file_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> QAction<span class="token punctuation">(</span>QIcon<span class="token punctuation">(</span><span class="token string">'12.png'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> file_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> self<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="58"></td><td><pre>            file_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>setShortcut<span class="token punctuation">(</span>file_shortcut_key<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="59"></td><td><pre>            file_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>setText<span class="token punctuation">(</span>file_name<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="60"></td><td><pre>            <span class="token comment"># 将子菜单添加到菜单</span></pre></td></tr><tr class="marked"><td data-num="61"></td><td><pre>            menu_item_name<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>addAction<span class="token punctuation">(</span>file_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="62"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="63"></td><td><pre>        <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>edit_name_as<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="64"></td><td><pre>            edit_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> QAction<span class="token punctuation">(</span>QIcon<span class="token punctuation">(</span><span class="token string">'12.png'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> edit_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> self<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="65"></td><td><pre>            edit_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>setShortcut<span class="token punctuation">(</span>edit_shortcut_key<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="66"></td><td><pre>            edit_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>setText<span class="token punctuation">(</span>edit_name<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="67"></td><td><pre>            <span class="token comment"># 将子菜单添加到菜单</span></pre></td></tr><tr class="marked"><td data-num="68"></td><td><pre>            menu_item_name<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>addAction<span class="token punctuation">(</span>edit_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="69"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="70"></td><td><pre>        <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>format_name_as<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="71"></td><td><pre>            format_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> QAction<span class="token punctuation">(</span>QIcon<span class="token punctuation">(</span><span class="token string">'12.png'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> format_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> self<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="72"></td><td><pre>            format_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>setShortcut<span class="token punctuation">(</span>format_shortcut_key<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="73"></td><td><pre>            format_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>setText<span class="token punctuation">(</span>format_name<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="74"></td><td><pre>            <span class="token comment"># 将子菜单添加到菜单</span></pre></td></tr><tr class="marked"><td data-num="75"></td><td><pre>            menu_item_name<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">.</span>addAction<span class="token punctuation">(</span>format_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="76"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="77"></td><td><pre>        <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>search_name_as<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="78"></td><td><pre>            search_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> QAction<span class="token punctuation">(</span>QIcon<span class="token punctuation">(</span><span class="token string">'12.png'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> search_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> self<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="79"></td><td><pre>            search_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>setShortcut<span class="token punctuation">(</span>search_shortcut_key<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="80"></td><td><pre>            search_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>setText<span class="token punctuation">(</span>search_name<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="81"></td><td><pre>            <span class="token comment"># 将子菜单添加到菜单</span></pre></td></tr><tr class="marked"><td data-num="82"></td><td><pre>            menu_item_name<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">.</span>addAction<span class="token punctuation">(</span>search_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="83"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="84"></td><td><pre>        <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>help_name_as<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="85"></td><td><pre>            help_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> QAction<span class="token punctuation">(</span>QIcon<span class="token punctuation">(</span><span class="token string">'12.png'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> help_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> self<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="86"></td><td><pre>            help_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>setShortcut<span class="token punctuation">(</span>help_shortcut_key<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="87"></td><td><pre>            help_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>setText<span class="token punctuation">(</span>help_name<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="88"></td><td><pre>            <span class="token comment"># 将子菜单添加到菜单</span></pre></td></tr><tr class="marked"><td data-num="89"></td><td><pre>            menu_item_name<span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">.</span>addAction<span class="token punctuation">(</span>help_name_as<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="90"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="91"></td><td><pre>        self<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="92"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="93"></td><td><pre></pre></td></tr><tr class="marked"><td data-num="94"></td><td><pre><span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span></pre></td></tr><tr class="marked"><td data-num="95"></td><td><pre>    app <span class="token operator">=</span> QApplication<span class="token punctuation">(</span>sys<span class="token punctuation">.</span>argv<span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="96"></td><td><pre>    s <span class="token operator">=</span> menu<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr class="marked"><td data-num="97"></td><td><pre>    sys<span class="token punctuation">.</span>exit<span class="token punctuation">(</span>app<span class="token punctuation">.</span>exec_<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>预览图</strong></p>
 <p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/Hexoimgs/2022044946.jpeg" alt=""></p>
 
       <div class="tags">
@@ -353,7 +265,7 @@ def initUI(self):
     <div class="item left">
       
 
-  <a href="/af3d5cf5.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giciub8ja1j20zk0m81ky.jpg" title="安装qt5的时候报错">
+  <a href="/af3d5cf5.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclhnx9glj20zk0m8npd.jpg" title="安装qt5的时候报错">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> python</span>
   <h3>安装qt5的时候报错</h3>
@@ -363,7 +275,7 @@ def initUI(self):
     <div class="item right">
       
 
-  <a href="/28af37eb.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclwrdwyaj20zk0m8are.jpg" title="Hexo部署err:Error:Spawn failed错误">
+  <a href="/28af37eb.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclwuom7cj20zk0m8dvn.jpg" title="Hexo部署err:Error:Spawn failed错误">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> fail</span>
   <h3>Hexo部署err:Error:Spawn failed错误</h3>
@@ -385,7 +297,7 @@ def initUI(self):
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%A8qt5%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E8%AE%B0%E4%BA%8B%E6%9C%AC%E7%95%8C%E9%9D%A2"><span class="toc-number">1.</span> <span class="toc-text">用qt5实现一个简单的记事本界面</span></a></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%A8qt5%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E8%AE%B0%E4%BA%8B%E6%9C%AC%E7%95%8C%E9%9D%A2"><span class="toc-number">1.</span> <span class="toc-text"> 用 qt5 实现一个简单的记事本界面</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
@@ -403,7 +315,7 @@ def initUI(self):
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">94</span>
+        <span class="count">95</span>
         <span class="name">文章</span>
       </a>
     </div>
@@ -415,7 +327,7 @@ def initUI(self):
     </div>
     <div class="item tags">
       <a href="/tags/">
-        <span class="count">31</span>
+        <span class="count">30</span>
         <span class="name">标签</span>
       </a>
     </div>
@@ -529,9 +441,72 @@ def initUI(self):
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
 </div>
 
-    <span><a href="/1fceb7fb.html" title="NodeJs系列-Day04">NodeJs系列-Day04</a></span>
+    <span><a href="/d845073d.html" title="utf8和utf-8的区别">utf8和utf-8的区别</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/" title="分类于 java">java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/fail/" title="分类于 fail">fail</a>
+</div>
+
+    <span><a href="/5c23aa63.html" title="Maven识别失败">Maven识别失败</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
+</div>
+
+    <span><a href="/af3d5cf5.html" title="安装qt5的时候报错">安装qt5的时候报错</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/" title="分类于 java">java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/fail/" title="分类于 fail">fail</a>
+</div>
+
+    <span><a href="/a96b8873.html" title="Maven build失败 MAVEN:单元测试报错">Maven build失败 MAVEN:单元测试报错</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
+</div>
+
+    <span><a href="/dc09a46c.html" title="第六篇：将博客部署到GitHub---从0基础搭建Hexo博客">第六篇：将博客部署到GitHub---从0基础搭建Hexo博客</a></span>
   </li>
 
       
@@ -552,12 +527,28 @@ def initUI(self):
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E7%94%9F%E6%B4%BB/" title="分类于 生活">生活</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E7%94%9F%E6%B4%BB/%E5%A5%BD%E7%89%A9%E5%AE%89%E5%88%A9/" title="分类于 好物安利">好物安利</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
 </div>
 
-    <span><a href="/b03846b2.html" title="好用的PDF软件">好用的PDF软件</a></span>
+    <span><a href="/b75a1db6.html" title="第三篇：Git提交文件---从0基础搭建Hexo博客">第三篇：Git提交文件---从0基础搭建Hexo博客</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
+</div>
+
+    <span><a href="/9bf6caef.html" title="第八篇：解析域名---从0基础搭建Hexo博客">第八篇：解析域名---从0基础搭建Hexo博客</a></span>
   </li>
 
       
@@ -568,80 +559,10 @@ def initUI(self):
 <i class="ic i-angle-right"></i>
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E5%8A%9E%E5%85%AC%E8%BD%AF%E4%BB%B6/" title="分类于 办公软件">办公软件</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E5%8A%9E%E5%85%AC%E8%BD%AF%E4%BB%B6/Word/" title="分类于 Word">Word</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/window/" title="分类于 window">window</a>
 </div>
 
-    <span><a href="/30d35056.html" title="Word调整目录编号和标题空隙">Word调整目录编号和标题空隙</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/fail/" title="分类于 fail">fail</a>
-</div>
-
-    <span><a href="/c32e96d4.html" title="git push origin master失败">git push origin master失败</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E5%9F%BA%E7%A1%80%E5%AD%A6%E7%A7%91/" title="分类于 基础学科">基础学科</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E5%9F%BA%E7%A1%80%E5%AD%A6%E7%A7%91/%E5%A4%96%E8%AF%AD/" title="分类于 外语">外语</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E5%9F%BA%E7%A1%80%E5%AD%A6%E7%A7%91/%E5%A4%96%E8%AF%AD/%E6%97%A5%E8%AF%AD/" title="分类于 日语">日语</a>
-</div>
-
-    <span><a href="/39c6cce6.html" title="日本语-作文">日本语-作文</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E7%94%9F%E6%B4%BB/" title="分类于 生活">生活</a>
-</div>
-
-    <span><a href="/b8c864c4.html" title="2022广州软件学院高考新生必看">2022广州软件学院高考新生必看</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/" title="分类于 java">java</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/fail/" title="分类于 fail">fail</a>
-</div>
-
-    <span><a href="/3dddb2b0.html" title="intellij乱码">intellij乱码</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/" title="分类于 java">java</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/fail/" title="分类于 fail">fail</a>
-</div>
-
-    <span><a href="/a96b8873.html" title="Maven build失败 MAVEN:单元测试报错">Maven build失败 MAVEN:单元测试报错</a></span>
+    <span><a href="/2cc8588f.html" title="添加开机自启程序">添加开机自启程序</a></span>
   </li>
 
       
@@ -680,13 +601,13 @@ def initUI(self):
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="站点总字数">135k 字</span>
+    <span title="站点总字数">127k 字</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="站点阅读时长">3:03</span>
+    <span title="站点阅读时长">2:52</span>
   </div>
   <div class="powered-by">
     基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>

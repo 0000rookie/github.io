@@ -83,7 +83,7 @@ NodeJs系列-Day02 - nodejs - 编程语言 - 计算机科学 |
       <i class="ic i-pen"></i>
     </span>
     <span class="text">本文字数</span>
-    <span>2k</span>
+    <span>1.8k</span>
     <span class="text">字</span>
   </span>
   <span class="item" title="阅读时长">
@@ -91,7 +91,7 @@ NodeJs系列-Day02 - nodejs - 编程语言 - 计算机科学 |
       <i class="ic i-clock"></i>
     </span>
     <span class="text">阅读时长</span>
-    <span>3 分钟</span>
+    <span>2 分钟</span>
   </span>
 </div>
 
@@ -124,12 +124,12 @@ NodeJs系列-Day02 - nodejs - 编程语言 - 计算机科学 |
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicli3sbvtj20zk0m8x6p.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclh0m9pdj20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giciundwu5j20zk0m8n9e.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicliierfjj20zk0m8npd.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclga70tsj20zk0m84mr.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giph47e9vtj20zk0m8x6l.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giciukx8a7j20zk0m8aio.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipexw3o58j20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicis081o9j20zk0m8dmr.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipexoj0moj20zk0m8kgu.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicivghyooj20zk0m8dir.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclhfehz7j20zk0m8u0x.jpg"></li>
         </ul>
       </div>
     </header>
@@ -184,75 +184,22 @@ NodeJs系列-Day02 - nodejs - 编程语言 - 计算机科学 |
   <div class="body md" itemprop="articleBody">
     
 
-    <h2 id="将HTML拆分为外链式"><a href="#将HTML拆分为外链式" class="headerlink" title="将HTML拆分为外链式"></a>将HTML拆分为外链式</h2><ul>
-<li>获取<code>CSS</code>和<code>JS</code>的内容</li>
-<li>将<code>CSS</code>和J<code>S</code>分别写入到新文件中</li>
-<li>在原来的<code>HTML</code>文件去掉<code>CSS</code>和<code>JS</code>的内容</li>
-<li>添加<code>CSS</code>和<code>JS</code>外链</li>
+    <h2 id="将html拆分为外链式"><a class="markdownIt-Anchor" href="#将html拆分为外链式">#</a> 将 HTML 拆分为外链式</h2>
+<ul>
+<li>获取 <code>CSS</code>  和 <code>JS</code>  的内容</li>
+<li>将 <code>CSS</code>  和 J <code>S</code>  分别写入到新文件中</li>
+<li>在原来的 <code>HTML</code>  文件去掉 <code>CSS</code>  和 <code>JS</code>  的内容</li>
+<li>添加 <code>CSS</code>  和 <code>JS</code>  外链</li>
 </ul>
-<pre><code class="lang-javascript">//导入模块
-const fs = require (&quot;fs&quot;)
-const path = require (&quot;path&quot;)
-
-//正则表达式
-// \s表示匹配空白字符，\S表示匹配任意的非空白字符 *标识匹配所有字符
-const regStyle = /&lt;style&gt;[\s\S]*&lt;\/style&gt;/
-const regScript = /&lt;script&gt;[\s\S]*&lt;\/script&gt;/
-
-fs.readFile(path.join(__dirname,&quot;./johou.html&quot;),function(err,data)&#123;
-    //path.join(__dirname,&quot;./johou.html&quot;) 拼接当前文件夹路径和文件夹下的johou.html
-    if (err)&#123;
-        return console.error(err)
-    &#125;
-    resolveCSS(data)//将jihou.html分离CSS样式出来
-    resolveJS(data)//将jihou.html分离JS出来
-    resolveHTML(data)//将样式和js都变成外链式
-&#125;)
-
-function resolveCSS(css)&#123;
-
-    var data=regStyle.exec(css) 
-    //执行正则表达式将css样式提取出来
-    var newdata= data[0].replace(&quot;&lt;style&gt;&quot;,&quot; &quot;).replace(&quot;&lt;/style&gt;&quot;,&quot; &quot;) 
-    //把提取出来的样式将&lt;style&gt;替换成空格
-    fs.writeFile(path.join(__dirname,&quot;./test/index.css&quot;),newdata,function(err)&#123;
-        if (err)&#123;
-            return console.error(err)
-        &#125;
-        console.log(&quot;写入css成功&quot;)
-    &#125;)
-&#125;
-
-function resolveJS(js)&#123;
-    var data= regScript.exec(js)
-    //执行正则表达式将js提取出来
-    var newdata= data[0].replace(&quot;&lt;script&gt;&quot;,&quot; &quot;).replace(&quot;&lt;/script&gt;&quot;,&quot; &quot;)
-    //把提取出来的样式将&lt;script&gt;替换成空格
-    fs.writeFile(path.join(__dirname,&quot;./test/index.js&quot;),newdata,function(err)&#123;
-        if (err)&#123;
-            return console.error(err)
-        &#125;
-        console.log(&quot;写入js成功&quot;)
-    &#125;)
-&#125;
-
-function resolveHTML(html)&#123;
-
-    var newdata = html.toString().replace(regScript,&#39;&lt;script src=&quot;./test/index.js&quot;&gt;&lt;/script&gt;&#39;).replace(regStyle,&#39;&lt;style rel=&quot;stylesheel&quot; href=&quot;./test/index.css&quot;&gt;&lt;/script&gt;&#39;)
-    //形参获取到的html是Buffer，需要用toString()方法转换成字符串类型，同时将css和js替换成外链式链接
-    fs.writeFile(path.join(__dirname,&quot;./test/index.html&quot;),newdata,function(err)&#123;
-        if (err)&#123;
-            return console.error(err)
-        &#125;
-        console.log(&quot;写入html成功&quot;)
-    &#125;)
-&#125;
-</code></pre>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>在方法之间进行传参的时候，传输的数据会变成Buffer，在使用的时候需要将数据用toString()转换成字符串类型。</p>
-<h3 id="易错点"><a href="#易错点" class="headerlink" title="易错点"></a>易错点</h3><ul>
-<li><p>在使用<code>path.join()</code>的时候很容易漏掉<code>path.</code>，这是非常重要的，其中<code>join()</code>的参数可以有多个。</p>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment">// 导入模块</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">const</span> fs <span class="token operator">=</span> <span class="token function">require</span> <span class="token punctuation">(</span><span class="token string">"fs"</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span> <span class="token punctuation">(</span><span class="token string">"path"</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="4"></td><td><pre></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token comment">// 正则表达式</span></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token comment">// \s 表示匹配空白字符，\S 表示匹配任意的非空白字符 * 标识匹配所有字符</span></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token keyword">const</span> regStyle <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">&lt;style>[\s\S]*&lt;\/style></span><span class="token regex-delimiter">/</span></span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token keyword">const</span> regScript <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">&lt;script>[\s\S]*&lt;\/script></span><span class="token regex-delimiter">/</span></span></pre></td></tr><tr><td data-num="9"></td><td><pre></pre></td></tr><tr><td data-num="10"></td><td><pre>fs<span class="token punctuation">.</span><span class="token function">readFile</span><span class="token punctuation">(</span>path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span><span class="token string">"./johou.html"</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span>data</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="11"></td><td><pre>    <span class="token comment">//path.join (__dirname,"./johou.html") 拼接当前文件夹路径和文件夹下的 johou.html</span></pre></td></tr><tr><td data-num="12"></td><td><pre>    <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="13"></td><td><pre>        <span class="token keyword">return</span> console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="14"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="15"></td><td><pre>    <span class="token function">resolveCSS</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token comment">// 将 jihou.html 分离 CSS 样式出来</span></pre></td></tr><tr><td data-num="16"></td><td><pre>    <span class="token function">resolveJS</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token comment">// 将 jihou.html 分离 JS 出来</span></pre></td></tr><tr><td data-num="17"></td><td><pre>    <span class="token function">resolveHTML</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token comment">// 将样式和 js 都变成外链式</span></pre></td></tr><tr><td data-num="18"></td><td><pre><span class="token punctuation">&#125;</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="19"></td><td><pre></pre></td></tr><tr><td data-num="20"></td><td><pre><span class="token keyword">function</span> <span class="token function">resolveCSS</span><span class="token punctuation">(</span><span class="token parameter">css</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="21"></td><td><pre>   </pre></td></tr><tr><td data-num="22"></td><td><pre>    <span class="token keyword">var</span> data<span class="token operator">=</span>regStyle<span class="token punctuation">.</span><span class="token function">exec</span><span class="token punctuation">(</span>css<span class="token punctuation">)</span> </pre></td></tr><tr><td data-num="23"></td><td><pre>    <span class="token comment">// 执行正则表达式将 css 样式提取出来</span></pre></td></tr><tr><td data-num="24"></td><td><pre>    <span class="token keyword">var</span> newdata<span class="token operator">=</span> data<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token string">"&lt;style>"</span><span class="token punctuation">,</span><span class="token string">" "</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token string">"&lt;/style>"</span><span class="token punctuation">,</span><span class="token string">" "</span><span class="token punctuation">)</span> </pre></td></tr><tr><td data-num="25"></td><td><pre>    <span class="token comment">// 把提取出来的样式将 & lt;style > 替换成空格</span></pre></td></tr><tr><td data-num="26"></td><td><pre>    fs<span class="token punctuation">.</span><span class="token function">writeFile</span><span class="token punctuation">(</span>path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span><span class="token string">"./test/index.css"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>newdata<span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">err</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="27"></td><td><pre>        <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="28"></td><td><pre>            <span class="token keyword">return</span> console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="29"></td><td><pre>        <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="30"></td><td><pre>        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"写入css成功"</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="31"></td><td><pre>    <span class="token punctuation">&#125;</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="32"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="33"></td><td><pre></pre></td></tr><tr><td data-num="34"></td><td><pre><span class="token keyword">function</span> <span class="token function">resolveJS</span><span class="token punctuation">(</span><span class="token parameter">js</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="35"></td><td><pre>    <span class="token keyword">var</span> data<span class="token operator">=</span> regScript<span class="token punctuation">.</span><span class="token function">exec</span><span class="token punctuation">(</span>js<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="36"></td><td><pre>    <span class="token comment">// 执行正则表达式将 js 提取出来</span></pre></td></tr><tr><td data-num="37"></td><td><pre>    <span class="token keyword">var</span> newdata<span class="token operator">=</span> data<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token string">"&lt;script>"</span><span class="token punctuation">,</span><span class="token string">" "</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token string">"&lt;/script>"</span><span class="token punctuation">,</span><span class="token string">" "</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="38"></td><td><pre>    <span class="token comment">// 把提取出来的样式将 & lt;script > 替换成空格</span></pre></td></tr><tr><td data-num="39"></td><td><pre>    fs<span class="token punctuation">.</span><span class="token function">writeFile</span><span class="token punctuation">(</span>path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span><span class="token string">"./test/index.js"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>newdata<span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">err</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="40"></td><td><pre>        <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="41"></td><td><pre>            <span class="token keyword">return</span> console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="42"></td><td><pre>        <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="43"></td><td><pre>        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"写入js成功"</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="44"></td><td><pre>    <span class="token punctuation">&#125;</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="45"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="46"></td><td><pre></pre></td></tr><tr><td data-num="47"></td><td><pre><span class="token keyword">function</span> <span class="token function">resolveHTML</span><span class="token punctuation">(</span><span class="token parameter">html</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="48"></td><td><pre>    </pre></td></tr><tr><td data-num="49"></td><td><pre>    <span class="token keyword">var</span> newdata <span class="token operator">=</span> html<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span>regScript<span class="token punctuation">,</span><span class="token string">'&lt;script src="./test/index.js">&lt;/script>'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span>regStyle<span class="token punctuation">,</span><span class="token string">'&lt;style rel="stylesheel" href="./test/index.css">&lt;/script>'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="50"></td><td><pre>    <span class="token comment">// 形参获取到的 html 是 Buffer，需要用 toString () 方法转换成字符串类型，同时将 css 和 js 替换成外链式链接</span></pre></td></tr><tr><td data-num="51"></td><td><pre>    fs<span class="token punctuation">.</span><span class="token function">writeFile</span><span class="token punctuation">(</span>path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span><span class="token string">"./test/index.html"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>newdata<span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">err</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="52"></td><td><pre>        <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="53"></td><td><pre>            <span class="token keyword">return</span> console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="54"></td><td><pre>        <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="55"></td><td><pre>        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"写入html成功"</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="56"></td><td><pre>    <span class="token punctuation">&#125;</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="57"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><h2 id="总结"><a class="markdownIt-Anchor" href="#总结">#</a> 总结</h2>
+<p>在方法之间进行传参的时候，传输的数据会变成 Buffer，在使用的时候需要将数据用 toString () 转换成字符串类型。</p>
+<h3 id="易错点"><a class="markdownIt-Anchor" href="#易错点">#</a> 易错点</h3>
+<ul>
+<li>
+<p>在使用 <code>path.join()</code>  的时候很容易漏掉 <code>path.</code> ，这是非常重要的，其中 <code>join()</code>  的参数可以有多个。</p>
 </li>
-<li><p><code>fs.writeFile()</code>的时候必须要添加回调函数并且<code>抛出错误</code>，</p>
+<li>
+<p><code>fs.writeFile()</code>  的时候必须要添加回调函数并且 <code>抛出错误</code> ，</p>
 </li>
 </ul>
 
@@ -327,7 +274,7 @@ function resolveHTML(html)&#123;
     <div class="item left">
       
 
-  <a href="/a71cff7d.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeuv80yoj20zk0m8kjl.jpg" title="屏幕显示键盘按键软件">
+  <a href="/a71cff7d.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicitzannuj20zk0m8b29.jpg" title="屏幕显示键盘按键软件">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> 好物安利</span>
   <h3>屏幕显示键盘按键软件</h3>
@@ -337,7 +284,7 @@ function resolveHTML(html)&#123;
     <div class="item right">
       
 
-  <a href="/d845073d.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipetlbztpj20zk0m84qp.jpg" title="utf8和utf-8的区别">
+  <a href="/d845073d.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeubcbajj20zk0m8h1h.jpg" title="utf8和utf-8的区别">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> 技术杂谈</span>
   <h3>utf8和utf-8的区别</h3>
@@ -359,11 +306,11 @@ function resolveHTML(html)&#123;
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B0%86HTML%E6%8B%86%E5%88%86%E4%B8%BA%E5%A4%96%E9%93%BE%E5%BC%8F"><span class="toc-number">1.</span> <span class="toc-text">将HTML拆分为外链式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">2.</span> <span class="toc-text">总结</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%98%93%E9%94%99%E7%82%B9"><span class="toc-number">2.1.</span> <span class="toc-text">易错点</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B0%86html%E6%8B%86%E5%88%86%E4%B8%BA%E5%A4%96%E9%93%BE%E5%BC%8F"><span class="toc-number">1.</span> <span class="toc-text"> 将 HTML 拆分为外链式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">2.</span> <span class="toc-text"> 总结</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%98%93%E9%94%99%E7%82%B9"><span class="toc-number">2.1.</span> <span class="toc-text"> 易错点</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
-          <li><a href="/c797c821.html" rel="bookmark" title="NodeJs系列-Day01-文件处理">NodeJs系列-Day01-文件处理</a></li><li class="active"><a href="/f6ad12ce.html" rel="bookmark" title="NodeJs系列-Day02">NodeJs系列-Day02</a></li><li><a href="/81aa2258.html" rel="bookmark" title="NodeJs系列-Day03">NodeJs系列-Day03</a></li>
+          <li><a href="/c797c821.html" rel="bookmark" title="NodeJs系列-Day01-文件处理">NodeJs系列-Day01-文件处理</a></li><li class="active"><a href="/f6ad12ce.html" rel="bookmark" title="NodeJs系列-Day02">NodeJs系列-Day02</a></li><li><a href="/81aa2258.html" rel="bookmark" title="NodeJs系列-Day03">NodeJs系列-Day03</a></li><li><a href="/1fceb7fb.html" rel="bookmark" title="NodeJs系列-Day04">NodeJs系列-Day04</a></li>
         </ul>
       </div>
       <div class="overview panel" data-title="站点概览">
@@ -377,7 +324,7 @@ function resolveHTML(html)&#123;
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">94</span>
+        <span class="count">95</span>
         <span class="name">文章</span>
       </a>
     </div>
@@ -389,7 +336,7 @@ function resolveHTML(html)&#123;
     </div>
     <div class="item tags">
       <a href="/tags/">
-        <span class="count">31</span>
+        <span class="count">30</span>
         <span class="name">标签</span>
       </a>
     </div>
@@ -503,12 +450,9 @@ function resolveHTML(html)&#123;
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E7%94%9F%E6%B4%BB/" title="分类于 生活">生活</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E7%94%9F%E6%B4%BB/%E5%A5%BD%E7%89%A9%E5%AE%89%E5%88%A9/" title="分类于 好物安利">好物安利</a>
 </div>
 
-    <span><a href="/a71cff7d.html" title="屏幕显示键盘按键软件">屏幕显示键盘按键软件</a></span>
+    <span><a href="/d95d7e09.html" title="我的第一篇博客">我的第一篇博客</a></span>
   </li>
 
       
@@ -517,22 +461,12 @@ function resolveHTML(html)&#123;
 <div class="breadcrumb">
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/Linux/" title="分类于 Linux">Linux</a>
 </div>
 
-    <span><a href="/dc09a46c.html" title="第六篇：将博客部署到GitHub---从0基础搭建Hexo博客">第六篇：将博客部署到GitHub---从0基础搭建Hexo博客</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E7%94%9F%E6%B4%BB/" title="分类于 生活">生活</a>
-</div>
-
-    <span><a href="/2c1b0cfb.html" title="计算机系20级计算机科学与技术四班喜迎二十大">计算机系20级计算机科学与技术四班喜迎二十大</a></span>
+    <span><a href="/3d358537.html" title="Linux忘记数据库密码">Linux忘记数据库密码</a></span>
   </li>
 
       
@@ -541,26 +475,12 @@ function resolveHTML(html)&#123;
 <div class="breadcrumb">
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E6%A8%A1%E5%9D%97/" title="分类于 模块">模块</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/GitHub/" title="分类于 GitHub">GitHub</a>
 </div>
 
-    <span><a href="/c5de56d5.html" title="Hexo怎么安装插件">Hexo怎么安装插件</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
-</div>
-
-    <span><a href="/a6f9d072.html" title="第一篇：注册github---从0基础搭建Hexo博客">第一篇：注册github---从0基础搭建Hexo博客</a></span>
+    <span><a href="/43d2d741.html" title="Git使用方法">Git使用方法</a></span>
   </li>
 
       
@@ -574,7 +494,7 @@ function resolveHTML(html)&#123;
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
 </div>
 
-    <span><a href="/37c8254d.html" title="python qt5 实现记事本界面">python qt5 实现记事本界面</a></span>
+    <span><a href="/8075134e.html" title="numpy画复合函数">numpy画复合函数</a></span>
   </li>
 
       
@@ -583,10 +503,10 @@ function resolveHTML(html)&#123;
 <div class="breadcrumb">
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/fail/" title="分类于 fail">fail</a>
 </div>
 
-    <span><a href="/451161d7.html" title="idea开发必装插件">idea开发必装插件</a></span>
+    <span><a href="/c32e96d4.html" title="git push origin master失败">git push origin master失败</a></span>
   </li>
 
       
@@ -595,10 +515,26 @@ function resolveHTML(html)&#123;
 <div class="breadcrumb">
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/nodejs/" title="分类于 nodejs">nodejs</a>
 </div>
 
-    <span><a href="/edaa94fb.html" title="为博客添加免费的CDN加速">为博客添加免费的CDN加速</a></span>
+    <span><a href="/1fceb7fb.html" title="NodeJs系列-Day04">NodeJs系列-Day04</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/" title="分类于 java">java</a>
+</div>
+
+    <span><a href="/b241aa8.html" title="暑假Java Web计划">暑假Java Web计划</a></span>
   </li>
 
       
@@ -612,7 +548,7 @@ function resolveHTML(html)&#123;
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/Andriod/" title="分类于 Andriod">Andriod</a>
 </div>
 
-    <span><a href="/17554f39.html" title="关于手机双开不显示双开目录999">关于手机双开不显示双开目录999</a></span>
+    <span><a href="/70ded1a5.html" title="root破解手机限速问题">root破解手机限速问题</a></span>
   </li>
 
       
@@ -624,7 +560,21 @@ function resolveHTML(html)&#123;
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
 </div>
 
-    <span><a href="/eae60a43.html" title="大学选修科目">大学选修科目</a></span>
+    <span><a href="/2fbd98c3.html" title="如何给PicGo添加水印">如何给PicGo添加水印</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/nodejs/" title="分类于 nodejs">nodejs</a>
+</div>
+
+    <span><a href="/c797c821.html" title="NodeJs系列-Day01-文件处理">NodeJs系列-Day01-文件处理</a></span>
   </li>
 
   </ul>
@@ -649,13 +599,13 @@ function resolveHTML(html)&#123;
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="站点总字数">135k 字</span>
+    <span title="站点总字数">127k 字</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="站点阅读时长">3:03</span>
+    <span title="站点阅读时长">2:52</span>
   </div>
   <div class="powered-by">
     基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>

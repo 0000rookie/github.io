@@ -83,7 +83,7 @@ NodeJs系列-Day03 - nodejs - 编程语言 - 计算机科学 |
       <i class="ic i-pen"></i>
     </span>
     <span class="text">本文字数</span>
-    <span>1.6k</span>
+    <span>1.4k</span>
     <span class="text">字</span>
   </span>
   <span class="item" title="阅读时长">
@@ -124,12 +124,12 @@ NodeJs系列-Day03 - nodejs - 编程语言 - 计算机科学 |
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclx6phq6j20zk0m8e36.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeyhsblkj20zk0m81kx.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeu7txpzj20zk0m81kx.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giciusoyjnj219g0u0x56.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclwrdwyaj20zk0m8are.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipewr8iypj20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeuv80yoj20zk0m8kjl.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipetv6p75j20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclip4jbpj20zk0m87cv.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicmnywqgpj20zk0m8dwx.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclxxcb6rj20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giciryrr3rj20zk0m8nhk.jpg"></li>
         </ul>
       </div>
     </header>
@@ -184,74 +184,12 @@ NodeJs系列-Day03 - nodejs - 编程语言 - 计算机科学 |
   <div class="body md" itemprop="articleBody">
     
 
-    <h2 id="创建简单的web服务器"><a href="#创建简单的web服务器" class="headerlink" title="创建简单的web服务器"></a>创建简单的web服务器</h2><pre><code class="lang-javascript">//1. 导入http模块
-const http = require(&quot;http&quot;)
-//2. 创建web服务器实例
-const server = http.createServer()
-//3. 为服务器绑定request事件，监听客户端的请求
-server.on(&quot;request&quot;,(req,res)=&gt;&#123;
-    //req是请求对象，里面包括请求url.请求类型post、get等
-    //res是响应对象
-    console.log(&quot;Soneone visit our web server.&quot;)
-    //获取请求对象的相关信息
-    const url = req.url
-    const method = req.method
-    //这个不是字符串，是用“反单引号”，位于Esc下面的键
-    var str = `your url is $&#123;url&#125; , and method $&#123;method&#125;`
-    //给请求者返回资源res.end()
-    res.end(str)
-
-&#125;)
-//4. 启动服务器
-server.listen(8080,function()&#123;
-    console.log(&quot;server running at http://172.0.0.1:8080&quot;)
-&#125;)
-</code></pre>
-<h3 id="易错点"><a href="#易错点" class="headerlink" title="易错点"></a>易错点</h3><p>在给客户端返回字符串的需要插入参数时，需要使用”`”反单引号，在Esc下面的键。</p>
-<h2 id="解决响应消息中文乱码问题"><a href="#解决响应消息中文乱码问题" class="headerlink" title="解决响应消息中文乱码问题"></a>解决响应消息中文乱码问题</h2><pre><code class="lang-javascript">//1. 引入http模块
-const http = require(&quot;http&quot;)
-//2. 创建Server实例
-const server = http.createServer()
-
-//3. 绑定服务器实例事件
-server.on(&quot;request&quot;,function(req,res)&#123;
-    //设置编码，解决中文乱码的问题
-    res.setHeader(&quot;Content-Type&quot;,&quot;text/html; charset=utf-8&quot;)
-    const url = req.url
-    var str = `你请求的url为：$&#123;url&#125;`
-    res.end(str)
-&#125;)
-
-//4. 启动服务器
-server.listen(8080,function()&#123;
-    console.log(&quot;服务器已启动  http://172.0.0.1:8080&quot;)
-&#125;)
-</code></pre>
-<h2 id="配置路由"><a href="#配置路由" class="headerlink" title="配置路由"></a>配置路由</h2><pre><code class="lang-javascript">const http = require(&quot;http&quot;)
-const path = require(&quot;path&quot;)
-const fs = require(&quot;fs&quot;)
-const server = http.createServer()
-
-server.on(&quot;request&quot;,(req,res)=&gt;&#123;
-    //获取客户端请求URL
-    const url = req.url
-    //将执行文件和客户端请求url拼接
-    var fpath = path.join(__dirname,url)
-    console.log(fpath)
-    fs.readFile(fpath,&quot;utf-8&quot;,function(err,data)&#123;
-        //这里要加上读取编码，不然可能会发现不能链接到样式的情况
-        if (err)&#123;
-            return console.error(err)
-        &#125;
-            res.end(data) 
-    &#125;)
-&#125;)
-
-server.listen(8080,function()&#123;
-    console.log(&quot;服务器已启动 http://172.0.0.1:8080&quot;)
-&#125;)
-</code></pre>
-
+    <h2 id="创建简单的web服务器"><a class="markdownIt-Anchor" href="#创建简单的web服务器">#</a> 创建简单的 web 服务器</h2>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment">//1. 导入 http 模块</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">const</span> http <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"http"</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token comment">//2. 创建 web 服务器实例</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token keyword">const</span> server <span class="token operator">=</span> http<span class="token punctuation">.</span><span class="token function">createServer</span><span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token comment">//3. 为服务器绑定 request 事件，监听客户端的请求</span></pre></td></tr><tr><td data-num="6"></td><td><pre>server<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">"request"</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span>res</span><span class="token punctuation">)</span><span class="token operator">=></span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token comment">//req 是请求对象，里面包括请求 url. 请求类型 post、get 等</span></pre></td></tr><tr><td data-num="8"></td><td><pre>    <span class="token comment">//res 是响应对象</span></pre></td></tr><tr><td data-num="9"></td><td><pre>    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Soneone visit our web server."</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="10"></td><td><pre>    <span class="token comment">// 获取请求对象的相关信息</span></pre></td></tr><tr><td data-num="11"></td><td><pre>    <span class="token keyword">const</span> url <span class="token operator">=</span> req<span class="token punctuation">.</span>url</pre></td></tr><tr><td data-num="12"></td><td><pre>    <span class="token keyword">const</span> method <span class="token operator">=</span> req<span class="token punctuation">.</span>method</pre></td></tr><tr><td data-num="13"></td><td><pre>    <span class="token comment">// 这个不是字符串，是用 “反单引号”，位于 Esc 下面的键</span></pre></td></tr><tr><td data-num="14"></td><td><pre>    <span class="token keyword">var</span> str <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">your url is </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>url<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string"> , and method </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>method<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token template-punctuation string">`</span></span></pre></td></tr><tr><td data-num="15"></td><td><pre>    <span class="token comment">// 给请求者返回资源 res.end ()</span></pre></td></tr><tr><td data-num="16"></td><td><pre>    res<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="17"></td><td><pre>    </pre></td></tr><tr><td data-num="18"></td><td><pre><span class="token punctuation">&#125;</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="19"></td><td><pre><span class="token comment">//4. 启动服务器</span></pre></td></tr><tr><td data-num="20"></td><td><pre>server<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token number">8080</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="21"></td><td><pre>    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"server running at http://172.0.0.1:8080"</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="22"></td><td><pre><span class="token punctuation">&#125;</span><span class="token punctuation">)</span></pre></td></tr></table></figure><h3 id="易错点"><a class="markdownIt-Anchor" href="#易错点">#</a> 易错点</h3>
+<p>在给客户端返回字符串的需要插入参数时，需要使用 &quot;`&quot; 反单引号，在 Esc 下面的键。</p>
+<h2 id="解决响应消息中文乱码问题"><a class="markdownIt-Anchor" href="#解决响应消息中文乱码问题">#</a> 解决响应消息中文乱码问题</h2>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment">//1. 引入 http 模块</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">const</span> http <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"http"</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token comment">//2. 创建 Server 实例</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token keyword">const</span> server <span class="token operator">=</span> http<span class="token punctuation">.</span><span class="token function">createServer</span><span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="5"></td><td><pre></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token comment">//3. 绑定服务器实例事件</span></pre></td></tr><tr><td data-num="7"></td><td><pre>server<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">"request"</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span>res</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="8"></td><td><pre>    <span class="token comment">// 设置编码，解决中文乱码的问题</span></pre></td></tr><tr><td data-num="9"></td><td><pre>    res<span class="token punctuation">.</span><span class="token function">setHeader</span><span class="token punctuation">(</span><span class="token string">"Content-Type"</span><span class="token punctuation">,</span><span class="token string">"text/html; charset=utf-8"</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="10"></td><td><pre>    <span class="token keyword">const</span> url <span class="token operator">=</span> req<span class="token punctuation">.</span>url</pre></td></tr><tr><td data-num="11"></td><td><pre>    <span class="token keyword">var</span> str <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">你请求的url为：</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>url<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token template-punctuation string">`</span></span></pre></td></tr><tr><td data-num="12"></td><td><pre>    res<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="13"></td><td><pre><span class="token punctuation">&#125;</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="14"></td><td><pre></pre></td></tr><tr><td data-num="15"></td><td><pre><span class="token comment">//4. 启动服务器</span></pre></td></tr><tr><td data-num="16"></td><td><pre>server<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token number">8080</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="17"></td><td><pre>    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"服务器已启动  http://172.0.0.1:8080"</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="18"></td><td><pre><span class="token punctuation">&#125;</span><span class="token punctuation">)</span></pre></td></tr></table></figure><h2 id="配置路由"><a class="markdownIt-Anchor" href="#配置路由">#</a> 配置路由</h2>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">const</span> http <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"http"</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"path"</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">const</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"fs"</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token keyword">const</span> server <span class="token operator">=</span> http<span class="token punctuation">.</span><span class="token function">createServer</span><span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="5"></td><td><pre></pre></td></tr><tr><td data-num="6"></td><td><pre>server<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">"request"</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span>res</span><span class="token punctuation">)</span><span class="token operator">=></span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token comment">// 获取客户端请求 URL</span></pre></td></tr><tr><td data-num="8"></td><td><pre>    <span class="token keyword">const</span> url <span class="token operator">=</span> req<span class="token punctuation">.</span>url</pre></td></tr><tr><td data-num="9"></td><td><pre>    <span class="token comment">// 将执行文件和客户端请求 url 拼接</span></pre></td></tr><tr><td data-num="10"></td><td><pre>    <span class="token keyword">var</span> fpath <span class="token operator">=</span> path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span>url<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="11"></td><td><pre>    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>fpath<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="12"></td><td><pre>    fs<span class="token punctuation">.</span><span class="token function">readFile</span><span class="token punctuation">(</span>fpath<span class="token punctuation">,</span><span class="token string">"utf-8"</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span>data</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="13"></td><td><pre>        <span class="token comment">// 这里要加上读取编码，不然可能会发现不能链接到样式的情况</span></pre></td></tr><tr><td data-num="14"></td><td><pre>        <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="15"></td><td><pre>            <span class="token keyword">return</span> console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="16"></td><td><pre>        <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="17"></td><td><pre>            res<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span> </pre></td></tr><tr><td data-num="18"></td><td><pre>    <span class="token punctuation">&#125;</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="19"></td><td><pre><span class="token punctuation">&#125;</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="20"></td><td><pre></pre></td></tr><tr><td data-num="21"></td><td><pre>server<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token number">8080</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="22"></td><td><pre>    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"服务器已启动 http://172.0.0.1:8080"</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="23"></td><td><pre><span class="token punctuation">&#125;</span><span class="token punctuation">)</span></pre></td></tr></table></figure>
   </div>
 
    <footer>
@@ -323,7 +261,7 @@ server.listen(8080,function()&#123;
     <div class="item left">
       
 
-  <a href="/b03846b2.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipesng5oej20zk0m87d4.jpg" title="好用的PDF软件">
+  <a href="/b03846b2.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipetlbztpj20zk0m84qp.jpg" title="好用的PDF软件">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> 好物安利</span>
   <h3>好用的PDF软件</h3>
@@ -333,9 +271,9 @@ server.listen(8080,function()&#123;
     <div class="item right">
       
 
-  <a href="/1fceb7fb.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclfdu6exj20zk0m87hw.jpg" title="NodeJs系列-Day04">
+  <a href="/1fceb7fb.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicli9lfebj20zk0m84qp.jpg" title="NodeJs系列-Day04">
   <span class="type">下一篇</span>
-  <span class="category"><i class="ic i-flag"></i> </span>
+  <span class="category"><i class="ic i-flag"></i> nodejs</span>
   <h3>NodeJs系列-Day04</h3>
   </a>
 
@@ -355,11 +293,11 @@ server.listen(8080,function()&#123;
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E7%AE%80%E5%8D%95%E7%9A%84web%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="toc-number">1.</span> <span class="toc-text">创建简单的web服务器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%98%93%E9%94%99%E7%82%B9"><span class="toc-number">1.1.</span> <span class="toc-text">易错点</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E5%93%8D%E5%BA%94%E6%B6%88%E6%81%AF%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98"><span class="toc-number">2.</span> <span class="toc-text">解决响应消息中文乱码问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E8%B7%AF%E7%94%B1"><span class="toc-number">3.</span> <span class="toc-text">配置路由</span></a></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E7%AE%80%E5%8D%95%E7%9A%84web%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="toc-number">1.</span> <span class="toc-text"> 创建简单的 web 服务器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%98%93%E9%94%99%E7%82%B9"><span class="toc-number">1.1.</span> <span class="toc-text"> 易错点</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E5%93%8D%E5%BA%94%E6%B6%88%E6%81%AF%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98"><span class="toc-number">2.</span> <span class="toc-text"> 解决响应消息中文乱码问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E8%B7%AF%E7%94%B1"><span class="toc-number">3.</span> <span class="toc-text"> 配置路由</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
-          <li><a href="/c797c821.html" rel="bookmark" title="NodeJs系列-Day01-文件处理">NodeJs系列-Day01-文件处理</a></li><li><a href="/f6ad12ce.html" rel="bookmark" title="NodeJs系列-Day02">NodeJs系列-Day02</a></li><li class="active"><a href="/81aa2258.html" rel="bookmark" title="NodeJs系列-Day03">NodeJs系列-Day03</a></li>
+          <li><a href="/c797c821.html" rel="bookmark" title="NodeJs系列-Day01-文件处理">NodeJs系列-Day01-文件处理</a></li><li><a href="/f6ad12ce.html" rel="bookmark" title="NodeJs系列-Day02">NodeJs系列-Day02</a></li><li class="active"><a href="/81aa2258.html" rel="bookmark" title="NodeJs系列-Day03">NodeJs系列-Day03</a></li><li><a href="/1fceb7fb.html" rel="bookmark" title="NodeJs系列-Day04">NodeJs系列-Day04</a></li>
         </ul>
       </div>
       <div class="overview panel" data-title="站点概览">
@@ -373,7 +311,7 @@ server.listen(8080,function()&#123;
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">94</span>
+        <span class="count">95</span>
         <span class="name">文章</span>
       </a>
     </div>
@@ -385,7 +323,7 @@ server.listen(8080,function()&#123;
     </div>
     <div class="item tags">
       <a href="/tags/">
-        <span class="count">31</span>
+        <span class="count">30</span>
         <span class="name">标签</span>
       </a>
     </div>
@@ -501,12 +439,12 @@ server.listen(8080,function()&#123;
 <div class="breadcrumb">
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/" title="分类于 博客的食用方法">博客的食用方法</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
 </div>
 
-    <span><a href="/a7032750.html" title="文章Front-Matter参数设置">文章Front-Matter参数设置</a></span>
+    <span><a href="/b332b009.html" title="python爬虫-千千音乐">python爬虫-千千音乐</a></span>
   </li>
 
       
@@ -520,7 +458,33 @@ server.listen(8080,function()&#123;
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
 </div>
 
-    <span><a href="/af3d5cf5.html" title="安装qt5的时候报错">安装qt5的时候报错</a></span>
+    <span><a href="/b9893092.html" title="python Qt5实现记事本基本功能">python Qt5实现记事本基本功能</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
+</div>
+
+    <span><a href="/8d43d157.html" title="如何使用Xshell远程虚拟机">如何使用Xshell远程虚拟机</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
+</div>
+
+    <span><a href="/cf63c07.html" title="第四篇：安装Nodejs---从0基础搭建Hexo博客">第四篇：安装Nodejs---从0基础搭建Hexo博客</a></span>
   </li>
 
       
@@ -531,24 +495,42 @@ server.listen(8080,function()&#123;
 <i class="ic i-angle-right"></i>
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/GitHub/" title="分类于 GitHub">GitHub</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/window/" title="分类于 window">window</a>
 </div>
 
-    <span><a href="/43d2d741.html" title="Git使用方法">Git使用方法</a></span>
+    <span><a href="/b7d12f04.html" title="window系统查看端口并杀掉">window系统查看端口并杀掉</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E5%9F%BA%E7%A1%80%E5%AD%A6%E7%A7%91/" title="分类于 基础学科">基础学科</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E5%9F%BA%E7%A1%80%E5%AD%A6%E7%A7%91/%E5%A4%96%E8%AF%AD/" title="分类于 外语">外语</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E5%9F%BA%E7%A1%80%E5%AD%A6%E7%A7%91/%E5%A4%96%E8%AF%AD/%E6%97%A5%E8%AF%AD/" title="分类于 日语">日语</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E5%8A%9E%E5%85%AC%E8%BD%AF%E4%BB%B6/" title="分类于 办公软件">办公软件</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E5%8A%9E%E5%85%AC%E8%BD%AF%E4%BB%B6/Word/" title="分类于 Word">Word</a>
 </div>
 
-    <span><a href="/39c6cce6.html" title="日本语-作文">日本语-作文</a></span>
+    <span><a href="/f6ebc4d7.html" title="word文档转换成PDF文件">word文档转换成PDF文件</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E5%8A%9E%E5%85%AC%E8%BD%AF%E4%BB%B6/" title="分类于 办公软件">办公软件</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E5%8A%9E%E5%85%AC%E8%BD%AF%E4%BB%B6/Word/" title="分类于 Word">Word</a>
+</div>
+
+    <span><a href="/30d35056.html" title="Word调整目录编号和标题空隙">Word调整目录编号和标题空隙</a></span>
   </li>
 
       
@@ -559,12 +541,24 @@ server.listen(8080,function()&#123;
 <i class="ic i-angle-right"></i>
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/" title="分类于 java">java</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/fail/" title="分类于 fail">fail</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
 </div>
 
-    <span><a href="/8a90aba9.html" title="key">key</a></span>
+    <span><a href="/6c24ad8e.html" title="python安装&#x2F;更新包出现报错">python安装/更新包出现报错</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
+</div>
+
+    <span><a href="/3050703f.html" title="python批量修改文件名">python批量修改文件名</a></span>
   </li>
 
       
@@ -578,57 +572,7 @@ server.listen(8080,function()&#123;
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
 </div>
 
-    <span><a href="/6c2393ec.html" title="第七篇：购买域名---从0基础搭建Hexo博客">第七篇：购买域名---从0基础搭建Hexo博客</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E7%94%9F%E6%B4%BB/" title="分类于 生活">生活</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E7%94%9F%E6%B4%BB/%E5%A5%BD%E7%89%A9%E5%AE%89%E5%88%A9/" title="分类于 好物安利">好物安利</a>
-</div>
-
-    <span><a href="/ee3e214f.html" title="QQ&#x2F;微信&#x2F;支付宝 收款码美化">QQ/微信/支付宝 收款码美化</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
-</div>
-
-    <span><a href="/b75a1db6.html" title="第三篇：Git提交文件---从0基础搭建Hexo博客">第三篇：Git提交文件---从0基础搭建Hexo博客</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E7%94%9F%E6%B4%BB/" title="分类于 生活">生活</a>
-</div>
-
-    <span><a href="/2c1b0cfb.html" title="计算机系20级计算机科学与技术四班喜迎二十大">计算机系20级计算机科学与技术四班喜迎二十大</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/Andriod/" title="分类于 Andriod">Andriod</a>
-</div>
-
-    <span><a href="/17554f39.html" title="关于手机双开不显示双开目录999">关于手机双开不显示双开目录999</a></span>
+    <span><a href="/859f60bd.html" title="第二篇：安装Git---从0基础搭建Hexo博客">第二篇：安装Git---从0基础搭建Hexo博客</a></span>
   </li>
 
   </ul>
@@ -653,13 +597,13 @@ server.listen(8080,function()&#123;
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="站点总字数">135k 字</span>
+    <span title="站点总字数">127k 字</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="站点阅读时长">3:03</span>
+    <span title="站点阅读时长">2:52</span>
   </div>
   <div class="powered-by">
     基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>

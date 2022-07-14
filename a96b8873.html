@@ -85,7 +85,7 @@ Maven build失败 MAVEN:单元测试报错 - fail - java - 编程语言 - 计算
       <i class="ic i-pen"></i>
     </span>
     <span class="text">本文字数</span>
-    <span>633</span>
+    <span>568</span>
     <span class="text">字</span>
   </span>
   <span class="item" title="阅读时长">
@@ -126,12 +126,12 @@ Maven build失败 MAVEN:单元测试报错 - fail - java - 编程语言 - 计算
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicliwyw55j20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicm0n457cj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giciuja1j1j20zk0m8kjl.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclxfdlttj20zk0m8npd.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeyvx1d4j20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclxxcb6rj20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipexw3o58j20zk0m8e81.jpg"></li>
           <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicis081o9j20zk0m8dmr.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipetlbztpj20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicit31ffoj20zk0m8naf.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipetv6p75j20zk0m8x6p.jpg"></li>
         </ul>
       </div>
     </header>
@@ -189,27 +189,18 @@ Maven build失败 MAVEN:单元测试报错 - fail - java - 编程语言 - 计算
   <div class="body md" itemprop="articleBody">
     
 
-    <h2 id="报错内容-1-red"><a href="#报错内容-1-red" class="headerlink" title="报错内容~1~{.red}"></a>报错内容~1~{.red}</h2><p>[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project lab11: Compilation failure: Compilation failure:  </p>
-<p>[ERROR] 不再支持源选项 5。请使用 7 或更高版本。 </p>
+    <h2 id="报错内容1"><a class="markdownIt-Anchor" href="#报错内容1">#</a> 报错内容<sub class="red"> 1</sub></h2>
+<p>[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project lab11: Compilation failure: Compilation failure:</p>
+<p>[ERROR] 不再支持源选项 5。请使用 7 或更高版本。</p>
 <p>[ERROR] 不再支持目标选项 5。请使用 7 或更高版本。</p>
-<h3 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h3><p>在pom.xml添加插件级可以解决</p>
-<pre><code class="lang-xml">  &lt;build&gt;
-   &lt;plugins&gt;
-       &lt;plugin&gt;
-           &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
-           &lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;
-           &lt;configuration&gt;
-               &lt;source&gt;1.8&lt;/source&gt;
-               &lt;target&gt;1.8&lt;/target&gt;
-               &lt;encoding&gt;UTF-8&lt;/encoding&gt;
-           &lt;/configuration&gt;
-       &lt;/plugin&gt;
-   &lt;/plugins&gt;
-&lt;/build&gt;
-</code></pre>
-<h2 id="报错内容-2-red"><a href="#报错内容-2-red" class="headerlink" title="报错内容~2~{.red}"></a>报错内容~2~{.red}</h2><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022051525.jpeg" alt=""></p>
-<h3 id="解决办法-1"><a href="#解决办法-1" class="headerlink" title="解决办法"></a>解决办法</h3><p>其实在pom.xml依赖有重复了，删掉就没问题了</p>
-<h2 id="单元测试成功"><a href="#单元测试成功" class="headerlink" title="单元测试成功"></a>单元测试成功</h2><p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022051530.jpeg" alt=""></p>
+<h3 id="解决办法"><a class="markdownIt-Anchor" href="#解决办法">#</a> 解决办法</h3>
+<p>在 pom.xml 添加插件级可以解决</p>
+<figure class="highlight xml"><figcaption data-lang="XML"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>build</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="2"></td><td><pre>   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>plugins</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="3"></td><td><pre>       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>plugin</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="4"></td><td><pre>           <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">></span></span>org.apache.maven.plugins<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="5"></td><td><pre>           <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">></span></span>maven-compiler-plugin<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="6"></td><td><pre>           <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>configuration</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="7"></td><td><pre>               <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>source</span><span class="token punctuation">></span></span>1.8<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>source</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="8"></td><td><pre>               <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>target</span><span class="token punctuation">></span></span>1.8<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>target</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="9"></td><td><pre>               <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>encoding</span><span class="token punctuation">></span></span>UTF-8<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>encoding</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="10"></td><td><pre>           <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>configuration</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="11"></td><td><pre>       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>plugin</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="12"></td><td><pre>   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>plugins</span><span class="token punctuation">></span></span></pre></td></tr><tr><td data-num="13"></td><td><pre><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>build</span><span class="token punctuation">></span></span></pre></td></tr></table></figure><h2 id="报错内容2"><a class="markdownIt-Anchor" href="#报错内容2">#</a> 报错内容<sub class="red"> 2</sub></h2>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022051525.jpeg" alt=""></p>
+<h3 id="解决办法-2"><a class="markdownIt-Anchor" href="#解决办法-2">#</a> 解决办法</h3>
+<p>其实在 pom.xml 依赖有重复了，删掉就没问题了</p>
+<h2 id="单元测试成功"><a class="markdownIt-Anchor" href="#单元测试成功">#</a> 单元测试成功</h2>
+<p><img data-src="https://cdn.jsdelivr.net/gh/0000rookie/imgs/2022051530.jpeg" alt=""></p>
 
       <div class="tags">
           <a href="/tags/BUG/" rel="tag"><i class="ic i-tag"></i> BUG</a>
@@ -286,7 +277,7 @@ Maven build失败 MAVEN:单元测试报错 - fail - java - 编程语言 - 计算
     <div class="item left">
       
 
-  <a href="/8075134e.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicliierfjj20zk0m8npd.jpg" title="numpy画复合函数">
+  <a href="/8075134e.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipetfk5zwj20zk0m8e81.jpg" title="numpy画复合函数">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> python</span>
   <h3>numpy画复合函数</h3>
@@ -296,7 +287,7 @@ Maven build失败 MAVEN:单元测试报错 - fail - java - 编程语言 - 计算
     <div class="item right">
       
 
-  <a href="/6c24ad8e.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclx29mstj20zk0m8hdt.jpg" title="python安装&#x2F;更新包出现报错">
+  <a href="/6c24ad8e.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclxfdlttj20zk0m8npd.jpg" title="python安装&#x2F;更新包出现报错">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> python</span>
   <h3>python安装/更新包出现报错</h3>
@@ -318,7 +309,7 @@ Maven build失败 MAVEN:单元测试报错 - fail - java - 编程语言 - 计算
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8A%A5%E9%94%99%E5%86%85%E5%AE%B9-1-red"><span class="toc-number">1.</span> <span class="toc-text">报错内容~1~{.red}</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95"><span class="toc-number">1.1.</span> <span class="toc-text">解决办法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8A%A5%E9%94%99%E5%86%85%E5%AE%B9-2-red"><span class="toc-number">2.</span> <span class="toc-text">报错内容~2~{.red}</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95-1"><span class="toc-number">2.1.</span> <span class="toc-text">解决办法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%88%90%E5%8A%9F"><span class="toc-number">3.</span> <span class="toc-text">单元测试成功</span></a></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8A%A5%E9%94%99%E5%86%85%E5%AE%B91"><span class="toc-number">1.</span> <span class="toc-text"> 报错内容 1</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95"><span class="toc-number">1.1.</span> <span class="toc-text"> 解决办法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8A%A5%E9%94%99%E5%86%85%E5%AE%B92"><span class="toc-number">2.</span> <span class="toc-text"> 报错内容 2</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95-2"><span class="toc-number">2.1.</span> <span class="toc-text"> 解决办法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%88%90%E5%8A%9F"><span class="toc-number">3.</span> <span class="toc-text"> 单元测试成功</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
@@ -336,7 +327,7 @@ Maven build失败 MAVEN:单元测试报错 - fail - java - 编程语言 - 计算
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">94</span>
+        <span class="count">95</span>
         <span class="name">文章</span>
       </a>
     </div>
@@ -348,7 +339,7 @@ Maven build失败 MAVEN:单元测试报错 - fail - java - 编程语言 - 计算
     </div>
     <div class="item tags">
       <a href="/tags/">
-        <span class="count">31</span>
+        <span class="count">30</span>
         <span class="name">标签</span>
       </a>
     </div>
@@ -464,12 +455,38 @@ Maven build失败 MAVEN:单元测试报错 - fail - java - 编程语言 - 计算
 <div class="breadcrumb">
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/" title="分类于 java">java</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/fail/" title="分类于 fail">fail</a>
 </div>
 
-    <span><a href="/73480a46.html" title="javase触发事件">javase触发事件</a></span>
+    <span><a href="/28af37eb.html" title="Hexo部署err:Error:Spawn failed错误">Hexo部署err:Error:Spawn failed错误</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
+</div>
+
+    <span><a href="/b9893092.html" title="python Qt5实现记事本基本功能">python Qt5实现记事本基本功能</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
+</div>
+
+    <span><a href="/6c24ad8e.html" title="python安装&#x2F;更新包出现报错">python安装/更新包出现报错</a></span>
   </li>
 
       
@@ -480,22 +497,50 @@ Maven build失败 MAVEN:单元测试报错 - fail - java - 编程语言 - 计算
 <i class="ic i-angle-right"></i>
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/GitHub/" title="分类于 GitHub">GitHub</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/Linux/" title="分类于 Linux">Linux</a>
 </div>
 
-    <span><a href="/43d2d741.html" title="Git使用方法">Git使用方法</a></span>
+    <span><a href="/111f4f09.html" title="CentOS新增root用户">CentOS新增root用户</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E5%9F%BA%E7%A1%80%E5%AD%A6%E7%A7%91/" title="分类于 基础学科">基础学科</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E5%9F%BA%E7%A1%80%E5%AD%A6%E7%A7%91/%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/" title="分类于 期末复习">期末复习</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
 </div>
 
-    <span><a href="/87a258b3.html" title="2022期末复习资料">2022期末复习资料</a></span>
+    <span><a href="/1edcfdea.html" title="python-math库">python-math库</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/window/" title="分类于 window">window</a>
+</div>
+
+    <span><a href="/cdd384e5.html" title="win10指定文件默认方式打开">win10指定文件默认方式打开</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/fail/" title="分类于 fail">fail</a>
+</div>
+
+    <span><a href="/cdc2e518.html" title="搭建博客常见的错误">搭建博客常见的错误</a></span>
   </li>
 
       
@@ -506,10 +551,24 @@ Maven build失败 MAVEN:单元测试报错 - fail - java - 编程语言 - 计算
 <i class="ic i-angle-right"></i>
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E6%A8%A1%E5%9D%97/" title="分类于 模块">模块</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/" title="分类于 博客的食用方法">博客的食用方法</a>
 </div>
 
-    <span><a href="/e85071ad.html" title="搭建GitHu图床">搭建GitHu图床</a></span>
+    <span><a href="/a7032750.html" title="文章Front-Matter参数设置">文章Front-Matter参数设置</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
+</div>
+
+    <span><a href="/859f60bd.html" title="第二篇：安装Git---从0基础搭建Hexo博客">第二篇：安装Git---从0基础搭建Hexo博客</a></span>
   </li>
 
       
@@ -523,77 +582,7 @@ Maven build失败 MAVEN:单元测试报错 - fail - java - 编程语言 - 计算
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/Linux/" title="分类于 Linux">Linux</a>
 </div>
 
-    <span><a href="/9a6dde1d.html" title="基础Vim修改文件">基础Vim修改文件</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/" title="分类于 java">java</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/fail/" title="分类于 fail">fail</a>
-</div>
-
-    <span><a href="/5c23aa63.html" title="Maven识别失败">Maven识别失败</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
-</div>
-
-    <span><a href="/edaa94fb.html" title="为博客添加免费的CDN加速">为博客添加免费的CDN加速</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/Linux/" title="分类于 Linux">Linux</a>
-</div>
-
-    <span><a href="/3d358537.html" title="Linux忘记数据库密码">Linux忘记数据库密码</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/Andriod/" title="分类于 Andriod">Andriod</a>
-</div>
-
-    <span><a href="/70ded1a5.html" title="root破解手机限速问题">root破解手机限速问题</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/" title="分类于 java">java</a>
-</div>
-
-    <span><a href="/b241aa8.html" title="暑假Java Web计划">暑假Java Web计划</a></span>
+    <span><a href="/c5deac78.html" title="Ubuntu怎么开启FTP(菜鸡篇)">Ubuntu怎么开启FTP(菜鸡篇)</a></span>
   </li>
 
   </ul>
@@ -618,13 +607,13 @@ Maven build失败 MAVEN:单元测试报错 - fail - java - 编程语言 - 计算
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="站点总字数">135k 字</span>
+    <span title="站点总字数">127k 字</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="站点阅读时长">3:03</span>
+    <span title="站点阅读时长">2:52</span>
   </div>
   <div class="powered-by">
     基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
