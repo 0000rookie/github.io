@@ -1,0 +1,706 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+
+<meta name="yandex-verification" content="0f41f442b8921fd6" /> 
+<meta name="description" content="这是记录璃柏涟的学习情况，其中包括 python、springboot、andriod、root" /> 
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+  <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/0000rookie/github.io/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="https://cdn.jsdelivr.net/gh/0000rookie/github.io/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="google-site-verification" content="true">
+  <meta name="msvalidate.01" content="true">
+  <meta name="yandex-verification" content="true">
+
+
+<link rel="alternate" type="application/rss+xml" title="瞬間の筆記" href="https://www.hikki.site/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="瞬間の筆記" href="https://www.hikki.site/atom.xml" />
+<link rel="alternate" type="application/json" title="瞬間の筆記" href="https://www.hikki.site/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/0000rookie/github.io/css/app.css?v=0.2.5">
+
+  
+
+<link rel="canonical" href="https://www.hikki.site/2ef85661.html">
+
+
+
+  <title>
+NodeJs系列-Day07-数据库处理 - nodejs - 编程语言 - 计算机科学 |
+筆記 = 瞬間の筆記 = 专注学习筆記</title>
+<meta name="generator" content="Hexo 6.1.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">NodeJs系列-Day07-数据库处理
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2022-07-16 11:28:22">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2022-07-16T11:28:22+08:00">2022-07-16</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span class="text">本文字数</span>
+    <span>3.8k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span class="text">阅读时长</span>
+    <span>5 分钟</span>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">筆記</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclx6phq6j20zk0m8e36.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipewkhf1zj20zk0m81kx.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipexj2jgzj20zk0m8b09.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipesng5oej20zk0m87d4.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicli9lfebj20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giph4wqtg4j20zk0m8x6p.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span><i class="ic i-angle-right"></i>
+<span  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" itemprop="item" rel="index" title="分类于 计算机科学"><span itemprop="name">计算机科学</span></a>
+<meta itemprop="position" content="1" /></span>
+<i class="ic i-angle-right"></i>
+<span  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" itemprop="item" rel="index" title="分类于 编程语言"><span itemprop="name">编程语言</span></a>
+<meta itemprop="position" content="2" /></span>
+<i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/nodejs/" itemprop="item" rel="index" title="分类于 nodejs"><span itemprop="name">nodejs</span></a>
+<meta itemprop="position" content="3" /></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="https://www.hikki.site/2ef85661.html">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/0000rookie/github.io/images/avatar.jpg">
+    <meta itemprop="name" content="璃柏涟">
+    <meta itemprop="description" content="专注学习筆記, 喜欢的东西就努力去追求，万一成功了呢！">
+  </span>
+
+
+
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="瞬間の筆記">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h2 id="mysql-查"><a class="markdownIt-Anchor" href="#mysql-查">#</a> MySql - 查</h2>
+<figure class="highlight javascript"><figcaption data-lang="javascript"><span>mysql查询语句</span></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">const</span>  mysql <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'mysql'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token comment">// 端口默认是 3306，不需要再添加</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">const</span> db <span class="token operator">=</span> mysql<span class="token punctuation">.</span><span class="token function">createPool</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token literal-property property">host</span><span class="token operator">:</span> <span class="token string">'127.0.0.1'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    <span class="token literal-property property">user</span><span class="token operator">:</span> <span class="token string">'root'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token literal-property property">password</span><span class="token operator">:</span> <span class="token string">'root'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token literal-property property">database</span><span class="token operator">:</span> <span class="token string">'test'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token punctuation">&#125;</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token keyword">let</span> str <span class="token operator">=</span> <span class="token string">'select * from user'</span></pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token comment">// 测试 mysql 是否正常工作，select 1 的作用只是测试是否正常工作</span></pre></td></tr><tr><td data-num="11"></td><td><pre>db<span class="token punctuation">.</span><span class="token function">query</span><span class="token punctuation">(</span>str<span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span>results</span><span class="token punctuation">)</span><span class="token operator">=></span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="12"></td><td><pre>    <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token keyword">return</span> console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="13"></td><td><pre>    <span class="token comment">// 查询结构是一个数组对象</span></pre></td></tr><tr><td data-num="14"></td><td><pre>    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>results<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="15"></td><td><pre><span class="token punctuation">&#125;</span><span class="token punctuation">)</span></pre></td></tr></table></figure><p>查询结构是一个数组对象</p>
+<pre><code class="language-mysql">[
+  RowDataPacket &#123; name: '璃柏涟', age: 21 &#125;,
+  RowDataPacket &#123; name: '小黑', age: 18 &#125;
+]
+</code></pre>
+<h2 id="mysql-增"><a class="markdownIt-Anchor" href="#mysql-增">#</a> MySql - 增</h2>
+<h3 id="方法一"><a class="markdownIt-Anchor" href="#方法一">#</a> 方法一</h3>
+<figure class="highlight javascript"><figcaption data-lang="javascript"><span>mysql增</span></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">const</span>  mysql <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'mysql'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token comment">// 端口默认是 3306，不需要再添加</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">const</span> db <span class="token operator">=</span> mysql<span class="token punctuation">.</span><span class="token function">createPool</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token literal-property property">host</span><span class="token operator">:</span> <span class="token string">'127.0.0.1'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    <span class="token literal-property property">user</span><span class="token operator">:</span> <span class="token string">'root'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token literal-property property">password</span><span class="token operator">:</span> <span class="token string">'root'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token literal-property property">database</span><span class="token operator">:</span> <span class="token string">'test'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token punctuation">&#125;</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token comment">// 方法一：</span></pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token comment">// 1. 要插入到 user 表的数据对象</span></pre></td></tr><tr><td data-num="11"></td><td><pre><span class="token keyword">const</span> user <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token literal-property property">name</span><span class="token operator">:</span><span class="token string">'小白'</span><span class="token punctuation">,</span><span class="token literal-property property">age</span><span class="token operator">:</span><span class="token number">3</span><span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="12"></td><td><pre><span class="token comment">// 2. 要执行的 SQL 语句，其中英文？表示占位符</span></pre></td></tr><tr><td data-num="13"></td><td><pre><span class="token keyword">let</span> str <span class="token operator">=</span> <span class="token string">'insert into user (name,age) values(?,?)'</span></pre></td></tr><tr><td data-num="14"></td><td><pre><span class="token comment">// 3. 使用数组的形式，以此为？占位符指定具体的值</span></pre></td></tr><tr><td data-num="15"></td><td><pre>db<span class="token punctuation">.</span><span class="token function">query</span><span class="token punctuation">(</span>str<span class="token punctuation">,</span><span class="token punctuation">[</span>user<span class="token punctuation">.</span>name<span class="token punctuation">,</span>user<span class="token punctuation">.</span>age<span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span>results</span><span class="token punctuation">)</span><span class="token operator">=></span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="16"></td><td><pre>    <span class="token comment">// 若有错误则打印出来</span></pre></td></tr><tr><td data-num="17"></td><td><pre>    <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token keyword">return</span> console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="18"></td><td><pre>    <span class="token comment">// 若执行成功则打印成功姐结果</span></pre></td></tr><tr><td data-num="19"></td><td><pre>    <span class="token keyword">if</span> <span class="token punctuation">(</span>results<span class="token punctuation">.</span>affectedRows<span class="token operator">===</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="20"></td><td><pre>        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'数据插入成功'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="21"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="22"></td><td><pre><span class="token punctuation">&#125;</span><span class="token punctuation">)</span></pre></td></tr></table></figure><h3 id="方法二"><a class="markdownIt-Anchor" href="#方法二">#</a> 方法二</h3>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">const</span> mysql <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'mysql'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token comment">// 端口默认是 3306，不需要再添加</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">const</span> db <span class="token operator">=</span> mysql<span class="token punctuation">.</span><span class="token function">createPool</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token literal-property property">host</span><span class="token operator">:</span> <span class="token string">'127.0.0.1'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    <span class="token literal-property property">user</span><span class="token operator">:</span> <span class="token string">'root'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token literal-property property">password</span><span class="token operator">:</span> <span class="token string">'root'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token literal-property property">database</span><span class="token operator">:</span> <span class="token string">'test'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token punctuation">&#125;</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="9"></td><td><pre></pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token comment">// 方法二：</span></pre></td></tr><tr><td data-num="11"></td><td><pre><span class="token keyword">const</span> user <span class="token operator">=</span> <span class="token punctuation">&#123;</span> <span class="token literal-property property">id</span><span class="token operator">:</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token literal-property property">name</span><span class="token operator">:</span><span class="token string">'小万'</span><span class="token punctuation">,</span><span class="token literal-property property">age</span><span class="token operator">:</span><span class="token number">55</span><span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="12"></td><td><pre><span class="token keyword">const</span> sql <span class="token operator">=</span> <span class="token string">'insert into user set ?'</span></pre></td></tr><tr><td data-num="13"></td><td><pre>db<span class="token punctuation">.</span><span class="token function">query</span><span class="token punctuation">(</span>sql<span class="token punctuation">,</span>user<span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span>results</span><span class="token punctuation">)</span><span class="token operator">=></span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="14"></td><td><pre>    <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="15"></td><td><pre>        console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="16"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="17"></td><td><pre>    <span class="token keyword">if</span> <span class="token punctuation">(</span>results<span class="token punctuation">.</span>affectedRows <span class="token operator">===</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="18"></td><td><pre>        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'插入数据成功'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="19"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="20"></td><td><pre><span class="token punctuation">&#125;</span><span class="token punctuation">)</span></pre></td></tr></table></figure><h3 id="mysql-改"><a class="markdownIt-Anchor" href="#mysql-改">#</a> MySql - 改</h3>
+<h3 id="方法一-2"><a class="markdownIt-Anchor" href="#方法一-2">#</a> 方法一</h3>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">const</span> mysql <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'mysql'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token comment">// 端口默认是 3306，不需要再添加</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">const</span> db <span class="token operator">=</span> mysql<span class="token punctuation">.</span><span class="token function">createPool</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token literal-property property">host</span><span class="token operator">:</span> <span class="token string">'127.0.0.1'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    <span class="token literal-property property">user</span><span class="token operator">:</span> <span class="token string">'root'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token literal-property property">password</span><span class="token operator">:</span> <span class="token string">'root'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token literal-property property">database</span><span class="token operator">:</span> <span class="token string">'test'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token punctuation">&#125;</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="9"></td><td><pre></pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token comment">// 方法一：</span></pre></td></tr><tr><td data-num="11"></td><td><pre><span class="token comment">// 1. 要插入到 user 表的数据对象</span></pre></td></tr><tr><td data-num="12"></td><td><pre><span class="token keyword">const</span> user <span class="token operator">=</span> <span class="token punctuation">&#123;</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'小qi'</span><span class="token punctuation">,</span> <span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token number">33</span> <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="13"></td><td><pre><span class="token comment">// 2. 要执行的 SQL 语句，其中英文？表示占位符</span></pre></td></tr><tr><td data-num="14"></td><td><pre><span class="token keyword">let</span> str <span class="token operator">=</span> <span class="token string">'update user set name =?,age =? where id =2'</span></pre></td></tr><tr><td data-num="15"></td><td><pre><span class="token comment">// 3. 使用数组的形式，以此为？占位符指定具体的值</span></pre></td></tr><tr><td data-num="16"></td><td><pre>db<span class="token punctuation">.</span><span class="token function">query</span><span class="token punctuation">(</span>str<span class="token punctuation">,</span> <span class="token punctuation">[</span>user<span class="token punctuation">.</span>name<span class="token punctuation">,</span> user<span class="token punctuation">.</span>age<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> results</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="17"></td><td><pre>    <span class="token comment">// 若有错误则打印出来</span></pre></td></tr><tr><td data-num="18"></td><td><pre>    <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token keyword">return</span> console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="19"></td><td><pre>    <span class="token comment">// 若执行成功则打印成功结果</span></pre></td></tr><tr><td data-num="20"></td><td><pre>    <span class="token keyword">if</span> <span class="token punctuation">(</span>results<span class="token punctuation">.</span>affectedRows <span class="token operator">===</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="21"></td><td><pre>        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'数据更新成功'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="22"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="23"></td><td><pre><span class="token punctuation">&#125;</span><span class="token punctuation">)</span></pre></td></tr></table></figure><h3 id="方法二-2"><a class="markdownIt-Anchor" href="#方法二-2">#</a> 方法二</h3>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">const</span> mysql <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'mysql'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token comment">// 端口默认是 3306，不需要再添加</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">const</span> db <span class="token operator">=</span> mysql<span class="token punctuation">.</span><span class="token function">createPool</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token literal-property property">host</span><span class="token operator">:</span> <span class="token string">'127.0.0.1'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    <span class="token literal-property property">user</span><span class="token operator">:</span> <span class="token string">'root'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token literal-property property">password</span><span class="token operator">:</span> <span class="token string">'root'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token literal-property property">database</span><span class="token operator">:</span> <span class="token string">'test'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token punctuation">&#125;</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="9"></td><td><pre></pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token comment">// 方法二：</span></pre></td></tr><tr><td data-num="11"></td><td><pre><span class="token keyword">const</span> user <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token literal-property property">id</span><span class="token operator">:</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token literal-property property">name</span><span class="token operator">:</span><span class="token string">'小丫'</span><span class="token punctuation">,</span><span class="token literal-property property">age</span><span class="token operator">:</span><span class="token number">2</span><span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="12"></td><td><pre><span class="token keyword">const</span> sql <span class="token operator">=</span> <span class="token string">'update user set ? where id =?'</span></pre></td></tr><tr><td data-num="13"></td><td><pre>db<span class="token punctuation">.</span><span class="token function">query</span><span class="token punctuation">(</span>sql<span class="token punctuation">,</span><span class="token punctuation">[</span>user<span class="token punctuation">,</span>user<span class="token punctuation">.</span>id<span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span>results</span><span class="token punctuation">)</span><span class="token operator">=></span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="14"></td><td><pre>    <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="15"></td><td><pre>        <span class="token keyword">return</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">.</span>message<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="16"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="17"></td><td><pre>    <span class="token keyword">if</span> <span class="token punctuation">(</span>results<span class="token punctuation">.</span>affectedRows <span class="token operator">===</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="18"></td><td><pre>        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'更新数据成功'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="19"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="20"></td><td><pre></pre></td></tr><tr><td data-num="21"></td><td><pre><span class="token punctuation">&#125;</span><span class="token punctuation">)</span></pre></td></tr></table></figure><h2 id="mysql-删"><a class="markdownIt-Anchor" href="#mysql-删">#</a> MySql - 删</h2>
+<div class="note info">
+<p>注意：如果 SQL 语句中有多个占位符，则必须使用数组为每个占位符指定具体的值<br>
+如果 SQL 语句中只有一个占位符，则可以省略数组</p>
+</div>
+<h3 id="标记删除建议使用"><a class="markdownIt-Anchor" href="#标记删除建议使用">#</a> 标记删除 (建议使用)</h3>
+<div class="note warning">
+<p>用标记数据状态来假装删除了数据，这样用户可以通过回收站来恢复数据</p>
+</div>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment">// 标记删除</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">const</span> sql <span class="token operator">=</span> <span class="token string">'update user set status=1 where id =?'</span></pre></td></tr><tr><td data-num="3"></td><td><pre>db<span class="token punctuation">.</span><span class="token function">query</span><span class="token punctuation">(</span>sql<span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span>results</span><span class="token punctuation">)</span><span class="token operator">=></span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="5"></td><td><pre>        <span class="token keyword">return</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">.</span>message<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token keyword">if</span> <span class="token punctuation">(</span>results<span class="token punctuation">.</span>affectedRows <span class="token operator">===</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="8"></td><td><pre>        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'标记删除成功'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="9"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token punctuation">&#125;</span><span class="token punctuation">)</span></pre></td></tr></table></figure><h3 id="真实删除"><a class="markdownIt-Anchor" href="#真实删除">#</a> 真实删除</h3>
+<div class="note danger no-icon">
+</div>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">const</span> mysql <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'mysql'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token comment">// 端口默认是 3306，不需要再添加</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">const</span> db <span class="token operator">=</span> mysql<span class="token punctuation">.</span><span class="token function">createPool</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token literal-property property">host</span><span class="token operator">:</span> <span class="token string">'127.0.0.1'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    <span class="token literal-property property">user</span><span class="token operator">:</span> <span class="token string">'root'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token literal-property property">password</span><span class="token operator">:</span> <span class="token string">'root'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token literal-property property">database</span><span class="token operator">:</span> <span class="token string">'test'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token punctuation">&#125;</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="9"></td><td><pre></pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token comment">// 执行查询的 SQL 语句</span></pre></td></tr><tr><td data-num="11"></td><td><pre><span class="token keyword">let</span> str <span class="token operator">=</span> <span class="token string">'delete from user where id =?'</span></pre></td></tr><tr><td data-num="12"></td><td><pre><span class="token comment">// 调用 db.query（）执行 SQL 语句的同时，为占位符指定具体的值</span></pre></td></tr><tr><td data-num="13"></td><td><pre><span class="token comment">// 注意：如果 SQL 语句中有多个占位符，则必须使用数组为每个占位符指定具体的值</span></pre></td></tr><tr><td data-num="14"></td><td><pre><span class="token comment">// 如果 SQL 语句中只有一个占位符，则可以省略数组</span></pre></td></tr><tr><td data-num="15"></td><td><pre>db<span class="token punctuation">.</span><span class="token function">query</span><span class="token punctuation">(</span>str<span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> results</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="16"></td><td><pre>    <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="17"></td><td><pre>        <span class="token keyword">return</span> console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="18"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="19"></td><td><pre>    <span class="token comment">// 打印删除成功</span></pre></td></tr><tr><td data-num="20"></td><td><pre>    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'删除成功'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="21"></td><td><pre><span class="token punctuation">&#125;</span><span class="token punctuation">)</span></pre></td></tr></table></figure><h2 id="web开发模式"><a class="markdownIt-Anchor" href="#web开发模式">#</a> Web 开发模式</h2>
+<h3 id="服务端渲染开发模式"><a class="markdownIt-Anchor" href="#服务端渲染开发模式">#</a> 服务端渲染开发模式</h3>
+<p>优点：</p>
+<ol>
+<li><code>前端耗时少</code> 。因为服务器端负责动态生成 <code>HTML</code>  内容，浏览器只需要直接渲染页面即可。尤其是移动端，更省电。</li>
+<li><code>有利于SEO</code> 。因为服务器端响应的是完整的 <code>HTML</code>  页面内容，所以爬虫更容易爬取获得信息，更有利于 <code>SEO</code> 。</li>
+</ol>
+<p>缺点：</p>
+<ol>
+<li><code>占用服务器端资源</code> 。即服务器端完成 ``HTML` 页面内容的拼接，如果请求较多，会对服务器造成一定的访问压力。</li>
+<li><code>不利于前后端分离，开发效率低</code> 。使用服务器端渲染，则无法进行分工合作，尤其对于前端复杂度高的项目，不利于项目高效开发。</li>
+</ol>
+<h3 id="前后端分离的web开发模式"><a class="markdownIt-Anchor" href="#前后端分离的web开发模式">#</a> 前后端分离的 Web 开发模式</h3>
+<p>前后端分离的概念：前后端分离的开发模式， <code>依赖于Ajax技术的广泛应用</code> 。简而言之，前后端分离的 Wb 开发模式，就是 <code>后端只负责提供AP接口，前端使用Ajx调用接口</code> 的开发模式。</p>
+<p>优点：</p>
+<ol>
+<li><code>开发体验好</code> 。前端专注于 <code>UI</code>  页面的开发，后端专注于 <code>api</code>  的开发，且前端有更多的选择性。</li>
+<li><code>用户体验好</code> 。 <code>Ajax</code>  技术的广泛应用，极大的提高了用户的体验，可以轻松实现页面的局部刷新。</li>
+<li><code>减轻了服务器端的渲染压力</code> 。因为页面最终是在每个用户的浏览器中生成的。</li>
+</ol>
+<p>缺点：</p>
+<ol>
+<li>不利于 <code>SEO</code> 。因为完整的 <code>HTML</code>  页面需要在客户端动态拼接完成，所以爬虫对无法爬取页面的有效信息。</li>
+<li>解决方案：利用 <code>Vue</code> 、 <code>React</code>  等前端框架的 <code>SSR</code>  (server side render) 技术能够很好的解决 <code>SEO</code>  问题！）</li>
+</ol>
+<h3 id="如何选择web开发模式"><a class="markdownIt-Anchor" href="#如何选择web开发模式">#</a> 如何选择 Web 开发模式</h3>
+<p><code>不谈业务场景而盲目选择使用何种开发模式都是耍流氓</code></p>
+<ul>
+<li>比如企业级网站，主要功能是展示而没有复杂的交互，并且需要良好的 <code>SEO</code> , 则这时我们就需要使用服务器端渲染：</li>
+<li>而类似后台管理项目，交互性比较强，不需要考虑 <code>SEO</code> ，那么就可以使用前后端分离的开发模式。</li>
+</ul>
+<p>另外，具体使用何种开发模式并不是绝对的，为了 <code>同时兼顾</code> 了 <code>首页的渲染速度</code> 和 <code>前后端分离的开发效率</code> ，一些网站采用了首屏服务器端渲染 + 其他页面前后端分离的开发模式。</p>
+<h2 id="选择合适的身份认证"><a class="markdownIt-Anchor" href="#选择合适的身份认证">#</a> 选择合适的身份认证</h2>
+<p>对于 <code>服务端渲染</code> 和 <code>前后端分离</code> 这两种开发模式来说，分别有着不同的身份认证方案：</p>
+<ol>
+<li><code>服务端渲染</code> 推荐使用 <code>Session认证机制</code></li>
+<li><code>前后端分离</code> 推荐使用 <code>JWT认证机制</code></li>
+</ol>
+
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2022-07-16 22:29:55" itemprop="dateModified" datetime="2022-07-16T22:29:55+08:00">2022-07-16</time>
+  </span>
+  <span id="2ef85661.html" class="item leancloud_visitors" data-flag-title="NodeJs系列-Day07-数据库处理" title="阅读次数">
+      <span class="icon">
+        <i class="ic i-eye"></i>
+      </span>
+      <span class="text">阅读次数</span>
+      <span class="leancloud-visitors-count"></span>
+      <span class="text">次</span>
+  </span>
+</div>
+
+
+
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="https://cdn.jsdelivr.net/gh/0000rookie/github.io/images/wechatpay.jpg" alt="璃柏涟 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="https://cdn.jsdelivr.net/gh/0000rookie/github.io/images/alipay.jpg" alt="璃柏涟 支付宝">
+        <p>支付宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>璃柏涟 <i class="ic i-at"><em>@</em></i>瞬間の筆記
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="https://www.hikki.site/2ef85661.html" title="NodeJs系列-Day07-数据库处理">https://www.hikki.site/2ef85661.html</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/9376bd7a.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicljitigmj20zk0m87fp.jpg" title="智能知识共享平台-基于nodejs开发">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> demo</span>
+  <h3>智能知识共享平台-基于nodejs开发</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#mysql-%E6%9F%A5"><span class="toc-number">1.</span> <span class="toc-text"> MySql - 查</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#mysql-%E5%A2%9E"><span class="toc-number">2.</span> <span class="toc-text"> MySql - 增</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%E4%B8%80"><span class="toc-number">2.1.</span> <span class="toc-text"> 方法一</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%E4%BA%8C"><span class="toc-number">2.2.</span> <span class="toc-text"> 方法二</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#mysql-%E6%94%B9"><span class="toc-number">2.3.</span> <span class="toc-text"> MySql - 改</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%E4%B8%80-2"><span class="toc-number">2.4.</span> <span class="toc-text"> 方法一</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%E4%BA%8C-2"><span class="toc-number">2.5.</span> <span class="toc-text"> 方法二</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#mysql-%E5%88%A0"><span class="toc-number">3.</span> <span class="toc-text"> MySql - 删</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%87%E8%AE%B0%E5%88%A0%E9%99%A4%E5%BB%BA%E8%AE%AE%E4%BD%BF%E7%94%A8"><span class="toc-number">3.1.</span> <span class="toc-text"> 标记删除 (建议使用)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9C%9F%E5%AE%9E%E5%88%A0%E9%99%A4"><span class="toc-number">3.2.</span> <span class="toc-text"> 真实删除</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#web%E5%BC%80%E5%8F%91%E6%A8%A1%E5%BC%8F"><span class="toc-number">4.</span> <span class="toc-text"> Web 开发模式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%B8%B2%E6%9F%93%E5%BC%80%E5%8F%91%E6%A8%A1%E5%BC%8F"><span class="toc-number">4.1.</span> <span class="toc-text"> 服务端渲染开发模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E7%9A%84web%E5%BC%80%E5%8F%91%E6%A8%A1%E5%BC%8F"><span class="toc-number">4.2.</span> <span class="toc-text"> 前后端分离的 Web 开发模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9web%E5%BC%80%E5%8F%91%E6%A8%A1%E5%BC%8F"><span class="toc-number">4.3.</span> <span class="toc-text"> 如何选择 Web 开发模式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E5%90%88%E9%80%82%E7%9A%84%E8%BA%AB%E4%BB%BD%E8%AE%A4%E8%AF%81"><span class="toc-number">5.</span> <span class="toc-text"> 选择合适的身份认证</span></a></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+        <ul>
+          <li><a href="/c797c821.html" rel="bookmark" title="NodeJs系列-Day01-文件处理">NodeJs系列-Day01-文件处理</a></li><li><a href="/f6ad12ce.html" rel="bookmark" title="NodeJs系列-Day02">NodeJs系列-Day02</a></li><li><a href="/81aa2258.html" rel="bookmark" title="NodeJs系列-Day03">NodeJs系列-Day03</a></li><li><a href="/1fceb7fb.html" rel="bookmark" title="NodeJs系列-Day04">NodeJs系列-Day04</a></li><li><a href="/68c9876d.html" rel="bookmark" title="NodeJs系列-Day05">NodeJs系列-Day05</a></li><li><a href="/b518f675.html" rel="bookmark" title="nodemon工具-免去重启服务器烦恼">nodemon工具-免去重启服务器烦恼</a></li><li><a href="/e66a41a6.html" rel="bookmark" title="NodeJs报错 throw new typeerror('app.use() requires a middleware function')">NodeJs报错 throw new typeerror('app.use() requires a middleware function')</a></li><li><a href="/f1c0d6d7.html" rel="bookmark" title="NodeJs系列-Day06-CORS跨域资源共享">NodeJs系列-Day06-CORS跨域资源共享</a></li><li><a href="/2e63f4a4.html" rel="bookmark" title="Error: Cannot find module 'xxx'">Error: Cannot find module 'xxx'</a></li><li class="active"><a href="/2ef85661.html" rel="bookmark" title="NodeJs系列-Day07-数据库处理">NodeJs系列-Day07-数据库处理</a></li>
+        </ul>
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="璃柏涟"
+      data-src="https://cdn.jsdelivr.net/gh/0000rookie/github.io/images/avatar.jpg">
+  <p class="name" itemprop="name">璃柏涟</p>
+  <div class="description" itemprop="description">喜欢的东西就努力去追求，万一成功了呢！</div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">103</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">28</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">30</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tLzAwMDByb29raWU=" title="https:&#x2F;&#x2F;github.com&#x2F;0000rookie"><i class="ic i-github"></i></span>
+      <span class="exturl item twitter" data-url="aHR0cHM6Ly90d2l0dGVyLmNvbS9hYV8xMzQxMTUxMDU2" title="https:&#x2F;&#x2F;twitter.com&#x2F;aa_1341151056"><i class="ic i-twitter"></i></span>
+      <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS93dS14aWFvLWJhaS05" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;wu-xiao-bai-9"><i class="ic i-zhihu"></i></span>
+      <a href="/aa1341151056@126.com" title="aa1341151056@126.com" class="item email"><i class="ic i-envelope"></i></a>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>关于</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+  </ul>
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-sakura"></i>书架</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/books/major/" rel="section"><i class="ic i-coffee"></i>专业</a>
+  </li>
+
+  </ul>
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-magic"></i>链接</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/links/friend-links/" rel="section"><i class="ic i-link"></i>友链</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/links/johou/" rel="section"><i class="ic i-star"></i>情報</a>
+  </li>
+
+  </ul>
+    
+  <li class="item">
+    <span class="exturl" data-url="aHR0cHM6Ly90cmF2ZWxsaW5ncy5saW5rLw=="><i class="ic i-paper-plane"></i>开往</span>
+  </li>
+
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
+</div>
+
+    <span><a href="/3050703f.html" title="python批量修改文件名">python批量修改文件名</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/Linux/" title="分类于 Linux">Linux</a>
+</div>
+
+    <span><a href="/3fa3774.html" title="Linux远程管理常用命令">Linux远程管理常用命令</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/" title="分类于 java">java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/fail/" title="分类于 fail">fail</a>
+</div>
+
+    <span><a href="/3dddb2b0.html" title="intellij乱码">intellij乱码</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%A3%9F%E7%94%A8%E6%96%B9%E6%B3%95/" title="分类于 博客的食用方法">博客的食用方法</a>
+</div>
+
+    <span><a href="/b26ff49b.html" title="如何在hexo博客写作">如何在hexo博客写作</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
+</div>
+
+    <span><a href="/8d43d157.html" title="如何使用Xshell远程虚拟机">如何使用Xshell远程虚拟机</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
+</div>
+
+    <span><a href="/c3e9968a.html" title="python Qt5基础知识">python Qt5基础知识</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
+</div>
+
+    <span><a href="/a6f9d072.html" title="第一篇：注册github---从0基础搭建Hexo博客">第一篇：注册github---从0基础搭建Hexo博客</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E7%94%9F%E6%B4%BB/" title="分类于 生活">生活</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E7%94%9F%E6%B4%BB/%E6%97%A5%E8%AE%B0/" title="分类于 日记">日记</a>
+</div>
+
+    <span><a href="/b9e6c7bf.html" title="日记分享2022.4.13">日记分享2022.4.13</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/window/" title="分类于 window">window</a>
+</div>
+
+    <span><a href="/2cc8588f.html" title="添加开机自启程序">添加开机自启程序</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/Linux/" title="分类于 Linux">Linux</a>
+</div>
+
+    <span><a href="/9a6dde1d.html" title="基础Vim修改文件">基础Vim修改文件</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>最新评论</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 
+    <span itemprop="copyrightYear">2022</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">璃柏涟 @ 筆記</span>
+  </div>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="站点总字数">148k 字</span>
+
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="站点阅读时长">3:21</span>
+  </div>
+  <p>
+  <span>
+    &nbsp;&nbsp;&nbsp;&nbsp;您是第<span id="busuanzi_value_site_uv"></span>个访问本站的小伙伴
+  </span>
+  </p>
+   <p>
+   <a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="blank">        
+   本网站由<img src="http://hikki.test.upcdn.net/2022/07/12-15:11:5353.png" width="40" height="28" alt="又拍云"> 提供 CDN 加速/云存储服务</a>
+   </p>
+  <div class="powered-by">
+    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  
+  </div>
+</div>
+
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: '2ef85661.html',
+    favicon: {
+      show: "欢迎回来噢(●'◡'●)ﾉ",
+      hide: "你怎么跑了o(╥﹏╥)o"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,
+    copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/0000rookie/github.io/js/app.js?v=0.2.5"></script>
+
+
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"live2d-widget-model-koharu"},"display":{"position":"left","width":109,"height":236,"hOffset":40,"vOffset":3},"mobile":{"show":true,"scale":0.2},"react":{"opacityDefault":0.7,"opacityOnHover":0.8},"log":false});</script></body>
+</html>
