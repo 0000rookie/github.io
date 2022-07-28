@@ -126,12 +126,12 @@ Ubuntu怎么开启FTP(菜鸡篇) - Linux - 技术杂谈 - 计算机科学 |
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipeyvx1d4j20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipesng5oej20zk0m87d4.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicli9lfebj20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giciuja1j1j20zk0m8kjl.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giciuv0socj20zk0m8qes.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicm07ih54j20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicitht3xtj20zk0m8k5v.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciusoyjnj219g0u0x56.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeybxm1pj20zk0m8niv.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipevuctzzj20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclxxcb6rj20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclize41wj20zk0m87gk.jpg"></li>
         </ul>
       </div>
     </header>
@@ -195,11 +195,7 @@ Ubuntu怎么开启FTP(菜鸡篇) - Linux - 技术杂谈 - 计算机科学 |
 </div>
 <p><code>vsftp</code>  配置文件在 <code>/etc/vsftpd.conf</code></p>
 <p>如果你不会修改文件？可参考这篇文章</p>
-<div class="links"><div class="item" title="Vim修改文件" style="--block-color:#d43f8d;"><span class="exturl image" data-url="aHR0cHM6Ly9oaWtraS5zaXRlLzlhNmRkZTFkLmh0bWw=" data-background-image="http://hikki.test.upcdn.net/202206054042.jpeg"></span>
-          <div class="info">
-          <span class="exturl title" data-url="aHR0cHM6Ly9oaWtraS5zaXRlLzlhNmRkZTFkLmh0bWw=">Vim修改文件</span>
-          <p class="desc">Linux简单修改文件</p>
-          </div></div></div>
+<p><span class="exturl" data-url="aHR0cHM6Ly9oaWtraS5zaXRlLzlhNmRkZTFkLmh0bWw=">Vim 修改文件</span></p>
 <p>这是我的配置，你也可以直接复制进去你的配置文件</p>
 <figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment"># 禁止匿名用户登录</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token assign-left variable">anonymous_enable</span><span class="token operator">=</span>NO</pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token comment"># 允许系统用户登录</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token assign-left variable">local_enable</span><span class="token operator">=</span>YES</pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token comment"># 启用可以修改文件的 FTP 命令</span></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token assign-left variable">write_enable</span><span class="token operator">=</span>YES</pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token comment"># 本地用户创建文件的 umask 值</span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token assign-left variable">local_umask</span><span class="token operator">=</span>022</pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token comment"># 允许为目录配置显示信息，显示每个目录下面的 message_file 文件的内容</span></pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token assign-left variable">dirmessage_enable</span><span class="token operator">=</span>YES</pre></td></tr><tr><td data-num="11"></td><td><pre><span class="token comment"># 开启日记功能 </span></pre></td></tr><tr><td data-num="12"></td><td><pre><span class="token assign-left variable">xferlog_enable</span><span class="token operator">=</span>YES</pre></td></tr><tr><td data-num="13"></td><td><pre><span class="token comment"># 使用标准的 20 端口来连接 ftp </span></pre></td></tr><tr><td data-num="14"></td><td><pre><span class="token assign-left variable">connect_from_port_20</span><span class="token operator">=</span>YES</pre></td></tr><tr><td data-num="15"></td><td><pre><span class="token comment"># 使用标准日志格式 </span></pre></td></tr><tr><td data-num="16"></td><td><pre><span class="token assign-left variable">xferlog_std_format</span><span class="token operator">=</span>YES</pre></td></tr><tr><td data-num="17"></td><td><pre><span class="token comment"># 如果启动这项功能，则所有列在 chroot_list_file 之中的使用者不能更改根目录</span></pre></td></tr><tr><td data-num="18"></td><td><pre><span class="token comment"># chroot_list_enable=YES</span></pre></td></tr><tr><td data-num="19"></td><td><pre><span class="token comment"># 指定限制的用户文件</span></pre></td></tr><tr><td data-num="20"></td><td><pre><span class="token comment"># chroot_list_file=/etc/vsftpd/chroot_list</span></pre></td></tr><tr><td data-num="21"></td><td><pre><span class="token comment"># ftp 服务器将处于独立启动模式</span></pre></td></tr><tr><td data-num="22"></td><td><pre><span class="token assign-left variable">listen</span><span class="token operator">=</span>YES</pre></td></tr><tr><td data-num="23"></td><td><pre><span class="token comment"># 设置一个本地用户登录后进入到的目录</span></pre></td></tr><tr><td data-num="24"></td><td><pre><span class="token assign-left variable">local_root</span><span class="token operator">=</span>/var/ftp/text</pre></td></tr><tr><td data-num="25"></td><td><pre><span class="token comment"># 设置 PAM 认证服务的配置文件名称，该文件保存在 “/etc/pam.d/” 目录下</span></pre></td></tr><tr><td data-num="26"></td><td><pre><span class="token assign-left variable">pam_service_name</span><span class="token operator">=</span>vsftpd</pre></td></tr><tr><td data-num="27"></td><td><pre><span class="token comment"># ftp 将检查 userlist_file 设置文件中指定的用户是否可以访问 vsftpd 服务器</span></pre></td></tr><tr><td data-num="28"></td><td><pre><span class="token assign-left variable">userlist_enable</span><span class="token operator">=</span>YES</pre></td></tr><tr><td data-num="29"></td><td><pre><span class="token comment"># 只允许 user_list 文件中记录的 ftp 用户能登录 vsftp 服务，其他的 ftp 用户都不可以登录。</span></pre></td></tr><tr><td data-num="30"></td><td><pre><span class="token assign-left variable">userlist_deny</span><span class="token operator">=</span>NO</pre></td></tr></table></figure><h2 id="指定ftp登录到的文件夹"><a class="markdownIt-Anchor" href="#指定ftp登录到的文件夹">#</a> 指定 FTP 登录到的文件夹</h2>
 <p>意思就是打开在电脑打开 <code>FTP</code>  的时候文件夹</p>
@@ -259,7 +255,7 @@ Ubuntu怎么开启FTP(菜鸡篇) - Linux - 技术杂谈 - 计算机科学 |
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">更新于</span>
-    <time title="修改时间：2022-07-05 00:03:22" itemprop="dateModified" datetime="2022-07-05T00:03:22+08:00">2022-07-05</time>
+    <time title="修改时间：2022-07-28 15:07:24" itemprop="dateModified" datetime="2022-07-28T15:07:24+08:00">2022-07-28</time>
   </span>
   <span id="c5deac78.html" class="item leancloud_visitors" data-flag-title="Ubuntu怎么开启FTP(菜鸡篇)" title="阅读次数">
       <span class="icon">
@@ -320,7 +316,7 @@ Ubuntu怎么开启FTP(菜鸡篇) - Linux - 技术杂谈 - 计算机科学 |
     <div class="item left">
       
 
-  <a href="/45ba05c7.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclh3brzpj20zk0m8ann.jpg" title="linux安装防火墙">
+  <a href="/45ba05c7.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclj61ylzj20zk0m8b29.jpg" title="linux安装防火墙">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> Linux</span>
   <h3>linux安装防火墙</h3>
@@ -330,7 +326,7 @@ Ubuntu怎么开启FTP(菜鸡篇) - Linux - 技术杂谈 - 计算机科学 |
     <div class="item right">
       
 
-  <a href="/dcc37883.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicitcxhpij20zk0m8hdt.jpg" title="docker删除镜像">
+  <a href="/dcc37883.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipevo9j1jj20zk0m8e81.jpg" title="docker删除镜像">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> docker</span>
   <h3>docker删除镜像</h3>
@@ -370,19 +366,19 @@ Ubuntu怎么开启FTP(菜鸡篇) - Linux - 技术杂谈 - 计算机科学 |
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">107</span>
+        <span class="count">90</span>
         <span class="name">文章</span>
       </a>
     </div>
     <div class="item categories">
       <a href="/categories/">
-        <span class="count">28</span>
+        <span class="count">23</span>
         <span class="name">分类</span>
       </a>
     </div>
     <div class="item tags">
       <a href="/tags/">
-        <span class="count">31</span>
+        <span class="count">29</span>
         <span class="name">标签</span>
       </a>
     </div>
@@ -498,12 +494,82 @@ Ubuntu怎么开启FTP(菜鸡篇) - Linux - 技术杂谈 - 计算机科学 |
 <div class="breadcrumb">
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/window/" title="分类于 window">window</a>
+</div>
+
+    <span><a href="/c69954bb.html" title="win11退回win10?">win11退回win10?</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
 <i class="ic i-angle-right"></i>
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/" title="分类于 java">java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/fail/" title="分类于 fail">fail</a>
 </div>
 
-    <span><a href="/73480a46.html" title="javase触发事件">javase触发事件</a></span>
+    <span><a href="/dfaf38bb.html" title="javase连接数据库报错Communications link failure">javase连接数据库报错Communications link failure</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/fail/" title="分类于 fail">fail</a>
+</div>
+
+    <span><a href="/5af0544e.html" title="PicGo上传失败 TypeError:Cannot destructure property &#96;position&#96; of undefined&#96; or &#96;null&#96;.">PicGo上传失败 TypeError:Cannot destructure property `position` of undefined` or `null`.</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/nodejs/" title="分类于 nodejs">nodejs</a>
+</div>
+
+    <span><a href="/e66a41a6.html" title="NodeJs报错 throw new typeerror(&#39;app.use() requires a middleware function&#39;)">NodeJs报错 throw new typeerror('app.use() requires a middleware function')</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/nodejs/" title="分类于 nodejs">nodejs</a>
+</div>
+
+    <span><a href="/c797c821.html" title="NodeJs系列-Day01-文件处理">NodeJs系列-Day01-文件处理</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
+</div>
+
+    <span><a href="/ed51a5a6.html" title="matplotlib制作条形图、直方图">matplotlib制作条形图、直方图</a></span>
   </li>
 
       
@@ -524,12 +590,12 @@ Ubuntu怎么开启FTP(菜鸡篇) - Linux - 技术杂谈 - 计算机科学 |
 <div class="breadcrumb">
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/andriod/" title="分类于 andriod">andriod</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
 </div>
 
-    <span><a href="/70ded1a5.html" title="root破解手机限速问题">root破解手机限速问题</a></span>
+    <span><a href="/6c24ad8e.html" title="python安装&#x2F;更新包出现报错">python安装/更新包出现报错</a></span>
   </li>
 
       
@@ -540,38 +606,10 @@ Ubuntu怎么开启FTP(菜鸡篇) - Linux - 技术杂谈 - 计算机科学 |
 <i class="ic i-angle-right"></i>
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/nodejs/" title="分类于 nodejs">nodejs</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
 </div>
 
-    <span><a href="/f6ad12ce.html" title="NodeJs系列-Day02">NodeJs系列-Day02</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
-</div>
-
-    <span><a href="/9bf6caef.html" title="第八篇：解析域名---从0基础搭建Hexo博客">第八篇：解析域名---从0基础搭建Hexo博客</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
-</div>
-
-    <span><a href="/6c2393ec.html" title="第七篇：购买域名---从0基础搭建Hexo博客">第七篇：购买域名---从0基础搭建Hexo博客</a></span>
+    <span><a href="/af3d5cf5.html" title="安装qt5的时候报错">安装qt5的时候报错</a></span>
   </li>
 
       
@@ -582,48 +620,10 @@ Ubuntu怎么开启FTP(菜鸡篇) - Linux - 技术杂谈 - 计算机科学 |
 <i class="ic i-angle-right"></i>
 <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/nodejs/" title="分类于 nodejs">nodejs</a>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/" title="分类于 java">java</a>
 </div>
 
-    <span><a href="/81aa2258.html" title="NodeJs系列-Day03">NodeJs系列-Day03</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
-</div>
-
-    <span><a href="/87b69652.html" title="第五篇：安装Hexo---从0基础搭建Hexo博客">第五篇：安装Hexo---从0基础搭建Hexo博客</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
-</div>
-
-    <span><a href="/edaa94fb.html" title="为博客添加免费的CDN加速">为博客添加免费的CDN加速</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/demo/" title="分类于 demo">demo</a>
-</div>
-
-    <span><a href="/9376bd7a.html" title="智能知识共享平台-基于nodejs开发">智能知识共享平台-基于nodejs开发</a></span>
+    <span><a href="/fb13f705.html" title="JAVA记事本基础">JAVA记事本基础</a></span>
   </li>
 
   </ul>
@@ -648,13 +648,13 @@ Ubuntu怎么开启FTP(菜鸡篇) - Linux - 技术杂谈 - 计算机科学 |
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="站点总字数">152k 字</span>
+    <span title="站点总字数">142k 字</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="站点阅读时长">3:27</span>
+    <span title="站点阅读时长">3:13</span>
   </div>
   <p>
   <span>
