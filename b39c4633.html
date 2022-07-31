@@ -1,0 +1,700 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+
+<meta name="yandex-verification" content="0f41f442b8921fd6" /> 
+<meta name="description" content="这是记录璃柏涟的学习情况，其中包括 python、springboot、andriod、root" /> 
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+  <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/0000rookie/github.io/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="https://cdn.jsdelivr.net/gh/0000rookie/github.io/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="google-site-verification" content="true">
+  <meta name="msvalidate.01" content="true">
+  <meta name="yandex-verification" content="true">
+
+
+<link rel="alternate" type="application/rss+xml" title="瞬間の筆記" href="https://www.hikki.site/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="瞬間の筆記" href="https://www.hikki.site/atom.xml" />
+<link rel="alternate" type="application/json" title="瞬間の筆記" href="https://www.hikki.site/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/0000rookie/github.io/css/app.css?v=0.2.5">
+
+  
+  <meta name="keywords" content="NodeJs" />
+
+
+<link rel="canonical" href="https://www.hikki.site/b39c4633.html">
+
+
+
+  <title>
+NodeJs总结 |
+筆記 = 瞬間の筆記 = 专注学习筆記</title>
+<meta name="generator" content="Hexo 6.1.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">NodeJs总结
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2022-07-30 22:29:59">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2022-07-30T22:29:59+08:00">2022-07-30</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span class="text">本文字数</span>
+    <span>6.3k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span class="text">阅读时长</span>
+    <span>9 分钟</span>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">筆記</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipexe4oykj20zk0m87ji.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicitcxhpij20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclxxcb6rj20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipexj2jgzj20zk0m8b09.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclfw2t96j20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giciukx8a7j20zk0m8aio.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="https://www.hikki.site/b39c4633.html">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/0000rookie/github.io/images/avatar.jpg">
+    <meta itemprop="name" content="璃柏涟">
+    <meta itemprop="description" content="专注学习筆記, 喜欢的东西就努力去追求，万一成功了呢！">
+  </span>
+
+
+
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="瞬間の筆記">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h2 id="项目树"><a class="markdownIt-Anchor" href="#项目树">#</a> 项目树</h2>
+<figure class="highlight yaml"><figcaption data-lang="YAML"></figcaption><table><tr><td data-num="1"></td><td><pre>TestDemo                   </pre></td></tr><tr><td data-num="2"></td><td><pre>├─ db          				// 连接数据库            </pre></td></tr><tr><td data-num="3"></td><td><pre>│  └─ index.js             </pre></td></tr><tr><td data-num="4"></td><td><pre>├─ router       			// 路由规则           </pre></td></tr><tr><td data-num="5"></td><td><pre>│  ├─ artcata.js           </pre></td></tr><tr><td data-num="6"></td><td><pre>│  ├─ article.js           </pre></td></tr><tr><td data-num="7"></td><td><pre>│  ├─ user.js              </pre></td></tr><tr><td data-num="8"></td><td><pre>│  └─ userinfo.js          </pre></td></tr><tr><td data-num="9"></td><td><pre>├─ router_handler          // 路由函数体</pre></td></tr><tr><td data-num="10"></td><td><pre>│  ├─ artcata_handler.js   </pre></td></tr><tr><td data-num="11"></td><td><pre>│  ├─ article_handler.js   </pre></td></tr><tr><td data-num="12"></td><td><pre>│  ├─ userinfo_handler.js  </pre></td></tr><tr><td data-num="13"></td><td><pre>│  └─ user_handler.js      </pre></td></tr><tr><td data-num="14"></td><td><pre>├─ schema                  //数据校验规则</pre></td></tr><tr><td data-num="15"></td><td><pre>│  ├─ article.js           </pre></td></tr><tr><td data-num="16"></td><td><pre>│  └─ user.js                       </pre></td></tr><tr><td data-num="17"></td><td><pre>├─ uploads                 // 文件上传存储位置</pre></td></tr><tr><td data-num="18"></td><td><pre>├─ app.js                  // 程序启动入口</pre></td></tr><tr><td data-num="19"></td><td><pre>├─ config.js               // 全局变量配置</pre></td></tr><tr><td data-num="20"></td><td><pre>├─ package<span class="token punctuation">-</span>lock.json       </pre></td></tr><tr><td data-num="21"></td><td><pre>└─ package.json</pre></td></tr></table></figure><h2 id="程序入口appjs"><a class="markdownIt-Anchor" href="#程序入口appjs">#</a> 程序入口 <code>app.js</code></h2>
+<h3 id="跨域问题"><a class="markdownIt-Anchor" href="#跨域问题">#</a> 跨域问题</h3>
+<p>在写项目是一般要都会遇到跨域的问题，要如何解决呢？</p>
+<p>在客户端对服务端请求的数据的程序入口添加 <code>cors</code>  中间件来解决跨域问题</p>
+<figure class="highlight javascript"><figcaption data-lang="javascript"><span>app.js</span></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment">// 解决跨域问题，导入 cors 中间件</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">const</span> cors <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'cors'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token comment">// 将 cors 注册为全局中间件</span></pre></td></tr><tr><td data-num="4"></td><td><pre>app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token function">cors</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr></table></figure><h2 id="表单数据解析"><a class="markdownIt-Anchor" href="#表单数据解析">#</a> 表单数据解析</h2>
+<p>只需要添加 <code>urlencoded中间件</code> 就可以解析表单数据了</p>
+<figure class="highlight javascript"><figcaption data-lang="javascript"><span>app.js</span></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">const</span> express <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'express'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token comment">// 解析表单的数据中间件，只能解析 application/x-www-form-urlencoded</span></pre></td></tr><tr><td data-num="3"></td><td><pre>app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>express<span class="token punctuation">.</span><span class="token function">urlencoded</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span> <span class="token literal-property property">extended</span><span class="token operator">:</span> <span class="token boolean">false</span> <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr></table></figure><h2 id="错误中间件"><a class="markdownIt-Anchor" href="#错误中间件">#</a> 错误中间件</h2>
+<p>服务端在处理数据时难免会有错误，这时需要一个中间件来处理这些错误。</p>
+<p>先封装一个中间件用来处理发生错误时给客户端返回的响应数据，可以减少代码冗余。</p>
+<div class="note info">
+<p>在给客户端返回数据时应该有规定的格式，应该有响应码和响应描述 <code>&#123; status:0 , msg: '响应内容' &#125;</code></p>
+</div>
+<figure class="highlight javascript"><figcaption data-lang="javascript"><span>app.js</span></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment">// 封装 res.cc 的捕捉错误中间件</span></pre></td></tr><tr><td data-num="2"></td><td><pre>app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res<span class="token punctuation">,</span> next</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token comment">//status = 0 为成功； status = 1 为失败； 默认将 status 的值设置为 1，方便处理失败的情况</span></pre></td></tr><tr><td data-num="4"></td><td><pre>  res<span class="token punctuation">.</span><span class="token function-variable function">cc</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> status <span class="token operator">=</span> <span class="token number">1</span></span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="6"></td><td><pre>      <span class="token comment">// 状态</span></pre></td></tr><tr><td data-num="7"></td><td><pre>      status<span class="token punctuation">,</span></pre></td></tr><tr><td data-num="8"></td><td><pre>      <span class="token comment">// 状态描述，判断 err 是 错误对象 还是 字符串</span></pre></td></tr><tr><td data-num="9"></td><td><pre>      <span class="token literal-property property">msg</span><span class="token operator">:</span> err <span class="token keyword">instanceof</span> <span class="token class-name">Error</span> <span class="token operator">?</span> err<span class="token punctuation">.</span>message <span class="token operator">:</span> err<span class="token punctuation">,</span></pre></td></tr><tr><td data-num="10"></td><td><pre>    <span class="token punctuation">&#125;</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="11"></td><td><pre>  <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="12"></td><td><pre>  <span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="13"></td><td><pre><span class="token punctuation">&#125;</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="14"></td><td><pre></pre></td></tr><tr><td data-num="15"></td><td><pre><span class="token comment">// 错误中间件</span></pre></td></tr><tr><td data-num="16"></td><td><pre>app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> req<span class="token punctuation">,</span> res<span class="token punctuation">,</span> next</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="17"></td><td><pre>  <span class="token comment">// 数据验证失败</span></pre></td></tr><tr><td data-num="18"></td><td><pre>  <span class="token keyword">if</span> <span class="token punctuation">(</span>err <span class="token keyword">instanceof</span> <span class="token class-name">joi<span class="token punctuation">.</span>ValidationError</span><span class="token punctuation">)</span> <span class="token keyword">return</span> res<span class="token punctuation">.</span><span class="token function">cc</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="19"></td><td><pre></pre></td></tr><tr><td data-num="20"></td><td><pre>  <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">.</span>name <span class="token operator">===</span> <span class="token string">'UnauthorizedError'</span><span class="token punctuation">)</span> <span class="token keyword">return</span> res<span class="token punctuation">.</span><span class="token function">cc</span><span class="token punctuation">(</span><span class="token string">'身份认证失败！'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="21"></td><td><pre></pre></td></tr><tr><td data-num="22"></td><td><pre>  <span class="token comment">// 未知错误</span></pre></td></tr><tr><td data-num="23"></td><td><pre>  res<span class="token punctuation">.</span><span class="token function">cc</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="24"></td><td><pre><span class="token punctuation">&#125;</span><span class="token punctuation">)</span></pre></td></tr></table></figure><h2 id="登录-注册"><a class="markdownIt-Anchor" href="#登录-注册">#</a> 登录 &amp; 注册</h2>
+<h3 id="解析数据"><a class="markdownIt-Anchor" href="#解析数据">#</a> 解析数据</h3>
+<p>利用 <code>urlencoded</code>  中间件解析表单传过来的数据。</p>
+<p>导入登录注册的路由并定义入口地址前缀 <code>/api</code></p>
+<figure class="highlight javascript"><figcaption data-lang="javascript"><span>app.js</span></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment">// 解析表单的数据中间件，只能解析 application/x-www-form-urlencoded</span></pre></td></tr><tr><td data-num="2"></td><td><pre>app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>express<span class="token punctuation">.</span><span class="token function">urlencoded</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span> <span class="token literal-property property">extended</span><span class="token operator">:</span> <span class="token boolean">false</span> <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="3"></td><td><pre></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token comment">// 导入路由</span></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token keyword">const</span> userRouter <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./router/user'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="6"></td><td><pre>app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token string">'/api'</span><span class="token punctuation">,</span>userRouter<span class="token punctuation">)</span></pre></td></tr></table></figure><h3 id="登录"><a class="markdownIt-Anchor" href="#登录">#</a> 登录</h3>
+<p>请求地址: <code>127.0.0.1:3000/api/login</code></p>
+<p>参数格式：</p>
+<p><code>username</code> : <code>value</code></p>
+<p><code>password</code> : <code>value</code></p>
+<p><img data-src="http://hikki.test.upcdn.net/20220731131856.png" alt="image-20220731124011773"></p>
+<h3 id="注册"><a class="markdownIt-Anchor" href="#注册">#</a> 注册</h3>
+<p>请求地址： <code>127.0.0.1:3000/api/reguser</code></p>
+<p>参数格式：</p>
+<p><code>username</code> : <code>value</code></p>
+<p><code>password</code> : <code>value</code></p>
+<p><img data-src="http://hikki.test.upcdn.net/20220731132033.png" alt="image-20220731132033648"></p>
+<p>在注册和登录要进行数据的校验：</p>
+<ol>
+<li>先验证数据是否为空或者数据是否合乎规则</li>
+<li>查询用户名是否被占用</li>
+<li>登录成功 / 添加成功</li>
+</ol>
+<p>在验证用户名和密码一般需要使用 <code>joi</code>  模块来校验规则。</p>
+<p>以下是 <code>schema/user.js</code>  的文件，主要功能是对客户端对个人用户信息修改进行规则验证。</p>
+<figure class="highlight javascript"><figcaption data-lang="javascript"><span>schema/user.js</span></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">const</span> joi <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'joi'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token comment">/**</pre></td></tr><tr><td data-num="4"></td><td><pre> * string () 值必须是字符串</pre></td></tr><tr><td data-num="5"></td><td><pre> * alphanum () 值只能是包含 a-zA-Z0-9 的字符串</pre></td></tr><tr><td data-num="6"></td><td><pre> * min (length) 最小长度</pre></td></tr><tr><td data-num="7"></td><td><pre> * max (length) 最大长度</pre></td></tr><tr><td data-num="8"></td><td><pre> * required () 值是必填项，不能为 undefined</pre></td></tr><tr><td data-num="9"></td><td><pre> * pattern (正则表达式) 值必须符合正则表达式的规则</pre></td></tr><tr><td data-num="10"></td><td><pre> */</span></pre></td></tr><tr><td data-num="11"></td><td><pre></pre></td></tr><tr><td data-num="12"></td><td><pre><span class="token comment">// 用户名的验证规则</span></pre></td></tr><tr><td data-num="13"></td><td><pre><span class="token keyword">const</span> username <span class="token operator">=</span> joi<span class="token punctuation">.</span><span class="token function">string</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">alphanum</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">min</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span><span class="token number">15</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">required</span><span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="14"></td><td><pre><span class="token comment">// 密码的验证规则</span></pre></td></tr><tr><td data-num="15"></td><td><pre><span class="token keyword">const</span> password <span class="token operator">=</span> joi</pre></td></tr><tr><td data-num="16"></td><td><pre>  <span class="token punctuation">.</span><span class="token function">string</span><span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="17"></td><td><pre>  <span class="token punctuation">.</span><span class="token function">pattern</span><span class="token punctuation">(</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">^[\S]&#123;6,12&#125;$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="18"></td><td><pre>  <span class="token punctuation">.</span><span class="token function">required</span><span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="19"></td><td><pre></pre></td></tr><tr><td data-num="20"></td><td><pre><span class="token comment">//id 的验证规则</span></pre></td></tr><tr><td data-num="21"></td><td><pre><span class="token keyword">const</span> id <span class="token operator">=</span> joi<span class="token punctuation">.</span><span class="token function">number</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">required</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">integer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">min</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="22"></td><td><pre><span class="token comment">// 昵称的验证规则</span></pre></td></tr><tr><td data-num="23"></td><td><pre><span class="token keyword">const</span> nickname <span class="token operator">=</span> joi<span class="token punctuation">.</span><span class="token function">string</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">required</span><span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="24"></td><td><pre><span class="token comment">//email 的验证规则</span></pre></td></tr><tr><td data-num="25"></td><td><pre><span class="token keyword">const</span> email <span class="token operator">=</span> joi<span class="token punctuation">.</span><span class="token function">string</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">email</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">required</span><span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="26"></td><td><pre><span class="token comment">// 头像验证规则</span></pre></td></tr><tr><td data-num="27"></td><td><pre><span class="token keyword">const</span> avatar <span class="token operator">=</span> joi<span class="token punctuation">.</span><span class="token function">string</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">dataUri</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">required</span><span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="28"></td><td><pre></pre></td></tr><tr><td data-num="29"></td><td><pre><span class="token comment">// 注册和登录表单的验证规则对象</span></pre></td></tr><tr><td data-num="30"></td><td><pre>exports<span class="token punctuation">.</span>reg_login_schema <span class="token operator">=</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="31"></td><td><pre>  <span class="token comment">// 表示需要对 req.body 中的数据进行验证</span></pre></td></tr><tr><td data-num="32"></td><td><pre>  <span class="token literal-property property">body</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="33"></td><td><pre>    username<span class="token punctuation">,</span></pre></td></tr><tr><td data-num="34"></td><td><pre>    password<span class="token punctuation">,</span></pre></td></tr><tr><td data-num="35"></td><td><pre>  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="36"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="37"></td><td><pre></pre></td></tr><tr><td data-num="38"></td><td><pre>exports<span class="token punctuation">.</span>update_userinfo_schema <span class="token operator">=</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="39"></td><td><pre>  <span class="token comment">// 需要对 req.body 里面的数据进行验证。</span></pre></td></tr><tr><td data-num="40"></td><td><pre>  <span class="token comment">// 如果 body 里面的变量名和客户端传过来的变量名一致的，就可以不用写冒号，原本是:</span></pre></td></tr><tr><td data-num="41"></td><td><pre>  <span class="token comment">// id:id,nickname:nickname,email:email</span></pre></td></tr><tr><td data-num="42"></td><td><pre>  <span class="token literal-property property">body</span><span class="token operator">:</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="43"></td><td><pre>    id<span class="token punctuation">,</span></pre></td></tr><tr><td data-num="44"></td><td><pre>    nickname<span class="token punctuation">,</span></pre></td></tr><tr><td data-num="45"></td><td><pre>    email<span class="token punctuation">,</span></pre></td></tr><tr><td data-num="46"></td><td><pre>  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="47"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="48"></td><td><pre></pre></td></tr><tr><td data-num="49"></td><td><pre><span class="token comment">// 验证规则对象 - 重置密码</span></pre></td></tr><tr><td data-num="50"></td><td><pre>exports<span class="token punctuation">.</span>update_password_schema <span class="token operator">=</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="51"></td><td><pre>  <span class="token literal-property property">body</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="52"></td><td><pre>    <span class="token comment">// 使用 password 这个规则，验证 req.body.oldPwd 的值</span></pre></td></tr><tr><td data-num="53"></td><td><pre>    <span class="token literal-property property">oldPwd</span><span class="token operator">:</span> password<span class="token punctuation">,</span></pre></td></tr><tr><td data-num="54"></td><td><pre>    <span class="token comment">// 使用 joi.not (joi.ref ('oldPwd')).concat (password) 规则，验证 req.body.newPwd 的值</span></pre></td></tr><tr><td data-num="55"></td><td><pre>    <span class="token comment">// 解读：</span></pre></td></tr><tr><td data-num="56"></td><td><pre>    <span class="token comment">// 1. joi.ref ('oldPwd') 表示 newPwd 的值必须和 oldPwd 的值保持一致</span></pre></td></tr><tr><td data-num="57"></td><td><pre>    <span class="token comment">// 2. joi.not (joi.ref ('oldPwd')) 表示 newPwd 的值不能等于 oldPwd 的值</span></pre></td></tr><tr><td data-num="58"></td><td><pre>    <span class="token comment">// 3. .concat () 用于合并 joi.not (joi.ref ('oldPwd')) 和 password 这两条验证规则</span></pre></td></tr><tr><td data-num="59"></td><td><pre>    <span class="token literal-property property">newPwd</span><span class="token operator">:</span> joi<span class="token punctuation">.</span><span class="token function">not</span><span class="token punctuation">(</span>joi<span class="token punctuation">.</span><span class="token function">ref</span><span class="token punctuation">(</span><span class="token string">'oldPwd'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">concat</span><span class="token punctuation">(</span>password<span class="token punctuation">)</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="60"></td><td><pre>  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="61"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="62"></td><td><pre></pre></td></tr><tr><td data-num="63"></td><td><pre><span class="token comment">// 头像验证对象</span></pre></td></tr><tr><td data-num="64"></td><td><pre>exports<span class="token punctuation">.</span>reg_avatar_schema <span class="token operator">=</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="65"></td><td><pre>  <span class="token literal-property property">body</span><span class="token operator">:</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="66"></td><td><pre>    avatar<span class="token punctuation">,</span></pre></td></tr><tr><td data-num="67"></td><td><pre>  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="68"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><p>然后在请求时校验规则，在导入规则对象时记得要加 <code>&#123;&#125;</code> ，以下是 <code>router/user.js</code>  文件，主要功能是对个人信息相关的路由进行控制。</p>
+<figure class="highlight javascript"><figcaption data-lang="javascript"><span>router/user.js</span></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">const</span> express <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'express'</span><span class="token punctuation">)</span>，</pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token comment">// 创建路由对象</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">const</span> router <span class="token operator">=</span> express<span class="token punctuation">.</span><span class="token function">Router</span><span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="4"></td><td><pre></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token comment">// 导入用户路由模块处理函数对应的模块</span></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token keyword">const</span>  user_handler <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'../router_handler/user_handler'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="7"></td><td><pre></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token comment">// 1. 导入验证表单数据的中间件</span></pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token keyword">const</span> expressJoi <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'@escook/express-joi'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="10"></td><td><pre></pre></td></tr><tr><td data-num="11"></td><td><pre><span class="token comment">// 2. 导入需要的验证规则对象</span></pre></td></tr><tr><td data-num="12"></td><td><pre><span class="token keyword">const</span>  <span class="token punctuation">&#123;</span> reg_login_schema <span class="token punctuation">&#125;</span>  <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'../schema/user'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="13"></td><td><pre></pre></td></tr><tr><td data-num="14"></td><td><pre><span class="token comment">// 注册新用户</span></pre></td></tr><tr><td data-num="15"></td><td><pre>router<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token string">'/reguser'</span><span class="token punctuation">,</span><span class="token function">expressJoi</span><span class="token punctuation">(</span>reg_login_schema<span class="token punctuation">)</span><span class="token punctuation">,</span>user_handler<span class="token punctuation">.</span>reguser <span class="token punctuation">)</span></pre></td></tr><tr><td data-num="16"></td><td><pre></pre></td></tr><tr><td data-num="17"></td><td><pre><span class="token comment">// 登录</span></pre></td></tr><tr><td data-num="18"></td><td><pre>router<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token string">'/login'</span><span class="token punctuation">,</span><span class="token function">expressJoi</span><span class="token punctuation">(</span>reg_login_schema<span class="token punctuation">)</span><span class="token punctuation">,</span> user_handler<span class="token punctuation">.</span>login<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="19"></td><td><pre></pre></td></tr><tr><td data-num="20"></td><td><pre><span class="token comment">// 将路由对象共享出去</span></pre></td></tr><tr><td data-num="21"></td><td><pre>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> router</pre></td></tr></table></figure><h2 id="请求地址处理"><a class="markdownIt-Anchor" href="#请求地址处理">#</a> 请求地址处理</h2>
+<p>在设计项目初期，应该给不同类型的内容设计不同的请求地址，防止项目路由混乱。</p>
+<ul>
+<li>
+<p>比如在注册登录使用路由前缀 <code>/api</code></p>
+</li>
+<li>
+<p>在用户发布文章使用前缀 <code>/my/article</code></p>
+</li>
+<li>
+<p>在用户查阅个人信息时使用前缀 <code>/my</code></p>
+</li>
+</ul>
+<h2 id="路由处理"><a class="markdownIt-Anchor" href="#路由处理">#</a> 路由处理</h2>
+<p>项目有非常多的请求地址，应该有条理的把路由整齐划分，将路由请求方式和路由函数体分开，以便能够查阅清洗条例的路由请求方式。</p>
+<div class="note info">
+<p>在路由请求方式中，记得在末尾导出路由对象 <code>module.exports = router</code> 。</p>
+<p>在路由函数体也要导出函数对象 <code>exports.login = (req, res) =&gt; &#123;&#125;</code></p>
+</div>
+<p>比如以下:</p>
+<figure class="highlight yaml"><figcaption data-lang="YAML"></figcaption><table><tr><td data-num="1"></td><td><pre>TestDemo</pre></td></tr><tr><td data-num="2"></td><td><pre>├─ router       			// 路由规则           </pre></td></tr><tr><td data-num="3"></td><td><pre>│  ├─ artcata.js           </pre></td></tr><tr><td data-num="4"></td><td><pre>│  ├─ article.js           </pre></td></tr><tr><td data-num="5"></td><td><pre>│  ├─ user.js              </pre></td></tr><tr><td data-num="6"></td><td><pre>│  └─ userinfo.js          </pre></td></tr><tr><td data-num="7"></td><td><pre>├─ router_handler          // 路由函数体</pre></td></tr><tr><td data-num="8"></td><td><pre>│  ├─ artcata_handler.js   </pre></td></tr><tr><td data-num="9"></td><td><pre>│  ├─ article_handler.js   </pre></td></tr><tr><td data-num="10"></td><td><pre>│  ├─ userinfo_handler.js  </pre></td></tr><tr><td data-num="11"></td><td><pre>│  └─ user_handler.js</pre></td></tr></table></figure><h2 id="数据校验"><a class="markdownIt-Anchor" href="#数据校验">#</a> 数据校验</h2>
+<p>在客户端给服务通过 <code>url</code>  传参数的时候，</p>
+<p>在 <code>joi模块</code> 校验应该把规则变量挂载到 <code>params</code>  而不是 <code>body</code>  下，使用 <code>id</code>  的时候是通过 <code>req.params.id</code></p>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment">// 这里不是 body，是 params</span></pre></td></tr><tr><td data-num="2"></td><td><pre>exports<span class="token punctuation">.</span>delete_cate_schema <span class="token operator">=</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="3"></td><td><pre>    <span class="token literal-property property">params</span><span class="token operator">:</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>        id<span class="token punctuation">,</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><h2 id="此项目所使用到的模块以及某些案例"><a class="markdownIt-Anchor" href="#此项目所使用到的模块以及某些案例">#</a> 此项目所使用到的模块以及某些案例</h2>
+<h3 id="数据校验案例"><a class="markdownIt-Anchor" href="#数据校验案例">#</a> 数据校验案例</h3>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">const</span> express <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'express'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token function">express</span><span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token comment">// 导入 Joi 来定义验证规则</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token keyword">const</span> Joi <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'joi'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token comment">// 1. 导入 @escook/express-joi</span></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token keyword">const</span> expressJoi <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'@escook/express-joi'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="7"></td><td><pre></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token comment">// 解析 x-www-form-urlencoded 格式的表单数据</span></pre></td></tr><tr><td data-num="9"></td><td><pre>app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>express<span class="token punctuation">.</span><span class="token function">urlencoded</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span> <span class="token literal-property property">extended</span><span class="token operator">:</span> <span class="token boolean">false</span> <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="10"></td><td><pre></pre></td></tr><tr><td data-num="11"></td><td><pre><span class="token comment">// 2. 定义验证规则</span></pre></td></tr><tr><td data-num="12"></td><td><pre><span class="token comment">// 注意：如果客户端提交的某些参数项未在 schema 中定义，</span></pre></td></tr><tr><td data-num="13"></td><td><pre><span class="token comment">// 此时，这些多余的参数项默认会被忽略掉</span></pre></td></tr><tr><td data-num="14"></td><td><pre><span class="token keyword">const</span> userSchema <span class="token operator">=</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="15"></td><td><pre>  <span class="token comment">// 2.1 校验 req.body 中的数据</span></pre></td></tr><tr><td data-num="16"></td><td><pre>  <span class="token literal-property property">body</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="17"></td><td><pre>    <span class="token literal-property property">username</span><span class="token operator">:</span> Joi<span class="token punctuation">.</span><span class="token function">string</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">alphanum</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">min</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span><span class="token number">12</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">required</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="18"></td><td><pre>    <span class="token literal-property property">password</span><span class="token operator">:</span> Joi<span class="token punctuation">.</span><span class="token function">string</span><span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="19"></td><td><pre>      <span class="token punctuation">.</span><span class="token function">pattern</span><span class="token punctuation">(</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">^[\S]&#123;6,15&#125;$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="20"></td><td><pre>      <span class="token punctuation">.</span><span class="token function">required</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="21"></td><td><pre>    <span class="token literal-property property">repassword</span><span class="token operator">:</span> Joi<span class="token punctuation">.</span><span class="token function">ref</span><span class="token punctuation">(</span><span class="token string">'password'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="22"></td><td><pre>  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="23"></td><td><pre>  <span class="token comment">// 2.2 校验 req.query 中的数据</span></pre></td></tr><tr><td data-num="24"></td><td><pre>  <span class="token literal-property property">query</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="25"></td><td><pre>    <span class="token literal-property property">name</span><span class="token operator">:</span> Joi<span class="token punctuation">.</span><span class="token function">string</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">alphanum</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">min</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">required</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="26"></td><td><pre>    <span class="token literal-property property">age</span><span class="token operator">:</span> Joi<span class="token punctuation">.</span><span class="token function">number</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">integer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">min</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">required</span><span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="27"></td><td><pre>  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="28"></td><td><pre>  <span class="token comment">// 2.3 校验 req.params 中的数据</span></pre></td></tr><tr><td data-num="29"></td><td><pre>  <span class="token literal-property property">params</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="30"></td><td><pre>    <span class="token literal-property property">id</span><span class="token operator">:</span> Joi<span class="token punctuation">.</span><span class="token function">number</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">integer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">min</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">required</span><span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="31"></td><td><pre>  <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="32"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="33"></td><td><pre></pre></td></tr><tr><td data-num="34"></td><td><pre><span class="token comment">// 3. 在路由中通过 expressJoi (userSchema) 的方式</span></pre></td></tr><tr><td data-num="35"></td><td><pre><span class="token comment">//    调用中间件进行参数验证</span></pre></td></tr><tr><td data-num="36"></td><td><pre>app<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token string">'/add'</span><span class="token punctuation">,</span> <span class="token function">expressJoi</span><span class="token punctuation">(</span>userSchema<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="37"></td><td><pre>  <span class="token keyword">const</span> body <span class="token operator">=</span> req<span class="token punctuation">.</span>body</pre></td></tr><tr><td data-num="38"></td><td><pre>  res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span>body<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="39"></td><td><pre><span class="token punctuation">&#125;</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="40"></td><td><pre></pre></td></tr><tr><td data-num="41"></td><td><pre><span class="token comment">// 4.1 错误级别中间件</span></pre></td></tr><tr><td data-num="42"></td><td><pre>app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> req<span class="token punctuation">,</span> res<span class="token punctuation">,</span> next</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="43"></td><td><pre>  <span class="token comment">// 4.1 Joi 参数校验失败</span></pre></td></tr><tr><td data-num="44"></td><td><pre>  <span class="token keyword">if</span> <span class="token punctuation">(</span>err <span class="token keyword">instanceof</span> <span class="token class-name">Joi<span class="token punctuation">.</span>ValidationError</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="45"></td><td><pre>    <span class="token keyword">return</span> res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="46"></td><td><pre>      <span class="token literal-property property">status</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="47"></td><td><pre>      <span class="token literal-property property">message</span><span class="token operator">:</span> err<span class="token punctuation">.</span>message</pre></td></tr><tr><td data-num="48"></td><td><pre>    <span class="token punctuation">&#125;</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="49"></td><td><pre>  <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="50"></td><td><pre>  <span class="token comment">// 4.2 未知错误</span></pre></td></tr><tr><td data-num="51"></td><td><pre>  res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="52"></td><td><pre>    <span class="token literal-property property">status</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="53"></td><td><pre>    <span class="token literal-property property">message</span><span class="token operator">:</span> err<span class="token punctuation">.</span>message</pre></td></tr><tr><td data-num="54"></td><td><pre>  <span class="token punctuation">&#125;</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="55"></td><td><pre><span class="token punctuation">&#125;</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="56"></td><td><pre></pre></td></tr><tr><td data-num="57"></td><td><pre><span class="token comment">// 调用 app.listen 方法，指定端口号并启动 web 服务器</span></pre></td></tr><tr><td data-num="58"></td><td><pre>app<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token number">3001</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="59"></td><td><pre>  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Express server running at http://127.0.0.1:3001'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="60"></td><td><pre><span class="token punctuation">&#125;</span><span class="token punctuation">)</span></pre></td></tr></table></figure><h3 id="所用到的包"><a class="markdownIt-Anchor" href="#所用到的包">#</a> 所用到的包</h3>
+<figure class="highlight json"><figcaption data-lang="JSON"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"TestDemo"</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token property">"version"</span><span class="token operator">:</span> <span class="token string">"1.0.0"</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="4"></td><td><pre>  <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="5"></td><td><pre>  <span class="token property">"main"</span><span class="token operator">:</span> <span class="token string">"index.js"</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="6"></td><td><pre>  <span class="token property">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token property">"test"</span><span class="token operator">:</span> <span class="token string">"echo \"Error: no test specified\" &amp;&amp; exit 1"</span></pre></td></tr><tr><td data-num="8"></td><td><pre>  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="9"></td><td><pre>  <span class="token property">"keywords"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="10"></td><td><pre>  <span class="token property">"author"</span><span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="11"></td><td><pre>  <span class="token property">"license"</span><span class="token operator">:</span> <span class="token string">"ISC"</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="12"></td><td><pre>  <span class="token property">"dependencies"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="13"></td><td><pre>    <span class="token property">"@escook/express-joi"</span><span class="token operator">:</span> <span class="token string">"^1.1.1"</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="14"></td><td><pre>    <span class="token property">"bcryptjs"</span><span class="token operator">:</span> <span class="token string">"^2.4.3"</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="15"></td><td><pre>    <span class="token property">"cors"</span><span class="token operator">:</span> <span class="token string">"^2.8.5"</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="16"></td><td><pre>    <span class="token property">"express"</span><span class="token operator">:</span> <span class="token string">"^4.17.1"</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="17"></td><td><pre>    <span class="token property">"express-jwt"</span><span class="token operator">:</span> <span class="token string">"^5.3.3"</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="18"></td><td><pre>    <span class="token property">"joi"</span><span class="token operator">:</span> <span class="token string">"^17.6.0"</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="19"></td><td><pre>    <span class="token property">"jsonwebtoken"</span><span class="token operator">:</span> <span class="token string">"^8.5.1"</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="20"></td><td><pre>    <span class="token property">"multer"</span><span class="token operator">:</span> <span class="token string">"^1.4.2"</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="21"></td><td><pre>    <span class="token property">"mysql"</span><span class="token operator">:</span> <span class="token string">"^2.18.1"</span></pre></td></tr><tr><td data-num="22"></td><td><pre>  <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="23"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><h3 id="删除文章案例"><a class="markdownIt-Anchor" href="#删除文章案例">#</a> 删除文章案例</h3>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment">// 删除文章</span></pre></td></tr><tr><td data-num="2"></td><td><pre>exports<span class="token punctuation">.</span><span class="token function-variable function">deleteCateById</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span>res</span><span class="token punctuation">)</span><span class="token operator">=></span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="3"></td><td><pre>    <span class="token comment">//0 表示未删除，1 表示已删除</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token keyword">const</span> sql <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">select * from ev_article_cate where id =?</span><span class="token template-punctuation string">`</span></span></pre></td></tr><tr><td data-num="5"></td><td><pre>    db<span class="token punctuation">.</span><span class="token function">query</span><span class="token punctuation">(</span>sql<span class="token punctuation">,</span>req<span class="token punctuation">.</span>params<span class="token punctuation">.</span>id<span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span>results</span><span class="token punctuation">)</span><span class="token operator">=></span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="6"></td><td><pre>        <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token keyword">return</span> res<span class="token punctuation">.</span><span class="token function">cc</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="7"></td><td><pre>        <span class="token keyword">const</span> delSql <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">update ev_article_cate set is_delete = 1 where id = ?</span><span class="token template-punctuation string">`</span></span></pre></td></tr><tr><td data-num="8"></td><td><pre>        db<span class="token punctuation">.</span><span class="token function">query</span><span class="token punctuation">(</span>delSql<span class="token punctuation">,</span>req<span class="token punctuation">.</span>params<span class="token punctuation">.</span>id<span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span>results</span><span class="token punctuation">)</span><span class="token operator">=></span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="9"></td><td><pre>            <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token keyword">return</span> res<span class="token punctuation">.</span><span class="token function">cc</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="10"></td><td><pre>            <span class="token keyword">if</span> <span class="token punctuation">(</span>results<span class="token punctuation">.</span>affectedRows <span class="token operator">!==</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token keyword">return</span> res<span class="token punctuation">.</span><span class="token function">cc</span><span class="token punctuation">(</span><span class="token string">'删除文章失败'</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="11"></td><td><pre>            res<span class="token punctuation">.</span><span class="token function">cc</span><span class="token punctuation">(</span><span class="token string">'删除文章成功'</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="12"></td><td><pre>        <span class="token punctuation">&#125;</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="13"></td><td><pre>    <span class="token punctuation">&#125;</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="14"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure>
+      <div class="tags">
+          <a href="/tags/NodeJs/" rel="tag"><i class="ic i-tag"></i> NodeJs</a>
+      </div>
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2022-07-31 18:03:49" itemprop="dateModified" datetime="2022-07-31T18:03:49+08:00">2022-07-31</time>
+  </span>
+  <span id="b39c4633.html" class="item leancloud_visitors" data-flag-title="NodeJs总结" title="阅读次数">
+      <span class="icon">
+        <i class="ic i-eye"></i>
+      </span>
+      <span class="text">阅读次数</span>
+      <span class="leancloud-visitors-count"></span>
+      <span class="text">次</span>
+  </span>
+</div>
+
+
+
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="https://cdn.jsdelivr.net/gh/0000rookie/github.io/images/wechatpay.jpg" alt="璃柏涟 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="https://cdn.jsdelivr.net/gh/0000rookie/github.io/images/alipay.jpg" alt="璃柏涟 支付宝">
+        <p>支付宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>璃柏涟 <i class="ic i-at"><em>@</em></i>瞬間の筆記
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="https://www.hikki.site/b39c4633.html" title="NodeJs总结">https://www.hikki.site/b39c4633.html</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/12af09a9.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclimtf7dj20zk0m8qav.jpg" title="ER_BAD_FIELD_ERROR: Unknown column &#39;undefined&#39; in &#39;field list&#39;">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'field list'</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A1%B9%E7%9B%AE%E6%A0%91"><span class="toc-number">1.</span> <span class="toc-text"> 项目树</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A8%8B%E5%BA%8F%E5%85%A5%E5%8F%A3appjs"><span class="toc-number">2.</span> <span class="toc-text"> 程序入口 app.js</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98"><span class="toc-number">2.1.</span> <span class="toc-text"> 跨域问题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A1%A8%E5%8D%95%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90"><span class="toc-number">3.</span> <span class="toc-text"> 表单数据解析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%94%99%E8%AF%AF%E4%B8%AD%E9%97%B4%E4%BB%B6"><span class="toc-number">4.</span> <span class="toc-text"> 错误中间件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%99%BB%E5%BD%95-%E6%B3%A8%E5%86%8C"><span class="toc-number">5.</span> <span class="toc-text"> 登录 &amp; 注册</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E6%9E%90%E6%95%B0%E6%8D%AE"><span class="toc-number">5.1.</span> <span class="toc-text"> 解析数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%99%BB%E5%BD%95"><span class="toc-number">5.2.</span> <span class="toc-text"> 登录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%A8%E5%86%8C"><span class="toc-number">5.3.</span> <span class="toc-text"> 注册</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%B7%E6%B1%82%E5%9C%B0%E5%9D%80%E5%A4%84%E7%90%86"><span class="toc-number">6.</span> <span class="toc-text"> 请求地址处理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B7%AF%E7%94%B1%E5%A4%84%E7%90%86"><span class="toc-number">7.</span> <span class="toc-text"> 路由处理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E6%A0%A1%E9%AA%8C"><span class="toc-number">8.</span> <span class="toc-text"> 数据校验</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AD%A4%E9%A1%B9%E7%9B%AE%E6%89%80%E4%BD%BF%E7%94%A8%E5%88%B0%E7%9A%84%E6%A8%A1%E5%9D%97%E4%BB%A5%E5%8F%8A%E6%9F%90%E4%BA%9B%E6%A1%88%E4%BE%8B"><span class="toc-number">9.</span> <span class="toc-text"> 此项目所使用到的模块以及某些案例</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E6%A0%A1%E9%AA%8C%E6%A1%88%E4%BE%8B"><span class="toc-number">9.1.</span> <span class="toc-text"> 数据校验案例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%80%E7%94%A8%E5%88%B0%E7%9A%84%E5%8C%85"><span class="toc-number">9.2.</span> <span class="toc-text"> 所用到的包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E6%96%87%E7%AB%A0%E6%A1%88%E4%BE%8B"><span class="toc-number">9.3.</span> <span class="toc-text"> 删除文章案例</span></a></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="璃柏涟"
+      data-src="https://cdn.jsdelivr.net/gh/0000rookie/github.io/images/avatar.jpg">
+  <p class="name" itemprop="name">璃柏涟</p>
+  <div class="description" itemprop="description">喜欢的东西就努力去追求，万一成功了呢！</div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">112</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">28</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">31</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tLzAwMDByb29raWU=" title="https:&#x2F;&#x2F;github.com&#x2F;0000rookie"><i class="ic i-github"></i></span>
+      <span class="exturl item twitter" data-url="aHR0cHM6Ly90d2l0dGVyLmNvbS9hYV8xMzQxMTUxMDU2" title="https:&#x2F;&#x2F;twitter.com&#x2F;aa_1341151056"><i class="ic i-twitter"></i></span>
+      <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS93dS14aWFvLWJhaS05" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;wu-xiao-bai-9"><i class="ic i-zhihu"></i></span>
+      <a href="/aa1341151056@126.com" title="aa1341151056@126.com" class="item email"><i class="ic i-envelope"></i></a>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>关于</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+  </ul>
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-sakura"></i>书架</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/books/major/" rel="section"><i class="ic i-coffee"></i>专业</a>
+  </li>
+
+  </ul>
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-magic"></i>链接</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/links/friend-links/" rel="section"><i class="ic i-link"></i>友链</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/links/johou/" rel="section"><i class="ic i-star"></i>情報</a>
+  </li>
+
+  </ul>
+    
+  <li class="item">
+    <span class="exturl" data-url="aHR0cHM6Ly90cmF2ZWxsaW5ncy5saW5rLw=="><i class="ic i-paper-plane"></i>开往</span>
+  </li>
+
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
+</div>
+
+    <span><a href="/8075134e.html" title="numpy画复合函数">numpy画复合函数</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
+</div>
+
+    <span><a href="/cd7b33aa.html" title="Python组合数据类型">Python组合数据类型</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
+</div>
+
+    <span><a href="/859f60bd.html" title="第二篇：安装Git---从0基础搭建Hexo博客">第二篇：安装Git---从0基础搭建Hexo博客</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
+</div>
+
+    <span><a href="/87b69652.html" title="第五篇：安装Hexo---从0基础搭建Hexo博客">第五篇：安装Hexo---从0基础搭建Hexo博客</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
+</div>
+
+    <span><a href="/6c2393ec.html" title="第七篇：购买域名---从0基础搭建Hexo博客">第七篇：购买域名---从0基础搭建Hexo博客</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%9F%BA%E7%A1%80%E5%AD%A6%E7%A7%91/" title="分类于 基础学科">基础学科</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%9F%BA%E7%A1%80%E5%AD%A6%E7%A7%91/%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/" title="分类于 期末复习">期末复习</a>
+</div>
+
+    <span><a href="/cbd16032.html" title="2022年概率论与数理统计">2022年概率论与数理统计</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" title="分类于 python">python</a>
+</div>
+
+    <span><a href="/4f9c6caa.html" title="python爬虫乱码问题">python爬虫乱码问题</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/" title="分类于 博客">博客</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%8D%9A%E5%AE%A2/%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BAHexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97/" title="分类于 零基础搭建Hexo个人博客系列">零基础搭建Hexo个人博客系列</a>
+</div>
+
+    <span><a href="/a6f9d072.html" title="第一篇：注册github---从0基础搭建Hexo博客">第一篇：注册github---从0基础搭建Hexo博客</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" title="分类于 编程语言">编程语言</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/nodejs/" title="分类于 nodejs">nodejs</a>
+</div>
+
+    <span><a href="/2e63f4a4.html" title="Error: Cannot find module &#39;xxx&#39;">Error: Cannot find module 'xxx'</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" title="分类于 计算机科学">计算机科学</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/" title="分类于 技术杂谈">技术杂谈</a>
+</div>
+
+    <span><a href="/451161d7.html" title="idea开发必装插件">idea开发必装插件</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>最新评论</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 
+    <span itemprop="copyrightYear">2022</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">璃柏涟 @ 筆記</span>
+  </div>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="站点总字数">164k 字</span>
+
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="站点阅读时长">3:43</span>
+  </div>
+  <p>
+  <span>
+    &nbsp;&nbsp;&nbsp;&nbsp;您是第<span id="busuanzi_value_site_uv"></span>个访问本站的小伙伴
+  </span>
+  </p>
+   <p>
+   <a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="blank">        
+   本网站由<img src="http://hikki.test.upcdn.net/2022/07/12-15:11:5353.png" width="40" height="28" alt="又拍云"> 提供 CDN 加速/云存储服务</a>
+   </p>
+  <div class="powered-by">
+    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  
+  </div>
+</div>
+
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: 'b39c4633.html',
+    favicon: {
+      show: "欢迎回来噢(●'◡'●)ﾉ",
+      hide: "你怎么跑了o(╥﹏╥)o"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,
+    copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/0000rookie/github.io/js/app.js?v=0.2.5"></script>
+
+
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"live2d-widget-model-koharu"},"display":{"position":"left","width":109,"height":236,"hOffset":40,"vOffset":3},"mobile":{"show":true,"scale":0.2},"react":{"opacityDefault":0.7,"opacityOnHover":0.8},"log":false});</script></body>
+</html>
