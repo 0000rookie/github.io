@@ -1,0 +1,732 @@
+- site: Wallhaven
+  desc: 一款非常多的优质的壁纸网站
+  url: https://wallhaven.cc/toplist?
+  image: http://hikki.test.upcdn.net/20220704162601.png
+  color: "#9AF229"
+
+
+- site: 配色网
+  desc: 一款国外的配图网，在配色的时候可以去找找灵感是非常不错的选择
+  url: https://webgradients.com/
+  image: http://hikki.test.upcdn.net/202206054042.jpeg
+  color: "#A02399"
+  
+- site: 在线压缩图片
+  desc: 压缩后减少带宽压力
+  url: https://docsmall.com/image-compress
+  image: http://hikki.test.upcdn.net/20220615010915.jpeg
+  color: "#95E1B9"
+  
+- site: 白描OCR网页版
+  desc: 支持图片 & 数学公式 & Excel & PDF扫描
+  url: https://web.baimiaoapp.com/image-to-excel
+  image: http://hikki.test.upcdn.net/20220704162601.png
+  color: "#37ecba"
+  
+- site: Iconfont矢量图标
+  desc: 阿里开发的图标库 & 非常齐全
+  url: https://www.iconfont.cn/
+  image: http://hikki.test.upcdn.net/20220615010603.jpeg
+  color: "#6f86d6"
+
+
+- site: Greasy Fork
+  desc: 油猴插必备网站
+  url: https://greasyfork.org/zh-CN/scripts
+  image: https://greasyfork.org/packs/media/images/blacklogo96-b2384000fca45aa17e45eb417cbcbb59.png
+  color: "#0636FB"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010915.jpeg
+  color: "#A0DC19"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010942.jpeg
+  color: "#C96F3C"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010947.jpeg
+  color: "#CE6095"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010955.jpeg
+  color: "#A10C87"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010945.jpeg
+  color: "#10EC1A"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615011002.jpeg
+  color: "#A3449D"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010947.jpeg
+  color: "#AAB958"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010955.jpeg
+  color: "#5B3FA8"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010955.jpeg
+  color: "#C8003D"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010922.jpeg
+  color: "#10A736"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010958.jpeg
+  color: "#E3A010"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615011016.jpeg
+  color: "#40CCBC"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615011016.jpeg
+  color: "#5B2204"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010603.jpeg
+  color: "#5AB066"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615011030.jpeg
+  color: "#BD6499"
+
+
+- site: 
+  desc: 
+  url: 
+  image: 
+  color: "#BF3DC2"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010947.jpeg
+  color: "#0E4D9F"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615011012.jpeg
+  color: "#ED8DF6"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615011005.jpeg
+  color: "#080073"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615011005.jpeg
+  color: "#D7F22C"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615011002.jpeg
+  color: "#28C04F"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615011030.jpeg
+  color: "#92308A"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615011016.jpeg
+  color: "#B9B778"
+
+
+- site: 
+  desc: 
+  url: 
+  image: 
+  color: "#E5FFBC"
+
+
+- site: 
+  desc: 
+  url: 
+  image: 
+  color: "#0CCC3D"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010926.jpeg
+  color: "#8B04BD"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010933.jpeg
+  color: "#B268A6"
+
+
+- site: 
+  desc: 
+  url: 
+  image: 
+  color: "#6A584E"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010936.jpeg
+  color: "#EC998A"
+
+
+- site: 
+  desc: 
+  url: 
+  image: 
+  color: "#218578"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010942.jpeg
+  color: "#3690DF"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010922.jpeg
+  color: "#784EBD"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010603.jpeg
+  color: "#EAF2B4"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615011005.jpeg
+  color: "#F0E60B"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615011019.jpeg
+  color: "#728098"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615011005.jpeg
+  color: "#AECE79"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615011019.jpeg
+  color: "#6F4A44"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615011016.jpeg
+  color: "#C54D8C"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615011030.jpeg
+  color: "#4966B4"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010945.jpeg
+  color: "#93325A"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010942.jpeg
+  color: "#1C9C6E"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010947.jpeg
+  color: "#EEE151"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615011012.jpeg
+  color: "#2C4DF3"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010947.jpeg
+  color: "#E338CE"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010939.jpeg
+  color: "#D2F953"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010929.jpeg
+  color: "#7054E1"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010942.jpeg
+  color: "#ACD096"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615011030.jpeg
+  color: "#755A01"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010955.jpeg
+  color: "#133796"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010936.jpeg
+  color: "#12D511"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010945.jpeg
+  color: "#C1D266"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010947.jpeg
+  color: "#4F3241"
+
+
+- site: 
+  desc: 
+  url: 
+  image: 
+  color: "#159871"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615011002.jpeg
+  color: "#567935"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010939.jpeg
+  color: "#E80ADB"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010947.jpeg
+  color: "#1EC1CE"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010942.jpeg
+  color: "#4F4814"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010933.jpeg
+  color: "#A7DBC9"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010942.jpeg
+  color: "#F35BEF"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010958.jpeg
+  color: "#1BB173"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010603.jpeg
+  color: "#D70C88"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010939.jpeg
+  color: "#FD92C8"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010942.jpeg
+  color: "#C70B7F"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010933.jpeg
+  color: "#149731"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010947.jpeg
+  color: "#CAFDBC"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010915.jpeg
+  color: "#899F90"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010947.jpeg
+  color: "#D8F3D7"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010955.jpeg
+  color: "#65D454"
+
+
+- site: 
+  desc: 
+  url: 
+  image: 
+  color: "#5D7509"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615011012.jpeg
+  color: "#EFFABF"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615011012.jpeg
+  color: "#A4B9C9"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010939.jpeg
+  color: "#7A7C04"
+
+
+- site: 
+  desc: 
+  url: 
+  image: 
+  color: "#D5A57D"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010942.jpeg
+  color: "#807D4F"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010915.jpeg
+  color: "#5DB460"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615011002.jpeg
+  color: "#F9D489"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615011009.jpeg
+  color: "#7277FF"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010936.jpeg
+  color: "#5533CE"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010929.jpeg
+  color: "#9F0446"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010939.jpeg
+  color: "#10F4A8"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010942.jpeg
+  color: "#87C173"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010926.jpeg
+  color: "#85D538"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010945.jpeg
+  color: "#EC8587"
+
+
+- site: 
+  desc: 
+  url: 
+  image: 
+  color: "#7D8C91"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010939.jpeg
+  color: "#F2C777"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010958.jpeg
+  color: "#BBDD56"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615011009.jpeg
+  color: "#01E6A8"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615011030.jpeg
+  color: "#5A9EBB"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010926.jpeg
+  color: "#1CF88B"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615011009.jpeg
+  color: "#4362B6"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010955.jpeg
+  color: "#2C05B2"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010947.jpeg
+  color: "#B58457"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010603.jpeg
+  color: "#793BB2"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615011009.jpeg
+  color: "#B1CA4B"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615011030.jpeg
+  color: "#DC26D9"
+
+
+- site: 
+  desc: 
+  url: 
+  image: 
+  color: "#0F2A36"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010936.jpeg
+  color: "#E3D228"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615010955.jpeg
+  color: "#D92261"
+
+
+- site: 
+  desc: 
+  url: 
+  image: http://hikki.test.upcdn.net/20220615011019.jpeg
+  color: "#9FE35F"
+
+

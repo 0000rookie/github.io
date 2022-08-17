@@ -1,0 +1,18 @@
+# language
+zh-CN:
+  # items
+  menu:
+    home: 首页
+    about: 关于
+    posts: 文章
+    default: 文章  # 默认
+    archives: 归档
+    categories: 分类
+    tags: 标签
+    friends: 友達
+
+    
+#    links: 链接
+#    travellings: 开往
+#    webstack: 网址
+    

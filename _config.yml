@@ -1,0 +1,341 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+#网站标题
+title: 瞬間の筆記
+#座右铭
+subtitle: '专注学习筆記'
+#网站描述
+description: '喜欢的东西就努力去追求，万一成功了呢！'
+#网站的关键词。支持多个关键词
+keywords: web安全,笔记,web,theme,node.js,java,c,c++,python,前端,后端,markdown,搭建个人博客
+#博客作者
+author: 璃柏涟
+language: zh-CN
+#网站时区。默认电脑的时区
+timezone: ''
+
+# URL
+#网址, 必须以 http:// 或 https:// 开头
+#网站存放在子目录如果您的网站存放在子目录中，例如 http://example.com/blog，
+#则请将您的 url 设为 http://example.com/blog 并把 root 设为 /blog/。
+url: https://www.hikki.site
+#网站根目录
+root: /
+permalink_defaults:
+pretty_urls:
+  trailing_index: true # 如果设置为false，则从永久链接中删除末尾的'index.html'
+  trailing_html: true # 设置为false将从永久链接中删除末尾的'.html'
+
+# Directory
+#资源文件夹，这个文件夹用来存放内容
+source_dir: source
+#公共文件夹，这个文件夹用于存放生成的站点文件
+public_dir: public
+#标签文件夹
+tag_dir: tags
+#归档文件夹
+archive_dir: archives
+#分类文件夹
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+#新文章的文件名称
+new_post_name: :title.md # File name of new posts
+#预设布局
+default_layout: post
+#把标题转换为 title case
+titlecase: false 
+#在新标签中打开链接
+external_link:
+  #在新标签中打开链接
+  enable: true # 
+  #对整个网站（site）生效或仅对文章（post）生效
+  field: site # Apply to the whole site
+  #需要排除的域名。主域名和子域名如 www 需分别配置
+  exclude: ''
+#把文件名称转换为 (1) 小写或 (2) 大写
+filename_case: 0
+#显示草稿
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+#71-82对代码块的设置
+#highlight参考https://hexo.io/docs/syntax-highlight#Highlight-js
+highlight:
+  enable: false
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+#prismjs参考https://hexo.io/docs/syntax-highlight#PrismJS
+prismjs:
+  enable: false
+  preprocess: true
+  line_number: true
+  tab_replace: ''
+
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+
+# Category & Tag
+#default_category: uncategorized
+#tag_map:
+
+# Metadata elements
+## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+meta_generator: true
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+#日期格式
+date_format: YYYY-MM-DD
+#时间格式
+time_format: HH:mm:ss
+## updated_option supports 'mtime', 'date', 'empty'
+updated_option: 'mtime'
+
+# Pagination
+## Set per_page to 0 to disable pagination
+#每页显示的文章量 (0 = 关闭分页功能)	
+per_page: 10
+#分页目录
+pagination_dir: page
+
+# Include / Exclude file(s)
+## include:/exclude: options only apply to the 'source/' folder
+include:
+exclude:
+ignore:
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+#当前主题名称。值为false时禁用主题
+theme: shoka
+
+# Deployment
+## Docs: https://hexo.io/docs/one-command-deployment
+
+deploy:
+  type: git
+  repo: git@github.com:0000rookie/github.io.git
+  branch: master
+#  repo: 
+#     github: git@github.com:0000rookie/github.io.git,master
+#     gitee: git@gitee.com:Lilbai518/hikki.site.git,master
+     
+  
+  
+#  branch: master
+
+  
+symbols_count_time:
+  symbols: true                # 文章字数统计
+  time: true                   # 文章阅读时长
+  total_symbols: true          # 站点总字数统计
+  total_time: true             # 站点总阅读时长
+  exclude_codeblock: false     # 排除代码字数统计
+  awl: 3
+  wpm: 245
+  suffix: "mins."
+#exclude_codeblock: 是否排除代码块区域的字数统计
+#awl: 平均字符长度 (多少符字算一个中文或英文) 中文约是 2，英文约是 5，其他约是 6
+# wpm: 每分钟阅读字数  正常值约为 275 字，较小值约为 200 字，较快值约 350 字
+#suffix: 当总字数小于每分钟阅读字数时，默认采取的时间类型，不填写默认类型采取 "mins."
+
+
+default_category: uncategorized
+tag_map:
+#category_map:
+#  计算机科学: computer-science
+#  博客: Hexo
+#  零基础搭建Hexo个人博客系列: hexo-series
+#  Hexo模块: modules
+#  Hexo常见错误: hexo-error
+#  Java: java
+#  Java设计程序实训: course-2
+#  Python程序设计: course-1
+#  生活: life
+  
+#第三方插件-----------------------------------------------------------------------
+#feed插件
+feed:
+    limit: 20
+    order_by: "-date"
+    tag_dir: false
+    category_dir: false
+    rss:
+        enable: true
+        template: "themes/shoka/layout/_alternate/rss.ejs"
+        output: "rss.xml"
+    atom:
+        enable: true
+        template: "themes/shoka/layout/_alternate/atom.ejs"
+        output: "atom.xml"
+    jsonFeed:
+        enable: true
+        template: "themes/shoka/layout/_alternate/json.ejs"
+        output: "feed.json"
+        
+
+#permalink: post/:abbrlink.html
+permalink: :abbrlink.html
+abbrlink:
+  alg: crc32  # 算法：crc16(default) and crc32
+  rep: hex    # 进制：dec(default) and hex
+  
+#自动分类
+# 从目录树生成类别
+# Dependencies: https://github.com/xu-song/hexo-auto-category
+# depth: the max_depth of directory-tree you want to generate, should > 0
+auto_category:
+  enable: true
+  depth: 
+  
+
+# 看板娘
+live2d:
+  enable: false
+  #enable: false
+  scriptFrom: local # 默认
+  pluginRootPath: live2dw/ # 插件在站点上的根目录(相对路径)
+  pluginJsPath: lib/ # 脚本文件相对与插件根目录路径
+  pluginModelPath: assets/ # 模型文件相对与插件根目录路径
+  # scriptFrom: jsdelivr # jsdelivr CDN
+  # scriptFrom: unpkg # unpkg CDN
+  # scriptFrom: https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js # 你的自定义 url
+  tagMode: false # 标签模式, 是否仅替换 live2d tag标签而非插入到所有页面中
+  debug: false # 调试, 是否在控制台输出日志
+  model:
+    use: live2d-widget-model-koharu
+    # use: live2d-widget-model-wanko # npm-module package name
+    # use: wanko # 博客根目录/live2d_models/ 下的目录名
+    # use: ./wives/wanko # 相对于博客根目录的路径
+    # use: https://cdn.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json # 你的自定义 url
+  display:
+    position: left
+    width: 109 #haruto宽度
+    height: 236 #haruto高度
+    hOffset: 40 # 水平偏移 
+    vOffset: 3 # 垂直偏移
+  mobile:
+    show: true # 是否在移动设备上显示
+    scale: 0.2 # 移动设备上的缩放       
+  react:
+    opacityDefault: 0.7
+    opacityOnHover: 0.8
+
+#搜索Google账号登录algolia
+#  appId: "5GQCJQ2PBU"
+#  apiKey: "4d816049513a5114a1075fee5150447c" #'你的Search-Only API Key'
+#  adminApiKey: "9f236a673c12325a26919574406b212d"
+#  chunkSize: 5000
+#  indexName: "aliang"
+#hikki  adminApiKey: a6455597b740fd6a5668ae623ac8b7a9
+algolia:
+#  appId: BZKZJPFRMF
+#  apiKey: 77b94a3dad48a74eb6e7cd6ffcf59e62
+  appId: 5GQCJQ2PBU
+  apiKey: 4d816049513a5114a1075fee5150447c #'你的Search-Only API Key'
+  adminApiKey: 9f236a673c12325a26919574406b212d
+  chunkSize: 5000
+  indexName: "aliang"
+  fields:
+    - title 
+    - path 
+    - categories 
+    - content:strip:truncate,0,500 
+    - gallery 
+    - permalink
+    - photos 
+    - tags 
+  filter:
+    - title 
+    
+
+
+# ---------------------------------------------------------------
+# 分析和SEO设置  收录情况
+# ---------------------------------------------------------------
+# enable: 开启/关闭 推送
+# cron: 执行时间周期
+# count: 每次提交最新的10篇文章
+# date: 更新时间(updated)|创建日期(created)
+# https://github.com/lete114/hexo-seo-autopush.git
+hexo_seo_autopush:
+  cron: 0 4 * * *
+  baidu:
+    enable: true
+    date: created 
+    count: 10
+  bing:
+    enable: true
+    date: created 
+    count: 10
+  google:
+    enable: true
+    date: created 
+    count: 10
+    google_file: google_service_account.json # 谷歌服务账户
+    
+    
+# 自动生成sitemap
+sitemap: 
+  path: sitemap.xml
+baidusitemap: 
+  path: baidusitemap.xml
+
+    
+# 文章密码
+encrypt:
+  enable: true
+  abstract: 这里的东西被加密了，需要输入密码查看哦。 # 主页外的内容显示
+  message: 您好, 这里需要密码. # 输入密码的提示框
+  default_template: # 这个是指在文章详情页，我们看到的输入密码阅读的模板
+                  <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+                  <div id="hbe-security">
+                      <div class="input-container">
+                          <input type="password" class="form-control" id="pass" placeholder=" {{message}} " />
+                          <label for="pass"> {{message}} </label>
+                          <div class="bottom-line"></div>
+                        </div>
+                    </div>
+                    <div id="encrypt-blog" style="display:none">
+                        {{content}}
+                    </div>
+  default_abstract: 抱歉, 这个密码看着不太对, 请再试试 # 指在文章列表页，我们看到的加密文章描述。当然这是对所有加密文章生效的。
+  default_message: 抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容 # 这个在文章详情页的密码输入框上方的描述性文字。
+#
+   # 开始的解密部分需要由 div 包裹，而且 div 的 id 必须 是 ‘hbe-security’，解密后以便于隐藏。
+   # 最后的 content 显示 div 的 id 必须 是 ‘encrypt-blog’，同时为了好看，也希望进行隐藏。
+   # 同时，必须要有一个 input 输入框，id 必须是”pass”，用来供用户输入密码。
+   # 输入密码之后，务必要有一个触发器，用来调用 ‘decryptAES’ 函数。样例中以 button 来触发。
+
+#---
+#title: hello world
+#date: 2016-03-30 21:18:02
+#tags:
+#    - fdsfadsfa
+#    - fdsafsdaf
+#password: 是该博客加密使用的密码
+#abstract:  是该博客的摘要，会显示在博客的列表页
+#message: 这个是博客查看时，密码输入框上面的描述性文字
+#---
+
+

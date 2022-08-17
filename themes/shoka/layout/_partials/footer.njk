@@ -1,0 +1,55 @@
+<div class="status">
+  <div class="copyright">
+    {% set copyright_year = date(null, 'YYYY') %}
+    &copy; {% if theme.footer.since and theme.footer.since != copyright_year %}{{ theme.footer.since }} – {% endif %}
+    <span itemprop="copyrightYear">{{ copyright_year }}</span>
+    <span class="with-love">
+      <i class="ic i-{{ theme.footer.icon.name }}"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">{{ author }} @ {{ alternate if alternate else title}}</span>
+  </div>
+
+  {%- if theme.footer.count %}
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="{{ __('symbols_count_time.count_total') }}">{{ symbolsCountTotal(site) }} {{__('symbols_count_time.word')}}</span>
+
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="{{ __('symbols_count_time.time_total') }}">{{ symbolsTimeTotal(site, config.symbols_count_time.awl, config.symbols_count_time.wpm, __('symbols_count_time.time_minutes')) }}</span>
+  </div>
+  <p>
+  <span>
+    &nbsp;&nbsp;&nbsp;&nbsp;您是第<span id="busuanzi_value_site_uv"></span>个访问本站的小伙伴
+  </span>
+  </p>
+   <p>
+   <a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="blank">        
+   本网站由<img src="http://hikki.test.upcdn.net/2022/07/12-15:11:5353.png" width="40" height="28" alt="又拍云"> 提供 CDN 加速/云存储服务</a>
+   </p>
+
+  {%- endif %}
+
+   
+  {%- if theme.footer.powered %}
+  <div class="powered-by">
+    {{ __('footer.powered', _url('https://hexo.io', 'Hexo') + ' & Theme.' + _url('https://github.com/amehime/hexo-theme-shoka', 'Shoka')) }}
+  
+  </div>
+  {%- endif %}
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
+<script type="text/javascript">
+  docsearch({
+  appId: 'BZKZJPFRMF',
+  apiKey: '77b94a3dad48a74eb6e7cd6ffcf59e62',
+  indexName: 'hikki',
+  container: '.search-input-container',
+  debug: false // Set debug to true if you want to inspect the modal
+});
+</script>
