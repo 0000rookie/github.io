@@ -1,0 +1,573 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>软考中级-软件设计师 | 小码同学</title><meta name="author" content="小码同学"><meta name="copyright" content="小码同学"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#93a5cf"><meta name="description" content="第一章：计算机系统知识  计算机硬件基本组成 计算机基本硬件系统由运算器、控制器、存储器、输入设备、输出设备5大部件组成。 其中运算器、控制器等部件被集成在一起统称为中央处理单元（CPU）。CPU是硬件系统的核心，用于数据的加工处理，能完成各种算术、逻辑运算及控制功能。 存储器时计算机系统中的记忆设备，分为内部存储器和外部存储器。  内部存储器速度高、容量小，一般用于临时存放程序、数据及中间结果">
+<meta property="og:type" content="article">
+<meta property="og:title" content="软考中级-软件设计师">
+<meta property="og:url" content="https://blog.hikki.site/3d358537.html">
+<meta property="og:site_name" content="小码同学">
+<meta property="og:description" content="第一章：计算机系统知识  计算机硬件基本组成 计算机基本硬件系统由运算器、控制器、存储器、输入设备、输出设备5大部件组成。 其中运算器、控制器等部件被集成在一起统称为中央处理单元（CPU）。CPU是硬件系统的核心，用于数据的加工处理，能完成各种算术、逻辑运算及控制功能。 存储器时计算机系统中的记忆设备，分为内部存储器和外部存储器。  内部存储器速度高、容量小，一般用于临时存放程序、数据及中间结果">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://images.hikki.site/20230107211607.png">
+<meta property="article:published_time" content="2023-01-07T04:54:58.000Z">
+<meta property="article:modified_time" content="2023-03-09T07:07:09.663Z">
+<meta property="article:author" content="小码同学">
+<meta property="article:tag" content="考试">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://images.hikki.site/20230107211607.png"><link rel="shortcut icon" href="/data/img/favicon.ico"><link rel="canonical" href="https://blog.hikki.site/3d358537"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="/data/theme/snackbar.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"https://cdntx.hikki.site/static/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: {"limitDay":50,"position":"top","messagePrev":"距离上一次更新一已经","messageNext":"天了，文章的内容可能不是最新的，甚至已经过时 !"},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":250},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'mediumZoom',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#ff9a9e","bgDark":"#1f1f1f","position":"top-center"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isAnchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '软考中级-软件设计师',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: undefined,
+  isToc: true,
+  postUpdate: '2023-03-09 15:07:09'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#434343')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#93a5cf')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/rightMenu.css"><style id="barragesColor"></style><link rel="stylesheet" href="/data/css/custom.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="/data/css/runtime.min.css"><link rel="stylesheet" href="/data/css/utils.css"><link rel="stylesheet" href="https://cdn1.tianli0.top/gh/zhheo/Post-Abstract-AI@0.7/tianli_gpt.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><link rel="stylesheet" href="/data/css/runtime.min.css" media="print" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="小码同学" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/data/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">173</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">29</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">39</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-list"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fa-solid fa-tag"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-th-large"></i><span> 分类</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa-solid fa-wand-magic-sparkles"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa-solid fa-bookmark"></i><span> 书签</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/bookmark/johou/"><i class="fa-fw fas fa-sharp fa-solid fa-link"></i><span> 工具</span></a></li><li><a class="site-page child" href="/bookmark/programmer/"><i class="fa-fw fas fa-vials"></i><span> 程序猿</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa-solid fa-user-group"></i><span> 朋友</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/fcircle"><i class="fa-fw fas fa-snowboarding"></i><span> 朋友圈</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fa-solid fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.travellings.cn/go.html"><i class="fa-fw fas fa-rocket"></i><span> 开往</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user-tie"></i><span> 关于我</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://images.hikki.site/20230107211607.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">小码同学</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-list"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fa-solid fa-tag"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-th-large"></i><span> 分类</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa-solid fa-wand-magic-sparkles"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa-solid fa-bookmark"></i><span> 书签</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/bookmark/johou/"><i class="fa-fw fas fa-sharp fa-solid fa-link"></i><span> 工具</span></a></li><li><a class="site-page child" href="/bookmark/programmer/"><i class="fa-fw fas fa-vials"></i><span> 程序猿</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa-solid fa-user-group"></i><span> 朋友</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/fcircle"><i class="fa-fw fas fa-snowboarding"></i><span> 朋友圈</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fa-solid fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.travellings.cn/go.html"><i class="fa-fw fas fa-rocket"></i><span> 开往</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user-tie"></i><span> 关于我</span></a></div></div><center id="name-container"><a id="page-name" href="javascript:scrollToTop()" rel="external nofollow noreferrer">PAGE_NAME</a></center></div><div id="nav-right"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i></a></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">软考中级-软件设计师</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-01-07T04:54:58.000Z" title="发表于 2023-01-07 12:54:58">2023-01-07</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-03-09T07:07:09.663Z" title="更新于 2023-03-09 15:07:09">2023-03-09</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%8B%93%E5%B1%95%E5%AD%A6%E4%B9%A0/">拓展学习</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%8B%93%E5%B1%95%E5%AD%A6%E4%B9%A0/%E8%80%83%E8%AF%95/">考试</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">4.8k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>14分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="软考中级-软件设计师"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="第一章计算机系统知识"><a class="markdownIt-Anchor" href="#第一章计算机系统知识"></a> 第一章：计算机系统知识</h1>
+<h2 id="计算机硬件基本组成"><a class="markdownIt-Anchor" href="#计算机硬件基本组成"></a> 计算机硬件基本组成</h2>
+<p>计算机基本硬件系统由运算器、控制器、存储器、输入设备、输出设备5大部件组成。</p>
+<p>其中<code>运算器、控制器等部件</code>被集成在一起统称为<code>中央处理单元（CPU）</code>。CPU是硬件系统的核心，用于数据的加工处理，能完成各种算术、逻辑运算及控制功能。</p>
+<p>存储器时计算机系统中的记忆设备，分为<code>内部存储器</code>和<code>外部存储器</code>。</p>
+<ul>
+<li>内部存储器速度高、容量小，一般用于临时存放程序、数据及中间结果。</li>
+<li>外部存储器容量大、速度慢，可以长期保存程序和数据。</li>
+</ul>
+<p><code>输入设备</code>和<code>输出设备</code>合称为外部设备（简称<code>外设</code>），输入设备用于输入原始数据及各种命令，而输出设备则用于输出计算机运行的结果。</p>
+<h2 id="中央处理单元cpu"><a class="markdownIt-Anchor" href="#中央处理单元cpu"></a> 中央处理单元（CPU）</h2>
+<p><strong>中央处理单元（CPU）是计算机系统的核心部件，它负责获取程序指令、对指令进行译码并加以执行。</strong></p>
+<h3 id="cpu功能"><a class="markdownIt-Anchor" href="#cpu功能"></a> CPU功能</h3>
+<ol>
+<li>程序控制：CPU通过执行指令来控制程序的执行顺序，这是CPU的重要功能。</li>
+<li>操作控制：一条指令功能的实现需要若干操作信号配合来完成，CPU产生每条指令的操作信号并将操作信号送往对应的部件，控制相应的部件按指令的功能要求进行操作。</li>
+<li>时间控制：CPU对各种操作进行时间上的控制，即指令执行过程中操作信号的出现时间、持续时间及出现的时间顺序都需要进行严格控制。</li>
+<li>数据处理：CPU通过对数据算算术运算及逻辑运算等方式进行加工处理，数据加工处理的结果被人们所利用。所以，对数据的加工处理也是CPU最根本的任务。]</li>
+</ol>
+<p>此外，CPU还需要对系统内部和外部的中断（异常）作出响应，进行相应的处理。</p>
+<h3 id="cpu组成"><a class="markdownIt-Anchor" href="#cpu组成"></a> CPU组成</h3>
+<p>CPU主要由<code>运算器</code>、<code>控制器</code>、<code>寄存器组</code>和<code>内部总线</code>等部件组成，如图：</p>
+<p><img src="https://images.hikki.site/01-CPU%E5%9F%BA%E6%9C%AC%E7%BB%84%E6%88%90%E7%BB%93%E6%9E%84%E7%A4%BA%E6%84%8F%E5%9B%BE-20230114-064.png" alt="01-CPU基本组成结构示意图-20230114-064" /></p>
+<h4 id="运算器"><a class="markdownIt-Anchor" href="#运算器"></a> 运算器</h4>
+<p>运算器由<code>算术逻辑单元</code>（Arithmetic and Logic Unit，ALU）、<code>累加寄存器</code>、<code>数据缓冲寄存 器</code>和<code>状态条件寄存器</code>等组成，它是数据加工处理部件，用于完成计算机的各种算术和逻辑运算。<br />
+相对控制器而言，运算器接受控制器的命令而进行动作，即运算器所进行的全部操作都是由控<br />
+制器发出的控制信号来指挥的，所以它是执行部件。运算器有如下两个主要功能</p>
+<ul>
+<li>执行所有的算术运算，例如加、减、乘、除等基本运算及附加运算。</li>
+<li>执行所有的逻辑运算并进行逻辑测试，例如与、或、非、零值测试或两个值的比较等</li>
+</ul>
+<p><strong>下面简要介绍运算器中各组成部件的功能：</strong></p>
+<ul>
+<li><code>算术逻辑单元（ALU）</code>：ALU是运算器的重要组成部件，负责处理数据，实现对数<br />
+据的<code>算术运算</code>和<code>逻辑运算</code>。</li>
+<li><code>累加寄存器（AC）</code>：AC通常简称为<code>累加器</code>，它是一个<code>通用寄存器</code><sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>，其功能是当运算<br />
+器的算术逻辑单元执行算术或逻辑运算时，为ALU提供一个工作区。例如，在执行一个减法<br />
+运算前，先将被减数取出暂存在AC中，再从内存储器中取出减数，然后同AC的内容相减，<br />
+将所得的结果送回AC中。运算的结果是放在累加器中的，运算器中至少要有一个累加寄存器。</li>
+<li><code>数据缓冲寄存器（DR）</code>：在对内存储器进行读/写操作时，用DR暂时存放由内存储<br />
+器读/写的一条指令或一个数据字，将不同时间段内读/写的数据隔离开来。DR的主要作用为：<br />
+作为CPU和内存、外部设备之间数据传送的中转站：作为CPU和内存、外围设备之间在操作<br />
+速度上的缓冲：在单累加器结构的运算器中，数据缓冲寄存器还可兼作为操作数寄存器。</li>
+<li><code>状态条件寄存器（PSW）</code>：PSW保存由算术指令和逻辑指令运行或测试的结果建立<br />
+的各种条件码内容，主要分为状态标志和控制标志，例如运算结果进位标志©、运算结果<br />
+溢出标志(V)、运算结果为0标志(Z)、运算结果为负标志(N)、中断标志(I)、方向标<br />
+志(D)和单步标志等。这些标志通常分别由1位触发器保存，保存了当前指令执行完成之后<br />
+的状态。通常，一个算术操作产生一个运算结果，而一个逻辑操作产生一个判决。</li>
+</ul>
+<h4 id="控制器"><a class="markdownIt-Anchor" href="#控制器"></a> 控制器</h4>
+<p><strong>运算器只能完成运算</strong>，而<strong>控制器用于控制整个CPU的工作</strong>，它决定了计算机运行过程的<br />
+自动化。它不仅要保证程序的正确执行，而且要能够处理异常事件。<code>控制器一般包括指令控制 逻辑、时序控制逻辑、总线控制逻辑和中断控制逻辑等几个部分</code>。<br />
+指令控制逻辑要<strong>完成取指令</strong>、分析指令和<strong>执行指令</strong>的操作，其过程分为取指令、指令译码、<br />
+按指令操作码执行、形成下一条指令地址等步骤。</p>
+<ul>
+<li>
+<p><code>指令寄存器(R)</code>：当CPU执行一条指令时，先把它从内存储器取到缓冲寄存器中，<br />
+再送入R暂存，指令译码器根据R的内容产生各种微操作指令，控制其他的组成部件工作，<br />
+完成所需的功能。</p>
+</li>
+<li>
+<p><code>程序计数器(PC)</code>：PC具有寄存信息和计数两种功能，又称为指令计数器。程序的<br />
+执行分两种情况，一是顺序执行，二是转移执行。在程序开始执行前，将程序的起始地址送入<br />
+PC,该地址在程序加载到内存时确定，因此PC的内容即是程序第一条指令的地址。执行指令<br />
+时，CPU自动修改PC的内容，以便使其保持的总是将要执行的下一条指令的地址。由于大多<br />
+数指令都是按顺序来执行的，所以修改的过程通常只是简单地对PC加1。当遇到转移指令时，<br />
+后继指令的地址根据当前指令的地址加上一个向前或向后转移的位移量得到，或者根据转移指<br />
+令给出的直接转移的地址得到。</p>
+</li>
+<li>
+<p><code>地址寄存器(AR)</code>：AR保存当前CPU所访问的内存单元的地址。由于内存和CPU<br />
+存在着操作速度上的差异，所以需要使用AR保持地址信息，直到内存的读/写操作完成为止。</p>
+</li>
+<li>
+<p><code>指令译码器(D)</code>：指令包含操作码和地址码两部分，为了能执行任何给定的指令，<br />
+必须对操作码进行分析，以便识别所完成的操作。指令译码器就是对指令中的操作码字段进行<br />
+分析解释，识别该指令规定的操作，向操作控制器发出具体的控制信号，控制各部件工作，完<br />
+成所需的功能。</p>
+</li>
+</ul>
+<p>时序控制逻辑要为每条指令按时间顺序提供应有的控制信号。总线逻辑是为多个功能部件服务的信息通路的控制电路。终端控制逻辑用语控制各种终端请求，并根据优先级的高低对中断请求进行排队，组个交给CPU处理。</p>
+<h4 id="寄存器组"><a class="markdownIt-Anchor" href="#寄存器组"></a> 寄存器组</h4>
+<p>可分为<code>专用寄存器</code>和<code>通用寄存器</code>。运算器和控制器中的寄存器是专用寄存器，其作用是固定的。通用寄存器用途广泛并可由程序员规定其用途，其数目因处理器不同有所差异。</p>
+<h3 id="多核cpu"><a class="markdownIt-Anchor" href="#多核cpu"></a> 多核CPU</h3>
+<p>核心又称为内核，是CPU最重要的组成部分。CPU中心那块隆起的芯片就是核心，是由单晶硅以一定的生产工艺制造出来的，CPU所有的计算、接收/存储命令、处理数据都由核心执行。各种CPU核心都具有固定的逻辑结构，一级缓存、二级缓存、执行单元、指令级单元和总线接口等逻辑单元都会有合理的布局。<br />
+多核即在一个单芯片上面集成两个甚至更多个处理器内核，其中，每个内核都有自己的逻辑单元、控制单元、中断处理器、运算单元，一级Cache、二级Cache共享或独有，其部件的完整性和单核处理器内核相比完全一致。<br />
+CPU的主要厂商AMD和Imtel的双核技术在物理结构上有所不同。AMD将两个内核做在一个Die（晶元）上，通过直连架构连接起来，集成度更高。Itel则是将放在不同核心上的两个内核封装在一起，因此将Imtel的方案称为“双芯”，将AMD的方案称为“双核”。从用户端的角度来看，AM的方案能够使双核CPU的管脚、功耗等指标跟单核CPU保持一致，从单核升级到双核，不需要更换电源、芯片组、散热系统和主板，只需要刷新BIOS软件即可。</p>
+<p>多核CPU系统最大的优点（也是开发的最主要日的）是可满足用户同时进行多任务处理的要求。<br />
+单核多线程CPU是交替地转换执行多个任务，只不过交替转换的时间很短，用户一般感觉不出来。如果同时执行的任务太多，就会感觉到“慢”或者“卡”。而多核在理论上则是在任何时间内每个核执行各自的任务，不存在交替问题。因此，单核多线程和多核（一般每核也是多线程的）虽然都可以执行多任务，但多核的速度更快。<br />
+虽然采用了Itel超线程技术的单核可以视为是双核，4核可以视为是8核。然而，视为是8核一般比不上实际是8核的CPU性能。</p>
+<p>要发挥CPU的多核性能，就需要操作系统能够及时、合理地给各个核分配任务和资源（如缓存、总线、内存等），也需要应用软件在运行时可以把并行的线程同时交付给多个核心分别处理。</p>
+<h3 id="简单概述"><a class="markdownIt-Anchor" href="#简单概述"></a> 简单概述</h3>
+<p>①<strong>算术逻辑单元 ALU</strong>：它是运算器的重要组成部件，<code>负责处理数据</code>，实现对数据的<code>算术运算</code>和<code>逻辑运算</code>。</p>
+<p>②<strong>累加寄存器 AC</strong>：通常简称<code>累加器</code>，它是一个通用寄存器，功能是当运算器的算术逻辑单元执行算术或逻辑运算时，为ALU提供一个工作区。</p>
+<p>③<strong>数据缓冲寄存器 DR</strong>：作为CPU和内存、外设之间数据传送的<code>中转站</code>，作为<code>CPU和内存</code>、<code>外设之间</code>在操作速度上的缓冲。</p>
+<p>④<strong>状态条件寄存器 PSW</strong>：保存由<code>算术指令</code>和<code>逻辑指令</code>运行或测试的结果建立的各种条件码内容。</p>
+<p>⑤<strong>程序计数器 PC</strong>：用于<code>存放下一条指令的地址</code>。当一条指令被获取后，程序计数器的地址<code>加1</code>，指向下一条指令的地址。</p>
+<p>⑥<strong>指令寄存器 IR</strong>：用于<code>存放</code>当前从主存储器读出的<code>正在执行的一条指令</code>。</p>
+<p>⑦<strong>地址寄存器 AR</strong>：用于保存<code>当前CPU</code>所<code>访问</code>的内存单元<code>的地址</code>。</p>
+<p>⑧<strong>指令译码器 ID</strong>：计算机执行一条指令时，首先分析<code>这条指令的操作码是什么</code>，以决定操作的性质和方法，然后才能控制计算机其他各部件协同完成指令表达的功能，这个<code>分析工作</code>由指令译码器来完成</p>
+<h2 id="流水线"><a class="markdownIt-Anchor" href="#流水线"></a> 流水线</h2>
+<h3 id="基本概念"><a class="markdownIt-Anchor" href="#基本概念"></a> 基本概念</h3>
+<p><img src="https://images.hikki.site/image-20230113230034983.png" alt="image-20230113230034983" /></p>
+<h3 id="流水线计算公式"><a class="markdownIt-Anchor" href="#流水线计算公式"></a> 流水线计算(公式)</h3>
+<p><img src="https://images.hikki.site/image-20230113230053307.png" alt="image-20230113230053307" /></p>
+<blockquote>
+<p>首先，<strong>流水线周期是指在（取指、分析、执行）三个阶段中时间最长的一段</strong>，对应上面的例题，最长的一段时间为2ns，所以流水线周期为2ns。</p>
+<p>100条指令全部执行完毕需要的时间为：理论公式：（2+2+1）+（100-1）*2=203ns。</p>
+<p>100条指令全部执行完毕需要的时间为：实践公式：（3+100-1）*2=204ns。（公式中的k表示指令被分成了几段）</p>
+</blockquote>
+<h3 id="流水线吞吐率计算"><a class="markdownIt-Anchor" href="#流水线吞吐率计算"></a> 流水线吞吐率计算</h3>
+<h1 id="考点知识"><a class="markdownIt-Anchor" href="#考点知识"></a> 考点知识</h1>
+<h2 id="选择题考点"><a class="markdownIt-Anchor" href="#选择题考点"></a> 选择题考点</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>RISC<br />精简指令集计算机</th>
+<th>CISC<br />复杂指令集计算机</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>指令种类</td>
+<td>少、精简</td>
+<td>多、丰富</td>
+</tr>
+<tr>
+<td>指令复杂度</td>
+<td>低(简单)</td>
+<td>高(复杂)</td>
+</tr>
+<tr>
+<td>指令长度</td>
+<td>固定</td>
+<td>变化</td>
+</tr>
+<tr>
+<td>寻址方式</td>
+<td>少</td>
+<td>复杂多样</td>
+</tr>
+<tr>
+<td>实现(译码)方式</td>
+<td>硬布线控制逻辑<br />(组合逻辑控制器)</td>
+<td>微程序控制技术</td>
+</tr>
+<tr>
+<td>通用寄存器数量</td>
+<td>多、大量</td>
+<td>一般</td>
+</tr>
+<tr>
+<td>流水线技术</td>
+<td>支持</td>
+<td>不支持</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cpu组成-2"><a class="markdownIt-Anchor" href="#cpu组成-2"></a> CPU组成</h3>
+<p>CPU主要有运算器、控制器、寄存器组和内部总线等部件组成，如图所示。</p>
+<p><img src="https://images.hikki.site/01-CPU%E5%9F%BA%E6%9C%AC%E7%BB%84%E6%88%90%E7%BB%93%E6%9E%84%E7%A4%BA%E6%84%8F%E5%9B%BE-20230114-064.png" alt="01-CPU基本组成结构示意图-20230114-064" /></p>
+<blockquote>
+<p>注意：内部总线和系统总线不一样，算数逻辑运算单元是运算器。</p>
+</blockquote>
+<h3 id="sram-dram"><a class="markdownIt-Anchor" href="#sram-dram"></a> SRAM &amp; DRAM</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>SRAM</th>
+<th>DRAM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>原理</td>
+<td>触发器</td>
+<td><strong>电容</strong></td>
+</tr>
+<tr>
+<td>读出</td>
+<td>非破坏性</td>
+<td>破坏性</td>
+</tr>
+<tr>
+<td><strong>刷新</strong></td>
+<td><strong>不用</strong></td>
+<td><strong>用</strong></td>
+</tr>
+<tr>
+<td>送地址</td>
+<td>一起送</td>
+<td>分列分开送</td>
+</tr>
+<tr>
+<td>速度</td>
+<td>快</td>
+<td>慢</td>
+</tr>
+<tr>
+<td>集成度</td>
+<td>低</td>
+<td>高</td>
+</tr>
+<tr>
+<td>功耗</td>
+<td>高</td>
+<td>低</td>
+</tr>
+<tr>
+<td>成本</td>
+<td>高</td>
+<td>低</td>
+</tr>
+<tr>
+<td>用途</td>
+<td>Cache</td>
+<td>内存</td>
+</tr>
+</tbody>
+</table>
+<p><code>DRAM</code>使用<code>电容</code>存储信息需要周期性的<code>刷新</code></p>
+<p>计算机系统使用补码表示有符号的数值，可以将减法运算转换成加法运算从而简化运算器的设计。</p>
+<p>认证方式安全性最低是<code>口令认证</code></p>
+<h2 id="软件著作权"><a class="markdownIt-Anchor" href="#软件著作权"></a> 软件著作权</h2>
+<p>主要是看<code>书面合同</code>是否有明确规定，没有则著作权归受托人</p>
+<p><img src="https://bu.dusays.com/2023/01/20/63ca1eae4dac1.png" alt="软件著作权" /></p>
+<h2 id="七种耦合类型"><a class="markdownIt-Anchor" href="#七种耦合类型"></a> 七种耦合类型</h2>
+<p>七种代码耦合类型根据耦合程度由高到低排序分别是：<code>内容耦合、公共耦合、外部耦合、控制耦合、标记耦合、数据耦合</code>和<code>非直接耦合</code>。</p>
+<p><img src="https://images.hikki.site/%E4%B8%83%E7%A7%8D%E8%80%A6%E5%90%88%E7%B1%BB%E5%9E%8B-20230307-650.png" alt="七种耦合类型-20230307-650" /></p>
+<h3 id="内容耦合"><a class="markdownIt-Anchor" href="#内容耦合"></a> 内容耦合</h3>
+<div class="note blue icon-padding flat"><i class="note-icon fas fa-virus"></i><p>一个模块可以<code>直接访问</code>另一个模块的内部数据被称为内容耦合，或者通过非正常入口转入另一个模块内部，这是耦合性最强的类型。</p>
+</div>
+<p><img src="https://bu.dusays.com/2023/01/20/63ca2b0179356.png" alt="2-内容耦合-20230120-128" /></p>
+<p>假设模块A是订单模块，模块B是支付模块，如果支付模块可以直接访问订单数据表，那么至少会带来以下问题。</p>
+<p>第一个问题是存在重复的数据访问层代码，支付和订单模块都要写订单数据访问代码。 第二个问题是如果订单业务变动，需要变更订单数据字段，如果支付模块没有跟着及时 变更，那么可能会造成业务错误。</p>
+<p>第三个问题是如果订单业务变动，需要分库分表拆分数据，如果支付模块没有跟着及时变更，例如没有使用shardingKey进行查询或者旧库表停写，那么可能会造成支付模块严重错误。</p>
+<p>第四个问题是业务入口没有收敛，访问入口到处散落，如果想要业务变更则需要多处修改，非常不利于维护。</p>
+<h3 id="公共耦合"><a class="markdownIt-Anchor" href="#公共耦合"></a> 公共耦合</h3>
+<div class="note blue icon-padding flat"><i class="note-icon fas fa-virus"></i><p>多个模块都访问同一个公共数据环境被称为公共耦合，公共数据环境例如全局数据结构、共享通信区和内存公共覆盖区。</p>
+</div>
+<p><img src="https://bu.dusays.com/2023/01/20/63ca2b05994e1.png" alt="03-公共耦合- 20230120-555" /></p>
+<h3 id="外部耦合"><a class="markdownIt-Anchor" href="#外部耦合"></a> 外部耦合</h3>
+<div class="note blue icon-padding flat"><i class="note-icon fas fa-virus"></i><p>模块间通过软件之外的环境联结（如I/O将模块耦合到特定的设备、格式、通信协议上）时称为外部耦合。</p>
+</div>
+<p><img src="https://bu.dusays.com/2023/01/20/63ca2b0961565.png" alt="4-外部耦合-20230120-907" /></p>
+<h3 id="控制耦合"><a class="markdownIt-Anchor" href="#控制耦合"></a> 控制耦合</h3>
+<div class="note blue icon-padding flat"><i class="note-icon fas fa-virus"></i><p>指一个模块调用另一个模块时，传递的是控制变量，被调用模块通过该控制字变量的值有选择地执行模块内的某一功能。因此，被调用模块应具有多个功能，那个功能起作用受调用模块控制。</p>
+</div>
+<p>控制耦合可能会导致模块之间控制逻辑相互交织，逻辑之间相互影响，非常不利于代码维护。</p>
+<p><img src="https://bu.dusays.com/2023/01/20/63ca2b0e8e966.png" alt="5-控制耦合-20230120-537" /></p>
+<h3 id="标记耦合"><a class="markdownIt-Anchor" href="#标记耦合"></a> 标记耦合</h3>
+<div class="note blue icon-padding flat"><i class="note-icon fas fa-virus"></i><p>多个模块通过参数表传递数据结构信息被称为标记耦合，可以类比JAVA语言引用传递。</p>
+</div>
+<p><img src="https://bu.dusays.com/2023/01/20/63ca2b0c1f585.png" alt="6-标记耦合-20230120-556" /></p>
+<h3 id="数据耦合"><a class="markdownIt-Anchor" href="#数据耦合"></a> 数据耦合</h3>
+<div class="note blue icon-padding flat"><i class="note-icon fas fa-virus"></i><p>指两个模块之间有调用关系，传递的是简单的数据值，相当于高级语言中的值传递。</p>
+</div>
+<p><img src="https://bu.dusays.com/2023/01/20/63ca2b183dca0.png" alt="7-数据耦合-20230120-856" /></p>
+<h3 id="无直接耦合"><a class="markdownIt-Anchor" href="#无直接耦合"></a> 无直接耦合</h3>
+<div class="note blue icon-padding flat"><i class="note-icon fas fa-virus"></i><p>指两个模块之间没有直接的关系，它们分别从属不同模块的控制与调用，它们之间不传递任何消息。因此，模块间耦合性最弱，模块独立性最高。</p>
+</div>
+<p><img src="https://bu.dusays.com/2023/01/20/63ca2b11b24d0.png" alt="8-非直接耦合-20230120-300" /></p>
+<h2 id="浮点数"><a class="markdownIt-Anchor" href="#浮点数"></a> 浮点数</h2>
+<p><code>阶码</code>：就是幂</p>
+<p><code>尾数</code>：<code>就是小数后的数</code></p>
+<h2 id="单元测试"><a class="markdownIt-Anchor" href="#单元测试"></a> 单元测试</h2>
+<p>单元测试也称为模块测试，在模块编写完成且无编译错误后就可以进行。单元测试侧重于模块中的内部处理逻辑和数据结构。如果选用机器测试，一般用白盒测试法。这类测试可以对多个模块同时进行。<br />
+1）单元测试的测试内容<br />
+单元测试主要检查模块的以下5个特征。<br />
+（1）模块接口。模块的接口保证了测试模块的数据流可以正确地流入、流出。在测试中应<br />
+检查以下要点：<br />
+①测试模块的输入参数和形式参数在个数、属性、单位上是否一致。<br />
+②调用其他模块时，所给出的实际参数和被调用模块的形式参数在个数、属性、单位上<br />
+是否一致。<br />
+③调用标准函数时，所用的参数在属性、数日和顺序上是否正确。<br />
+④全局变量在各模块中的定义和用法是否一致。<br />
+输入是否仅改变了形式参数。<br />
+开/关的语句是否正确。<br />
+规定的IO格式是否与输入/输出语句一致。<br />
+③在使用文件之前是否已经打开文件或使用文件之后是否已经关闭文件。<br />
+（2）局部数据结构。在单元测试中，局部数据结构出错是比较常见的错误，在测试时应重<br />
+点考虑以下因素。<br />
+①变量的说明是否合适。<br />
+② 是否使用了尚未赋值或尚未初始化的变量。<br />
+3 变量的初始值或默认值是否正确。<br />
+④变量名是否有错（例如拼写错）。</p>
+<hr class="footnotes-sep" />
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>通用寄存器是一个种类 <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://blog.hikki.site">小码同学</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://blog.hikki.site/3d358537.html">https://blog.hikki.site/3d358537.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow noreferrer" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://blog.hikki.site" target="_blank">小码同学</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E8%80%83%E8%AF%95/">考试</a></div><div class="post_share"><div class="social-share" data-image="https://images.hikki.site/20230107211607.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="/data/theme/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/data/img/wechatpay.jpg" target="_blank"><img class="post-qr-code-img" src="/data/img/wechatpay.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="/data/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src="/data/img/alipay.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/6ee1ace5.html" title="【win10优化系列】FRP内网穿透-远程桌面"><i class="fas fa-chevron-left prev-icon"><div class="prev-label">上一篇</div></i></a><div class="pagination-card"><img class="prev-cover" src="https://images.hikki.site/20230108121843.jpeg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">【win10优化系列】FRP内网穿透-远程桌面</div></div></div></div><div class="next-post pull-right"><a href="/b2cc2eb5.html" title="【spring系列】2-资源加载"><i class="fas fa-chevron-right next-icon"><div class="next-label">下一篇</div></i></a><div class="pagination-card"><img class="next-cover" src="https://images.hikki.site/cover-2-资源加载.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">【spring系列】2-资源加载</div></div></div></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/68488933.html" title="期末复习-操作系统"><img class="cover" src="https://images.hikki.site/20230210010910.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-02-10</div><div class="title">期末复习-操作系统</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="disqus_thread"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/data/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">小码同学</div><div class="author-info__description">喜欢的东西就努力去追求，万一成功了呢！</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">173</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">29</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">39</div></a></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/0000rookie" rel="external nofollow noreferrer" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://space.bilibili.com/110844189?spm_id_from=333.1007.0.0" rel="external nofollow noreferrer" target="_blank" title="B站"><i class="fa-brands fa-bilibili"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title=""><i class="fas fa-rss"></i></a><a class="social-icon" href="mailto:aa1341151056@126.com" rel="external nofollow noreferrer" target="_blank" title=""><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content"><img src="https://blog.hikki.site/data/img/emoji/coolapk/c-pyjiaoyi.png" style="width:35px;height:35px"/>本站拒绝海外IP访问，如果您有连接到海外网络，可能体验不是很好</div></div><div class="card-widget tzy-right-widget" id="card-wechat"><div id="flip-wrapper"><div id="flip-content"><div class="face"></div><div class="back face"></div></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E7%9F%A5%E8%AF%86"><span class="toc-number">1.</span> <span class="toc-text"> 第一章：计算机系统知识</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A1%AC%E4%BB%B6%E5%9F%BA%E6%9C%AC%E7%BB%84%E6%88%90"><span class="toc-number">1.1.</span> <span class="toc-text"> 计算机硬件基本组成</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%AD%E5%A4%AE%E5%A4%84%E7%90%86%E5%8D%95%E5%85%83cpu"><span class="toc-number">1.2.</span> <span class="toc-text"> 中央处理单元（CPU）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#cpu%E5%8A%9F%E8%83%BD"><span class="toc-number">1.2.1.</span> <span class="toc-text"> CPU功能</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#cpu%E7%BB%84%E6%88%90"><span class="toc-number">1.2.2.</span> <span class="toc-text"> CPU组成</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%90%E7%AE%97%E5%99%A8"><span class="toc-number">1.2.2.1.</span> <span class="toc-text"> 运算器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8E%A7%E5%88%B6%E5%99%A8"><span class="toc-number">1.2.2.2.</span> <span class="toc-text"> 控制器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AF%84%E5%AD%98%E5%99%A8%E7%BB%84"><span class="toc-number">1.2.2.3.</span> <span class="toc-text"> 寄存器组</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E6%A0%B8cpu"><span class="toc-number">1.2.3.</span> <span class="toc-text"> 多核CPU</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%80%E5%8D%95%E6%A6%82%E8%BF%B0"><span class="toc-number">1.2.4.</span> <span class="toc-text"> 简单概述</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%81%E6%B0%B4%E7%BA%BF"><span class="toc-number">1.3.</span> <span class="toc-text"> 流水线</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-number">1.3.1.</span> <span class="toc-text"> 基本概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%81%E6%B0%B4%E7%BA%BF%E8%AE%A1%E7%AE%97%E5%85%AC%E5%BC%8F"><span class="toc-number">1.3.2.</span> <span class="toc-text"> 流水线计算(公式)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%81%E6%B0%B4%E7%BA%BF%E5%90%9E%E5%90%90%E7%8E%87%E8%AE%A1%E7%AE%97"><span class="toc-number">1.3.3.</span> <span class="toc-text"> 流水线吞吐率计算</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%80%83%E7%82%B9%E7%9F%A5%E8%AF%86"><span class="toc-number">2.</span> <span class="toc-text"> 考点知识</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E9%A2%98%E8%80%83%E7%82%B9"><span class="toc-number">2.1.</span> <span class="toc-text"> 选择题考点</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#cpu%E7%BB%84%E6%88%90-2"><span class="toc-number">2.1.1.</span> <span class="toc-text"> CPU组成</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#sram-dram"><span class="toc-number">2.1.2.</span> <span class="toc-text"> SRAM &amp; DRAM</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BD%AF%E4%BB%B6%E8%91%97%E4%BD%9C%E6%9D%83"><span class="toc-number">2.2.</span> <span class="toc-text"> 软件著作权</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%83%E7%A7%8D%E8%80%A6%E5%90%88%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.3.</span> <span class="toc-text"> 七种耦合类型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%85%E5%AE%B9%E8%80%A6%E5%90%88"><span class="toc-number">2.3.1.</span> <span class="toc-text"> 内容耦合</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%AC%E5%85%B1%E8%80%A6%E5%90%88"><span class="toc-number">2.3.2.</span> <span class="toc-text"> 公共耦合</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%96%E9%83%A8%E8%80%A6%E5%90%88"><span class="toc-number">2.3.3.</span> <span class="toc-text"> 外部耦合</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A7%E5%88%B6%E8%80%A6%E5%90%88"><span class="toc-number">2.3.4.</span> <span class="toc-text"> 控制耦合</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%87%E8%AE%B0%E8%80%A6%E5%90%88"><span class="toc-number">2.3.5.</span> <span class="toc-text"> 标记耦合</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E8%80%A6%E5%90%88"><span class="toc-number">2.3.6.</span> <span class="toc-text"> 数据耦合</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%A0%E7%9B%B4%E6%8E%A5%E8%80%A6%E5%90%88"><span class="toc-number">2.3.7.</span> <span class="toc-text"> 无直接耦合</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%AE%E7%82%B9%E6%95%B0"><span class="toc-number">2.4.</span> <span class="toc-text"> 浮点数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95"><span class="toc-number">2.5.</span> <span class="toc-text"> 单元测试</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/232c1cc7.html" title="服务器备案+迁移数据方案"><img src="/data/img/wallhaven-8ozk-%E5%8E%8B%E7%BC%A9%E5%90%8E.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="服务器备案+迁移数据方案"/></a><div class="content"><a class="title" href="/232c1cc7.html" title="服务器备案+迁移数据方案">服务器备案+迁移数据方案</a><time datetime="2023-05-30T12:54:52.000Z" title="发表于 2023-05-30 20:54:52">2023-05-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/f9ef02fb.html" title="【SpringBoot系列】04-NoSQL数据库"><img src="https://images.hikki.site/cover-2023-05-24-150023.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【SpringBoot系列】04-NoSQL数据库"/></a><div class="content"><a class="title" href="/f9ef02fb.html" title="【SpringBoot系列】04-NoSQL数据库">【SpringBoot系列】04-NoSQL数据库</a><time datetime="2023-05-24T07:57:35.000Z" title="发表于 2023-05-24 15:57:35">2023-05-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/169f819e.html" title="【SpringBoot系列】03-测试与数据库操作"><img src="https://bu.dusays.com/2023/05/22/646a5ebd510bf.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【SpringBoot系列】03-测试与数据库操作"/></a><div class="content"><a class="title" href="/169f819e.html" title="【SpringBoot系列】03-测试与数据库操作">【SpringBoot系列】03-测试与数据库操作</a><time datetime="2023-05-22T06:58:21.000Z" title="发表于 2023-05-22 14:58:21">2023-05-22</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://images.hikki.site/20230107211607.png')"><div id="footer-wrap"><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="fa-solid fa-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="fa-solid fa-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="fa-solid fa-arrow-rotate-right"></i></div><div class="rightMenu-item" id="menu-home"><i class="fa-solid fa-house"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" href="/archives/"><i class="fa-solid fa-archive"></i><span>文章归档</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="fa-solid fa-tags"></i><span>文章标签</span></a><a class="rightMenu-item menu-link" href="/message/"><i class="fa-solid fa-comment-dots"></i><span>留言板</span></a><a class="rightMenu-item menu-link" href="/link/moments"><i class="fa-solid fa-procedures"></i><span>闲言碎语</span></a><a class="rightMenu-item menu-link" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.travellings.cn/go.html"><i class="fa-solid fa-rocket"></i><span>博客列车</span></a></div><div class="rightMenu-group rightMenu-line rightMenuNormal"><a class="rightMenu-item menu-link" id="menu-radompage" href="/random.html"><i class="fa-solid fa-shoe-prints"></i><span>随便逛逛</span></a><div class="rightMenu-item" id="menu-translate"><i class="fa-solid fa-earth-asia"></i><span>繁简切换</span></div><div class="rightMenu-item" id="menu-darkmode"><i class="fa-solid fa-moon"></i><span>切换模式</span></div></div></div><div id="rightmenu-mask"></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="/data/theme/medium-zoom.min.js"></script><script src="/data/theme/instantpage.min.js" type="module"></script><script src="/data/theme/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function loadDisqus () {
+  var disqus_config = function () {
+    this.page.url = 'https://blog.hikki.site/3d358537.html'
+    this.page.identifier = '/3d358537.html'
+    this.page.title = '软考中级-软件设计师'
+  };
+
+  window.disqusReset = () => {
+    DISQUS.reset({
+      reload: true,
+      config: disqus_config
+    })
+  }
+
+  if (window.DISQUS) disqusReset()
+  else {
+    (function() { 
+      var d = document, s = d.createElement('script');
+      s.src = 'https://.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  }
+
+  document.getElementById('darkmode').addEventListener('click', () => {
+    setTimeout(() => window.disqusReset(), 200)
+  })
+}
+
+if ('Disqus' === 'Disqus' || !true) {
+  if (true) btf.loadComment(document.getElementById('disqus_thread'), loadDisqus)
+  else loadDisqus()
+} else {
+  function loadOtherComment () {
+    loadDisqus()
+  }
+}
+</script></div><script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script><script defer data-pjax src="/js/rightMenu.js"></script><script src="/js/fixed-pagination.js" async></script><script defer data-pjax type="text/javascript" src="/util/util.js"></script><script defer data-pjax type="text/javascript" src="/data/js/utils.js"></script><script>let tianliGPT_postSelector = '\#post \#article-container';let tianliGPT_key = 'U5FHKh71uMCfndwMIBkd';</script><script src="https://cdn1.tianli0.top/gh/zhheo/Post-Abstract-AI@0.7/tianli_gpt.js"></script><script src="/data/theme/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script src="/data/theme/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"]):not([href="/music/"]):not([href="/no-pjax/"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script async src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><script data-pjax>
+  function butterfly_footer_beautify_injector_config(){
+    var parent_div_git = document.getElementById('footer-wrap');
+    var item_html = '<div id="workboard"></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://www.upyun.com/?utm_source=lianmeng&amp;utm_medium=referral" rel="external nofollow noreferrer" style="margin-inline:5px" data-title="本网站由又拍云提供CDN加速/云存储服务" title=""><img src="https://img.shields.io/badge/CDN-%E5%8F%88%E6%8B%8D%E4%BA%91-blue" alt=""/></a><a class="github-badge" target="_blank" href="https://hexo.io/" rel="external nofollow noreferrer" style="margin-inline:5px" data-title="博客框架为Hexo_v5.4.0" title=""><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&amp;logo=hexo" alt=""/></a><a class="github-badge" target="_blank" href="https://butterfly.js.org/" rel="external nofollow noreferrer" style="margin-inline:5px" data-title="主题版本Butterfly_v4.5.1" title=""><img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&amp;logo=bitdefender" alt=""/></a><a class="github-badge" target="_blank" href="https://beian.miit.gov.cn/" rel="external nofollow noreferrer" style="margin-inline:5px" data-title="粤ICP备2022125102号" title=""><img src="/data/img/icon-link/粤ICP备2022125102号.svg" alt=""/></a></p>';
+    console.log('已挂载butterfly_footer_beautify')
+    parent_div_git.insertAdjacentHTML("beforeend",item_html)
+    }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_footer_beautify_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_footer_beautify_injector_config();
+  }
+  </script><script async src="/data/js/runtime.min.js"></script><!-- hexo injector body_end end --></body></html>

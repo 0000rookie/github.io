@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>小码同学</title>
+  
+  
+  <link href="https://blog.hikki.site/atom.xml" rel="self"/>
+  
+  <link href="https://blog.hikki.site/"/>
+  <updated>2023-05-30T16:06:47.010Z</updated>
+  <id>https://blog.hikki.site/</id>
+  
+  <author>
+    <name>小码同学</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>服务器备案+迁移数据方案</title>
+    <link href="https://blog.hikki.site/232c1cc7.html"/>
+    <id>https://blog.hikki.site/232c1cc7.html</id>
+    <published>2023-05-30T12:54:52.000Z</published>
+    <updated>2023-05-30T16:06:47.010Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#前言&quot;&gt;&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Linux" scheme="https://blog.hikki.site/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【SpringBoot系列】04-NoSQL数据库</title>
+    <link href="https://blog.hikki.site/f9ef02fb.html"/>
+    <id>https://blog.hikki.site/f9ef02fb.html</id>
+    <published>2023-05-24T07:57:35.000Z</published>
+    <updated>2023-05-24T09:20:15.556Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;redis&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#redis&quot;&gt;&lt;/a&gt; Redis&lt;/h1&gt;
+&lt;h2 id=&quot;redis介绍&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Java" scheme="https://blog.hikki.site/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【SpringBoot系列】03-测试与数据库操作</title>
+    <link href="https://blog.hikki.site/169f819e.html"/>
+    <id>https://blog.hikki.site/169f819e.html</id>
+    <published>2023-05-22T06:58:21.000Z</published>
+    <updated>2023-05-21T18:19:18.766Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;配置属性与数据&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#配置属性与数据&quot;&gt;&lt;/a&gt; 配置属性与数据&lt;/h1&gt;
+&lt;h2 id=&quot;获取配置文件属性&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Java" scheme="https://blog.hikki.site/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux常见问题</title>
+    <link href="https://blog.hikki.site/58aaad8b.html"/>
+    <id>https://blog.hikki.site/58aaad8b.html</id>
+    <published>2023-05-18T04:37:36.000Z</published>
+    <updated>2023-05-19T13:29:36.409Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;linux环境&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#linux环境&quot;&gt;&lt;/a&gt; Linux环境&lt;/h1&gt;
+&lt;h2 id=&quot;nginx安装报错&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="计算机科学" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
+    
+    <category term="fail" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/fail/"/>
+    
+    
+    <category term="fail" scheme="https://blog.hikki.site/tags/fail/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Flarum问答社区</title>
+    <link href="https://blog.hikki.site/ad0e3313.html"/>
+    <id>https://blog.hikki.site/ad0e3313.html</id>
+    <published>2023-05-09T15:25:03.000Z</published>
+    <updated>2023-05-19T11:31:52.730Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#前言&quot;&gt;&lt;/a&gt; 前言&lt;/h1&gt;
+&lt;p&gt;中文站：&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="计算机科学" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
+    
+    <category term="技术杂谈" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/"/>
+    
+    <category term="其他" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E5%85%B6%E4%BB%96/"/>
+    
+    
+    <category term="Docker" scheme="https://blog.hikki.site/tags/Docker/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【Docker系列】-部署ChatGPT</title>
+    <link href="https://blog.hikki.site/dbf02b86.html"/>
+    <id>https://blog.hikki.site/dbf02b86.html</id>
+    <published>2023-05-08T15:04:04.000Z</published>
+    <updated>2023-05-10T07:54:05.201Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#前言&quot;&gt;&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="计算机科学" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
+    
+    <category term="技术杂谈" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/"/>
+    
+    <category term="docker" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/docker/"/>
+    
+    <category term="Docker系列" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/docker/Docker%E7%B3%BB%E5%88%97/"/>
+    
+    
+    <category term="服务器" scheme="https://blog.hikki.site/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【SpringBoot系列】2-整合SSMP+高级配置</title>
+    <link href="https://blog.hikki.site/ba8a4b36.html"/>
+    <id>https://blog.hikki.site/ba8a4b36.html</id>
+    <published>2023-05-01T14:02:17.000Z</published>
+    <updated>2023-05-12T02:00:48.924Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;什么是ssmp&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#什么是ssmp&quot;&gt;&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="计算机科学" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
+    
+    <category term="编程语言" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+    <category term="java" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/"/>
+    
+    <category term="SpringBoot" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/SpringBoot/"/>
+    
+    
+    <category term="Java" scheme="https://blog.hikki.site/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Jenkins集成Gitee持续集成</title>
+    <link href="https://blog.hikki.site/83f82fd1.html"/>
+    <id>https://blog.hikki.site/83f82fd1.html</id>
+    <published>2023-04-28T06:11:09.000Z</published>
+    <updated>2023-04-28T07:07:20.591Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#前言&quot;&gt;&lt;/a&gt; 前言&lt;/h1&gt;
+&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="计算机科学" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
+    
+    <category term="技术杂谈" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/"/>
+    
+    <category term="linux" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/linux/"/>
+    
+    <category term="系统运维" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/linux/%E7%B3%BB%E7%BB%9F%E8%BF%90%E7%BB%B4/"/>
+    
+    
+    <category term="技术杂谈" scheme="https://blog.hikki.site/tags/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java开发Swagger接口文档入门</title>
+    <link href="https://blog.hikki.site/bca23cce.html"/>
+    <id>https://blog.hikki.site/bca23cce.html</id>
+    <published>2023-04-27T16:39:20.000Z</published>
+    <updated>2023-05-02T03:12:36.587Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#前言&quot;&gt;&lt;/a&gt; 前言&lt;/h1&gt;
+&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="计算机科学" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
+    
+    <category term="编程语言" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+    <category term="java" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/"/>
+    
+    <category term="技术" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="Java" scheme="https://blog.hikki.site/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>迁移Docker容器及数据</title>
+    <link href="https://blog.hikki.site/379c4844.html"/>
+    <id>https://blog.hikki.site/379c4844.html</id>
+    <published>2023-04-26T06:52:04.000Z</published>
+    <updated>2023-05-30T16:06:41.973Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#前言&quot;&gt;&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="计算机科学" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
+    
+    <category term="技术杂谈" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/"/>
+    
+    <category term="docker" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/docker/"/>
+    
+    
+    <category term="Docker" scheme="https://blog.hikki.site/tags/Docker/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring项目web.xml详解</title>
+    <link href="https://blog.hikki.site/f2cebfff.html"/>
+    <id>https://blog.hikki.site/f2cebfff.html</id>
+    <published>2023-04-25T05:20:37.000Z</published>
+    <updated>2023-05-08T13:02:02.548Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;web-app标签&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#web-app标签&quot;&gt;&lt;/a&gt; web-app标签&lt;/h2&gt;
+&lt;figure class=&quot;highlight xml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td</summary>
+        
+      
+    
+    
+    
+    <category term="计算机科学" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
+    
+    <category term="编程语言" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+    <category term="java" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/"/>
+    
+    <category term="Spring" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/Spring/"/>
+    
+    
+    <category term="Java" scheme="https://blog.hikki.site/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>REST风格API开发</title>
+    <link href="https://blog.hikki.site/dccb5c79.html"/>
+    <id>https://blog.hikki.site/dccb5c79.html</id>
+    <published>2023-04-13T08:13:55.000Z</published>
+    <updated>2023-04-24T10:25:07.298Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;rest风格&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#rest风格&quot;&gt;&lt;/a&gt; REST风格&lt;/h1&gt;
+&lt;h2 id=&quot;rest介绍&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="计算机科学" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
+    
+    <category term="编程语言" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+    <category term="java" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/"/>
+    
+    <category term="技术" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="Java" scheme="https://blog.hikki.site/tags/Java/"/>
+    
+    <category term="科普" scheme="https://blog.hikki.site/tags/%E7%A7%91%E6%99%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>部署静态资源到腾讯对象存储</title>
+    <link href="https://blog.hikki.site/896a4d63.html"/>
+    <id>https://blog.hikki.site/896a4d63.html</id>
+    <published>2023-04-12T15:11:31.000Z</published>
+    <updated>2023-04-24T10:25:07.295Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;官方文档&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#官方文档&quot;&gt;&lt;/a&gt; 官方文档&lt;/h1&gt;
+&lt;p&gt;腾讯云对象存储托管静态网站文档：&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="计算机科学" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
+    
+    <category term="技术杂谈" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/"/>
+    
+    <category term="其他" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E5%85%B6%E4%BB%96/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>【springboot系列】01-初识SpringBoot</title>
+    <link href="https://blog.hikki.site/f7e6efa7.html"/>
+    <id>https://blog.hikki.site/f7e6efa7.html</id>
+    <published>2023-04-10T16:34:15.000Z</published>
+    <updated>2023-05-08T14:17:10.614Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;springboot介绍&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#springboot介绍&quot;&gt;&lt;/a&gt; SpringBoot介绍&lt;/h1&gt;
+&lt;h2 id=&quot;来源&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="计算机科学" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
+    
+    <category term="编程语言" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+    <category term="java" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/"/>
+    
+    <category term="SpringBoot" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/SpringBoot/"/>
+    
+    
+    <category term="Java" scheme="https://blog.hikki.site/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【Spring系列】7-SSM整合</title>
+    <link href="https://blog.hikki.site/1c96614.html"/>
+    <id>https://blog.hikki.site/1c96614.html</id>
+    <published>2023-04-10T16:04:11.000Z</published>
+    <updated>2023-05-08T13:02:02.548Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;整合ssm&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#整合ssm&quot;&gt;&lt;/a&gt; 整合SSM&lt;/h1&gt;
+&lt;h2 id=&quot;什么是ssm&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#什么是ssm&quot;&gt;&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="计算机科学" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
+    
+    <category term="编程语言" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+    <category term="java" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/"/>
+    
+    <category term="Spring" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/Spring/"/>
+    
+    
+    <category term="Java" scheme="https://blog.hikki.site/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【好物安利】Z-Library-世界上最大的电子图书馆</title>
+    <link href="https://blog.hikki.site/253195ac.html"/>
+    <id>https://blog.hikki.site/253195ac.html</id>
+    <published>2023-04-10T07:51:50.000Z</published>
+    <updated>2023-04-24T09:38:42.223Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;z-library&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#z-library&quot;&gt;&lt;/a&gt; Z-Library&lt;/h1&gt;
+&lt;h2 id=&quot;前言&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="生活" scheme="https://blog.hikki.site/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    <category term="好物安利" scheme="https://blog.hikki.site/categories/%E7%94%9F%E6%B4%BB/%E5%A5%BD%E7%89%A9%E5%AE%89%E5%88%A9/"/>
+    
+    
+    <category term="好物安利" scheme="https://blog.hikki.site/tags/%E5%A5%BD%E7%89%A9%E5%AE%89%E5%88%A9/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【MongoDB】01-快速入门</title>
+    <link href="https://blog.hikki.site/a01c87f6.html"/>
+    <id>https://blog.hikki.site/a01c87f6.html</id>
+    <published>2023-04-09T03:34:01.000Z</published>
+    <updated>2023-05-22T06:35:40.445Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#前言&quot;&gt;&lt;/a&gt; 前言&lt;/h1&gt;
+&lt;h2 id=&quot;课程目标&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#课程目标&quot;&gt;&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="计算机科学" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
+    
+    <category term="数据处理" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/"/>
+    
+    <category term="MongoDB" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/MongoDB/"/>
+    
+    
+    <category term="数据处理" scheme="https://blog.hikki.site/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【Spring系列】8-Maven高级</title>
+    <link href="https://blog.hikki.site/ec8df36c.html"/>
+    <id>https://blog.hikki.site/ec8df36c.html</id>
+    <published>2023-04-06T06:26:02.000Z</published>
+    <updated>2023-05-08T13:02:02.548Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;分模块开发与设计&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#分模块开发与设计&quot;&gt;&lt;/a&gt; 分模块开发与设计&lt;/h1&gt;
+&lt;h2 id=&quot;模块拆分原则&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="计算机科学" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
+    
+    <category term="编程语言" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+    <category term="java" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/"/>
+    
+    <category term="Spring" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/Spring/"/>
+    
+    
+    <category term="Java" scheme="https://blog.hikki.site/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【Windows11】优化整合</title>
+    <link href="https://blog.hikki.site/43267af.html"/>
+    <id>https://blog.hikki.site/43267af.html</id>
+    <published>2023-03-31T03:46:55.000Z</published>
+    <updated>2023-04-17T09:06:17.444Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;切换回旧版右键菜单&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#切换回旧版右键菜单&quot;&gt;&lt;/a&gt; 切换回旧版右键菜单&lt;/h1&gt;
+&lt;h2 id=&quot;资源下载&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="计算机科学" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
+    
+    <category term="技术杂谈" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/"/>
+    
+    <category term="window" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/window/"/>
+    
+    
+    <category term="Windows" scheme="https://blog.hikki.site/tags/Windows/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Windows11安装Android子系统</title>
+    <link href="https://blog.hikki.site/605a8b8e.html"/>
+    <id>https://blog.hikki.site/605a8b8e.html</id>
+    <published>2023-03-29T06:31:32.000Z</published>
+    <updated>2023-04-03T15:35:55.303Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#前言&quot;&gt;&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="计算机科学" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
+    
+    <category term="技术杂谈" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/"/>
+    
+    <category term="window" scheme="https://blog.hikki.site/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/window/"/>
+    
+    
+    <category term="教程" scheme="https://blog.hikki.site/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Android" scheme="https://blog.hikki.site/tags/Android/"/>
+    
+  </entry>
+  
+</feed>

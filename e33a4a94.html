@@ -1,0 +1,515 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Jenkins集成Gitlab持续集成 | 小码同学</title><meta name="author" content="小码同学"><meta name="copyright" content="小码同学"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#93a5cf"><meta name="description" content="Jenkins是一个开源的、提供友好操作界面的持续集成(CI)工具，起源于Hudson（Hudson是商用的），主要用于持续、自动的构建&#x2F;测试软件项目、监控外部任务的运行。Jenkins用Java语言编写，可在Tomcat等流行的servlet容器中运行，也可独立运行。通常与版本管理工具(SCM)、构建工具结合使用。常用的版本控制工具有SVN、GIT，构建工具有Maven、Ant、Gradle。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Jenkins集成Gitlab持续集成">
+<meta property="og:url" content="https://blog.hikki.site/e33a4a94.html">
+<meta property="og:site_name" content="小码同学">
+<meta property="og:description" content="Jenkins是一个开源的、提供友好操作界面的持续集成(CI)工具，起源于Hudson（Hudson是商用的），主要用于持续、自动的构建&#x2F;测试软件项目、监控外部任务的运行。Jenkins用Java语言编写，可在Tomcat等流行的servlet容器中运行，也可独立运行。通常与版本管理工具(SCM)、构建工具结合使用。常用的版本控制工具有SVN、GIT，构建工具有Maven、Ant、Gradle。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://images.hikki.site/jenkins-cover-2023-04-24-174923.svg">
+<meta property="article:published_time" content="2022-10-14T17:34:45.000Z">
+<meta property="article:modified_time" content="2023-04-24T09:50:16.574Z">
+<meta property="article:author" content="小码同学">
+<meta property="article:tag" content="Linux">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://images.hikki.site/jenkins-cover-2023-04-24-174923.svg"><link rel="shortcut icon" href="/data/img/favicon.ico"><link rel="canonical" href="https://blog.hikki.site/e33a4a94"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="/data/theme/snackbar.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"https://cdntx.hikki.site/static/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: {"limitDay":50,"position":"top","messagePrev":"距离上一次更新一已经","messageNext":"天了，文章的内容可能不是最新的，甚至已经过时 !"},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":250},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'mediumZoom',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#ff9a9e","bgDark":"#1f1f1f","position":"top-center"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isAnchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Jenkins集成Gitlab持续集成',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: undefined,
+  isToc: true,
+  postUpdate: '2023-04-24 17:50:16'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#434343')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#93a5cf')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/rightMenu.css"><style id="barragesColor"></style><link rel="stylesheet" href="/data/css/custom.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="/data/css/runtime.min.css"><link rel="stylesheet" href="/data/css/utils.css"><link rel="stylesheet" href="https://cdn1.tianli0.top/gh/zhheo/Post-Abstract-AI@0.7/tianli_gpt.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><link rel="stylesheet" href="/data/css/runtime.min.css" media="print" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="小码同学" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/data/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">173</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">29</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">39</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-list"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fa-solid fa-tag"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-th-large"></i><span> 分类</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa-solid fa-wand-magic-sparkles"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa-solid fa-bookmark"></i><span> 书签</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/bookmark/johou/"><i class="fa-fw fas fa-sharp fa-solid fa-link"></i><span> 工具</span></a></li><li><a class="site-page child" href="/bookmark/programmer/"><i class="fa-fw fas fa-vials"></i><span> 程序猿</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa-solid fa-user-group"></i><span> 朋友</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/fcircle"><i class="fa-fw fas fa-snowboarding"></i><span> 朋友圈</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fa-solid fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.travellings.cn/go.html"><i class="fa-fw fas fa-rocket"></i><span> 开往</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user-tie"></i><span> 关于我</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://images.hikki.site/jenkins-cover-2023-04-24-174923.svg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">小码同学</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-list"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fa-solid fa-tag"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-th-large"></i><span> 分类</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa-solid fa-wand-magic-sparkles"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa-solid fa-bookmark"></i><span> 书签</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/bookmark/johou/"><i class="fa-fw fas fa-sharp fa-solid fa-link"></i><span> 工具</span></a></li><li><a class="site-page child" href="/bookmark/programmer/"><i class="fa-fw fas fa-vials"></i><span> 程序猿</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa-solid fa-user-group"></i><span> 朋友</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/fcircle"><i class="fa-fw fas fa-snowboarding"></i><span> 朋友圈</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fa-solid fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.travellings.cn/go.html"><i class="fa-fw fas fa-rocket"></i><span> 开往</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user-tie"></i><span> 关于我</span></a></div></div><center id="name-container"><a id="page-name" href="javascript:scrollToTop()" rel="external nofollow noreferrer">PAGE_NAME</a></center></div><div id="nav-right"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i></a></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Jenkins集成Gitlab持续集成</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-10-14T17:34:45.000Z" title="发表于 2022-10-15 01:34:45">2022-10-15</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-04-24T09:50:16.574Z" title="更新于 2023-04-24 17:50:16">2023-04-24</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/">计算机科学</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/">技术杂谈</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/linux/">linux</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/linux/%E7%B3%BB%E7%BB%9F%E8%BF%90%E7%BB%B4/">系统运维</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">3.8k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>14分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Jenkins集成Gitlab持续集成"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><blockquote>
+<p>Jenkins是一个开源的、提供友好操作界面的持续集成(CI)工具，起源于Hudson（Hudson是商用的），主要用于持续、自动的构建/测试软件项目、监控外部任务的运行。Jenkins用Java语言编写，可在Tomcat等流行的servlet容器中运行，也可独立运行。通常与版本管理工具(SCM)、构建工具结合使用。常用的版本控制工具有SVN、GIT，构建工具有Maven、Ant、Gradle。</p>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.jenkins.io/">Jenkins官方网站</a></p>
+</blockquote>
+<div class="note seccess simple"><p>实验前必须安装的环境：JDK11+、docker、docker-compose、tomcat9+、maven、Git、vim、wget。</p>
+<p>实验过程：在本地IDE开发，提交代码到Gitlab仓库，Jenkins自动监测仓库代码的变化，使用使用docker-compose自动化部署。</p>
+</div>
+<h1 id="gitlab安装"><a class="markdownIt-Anchor" href="#gitlab安装"></a> Gitlab安装</h1>
+<blockquote>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://docs.gitlab.cn/jh/install/requirements.html">官网安装文档</a></p>
+<p>配置要求：</p>
+<p>内存：最低4G以上，建议6G</p>
+<p>内核版本：3.10以上(查看内核版本命令：uname -r)</p>
+</blockquote>
+<h2 id="介绍"><a class="markdownIt-Anchor" href="#介绍"></a> 介绍</h2>
+<p>GitLab 是一个用于仓库管理系统的开源项目，使用Git作为代码管理工具，并在此基础上搭建起来的Web服务。简单来说就是类似GitHub的一个Git开源代码管理平台，只是Gitlab可以自己搭建随意使用，可以用于小团队并且完全不用担心代码泄露。</p>
+<h2 id="方式一docker安装推荐"><a class="markdownIt-Anchor" href="#方式一docker安装推荐"></a> 方式一：docker安装(推荐)</h2>
+<h3 id="新建文件夹用于存放gitlab数据"><a class="markdownIt-Anchor" href="#新建文件夹用于存放gitlab数据"></a> 新建文件夹用于存放Gitlab数据</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> /opt/gitlab/&#123;config,logs,data&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="使用docker-compose安装"><a class="markdownIt-Anchor" href="#使用docker-compose安装"></a> 使用docker-compose安装</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /opt/gitlab &amp;&amp; vim docker-compose.yml</span><br></pre></td></tr></table></figure>
+<p>在<code>docker-compose.yml</code>写入以下内容</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">version:</span> <span class="string">&#x27;3&#x27;</span></span><br><span class="line"><span class="attr">services:</span></span><br><span class="line">  <span class="attr">gitlab:</span></span><br><span class="line">    <span class="attr">image:</span> <span class="string">&#x27;gitlab/gitlab-ce:latest&#x27;</span> </span><br><span class="line">    <span class="attr">container_name:</span> <span class="string">gitlab</span></span><br><span class="line">    <span class="attr">restart:</span> <span class="string">always</span></span><br><span class="line">    <span class="attr">environment:</span></span><br><span class="line">      <span class="attr">TZ:</span> <span class="string">&#x27;Asia/Shanghai&#x27;</span> <span class="comment">#设置时区</span></span><br><span class="line">      <span class="attr">GITLAB_OMNIBUS_CONFIG:</span> <span class="string">|</span></span><br><span class="line"><span class="string">        gitlab_rails[&#x27;time_zone&#x27;] = &#x27;Asia/Shanghai&#x27;</span></span><br><span class="line"><span class="string">        external_url &#x27;http://192.168.2.12:980&#x27;   #要修改成自己的centos7的IP</span></span><br><span class="line"><span class="string">        gitlab_rails[&#x27;gitlab_shell_ssh_port&#x27;] = 2224 #使用ssh远程Gitlab端口</span></span><br><span class="line"><span class="string"></span>    <span class="attr">ports:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&#x27;980:980&#x27;</span> </span><br><span class="line">      <span class="bullet">-</span> <span class="string">&#x27;2224:22&#x27;</span></span><br><span class="line">    <span class="attr">volumes:</span></span><br><span class="line">      <span class="comment">#将相关配置映射到当前目录下的config目录</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&#x27;/opt/gitlab/config:/etc/gitlab&#x27;</span></span><br><span class="line">      <span class="comment">#将日志映射到当前目录下的logs目录</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&#x27;/opt/gitlab/logs:/var/log/gitlab&#x27;</span></span><br><span class="line">      <span class="comment">#将数据映射到当前目录下的data目录</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&#x27;/opt/gitlab/data:/var/opt/gitlab&#x27;</span></span><br></pre></td></tr></table></figure>
+<hr />
+<p><strong>构建容器</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker-compose up -d</span><br></pre></td></tr></table></figure>
+<ul>
+<li>up:表示运行容器并在前台运行</li>
+<li>-d：表示运行容器在后台运行</li>
+</ul>
+<p><strong>浏览器打开Gitlab</strong></p>
+<ol>
+<li>开放980、2224端口端口(关闭防火墙：systemctl stop firewalld.service)</li>
+<li>运行完<code>docker-compose up -d</code>指令后</li>
+<li>在浏览器打开http://IP:980即可</li>
+</ol>
+<div class="note info simple"><p>初次访问Gitlab可能会出现502页面，Gitlab比较消耗资源，需要一点时间加载，等2分钟左右再刷新访问就没问题了，如果还时502，你应该看看是不是虚拟机的内存不够大</p>
+</div>
+<h2 id="方式二直接安装"><a class="markdownIt-Anchor" href="#方式二直接安装"></a> 方式二：直接安装</h2>
+<p>官方安装文档：<a target="_blank" rel="noopener external nofollow noreferrer" href="https://gitlab.cn/install/?version=ce">https://gitlab.cn/install/?version=ce</a></p>
+<h3 id="安装依赖"><a class="markdownIt-Anchor" href="#安装依赖"></a> <strong>安装依赖</strong></h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装依赖</span></span><br><span class="line">sudo yum install -y curl policycoreutils-python openssh-server perl</span><br><span class="line"><span class="comment"># 启用 sshd</span></span><br><span class="line">sudo systemctl <span class="built_in">enable</span> sshd</span><br><span class="line"><span class="comment"># 启动 sshd程序</span></span><br><span class="line">sudo systemctl start sshd</span><br></pre></td></tr></table></figure>
+<h3 id="配置镜像"><a class="markdownIt-Anchor" href="#配置镜像"></a> <strong>配置镜像</strong></h3>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -fsSL https://packages.gitlab.cn/repository/raw/scripts/setup.sh | /bin/bash</span><br></pre></td></tr></table></figure>
+<h3 id="开始安装"><a class="markdownIt-Anchor" href="#开始安装"></a> <strong>开始安装</strong></h3>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo EXTERNAL_URL=&quot;http://192.168.44.103&quot; yum install -y gitlab-jh</span><br></pre></td></tr></table></figure>
+<p>除非您在安装过程中指定了自定义密码，否则将随机生成一个密码并存储在 <code>/etc/gitlab/initial_root_password</code> 文件中(出于安全原因，24 小时后，此文件会被第一次 <code>gitlab-ctl reconfigure</code> 自动删除，因此若使用随机密码登录，建议安装成功初始登录成功之后，立即修改初始密码）。使用此密码和用户名 <code>root</code> 登录。</p>
+<h3 id="gitlab常用命令"><a class="markdownIt-Anchor" href="#gitlab常用命令"></a> <strong>gitlab常用命令</strong></h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">gitlab-ctl start                  <span class="comment"># 启动所有 gitlab 组件；</span></span><br><span class="line">gitlab-ctl stop                   <span class="comment"># 停止所有 gitlab 组件；</span></span><br><span class="line">gitlab-ctl restart                <span class="comment"># 重启所有 gitlab 组件；</span></span><br><span class="line">gitlab-ctl status                 <span class="comment"># 查看服务状态；</span></span><br><span class="line">gitlab-ctl reconfigure            <span class="comment"># 启动服务；</span></span><br><span class="line">vim /etc/gitlab/gitlab.rb         <span class="comment"># 修改默认的配置文件；</span></span><br><span class="line">gitlab-ctl <span class="built_in">tail</span>                   <span class="comment"># 查看日志；</span></span><br></pre></td></tr></table></figure>
+<h1 id="安装jenkins"><a class="markdownIt-Anchor" href="#安装jenkins"></a> 安装Jenkins</h1>
+<div class="note info simple"><p>如果你是使用官网最新的Jenkins，建议先看一下官方文档</p>
+<p>安装最新版的Jenkins是有要求的，博主安装的版本是2.346.3LTS版本，需要JDK版本至少JDK11以上，如果你下载的Jenkins比我安装的还高，可能要求有点改变了。</p>
+</div>
+<h2 id="使用war包方式安装jenkins"><a class="markdownIt-Anchor" href="#使用war包方式安装jenkins"></a> 使用war包方式安装Jenkins</h2>
+<h3 id="下载jenkinswar包"><a class="markdownIt-Anchor" href="#下载jenkinswar包"></a> 下载Jenkins.war包</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://mirrors.tuna.tsinghua.edu.cn/jenkins/war-stable/2.346.3/jenkins.war</span><br></pre></td></tr></table></figure>
+<h2 id="将war包复制到tomcat下"><a class="markdownIt-Anchor" href="#将war包复制到tomcat下"></a> 将war包复制到tomcat下</h2>
+<h3 id="暂停tomcat"><a class="markdownIt-Anchor" href="#暂停tomcat"></a> <strong>暂停tomcat</strong></h3>
+<p>在复制Jenkins.war包之前，需要将tomcat暂停一下，避免出问题。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;tomcat安装目录&#125;/tomcat9/bin/shutdown.sh</span><br></pre></td></tr></table></figure>
+<h3 id="复制文件到tomcat下"><a class="markdownIt-Anchor" href="#复制文件到tomcat下"></a> <strong>复制文件到tomcat下</strong></h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cp</span> jenkins.war &#123;tomcat路径&#125;/webapps/</span><br></pre></td></tr></table></figure>
+<h2 id="打开jenkins"><a class="markdownIt-Anchor" href="#打开jenkins"></a> 打开Jenkins</h2>
+<h3 id="启动tomcat"><a class="markdownIt-Anchor" href="#启动tomcat"></a> <strong>启动tomcat</strong></h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;tomcat安装目录&#125;/tomcat9/bin/startup.sh</span><br></pre></td></tr></table></figure>
+<h3 id="打开jenkins-2"><a class="markdownIt-Anchor" href="#打开jenkins-2"></a> 打开Jenkins</h3>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="http://IP:8080/jenkins">http://IP:8080/jenkins</a></p>
+<h1 id="配置jenkins环境"><a class="markdownIt-Anchor" href="#配置jenkins环境"></a> 配置Jenkins环境</h1>
+<div class="note info simple"><p>所需环境：</p>
+<ol>
+<li>Gitlab(如果你还没安装Gitlan，你应该先去安装Gitlab)</li>
+<li>Git(yum -y install git)</li>
+<li>Jenkins需要安装这四个插件:GitLab Plugin、Generic Webhook Trigger、Gitlab Authentication、GitLab Logo(我已打包好放在以下链接)</li>
+</ol>
+<p>Jenkins构建Gitlab必装四个插件：<a target="_blank" rel="noopener external nofollow noreferrer" href="https://rookie1679.lanzouy.com/ikJqH0ducmfi">https://rookie1679.lanzouy.com/ikJqH0ducmfi</a></p>
+</div>
+<p><strong>如果你还没安装JDK、Maven、Git</strong>你可以参考这篇文章去安装一下</p>
+<p>参考这篇文章：<a href="https://blog.hikki.site/111f4f09.html">https://blog.hikki.site/111f4f09.html</a></p>
+<h2 id="jenkins配置maven"><a class="markdownIt-Anchor" href="#jenkins配置maven"></a> Jenkins配置maven</h2>
+<p><code>Manage Jenkins---&gt;Global Tool Configeration</code></p>
+<p><img src="https://images.hikki.site/20221015120555.jpeg" alt="01Manage" /></p>
+<p><img src="https://images.hikki.site/20221015120721.jpeg" alt="02GlobalToolCfongi" /></p>
+<p><strong>maven下的settings.xml文件</strong></p>
+<p><img src="https://images.hikki.site/20221015120800.jpeg" alt="03settings" /></p>
+<h2 id="jenkins配置jdk"><a class="markdownIt-Anchor" href="#jenkins配置jdk"></a> Jenkins配置JDK</h2>
+<p><img src="https://images.hikki.site/20221015120829.jpeg" alt="04jdk" /></p>
+<h2 id="jenkins配置git"><a class="markdownIt-Anchor" href="#jenkins配置git"></a> Jenkins配置Git</h2>
+<p><img src="https://images.hikki.site/20221015120844.jpeg" alt="05git" /></p>
+<h2 id="jenkins配置maven-2"><a class="markdownIt-Anchor" href="#jenkins配置maven-2"></a> Jenkins配置maven</h2>
+<p><img src="https://images.hikki.site/20221015120858.jpeg" alt="06maven" /></p>
+<h2 id="安装jenkins插件"><a class="markdownIt-Anchor" href="#安装jenkins插件"></a> 安装Jenkins插件</h2>
+<div class="note info simple"><p>Jenkins集成Gitlab需要几个插件，我已经在官方下载并打包好并放在以下，有需要自己取，或者自己去<a target="_blank" rel="noopener external nofollow noreferrer" href="https://plugins.jenkins.io/">官网</a>下载也是可以的</p>
+<ol>
+<li>GitLab Plugin</li>
+<li>Generic Webhook Trigger</li>
+<li>Gitlab Authentication</li>
+<li>GitLab Logo</li>
+</ol>
+<p>官网插件下载地址：<a target="_blank" rel="noopener external nofollow noreferrer" href="https://plugins.jenkins.io/">https://plugins.jenkins.io/</a></p>
+<p>插件下载地址：<a target="_blank" rel="noopener external nofollow noreferrer" href="https://rookie1679.lanzouy.com/ikJqH0ducmfi">https://rookie1679.lanzouy.com/ikJqH0ducmfi</a></p>
+</div>
+<p>Manage Jenkins—&gt;Manage Plugins—&gt;高级—&gt;Deploy Plugin—&gt;上传文件—&gt;<code>Deploy</code>—&gt;<code>勾选安装完重启Jenkins</code></p>
+<p><img src="https://images.hikki.site/01%E5%B1%95%E7%A4%BA.gif" alt="07安装插件" /></p>
+<h1 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言</h1>
+<blockquote>
+<p>我一开始在给容器命名的时候，是使用了下划线，在构建完的时候，我在浏览器打不开我的项目，访问总是返回400，查了一下，是nginx不支持下划线的，会自动将下划线改为<code>-</code>，就一直访问失败，所以我后面将<code>_</code>改为<code>-</code>，如果你看到<code>_</code>，你应该将它改为``-`。</p>
+</blockquote>
+<h1 id="创建git仓库"><a class="markdownIt-Anchor" href="#创建git仓库"></a> 创建Git仓库</h1>
+<p>如果你有需要选择其他模板可以选择模板创建，比如spring boot。</p>
+<p><img src="https://images.hikki.site/2022-10-16-022827.gif" alt="01创建Git仓库" /></p>
+<h1 id="初始化idea开发环境"><a class="markdownIt-Anchor" href="#初始化idea开发环境"></a> 初始化idea开发环境</h1>
+<h2 id="新建项目"><a class="markdownIt-Anchor" href="#新建项目"></a> 新建项目</h2>
+<p><img src="https://images.hikki.site/2022-10-16-022834.gif" alt="02创建本地项目" /></p>
+<h3 id="测试项目"><a class="markdownIt-Anchor" href="#测试项目"></a> <strong>测试项目</strong></h3>
+<p>测试项目是否正常运行，浏览器打开<a target="_blank" rel="noopener external nofollow noreferrer" href="http://localhost:8080/hi%E9%A1%B9%E7%9B%AE%E6%AD%A3%E5%B8%B8%E8%BF%90%E8%A1%8C">http://localhost:8080/hi项目正常运行</a></p>
+<p><img src="https://images.hikki.site/2022-10-16-022710.jpg" alt="03本地开发已完成" /></p>
+<h1 id="推送代码至git仓库"><a class="markdownIt-Anchor" href="#推送代码至git仓库"></a> 推送代码至Git仓库</h1>
+<ol>
+<li>勾选需要推送的代码</li>
+<li>提交备注是必填项</li>
+<li>然后点击提交并推送(推送到Gitlab)</li>
+</ol>
+<p><img src="https://images.hikki.site/2022-10-16-022841.gif" alt="04推送代码" /></p>
+<h2 id="打开git仓库刷新查看是否推送成功"><a class="markdownIt-Anchor" href="#打开git仓库刷新查看是否推送成功"></a> <strong>打开Git仓库刷新查看是否推送成功</strong></h2>
+<p>如下图可以看到代码已经推送成功了</p>
+<p><img src="https://images.hikki.site/2022-10-16-022657.jpeg" alt="05提交代码到git仓库成功" /></p>
+<h1 id="jenkins添加gitlab用户凭证"><a class="markdownIt-Anchor" href="#jenkins添加gitlab用户凭证"></a> Jenkins添加Gitlab用户凭证</h1>
+<p>在Jenkins添加Gitlab的用户凭证，为了后面在Jenkins绑定Gitlab仓库进行其他操作做准备。</p>
+<p>添加的用户名和密码为Gitlab的用户和密码。</p>
+<p><img src="https://images.hikki.site/05%E6%96%B0%E5%BB%BA%E7%94%A8%E6%88%B7%E5%87%AD%E8%AF%81.gif" alt="05新建用户凭证" /></p>
+<h1 id="初始化jenkins任务"><a class="markdownIt-Anchor" href="#初始化jenkins任务"></a> 初始化Jenkins任务</h1>
+<p><code>新建Item---&gt;输入任务名称---&gt;构建一个maven项目---&gt;确定---&gt;Git---&gt;填写Repository URL(Git仓库地址)---&gt;Credentials(选择用户，没有就新建一个)---&gt;构建触发器---&gt;Build when a change is pushed to GitLab. GitLab webhook---&gt;高级---&gt;Secret token---&gt;Generate---&gt;复制token到Gitlab Secret 令牌---&gt;去除SSL验证---&gt;Add webhook---&gt;Build---&gt;填写Goals and options---&gt;Run only if build succeeds---&gt;保存</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">clean package -Dmaven.test.skip=<span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<div class="note danger disabled"><p>重点：去掉SSL验证，除非你有SSL证书，否则不要勾选</p>
+</div>
+<p><img src="https://images.hikki.site/2022-10-16-022851.gif" alt="06新建Jenkins任务" /></p>
+<div class="note info simple"><p>在<code>源码管理</code>中，选择Git，添加如下信息，如果在<code>Credentials</code>没有用户可以选择，你应该去Jenkins凭据管理添加一个Gitlab用户和密码，再过来选择用户。</p>
+</div>
+<h1 id="构建jenkins任务"><a class="markdownIt-Anchor" href="#构建jenkins任务"></a> 构建Jenkins任务</h1>
+<p>当构建结束后，看到绿色的小勾，说明已经构建成功了。如果执行失败，打开控制台输出可以看到错误内容了。</p>
+<p><img src="https://images.hikki.site/2022-10-16-022857.gif" alt="07开始构建" /></p>
+<h1 id="构建docker镜像"><a class="markdownIt-Anchor" href="#构建docker镜像"></a> 构建Docker镜像</h1>
+<p>构建两个容器，一个nginx容器负责反向代理，web-server-auto负责运行我们开发代码的war包，通过容器化，减少依赖对系统环境的影响，而且容器化更方便管理，可以提高效率。</p>
+<div class="note info simple"><ul>
+<li>
+<p><code>/home/docker/nginx</code>：nginx映射目录</p>
+</li>
+<li>
+<p><code>/home/auto</code>：用于存放Dockerfile、项目jar包、docker-compose.yml</p>
+</li>
+</ul>
+</div>
+<h2 id="初始化工作目录"><a class="markdownIt-Anchor" href="#初始化工作目录"></a> 初始化工作目录</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> /home/auto &amp;&amp; <span class="built_in">cd</span> /home/auto</span><br></pre></td></tr></table></figure>
+<p><strong>复制auto-0.0.1-SNAPSHOT.war包到工作目录</strong></p>
+<p>刚刚我们已经在Jenkins完成简单的构建了，在构建完成时，会在<code>/root/.jenkins/workspace/auto/target</code>下生成<code>auto-0.0.1-SNAPSHOT.war</code>包，我们需要将war包构建成Docker镜像。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cp</span> /root/.jenkins/workspace/auto/target/auto-0.0.1-SNAPSHOT.war /home/auto/</span><br></pre></td></tr></table></figure>
+<h2 id="dockerfile与docker-compose"><a class="markdownIt-Anchor" href="#dockerfile与docker-compose"></a> Dockerfile与docker-compose</h2>
+<h3 id="dockerfile编写"><a class="markdownIt-Anchor" href="#dockerfile编写"></a> Dockerfile编写</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim Dockerfile</span><br></pre></td></tr></table></figure>
+<p>将以下内容写入<code>Dockerfile</code></p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 拉取镜像</span></span><br><span class="line"><span class="string">FROM</span> <span class="string">openjdk:11</span></span><br><span class="line"><span class="comment"># 作者信息</span></span><br><span class="line"><span class="string">MAINTAINER</span> <span class="string">wtl</span></span><br><span class="line"><span class="comment">#开放端口</span></span><br><span class="line"><span class="string">EXPOSE</span> <span class="number">8080</span></span><br><span class="line"><span class="comment">#挂载目录</span></span><br><span class="line"><span class="string">VOLUME</span> <span class="string">/home/auto</span></span><br><span class="line"><span class="comment">#执行shell指令</span></span><br><span class="line"><span class="string">RUN</span> <span class="string">mkdir</span> <span class="string">-p</span> <span class="string">/home/auto</span></span><br><span class="line"><span class="comment">#执行工作目录</span></span><br><span class="line"><span class="string">WORKDIR</span> <span class="string">/home/auto</span></span><br><span class="line"><span class="comment">#复制宿主机文件到镜像中</span></span><br><span class="line"><span class="string">COPY</span> <span class="string">auto-0.0.1-SNAPSHOT.war</span> <span class="string">/home/auto/auto-0.0.1-SNAPSHOT.war</span></span><br><span class="line"><span class="comment">#开始认证服务</span></span><br><span class="line"><span class="string">ENTRYPOINT</span> [<span class="string">&quot;java&quot;</span>,<span class="string">&quot;-jar&quot;</span>,<span class="string">&quot;auto-0.0.1-SNAPSHOT.war&quot;</span>]</span><br></pre></td></tr></table></figure>
+<h3 id="编写docker-composeyml"><a class="markdownIt-Anchor" href="#编写docker-composeyml"></a> 编写docker-compose.yml</h3>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">version:</span> <span class="string">&quot;3.1&quot;</span></span><br><span class="line"><span class="attr">services:</span></span><br><span class="line">  <span class="attr">nginx_auto:</span>  <span class="comment">#服务名称,自定义</span></span><br><span class="line">    <span class="attr">image:</span> <span class="string">nginx:latest</span>   <span class="comment">#镜像版本</span></span><br><span class="line">    <span class="attr">restart:</span> <span class="string">always</span></span><br><span class="line">    <span class="attr">container_name:</span> <span class="string">nginx-auto</span></span><br><span class="line">    <span class="attr">privileged:</span> <span class="literal">true</span>  <span class="comment">#解决nginx的文件调用的权限问题</span></span><br><span class="line">    <span class="attr">environment:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">TZ=Asia/Shanghai</span></span><br><span class="line">    <span class="attr">ports:</span>  <span class="comment">#暴露端口</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&quot;801:80&quot;</span> </span><br><span class="line">      <span class="bullet">-</span> <span class="string">&quot;4444:443&quot;</span></span><br><span class="line">    <span class="attr">volumes:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">/home/docker/nginx/nginx.conf:/etc/nginx/nginx.conf</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">/home/docker/nginx/log:/var/log/nginx</span></span><br><span class="line">    <span class="attr">links:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">web-server-auto</span>  <span class="comment"># 将容器nginx_auto连接到web-server-auto</span></span><br><span class="line">      </span><br><span class="line">  <span class="attr">web-server-auto:</span> </span><br><span class="line">    <span class="attr">restart:</span> <span class="string">always</span></span><br><span class="line">    <span class="attr">environment:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">TZ=Asia/Shanghai</span> <span class="comment"># 设置时区</span></span><br><span class="line">    <span class="attr">build:</span></span><br><span class="line">      <span class="attr">context:</span> <span class="string">/home/auto</span> <span class="comment"># 构建文件的路径</span></span><br><span class="line">      <span class="attr">dockerfile:</span> <span class="string">Dockerfile</span> <span class="comment">#构建文件Dockerfile</span></span><br><span class="line">    <span class="attr">container_name:</span> <span class="string">web-server-auto</span> <span class="comment">#容器名字，可自定义</span></span><br><span class="line">    <span class="attr">ports:</span> <span class="comment"># 暴露端口 宿主机端口:docker容器端口</span></span><br><span class="line">      <span class="bullet">-</span> <span class="number">7889</span><span class="string">:8080</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://images.hikki.site/2022-10-16-022645.jpeg" alt="09创建docker" /></p>
+<h2 id="添加执行权限"><a class="markdownIt-Anchor" href="#添加执行权限"></a> 添加执行权限</h2>
+<p>给<code>/home/auto/</code>文件夹下的所有文件都给予执行权限，因为该文件夹下存储着Dockerfile和docker-compose.yml、jar包，这些文件需要执行权限。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">chmod</span> +x -R /home/auto/</span><br></pre></td></tr></table></figure>
+<ul>
+<li><code>-R </code>：对目前目录下的所有档案与子目录进行相同的权限变更(即以递回的方式逐个变更)</li>
+</ul>
+<h1 id="添加脚本"><a class="markdownIt-Anchor" href="#添加脚本"></a> 添加脚本</h1>
+<h2 id="添加执行脚本"><a class="markdownIt-Anchor" href="#添加执行脚本"></a> 添加执行脚本</h2>
+<p>Jenkins实时监测Gitlab中auto仓库的代码变动，一旦有代码更新，Jenkins就会实时构建，在构建时，我们可以添加一些脚本来达到我们想要的目的，比如我们添加如下脚本，表示再构建时删除旧的容器的镜像，重新生成新的容器和镜像。</p>
+<p><code>auto---&gt;配置---&gt;Post Steps---&gt;Run only if build succeeds---&gt;Add post-build step---&gt;Excute shell---&gt;在输入框中输入以下shell脚本---&gt;保存</code>。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/sh</span></span><br><span class="line">WORKSPACE_DIR=<span class="string">&#x27;/root/.jenkins/workspace/auto/&#x27;</span></span><br><span class="line">DEVOPS_DIR=<span class="string">&#x27;/home/auto&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;删除之前的容器&quot;</span></span><br><span class="line">docker ps -a | grep web-server-auto | awk <span class="string">&#x27;&#123;print $1&#125;&#x27;</span> | xargs docker <span class="built_in">rm</span> -f</span><br><span class="line">docker ps -a | grep nginx-auto | awk <span class="string">&#x27;&#123;print $1&#125;&#x27;</span> | xargs docker <span class="built_in">rm</span> -f</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;删除上一个版本的jar包&quot;</span></span><br><span class="line">sudo <span class="built_in">rm</span> -rf <span class="variable">$&#123;DEVOPS_DIR&#125;</span>/auto-0.0.1-SNAPSHOT.war</span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;复制打包最新版的jar包&quot;</span></span><br><span class="line"><span class="built_in">cp</span> <span class="variable">$&#123;WORKSPACE_DIR&#125;</span>/target/auto-0.0.1-SNAPSHOT.war <span class="variable">$&#123;DEVOPS_DIR&#125;</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;赋予jar包权限&quot;</span></span><br><span class="line"><span class="built_in">chmod</span> 777 -R /home/auto</span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;启动容器&quot;</span></span><br><span class="line"><span class="built_in">cd</span> /home/auto/</span><br><span class="line">docker-compose up -d</span><br></pre></td></tr></table></figure>
+<p><img src="https://images.hikki.site/2022-10-16-022908.gif" alt="08添加Jenkins执行脚本" /></p>
+<h1 id="测试结果"><a class="markdownIt-Anchor" href="#测试结果"></a> 测试结果</h1>
+<p>在添加完脚本后，我们来测试一下刚刚添加的脚本是否执行成功。</p>
+<p><strong>在Gitlab打开Git仓库，设置—&gt;Webhooks—&gt;测试—&gt;Push events</strong></p>
+<p><img src="https://images.hikki.site/2022-10-16-022450.jpeg" alt="10提交测试" /></p>
+<h2 id="测试结果出错"><a class="markdownIt-Anchor" href="#测试结果出错"></a> <strong>测试结果出错</strong></h2>
+<p>出错了，打开控制台看看我的错误是什么。</p>
+<p><code>auto---&gt;构建记录---&gt;控制台输出---&gt;查看错误</code></p>
+<p><img src="https://images.hikki.site/2022-10-16-022914.gif" alt="11打开控制台查看错误" /></p>
+<p><img src="https://images.hikki.site/20221016022320.jpeg" alt="12运行出错" /></p>
+<h2 id="解决错误"><a class="markdownIt-Anchor" href="#解决错误"></a> <strong>解决错误</strong></h2>
+<p>大概意思说删除的容器指令出错，返回错误。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker ps -a | grep web-server-auto | awk <span class="string">&#x27;&#123;print $1&#125;&#x27;</span> | xargs docker <span class="built_in">rm</span> -f</span><br><span class="line">docker ps -a | grep nginx-auto | awk <span class="string">&#x27;&#123;print $1&#125;&#x27;</span> | xargs docker <span class="built_in">rm</span> -f</span><br></pre></td></tr></table></figure>
+<p>我们在Jenkins任务中添加了shell指令，以上是部分的指令。</p>
+<p>我们一开始是不存在web-server-auto、nginx-auto容器的，直接查找该容器并删除，但是容器不存在的，系统就说指令不正确了，那我们就把指令稍微改一改，在指令后面添加一下确定的容器名字应该就没问题了。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker ps -a | grep web-server-auto | awk <span class="string">&#x27;&#123;print $1&#125;&#x27;</span> | xargs docker <span class="built_in">rm</span> -f web-server-auto</span><br><span class="line">docker ps -a | grep nginx-auto | awk <span class="string">&#x27;&#123;print $1&#125;&#x27;</span> | xargs docker <span class="built_in">rm</span> -f nginx-auto</span><br></pre></td></tr></table></figure>
+<p>等第一次启动完，再把指令改为原来的指令就不会出错了。</p>
+<p><img src="https://images.hikki.site/2022-10-16-022921.gif" alt="13解决错误" /></p>
+<h2 id="重新构建"><a class="markdownIt-Anchor" href="#重新构建"></a> <strong>重新构建</strong></h2>
+<p><img src="https://images.hikki.site/20221016022252-2022-10-16-02-22-52.jpeg" alt="10提交测试" /></p>
+<h2 id="构建成功"><a class="markdownIt-Anchor" href="#构建成功"></a> <strong>构建成功</strong></h2>
+<p>重新构建后应该是成功了。</p>
+<p>成功后在浏览器打开<code>http://192.168.2.12:801/hi</code>，其中的IP地址改为你的IP地址，这时，浏览器显示出来了，但是我们还没完全成功，这只是初步显示出来了，还不够完善</p>
+<p><img src="https://images.hikki.site/14%E8%BF%90%E8%A1%8C%E6%88%90%E5%8A%9F.jpg" alt="14运行成功" /></p>
+<h1 id="完善jenkins任务"><a class="markdownIt-Anchor" href="#完善jenkins任务"></a> 完善Jenkins任务</h1>
+<h2 id="完善shell脚本"><a class="markdownIt-Anchor" href="#完善shell脚本"></a> 完善shell脚本</h2>
+<p>原来的脚本中，只是可以新建容器和镜像，可能会出现一些奇怪的问题，我们应该在每次构建时删除旧的容器和镜像，重新构建新的镜像和容器，减少环境对构建的影响。</p>
+<p><strong>将以下脚本内容复制到Jenkins任务中</strong></p>
+<p><code>auto---&gt;Post Steps---&gt;Excute shell</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/sh</span></span><br><span class="line">WORKSPACE_DIR=<span class="string">&#x27;/root/.jenkins/workspace/auto/&#x27;</span></span><br><span class="line">DEVOPS_DIR=<span class="string">&#x27;/home/auto/&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;删除之前的容器&quot;</span></span><br><span class="line">docker ps -a | grep web-server-auto | awk <span class="string">&#x27;&#123;print $1&#125;&#x27;</span> | xargs docker <span class="built_in">rm</span> -f</span><br><span class="line">docker ps -a | grep nginx-auto | awk <span class="string">&#x27;&#123;print $1&#125;&#x27;</span> | xargs docker <span class="built_in">rm</span> -f</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;删除上一个版本的jar包&quot;</span></span><br><span class="line">sudo <span class="built_in">rm</span> -rf <span class="variable">$&#123;DEVOPS_DIR&#125;</span>/auto-0.0.1-SNAPSHOT.war</span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;复制打包最新版的jar包&quot;</span></span><br><span class="line"><span class="built_in">cp</span> <span class="variable">$&#123;WORKSPACE_DIR&#125;</span>/target/auto-0.0.1-SNAPSHOT.war <span class="variable">$&#123;DEVOPS_DIR&#125;</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;赋予jar包权限&quot;</span></span><br><span class="line"><span class="built_in">chmod</span> 777 -R /home/auto</span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;删除镜像&quot;</span></span><br><span class="line">docker rmi -f auto_web-server-auto</span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;启动容器&quot;</span></span><br><span class="line"><span class="built_in">cd</span> /home/auto/</span><br><span class="line">docker-compose up -d</span><br></pre></td></tr></table></figure>
+<p><img src="https://images.hikki.site/2022-10-16-022931.gif" alt="15完善shell脚本" /></p>
+<h2 id="推送代码构建"><a class="markdownIt-Anchor" href="#推送代码构建"></a> 推送代码构建</h2>
+<p>在本地idea开发，推送代码到Gitlab，Jenkins检测到Gitlab仓库的更新，实时构建，构建完即可在浏览器打开预览内容。<a target="_blank" rel="noopener external nofollow noreferrer" href="http://IP:801/hi">http://IP:801/hi</a></p>
+<p><img src="https://images.hikki.site/2022-10-16-022936.gif" alt="16实时更新内容" /></p>
+<p>此次学会了自动构建maven项目的构建，其实还是很方便的，以后开发的还是直接push，然后打开浏览器一看，减少自己操作的时间。</p>
+<h1 id="其他"><a class="markdownIt-Anchor" href="#其他"></a> 其他</h1>
+<h2 id="重启-关闭-重载jenkins"><a class="markdownIt-Anchor" href="#重启-关闭-重载jenkins"></a> 重启、关闭、重载jenkins</h2>
+<h3 id="重启jenkins"><a class="markdownIt-Anchor" href="#重启jenkins"></a> 重启jenkins</h3>
+<p>在jenkins后面加上<code>restart</code></p>
+<figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://localhost:8080/jenkins/restart</span><br></pre></td></tr></table></figure>
+<h3 id="关闭jenkins"><a class="markdownIt-Anchor" href="#关闭jenkins"></a> 关闭jenkins</h3>
+<p>在jenkins后面加上<code>exit</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://localhost:8080/jenkins/exit</span><br></pre></td></tr></table></figure>
+<h3 id="重载jenkins"><a class="markdownIt-Anchor" href="#重载jenkins"></a> 重载jenkins</h3>
+<p>在jenkins后面加上<code>reload</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://localhost:8080/jenkins/reload</span><br></pre></td></tr></table></figure>
+<h1 id="可能遇到的错误"><a class="markdownIt-Anchor" href="#可能遇到的错误"></a> 可能遇到的错误</h1>
+<h2 id="maven拒绝http请求"><a class="markdownIt-Anchor" href="#maven拒绝http请求"></a> maven拒绝http请求</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ERROR: Failed to parse POMs</span><br><span class="line">org.apache.maven.project.ProjectBuildingException: Some problems were encountered <span class="keyword">while</span> processing the POMs:</span><br><span class="line">[FATAL] Non-resolvable parent POM <span class="keyword">for</span> com.example:devops:0.0.1-SNAPSHOT: org.springframework.boot:spring-boot-starter-parent:pom:2.7.4 failed to transfer from http://0.0.0.0/ during a previous attempt. This failure was cached <span class="keyword">in</span> the <span class="built_in">local</span> repository and resolution is not reattempted until the update interval of maven-default-http-blocker has elapsed or updates are forced. Original error: Could not transfer artifact org.springframework.boot:spring-boot-starter-parent:pom:2.7.4 from/to maven-default-http-blocker (http://0.0.0.0/): Blocked mirror <span class="keyword">for</span> repositories: [alimaven (http://maven.aliyun.com/nexus/content/groups/public/, default, releases)] and <span class="string">&#x27;parent.relativePath&#x27;</span> points at no <span class="built_in">local</span> POM @ line 5, column 13</span><br></pre></td></tr></table></figure>
+<h3 id="解决办法"><a class="markdownIt-Anchor" href="#解决办法"></a> 解决办法</h3>
+<p>不提示http请求不安全，换一个镜像站即可解决问题</p>
+<p><img src="https://images.hikki.site/20221015134104.jpeg" alt="02修改settings" /></p>
+<h2 id="返回400-rad-request"><a class="markdownIt-Anchor" href="#返回400-rad-request"></a> 返回400-Rad Request</h2>
+<p><img src="https://images.hikki.site/2022-10-16-024039.jpg" alt="返回400" /></p>
+<h3 id="解决方法"><a class="markdownIt-Anchor" href="#解决方法"></a> 解决方法</h3>
+<p>nginx是不支持下划线的<code>_</code>，但是我在容器中使用了下划线，同时nginx也使用到了这个容器，就报错了，将所有的下划线都改为<code>-</code>即可。</p>
+<h2 id="报错内容"><a class="markdownIt-Anchor" href="#报错内容"></a> 报错内容</h2>
+<p><img src="https://images.hikki.site/2022-10-16-025032.png" alt="02无法打开共享对象" /></p>
+<h3 id="解决办法-2"><a class="markdownIt-Anchor" href="#解决办法-2"></a> 解决办法</h3>
+<p>如图，这真的是个大坑，搞了好久，去除这个<code>转发X11</code>就解决了</p>
+<p><img src="https://images.hikki.site/2022-10-16-024222.jpg" alt="01不要打勾" /></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://blog.hikki.site">小码同学</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://blog.hikki.site/e33a4a94.html">https://blog.hikki.site/e33a4a94.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow noreferrer" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://blog.hikki.site" target="_blank">小码同学</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Linux/">Linux</a></div><div class="post_share"><div class="social-share" data-image="https://images.hikki.site/jenkins-cover-2023-04-24-174923.svg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="/data/theme/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/data/img/wechatpay.jpg" target="_blank"><img class="post-qr-code-img" src="/data/img/wechatpay.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="/data/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src="/data/img/alipay.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/27fdf617.html" title="HEXO部署-将懒发挥到极致"><i class="fas fa-chevron-left prev-icon"><div class="prev-label">上一篇</div></i></a><div class="pagination-card"><img class="prev-cover" src="https://images.hikki.site/04-2022-12-28-00-00-09.JPG" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">HEXO部署-将懒发挥到极致</div></div></div></div><div class="next-post pull-right"><a href="/9f1f74a1.html" title="解决Google翻译陆续退出中国无法使用"><i class="fas fa-chevron-right next-icon"><div class="next-label">下一篇</div></i></a><div class="pagination-card"><img class="next-cover" src="https://images.hikki.site/google-408194_960_720.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">解决Google翻译陆续退出中国无法使用</div></div></div></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2802e5c6.html" title="Docker"><img class="cover" src="https://images.hikki.site/docker.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-06-05</div><div class="title">Docker</div></div></a></div><div><a href="/21af92f0.html" title="Ubuntu安装、卸载软件"><img class="cover" src="/data/img/wallhaven-8ozk-%E5%8E%8B%E7%BC%A9%E5%90%8E.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-08-18</div><div class="title">Ubuntu安装、卸载软件</div></div></a></div><div><a href="/4c982bf.html" title="Linux"><img class="cover" src="https://images.hikki.site/Linux-睡觉.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-08-19</div><div class="title">Linux</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="disqus_thread"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/data/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">小码同学</div><div class="author-info__description">喜欢的东西就努力去追求，万一成功了呢！</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">173</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">29</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">39</div></a></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/0000rookie" rel="external nofollow noreferrer" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://space.bilibili.com/110844189?spm_id_from=333.1007.0.0" rel="external nofollow noreferrer" target="_blank" title="B站"><i class="fa-brands fa-bilibili"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title=""><i class="fas fa-rss"></i></a><a class="social-icon" href="mailto:aa1341151056@126.com" rel="external nofollow noreferrer" target="_blank" title=""><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content"><img src="https://blog.hikki.site/data/img/emoji/coolapk/c-pyjiaoyi.png" style="width:35px;height:35px"/>本站拒绝海外IP访问，如果您有连接到海外网络，可能体验不是很好</div></div><div class="card-widget tzy-right-widget" id="card-wechat"><div id="flip-wrapper"><div id="flip-content"><div class="face"></div><div class="back face"></div></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#gitlab%E5%AE%89%E8%A3%85"><span class="toc-number">1.</span> <span class="toc-text"> Gitlab安装</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.1.</span> <span class="toc-text"> 介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B9%E5%BC%8F%E4%B8%80docker%E5%AE%89%E8%A3%85%E6%8E%A8%E8%8D%90"><span class="toc-number">1.2.</span> <span class="toc-text"> 方式一：docker安装(推荐)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9%E7%94%A8%E4%BA%8E%E5%AD%98%E6%94%BEgitlab%E6%95%B0%E6%8D%AE"><span class="toc-number">1.2.1.</span> <span class="toc-text"> 新建文件夹用于存放Gitlab数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8docker-compose%E5%AE%89%E8%A3%85"><span class="toc-number">1.2.2.</span> <span class="toc-text"> 使用docker-compose安装</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B9%E5%BC%8F%E4%BA%8C%E7%9B%B4%E6%8E%A5%E5%AE%89%E8%A3%85"><span class="toc-number">1.3.</span> <span class="toc-text"> 方式二：直接安装</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96"><span class="toc-number">1.3.1.</span> <span class="toc-text"> 安装依赖</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E9%95%9C%E5%83%8F"><span class="toc-number">1.3.2.</span> <span class="toc-text"> 配置镜像</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%80%E5%A7%8B%E5%AE%89%E8%A3%85"><span class="toc-number">1.3.3.</span> <span class="toc-text"> 开始安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#gitlab%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-number">1.3.4.</span> <span class="toc-text"> gitlab常用命令</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%89%E8%A3%85jenkins"><span class="toc-number">2.</span> <span class="toc-text"> 安装Jenkins</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8war%E5%8C%85%E6%96%B9%E5%BC%8F%E5%AE%89%E8%A3%85jenkins"><span class="toc-number">2.1.</span> <span class="toc-text"> 使用war包方式安装Jenkins</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BDjenkinswar%E5%8C%85"><span class="toc-number">2.1.1.</span> <span class="toc-text"> 下载Jenkins.war包</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B0%86war%E5%8C%85%E5%A4%8D%E5%88%B6%E5%88%B0tomcat%E4%B8%8B"><span class="toc-number">2.2.</span> <span class="toc-text"> 将war包复制到tomcat下</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9A%82%E5%81%9Ctomcat"><span class="toc-number">2.2.1.</span> <span class="toc-text"> 暂停tomcat</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%8D%E5%88%B6%E6%96%87%E4%BB%B6%E5%88%B0tomcat%E4%B8%8B"><span class="toc-number">2.2.2.</span> <span class="toc-text"> 复制文件到tomcat下</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%89%93%E5%BC%80jenkins"><span class="toc-number">2.3.</span> <span class="toc-text"> 打开Jenkins</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%AF%E5%8A%A8tomcat"><span class="toc-number">2.3.1.</span> <span class="toc-text"> 启动tomcat</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%93%E5%BC%80jenkins-2"><span class="toc-number">2.3.2.</span> <span class="toc-text"> 打开Jenkins</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%85%8D%E7%BD%AEjenkins%E7%8E%AF%E5%A2%83"><span class="toc-number">3.</span> <span class="toc-text"> 配置Jenkins环境</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#jenkins%E9%85%8D%E7%BD%AEmaven"><span class="toc-number">3.1.</span> <span class="toc-text"> Jenkins配置maven</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jenkins%E9%85%8D%E7%BD%AEjdk"><span class="toc-number">3.2.</span> <span class="toc-text"> Jenkins配置JDK</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jenkins%E9%85%8D%E7%BD%AEgit"><span class="toc-number">3.3.</span> <span class="toc-text"> Jenkins配置Git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jenkins%E9%85%8D%E7%BD%AEmaven-2"><span class="toc-number">3.4.</span> <span class="toc-text"> Jenkins配置maven</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85jenkins%E6%8F%92%E4%BB%B6"><span class="toc-number">3.5.</span> <span class="toc-text"> 安装Jenkins插件</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">4.</span> <span class="toc-text"> 前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%9B%E5%BB%BAgit%E4%BB%93%E5%BA%93"><span class="toc-number">5.</span> <span class="toc-text"> 创建Git仓库</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%9D%E5%A7%8B%E5%8C%96idea%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83"><span class="toc-number">6.</span> <span class="toc-text"> 初始化idea开发环境</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B0%E5%BB%BA%E9%A1%B9%E7%9B%AE"><span class="toc-number">6.1.</span> <span class="toc-text"> 新建项目</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE"><span class="toc-number">6.1.1.</span> <span class="toc-text"> 测试项目</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%8E%A8%E9%80%81%E4%BB%A3%E7%A0%81%E8%87%B3git%E4%BB%93%E5%BA%93"><span class="toc-number">7.</span> <span class="toc-text"> 推送代码至Git仓库</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%89%93%E5%BC%80git%E4%BB%93%E5%BA%93%E5%88%B7%E6%96%B0%E6%9F%A5%E7%9C%8B%E6%98%AF%E5%90%A6%E6%8E%A8%E9%80%81%E6%88%90%E5%8A%9F"><span class="toc-number">7.1.</span> <span class="toc-text"> 打开Git仓库刷新查看是否推送成功</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#jenkins%E6%B7%BB%E5%8A%A0gitlab%E7%94%A8%E6%88%B7%E5%87%AD%E8%AF%81"><span class="toc-number">8.</span> <span class="toc-text"> Jenkins添加Gitlab用户凭证</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%9D%E5%A7%8B%E5%8C%96jenkins%E4%BB%BB%E5%8A%A1"><span class="toc-number">9.</span> <span class="toc-text"> 初始化Jenkins任务</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9E%84%E5%BB%BAjenkins%E4%BB%BB%E5%8A%A1"><span class="toc-number">10.</span> <span class="toc-text"> 构建Jenkins任务</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9E%84%E5%BB%BAdocker%E9%95%9C%E5%83%8F"><span class="toc-number">11.</span> <span class="toc-text"> 构建Docker镜像</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9D%E5%A7%8B%E5%8C%96%E5%B7%A5%E4%BD%9C%E7%9B%AE%E5%BD%95"><span class="toc-number">11.1.</span> <span class="toc-text"> 初始化工作目录</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#dockerfile%E4%B8%8Edocker-compose"><span class="toc-number">11.2.</span> <span class="toc-text"> Dockerfile与docker-compose</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#dockerfile%E7%BC%96%E5%86%99"><span class="toc-number">11.2.1.</span> <span class="toc-text"> Dockerfile编写</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BC%96%E5%86%99docker-composeyml"><span class="toc-number">11.2.2.</span> <span class="toc-text"> 编写docker-compose.yml</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E6%89%A7%E8%A1%8C%E6%9D%83%E9%99%90"><span class="toc-number">11.3.</span> <span class="toc-text"> 添加执行权限</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E8%84%9A%E6%9C%AC"><span class="toc-number">12.</span> <span class="toc-text"> 添加脚本</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E6%89%A7%E8%A1%8C%E8%84%9A%E6%9C%AC"><span class="toc-number">12.1.</span> <span class="toc-text"> 添加执行脚本</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95%E7%BB%93%E6%9E%9C"><span class="toc-number">13.</span> <span class="toc-text"> 测试结果</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95%E7%BB%93%E6%9E%9C%E5%87%BA%E9%94%99"><span class="toc-number">13.1.</span> <span class="toc-text"> 测试结果出错</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E9%94%99%E8%AF%AF"><span class="toc-number">13.2.</span> <span class="toc-text"> 解决错误</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%87%8D%E6%96%B0%E6%9E%84%E5%BB%BA"><span class="toc-number">13.3.</span> <span class="toc-text"> 重新构建</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9E%84%E5%BB%BA%E6%88%90%E5%8A%9F"><span class="toc-number">13.4.</span> <span class="toc-text"> 构建成功</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%8C%E5%96%84jenkins%E4%BB%BB%E5%8A%A1"><span class="toc-number">14.</span> <span class="toc-text"> 完善Jenkins任务</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%8C%E5%96%84shell%E8%84%9A%E6%9C%AC"><span class="toc-number">14.1.</span> <span class="toc-text"> 完善shell脚本</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8E%A8%E9%80%81%E4%BB%A3%E7%A0%81%E6%9E%84%E5%BB%BA"><span class="toc-number">14.2.</span> <span class="toc-text"> 推送代码构建</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%B6%E4%BB%96"><span class="toc-number">15.</span> <span class="toc-text"> 其他</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%87%8D%E5%90%AF-%E5%85%B3%E9%97%AD-%E9%87%8D%E8%BD%BDjenkins"><span class="toc-number">15.1.</span> <span class="toc-text"> 重启、关闭、重载jenkins</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8D%E5%90%AFjenkins"><span class="toc-number">15.1.1.</span> <span class="toc-text"> 重启jenkins</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E9%97%ADjenkins"><span class="toc-number">15.1.2.</span> <span class="toc-text"> 关闭jenkins</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8D%E8%BD%BDjenkins"><span class="toc-number">15.1.3.</span> <span class="toc-text"> 重载jenkins</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8F%AF%E8%83%BD%E9%81%87%E5%88%B0%E7%9A%84%E9%94%99%E8%AF%AF"><span class="toc-number">16.</span> <span class="toc-text"> 可能遇到的错误</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#maven%E6%8B%92%E7%BB%9Dhttp%E8%AF%B7%E6%B1%82"><span class="toc-number">16.1.</span> <span class="toc-text"> maven拒绝http请求</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95"><span class="toc-number">16.1.1.</span> <span class="toc-text"> 解决办法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%94%E5%9B%9E400-rad-request"><span class="toc-number">16.2.</span> <span class="toc-text"> 返回400-Rad Request</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95"><span class="toc-number">16.2.1.</span> <span class="toc-text"> 解决方法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8A%A5%E9%94%99%E5%86%85%E5%AE%B9"><span class="toc-number">16.3.</span> <span class="toc-text"> 报错内容</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95-2"><span class="toc-number">16.3.1.</span> <span class="toc-text"> 解决办法</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/232c1cc7.html" title="服务器备案+迁移数据方案"><img src="/data/img/wallhaven-8ozk-%E5%8E%8B%E7%BC%A9%E5%90%8E.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="服务器备案+迁移数据方案"/></a><div class="content"><a class="title" href="/232c1cc7.html" title="服务器备案+迁移数据方案">服务器备案+迁移数据方案</a><time datetime="2023-05-30T12:54:52.000Z" title="发表于 2023-05-30 20:54:52">2023-05-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/f9ef02fb.html" title="【SpringBoot系列】04-NoSQL数据库"><img src="https://images.hikki.site/cover-2023-05-24-150023.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【SpringBoot系列】04-NoSQL数据库"/></a><div class="content"><a class="title" href="/f9ef02fb.html" title="【SpringBoot系列】04-NoSQL数据库">【SpringBoot系列】04-NoSQL数据库</a><time datetime="2023-05-24T07:57:35.000Z" title="发表于 2023-05-24 15:57:35">2023-05-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/169f819e.html" title="【SpringBoot系列】03-测试与数据库操作"><img src="https://bu.dusays.com/2023/05/22/646a5ebd510bf.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【SpringBoot系列】03-测试与数据库操作"/></a><div class="content"><a class="title" href="/169f819e.html" title="【SpringBoot系列】03-测试与数据库操作">【SpringBoot系列】03-测试与数据库操作</a><time datetime="2023-05-22T06:58:21.000Z" title="发表于 2023-05-22 14:58:21">2023-05-22</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://images.hikki.site/jenkins-cover-2023-04-24-174923.svg')"><div id="footer-wrap"><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="fa-solid fa-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="fa-solid fa-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="fa-solid fa-arrow-rotate-right"></i></div><div class="rightMenu-item" id="menu-home"><i class="fa-solid fa-house"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" href="/archives/"><i class="fa-solid fa-archive"></i><span>文章归档</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="fa-solid fa-tags"></i><span>文章标签</span></a><a class="rightMenu-item menu-link" href="/message/"><i class="fa-solid fa-comment-dots"></i><span>留言板</span></a><a class="rightMenu-item menu-link" href="/link/moments"><i class="fa-solid fa-procedures"></i><span>闲言碎语</span></a><a class="rightMenu-item menu-link" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.travellings.cn/go.html"><i class="fa-solid fa-rocket"></i><span>博客列车</span></a></div><div class="rightMenu-group rightMenu-line rightMenuNormal"><a class="rightMenu-item menu-link" id="menu-radompage" href="/random.html"><i class="fa-solid fa-shoe-prints"></i><span>随便逛逛</span></a><div class="rightMenu-item" id="menu-translate"><i class="fa-solid fa-earth-asia"></i><span>繁简切换</span></div><div class="rightMenu-item" id="menu-darkmode"><i class="fa-solid fa-moon"></i><span>切换模式</span></div></div></div><div id="rightmenu-mask"></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="/data/theme/medium-zoom.min.js"></script><script src="/data/theme/instantpage.min.js" type="module"></script><script src="/data/theme/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function loadDisqus () {
+  var disqus_config = function () {
+    this.page.url = 'https://blog.hikki.site/e33a4a94.html'
+    this.page.identifier = '/e33a4a94.html'
+    this.page.title = 'Jenkins集成Gitlab持续集成'
+  };
+
+  window.disqusReset = () => {
+    DISQUS.reset({
+      reload: true,
+      config: disqus_config
+    })
+  }
+
+  if (window.DISQUS) disqusReset()
+  else {
+    (function() { 
+      var d = document, s = d.createElement('script');
+      s.src = 'https://.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  }
+
+  document.getElementById('darkmode').addEventListener('click', () => {
+    setTimeout(() => window.disqusReset(), 200)
+  })
+}
+
+if ('Disqus' === 'Disqus' || !true) {
+  if (true) btf.loadComment(document.getElementById('disqus_thread'), loadDisqus)
+  else loadDisqus()
+} else {
+  function loadOtherComment () {
+    loadDisqus()
+  }
+}
+</script></div><script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script><script defer data-pjax src="/js/rightMenu.js"></script><script src="/js/fixed-pagination.js" async></script><script defer data-pjax type="text/javascript" src="/util/util.js"></script><script defer data-pjax type="text/javascript" src="/data/js/utils.js"></script><script>let tianliGPT_postSelector = '\#post \#article-container';let tianliGPT_key = 'U5FHKh71uMCfndwMIBkd';</script><script src="https://cdn1.tianli0.top/gh/zhheo/Post-Abstract-AI@0.7/tianli_gpt.js"></script><script src="/data/theme/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script src="/data/theme/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"]):not([href="/music/"]):not([href="/no-pjax/"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script async src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><script data-pjax>
+  function butterfly_footer_beautify_injector_config(){
+    var parent_div_git = document.getElementById('footer-wrap');
+    var item_html = '<div id="workboard"></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://www.upyun.com/?utm_source=lianmeng&amp;utm_medium=referral" rel="external nofollow noreferrer" style="margin-inline:5px" data-title="本网站由又拍云提供CDN加速/云存储服务" title=""><img src="https://img.shields.io/badge/CDN-%E5%8F%88%E6%8B%8D%E4%BA%91-blue" alt=""/></a><a class="github-badge" target="_blank" href="https://hexo.io/" rel="external nofollow noreferrer" style="margin-inline:5px" data-title="博客框架为Hexo_v5.4.0" title=""><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&amp;logo=hexo" alt=""/></a><a class="github-badge" target="_blank" href="https://butterfly.js.org/" rel="external nofollow noreferrer" style="margin-inline:5px" data-title="主题版本Butterfly_v4.5.1" title=""><img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&amp;logo=bitdefender" alt=""/></a><a class="github-badge" target="_blank" href="https://beian.miit.gov.cn/" rel="external nofollow noreferrer" style="margin-inline:5px" data-title="粤ICP备2022125102号" title=""><img src="/data/img/icon-link/粤ICP备2022125102号.svg" alt=""/></a></p>';
+    console.log('已挂载butterfly_footer_beautify')
+    parent_div_git.insertAdjacentHTML("beforeend",item_html)
+    }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_footer_beautify_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_footer_beautify_injector_config();
+  }
+  </script><script async src="/data/js/runtime.min.js"></script><!-- hexo injector body_end end --></body></html>

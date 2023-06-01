@@ -1,0 +1,463 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>小码同学</title><meta name="author" content="小码同学"><meta name="copyright" content="小码同学"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#93a5cf"><meta name="description" content="喜欢的东西就努力去追求，万一成功了呢！">
+<meta property="og:type" content="website">
+<meta property="og:title" content="小码同学">
+<meta property="og:url" content="https://blog.hikki.site/page/13/index.html">
+<meta property="og:site_name" content="小码同学">
+<meta property="og:description" content="喜欢的东西就努力去追求，万一成功了呢！">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://blog.hikki.site/data/img/avatar.jpg">
+<meta property="article:author" content="小码同学">
+<meta property="article:tag" content="web安全,笔记,web,theme,node.js,java,c,c++,python,前端,后端,markdown,搭建个人博客">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://blog.hikki.site/data/img/avatar.jpg"><link rel="shortcut icon" href="/data/img/favicon.ico"><link rel="canonical" href="https://blog.hikki.site/page/13/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="/data/theme/snackbar.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"https://cdntx.hikki.site/static/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: {"limitDay":50,"position":"top","messagePrev":"距离上一次更新一已经","messageNext":"天了，文章的内容可能不是最新的，甚至已经过时 !"},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":250},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'mediumZoom',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#ff9a9e","bgDark":"#1f1f1f","position":"top-center"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isAnchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '小码同学',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: undefined,
+  isToc: false,
+  postUpdate: '2023-05-31 11:27:58'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#434343')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#93a5cf')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/rightMenu.css"><style id="barragesColor"></style><link rel="stylesheet" href="/data/css/custom.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="/data/css/runtime.min.css"><link rel="stylesheet" href="/data/css/utils.css"><link rel="stylesheet" href="https://cdn1.tianli0.top/gh/zhheo/Post-Abstract-AI@0.7/tianli_gpt.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><link rel="stylesheet" href="/data/css/runtime.min.css" media="print" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="小码同学" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/data/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">173</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">29</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">39</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-list"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fa-solid fa-tag"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-th-large"></i><span> 分类</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa-solid fa-wand-magic-sparkles"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa-solid fa-bookmark"></i><span> 书签</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/bookmark/johou/"><i class="fa-fw fas fa-sharp fa-solid fa-link"></i><span> 工具</span></a></li><li><a class="site-page child" href="/bookmark/programmer/"><i class="fa-fw fas fa-vials"></i><span> 程序猿</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa-solid fa-user-group"></i><span> 朋友</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/fcircle"><i class="fa-fw fas fa-snowboarding"></i><span> 朋友圈</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fa-solid fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.travellings.cn/go.html"><i class="fa-fw fas fa-rocket"></i><span> 开往</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user-tie"></i><span> 关于我</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/data/img/wallhaven-8ozk-%E5%8E%8B%E7%BC%A9%E5%90%8E.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">小码同学</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-list"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fa-solid fa-tag"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-th-large"></i><span> 分类</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa-solid fa-wand-magic-sparkles"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa-solid fa-bookmark"></i><span> 书签</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/bookmark/johou/"><i class="fa-fw fas fa-sharp fa-solid fa-link"></i><span> 工具</span></a></li><li><a class="site-page child" href="/bookmark/programmer/"><i class="fa-fw fas fa-vials"></i><span> 程序猿</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa-solid fa-user-group"></i><span> 朋友</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/fcircle"><i class="fa-fw fas fa-snowboarding"></i><span> 朋友圈</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fa-solid fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.travellings.cn/go.html"><i class="fa-fw fas fa-rocket"></i><span> 开往</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user-tie"></i><span> 关于我</span></a></div></div><center id="name-container"><a id="page-name" href="javascript:scrollToTop()" rel="external nofollow noreferrer">PAGE_NAME</a></center></div><div id="nav-right"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i></a></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">小码同学</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/0000rookie" rel="external nofollow noreferrer" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://space.bilibili.com/110844189?spm_id_from=333.1007.0.0" rel="external nofollow noreferrer" target="_blank" title="B站"><i class="fa-brands fa-bilibili"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title=""><i class="fas fa-rss"></i></a><a class="social-icon" href="mailto:aa1341151056@126.com" rel="external nofollow noreferrer" target="_blank" title=""><i class="fas fa-envelope"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/5af0544e.html" title="错误垃圾百宝袋">错误垃圾百宝袋</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-07-10T11:37:36.000Z" title="发表于 2022-07-10 19:37:36">2022-07-10</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-04-30T09:05:03.017Z" title="更新于 2023-04-30 17:05:03">2023-04-30</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/">计算机科学</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/fail/">fail</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/fail/">fail</a></span></div><div class="content"> PicGo上传失败
+ TypeError:Cannot destructure property position of undefined` or ‘null’
+ 发现问题
+12345678910111213TypeError: Cannot destructure property position of &#x27;undefined&#x27; or &#x27;null&#x27;.at Object.exports.parseAndValidate (C:\Users\ma\AppData\Roaming\picgo\node_modules\picgo-plugin-watermark\lib\util.js:50:11)at Object.handle (C:\Users\ma\AppData\Roaming\picgo\node_modules\picgo-plugin-watermark\lib\index.js:9:124)at C:\software\PicGo\resources\app.asar\node_modules\picgo\dist\src\co ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/23cd0b3.html" title="【win10优化系列】鼠标右键文件、文件夹、桌面菜单添加程序">【win10优化系列】鼠标右键文件、文件夹、桌面菜单添加程序</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-07-10T08:00:20.000Z" title="发表于 2022-07-10 16:00:20">2022-07-10</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-04-17T09:06:17.446Z" title="更新于 2023-04-17 17:06:17">2023-04-17</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/">计算机科学</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/">技术杂谈</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/window/">window</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/">技术杂谈</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E6%95%99%E7%A8%8B/">教程</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/Windows/">Windows</a></span></div><div class="content"> 用软件快速设置
+ ContextMenuManager
+下载：
+蓝奏云：https://rookie1679.lanzoue.com/ikBgk0iobj8b
+主要功能：
+
+启用或禁用文件、文件夹、新建、发送到、打开方式、自定义文件格式、IE浏览器、WinX等右键菜单项目
+对上述场景右键菜单项目进行修改名称、修改图标、导航注册表位置、导航文件位置、永久删除等操作
+对上述场景右键菜单自定义添加项目，自定义菜单命令
+
+界面：
+
+**项目GitHub地址：**https://github.com/BluePointLilac/ContextMenuManager
+**项目Gitee地址：**https://gitee.com/BluePointLilac/ContextMenuManager#
+ 了解添加程序所在的目录地址
+空白处右键(或者桌面空白处)： 计算机\HKEY_CLASSES_ROOT\Directory\background\shell
+文件夹右键： 计算机\HKEY_CLASSES_ROOT\Directory\shell
+文件上右键： 计算机\HKEY_CLASSES_R ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/f6ebc4d7.html" title="word文档转换成PDF文件">word文档转换成PDF文件</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-07-08T13:25:12.000Z" title="发表于 2022-07-08 21:25:12">2022-07-08</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-03-04T16:52:16.291Z" title="更新于 2023-03-05 00:52:16">2023-03-05</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/">计算机科学</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/">技术杂谈</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E5%8A%9E%E5%85%AC%E8%BD%AF%E4%BB%B6/">办公软件</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/%E5%8A%9E%E5%85%AC%E8%BD%AF%E4%BB%B6/Word/">Word</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%8A%9E%E5%85%AC%E8%BD%AF%E4%BB%B6/">办公软件</a></span></div><div class="content"> 方法一：使用微软自带的Word
+接下来我要将这个123.docx文档转换成PDF文件
+
+ 打开文件
+
+ 导出–&gt;创建PDF/XPS
+
+ 选择文件存储位置–&gt;发布
+
+ 方法二：使用WPS
+ 打开文件–&gt;输出为PDF
+
+过程加载中
+
+ 选择自定义文件夹
+如果不选择自定义文件夹则会默认保存到WPS云盘上面
+
+ 选择文件夹
+选择自己想要保存的文件夹，然后点击选择文件夹即可。
+
+ 开始输出
+看到左下角是自己选择的保存路径就可以开始输出了，如果路径不是自己想要存放的路径，则重复上述第二步
+
+ 方法三：在线转换PDF
+在线转换PDF免费  免费  免费 
+          
+            
+              
+                
+              
+              Word转换PDF 
+              在线转换文件 ＆ 无需注册
+            
+          
+ 选择文件
+
+
+ 转换为PDF文件
+
+ 下载PDF文件
+直接点击下载PDF文件或者复制下载链接去浏览器输入框输入都是可以的。
+
+ 下载文 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/cdd384e5.html" title="【win10优化系列】指定文件默认方式打开">【win10优化系列】指定文件默认方式打开</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-07-07T18:56:56.000Z" title="发表于 2022-07-08 02:56:56">2022-07-08</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-04-17T09:06:17.446Z" title="更新于 2023-04-17 17:06:17">2023-04-17</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/">计算机科学</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/">技术杂谈</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/window/">window</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/">技术杂谈</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E6%95%99%E7%A8%8B/">教程</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/Windows/">Windows</a></span></div><div class="content">以下使用修改PDF格式文件用PDF-XChange Editor打开为例子
+
+ 方法一
+ 打开文件属性
+
+ 更改打开方式
+
+ 选择你想用某个软件打开
+
+ 点击应用–&gt;确定
+
+ 方法二：使用绿色软件打开
+也就是不需要安装的软件，在方法一找不到这个PDF-XChange Editor软件
+
+和方法一差不多
+ 打开文件属性
+
+
+ 更改打开方式
+
+ 更多应用
+
+ 在这台电脑上查找其他应用
+
+ 选择该软件
+
+ 应用该软件并确定
+
+ 方法三：在设置修改
+ 打开设置–&gt;应用
+
+ 默认应用–&gt;按文件类型指定默认应用
+
+ 修改.pdf选择打开的软件
+
+ 总结
+以上是以PDF格式文件修改默认打开方式，如果你是其他文件也是以此方式修改，比如TXT、md等格式的文件也是可以用以上的三种方式。
+其中方法二是万能的，比如你的软件是解压就能直接使用，不需要安装的，那么，你也可以使用方法二来设置为默认打开软件。
+文章来源于我的博客：小码同学
+</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/b7d12f04.html" title="【win10优化系列】Windows查看端口、kill端口(仅适用Windows)">【win10优化系列】Windows查看端口、kill端口(仅适用Windows)</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-07-04T06:52:01.000Z" title="发表于 2022-07-04 14:52:01">2022-07-04</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-04-17T09:06:17.457Z" title="更新于 2023-04-17 17:06:17">2023-04-17</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/">计算机科学</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/">技术杂谈</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/window/">window</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/">技术杂谈</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E6%95%99%E7%A8%8B/">教程</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/Windows/">Windows</a></span></div><div class="content"> 使用程序名停止程序
+
+根据程序端口来查找程序，然后kill掉程序
+
+ 查看全部端口情况
+1netstat -ano
+
+ 查找端口
+1netstat -ano | findstr &quot;622&quot;
+最后边有个4560是PID，可以通过PID查找出对应的进程(主要是为了知道是哪一个程序运行，如果不想知道，直接tastkill /f /pid 4560)
+
+ 查找端口对应进程
+1tasklist | findstr &quot;4560&quot;
+
+ 根据程序名称结束该进程
+1taskkill /f /t /im svchost.exe
+
+ 使用程序PID来停止程序
+ tasklist
+tasklist命令是一个用来显示运行在本地或远程计算机上的所有进程的命令行工具，带有多个执行参数。类似Linux系统的ps命令
+/S &lt;computer&gt; ：指定连接到的计算机或IP地址，默认本机。
+/u [&lt;Domain&gt;\]&lt;UserName&gt;： 指定使用哪个用户执行这个命令。
+/P [password]： 为指定的用户指定密码。
+/M [modul ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/b8c864c4.html" title="2022广州软件学院高考新生必看">2022广州软件学院高考新生必看</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-06-24T18:57:46.000Z" title="发表于 2022-06-25 02:57:46">2022-06-25</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-04-19T01:08:10.221Z" title="更新于 2023-04-19 09:08:10">2023-04-19</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%94%9F%E6%B4%BB/">生活</a></span></div><div class="content">官方传送门以下内容皆是从广州软件学院公众号或者官网上截取 
+          
+            
+              
+                
+              
+              广州软件学院招生网 & 传送门 
+              往年分数线 & 招生计划 & 校园全景 & 录取查询 & 专业介绍等等
+            
+          
+          
+            
+              
+                
+              
+              招生章程 & 传送门 
+              2022年夏季高考本科招生章程
+            
+          
+          
+            
+              
+                
+              
+              招生计划 & 传送门 
+              2022年夏季高考本科招生计划
+            
+    ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/8a90aba9.html" title="Java那些乱七八糟的问题">Java那些乱七八糟的问题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-06-18T10:24:01.000Z" title="发表于 2022-06-18 18:24:01">2022-06-18</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-05-17T12:13:47.682Z" title="更新于 2023-05-17 20:13:47">2023-05-17</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/">计算机科学</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/fail/">fail</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/fail/">fail</a></span></div><div class="content">本文章是记录自己遇到的错误，总结错误，今后再遇到错误也可以回头参考一下，本文会持续更新
+
+ JavaSE
+ 程序包javax.servlet不存在
+ 解决方法
+引入javax.servlet包，在maven的pom文件添加如下
+123456&lt;dependency&gt;    &lt;groupId&gt;javax.servlet&lt;/groupId&gt;    &lt;artifactId&gt;javax.servlet-api&lt;/artifactId&gt;    &lt;version&gt;4.0.1&lt;/version&gt;    &lt;scope&gt;provided&lt;/scope&gt;&lt;/dependency&gt;
+ Log4j报错
+123log4j:WARN No appenders could be found for logger (org.apache.ibatis.logging.LogFactory).log4j:WARN Please initialize the log4j system properly.l ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/4fce5997.html" title="【Docker系列】qBittorrent">【Docker系列】qBittorrent</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-06-12T14:38:34.000Z" title="发表于 2022-06-12 22:38:34">2022-06-12</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-05-10T06:00:58.418Z" title="更新于 2023-05-10 14:00:58">2023-05-10</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/">计算机科学</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/">技术杂谈</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/docker/">docker</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/docker/Docker%E7%B3%BB%E5%88%97/">Docker系列</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Docker/">Docker</a></span></div><div class="content"> 什么是qBittorrent
+qBittorrent 是一款开源免费软件，它是由国外志愿者在业余时间开发的下载工具，支持 Windows、Mac、Linux 三大操作系统。4.1.7自带中文，安装时选简体中文。
+它和迅雷区别最大的一点是它不需要登录账号，没有用户系统，那就说明对待所有人都是平等的，不会限速、不逼你开会员。
+ 拉取qBittorrent镜像
+1docker pull linuxserver/qbittorrent
+
+ 创建目录并编写docker-compose文件
+12345cd ~mkdir qBittorrent #创建qbitorrent数据文件夹cd qBittorrentmkdir config downloads #创建配置文件目录与下载目录vim docker-compose.yml #创建并编辑文件
+
+进入vim编辑器后，把这个粘贴进去(Ctrl+Insert)
+123456789101112131415161718192021version: &quot;2&quot;services:  qbittorrent:    image: linuxser ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/3050703f.html" title="python批量修改文件名">python批量修改文件名</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-06-12T09:22:15.000Z" title="发表于 2022-06-12 17:22:15">2022-06-12</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-03-04T16:52:16.311Z" title="更新于 2023-03-05 00:52:16">2023-03-05</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/">计算机科学</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/">编程语言</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/">python</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Python/">Python</a></span></div><div class="content"> 批量修改文件名
+批量修改文件名12345678910111213import os# path 这个是你要改文件夹里面的文件名path = &quot;./外链压缩/&quot;lsname = os.listdir(path)n = 0for i in lsname:	oldname = path + os.sep+lsname[n]	# 我这里将文件名按顺序改成 &quot;1-n.jpg&quot;	# 如果你想改成 &quot;测试1 - 测试n.jpg&quot;,就将下式改成	# newname = path+os.sep+&quot;测试&quot;+str(n+1)+&#x27;.jpg&#x27;	newname = path+os.sep+str(n+1)+&#x27;.jpg&#x27;	os.rename(oldname,newname)	n+=1
+效果图
+
+</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/9a6dde1d.html" title="简单使用Vim">简单使用Vim</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-06-11T14:06:11.000Z" title="发表于 2022-06-11 22:06:11">2022-06-11</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-03-04T16:52:16.271Z" title="更新于 2023-03-05 00:52:16">2023-03-05</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/">计算机科学</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/">技术杂谈</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/linux/">linux</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Vim/">Vim</a></span></div><div class="content"> 介绍
+vim有三个模式：输入模式、命令模式、底线命令模式。
+
+输入模式：只有在输入模式下才可以进行文字编辑，在输入模式中也分为insert和replace，即插入模式和替换模式。
+命令模式：可通过从键盘上输入相关命令，控制屏幕光标的移动，删除字符、字或行的内容，撤销文本的修改，移动复制某区段等功能，以及进入到插入模式或底线模式中。
+底线命令模式：底线模式主要进行一些文字编辑的辅助功能，比如字符串搜索、替换、保存文件等操作，一般以:、/等开头的命令。
+
+
+ 使用vim
+ 新建test.txt文件
+1vim test.txt
+这条指令执行了两个操作：
+
+检查当前目录下test.txt文件是否存在
+若存在，则直接打开test.txt文件
+若不存在，则新建一个test.txt文件并且打开该文件
+
+我当前目录下是不存在test.txt文件的，所以打开是空白的，如图：
+
+ 在test.txt文件添加内容
+要求：在test.txt文件添加内容&quot;hello，vim&quot;。
+在前面介绍说到，我们在添加内容前，应该要切换到插入模式，才能输入内容，我们可以在英文输入法下，按i或者Ins按键 ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/12/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/#content-inner">12</a><span class="page-number current">13</span><a class="page-number" href="/page/14/#content-inner">14</a><span class="space">&hellip;</span><a class="page-number" href="/page/18/#content-inner">18</a><a class="extend next" rel="next" href="/page/14/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/data/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">小码同学</div><div class="author-info__description">喜欢的东西就努力去追求，万一成功了呢！</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">173</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">29</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">39</div></a></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/0000rookie" rel="external nofollow noreferrer" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://space.bilibili.com/110844189?spm_id_from=333.1007.0.0" rel="external nofollow noreferrer" target="_blank" title="B站"><i class="fa-brands fa-bilibili"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title=""><i class="fas fa-rss"></i></a><a class="social-icon" href="mailto:aa1341151056@126.com" rel="external nofollow noreferrer" target="_blank" title=""><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content"><img src="https://blog.hikki.site/data/img/emoji/coolapk/c-pyjiaoyi.png" style="width:35px;height:35px"/>本站拒绝海外IP访问，如果您有连接到海外网络，可能体验不是很好</div></div><div class="card-widget tzy-right-widget" id="card-wechat"><div id="flip-wrapper"><div id="flip-content"><div class="face"></div><div class="back face"></div></div></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/232c1cc7.html" title="服务器备案+迁移数据方案"><img src="/data/img/wallhaven-8ozk-%E5%8E%8B%E7%BC%A9%E5%90%8E.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="服务器备案+迁移数据方案"/></a><div class="content"><a class="title" href="/232c1cc7.html" title="服务器备案+迁移数据方案">服务器备案+迁移数据方案</a><time datetime="2023-05-30T12:54:52.000Z" title="发表于 2023-05-30 20:54:52">2023-05-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/f9ef02fb.html" title="【SpringBoot系列】04-NoSQL数据库"><img src="https://images.hikki.site/cover-2023-05-24-150023.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【SpringBoot系列】04-NoSQL数据库"/></a><div class="content"><a class="title" href="/f9ef02fb.html" title="【SpringBoot系列】04-NoSQL数据库">【SpringBoot系列】04-NoSQL数据库</a><time datetime="2023-05-24T07:57:35.000Z" title="发表于 2023-05-24 15:57:35">2023-05-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/169f819e.html" title="【SpringBoot系列】03-测试与数据库操作"><img src="https://bu.dusays.com/2023/05/22/646a5ebd510bf.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【SpringBoot系列】03-测试与数据库操作"/></a><div class="content"><a class="title" href="/169f819e.html" title="【SpringBoot系列】03-测试与数据库操作">【SpringBoot系列】03-测试与数据库操作</a><time datetime="2023-05-22T06:58:21.000Z" title="发表于 2023-05-22 14:58:21">2023-05-22</time></div></div></div></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">173</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">352.2k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-05-31T03:27:56.705Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/data/img/wallhaven-8ozk-%E5%8E%8B%E7%BC%A9%E5%90%8E.jpg')"><div id="footer-wrap"><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="fa-solid fa-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="fa-solid fa-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="fa-solid fa-arrow-rotate-right"></i></div><div class="rightMenu-item" id="menu-home"><i class="fa-solid fa-house"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" href="/archives/"><i class="fa-solid fa-archive"></i><span>文章归档</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="fa-solid fa-tags"></i><span>文章标签</span></a><a class="rightMenu-item menu-link" href="/message/"><i class="fa-solid fa-comment-dots"></i><span>留言板</span></a><a class="rightMenu-item menu-link" href="/link/moments"><i class="fa-solid fa-procedures"></i><span>闲言碎语</span></a><a class="rightMenu-item menu-link" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.travellings.cn/go.html"><i class="fa-solid fa-rocket"></i><span>博客列车</span></a></div><div class="rightMenu-group rightMenu-line rightMenuNormal"><a class="rightMenu-item menu-link" id="menu-radompage" href="/random.html"><i class="fa-solid fa-shoe-prints"></i><span>随便逛逛</span></a><div class="rightMenu-item" id="menu-translate"><i class="fa-solid fa-earth-asia"></i><span>繁简切换</span></div><div class="rightMenu-item" id="menu-darkmode"><i class="fa-solid fa-moon"></i><span>切换模式</span></div></div></div><div id="rightmenu-mask"></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="/data/theme/medium-zoom.min.js"></script><script src="/data/theme/instantpage.min.js" type="module"></script><script src="/data/theme/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function subtitleType () {
+  getScript('https://sdk.jinrishici.com/v2/browser/jinrishici.js').then(() => {
+    jinrishici.load(result =>{
+      if (true) {
+        const sub = []
+        const content = result.data.content
+        sub.unshift(content)
+        window.typed = new Typed('#subtitle', {
+          strings: sub,
+          startDelay: 300,
+          typeSpeed: 150,
+          loop: true,
+          backSpeed: 50,
+        })
+      } else {
+        document.getElementById('subtitle').innerHTML = result.data.content
+      }
+    })
+  })
+}
+
+if (true) {
+  if (typeof Typed === 'function') {
+    subtitleType()
+  } else {
+    getScript('/data/theme/typed.min.js').then(subtitleType)
+  }
+} else {
+  subtitleType()
+}
+</script></div><script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script><script defer data-pjax src="/js/rightMenu.js"></script><script src="/js/fixed-pagination.js" async></script><script defer data-pjax type="text/javascript" src="/util/util.js"></script><script defer data-pjax type="text/javascript" src="/data/js/utils.js"></script><script>let tianliGPT_postSelector = '\#post \#article-container';let tianliGPT_key = 'U5FHKh71uMCfndwMIBkd';</script><script src="https://cdn1.tianli0.top/gh/zhheo/Post-Abstract-AI@0.7/tianli_gpt.js"></script><script src="/data/theme/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script src="/data/theme/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"]):not([href="/music/"]):not([href="/no-pjax/"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script async src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><script data-pjax>
+  function butterfly_footer_beautify_injector_config(){
+    var parent_div_git = document.getElementById('footer-wrap');
+    var item_html = '<div id="workboard"></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://www.upyun.com/?utm_source=lianmeng&amp;utm_medium=referral" rel="external nofollow noreferrer" style="margin-inline:5px" data-title="本网站由又拍云提供CDN加速/云存储服务" title=""><img src="https://img.shields.io/badge/CDN-%E5%8F%88%E6%8B%8D%E4%BA%91-blue" alt=""/></a><a class="github-badge" target="_blank" href="https://hexo.io/" rel="external nofollow noreferrer" style="margin-inline:5px" data-title="博客框架为Hexo_v5.4.0" title=""><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&amp;logo=hexo" alt=""/></a><a class="github-badge" target="_blank" href="https://butterfly.js.org/" rel="external nofollow noreferrer" style="margin-inline:5px" data-title="主题版本Butterfly_v4.5.1" title=""><img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&amp;logo=bitdefender" alt=""/></a><a class="github-badge" target="_blank" href="https://beian.miit.gov.cn/" rel="external nofollow noreferrer" style="margin-inline:5px" data-title="粤ICP备2022125102号" title=""><img src="/data/img/icon-link/粤ICP备2022125102号.svg" alt=""/></a></p>';
+    console.log('已挂载butterfly_footer_beautify')
+    parent_div_git.insertAdjacentHTML("beforeend",item_html)
+    }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_footer_beautify_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_footer_beautify_injector_config();
+  }
+  </script><script async src="/data/js/runtime.min.js"></script><!-- hexo injector body_end end --></body></html>

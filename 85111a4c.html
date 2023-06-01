@@ -1,0 +1,781 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Nginx | 小码同学</title><meta name="author" content="小码同学"><meta name="copyright" content="小码同学"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#93a5cf"><meta name="description" content="介绍 Nginx是一个高性能的HTTP和反向代理web服务器，同时也提供了IMAP&#x2F;POP3&#x2F;SMTP服务。Nginx是由伊戈尔·赛索耶夫为俄罗斯访问量第二的http:&#x2F;&#x2F;Rambler.ru站点（俄文：Рамблер）开发的，第一个公开版本0.1.0发布于2004年10月4日。 其将源代码以类BSD许可证的形式发布，因它的稳定性、丰富的功能集、示例配置文件和低系统资源的消耗而闻名。2011年6">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Nginx">
+<meta property="og:url" content="https://blog.hikki.site/85111a4c.html">
+<meta property="og:site_name" content="小码同学">
+<meta property="og:description" content="介绍 Nginx是一个高性能的HTTP和反向代理web服务器，同时也提供了IMAP&#x2F;POP3&#x2F;SMTP服务。Nginx是由伊戈尔·赛索耶夫为俄罗斯访问量第二的http:&#x2F;&#x2F;Rambler.ru站点（俄文：Рамблер）开发的，第一个公开版本0.1.0发布于2004年10月4日。 其将源代码以类BSD许可证的形式发布，因它的稳定性、丰富的功能集、示例配置文件和低系统资源的消耗而闻名。2011年6">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://images.hikki.site/c7f2e837-1635-40f1-98b5-1d1d0a06805e.png">
+<meta property="article:published_time" content="2022-11-03T06:16:48.000Z">
+<meta property="article:modified_time" content="2023-05-18T02:48:53.177Z">
+<meta property="article:author" content="小码同学">
+<meta property="article:tag" content="教程">
+<meta property="article:tag" content="服务器">
+<meta property="article:tag" content="博客">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://images.hikki.site/c7f2e837-1635-40f1-98b5-1d1d0a06805e.png"><link rel="shortcut icon" href="/data/img/favicon.ico"><link rel="canonical" href="https://blog.hikki.site/85111a4c"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="/data/theme/snackbar.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"https://cdntx.hikki.site/static/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: {"limitDay":50,"position":"top","messagePrev":"距离上一次更新一已经","messageNext":"天了，文章的内容可能不是最新的，甚至已经过时 !"},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":250},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'mediumZoom',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#ff9a9e","bgDark":"#1f1f1f","position":"top-center"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isAnchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Nginx',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: undefined,
+  isToc: true,
+  postUpdate: '2023-05-18 10:48:53'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#434343')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#93a5cf')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/rightMenu.css"><style id="barragesColor"></style><link rel="stylesheet" href="/data/css/custom.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="/data/css/runtime.min.css"><link rel="stylesheet" href="/data/css/utils.css"><link rel="stylesheet" href="https://cdn1.tianli0.top/gh/zhheo/Post-Abstract-AI@0.7/tianli_gpt.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><link rel="stylesheet" href="/data/css/runtime.min.css" media="print" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="小码同学" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/data/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">173</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">29</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">39</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-list"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fa-solid fa-tag"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-th-large"></i><span> 分类</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa-solid fa-wand-magic-sparkles"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa-solid fa-bookmark"></i><span> 书签</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/bookmark/johou/"><i class="fa-fw fas fa-sharp fa-solid fa-link"></i><span> 工具</span></a></li><li><a class="site-page child" href="/bookmark/programmer/"><i class="fa-fw fas fa-vials"></i><span> 程序猿</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa-solid fa-user-group"></i><span> 朋友</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/fcircle"><i class="fa-fw fas fa-snowboarding"></i><span> 朋友圈</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fa-solid fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.travellings.cn/go.html"><i class="fa-fw fas fa-rocket"></i><span> 开往</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user-tie"></i><span> 关于我</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://images.hikki.site/c7f2e837-1635-40f1-98b5-1d1d0a06805e.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">小码同学</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-list"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fa-solid fa-tag"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-th-large"></i><span> 分类</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa-solid fa-wand-magic-sparkles"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa-solid fa-bookmark"></i><span> 书签</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/bookmark/johou/"><i class="fa-fw fas fa-sharp fa-solid fa-link"></i><span> 工具</span></a></li><li><a class="site-page child" href="/bookmark/programmer/"><i class="fa-fw fas fa-vials"></i><span> 程序猿</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa-solid fa-user-group"></i><span> 朋友</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/fcircle"><i class="fa-fw fas fa-snowboarding"></i><span> 朋友圈</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fa-solid fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.travellings.cn/go.html"><i class="fa-fw fas fa-rocket"></i><span> 开往</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user-tie"></i><span> 关于我</span></a></div></div><center id="name-container"><a id="page-name" href="javascript:scrollToTop()" rel="external nofollow noreferrer">PAGE_NAME</a></center></div><div id="nav-right"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i></a></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Nginx</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-11-03T06:16:48.000Z" title="发表于 2022-11-03 14:16:48">2022-11-03</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-05-18T02:48:53.177Z" title="更新于 2023-05-18 10:48:53">2023-05-18</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/">计算机科学</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/">技术杂谈</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/linux/">linux</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">4.6k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>16分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Nginx"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="介绍"><a class="markdownIt-Anchor" href="#介绍"></a> 介绍</h1>
+<p>Nginx是一个高性能的HTTP和反向代理web服务器，同时也提供了IMAP/POP3/SMTP服务。Nginx是由伊戈尔·赛索耶夫为俄罗斯访问量第二的<a target="_blank" rel="noopener external nofollow noreferrer" href="http://Rambler.xn--ru-tm4eo17a">http://Rambler.ru站点</a>（俄文：Рамблер）开发的，第一个公开版本0.1.0发布于2004年10月4日。 其将源代码以类BSD许可证的形式发布，因它的稳定性、丰富的功能集、示例配置文件和低系统资源的消耗而闻名。2011年6月1日，nginx  1.0.4发布。 Nginx是一款轻量级的Web 服务器/反向代理服务器及电子邮件（IMAP/POP3）代理服务器，在BSD-like  协议下发行。其特点是占有内存少，并发能力强。</p>
+<div class="note info simple"><p>以下的所有server块都是在<code>nginx.conf</code>文件内的<code>http</code>块内添加的，<code>nginx.conf</code>文件位于<code>/usr/local/nginx/nginx.conf</code></p>
+</div>
+<h1 id="nginx的安装"><a class="markdownIt-Anchor" href="#nginx的安装"></a> Nginx的安装</h1>
+<div class="note blue icon-padding flat"><i class="note-icon fas fa-link"></i><p>Nginx安装：<a href="https://blog.hikki.site/111f4f09.html#Linux%E8%A7%A3%E5%8E%8B%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85Nginx">https://blog.hikki.site/111f4f09.html#Linux解压编译安装Nginx</a></p>
+</div>
+<h1 id="nginx工作模式"><a class="markdownIt-Anchor" href="#nginx工作模式"></a> Nginx工作模式</h1>
+<p>nginx是一个多进程/多线程高性能web服务器，在linux系统中，nginx启动后会以后台守护进程（daemon）的方式去运行，后台进程包含一个master进程和多个worker进程。</p>
+<p><img src="https://images.hikki.site/20230422105141.png" alt="nginx工作模式-2023-03-16-132532" /></p>
+<p>master主进程主要用来管理worker进程</p>
+<p>**主要作用是：**读取并验正配置信息，管理真正提供服务的worker进程，向各worker进程发送信号，监控worker进程的运行状态，当worker进程退出后(异常情况下)，会自动重新启动新的worker进程。</p>
+<p>master进程不会对用户请求提供服务，而用户的请求则是worker进程来响应的。</p>
+<p>nginx是通过信号来控制，比如关闭，重启等去控制nginx进程。nginx信号是属于nginx进程间的通信的一种机制，比如master主进程控制多个worker子进程，也是通过信号控制的</p>
+<h1 id="配置文件"><a class="markdownIt-Anchor" href="#配置文件"></a> 配置文件</h1>
+<p>Nginx的配置文件位于<code>/usr/local/nginx/conf/nginx.conf</code>，文件内容如下。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">worker_processes</span>  <span class="number">1</span><span class="string">;</span></span><br><span class="line"></span><br><span class="line"><span class="string">events</span> &#123;</span><br><span class="line">    <span class="string">worker_connections</span>  <span class="number">1024</span><span class="string">;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="string">http</span> &#123;</span><br><span class="line">    <span class="string">log_format</span>  <span class="string">main</span>  <span class="string">&#x27;$remote_addr - $remote_user [$time_local] &quot;$request&quot; &#x27;</span></span><br><span class="line">                      <span class="string">&#x27;$status $body_bytes_sent &quot;$http_referer&quot; &#x27;</span></span><br><span class="line">                      <span class="string">&#x27;&quot;$http_user_agent&quot; &quot;$http_x_forwarded_for&quot;&#x27;</span><span class="string">;</span></span><br><span class="line"></span><br><span class="line">    <span class="string">include</span>       <span class="string">mime.types;</span></span><br><span class="line">    <span class="string">default_type</span>  <span class="string">application/octet-stream;</span></span><br><span class="line"></span><br><span class="line">    <span class="string">access_log</span>  <span class="string">logs/access.log</span>  <span class="string">main;</span></span><br><span class="line"></span><br><span class="line">    <span class="string">sendfile</span>        <span class="string">on;</span></span><br><span class="line">    <span class="string">keepalive_timeout</span>  <span class="number">65</span><span class="string">;</span></span><br><span class="line">	</span><br><span class="line">	<span class="string">server</span> &#123;</span><br><span class="line">		<span class="string">listen</span> <span class="number">80</span><span class="string">;</span></span><br><span class="line">		<span class="string">server_name</span> <span class="string">localhost;</span></span><br><span class="line">		<span class="string">location</span> <span class="string">/</span> &#123;</span><br><span class="line">			<span class="string">root</span>  <span class="string">/www/main;</span></span><br><span class="line">			<span class="string">index</span> <span class="string">index.html;</span></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>简化一下Nginx.conf配置文件格式大概是下面这样的，http块包括里面的server块，其中server块是我们经常需要书写的，我们每配置一个服务(部署一个项目)都要配置一个server块。下面代码就是一个简单的服务，静态代理<code>/www/main</code>文件夹下的静态资源，监听端口是80，使用本机环回地址<code>127.0.0.1</code>。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">http&#123;</span></span><br><span class="line">	<span class="string">...</span></span><br><span class="line">	</span><br><span class="line">	<span class="string">server&#123;</span></span><br><span class="line">		<span class="string">listen</span> <span class="number">80</span><span class="string">;</span></span><br><span class="line">		<span class="string">server_name</span> <span class="string">localhost;</span></span><br><span class="line">		<span class="string">location</span> <span class="string">/</span> &#123;</span><br><span class="line">			<span class="string">root</span> <span class="string">/www/main;</span></span><br><span class="line">			<span class="string">index</span> <span class="string">indexe.html;</span></span><br><span class="line">		&#125;</span><br><span class="line">	<span class="string">&#125;</span></span><br><span class="line"><span class="string">&#125;</span></span><br></pre></td></tr></table></figure>
+<h2 id="nginx子配置"><a class="markdownIt-Anchor" href="#nginx子配置"></a> Nginx子配置</h2>
+<p>由于我们经常对server块进行书写，我们也可以创建一个nginx子配置，用来专门书写server块。我们创建一个<code>default.conf</code>文件，存放于<code>/usr/local/nginx/conf/conf/</code>文件夹下。</p>
+<h3 id="创建defaultconf文件"><a class="markdownIt-Anchor" href="#创建defaultconf文件"></a> 创建default.conf文件</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">touch</span> /usr/local/nginx/conf/conf/default.conf</span><br></pre></td></tr></table></figure>
+<h3 id="引入defaultconf文件"><a class="markdownIt-Anchor" href="#引入defaultconf文件"></a> 引入default.conf文件</h3>
+<p>将以下的引入<code>路径</code>存放于http块下。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">include</span>    <span class="string">/usr/local/nginx/conf/conf/conf.default;</span></span><br></pre></td></tr></table></figure>
+<p>创建好文件后，然后<code>nginx.conf</code>文件引入<code>default.conf</code>，如下：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">worker_processes</span>  <span class="number">1</span><span class="string">;</span></span><br><span class="line"><span class="string">events</span> &#123;</span><br><span class="line">    <span class="string">worker_connections</span>  <span class="number">1024</span><span class="string">;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="string">http</span> &#123;</span><br><span class="line">    <span class="string">log_format</span>  <span class="string">main</span>  <span class="string">&#x27;$remote_addr - $remote_user [$time_local] &quot;$request&quot; &#x27;</span></span><br><span class="line">                      <span class="string">&#x27;$status $body_bytes_sent &quot;$http_referer&quot; &#x27;</span></span><br><span class="line">                      <span class="string">&#x27;&quot;$http_user_agent&quot; &quot;$http_x_forwarded_for&quot;&#x27;</span><span class="string">;</span></span><br><span class="line"></span><br><span class="line">    <span class="string">include</span>       <span class="string">mime.types;</span></span><br><span class="line">    <span class="string">default_type</span>  <span class="string">application/octet-stream;</span></span><br><span class="line">    <span class="string">include</span>    <span class="string">/usr/local/nginx/conf/conf/conf.default;</span></span><br><span class="line"></span><br><span class="line">    <span class="string">access_log</span>  <span class="string">logs/access.log</span>  <span class="string">main;</span></span><br><span class="line"></span><br><span class="line">    <span class="string">sendfile</span>        <span class="string">on;</span></span><br><span class="line">    <span class="string">keepalive_timeout</span>  <span class="number">65</span><span class="string">;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>引入<code>default.conf文件</code>后，之后如果需要添加<code>server块</code>直接在这个文件添加即可。文章后面有添加<code>server块</code>的案例。</p>
+<h1 id="nginx启动-停止-重启"><a class="markdownIt-Anchor" href="#nginx启动-停止-重启"></a> Nginx启动 &amp; 停止 &amp; 重启</h1>
+<h2 id="启动nginx"><a class="markdownIt-Anchor" href="#启动nginx"></a> 启动Nginx</h2>
+<p>启动Nginx有两种方式，一个是直接启动执行nginx二进制文件，另一个方法是通过linux内置的server命令启动nginx。</p>
+<h3 id="直接启动"><a class="markdownIt-Anchor" href="#直接启动"></a> 直接启动</h3>
+<p>直接运行<code>nginx</code>执行文件启动nginx</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/local/nginx/sbin/nginx</span><br></pre></td></tr></table></figure>
+<h3 id="使用systemctl启动"><a class="markdownIt-Anchor" href="#使用systemctl启动"></a> 使用systemctl启动</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start nginx.service</span><br></pre></td></tr></table></figure>
+<h2 id="停止nginx"><a class="markdownIt-Anchor" href="#停止nginx"></a> 停止Nginx</h2>
+<p>停止Nginx也有几个方式，nginx内置命令和linux内置的命令。</p>
+<h3 id="立即停止nginx"><a class="markdownIt-Anchor" href="#立即停止nginx"></a> 立即停止Nginx</h3>
+<p>快速停止Nginx，无论进程是否在工作，都直接停止进程，该命令是nginx内置的命令。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nginx -s stop</span><br></pre></td></tr></table></figure>
+<h3 id="从容停止nginx"><a class="markdownIt-Anchor" href="#从容停止nginx"></a> 从容停止Nginx</h3>
+<p>这种方法较stop相比就比较温和一些了，需要进程完成当前工作后再停止，该命令是nginx内置的命令。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nginx -s quit</span><br></pre></td></tr></table></figure>
+<h3 id="使用linux命令停止nginx服务"><a class="markdownIt-Anchor" href="#使用linux命令停止nginx服务"></a> 使用Linux命令停止Nginx服务</h3>
+<p>systemctl属于Linux内置的命令，也可以停止nginx服务</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl stop nginx.service</span><br></pre></td></tr></table></figure>
+<h3 id="使用linux强制停止nginx"><a class="markdownIt-Anchor" href="#使用linux强制停止nginx"></a> 使用Linux强制停止Nginx</h3>
+<p>systemctl属于Linux内置的命令，用<code>kill</code>直接杀死进程，在上面无效的情况下使用，态度强硬，简单粗暴！</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">killall nginx</span><br></pre></td></tr></table></figure>
+<h2 id="重启nginx"><a class="markdownIt-Anchor" href="#重启nginx"></a> 重启nginx</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl restart nginx.service</span><br></pre></td></tr></table></figure>
+<h2 id="加载配置文件"><a class="markdownIt-Anchor" href="#加载配置文件"></a> 加载配置文件</h2>
+<p>一般在修改配置文件后，我们需要使它生效，加载配置前，我们一般先检测配置文件有没有写错，使用<code>-t</code>可以检测是否有语法错误，比如漏写了<code>;</code>这类似的语法就可以检查出来。当然，你不检查语法问题加载也没事，但如果有语法问题，加载也是不生效的，会提示有问题。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">nginx -t         <span class="comment"># 检测配置文件是否有语法错误</span></span><br><span class="line">nginx -s reload  <span class="comment"># 加载配置文件生效</span></span><br></pre></td></tr></table></figure>
+<h1 id="信号量控制"><a class="markdownIt-Anchor" href="#信号量控制"></a> 信号量控制</h1>
+<ul>
+<li>
+<p><code>TERM，INT</code>：快速关闭</p>
+</li>
+<li>
+<p><code>QUIT</code>：从容关闭（优雅的关闭进程,即等请求结束后再关闭）</p>
+</li>
+<li>
+<p><code>HUP</code> ：平滑重启，重新加载配置文件 （平滑重启，修改配置文件之后不用重启服务器。直接kill -PUT 进程号即可）</p>
+</li>
+<li>
+<p><code>USR1</code> ：重新读取日志文件，在切割日志时用途较大（停止写入老日志文件，打开新日志文件，之所以这样是因为老日志文件就算修改的文件名，由于inode的原因，nginx还会一直往老的日志文件写入数据）</p>
+</li>
+<li>
+<p><code>USR2</code> ：平滑升级可执行程序 ，nginx升级时候用</p>
+</li>
+<li>
+<p><code>WINCH</code> ：从容关闭工作进程</p>
+</li>
+</ul>
+<h2 id="使用方法"><a class="markdownIt-Anchor" href="#使用方法"></a> 使用方法</h2>
+<p><strong>格式：</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Kill -信号选项 nginx的主进程号</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>nginx的主进程号可以通过<code>netstat</code>或<code>lsof</code>指令查看PID进程</p>
+</blockquote>
+<h3 id="滑重启重新加载配置文件访问控制"><a class="markdownIt-Anchor" href="#滑重启重新加载配置文件访问控制"></a> 滑重启，重新加载配置文件访问控制</h3>
+<p>我在配置Nginx的nginx.conf的配置时，一般是使用下面这种格式，监控端口和域名根据的自己的情况进行修改。每一个server服务都是一个独立的监听服务，你可以设置监听某个端口，然后返回不同的信息。如果我们想根据不同的请求URL来返回不同的URL信息，我们就可以设置多个location，并且不同的location设置不同的URL匹配信息。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">server&#123;</span><br><span class="line">	listen 80;</span><br><span class="line">	server_name www.hikki.site;</span><br><span class="line">	location / &#123;</span><br><span class="line">		...</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="url匹配"><a class="markdownIt-Anchor" href="#url匹配"></a> URL匹配</h1>
+<p>当我们部署多个项目到Nginx下的时候，将多个项目部署在同一个域名下，我们可以设置用户访问不同的URI来反向代理到不同的服务，比如用户访问<code>http://192.168.2.5/a</code>，我们可以反向代理到<code>localhost:5050</code>，用户访问<code>http://192.168.2.5/b</code>，我们反向代理到<code>localhost:5051</code>端口，我们就可以通过匹配URI来做反向代理。</p>
+<p><code>=、~、~*、^~、@</code>都是<code>location</code>用于实现访问控制的前缀，用于匹配<code>不同的URI</code>来返回不同的信息。</p>
+<h2 id="普通匹配"><a class="markdownIt-Anchor" href="#普通匹配"></a> 普通匹配</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">前缀</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">=</td>
+<td style="text-align:center"><strong>精准匹配</strong>全路径, 命中它后直接返回, 不再进行后续匹配, 优先级最高.</td>
+</tr>
+<tr>
+<td style="text-align:center">^~</td>
+<td style="text-align:center">精准匹配开头, 命中开头后直接返回, 不再进行后续匹配, 优先级第二</td>
+</tr>
+</tbody>
+</table>
+<h2 id="正则表达式匹配"><a class="markdownIt-Anchor" href="#正则表达式匹配"></a> 正则表达式匹配</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">前缀</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">~</td>
+<td style="text-align:center">使用正则表达式完成location的匹配，区分大小写</td>
+</tr>
+<tr>
+<td style="text-align:center">~*</td>
+<td style="text-align:center">使用正则表达式完成location的匹配，不区分大小写</td>
+</tr>
+</tbody>
+</table>
+<h2 id="内部nginx匹配"><a class="markdownIt-Anchor" href="#内部nginx匹配"></a> 内部Nginx匹配</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">前缀</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">@</td>
+<td style="text-align:center">且该块不能被外部客户端所访问，只能被 Nginx 内部配置指令所访问</td>
+</tr>
+</tbody>
+</table>
+<h1 id="负载均衡"><a class="markdownIt-Anchor" href="#负载均衡"></a> 负载均衡</h1>
+<p><strong>负载均衡</strong>（Load Balance）就是将负载分摊到多个操作单元上执行，从而提高服务的可用性和响应速度，带给用户更好的体验。</p>
+<h2 id="配置方式"><a class="markdownIt-Anchor" href="#配置方式"></a> 配置方式</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>配置方式</strong></th>
+<th style="text-align:left"><strong>说明</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">轮询方式</td>
+<td style="text-align:left">负载均衡默认设置方式，每个请求<strong>按照时间顺序逐一分配</strong>到不同的后端服务器进行处理，如果有服务器宕机，会自动剔除</td>
+</tr>
+<tr>
+<td style="text-align:left">权重方式</td>
+<td style="text-align:left">利用weight指定轮询的<strong>权重比率</strong>，与<strong>访问率成正比</strong>，用于后端服务器性能不均的情况</td>
+</tr>
+<tr>
+<td style="text-align:left">ip_hash方式</td>
+<td style="text-align:left">每个请求按访问IP的hash结果分配，这样可以使每个<strong>访客固定访问一个</strong>后端服务器，可以解决Session共享的问题</td>
+</tr>
+<tr>
+<td style="text-align:left">第三方模块</td>
+<td style="text-align:left">第三方模块采用fair时，按照每台服务器的响应时间来分配请求，<strong>响应时间短的优先分配</strong>；若第三方模块采用url_hash时，按照访问url的hash值来分配请求</td>
+</tr>
+</tbody>
+</table>
+<h1 id="配置使用案例"><a class="markdownIt-Anchor" href="#配置使用案例"></a> 配置使用案例</h1>
+<h2 id="案例一直接部署静态资源"><a class="markdownIt-Anchor" href="#案例一直接部署静态资源"></a> 案例一：直接部署静态资源</h2>
+<p>需求：将服务器下<code>/www/hexo</code>路径下的博客文件部署到公网上，并且用域名<code>hikki.site</code>和<code>www.hikki.site</code>可以访问。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">server</span> &#123;</span><br><span class="line">  <span class="string">listen</span> <span class="number">80</span><span class="string">;</span> <span class="comment"># 指定80端口访问</span></span><br><span class="line">  <span class="string">server_name</span> <span class="string">hikki.site</span> <span class="string">www.hikki.site;</span> </span><br><span class="line">  <span class="comment"># 如果使用hikki.site和www.hikki.site则执行以下操作</span></span><br><span class="line">  </span><br><span class="line">  <span class="string">location</span> <span class="string">/</span> &#123;</span><br><span class="line">    <span class="string">root</span> <span class="string">/www/hexo;</span> <span class="comment"># 指定该网站的根目录</span></span><br><span class="line">    <span class="string">index</span> <span class="string">index.html</span> <span class="string">index.htm;</span> <span class="comment"># 访问时默认打开index.html或index.htm文件</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><code>listen</code>：指定端口访问</li>
+<li><code>server_name</code>：可一个或多个，以空格分开</li>
+<li><code>root</code>：指定部署的目录</li>
+<li><code>index</code>：指定访问第一个页面</li>
+</ul>
+<div class="note blue icon-padding flat"><i class="note-icon fas fa-virus"></i><p><code>server_name</code>如果不写，则默认是本机<code>localhost</code>。</p>
+</div>
+<h2 id="案例二反向代理部署"><a class="markdownIt-Anchor" href="#案例二反向代理部署"></a> 案例二：反向代理部署</h2>
+<p>需求：我的服务器上有一个Java项目，但Java项目需要使用tomcat，tomcat默认的端口是8080，我的Java项目放在<code>/www/tomcat9/webapps/ROOT</code>下，并且使用域名<code>java.hikki.site</code>域名访问该项目。</p>
+<p>如果我们不使用指定的域名访问，我们一般是这样访问的：<code>http://IP:8080</code>，在IP地址后面加端口号，这时你还需要开放防火墙<code>8080</code>端口，将端口暴露出去。</p>
+<p>但我们不想把这个端口暴露给别人看到怎么办？我们可以使用反向代理，指定一个三级域名<code>java.hikki.site</code>，这时可以关闭防火墙的<code>8080</code>端口了，当别人访问这个<code>java.hikki.site</code>域名时，这个域名自动指向<code>IP:8080</code>，这样就可以避免端口暴露出去。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">server&#123;</span></span><br><span class="line">  <span class="string">listen</span> <span class="number">80</span></span><br><span class="line">  <span class="string">server_name</span> <span class="string">java.hikki.site;</span></span><br><span class="line">  <span class="string">location</span> <span class="string">/</span> &#123;</span><br><span class="line">    <span class="string">proxy_pass</span> <span class="string">http://127.0.0.1:8080;</span></span><br><span class="line">  &#125;</span><br><span class="line"><span class="string">&#125;</span></span><br></pre></td></tr></table></figure>
+<h2 id="案例三加网站https"><a class="markdownIt-Anchor" href="#案例三加网站https"></a> 案例三：加网站HTTPS</h2>
+<p>需求：给我的博客<code>http://hikki.site</code>加SSL，使网站更加安全，在<code>案例一的基础上修改</code>，首先需要申请SSL证书，如果你是在阿里云或者腾讯云购买的域名可以免费申请一年的SSL证书，如果你也没有申请到证书，那你也可以申请免费的SSL证书，可参考我另外的文章：<code>https://blog.hikki.site/2e63f4a4.html</code></p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">server</span> &#123;</span><br><span class="line">  <span class="string">listen</span> <span class="number">80</span><span class="string">;</span></span><br><span class="line">  <span class="string">server_name</span>   <span class="string">www.hikki.site</span> <span class="string">hikki.site;</span> <span class="comment"># 表示访问到www.hikki.site或hikki.site都执行该 server块</span></span><br><span class="line">  <span class="string">return</span>       <span class="number">301</span> <span class="string">https://$server_name$request_uri;</span>  <span class="comment">#访问http时自动跳转到https</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 对SSL证书解析</span></span><br><span class="line"><span class="string">server</span> &#123;</span><br><span class="line">  <span class="string">listen</span>                <span class="number">443</span> <span class="string">ssl</span> <span class="string">default;</span></span><br><span class="line">  <span class="string">listen</span>                [<span class="string">::</span>]<span class="string">:443</span> <span class="string">ssl;</span></span><br><span class="line">  <span class="string">server_name</span>           <span class="string">www.hikki.site;</span></span><br><span class="line">  <span class="string">ssl_certificate</span>       <span class="string">cert/hikki.site/cert-hikki-site.pem;</span> <span class="comment">#证书存放相对路径</span></span><br><span class="line">  <span class="string">ssl_certificate_key</span>   <span class="string">cert/hikki.site/cert-hikki-site.key;</span> <span class="comment">#证书存放相对路径</span></span><br><span class="line">  </span><br><span class="line">  <span class="string">ssl_session_timeout</span> <span class="string">5m;</span></span><br><span class="line">  <span class="string">ssl_ciphers</span> <span class="string">ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:!NULL:!aNULL:!MD5:!ADH:!RC4;</span></span><br><span class="line">  <span class="string">ssl_protocols</span> <span class="string">TLSv1.1</span> <span class="string">TLSv1.2</span> <span class="string">TLSv1.3;</span> </span><br><span class="line">  <span class="string">ssl_prefer_server_ciphers</span> <span class="string">on;</span></span><br><span class="line"></span><br><span class="line">  <span class="string">location</span> <span class="string">/</span> &#123;</span><br><span class="line">    <span class="string">root</span>     <span class="string">/www/hexo;</span>  <span class="comment">#Web网站程序存放目录。</span></span><br><span class="line">    <span class="string">index</span>    <span class="string">index.html</span> <span class="string">index.htm;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="案例四给网站添加防盗链"><a class="markdownIt-Anchor" href="#案例四给网站添加防盗链"></a> 案例四：给网站添加防盗链</h2>
+<p>博客使用的是<code>twikoo评论系统</code>，使用docker部署的，怎么保证评论系统的安全呢？别人怎么获取不了这些数据呢？</p>
+<p>我们可以给Nginx添加一些简单的防盗链，比如，设置该sever块，只有当请求头<code>hikki.site</code>时，才允许访问，或者是<code>*.hikki.site</code>才允许访问，当然，这只是简单的过滤一些，如果别人模拟请求头盗取你数据，那还是没办法。</p>
+<p>我使用的twikoo部署在docker容器中，对外映射的是5050端口，那我指定三级域名twikoo.hikki.site，在用户访问blog.hikki.site网站时，blog.hikki.site向服务器发起请求，获取评论区的数据，此时，请求头带有blog.hikki.site信息，则被通过，允许请求访问数据。</p>
+<p>如果我们是在本地测试<code>hexo s</code>，这时候，对服务器发起的请求是被拒绝的，因为请求头不是带有<code>hikki.site</code>或者是<code>*.hikki.site</code>。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># twikoo评论系统</span></span><br><span class="line"><span class="string">server</span> &#123;</span><br><span class="line">  <span class="string">listen</span> <span class="number">80</span><span class="string">;</span></span><br><span class="line">  <span class="string">server_name</span> <span class="string">twikoo.hikki.site;</span></span><br><span class="line">  <span class="string">return</span>       <span class="number">301</span> <span class="string">https://$server_name$request_uri;</span>  </span><br><span class="line">&#125;</span><br><span class="line"><span class="string">server</span> &#123;</span><br><span class="line">  <span class="string">listen</span> <span class="number">443</span> <span class="string">ssl;</span></span><br><span class="line">  <span class="string">server_name</span> <span class="string">twikoo.hikki.site;</span></span><br><span class="line"> </span><br><span class="line">  <span class="string">ssl_certificate</span> <span class="string">cert/twikoo.hikki.site/cert.pem;</span>  </span><br><span class="line">  <span class="string">ssl_certificate_key</span> <span class="string">cert/twikoo.hikki.site/key.pem;</span></span><br><span class="line"> </span><br><span class="line">  <span class="string">valid_referers</span>  <span class="string">*.hikki.site;</span></span><br><span class="line">    <span class="string">if</span> <span class="string">($invalid_referer)</span> &#123;</span><br><span class="line">      <span class="string">return</span>  <span class="number">403</span><span class="string">;</span></span><br><span class="line">    &#125;</span><br><span class="line">  <span class="string">location</span> <span class="string">/</span> &#123;</span><br><span class="line">    <span class="string">proxy_pass</span> <span class="string">http://127.0.0.1:5050;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="nginxtomcat动静分离"><a class="markdownIt-Anchor" href="#nginxtomcat动静分离"></a> Nginx+Tomcat动静分离</h2>
+<h1 id="常见的nginx状态码-响应码"><a class="markdownIt-Anchor" href="#常见的nginx状态码-响应码"></a> 常见的Nginx状态码、响应码</h1>
+<h2 id="状态码分类"><a class="markdownIt-Anchor" href="#状态码分类"></a> 状态码分类</h2>
+<table>
+<thead>
+<tr>
+<th>分类</th>
+<th>分类描述</th>
+<th>分类详细说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1**</td>
+<td>信息</td>
+<td>服务器收到请求，需要请求者继续执行操作</td>
+</tr>
+<tr>
+<td>2**</td>
+<td>成功</td>
+<td>操作被成功接收并处理</td>
+</tr>
+<tr>
+<td>3**</td>
+<td>重定向</td>
+<td>需要进一步的操作以完成请求</td>
+</tr>
+<tr>
+<td>4**</td>
+<td>客户端错误</td>
+<td>请求包含语法错误或无法完成请求</td>
+</tr>
+<tr>
+<td>5**</td>
+<td>服务器错误</td>
+<td>服务器在处理请求的过程中发生了错误</td>
+</tr>
+</tbody>
+</table>
+<h2 id="1开头状态码"><a class="markdownIt-Anchor" href="#1开头状态码"></a> 1开头状态码</h2>
+<table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>状态码英文名称</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>100</td>
+<td>Continue</td>
+<td>继续，客户端应继续请求</td>
+</tr>
+<tr>
+<td>101</td>
+<td>Switching Protocols</td>
+<td>切换协议，服务器根据客户端的请求切换协议。只能切换到更高级的协议，例如，切换到HTTP的新版本协议</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2开头状态码"><a class="markdownIt-Anchor" href="#2开头状态码"></a> 2开头状态码</h2>
+<table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>状态码英文名称</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td>OK</td>
+<td>请求成功，一般用于GET与POST请求</td>
+</tr>
+<tr>
+<td>201</td>
+<td>Created</td>
+<td>已创建，成功请求创建了新的资源</td>
+</tr>
+<tr>
+<td>202</td>
+<td>Accepted</td>
+<td>已接受，已经接受请求，但未处理完成</td>
+</tr>
+<tr>
+<td>203</td>
+<td>Non-Authoritative Information</td>
+<td>非授权信息，请求成功，但返回的meta信息不在原始的服务器，而是一个副本</td>
+</tr>
+<tr>
+<td>204</td>
+<td>No Content</td>
+<td>无内容，服务器成功处理，但未返回内容。在未更新的网页情况下，可确保浏览器继续显示当前文档</td>
+</tr>
+<tr>
+<td>205</td>
+<td>Reset Content</td>
+<td>重置内容，服务器处理成功，用户终端（浏览器）应重置文档视图，可通过此返回码清除浏览器的表单域</td>
+</tr>
+<tr>
+<td>206</td>
+<td>Partial Content</td>
+<td>部分内容，服务器成功处理了部分GET请求</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3开头状态码"><a class="markdownIt-Anchor" href="#3开头状态码"></a> 3开头状态码</h2>
+<table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>状态码英文名称</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>300</td>
+<td>Multiple Choices</td>
+<td>多种选择，请求的资源可包括多个位置，相应可返回一个资源特征与地址的列表用于用户终端选择</td>
+</tr>
+<tr>
+<td>301</td>
+<td>Moved Permanently</td>
+<td>永久跳转。请求的资源已被永久移动到新的URL，返回信息会包括新的URL，浏览器会自动定向到新URL，今后任何新的请求都应使用新的URL代替</td>
+</tr>
+<tr>
+<td>302</td>
+<td>Found</td>
+<td>临时移动，与301类似，但资源只是临时被移动，客户端应继续使用原有的URL</td>
+</tr>
+<tr>
+<td>303</td>
+<td>See Other</td>
+<td>查看其它地址,与301类似，使用GET和POST请求查看</td>
+</tr>
+<tr>
+<td>304</td>
+<td>Not Modified</td>
+<td>未修改，所请求的资源未修改，服务器返回此状态码时，不会返回任何资源，客户端通常会缓存访问过的资源，通过提供一个头信息指出客户端希望只返回在指定日期之后修改的资源</td>
+</tr>
+<tr>
+<td>305</td>
+<td>Use Proxy</td>
+<td>使用代理，所请求的资源必须通过代理访问</td>
+</tr>
+<tr>
+<td>306</td>
+<td>Unused</td>
+<td>已经被废弃的HTTP状态码</td>
+</tr>
+<tr>
+<td>307</td>
+<td>Unused</td>
+<td>临时重定向，与302类似，使用GET请求重定向</td>
+</tr>
+</tbody>
+</table>
+<h2 id="4开头状态码"><a class="markdownIt-Anchor" href="#4开头状态码"></a> 4开头状态码</h2>
+<table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>状态码英文名称</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>400</td>
+<td>Bad Request</td>
+<td>客户端请求的语法错误，服务器无法理解</td>
+</tr>
+<tr>
+<td>401</td>
+<td>Unauthorized</td>
+<td>请求要求用户的身份认证</td>
+</tr>
+<tr>
+<td>402</td>
+<td>Payment Required</td>
+<td>保留，将来使用</td>
+</tr>
+<tr>
+<td>403</td>
+<td>Forbidden</td>
+<td>服务器拒绝执行此请求</td>
+</tr>
+<tr>
+<td>404</td>
+<td>Not Found</td>
+<td>服务器无法根据客户端的请求找到资源（网页），通过此代码，网站设计人员可设置“你所请求的资源无法找到”的个性页面</td>
+</tr>
+<tr>
+<td>405</td>
+<td>Method Not Allowed</td>
+<td>客户端请求中的访求被禁止</td>
+</tr>
+<tr>
+<td>406</td>
+<td>Not  Acceptable</td>
+<td>服务器无法根据客户端请求的内容性完成请求</td>
+</tr>
+<tr>
+<td>407</td>
+<td>Proxy Authentication Required</td>
+<td>请求要求代理的身份证，与401类似，但请求者应当使用代理进行授权</td>
+</tr>
+<tr>
+<td>408</td>
+<td>Request Time-out</td>
+<td>超时，服务器等待客户端发送的请求时间过长</td>
+</tr>
+<tr>
+<td>409</td>
+<td>Conflict</td>
+<td>服务器完成客户端的PUT请求是可能返回此代码，服务器处理请求时发生了冲突</td>
+</tr>
+<tr>
+<td>410</td>
+<td>Gone</td>
+<td>客户端请求的资源已经不存在。410不同于404，如果资源以前有现在被永久删除了可使用410代码，网站设计人员可通过301代码指定资源的新位置</td>
+</tr>
+<tr>
+<td>411</td>
+<td>Length Required</td>
+<td>服务器无法处理客户端发送的不带Content-Length的请求信息</td>
+</tr>
+<tr>
+<td>412</td>
+<td>Precondition Failed</td>
+<td>客户端请求信息的先决条件错误</td>
+</tr>
+<tr>
+<td>413</td>
+<td>Request Entity Too Large</td>
+<td>由于请求的实体过大，服务器无法处理，因此拒绝请求。为防止客户端的连续请求，服务器可能会关闭连接。如果只是服务器暂时无法处理，则会包含一个Retry-After的响应信息 414              Request-URI Too Large               请求的URI过长（URI通常为网址），服务器无法处理</td>
+</tr>
+<tr>
+<td>414</td>
+<td>Request-URI Too Large</td>
+<td>请求的URI过长（URI通常为网址），服务器无法处理</td>
+</tr>
+<tr>
+<td>415</td>
+<td>Unsupported Media Type</td>
+<td>服务器无法处理请求附带的媒体格式</td>
+</tr>
+<tr>
+<td>416</td>
+<td>Requested range not satisfiable</td>
+<td>客户端请求的范围无效</td>
+</tr>
+<tr>
+<td>417</td>
+<td>Expectation Failed</td>
+<td>服务器无法满足Expect的请求头信息</td>
+</tr>
+</tbody>
+</table>
+<h2 id="5开头状态码"><a class="markdownIt-Anchor" href="#5开头状态码"></a> 5开头状态码</h2>
+<table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>状态码英文名称</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>500</td>
+<td>Internal Server Error</td>
+<td>服务器内部错误，无法完成请求</td>
+</tr>
+<tr>
+<td>501</td>
+<td>Not Implemented</td>
+<td>服务器不支持请求的功能，无法完成请求</td>
+</tr>
+<tr>
+<td>502</td>
+<td>Bad Gateway</td>
+<td>充当网关或代理的服务器，从远端服务器接收到了一个无效的请求</td>
+</tr>
+<tr>
+<td>503</td>
+<td>Service Unavailable</td>
+<td>由于超载或系统维护，服务器暂时的无法处理客户端的请求。延时的长度可包含在服务器的Retry-After头信息中</td>
+</tr>
+<tr>
+<td>504</td>
+<td>Gateway Time-out</td>
+<td>充当网关或代理的服务器，未及时从远端服务器获取请求</td>
+</tr>
+<tr>
+<td>505</td>
+<td>HTTP Version not supported</td>
+<td>服务器不支持请求的HTTP协议的版本，无法完成处理</td>
+</tr>
+</tbody>
+</table>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://blog.hikki.site">小码同学</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://blog.hikki.site/85111a4c.html">https://blog.hikki.site/85111a4c.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow noreferrer" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://blog.hikki.site" target="_blank">小码同学</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%95%99%E7%A8%8B/">教程</a><a class="post-meta__tags" href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</a><a class="post-meta__tags" href="/tags/%E5%8D%9A%E5%AE%A2/">博客</a></div><div class="post_share"><div class="social-share" data-image="https://images.hikki.site/c7f2e837-1635-40f1-98b5-1d1d0a06805e.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="/data/theme/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/data/img/wechatpay.jpg" target="_blank"><img class="post-qr-code-img" src="/data/img/wechatpay.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="/data/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src="/data/img/alipay.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/d77d79c9.html" title="【Docker系列】私人云盘kodbox"><i class="fas fa-chevron-left prev-icon"><div class="prev-label">上一篇</div></i></a><div class="pagination-card"><img class="prev-cover" src="https://images.hikki.site/20221108223256.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">【Docker系列】私人云盘kodbox</div></div></div></div><div class="next-post pull-right"><a href="/bdd9dd56.html" title="Gitee实时同步仓库到GitHub"><i class="fas fa-chevron-right next-icon"><div class="next-label">下一篇</div></i></a><div class="pagination-card"><img class="next-cover" src="https://images.hikki.site/git_logo-2022-12-27.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Gitee实时同步仓库到GitHub</div></div></div></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/94c34737.html" title="更换博客域名Nginx实现301跳转"><img class="cover" src="https://bu.dusays.com/2022/11/12/636f15e160aad.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-11-11</div><div class="title">更换博客域名Nginx实现301跳转</div></div></a></div><div><a href="/680409a4.html" title="hexo博客自动化部署到github pages"><img class="cover" src="https://images.hikki.site/hexologo.svg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-08-19</div><div class="title">hexo博客自动化部署到github pages</div></div></a></div><div><a href="/b9bc15e3.html" title="添加博客后台管理系统"><img class="cover" src="https://images.hikki.site/20230326003226.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-03-26</div><div class="title">添加博客后台管理系统</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="disqus_thread"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/data/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">小码同学</div><div class="author-info__description">喜欢的东西就努力去追求，万一成功了呢！</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">173</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">29</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">39</div></a></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/0000rookie" rel="external nofollow noreferrer" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://space.bilibili.com/110844189?spm_id_from=333.1007.0.0" rel="external nofollow noreferrer" target="_blank" title="B站"><i class="fa-brands fa-bilibili"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title=""><i class="fas fa-rss"></i></a><a class="social-icon" href="mailto:aa1341151056@126.com" rel="external nofollow noreferrer" target="_blank" title=""><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content"><img src="https://blog.hikki.site/data/img/emoji/coolapk/c-pyjiaoyi.png" style="width:35px;height:35px"/>本站拒绝海外IP访问，如果您有连接到海外网络，可能体验不是很好</div></div><div class="card-widget tzy-right-widget" id="card-wechat"><div id="flip-wrapper"><div id="flip-content"><div class="face"></div><div class="back face"></div></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.</span> <span class="toc-text"> 介绍</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#nginx%E7%9A%84%E5%AE%89%E8%A3%85"><span class="toc-number">2.</span> <span class="toc-text"> Nginx的安装</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#nginx%E5%B7%A5%E4%BD%9C%E6%A8%A1%E5%BC%8F"><span class="toc-number">3.</span> <span class="toc-text"> Nginx工作模式</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-number">4.</span> <span class="toc-text"> 配置文件</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#nginx%E5%AD%90%E9%85%8D%E7%BD%AE"><span class="toc-number">4.1.</span> <span class="toc-text"> Nginx子配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BAdefaultconf%E6%96%87%E4%BB%B6"><span class="toc-number">4.1.1.</span> <span class="toc-text"> 创建default.conf文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%95%E5%85%A5defaultconf%E6%96%87%E4%BB%B6"><span class="toc-number">4.1.2.</span> <span class="toc-text"> 引入default.conf文件</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#nginx%E5%90%AF%E5%8A%A8-%E5%81%9C%E6%AD%A2-%E9%87%8D%E5%90%AF"><span class="toc-number">5.</span> <span class="toc-text"> Nginx启动 &amp; 停止 &amp; 重启</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%AF%E5%8A%A8nginx"><span class="toc-number">5.1.</span> <span class="toc-text"> 启动Nginx</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%B4%E6%8E%A5%E5%90%AF%E5%8A%A8"><span class="toc-number">5.1.1.</span> <span class="toc-text"> 直接启动</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8systemctl%E5%90%AF%E5%8A%A8"><span class="toc-number">5.1.2.</span> <span class="toc-text"> 使用systemctl启动</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%81%9C%E6%AD%A2nginx"><span class="toc-number">5.2.</span> <span class="toc-text"> 停止Nginx</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AB%8B%E5%8D%B3%E5%81%9C%E6%AD%A2nginx"><span class="toc-number">5.2.1.</span> <span class="toc-text"> 立即停止Nginx</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%8E%E5%AE%B9%E5%81%9C%E6%AD%A2nginx"><span class="toc-number">5.2.2.</span> <span class="toc-text"> 从容停止Nginx</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8linux%E5%91%BD%E4%BB%A4%E5%81%9C%E6%AD%A2nginx%E6%9C%8D%E5%8A%A1"><span class="toc-number">5.2.3.</span> <span class="toc-text"> 使用Linux命令停止Nginx服务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8linux%E5%BC%BA%E5%88%B6%E5%81%9C%E6%AD%A2nginx"><span class="toc-number">5.2.4.</span> <span class="toc-text"> 使用Linux强制停止Nginx</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%87%8D%E5%90%AFnginx"><span class="toc-number">5.3.</span> <span class="toc-text"> 重启nginx</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8A%A0%E8%BD%BD%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-number">5.4.</span> <span class="toc-text"> 加载配置文件</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BF%A1%E5%8F%B7%E9%87%8F%E6%8E%A7%E5%88%B6"><span class="toc-number">6.</span> <span class="toc-text"> 信号量控制</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95"><span class="toc-number">6.1.</span> <span class="toc-text"> 使用方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%BB%91%E9%87%8D%E5%90%AF%E9%87%8D%E6%96%B0%E5%8A%A0%E8%BD%BD%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6"><span class="toc-number">6.1.1.</span> <span class="toc-text"> 滑重启，重新加载配置文件访问控制</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#url%E5%8C%B9%E9%85%8D"><span class="toc-number">7.</span> <span class="toc-text"> URL匹配</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%99%AE%E9%80%9A%E5%8C%B9%E9%85%8D"><span class="toc-number">7.1.</span> <span class="toc-text"> 普通匹配</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%8C%B9%E9%85%8D"><span class="toc-number">7.2.</span> <span class="toc-text"> 正则表达式匹配</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%85%E9%83%A8nginx%E5%8C%B9%E9%85%8D"><span class="toc-number">7.3.</span> <span class="toc-text"> 内部Nginx匹配</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1"><span class="toc-number">8.</span> <span class="toc-text"> 负载均衡</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E6%96%B9%E5%BC%8F"><span class="toc-number">8.1.</span> <span class="toc-text"> 配置方式</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8%E6%A1%88%E4%BE%8B"><span class="toc-number">9.</span> <span class="toc-text"> 配置使用案例</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A1%88%E4%BE%8B%E4%B8%80%E7%9B%B4%E6%8E%A5%E9%83%A8%E7%BD%B2%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90"><span class="toc-number">9.1.</span> <span class="toc-text"> 案例一：直接部署静态资源</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A1%88%E4%BE%8B%E4%BA%8C%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E9%83%A8%E7%BD%B2"><span class="toc-number">9.2.</span> <span class="toc-text"> 案例二：反向代理部署</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A1%88%E4%BE%8B%E4%B8%89%E5%8A%A0%E7%BD%91%E7%AB%99https"><span class="toc-number">9.3.</span> <span class="toc-text"> 案例三：加网站HTTPS</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A1%88%E4%BE%8B%E5%9B%9B%E7%BB%99%E7%BD%91%E7%AB%99%E6%B7%BB%E5%8A%A0%E9%98%B2%E7%9B%97%E9%93%BE"><span class="toc-number">9.4.</span> <span class="toc-text"> 案例四：给网站添加防盗链</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#nginxtomcat%E5%8A%A8%E9%9D%99%E5%88%86%E7%A6%BB"><span class="toc-number">9.5.</span> <span class="toc-text"> Nginx+Tomcat动静分离</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E7%9A%84nginx%E7%8A%B6%E6%80%81%E7%A0%81-%E5%93%8D%E5%BA%94%E7%A0%81"><span class="toc-number">10.</span> <span class="toc-text"> 常见的Nginx状态码、响应码</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%8A%B6%E6%80%81%E7%A0%81%E5%88%86%E7%B1%BB"><span class="toc-number">10.1.</span> <span class="toc-text"> 状态码分类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E5%BC%80%E5%A4%B4%E7%8A%B6%E6%80%81%E7%A0%81"><span class="toc-number">10.2.</span> <span class="toc-text"> 1开头状态码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E5%BC%80%E5%A4%B4%E7%8A%B6%E6%80%81%E7%A0%81"><span class="toc-number">10.3.</span> <span class="toc-text"> 2开头状态码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E5%BC%80%E5%A4%B4%E7%8A%B6%E6%80%81%E7%A0%81"><span class="toc-number">10.4.</span> <span class="toc-text"> 3开头状态码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4%E5%BC%80%E5%A4%B4%E7%8A%B6%E6%80%81%E7%A0%81"><span class="toc-number">10.5.</span> <span class="toc-text"> 4开头状态码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5%E5%BC%80%E5%A4%B4%E7%8A%B6%E6%80%81%E7%A0%81"><span class="toc-number">10.6.</span> <span class="toc-text"> 5开头状态码</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/232c1cc7.html" title="服务器备案+迁移数据方案"><img src="/data/img/wallhaven-8ozk-%E5%8E%8B%E7%BC%A9%E5%90%8E.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="服务器备案+迁移数据方案"/></a><div class="content"><a class="title" href="/232c1cc7.html" title="服务器备案+迁移数据方案">服务器备案+迁移数据方案</a><time datetime="2023-05-30T12:54:52.000Z" title="发表于 2023-05-30 20:54:52">2023-05-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/f9ef02fb.html" title="【SpringBoot系列】04-NoSQL数据库"><img src="https://images.hikki.site/cover-2023-05-24-150023.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【SpringBoot系列】04-NoSQL数据库"/></a><div class="content"><a class="title" href="/f9ef02fb.html" title="【SpringBoot系列】04-NoSQL数据库">【SpringBoot系列】04-NoSQL数据库</a><time datetime="2023-05-24T07:57:35.000Z" title="发表于 2023-05-24 15:57:35">2023-05-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/169f819e.html" title="【SpringBoot系列】03-测试与数据库操作"><img src="https://bu.dusays.com/2023/05/22/646a5ebd510bf.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【SpringBoot系列】03-测试与数据库操作"/></a><div class="content"><a class="title" href="/169f819e.html" title="【SpringBoot系列】03-测试与数据库操作">【SpringBoot系列】03-测试与数据库操作</a><time datetime="2023-05-22T06:58:21.000Z" title="发表于 2023-05-22 14:58:21">2023-05-22</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://images.hikki.site/c7f2e837-1635-40f1-98b5-1d1d0a06805e.png')"><div id="footer-wrap"><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="fa-solid fa-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="fa-solid fa-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="fa-solid fa-arrow-rotate-right"></i></div><div class="rightMenu-item" id="menu-home"><i class="fa-solid fa-house"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" href="/archives/"><i class="fa-solid fa-archive"></i><span>文章归档</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="fa-solid fa-tags"></i><span>文章标签</span></a><a class="rightMenu-item menu-link" href="/message/"><i class="fa-solid fa-comment-dots"></i><span>留言板</span></a><a class="rightMenu-item menu-link" href="/link/moments"><i class="fa-solid fa-procedures"></i><span>闲言碎语</span></a><a class="rightMenu-item menu-link" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.travellings.cn/go.html"><i class="fa-solid fa-rocket"></i><span>博客列车</span></a></div><div class="rightMenu-group rightMenu-line rightMenuNormal"><a class="rightMenu-item menu-link" id="menu-radompage" href="/random.html"><i class="fa-solid fa-shoe-prints"></i><span>随便逛逛</span></a><div class="rightMenu-item" id="menu-translate"><i class="fa-solid fa-earth-asia"></i><span>繁简切换</span></div><div class="rightMenu-item" id="menu-darkmode"><i class="fa-solid fa-moon"></i><span>切换模式</span></div></div></div><div id="rightmenu-mask"></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="/data/theme/medium-zoom.min.js"></script><script src="/data/theme/instantpage.min.js" type="module"></script><script src="/data/theme/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function loadDisqus () {
+  var disqus_config = function () {
+    this.page.url = 'https://blog.hikki.site/85111a4c.html'
+    this.page.identifier = '/85111a4c.html'
+    this.page.title = 'Nginx'
+  };
+
+  window.disqusReset = () => {
+    DISQUS.reset({
+      reload: true,
+      config: disqus_config
+    })
+  }
+
+  if (window.DISQUS) disqusReset()
+  else {
+    (function() { 
+      var d = document, s = d.createElement('script');
+      s.src = 'https://.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  }
+
+  document.getElementById('darkmode').addEventListener('click', () => {
+    setTimeout(() => window.disqusReset(), 200)
+  })
+}
+
+if ('Disqus' === 'Disqus' || !true) {
+  if (true) btf.loadComment(document.getElementById('disqus_thread'), loadDisqus)
+  else loadDisqus()
+} else {
+  function loadOtherComment () {
+    loadDisqus()
+  }
+}
+</script></div><script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script><script defer data-pjax src="/js/rightMenu.js"></script><script src="/js/fixed-pagination.js" async></script><script defer data-pjax type="text/javascript" src="/util/util.js"></script><script defer data-pjax type="text/javascript" src="/data/js/utils.js"></script><script>let tianliGPT_postSelector = '\#post \#article-container';let tianliGPT_key = 'U5FHKh71uMCfndwMIBkd';</script><script src="https://cdn1.tianli0.top/gh/zhheo/Post-Abstract-AI@0.7/tianli_gpt.js"></script><script src="/data/theme/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script src="/data/theme/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"]):not([href="/music/"]):not([href="/no-pjax/"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script async src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><script data-pjax>
+  function butterfly_footer_beautify_injector_config(){
+    var parent_div_git = document.getElementById('footer-wrap');
+    var item_html = '<div id="workboard"></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://www.upyun.com/?utm_source=lianmeng&amp;utm_medium=referral" rel="external nofollow noreferrer" style="margin-inline:5px" data-title="本网站由又拍云提供CDN加速/云存储服务" title=""><img src="https://img.shields.io/badge/CDN-%E5%8F%88%E6%8B%8D%E4%BA%91-blue" alt=""/></a><a class="github-badge" target="_blank" href="https://hexo.io/" rel="external nofollow noreferrer" style="margin-inline:5px" data-title="博客框架为Hexo_v5.4.0" title=""><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&amp;logo=hexo" alt=""/></a><a class="github-badge" target="_blank" href="https://butterfly.js.org/" rel="external nofollow noreferrer" style="margin-inline:5px" data-title="主题版本Butterfly_v4.5.1" title=""><img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&amp;logo=bitdefender" alt=""/></a><a class="github-badge" target="_blank" href="https://beian.miit.gov.cn/" rel="external nofollow noreferrer" style="margin-inline:5px" data-title="粤ICP备2022125102号" title=""><img src="/data/img/icon-link/粤ICP备2022125102号.svg" alt=""/></a></p>';
+    console.log('已挂载butterfly_footer_beautify')
+    parent_div_git.insertAdjacentHTML("beforeend",item_html)
+    }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_footer_beautify_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_footer_beautify_injector_config();
+  }
+  </script><script async src="/data/js/runtime.min.js"></script><!-- hexo injector body_end end --></body></html>

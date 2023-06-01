@@ -1,0 +1,585 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>【Docker系列】bitwarden密码管理器 | 小码同学</title><meta name="author" content="小码同学"><meta name="copyright" content="小码同学"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#93a5cf"><meta name="description" content="前言 bitwarden是一个密码管理器，到2022&#x2F;11&#x2F;24号，bitwarden项目在这之前已经转成了vaultwarden了，市场上也有不少的密码管理器，bitwarden也是口碑最好的那几款之一，开源免费，也有付费版本，有付费的版本可以保证项目的持续性，对项目的经济上还是非常重要的。 我们平常在浏览器上登录某些网站时，在登录成功时，浏览器会有个小窗口问你是否要保存密码，bitwarde">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【Docker系列】bitwarden密码管理器">
+<meta property="og:url" content="https://blog.hikki.site/dcf97aea.html">
+<meta property="og:site_name" content="小码同学">
+<meta property="og:description" content="前言 bitwarden是一个密码管理器，到2022&#x2F;11&#x2F;24号，bitwarden项目在这之前已经转成了vaultwarden了，市场上也有不少的密码管理器，bitwarden也是口碑最好的那几款之一，开源免费，也有付费版本，有付费的版本可以保证项目的持续性，对项目的经济上还是非常重要的。 我们平常在浏览器上登录某些网站时，在登录成功时，浏览器会有个小窗口问你是否要保存密码，bitwarde">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://images.hikki.site/bitwarden.png">
+<meta property="article:published_time" content="2022-11-24T09:10:01.000Z">
+<meta property="article:modified_time" content="2023-05-10T06:00:58.418Z">
+<meta property="article:author" content="小码同学">
+<meta property="article:tag" content="教程">
+<meta property="article:tag" content="Docker">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://images.hikki.site/bitwarden.png"><link rel="shortcut icon" href="/data/img/favicon.ico"><link rel="canonical" href="https://blog.hikki.site/dcf97aea"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="/data/theme/snackbar.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"https://cdntx.hikki.site/static/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: {"limitDay":50,"position":"top","messagePrev":"距离上一次更新一已经","messageNext":"天了，文章的内容可能不是最新的，甚至已经过时 !"},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":250},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'mediumZoom',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#ff9a9e","bgDark":"#1f1f1f","position":"top-center"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isAnchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '【Docker系列】bitwarden密码管理器',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: undefined,
+  isToc: true,
+  postUpdate: '2023-05-10 14:00:58'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#434343')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#93a5cf')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/rightMenu.css"><style id="barragesColor"></style><link rel="stylesheet" href="/data/css/custom.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="/data/css/runtime.min.css"><link rel="stylesheet" href="/data/css/utils.css"><link rel="stylesheet" href="https://cdn1.tianli0.top/gh/zhheo/Post-Abstract-AI@0.7/tianli_gpt.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><link rel="stylesheet" href="/data/css/runtime.min.css" media="print" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="小码同学" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/data/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">173</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">29</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">39</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-list"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fa-solid fa-tag"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-th-large"></i><span> 分类</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa-solid fa-wand-magic-sparkles"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa-solid fa-bookmark"></i><span> 书签</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/bookmark/johou/"><i class="fa-fw fas fa-sharp fa-solid fa-link"></i><span> 工具</span></a></li><li><a class="site-page child" href="/bookmark/programmer/"><i class="fa-fw fas fa-vials"></i><span> 程序猿</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa-solid fa-user-group"></i><span> 朋友</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/fcircle"><i class="fa-fw fas fa-snowboarding"></i><span> 朋友圈</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fa-solid fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.travellings.cn/go.html"><i class="fa-fw fas fa-rocket"></i><span> 开往</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user-tie"></i><span> 关于我</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://images.hikki.site/bitwarden.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">小码同学</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-list"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fa-solid fa-tag"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-th-large"></i><span> 分类</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa-solid fa-wand-magic-sparkles"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa-solid fa-bookmark"></i><span> 书签</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/bookmark/johou/"><i class="fa-fw fas fa-sharp fa-solid fa-link"></i><span> 工具</span></a></li><li><a class="site-page child" href="/bookmark/programmer/"><i class="fa-fw fas fa-vials"></i><span> 程序猿</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa-solid fa-user-group"></i><span> 朋友</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/fcircle"><i class="fa-fw fas fa-snowboarding"></i><span> 朋友圈</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fa-solid fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.travellings.cn/go.html"><i class="fa-fw fas fa-rocket"></i><span> 开往</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user-tie"></i><span> 关于我</span></a></div></div><center id="name-container"><a id="page-name" href="javascript:scrollToTop()" rel="external nofollow noreferrer">PAGE_NAME</a></center></div><div id="nav-right"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i></a></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">【Docker系列】bitwarden密码管理器</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-11-24T09:10:01.000Z" title="发表于 2022-11-24 17:10:01">2022-11-24</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-05-10T06:00:58.418Z" title="更新于 2023-05-10 14:00:58">2023-05-10</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/">计算机科学</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/">技术杂谈</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/docker/">docker</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/docker/Docker%E7%B3%BB%E5%88%97/">Docker系列</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">2.9k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>10分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="【Docker系列】bitwarden密码管理器"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言</h1>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://bitwarden.com">bitwarden</a>是一个密码管理器，到2022/11/24号，bitwarden<a href="https://blog.hikki.site">项目</a>在这之前已经转成了vaultwarden了，市场上也有不少的密码管理器，bitwarden也是口碑最好的那几款之一，开源免费，也有付费版本，有付费的版本可以保证项目的持续性，对项目的经济上还是非常重要的。</p>
+<p>我们平常在浏览器上登录某些网站时，在登录成功时，浏览器会有个小窗口问你是否要保存密码，bitwarden也是类似这种功能，只是bitwarden的功能更加强大和安全，bitwarden还支持随机输出强、弱密码，可以根据自己的需求设计密码类型，同时，bitwarden是存储在自己的服务器的，使用<code>SSL加密</code>，安全性远比浏览器帮你存储的高，基本上完全可控，或者你也可以使用本地的局域网<a href="https://blog.hikki.site">配置</a>你的<a href="https://blog.hikki.site">bitwarden</a>，这样不联网更加安全，前提是你有自己的局域网😃。</p>
+<h1 id="使用docker部署vaultwarden"><a class="markdownIt-Anchor" href="#使用docker部署vaultwarden"></a> 使用Docker部署vaultwarden</h1>
+<blockquote>
+<p>我的安装环境：Ubuntu20.04</p>
+<p>内核版本：5.4.0-100-generic</p>
+<p>Docker版本：Docker version 20.10.18, build b40c2f6</p>
+<p>docker-compose版本：docker-compose version 1.25.0, build 0a186604</p>
+</blockquote>
+<p>在使用Docker部署前，你应该具备以下条件：</p>
+<ol>
+<li>服务器已安装Docker、docker-compose、Nginx</li>
+<li>已经有一个域名，可以是子域名，后面需要申请SSL证书</li>
+</ol>
+<p>如果你还没安装以上环境，你可以查看我的另一篇文章:</p>
+<p>安装Docker、docker-compose：<code>https://blog.hikki.site/2802e5c6.html#Ubuntu18.04安装Docker-CE社区版</code></p>
+<p>安装Nginx：<code>https://blog.hikki.site/111f4f09.html#Linux解压编译安装Nginx</code></p>
+<h2 id="生成随机token"><a class="markdownIt-Anchor" href="#生成随机token"></a> 生成随机token</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">openssl rand -<span class="built_in">base64</span> 48</span><br></pre></td></tr></table></figure>
+<p>生成随机一段字符串后，复制保存一下，等会需要用到。</p>
+<h2 id="开始编写docker-composeyml文件"><a class="markdownIt-Anchor" href="#开始编写docker-composeyml文件"></a> 开始编写docker-compose.yml文件</h2>
+<p>我这里将<code>vaultwarden</code>部署在<code>/home/docker/bitwarden/</code><a href="https://blog.hikki.site">目录</a>下，先进入该文件夹下</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo <span class="built_in">mkdir</span> -p /home/docker/bitwarden/ </span><br><span class="line"><span class="built_in">cd</span> /home/docker/bitwarden/</span><br><span class="line">sudo vim docker-compose.yml</span><br></pre></td></tr></table></figure>
+<p>将以下内容下入到<code>docker-compose.yml</code>文件内</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">version:</span> <span class="string">&quot;2.1&quot;</span></span><br><span class="line"> </span><br><span class="line"><span class="attr">services:</span></span><br><span class="line">  <span class="attr">app:</span></span><br><span class="line">    <span class="attr">image:</span> <span class="string">vaultwarden/server:latest</span></span><br><span class="line">    <span class="attr">environment:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">SERVER_ADMIN_EMAIL=a3xxxx6@126.com</span> <span class="comment"># 自己的邮箱，按需修改</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">SIGNUPS_ALLOWED=false</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">INVITATIONS_ALLOWED=true</span> <span class="comment"># 允许邀请注册</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">WEBSOCKET_ENABLED=true</span> </span><br><span class="line">      <span class="bullet">-</span> <span class="string">ADMIN_TOKEN=QfewuffefaufgefafWCOmyMKS2+zauVk</span>  <span class="comment"># 刚刚生成的token一大段字符串</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">DOMAIN=https://bitwarden.domain.com</span> <span class="comment"># 之后使用的域名，可以是子域名</span></span><br><span class="line">    <span class="attr">volumes:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">./data:/data/</span> <span class="comment"># 将密码库的文件挂在到宿主机的/home/docker/bitwarden/data下</span></span><br><span class="line">    <span class="attr">ports:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="number">8462</span><span class="string">:80</span> <span class="comment"># 端口映射，按需修改</span></span><br><span class="line">    <span class="attr">restart:</span> <span class="string">unless-stopped</span></span><br><span class="line">    <span class="attr">networks:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">default</span></span><br><span class="line"> </span><br><span class="line"><span class="attr">networks:</span></span><br><span class="line">  <span class="attr">default:</span></span><br><span class="line">    <span class="attr">name:</span> <span class="string">bitwarden</span></span><br></pre></td></tr></table></figure>
+<p>以上<a href="https://blog.hikki.site">配置</a>的方式，只允许邀请注册，不允许注册用户，这样安全性会提高一点。</p>
+<p>如果你之后的bitwarden的服务掉了，或者是其他原因使用不了，那你也可以使用<code>/home/docker/bitwarden/data</code><a href="https://blog.hikki.site">目录</a>下的数据来恢复你的数据，据说是可以恢复的，但我还没出现过问题，不知道行不行，哈哈哈，如果你有试过，可以告知我一声。</p>
+<h2 id="启动docker服务"><a class="markdownIt-Anchor" href="#启动docker服务"></a> 启动Docker服务</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker-compose up -d</span><br></pre></td></tr></table></figure>
+<p>启动服务后，在当前(<code>/home/docker/bitwarden/</code>)<a href="https://blog.hikki.site">目录</a>下，可以看到一个data的文件夹，这个文件夹是存储着你的密码信息，我们可以修改他的权限，不给其他用户查看修改。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 设置该文件夹的所有权是root</span></span><br><span class="line">sudo <span class="built_in">chown</span> -R root:root /home/docker/bitwarden/</span><br><span class="line"><span class="comment"># 设置该文件夹的权限为600，其他用户不能查看该文件夹或者修改</span></span><br><span class="line">sudo <span class="built_in">chmod</span> -R 600 /home/docker/bitwarden/</span><br></pre></td></tr></table></figure>
+<h1 id="给bitwarden配置域名"><a class="markdownIt-Anchor" href="#给bitwarden配置域名"></a> 给bitwarden<a href="https://blog.hikki.site">配置</a>域名</h1>
+<blockquote>
+<p>domain.com是我的域名，你应该根据你的域名进行修改</p>
+</blockquote>
+<p>bitwarden规定必须使用https，因为http的数据是的明文传输，不安全，会泄露密码，我们使用可以使用我们的子域名<code>bitwarden.domain.com</code>，然后使用<code>acme.sh</code>申请一个SSL证书(免费)。</p>
+<p>在申请域名前，建议你需要将子域名<code>bitwarden.domain.com</code>解析到我们的服务器。</p>
+<p><strong>解析记录参考：</strong></p>
+<ul>
+<li><code>记录类型</code>：A(将域名指向一个IPV4地址)</li>
+<li><code>主机记录</code>：bitwarden</li>
+<li><code>解析线路</code>：默认</li>
+<li><code>记录值</code>：服务器IP地址</li>
+<li><code>TTL</code>：10分钟(默认)</li>
+</ul>
+<p>将该记录解析到你的服务器，你就得到一个子域名<code>bitwarden.domain.com</code>了，这可以开始申请了。</p>
+<p>具体申请过程这里不累赘了，详情参考另一篇文章：<a href="https://blog.hikki.site/2e63f4a4.html">https://blog.hikki.site/2e63f4a4.html</a></p>
+<h1 id="nginx反向代理"><a class="markdownIt-Anchor" href="#nginx反向代理"></a> Nginx反向代理</h1>
+<p>编辑Nginx的<a href="https://blog.hikki.site">配置</a>文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim /usr/local/nginx/conf/nginx.conf</span><br></pre></td></tr></table></figure>
+<p>将以下内容添加到nginx.conf文件中的http块内里面，注意<code>&#123;&#125;</code>的范围</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#bitwarden</span></span><br><span class="line"><span class="string">server</span> &#123;</span><br><span class="line">  <span class="string">listen</span> <span class="number">80</span><span class="string">;</span> </span><br><span class="line">  <span class="string">server_name</span> <span class="string">domain.com;</span> <span class="comment"># 按照自己的域名需修改</span></span><br><span class="line">  <span class="string">return</span>       <span class="number">301</span> <span class="string">https://$server_name$request_uri;</span>  </span><br><span class="line">  </span><br><span class="line">&#125;</span><br><span class="line"><span class="string">server</span> &#123;</span><br><span class="line">  <span class="string">listen</span>                <span class="number">443</span> <span class="string">ssl;</span></span><br><span class="line">  <span class="string">listen</span>                [<span class="string">::</span>]<span class="string">:443</span> <span class="string">ssl;</span></span><br><span class="line">  <span class="string">server_name</span>           <span class="string">domain.com;</span> <span class="comment"># 按照自己的域名需修改</span></span><br><span class="line">  <span class="string">ssl_certificate</span>       <span class="string">cert/domain.com/cert.pem;</span> <span class="comment"># 按照自己的域名需修改</span></span><br><span class="line">  <span class="string">ssl_certificate_key</span>   <span class="string">cert/domain.com/key.pem;</span>  <span class="comment"># 按照自己的域名需修改</span></span><br><span class="line">  </span><br><span class="line">  <span class="string">ssl_session_timeout</span> <span class="string">5m;</span></span><br><span class="line">  <span class="string">ssl_ciphers</span> <span class="string">ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:!NULL:!aNULL:!MD5:!ADH:!RC4;</span></span><br><span class="line">   <span class="comment">#表示使用的加密套件的类型。</span></span><br><span class="line">  <span class="string">ssl_protocols</span> <span class="string">TLSv1.1</span> <span class="string">TLSv1.2</span> <span class="string">TLSv1.3;</span> <span class="comment">#表示使用的TLS协议的类型，您需要自行评估是否配置TLSv1.1协议。</span></span><br><span class="line">  <span class="string">ssl_prefer_server_ciphers</span> <span class="string">on;</span></span><br><span class="line">  <span class="string">location</span> <span class="string">/</span> &#123; </span><br><span class="line">    <span class="string">proxy_set_header</span> <span class="string">Host</span> <span class="string">$host;</span> </span><br><span class="line">    <span class="string">proxy_set_header</span> <span class="string">X-Real-IP</span> <span class="string">$remote_addr;</span> </span><br><span class="line">    <span class="string">proxy_set_header</span> <span class="string">X-Forwarded-For</span> <span class="string">$proxy_add_x_forwarded_for;</span> </span><br><span class="line">    <span class="string">proxy_set_header</span> <span class="string">X-Forwarded-Proto</span> <span class="string">$scheme;</span> </span><br><span class="line">    <span class="string">proxy_pass</span> <span class="string">http://localhost:8462;</span>  <span class="comment"># 按照自己的端口需修改</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>编辑完后先检测一下<a href="https://blog.hikki.site">配置</a>是否正确：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">root@ecs-280:~<span class="comment"># /usr/local/nginx/sbin/nginx -t</span></span><br><span class="line">nginx: the configuration file /usr/local/nginx/conf/nginx.conf syntax is ok</span><br><span class="line">nginx: configuration file /usr/local/nginx/conf/nginx.conf <span class="built_in">test</span> is successful</span><br></pre></td></tr></table></figure>
+<p>看到以上内容说明<a href="https://blog.hikki.site">配置</a>没有写错，可以加载<a href="https://blog.hikki.site">配置</a>了</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/local/nginx/sbin/nginx -s reload</span><br></pre></td></tr></table></figure>
+<p>加载<a href="https://blog.hikki.site">配置</a>完后，可以打开bitwarden了，再<a href="https://blog.hikki.site">配置</a>一下就可以使用了。</p>
+<h1 id="配置bitwarden服务端"><a class="markdownIt-Anchor" href="#配置bitwarden服务端"></a> 配置bitwarden服务端</h1>
+<h2 id="进入bitwarden配置端"><a class="markdownIt-Anchor" href="#进入bitwarden配置端"></a> 进入bitwarden<a href="https://blog.hikki.site">配置端</a></h2>
+<p>访问<a target="_blank" rel="noopener external nofollow noreferrer" href="https://bitwarden.domain.com">https://bitwarden.domain.com</a>，访问会出现以下页面，需要输入token才能进入，这个token就是刚刚生成的那个token，可以在docker-compose.yml这个文件看到token</p>
+<p><img src="https://images.hikki.site/20221125011609.png" alt="02-Vaultwarden Admin Panel-20221125-249" /></p>
+<p>输入token回车后进入bitwarden<a href="https://blog.hikki.site">配置</a>面板</p>
+<p><img src="https://images.hikki.site/20221125011607.png" alt="03-Vaultwarden Admin Pa20221125-887" /></p>
+<h2 id="配置"><a class="markdownIt-Anchor" href="#配置"></a> <a href="https://blog.hikki.site">配置</a>邮箱</h2>
+<p>该邮箱<a href="https://blog.hikki.site">配置</a>是用于使用bitwarden发送邀请邮箱注册使用，我这里使用126的邮箱，使用126的邮箱给qq邮箱发送注册邀请，然后使用qq邮箱登录bitwarden使用，你如果看不懂控制面板的英文，可以尝试使用翻译插件仔细看看，这<a href="https://blog.hikki.site">配置</a>也是不难的。</p>
+<blockquote>
+<p>这里应该也是支持QQ邮箱的，你可以去看看QQ邮箱的发送端口是哪个，根据QQ邮箱的信息填写</p>
+</blockquote>
+<p><img src="https://images.hikki.site/20221125011605.png" alt="04-Vaultwarden Admin Pa20221125-661" /></p>
+<p>Username和Password是被邀请者的用户名和密码。</p>
+<h2 id="邀请用户"><a class="markdownIt-Anchor" href="#邀请用户"></a> 邀请用户</h2>
+<p>打开Users，查看邀请用户记录，<img src="https://images.hikki.site/20221125011603.png" alt="05-Vaultwarden Admin Pa20221125-890" /></p>
+<h2 id="发送邀请"><a class="markdownIt-Anchor" href="#发送邀请"></a> 发送邀请</h2>
+<p>邀请需要使用的用户，如果你只是自己使用，可以给自己发送一个邀请，然后使用这个邮箱登录bitwarden就可以使用了，这个发送邀请可以是可以上一步填写的邮箱是同一个，邀请后的用户使用的邮箱登录和上一步设置的密码登录。</p>
+<p><img src="https://images.hikki.site/20221125011600.png" alt="06-Vaultwarden Admin Pa20221125-882" /></p>
+<h2 id="浏览器登录"><a class="markdownIt-Anchor" href="#浏览器登录"></a> 浏览器登录</h2>
+<p>访问<a target="_blank" rel="noopener external nofollow noreferrer" href="https://bitwarden.domain.com/%EF%BC%8C%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E5%90%8E%EF%BC%8C%E5%B0%B1%E5%8F%AF%E4%BB%A5%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8%E4%BA%86%EF%BC%8C%E5%8F%AF%E4%BB%A5%E9%80%9B%E9%80%9B%E4%BA%86%E8%A7%A3%E4%B8%80%E4%B8%8Bbitwarden%E6%9C%89%E4%BB%80%E4%B9%88%E5%8A%9F%E8%83%BD%E3%80%82">https://bitwarden.domain.com/，登录成功后，就可以开始使用了，可以逛逛了解一下bitwarden有什么功能。</a></p>
+<h3 id="导入浏览器的密码"><a class="markdownIt-Anchor" href="#导入浏览器的密码"></a> 导入浏览器的密码</h3>
+<p>如果有需要，可以将浏览器的密码导入到bitwarden上，这样会方便许多。</p>
+<p><strong>导出浏览器密码</strong></p>
+<p><img src="https://images.hikki.site/08-%E6%B5%8F%E8%A7%88%E5%99%A8%E5%AF%BC%E5%87%BA%E5%AF%86%E7%A0%81.gif" alt="08-浏览器导出密码" /></p>
+<p><strong>导入浏览器密码</strong></p>
+<p>打开 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://bitwarden.domain.com">https://bitwarden.domain.com</a> 网页。</p>
+<p>打开<code>工具---&gt;导入数据</code>，导入刚刚在浏览器的数据，选择相应的文件格式，即可导入数据。</p>
+<p><img src="https://images.hikki.site/20221125011550.png" alt="07-导入数据  Bitwarden 网页密20221125-413" /></p>
+<h1 id="配置-2"><a class="markdownIt-Anchor" href="#配置-2"></a> <a href="https://blog.hikki.site">配置</a>客户端</h1>
+<p>bitwarden的客户端有web端(浏览器的插件)和本地客户端(APP程序)，<a href="https://blog.hikki.site">配置</a>基本大同小异，这里只演示浏览器的web端<a href="https://blog.hikki.site">配置</a>，手机端的<a href="https://blog.hikki.site">配置</a>也是差不多的。我这里使用Edge浏览器，</p>
+<p><img src="https://images.hikki.site/20221125011547.png" alt="09-Microsoft Edge 加载项 -20221125-008" /></p>
+<img src="https://images.hikki.site/20221125011541.png" alt="10-Snipper - Snipaste20221125-060" style="zoom: 50%;" />
+<img src="https://images.hikki.site/11-Snipper%20-%20Snipaste20221125-773.png" alt="11-Snipper - Snipaste20221125-773" style="zoom: 50%;" />
+<img src="https://images.hikki.site/20221125011536.png" alt="12-Snipper - Snipaste20221125-051" style="zoom: 50%;" />
+<p>导入后已经可以<a href="https://blog.hikki.site">看到</a>刚刚导入的数据了。到这里就完全可以使用了，平时在使用的时候，在输入密码的时候，右键，可以看到有个bitwarden选项，选择对应的功能即可。</p>
+<p><strong>bitwarden基本就完全部署结束了，下面的内容是高级功能，有兴趣可以看看。</strong></p>
+<h1 id="进阶内容uri匹配检测"><a class="markdownIt-Anchor" href="#进阶内容uri匹配检测"></a> 进阶内容：URI匹配检测</h1>
+<p>我们安装完<strong>bitwarden</strong>后，可能会有个疑问，<strong>bitwarden</strong>是怎么识别我在哪一个网页需要自动填充密码呢？这就涉及到<strong>bitwarden</strong>的识别机制了，我们可以根据自己的需求来选择不同的识别方式，一开始默认使用的<strong>基本域</strong>，如果你不了解这个东西，也不想去了解，以下的文章你可以跳过了，对你不会有影响。</p>
+<img src="https://images.hikki.site/20221125011528.png" alt="默认URI匹配检测" style="zoom:50%;" />
+<p>URI匹配检测有以下几个方式：</p>
+<ul>
+<li><strong>基础域</strong></li>
+<li><strong>主机</strong></li>
+<li><strong>开始于</strong></li>
+<li><strong>正则表达式</strong></li>
+<li><strong>精确</strong></li>
+<li><strong>从不</strong></li>
+</ul>
+<h2 id="基础域"><a class="markdownIt-Anchor" href="#基础域"></a> 基础域</h2>
+<p>选择<strong>基本域</strong> 当URI的<code>顶级域名</code>和<code>二级域名</code>与检测到的资源匹配时，将提示<strong>Bitwarden</strong>提供自动填充功能。<strong>基本域</strong>匹配可用于任何国家/地区代码顶级域（例如，<code>.it</code> 或<code>.co.uk</code>）</p>
+<p>例如，如果URI<code>https://google.com</code> 使用基本域匹配检测：</p>
+<table>
+<thead>
+<tr>
+<th>网址</th>
+<th>是否自动填充？</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a target="_blank" rel="noopener external nofollow noreferrer" href="http://google.com">http://google.com</a></td>
+<td><strong>√</strong></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener external nofollow noreferrer" href="https://accounts.google.com">https://accounts.google.com</a></td>
+<td><strong>√</strong></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener external nofollow noreferrer" href="https://google.net">https://google.net</a></td>
+<td><strong>×</strong></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener external nofollow noreferrer" href="http://yahoo.com">http://yahoo.com</a></td>
+<td><strong>×</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="主机"><a class="markdownIt-Anchor" href="#主机"></a> 主机</h2>
+<p>我使用的就是<code>主机</code>方式，因为我经常使用服务器调试一下程序时可能会有需要输入账号密码什么的。你应该根据自己的需求来选择不同的检测方式，如果不知道选哪个，那就选择默认的基础域即可。</p>
+<p>选择<strong>主机</strong> 当URI的主机名和（如果指定）端口与检测到的资源匹配时，将提示Bitwarden提供自动填充。</p>
+<p>例如，如果URI<code>https://sub.bitwarden.domain.com:4000</code> 使用主机匹配检测：</p>
+<table>
+<thead>
+<tr>
+<th>网址</th>
+<th>是否自动填充？</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a target="_blank" rel="noopener external nofollow noreferrer" href="http://sub.bitwarden.domain.com:4000">http://sub.bitwarden.domain.com:4000</a></td>
+<td><strong>√</strong></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener external nofollow noreferrer" href="https://sub.bitwarden.domain.com:4000/page.html">https://sub.bitwarden.domain.com:4000/page.html</a></td>
+<td><strong>√</strong></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener external nofollow noreferrer" href="https://bitwarden.domain.com">https://bitwarden.domain.com</a></td>
+<td><strong>×</strong></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener external nofollow noreferrer" href="https://sub.bitwarden.domain.com">https://sub.bitwarden.domain.com</a></td>
+<td><strong>×</strong></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener external nofollow noreferrer" href="https://sub2.sub.bitwarden.domain.com:4000">https://sub2.sub.bitwarden.domain.com:4000</a></td>
+<td><strong>×</strong></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener external nofollow noreferrer" href="https://sub.bitwarden.domain.com:5000">https://sub.bitwarden.domain.com:5000</a></td>
+<td><strong>×</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="开始于"><a class="markdownIt-Anchor" href="#开始于"></a> 开始于</h2>
+<p>选择<strong>开始于</strong> 当检测到的资源以URI开头时，将提示<strong>Bitwarden</strong>提供自动填充功能，而不管URI后面的路径是什么。</p>
+<p>例如，如果URI<code>https://sub.bitwarden.domain.com/path/</code> 使用从匹配检测开始：</p>
+<table>
+<thead>
+<tr>
+<th>网址</th>
+<th>是否自动填充？</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a target="_blank" rel="noopener external nofollow noreferrer" href="https://sub.bitwarden.domain.com/path/">https://sub.bitwarden.domain.com/path/</a></td>
+<td><strong>√</strong></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener external nofollow noreferrer" href="https://sub.bitwarden.domain.com/path/page.html">https://sub.bitwarden.domain.com/path/page.html</a></td>
+<td><strong>√</strong></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener external nofollow noreferrer" href="https://sub.bitwarden.domain.com">https://sub.bitwarden.domain.com</a></td>
+<td><strong>×</strong></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener external nofollow noreferrer" href="https://sub.bitwarden.domain.com:4000/path/page.html">https://sub.bitwarden.domain.com:4000/path/page.html</a> （被端口中断）</td>
+<td><strong>×</strong></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener external nofollow noreferrer" href="https://sub.bitwarden.domain.com/path">https://sub.bitwarden.domain.com/path</a> （缺少尾部斜杠）</td>
+<td><strong>×</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="正则表达式"><a class="markdownIt-Anchor" href="#正则表达式"></a> 正则表达式</h2>
+<div class="note danger modern"><p><strong>正则表达式是一个高级选项，如果使用不正确，可能会导致账号密码胡乱自动填充，如果你不懂使用正则表达式，请不要选择该选项。</strong></p>
+</div>
+<p>选择<strong>正则表达式</strong> 将提示Bitwarden提供自动填充当检测到的资源匹配指定的<a target="_blank" rel="noopener external nofollow noreferrer" href="https://en.wikipedia.org/wiki/Regular_expression">正则表达式</a>。正则表达式始终不区分大小写。</p>
+<h3 id="不安全示例"><a class="markdownIt-Anchor" href="#不安全示例"></a> 不安全示例</h3>
+<p>如果URI<code>^https://.*google\.com$</code> 使用正则表达式匹配检测：</p>
+<table>
+<thead>
+<tr>
+<th>网址</th>
+<th>是否自动填充？</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a target="_blank" rel="noopener external nofollow noreferrer" href="https://google.com">https://google.com</a></td>
+<td><strong>√</strong></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener external nofollow noreferrer" href="https://sub.google.com">https://sub.google.com</a></td>
+<td><strong>√</strong></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener external nofollow noreferrer" href="https://malicious-site.com?q=google.com">https://malicious-site.com?q=google.com</a></td>
+<td><strong>√</strong></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener external nofollow noreferrer" href="http://google.com">http://google.com</a></td>
+<td><strong>×</strong></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener external nofollow noreferrer" href="https://yahoo.com">https://yahoo.com</a></td>
+<td><strong>×</strong></td>
+</tr>
+</tbody>
+</table>
+<p>这可能会比预期的相符项目多。请考虑避免使用句号（<code>.</code>），除非转义（<code>\</code>）匹配任何字符。</p>
+<h3 id="安全示例"><a class="markdownIt-Anchor" href="#安全示例"></a> 安全示例</h3>
+<p>如果URI<code>^https://[a-z]+\.wikipedia\.org/w/index\.php</code> 使用正则表达式匹配检测：</p>
+<table>
+<thead>
+<tr>
+<th>网址</th>
+<th>是否自动填充？</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a target="_blank" rel="noopener external nofollow noreferrer" href="https://en.wikipedia.org/w/index.php?title=Special:UserLogin&amp;returnto=Bitwarden">https://en.wikipedia.org/w/index.php?title=Special:UserLogin&amp;returnto=Bitwarden</a></td>
+<td><strong>√</strong></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener external nofollow noreferrer" href="https://pl.wikipedia.org/w/index.php?title=Specjalna:Zaloguj&amp;returnto=Bitwarden">https://pl.wikipedia.org/w/index.php?title=Specjalna:Zaloguj&amp;returnto=Bitwarden</a></td>
+<td><strong>√</strong></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener external nofollow noreferrer" href="https://en.wikipedia.org/w/index.php">https://en.wikipedia.org/w/index.php</a></td>
+<td><strong>√</strong></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener external nofollow noreferrer" href="https://malicious-site.com">https://malicious-site.com</a></td>
+<td><strong>×</strong></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener external nofollow noreferrer" href="https://en.wikipedia.org/wiki/Bitwarden">https://en.wikipedia.org/wiki/Bitwarden</a></td>
+<td><strong>×</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="精确"><a class="markdownIt-Anchor" href="#精确"></a> 精确</h2>
+<p>正在选择<strong>精确</strong> 当URI与检测到的资源**<code>完全匹配</code>**时，将提示Bitwarden提供自动填充。</p>
+<p>例如，如果URI<code>https://www.google.com/page.html</code> 使用完全匹配检测：</p>
+<table>
+<thead>
+<tr>
+<th>网址</th>
+<th>是否自动填充？</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.google.com/page.html">https://www.google.com/page.html</a></td>
+<td><strong>√</strong></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener external nofollow noreferrer" href="http://www.google.com/page.html">http://www.google.com/page.html</a></td>
+<td><strong>×</strong></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.google.com/page.html?query=123">https://www.google.com/page.html?query=123</a></td>
+<td><strong>×</strong></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.google.com">https://www.google.com</a></td>
+<td><strong>×</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="从不"><a class="markdownIt-Anchor" href="#从不"></a> 从不</h2>
+<p>意思就是不使用bitwarden填充功能。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://blog.hikki.site">小码同学</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://blog.hikki.site/dcf97aea.html">https://blog.hikki.site/dcf97aea.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow noreferrer" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://blog.hikki.site" target="_blank">小码同学</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%95%99%E7%A8%8B/">教程</a><a class="post-meta__tags" href="/tags/Docker/">Docker</a></div><div class="post_share"><div class="social-share" data-image="https://images.hikki.site/bitwarden.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="/data/theme/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/data/img/wechatpay.jpg" target="_blank"><img class="post-qr-code-img" src="/data/img/wechatpay.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="/data/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src="/data/img/alipay.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2b5f7ebb.html" title="【win10优化系列】安装杜比全景声"><i class="fas fa-chevron-left prev-icon"><div class="prev-label">上一篇</div></i></a><div class="pagination-card"><img class="prev-cover" src="https://logos-world.net/wp-content/uploads/2020/12/Dolby-Digital-Symbol.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">【win10优化系列】安装杜比全景声</div></div></div></div><div class="next-post pull-right"><a href="/94c34737.html" title="更换博客域名Nginx实现301跳转"><i class="fas fa-chevron-right next-icon"><div class="next-label">下一篇</div></i></a><div class="pagination-card"><img class="next-cover" src="https://bu.dusays.com/2022/11/12/636f15e160aad.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">更换博客域名Nginx实现301跳转</div></div></div></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/d77d79c9.html" title="【Docker系列】私人云盘kodbox"><img class="cover" src="https://images.hikki.site/20221108223256.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-11-08</div><div class="title">【Docker系列】私人云盘kodbox</div></div></a></div><div><a href="/dc1c6a29.html" title="如何快速完成PT站新手任务"><img class="cover" src="/data/img/wallhaven-8ozk-%E5%8E%8B%E7%BC%A9%E5%90%8E.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-08-15</div><div class="title">如何快速完成PT站新手任务</div></div></a></div><div><a href="/cdc2e518.html" title="电视机APP破解版"><img class="cover" src="https://images.hikki.site/20230121184126.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-01-21</div><div class="title">电视机APP破解版</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="disqus_thread"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/data/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">小码同学</div><div class="author-info__description">喜欢的东西就努力去追求，万一成功了呢！</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">173</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">29</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">39</div></a></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/0000rookie" rel="external nofollow noreferrer" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://space.bilibili.com/110844189?spm_id_from=333.1007.0.0" rel="external nofollow noreferrer" target="_blank" title="B站"><i class="fa-brands fa-bilibili"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title=""><i class="fas fa-rss"></i></a><a class="social-icon" href="mailto:aa1341151056@126.com" rel="external nofollow noreferrer" target="_blank" title=""><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content"><img src="https://blog.hikki.site/data/img/emoji/coolapk/c-pyjiaoyi.png" style="width:35px;height:35px"/>本站拒绝海外IP访问，如果您有连接到海外网络，可能体验不是很好</div></div><div class="card-widget tzy-right-widget" id="card-wechat"><div id="flip-wrapper"><div id="flip-content"><div class="face"></div><div class="back face"></div></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text"> 前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8docker%E9%83%A8%E7%BD%B2vaultwarden"><span class="toc-number">2.</span> <span class="toc-text"> 使用Docker部署vaultwarden</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%9F%E6%88%90%E9%9A%8F%E6%9C%BAtoken"><span class="toc-number">2.1.</span> <span class="toc-text"> 生成随机token</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%80%E5%A7%8B%E7%BC%96%E5%86%99docker-composeyml%E6%96%87%E4%BB%B6"><span class="toc-number">2.2.</span> <span class="toc-text"> 开始编写docker-compose.yml文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%AF%E5%8A%A8docker%E6%9C%8D%E5%8A%A1"><span class="toc-number">2.3.</span> <span class="toc-text"> 启动Docker服务</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BB%99bitwarden%E9%85%8D%E7%BD%AE%E5%9F%9F%E5%90%8D"><span class="toc-number">3.</span> <span class="toc-text"> 给bitwarden配置域名</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#nginx%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86"><span class="toc-number">4.</span> <span class="toc-text"> Nginx反向代理</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%85%8D%E7%BD%AEbitwarden%E6%9C%8D%E5%8A%A1%E7%AB%AF"><span class="toc-number">5.</span> <span class="toc-text"> 配置bitwarden服务端</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9B%E5%85%A5bitwarden%E9%85%8D%E7%BD%AE%E7%AB%AF"><span class="toc-number">5.1.</span> <span class="toc-text"> 进入bitwarden配置端</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE"><span class="toc-number">5.2.</span> <span class="toc-text"> 配置邮箱</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%82%80%E8%AF%B7%E7%94%A8%E6%88%B7"><span class="toc-number">5.3.</span> <span class="toc-text"> 邀请用户</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%91%E9%80%81%E9%82%80%E8%AF%B7"><span class="toc-number">5.4.</span> <span class="toc-text"> 发送邀请</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%8F%E8%A7%88%E5%99%A8%E7%99%BB%E5%BD%95"><span class="toc-number">5.5.</span> <span class="toc-text"> 浏览器登录</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%BC%E5%85%A5%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E5%AF%86%E7%A0%81"><span class="toc-number">5.5.1.</span> <span class="toc-text"> 导入浏览器的密码</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE-2"><span class="toc-number">6.</span> <span class="toc-text"> 配置客户端</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BF%9B%E9%98%B6%E5%86%85%E5%AE%B9uri%E5%8C%B9%E9%85%8D%E6%A3%80%E6%B5%8B"><span class="toc-number">7.</span> <span class="toc-text"> 进阶内容：URI匹配检测</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E5%9F%9F"><span class="toc-number">7.1.</span> <span class="toc-text"> 基础域</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E6%9C%BA"><span class="toc-number">7.2.</span> <span class="toc-text"> 主机</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%80%E5%A7%8B%E4%BA%8E"><span class="toc-number">7.3.</span> <span class="toc-text"> 开始于</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="toc-number">7.4.</span> <span class="toc-text"> 正则表达式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8D%E5%AE%89%E5%85%A8%E7%A4%BA%E4%BE%8B"><span class="toc-number">7.4.1.</span> <span class="toc-text"> 不安全示例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E5%85%A8%E7%A4%BA%E4%BE%8B"><span class="toc-number">7.4.2.</span> <span class="toc-text"> 安全示例</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B2%BE%E7%A1%AE"><span class="toc-number">7.5.</span> <span class="toc-text"> 精确</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%8E%E4%B8%8D"><span class="toc-number">7.6.</span> <span class="toc-text"> 从不</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/232c1cc7.html" title="服务器备案+迁移数据方案"><img src="/data/img/wallhaven-8ozk-%E5%8E%8B%E7%BC%A9%E5%90%8E.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="服务器备案+迁移数据方案"/></a><div class="content"><a class="title" href="/232c1cc7.html" title="服务器备案+迁移数据方案">服务器备案+迁移数据方案</a><time datetime="2023-05-30T12:54:52.000Z" title="发表于 2023-05-30 20:54:52">2023-05-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/f9ef02fb.html" title="【SpringBoot系列】04-NoSQL数据库"><img src="https://images.hikki.site/cover-2023-05-24-150023.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【SpringBoot系列】04-NoSQL数据库"/></a><div class="content"><a class="title" href="/f9ef02fb.html" title="【SpringBoot系列】04-NoSQL数据库">【SpringBoot系列】04-NoSQL数据库</a><time datetime="2023-05-24T07:57:35.000Z" title="发表于 2023-05-24 15:57:35">2023-05-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/169f819e.html" title="【SpringBoot系列】03-测试与数据库操作"><img src="https://bu.dusays.com/2023/05/22/646a5ebd510bf.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【SpringBoot系列】03-测试与数据库操作"/></a><div class="content"><a class="title" href="/169f819e.html" title="【SpringBoot系列】03-测试与数据库操作">【SpringBoot系列】03-测试与数据库操作</a><time datetime="2023-05-22T06:58:21.000Z" title="发表于 2023-05-22 14:58:21">2023-05-22</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://images.hikki.site/bitwarden.png')"><div id="footer-wrap"><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="fa-solid fa-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="fa-solid fa-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="fa-solid fa-arrow-rotate-right"></i></div><div class="rightMenu-item" id="menu-home"><i class="fa-solid fa-house"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" href="/archives/"><i class="fa-solid fa-archive"></i><span>文章归档</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="fa-solid fa-tags"></i><span>文章标签</span></a><a class="rightMenu-item menu-link" href="/message/"><i class="fa-solid fa-comment-dots"></i><span>留言板</span></a><a class="rightMenu-item menu-link" href="/link/moments"><i class="fa-solid fa-procedures"></i><span>闲言碎语</span></a><a class="rightMenu-item menu-link" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.travellings.cn/go.html"><i class="fa-solid fa-rocket"></i><span>博客列车</span></a></div><div class="rightMenu-group rightMenu-line rightMenuNormal"><a class="rightMenu-item menu-link" id="menu-radompage" href="/random.html"><i class="fa-solid fa-shoe-prints"></i><span>随便逛逛</span></a><div class="rightMenu-item" id="menu-translate"><i class="fa-solid fa-earth-asia"></i><span>繁简切换</span></div><div class="rightMenu-item" id="menu-darkmode"><i class="fa-solid fa-moon"></i><span>切换模式</span></div></div></div><div id="rightmenu-mask"></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="/data/theme/medium-zoom.min.js"></script><script src="/data/theme/instantpage.min.js" type="module"></script><script src="/data/theme/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function loadDisqus () {
+  var disqus_config = function () {
+    this.page.url = 'https://blog.hikki.site/dcf97aea.html'
+    this.page.identifier = '/dcf97aea.html'
+    this.page.title = '【Docker系列】bitwarden密码管理器'
+  };
+
+  window.disqusReset = () => {
+    DISQUS.reset({
+      reload: true,
+      config: disqus_config
+    })
+  }
+
+  if (window.DISQUS) disqusReset()
+  else {
+    (function() { 
+      var d = document, s = d.createElement('script');
+      s.src = 'https://.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  }
+
+  document.getElementById('darkmode').addEventListener('click', () => {
+    setTimeout(() => window.disqusReset(), 200)
+  })
+}
+
+if ('Disqus' === 'Disqus' || !true) {
+  if (true) btf.loadComment(document.getElementById('disqus_thread'), loadDisqus)
+  else loadDisqus()
+} else {
+  function loadOtherComment () {
+    loadDisqus()
+  }
+}
+</script></div><script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script><script defer data-pjax src="/js/rightMenu.js"></script><script src="/js/fixed-pagination.js" async></script><script defer data-pjax type="text/javascript" src="/util/util.js"></script><script defer data-pjax type="text/javascript" src="/data/js/utils.js"></script><script>let tianliGPT_postSelector = '\#post \#article-container';let tianliGPT_key = 'U5FHKh71uMCfndwMIBkd';</script><script src="https://cdn1.tianli0.top/gh/zhheo/Post-Abstract-AI@0.7/tianli_gpt.js"></script><script src="/data/theme/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script src="/data/theme/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"]):not([href="/music/"]):not([href="/no-pjax/"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script async src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><script data-pjax>
+  function butterfly_footer_beautify_injector_config(){
+    var parent_div_git = document.getElementById('footer-wrap');
+    var item_html = '<div id="workboard"></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://www.upyun.com/?utm_source=lianmeng&amp;utm_medium=referral" rel="external nofollow noreferrer" style="margin-inline:5px" data-title="本网站由又拍云提供CDN加速/云存储服务" title=""><img src="https://img.shields.io/badge/CDN-%E5%8F%88%E6%8B%8D%E4%BA%91-blue" alt=""/></a><a class="github-badge" target="_blank" href="https://hexo.io/" rel="external nofollow noreferrer" style="margin-inline:5px" data-title="博客框架为Hexo_v5.4.0" title=""><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&amp;logo=hexo" alt=""/></a><a class="github-badge" target="_blank" href="https://butterfly.js.org/" rel="external nofollow noreferrer" style="margin-inline:5px" data-title="主题版本Butterfly_v4.5.1" title=""><img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&amp;logo=bitdefender" alt=""/></a><a class="github-badge" target="_blank" href="https://beian.miit.gov.cn/" rel="external nofollow noreferrer" style="margin-inline:5px" data-title="粤ICP备2022125102号" title=""><img src="/data/img/icon-link/粤ICP备2022125102号.svg" alt=""/></a></p>';
+    console.log('已挂载butterfly_footer_beautify')
+    parent_div_git.insertAdjacentHTML("beforeend",item_html)
+    }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_footer_beautify_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_footer_beautify_injector_config();
+  }
+  </script><script async src="/data/js/runtime.min.js"></script><!-- hexo injector body_end end --></body></html>

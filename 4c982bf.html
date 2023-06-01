@@ -1,0 +1,572 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Linux | 小码同学</title><meta name="author" content="小码同学"><meta name="copyright" content="小码同学"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#93a5cf"><meta name="description" content="Linux版本区别  CentOS  CentOS ISO：DVD是标准安装盘，一般下载这个就可以了，里面包含大量的常用软件，大部分情况下安装时无需再在线下载，体积为4G； Minimal ISO：精简版本，包含核心组件，体积才600多MB； Everything ISO：顾名思义，包含了所有软件组件，当然体积也庞大，高达7G。对完整版安装盘的软件进行补充，集成所有软件； NetInstall">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux">
+<meta property="og:url" content="https://blog.hikki.site/4c982bf.html">
+<meta property="og:site_name" content="小码同学">
+<meta property="og:description" content="Linux版本区别  CentOS  CentOS ISO：DVD是标准安装盘，一般下载这个就可以了，里面包含大量的常用软件，大部分情况下安装时无需再在线下载，体积为4G； Minimal ISO：精简版本，包含核心组件，体积才600多MB； Everything ISO：顾名思义，包含了所有软件组件，当然体积也庞大，高达7G。对完整版安装盘的软件进行补充，集成所有软件； NetInstall">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://images.hikki.site/Linux-%E7%9D%A1%E8%A7%89.png">
+<meta property="article:published_time" content="2022-08-18T17:21:34.000Z">
+<meta property="article:modified_time" content="2023-05-28T18:02:50.170Z">
+<meta property="article:author" content="小码同学">
+<meta property="article:tag" content="Linux">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://images.hikki.site/Linux-%E7%9D%A1%E8%A7%89.png"><link rel="shortcut icon" href="/data/img/favicon.ico"><link rel="canonical" href="https://blog.hikki.site/4c982bf"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="/data/theme/snackbar.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"https://cdntx.hikki.site/static/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: {"limitDay":50,"position":"top","messagePrev":"距离上一次更新一已经","messageNext":"天了，文章的内容可能不是最新的，甚至已经过时 !"},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":250},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'mediumZoom',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#ff9a9e","bgDark":"#1f1f1f","position":"top-center"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isAnchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Linux',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: undefined,
+  isToc: true,
+  postUpdate: '2023-05-29 02:02:50'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#434343')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#93a5cf')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/rightMenu.css"><style id="barragesColor"></style><link rel="stylesheet" href="/data/css/custom.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="/data/css/runtime.min.css"><link rel="stylesheet" href="/data/css/utils.css"><link rel="stylesheet" href="https://cdn1.tianli0.top/gh/zhheo/Post-Abstract-AI@0.7/tianli_gpt.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><link rel="stylesheet" href="/data/css/runtime.min.css" media="print" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="小码同学" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/data/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">173</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">29</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">39</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-list"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fa-solid fa-tag"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-th-large"></i><span> 分类</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa-solid fa-wand-magic-sparkles"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa-solid fa-bookmark"></i><span> 书签</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/bookmark/johou/"><i class="fa-fw fas fa-sharp fa-solid fa-link"></i><span> 工具</span></a></li><li><a class="site-page child" href="/bookmark/programmer/"><i class="fa-fw fas fa-vials"></i><span> 程序猿</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa-solid fa-user-group"></i><span> 朋友</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/fcircle"><i class="fa-fw fas fa-snowboarding"></i><span> 朋友圈</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fa-solid fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.travellings.cn/go.html"><i class="fa-fw fas fa-rocket"></i><span> 开往</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user-tie"></i><span> 关于我</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://images.hikki.site/Linux-睡觉.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">小码同学</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-list"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw fa-solid fa-tag"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-th-large"></i><span> 分类</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa-solid fa-wand-magic-sparkles"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa-solid fa-bookmark"></i><span> 书签</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/bookmark/johou/"><i class="fa-fw fas fa-sharp fa-solid fa-link"></i><span> 工具</span></a></li><li><a class="site-page child" href="/bookmark/programmer/"><i class="fa-fw fas fa-vials"></i><span> 程序猿</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa-solid fa-user-group"></i><span> 朋友</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/fcircle"><i class="fa-fw fas fa-snowboarding"></i><span> 朋友圈</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fa-solid fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.travellings.cn/go.html"><i class="fa-fw fas fa-rocket"></i><span> 开往</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user-tie"></i><span> 关于我</span></a></div></div><center id="name-container"><a id="page-name" href="javascript:scrollToTop()" rel="external nofollow noreferrer">PAGE_NAME</a></center></div><div id="nav-right"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i></a></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Linux</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-08-18T17:21:34.000Z" title="发表于 2022-08-19 01:21:34">2022-08-19</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-05-28T18:02:50.170Z" title="更新于 2023-05-29 02:02:50">2023-05-29</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/">计算机科学</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/">技术杂谈</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E6%8A%80%E6%9C%AF%E6%9D%82%E8%B0%88/linux/">linux</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">4.7k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>19分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Linux"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="linux版本区别"><a class="markdownIt-Anchor" href="#linux版本区别"></a> Linux版本区别</h1>
+<h2 id="centos"><a class="markdownIt-Anchor" href="#centos"></a> CentOS</h2>
+<ul>
+<li><strong>CentOS ISO</strong>：DVD是标准安装盘，一般下载这个就可以了，里面包含大量的常用软件，大部分情况下安装时无需再在线下载，体积为4G；</li>
+<li><strong>Minimal ISO</strong>：精简版本，包含核心组件，体积才600多MB；</li>
+<li><strong>Everything ISO</strong>：顾名思义，包含了所有软件组件，当然体积也庞大，高达7G。对完整版安装盘的软件进行补充，集成所有软件；</li>
+<li><strong>NetInstall ISO</strong>：网络安装镜像；</li>
+<li><strong>LiveGNOME ISO</strong>：GNOME桌面版；</li>
+<li><strong>LiveKDE ISO</strong>：KDE桌面版；</li>
+<li><strong>LiveCD ISO</strong>：光盘上运行的系统，类拟于winpe；</li>
+</ul>
+<h1 id="常用的指令"><a class="markdownIt-Anchor" href="#常用的指令"></a> 常用的指令</h1>
+<h2 id="linux查看软件的安装位置"><a class="markdownIt-Anchor" href="#linux查看软件的安装位置"></a> linux查看软件的安装位置</h2>
+<p>使用<code>whereis</code>语句可以查看软件的安装位置</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">root@ecs-205380:<span class="comment"># whereis git</span></span><br><span class="line">git: /usr/bin/git /usr/share/man/man1/git.1.gz</span><br></pre></td></tr></table></figure>
+<p>可以看到Git的安装路径在<code>/usr/bin/git</code></p>
+<h2 id="用sed插入内容"><a class="markdownIt-Anchor" href="#用sed插入内容"></a> 用sed插入内容</h2>
+<p>以下命令表示将<code>这是插入的内容</code>插入到<code>/opt/test.txt</code>文件的第五行前面</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed -i <span class="string">&#x27;5i 这是插入的内容&#x27;</span> /opt/test.txt</span><br></pre></td></tr></table></figure>
+<h2 id="创建文件-文件夹"><a class="markdownIt-Anchor" href="#创建文件-文件夹"></a> 创建文件、文件夹</h2>
+<h3 id="创建文件夹"><a class="markdownIt-Anchor" href="#创建文件夹"></a> 创建文件夹</h3>
+<figure class="highlight bash"><figcaption><span>创建文件夹</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> <span class="built_in">dir</span> <span class="comment"># 创建一个名为dir的目录(创建单个文件夹)</span></span><br><span class="line"><span class="built_in">mkdir</span> &#123;dir1,dir22&#125; <span class="comment">#创建,dir1文件夹和dir2文件夹(都在当前目录下)</span></span><br><span class="line"><span class="built_in">mkdir</span> -p dir1/dir2 <span class="comment"># 创建dir1，并且在dir目录里面创建dir2(创建多级目录)</span></span><br></pre></td></tr></table></figure>
+<h2 id="删除文件-文件夹"><a class="markdownIt-Anchor" href="#删除文件-文件夹"></a> 删除文件、文件夹</h2>
+<h3 id="删除文件-文件夹-2"><a class="markdownIt-Anchor" href="#删除文件-文件夹-2"></a> 删除文件、文件夹</h3>
+<figure class="highlight bash"><figcaption><span>删除文件</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">rm</span> -rf file <span class="comment"># 删除file文件(不可恢复)</span></span><br><span class="line"><span class="built_in">rm</span> -rf <span class="built_in">dir</span> <span class="comment"># 删除dir文件夹的所有文件(不可恢复)</span></span><br></pre></td></tr></table></figure>
+<p>其实，删除文件和删除文件夹是一样的命令</p>
+<h2 id="移动文件-文件夹"><a class="markdownIt-Anchor" href="#移动文件-文件夹"></a> 移动文件、文件夹</h2>
+<h3 id="移动一个文件或者一个文件夹"><a class="markdownIt-Anchor" href="#移动一个文件或者一个文件夹"></a> 移动一个文件或者一个文件夹</h3>
+<figure class="highlight bash"><figcaption><span>移动一共文件或者文件夹</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mv</span> file ./a  <span class="comment"># 意思是将file文件移动到当前文件夹下的a文件夹里面</span></span><br></pre></td></tr></table></figure>
+<p>移动文件或者文件夹的命令是一模一样的</p>
+<h3 id="移动多个文件或者文件夹"><a class="markdownIt-Anchor" href="#移动多个文件或者文件夹"></a> 移动多个文件或者文件夹</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># 移动多个文件、文件夹时</span></span><br><span class="line"><span class="built_in">mv</span> &#123;file1,file2,file3&#125; /home/ <span class="comment"># 表示将file1、file2、file3移动到/home目录下</span></span><br></pre></td></tr></table></figure>
+<p>用<code>&#123;&#125;</code>来选择多个文件或者多个文件夹</p>
+<h2 id="给文件-文件夹重新命名"><a class="markdownIt-Anchor" href="#给文件-文件夹重新命名"></a> 给文件、文件夹重新命名</h2>
+<figure class="highlight bash"><figcaption><span>改名</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mv</span> file1 file2 <span class="comment"># 意思是将file1改名为file2</span></span><br></pre></td></tr></table></figure>
+<p>用<code>&#123;&#125;</code>来选择多个文件或者文件夹，细心的你可能发现了，文件改名和文件移动的命令是一样的，其实就是一样的，<code>mv</code>这个命令既是移动也是命名</p>
+<h2 id="更改文件-文件夹属性"><a class="markdownIt-Anchor" href="#更改文件-文件夹属性"></a> 更改文件、文件夹属性</h2>
+<p>有时候我们需要给一些文件赋予特殊的权限，比如新建的<code>test.sh</code>脚本文件，我们想要在Linux系统执行这个脚本文件，那我们就要给他执行权限。</p>
+<figure class="highlight bash"><figcaption><span>赋予权限</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">chmod</span> 777 test.sh <span class="comment"># 表示test.sh开放所有权限</span></span><br></pre></td></tr></table></figure>
+<h2 id="查看文件或文件夹大小"><a class="markdownIt-Anchor" href="#查看文件或文件夹大小"></a> 查看文件或文件夹大小</h2>
+<h3 id="查看文件占用大小"><a class="markdownIt-Anchor" href="#查看文件占用大小"></a> 查看文件占用大小</h3>
+<p>查看当前文件夹下的文件大小</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ls</span> -lh</span><br></pre></td></tr></table></figure>
+<ul>
+<li><code>-h</code>：表示以M为单位展示文件大小，如果不加，则表示使用K为单位</li>
+</ul>
+<h3 id="查看文件夹占用大小"><a class="markdownIt-Anchor" href="#查看文件夹占用大小"></a> 查看文件夹占用大小</h3>
+<p>查看当前文件夹下的文件夹占用大小</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">du</span> -sh *</span><br></pre></td></tr></table></figure>
+<ul>
+<li><code>-h</code>：表示以M为单位展示文件大小，如果不加，则表示使用K为单位</li>
+</ul>
+<h1 id="linux解压-压缩命令"><a class="markdownIt-Anchor" href="#linux解压-压缩命令"></a> Linux解压、压缩命令</h1>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># .tar</span></span><br><span class="line">解包：tar xvf FileName.tar</span><br><span class="line">打包：tar cvf FileName.tar DirName</span><br><span class="line">（注：tar是打包，不是压缩！）</span><br><span class="line"></span><br><span class="line"><span class="comment"># .gz</span></span><br><span class="line">解压1：gunzip FileName.gz</span><br><span class="line">解压2：gzip -d FileName.gz</span><br><span class="line">压缩：gzip FileName</span><br><span class="line"></span><br><span class="line"><span class="comment"># .tar.gz 和 .tgz</span></span><br><span class="line">解压：tar zxvf FileName.tar.gz</span><br><span class="line">压缩：tar zcvf FileName.tar.gz DirName</span><br><span class="line"></span><br><span class="line"><span class="comment"># .bz2</span></span><br><span class="line">解压1：bzip2 -d FileName.bz2</span><br><span class="line">解压2：bunzip2 FileName.bz2</span><br><span class="line">压缩： bzip2 -z FileName</span><br><span class="line"></span><br><span class="line"><span class="comment"># .tar.bz2</span></span><br><span class="line">解压：tar jxvf FileName.tar.bz2</span><br><span class="line">压缩：tar jcvf FileName.tar.bz2 DirName</span><br><span class="line"></span><br><span class="line"><span class="comment"># .bz</span></span><br><span class="line">解压1：bzip2 -d FileName.bz</span><br><span class="line">解压2：bunzip2 FileName.bz</span><br><span class="line"></span><br><span class="line"><span class="comment"># .tar.bz</span></span><br><span class="line">解压：tar jxvf FileName.tar.bz</span><br><span class="line"></span><br><span class="line"><span class="comment"># .Z</span></span><br><span class="line">解压：uncompress FileName.Z</span><br><span class="line">压缩：compress FileName</span><br><span class="line"></span><br><span class="line"><span class="comment"># .tar.Z</span></span><br><span class="line">解压：tar Zxvf FileName.tar.Z</span><br><span class="line">压缩：tar Zcvf FileName.tar.Z DirName</span><br><span class="line"></span><br><span class="line"><span class="comment"># .zip</span></span><br><span class="line">解压：unzip FileName.zip</span><br><span class="line">压缩：zip FileName.zip DirName</span><br><span class="line"></span><br><span class="line"><span class="comment"># .rar</span></span><br><span class="line">解压：rar x FileName.rar</span><br><span class="line">压缩：rar a FileName.rar DirName</span><br><span class="line"></span><br><span class="line"><span class="comment"># .lha</span></span><br><span class="line">解压：lha -e FileName.lha</span><br><span class="line">压缩：lha -a FileName.lha FileName</span><br><span class="line"></span><br><span class="line"><span class="comment"># .rpm</span></span><br><span class="line">解包：rpm2cpio FileName.rpm | cpio -div</span><br><span class="line"></span><br><span class="line"><span class="comment"># .deb</span></span><br><span class="line">解包：ar p FileName.deb data.tar.gz | tar zxf -</span><br><span class="line"></span><br><span class="line"><span class="comment"># .tar .tgz .tar.gz .tar.Z .tar.bz .tar.bz2 .zip .cpio .rpm .deb .slp .arj .rar .ace .lha .lzh .lzx .lzs .arc .sda .sfx .lnx .zoo .cab .kar .cpt .pit .sit .sea</span></span><br><span class="line">解压：sEx x FileName.*</span><br><span class="line">压缩：sEx a FileName.* FileName</span><br></pre></td></tr></table></figure>
+<h2 id="ubuntu-desktop版切换模式"><a class="markdownIt-Anchor" href="#ubuntu-desktop版切换模式"></a> Ubuntu Desktop版切换模式</h2>
+<p><strong>Ubuntu切换到用户登录</strong></p>
+<p><code>Ctrl + Alt  + F1</code></p>
+<p>Ubuntu切换到主界面</p>
+<p><code>Ctrl + Alt  + F12</code></p>
+<p><strong>Ubuntu切换到完全终端</strong></p>
+<p><code>Ctrl + Alt  + F13</code></p>
+<h1 id="添加root权限用户"><a class="markdownIt-Anchor" href="#添加root权限用户"></a> 添加root权限用户</h1>
+<h2 id="打开sudoers文件"><a class="markdownIt-Anchor" href="#打开sudoers文件"></a> 打开sudoers文件</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">su root  				<span class="comment"># 进入root时需要输入密码，密码是不显示的</span></span><br><span class="line">vim /etc/sudoers		<span class="comment"># 打开sudoers文件</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://images.hikki.site/20220704011617.jpeg" alt="" /></p>
+<h2 id="centos添加新用户"><a class="markdownIt-Anchor" href="#centos添加新用户"></a> CentOS添加新用户</h2>
+<p>滑到最下面找到<code>root</code></p>
+<p>在<code>root</code>下面添加</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">新用户名 ALL=(ALL) ALL </span><br><span class="line"><span class="comment"># 新用户必须要存在才能添加</span></span><br><span class="line"><span class="comment"># lilbai518这个用户，我之前已经创建过了</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://images.hikki.site/20220704011640.jpeg" alt="" /></p>
+<p><img src="https://images.hikki.site/20220704011650.jpeg" alt="" /></p>
+<h1 id="ubuntu更换源"><a class="markdownIt-Anchor" href="#ubuntu更换源"></a> Ubuntu更换源</h1>
+<h2 id="备份源文件"><a class="markdownIt-Anchor" href="#备份源文件"></a> 备份源文件</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo <span class="built_in">cp</span> /etc/apt/sources.list /etc/apt/sources.list_backup</span><br></pre></td></tr></table></figure>
+<h2 id="打开sourceslist文件"><a class="markdownIt-Anchor" href="#打开sourceslist文件"></a> 打开sources.list文件</h2>
+<p>打开<code>sources.list</code>文件，将里面的内容全部删掉</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo gedit /etc/apt/sources.list</span><br></pre></td></tr></table></figure>
+<h2 id="将下面的代码其中一段复制进去"><a class="markdownIt-Anchor" href="#将下面的代码其中一段复制进去"></a> 将下面的代码其中一段复制进去</h2>
+<p>删完内容后，将以下其中一段代码粘贴进去，粘贴进去后，更新以下源</p>
+<figure class="highlight bash"><figcaption><span>阿里源</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#  阿里源</span></span><br><span class="line">deb http://mirrors.aliyun.com/ubuntu/ jammy main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.aliyun.com/ubuntu/ jammy main restricted universe multiverse</span><br><span class="line">deb http://mirrors.aliyun.com/ubuntu/ jammy-security main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.aliyun.com/ubuntu/ jammy-security main restricted universe multiverse</span><br><span class="line">deb http://mirrors.aliyun.com/ubuntu/ jammy-updates main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.aliyun.com/ubuntu/ jammy-updates main restricted universe multiverse</span><br><span class="line">deb http://mirrors.aliyun.com/ubuntu/ jammy-proposed main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.aliyun.com/ubuntu/ jammy-proposed main restricted universe multiverse</span><br><span class="line">deb http://mirrors.aliyun.com/ubuntu/ jammy-backports main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.aliyun.com/ubuntu/ jammy-backports main restricted universe multiverse</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><figcaption><span>清华源</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 清华源</span></span><br><span class="line">deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse</span><br><span class="line">deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse</span><br><span class="line">deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse</span><br><span class="line">deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse</span><br><span class="line">deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse</span><br><span class="line">deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse</span><br><span class="line">deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse</span><br><span class="line">deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse</span><br><span class="line">deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse</span><br><span class="line">deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><figcaption><span>中科大</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#  中科大源</span></span><br><span class="line"></span><br><span class="line">deb https://mirrors.ustc.edu.cn/ubuntu/ jammy main restricted universe multiverse</span><br><span class="line">deb-src https://mirrors.ustc.edu.cn/ubuntu/ jammy main restricted universe multiverse</span><br><span class="line">deb https://mirrors.ustc.edu.cn/ubuntu/ jammy-updates main restricted universe multiverse</span><br><span class="line">deb-src https://mirrors.ustc.edu.cn/ubuntu/ jammy-updates main restricted universe multiverse</span><br><span class="line">deb https://mirrors.ustc.edu.cn/ubuntu/ jammy-backports main restricted universe multiverse</span><br><span class="line">deb-src https://mirrors.ustc.edu.cn/ubuntu/ jammy-backports main restricted universe multiverse</span><br><span class="line">deb https://mirrors.ustc.edu.cn/ubuntu/ jammy-security main restricted universe multiverse</span><br><span class="line">deb-src https://mirrors.ustc.edu.cn/ubuntu/ jammy-security main restricted universe multiverse</span><br><span class="line">deb https://mirrors.ustc.edu.cn/ubuntu/ jammy-proposed main restricted universe multiverse</span><br><span class="line">deb-src https://mirrors.ustc.edu.cn/ubuntu/ jammy-proposed main restricted universe multiverse</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><figcaption><span>网易</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 网易163</span></span><br><span class="line">deb http://mirrors.163.com/ubuntu/ jammy main restricted universe multiverse</span><br><span class="line">deb http://mirrors.163.com/ubuntu/ jammy-security main restricted universe multiverse</span><br><span class="line">deb http://mirrors.163.com/ubuntu/ jammy-updates main restricted universe multiverse</span><br><span class="line">deb http://mirrors.163.com/ubuntu/ jammy-proposed main restricted universe multiverse</span><br><span class="line">deb http://mirrors.163.com/ubuntu/ jammy-backports main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.163.com/ubuntu/ jammy main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.163.com/ubuntu/ jammy-security main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.163.com/ubuntu/ jammy-updates main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.163.com/ubuntu/ jammy-proposed main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.163.com/ubuntu/ jammy-backports main restricted universe multiverse</span><br></pre></td></tr></table></figure>
+<h2 id="备份ubuntu官方源备份用"><a class="markdownIt-Anchor" href="#备份ubuntu官方源备份用"></a> 备份Ubuntu官方源(备份用)</h2>
+<figure class="highlight bash"><figcaption><span>官方源</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#deb cdrom:[Ubuntu 20.04.3 LTS _Focal Fossa_ - Release amd64 (20210819)]/ focal main restricted</span></span><br><span class="line">deb http://cn.archive.ubuntu.com/ubuntu/ focal main restricted</span><br><span class="line">deb http://cn.archive.ubuntu.com/ubuntu/ focal-updates main restricted</span><br><span class="line">deb http://cn.archive.ubuntu.com/ubuntu/ focal universe</span><br><span class="line">deb http://cn.archive.ubuntu.com/ubuntu/ focal-updates universe</span><br><span class="line">deb http://cn.archive.ubuntu.com/ubuntu/ focal multiverse</span><br><span class="line">deb http://cn.archive.ubuntu.com/ubuntu/ focal-updates multiverse</span><br><span class="line">deb http://cn.archive.ubuntu.com/ubuntu/ focal-backports main restricted universe multiverse</span><br><span class="line">deb http://security.ubuntu.com/ubuntu focal-security main restricted</span><br><span class="line">deb http://security.ubuntu.com/ubuntu focal-security universe</span><br><span class="line">deb http://security.ubuntu.com/ubuntu focal-security multiverse</span><br></pre></td></tr></table></figure>
+<h2 id="更新源"><a class="markdownIt-Anchor" href="#更新源"></a> 更新源</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span><br></pre></td></tr></table></figure>
+<h1 id="centos换源20229"><a class="markdownIt-Anchor" href="#centos换源20229"></a> CentOS换源2022.9</h1>
+<h2 id="centos-8-换源"><a class="markdownIt-Anchor" href="#centos-8-换源"></a> CentOS 8 换源</h2>
+<h3 id="用wget工具下载aliyun最新repo文件"><a class="markdownIt-Anchor" href="#用wget工具下载aliyun最新repo文件"></a> 用wget工具下载aliyun最新repo文件</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -O /etc/yum.repos.d/CentOS-Base.repo https://mirrors.aliyun.com/repo/Centos-vault-8.5.2111.repo</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>如果你没有wget工具，那你也可以使用Linux自带的curl工具下载</p>
+</blockquote>
+<h3 id="使用curl工具下载aliyun最新repo文件"><a class="markdownIt-Anchor" href="#使用curl工具下载aliyun最新repo文件"></a> 使用curl工具下载aliyun最新repo文件</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -o /etc/yum.repos.d/CentOS-Base.repo https://mirrors.aliyun.com/repo/Centos-vault-8.5.2111.repo</span><br></pre></td></tr></table></figure>
+<h3 id="清除缓存"><a class="markdownIt-Anchor" href="#清除缓存"></a> 清除缓存</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum clean all</span><br></pre></td></tr></table></figure>
+<h3 id="生成新的缓存"><a class="markdownIt-Anchor" href="#生成新的缓存"></a> 生成新的缓存</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum makecache</span><br></pre></td></tr></table></figure>
+<h2 id="centos-7换源"><a class="markdownIt-Anchor" href="#centos-7换源"></a> CentOS 7换源</h2>
+<h3 id="备份一下源"><a class="markdownIt-Anchor" href="#备份一下源"></a> 备份一下源</h3>
+<h4 id="先进入管理员模式"><a class="markdownIt-Anchor" href="#先进入管理员模式"></a> 先进入管理员模式</h4>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">su <span class="comment"># 输入密码</span></span><br></pre></td></tr></table></figure>
+<h4 id="创建文件夹存放源"><a class="markdownIt-Anchor" href="#创建文件夹存放源"></a> 创建文件夹存放源</h4>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> /etc/yum.repos.d/repo_backup</span><br></pre></td></tr></table></figure>
+<h4 id="复制源文件到repo_baclup"><a class="markdownIt-Anchor" href="#复制源文件到repo_baclup"></a> 复制源文件到repo_baclup</h4>
+<p>输入<code>cp /etc/yum.repos.d/*.repo /etc/yum.repos.d/repo_backup</code>之后，会有以下这样的输出，连续回车即可</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost yum.repos.d]<span class="comment"># cp /etc/yum.repos.d/*.repo /etc/yum.repos.d/repo_backup</span></span><br><span class="line"><span class="built_in">cp</span>: overwrite ‘./repo_backup/CentOS-Base.repo’? </span><br><span class="line"><span class="built_in">cp</span>: overwrite ‘./repo_backup/CentOS-CR.repo’? </span><br><span class="line"><span class="built_in">cp</span>: overwrite ‘./repo_backup/CentOS-Debuginfo.repo’? </span><br><span class="line"><span class="built_in">cp</span>: overwrite ‘./repo_backup/CentOS-fasttrack.repo’? </span><br><span class="line"><span class="built_in">cp</span>: overwrite ‘./repo_backup/CentOS-Media.repo’? </span><br><span class="line"><span class="built_in">cp</span>: overwrite ‘./repo_backup/CentOS-Sources.repo’? </span><br><span class="line"><span class="built_in">cp</span>: overwrite ‘./repo_backup/CentOS-Vault.repo’? </span><br><span class="line"><span class="built_in">cp</span>: overwrite ‘./repo_backup/CentOS-x86_64-kernel.repo’? </span><br></pre></td></tr></table></figure>
+<h3 id="下载新的centos-baserepo-到etcyumreposd"><a class="markdownIt-Anchor" href="#下载新的centos-baserepo-到etcyumreposd"></a> 下载新的<code>CentOS-Base.repo</code> 到<code>/etc/yum.repos.d/</code></h3>
+<figure class="highlight bash"><figcaption><span>下载aliyun</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget http://mirrors.aliyun.com/repo/Centos-7.repo</span><br></pre></td></tr></table></figure>
+<h2 id="清除缓存-2"><a class="markdownIt-Anchor" href="#清除缓存-2"></a> 清除缓存</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum clean all</span><br></pre></td></tr></table></figure>
+<h2 id="生成新的缓存-2"><a class="markdownIt-Anchor" href="#生成新的缓存-2"></a> 生成新的缓存</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum makecache</span><br></pre></td></tr></table></figure>
+<h3 id="安装epelextra-packages-for-enterprise-linux-源"><a class="markdownIt-Anchor" href="#安装epelextra-packages-for-enterprise-linux-源"></a> 安装EPEL（Extra Packages for Enterprise Linux ）源</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install -y epel-release</span><br></pre></td></tr></table></figure>
+<h3 id="查看启用的yum源和所有的yum源"><a class="markdownIt-Anchor" href="#查看启用的yum源和所有的yum源"></a> 查看启用的yum源和所有的yum源</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yum repolist enabled</span><br><span class="line">yum repolist all</span><br></pre></td></tr></table></figure>
+<h2 id="更新源-2"><a class="markdownIt-Anchor" href="#更新源-2"></a> 更新源</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y update</span><br></pre></td></tr></table></figure>
+<h1 id="用户-用户组"><a class="markdownIt-Anchor" href="#用户-用户组"></a> 用户、用户组</h1>
+<h2 id="linux查看所有用户-用户组"><a class="markdownIt-Anchor" href="#linux查看所有用户-用户组"></a> Linux查看所有用户、用户组</h2>
+<p><strong>Linux查看所有用户</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cat</span> /etc/passwd</span><br></pre></td></tr></table></figure>
+<p><strong>Linux查看所有用户组</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cat</span> /etc/group</span><br></pre></td></tr></table></figure>
+<h2 id="将某用户添加到某用户组"><a class="markdownIt-Anchor" href="#将某用户添加到某用户组"></a> 将某用户添加到某用户组</h2>
+<blockquote>
+<p>新增用户组docker: groupadd docker</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">gpasswd -a 用户x 用户组y <span class="comment">#将用户x添加到用户组y</span></span><br><span class="line">newgrp 用户组 <span class="comment">#刷新用户组</span></span><br></pre></td></tr></table></figure>
+<p><strong>举个栗子-1：将当前用户添加到docker用户组</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">gpasswd -a <span class="variable">$USER</span>  docker <span class="comment">#将当前用户添加到docker用户组</span></span><br><span class="line">newgrp docker <span class="comment">#添加完需要刷新用户组</span></span><br></pre></td></tr></table></figure>
+<p><strong>举个栗子-2：将test用户添加到docker用户组</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">gpasswd -a <span class="built_in">test</span>  docker</span><br><span class="line">newgrp docker <span class="comment">#添加完需要刷新用户组</span></span><br></pre></td></tr></table></figure>
+<h2 id="linux创建新用户-新用户组"><a class="markdownIt-Anchor" href="#linux创建新用户-新用户组"></a> Linux创建新用户、新用户组</h2>
+<h3 id="新建用户"><a class="markdownIt-Anchor" href="#新建用户"></a> 新建用户</h3>
+<div class="tabs" id=""><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#-1">Ubuntu</button></li><li class="tab"><button type="button" data-href="#-2">其他Linux</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="-1"><p>在Ubuntu中，新增用户有两个指令，<code>useradd</code>和<code>adduser</code>，对应着两条删除用户指令<code>userdel</code>和<code>deluser</code>。</p>
+<h3 id="区别"><a class="markdownIt-Anchor" href="#区别"></a> 区别</h3>
+<p><code>adduser</code>：会自动为创建的用户指定主目录、系统shell版本，会在创建时输入用户密码。<br />
+<code> useradd</code>：需要使用参数选项指定上述基本设置，如果不使用任何参数，则创建的用户无密码、无主目录、没有指定shell版本。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-2"><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
+<h3 id="新建用户组"><a class="markdownIt-Anchor" href="#新建用户组"></a> 新建用户组</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">groupadd 选项 用户组</span><br></pre></td></tr></table></figure>
+<ul>
+<li><code>-g</code> ：GID 指定新用户组的组标识号（GID）。</li>
+<li><code>-o </code>：一般与-g选项同时使用，表示新用户组的GID可以与系统已有用户组的GID相同。</li>
+</ul>
+<h2 id="linux删除用户-用户组"><a class="markdownIt-Anchor" href="#linux删除用户-用户组"></a> Linux删除用户、用户组</h2>
+<h3 id="linux删除用户"><a class="markdownIt-Anchor" href="#linux删除用户"></a> Linux删除用户</h3>
+<p>我现在需要删除用户名为：<code>git</code>的用户</p>
+<p><strong>删除内容</strong></p>
+<p><img src="https://images.hikki.site/2022-10-06-112318.jpg" alt="00删除步骤" /></p>
+<h3 id="一键删除用户以及相关信息"><a class="markdownIt-Anchor" href="#一键删除用户以及相关信息"></a> 一键删除用户以及相关信息</h3>
+<ul>
+<li><code>-r </code>:表示删除用户相关的信息</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">userdel -r git</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>一般使用<code>userdel -r git</code>已经可以删除干净了，包括以下步骤的信息，如果不放心，可以使用以下步骤查看是否删除干净了</p>
+</blockquote>
+<p><strong>清理passwd</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/passwd</span><br></pre></td></tr></table></figure>
+<p>找到开头为<code>git</code>的用户，删除该行</p>
+<p><img src="https://images.hikki.site/2022-10-06-112344.jpg" alt="01删除passwd信息" /></p>
+<p><strong>清理shadow</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/shadow</span><br></pre></td></tr></table></figure>
+<p>找到<code>git</code>开头的该行，删除该行</p>
+<p><img src="https://images.hikki.site/2022-10-06-112358.jpeg" alt="02删除shadow信息" /></p>
+<p><strong>清理用户组(可选)</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/group</span><br></pre></td></tr></table></figure>
+<p>我新建git用户时，新建的是git用户组，如果你也是新建一样名字的用户，可以删除，或者不删除也不影响</p>
+<p><img src="https://images.hikki.site/2022-10-06-112412.jpg" alt="03删除用户组" /></p>
+<p><strong>清理gshadow</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/gshadow</span><br></pre></td></tr></table></figure>
+<p>找到<code>git</code>开头的该行，删除它</p>
+<p><img src="https://images.hikki.site/2022-10-06-112424.jpg" alt="04删除gshadow信息" /></p>
+<p><strong>删除用户新建的邮箱</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">rm</span> -rf /var/spool/mail/git</span><br></pre></td></tr></table></figure>
+<p><strong>删除用户家目录</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">rm</span> -rf /home/git</span><br></pre></td></tr></table></figure>
+<h1 id="与服务器传输文件"><a class="markdownIt-Anchor" href="#与服务器传输文件"></a> 与服务器传输文件</h1>
+<h2 id="上传文件到服务器"><a class="markdownIt-Anchor" href="#上传文件到服务器"></a> 上传文件到服务器</h2>
+<h3 id="传输文件夹"><a class="markdownIt-Anchor" href="#传输文件夹"></a> 传输文件夹</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp -r 本机路径  username@服务器IP地址:服务器保存文件路径</span><br></pre></td></tr></table></figure>
+<h3 id="传输文件"><a class="markdownIt-Anchor" href="#传输文件"></a> 传输文件</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp 本机路径  username@服务器IP地址:服务器保存文件路径</span><br></pre></td></tr></table></figure>
+<h3 id="示例"><a class="markdownIt-Anchor" href="#示例"></a> 示例</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">[C:\~]$ scp -r C:\Users\Administrator\Desktop\会议.txt  lilbai@124.70.8.41:/home/lilbai/Downloads</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Connecting to 124.70.8.41:22...</span><br><span class="line">Connection established.</span><br><span class="line">To escape to <span class="built_in">local</span> shell, press <span class="string">&#x27;Ctrl+Alt+]&#x27;</span>.</span><br><span class="line">Password: *************</span><br><span class="line">Start scp session to upload.</span><br><span class="line">会议.txt	752 字节</span><br><span class="line">Sent all of files.</span><br><span class="line">Connection closing...Socket close.</span><br><span class="line"></span><br><span class="line">Connection closed by foreign host.</span><br><span class="line"></span><br><span class="line">Disconnected from remote host(124.70.8.41:22) at 23:56:22.</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="从服务器下载文件到本机"><a class="markdownIt-Anchor" href="#从服务器下载文件到本机"></a> 从服务器下载文件到本机</h2>
+<h3 id="传输文件-2"><a class="markdownIt-Anchor" href="#传输文件-2"></a> 传输文件</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp username@IP地址:服务器文件路径 本机文件路径</span><br></pre></td></tr></table></figure>
+<h3 id="传输文件夹-2"><a class="markdownIt-Anchor" href="#传输文件夹-2"></a> 传输文件夹</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp -r username@IP地址:服务器文件路径 本机文件路径</span><br></pre></td></tr></table></figure>
+<h1 id="wget工具"><a class="markdownIt-Anchor" href="#wget工具"></a> wget工具</h1>
+<p>wget我们一般用于下载文件最多，一般下载常见的指令有，指定下载文件后重命名、断点续传、后台下载、测试下载链接、增加下载重试次数、一次性下载多文件、将下载文件记录存入日志文件等等，下面我们一个个测试。</p>
+<h2 id="直接下载wget"><a class="markdownIt-Anchor" href="#直接下载wget"></a> 直接下载wget</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">root@ecs:/opt<span class="comment"># wget https://codeload.github.com/inotify-tools/inotify-tools/tar.gz/refs/tags/3.22.6.0</span></span><br><span class="line">root@ecs:/opt<span class="comment"># ls</span></span><br><span class="line">3.22.6.0</span><br></pre></td></tr></table></figure>
+<p>下载文件后文件名默认是URL最后一个文件名，如上URL下载后的文件名为<code>3.22.6.0</code>。</p>
+<h2 id="下载文件后重命名-wget-o"><a class="markdownIt-Anchor" href="#下载文件后重命名-wget-o"></a> 下载文件后重命名 wget -O</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">root@ecs:/opt<span class="comment"># wget -O test.tar.gz https://codeload.github.com/inotify-tools/inotify-tools/tar.gz/refs/tags/3.22.6.0</span></span><br><span class="line">root@ecs:/opt<span class="comment"># ls</span></span><br><span class="line">test.tar.gz   3.22.6.0</span><br></pre></td></tr></table></figure>
+<h2 id="指定路径并指定文件名"><a class="markdownIt-Anchor" href="#指定路径并指定文件名"></a> 指定路径并指定文件名</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -P /opt/file -O inotify-tools.tar.gz https://codeload.github.com/inotify-tools/inotify-tools/tar.gz/refs/tags/3.22.6.0</span><br></pre></td></tr></table></figure>
+<h2 id="断点续传-wget-c"><a class="markdownIt-Anchor" href="#断点续传-wget-c"></a> 断点续传 wget -c</h2>
+<p>断点续传一般用于下载大文件较多，或者网络不稳定的情况下用。</p>
+<p>比如我们下载GitHub的文件，总所周知，GitHub下载文件完全是看命，有时候很稳定，有时候慢的不得了，用断点续传的话，即使网路不稳定也可以继续下载。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -c https://codeload.github.com/inotify-tools/inotify-tools/tar.gz/refs/tags/3.22.6.0</span><br></pre></td></tr></table></figure>
+<h2 id="后台下载-wget-b"><a class="markdownIt-Anchor" href="#后台下载-wget-b"></a> 后台下载 wget -b</h2>
+<p>后台下载一般也是用于下载大文件时用，大文件下载比较占时间，不可能给他一直站着窗口看他下载吧，放后台下载，我们可以继续做其他的事嘛。</p>
+<p><code>-b </code>的缩写应该是<code>background</code>，联想记起来也方便。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -b https://codeload.github.com/inotify-tools/inotify-tools/tar.gz/refs/tags/3.22.6.0</span><br></pre></td></tr></table></figure>
+<h2 id="测试下载速度-wget-s"><a class="markdownIt-Anchor" href="#测试下载速度-wget-s"></a> 测试下载速度 wget -S</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">root@ecs:/opt<span class="comment"># wget -S https://codeload.github.com/inotify-tools/inotify-tools/tar.gz/refs/tags/3.22.6.0</span></span><br><span class="line">--2023-01-04 13:14:21--  https://codeload.github.com/inotify-tools/inotify-tools/tar.gz/refs/tags/3.22.6.0</span><br><span class="line">Resolving codeload.github.com (codeload.github.com)... 20.205.243.165</span><br><span class="line">Connecting to codeload.github.com (codeload.github.com)|20.205.243.165|:443... connected.</span><br><span class="line">HTTP request sent, awaiting response... </span><br><span class="line">  HTTP/1.1 200 OK</span><br><span class="line">  Access-Control-Allow-Origin: https://render.githubusercontent.com</span><br><span class="line">  content-disposition: attachment; filename=inotify-tools-3.22.6.0.tar.gz</span><br><span class="line">  Content-Security-Policy: default-src <span class="string">&#x27;none&#x27;</span>; style-src <span class="string">&#x27;unsafe-inline&#x27;</span>; sandbox</span><br><span class="line">  Content-Type: application/x-gzip</span><br><span class="line">  ETag: <span class="string">&quot;76c8997f7ea7d30c43fd3141bf4d832299d2316ac23165bcbb6b6d673ce22609&quot;</span></span><br><span class="line">  Strict-Transport-Security: max-age=31536000</span><br><span class="line">  Vary: Authorization,Accept-Encoding,Origin</span><br><span class="line">  X-Content-Type-Options: nosniff</span><br><span class="line">  X-Frame-Options: deny</span><br><span class="line">  X-XSS-Protection: 1; mode=block</span><br><span class="line">  Date: Wed, 04 Jan 2023 05:14:21 GMT</span><br><span class="line">  Transfer-Encoding: chunked</span><br><span class="line">  X-GitHub-Request-Id: 8B04:01E5:9A9E:1BAA0:63B50B2D</span><br><span class="line">Length: unspecified [application/x-gzip]</span><br><span class="line">Saving to: ‘3.22.6.0’</span><br><span class="line"></span><br><span class="line">3.22.6.0                             [  &lt;=&gt;                                                     ]  90.74K   317KB/s    <span class="keyword">in</span> 0.3s    </span><br><span class="line"></span><br><span class="line">2023-01-04 13:14:22 (317 KB/s) - ‘3.22.6.0’ saved [92918]</span><br></pre></td></tr></table></figure>
+<h2 id="下载重试次数-wget-t次数"><a class="markdownIt-Anchor" href="#下载重试次数-wget-t次数"></a> 下载重试次数 wget -t=次数</h2>
+<p>如果网络有问题或下载一个大文件也有可能失败。wget默认重试20次连接下载文件。</p>
+<p>如果需要，你可以使用<code>–t</code>增加重试次数。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -t=30 https://codeload.github.com/inotify-tools/inotify-tools/tar.gz/refs/tags/3.22.6.0</span><br></pre></td></tr></table></figure>
+<h2 id="下载多文件-wget-i"><a class="markdownIt-Anchor" href="#下载多文件-wget-i"></a> 下载多文件 wget -i</h2>
+<p>list.txt文件放的是下载的URL</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -i list.txt</span><br></pre></td></tr></table></figure>
+<p><strong>list.txt文件</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">URL1</span><br><span class="line">URL2</span><br><span class="line">Url3</span><br></pre></td></tr></table></figure>
+<h2 id="存储下载日志wget-o"><a class="markdownIt-Anchor" href="#存储下载日志wget-o"></a> 存储下载日志wget -o</h2>
+<p>存储下载日志和下载重命名的的指令都是o，下载重命名文件是<code>-O</code>大写的，日志是小写的，要区分。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -o download.log https://codeload.github.com/inotify-tools/inotify-tools/tar.gz/refs/tags/3.22.6.0</span><br></pre></td></tr></table></figure>
+<h2 id="更多命令"><a class="markdownIt-Anchor" href="#更多命令"></a> 更多命令</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget --<span class="built_in">help</span></span><br></pre></td></tr></table></figure>
+<h1 id="linux-ps指令"><a class="markdownIt-Anchor" href="#linux-ps指令"></a> Linux ps指令</h1>
+<p>ps(英文全拼：process status)命令用于显示当前进程的状态，类似于 windows 的任务管理器。</p>
+<p><strong>语法格式：</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps [options] [--<span class="built_in">help</span>]</span><br></pre></td></tr></table></figure>
+<h2 id="查找进程"><a class="markdownIt-Anchor" href="#查找进程"></a> 查找进程</h2>
+<p>我们经常需要查询某进程是否正在运行，我们就可以使用<code>ps</code>指令查询了</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps -ef | grep 进程关键词</span><br></pre></td></tr></table></figure>
+<ul>
+<li>
+<p><code>-e</code>：显示所有进程</p>
+</li>
+<li>
+<p><code>-f</code>：全格式显示</p>
+</li>
+<li>
+<p><code>au</code>：显示较详细的资讯</p>
+</li>
+<li>
+<p><code>aux</code>：显示所有包含其他使用者的进程</p>
+</li>
+<li>
+<p><code>进程关键词</code>：关键词可以是进程全程或一般进程中一段字符，关键词可以模糊查询进程。</p>
+</li>
+</ul>
+<blockquote>
+<p>查找结果的第二列是**<code>进程号</code>**</p>
+</blockquote>
+<p><strong>示例：</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps -aux | grep rp</span><br></pre></td></tr></table></figure>
+<ul>
+<li><code>aux</code>：显示所有包含其他使用者的进程，这里使用<code>-ef</code>也是可以的。</li>
+<li><code>|</code>：表示管道，用于配合后面的grep过滤使用</li>
+<li><code>grep</code>：根据后面的关键词过滤出带有后面关键词的文本</li>
+</ul>
+<p>我想查询<code>frps</code>，但我只是搜索<code>rp</code>，结果也可以搜索到frps，这是因为，在全部进程中，含有rp的进程名只有frps有，所以也可以搜索。</p>
+<p><img src="https://images.hikki.site/01-%E6%A8%A1%E7%B3%8A%E6%9F%A5%E8%AF%A2-%E6%9C%8D%E5%8A%A1%E5%99%A8%20-%20root@ecs-2053820230104-669.jpg" alt="01-模糊查询-服务器 - root@ecs-2053820230104-669" /></p>
+<p><code>Q：</code>细心的同学可能就发现了，为什么搜索结果有两行？有两个进程号？</p>
+<p><code>A：</code>结果返回确实有两行，但真实的返回结果其实只有一行，我们在搜索的时候，使用指令搜索，系统会给我们分配一个进程，这个进程带着我们搜索的关键词去搜索全部进程，然后给我们返回结果，但这个全部进程也包括我们正在运行的搜索进程，所以才出现了有两条结果原因。</p>
+<h2 id="显示所有进程信息"><a class="markdownIt-Anchor" href="#显示所有进程信息"></a> 显示所有进程信息</h2>
+<ul>
+<li><code>-ef</code>：显示时会带上进程的部分信息</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ps -ef</span></span><br><span class="line">UID          PID    PPID  C STIME TTY          TIME CMD</span><br><span class="line">root           2       0  0  2022 ?        00:00:00 [kthreadd]</span><br><span class="line">root           3       2  0  2022 ?        00:00:00 [rcu_gp]</span><br><span class="line">root           4       2  0  2022 ?        00:00:00 [rcu_par_gp]</span><br><span class="line">root           6       2  0  2022 ?        00:00:00 [kworker/0:0H-kblockd]</span><br><span class="line">root           9       2  0  2022 ?        00:00:00 [mm_percpu_wq]</span><br><span class="line">...省略部分结果</span><br></pre></td></tr></table></figure>
+<h2 id="显示某用户下的全程进程"><a class="markdownIt-Anchor" href="#显示某用户下的全程进程"></a> 显示某用户下的全程进程</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps -u usernmae</span><br></pre></td></tr></table></figure>
+<h3 id="示例-2"><a class="markdownIt-Anchor" href="#示例-2"></a> 示例</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ps -u root</span></span><br><span class="line">    PID TTY          TIME CMD</span><br><span class="line">      1 ?        00:05:47 systemd</span><br><span class="line">      2 ?        00:00:00 kthreadd</span><br><span class="line">      3 ?        00:00:00 rcu_gp</span><br><span class="line">      4 ?        00:00:00 rcu_par_gp</span><br><span class="line">      6 ?        00:00:00 kworker/0:0H-kblockd</span><br><span class="line">      9 ?        00:00:00 mm_percpu_wq</span><br><span class="line">     10 ?        00:00:11 ksoftirqd/0</span><br><span class="line">...省略部分结果</span><br></pre></td></tr></table></figure>
+<h2 id="显示系统全部进程"><a class="markdownIt-Anchor" href="#显示系统全部进程"></a> 显示系统全部进程</h2>
+<p>显示只有进程名，不包含进程信息</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ps -A</span></span><br><span class="line">    PID TTY          TIME CMD</span><br><span class="line">      1 ?        00:05:47 systemd</span><br><span class="line">      2 ?        00:00:00 kthreadd</span><br><span class="line">      3 ?        00:00:00 rcu_gp</span><br><span class="line">      4 ?        00:00:00 rcu_par_gp</span><br><span class="line">      6 ?        00:00:00 kworker/0:0H-kblockd</span><br><span class="line">      9 ?        00:00:00 mm_percpu_wq</span><br><span class="line">...省略部分结果</span><br></pre></td></tr></table></figure>
+<h2 id="查看内存cpu占用前10的进程"><a class="markdownIt-Anchor" href="#查看内存cpu占用前10的进程"></a> 查看内存/CPU占用前10的进程</h2>
+<p>查看CPU占用情况、内存占用前10的进程</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps -eo pid,ppid,%mem,%cpu,cmd --<span class="built_in">sort</span>=-%mem | <span class="built_in">head</span></span><br></pre></td></tr></table></figure>
+<p>参数的含义：</p>
+<ul>
+<li><code>-e</code>: 显示所有进程信息。</li>
+<li><code>-o</code>: 指定输出格式，以逗号分隔列。</li>
+<li><code>pid</code>: 进程 ID。</li>
+<li><code>ppid</code>: 父进程 ID。</li>
+<li><code>%mem</code>: 进程内存占用百分比。</li>
+<li><code>%cpu</code>: 进程 CPU 占用百分比。</li>
+<li><code>cmd</code>: 进程命令行。</li>
+</ul>
+<p><code>--sort=-%mem</code> 表示按照内存使用率降序排序，换句话说就是从大到小排序。</p>
+<p><code>head</code> 命令则可以限制结果显示前 10 行。</p>
+<p><strong>参考文章</strong></p>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.csdn.net/taolusi/article/details/81304057">Ubuntu下创建新用户</a></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://blog.hikki.site">小码同学</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://blog.hikki.site/4c982bf.html">https://blog.hikki.site/4c982bf.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow noreferrer" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://blog.hikki.site" target="_blank">小码同学</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Linux/">Linux</a></div><div class="post_share"><div class="social-share" data-image="https://images.hikki.site/Linux-睡觉.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="/data/theme/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/data/img/wechatpay.jpg" target="_blank"><img class="post-qr-code-img" src="/data/img/wechatpay.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="/data/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src="/data/img/alipay.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/680409a4.html" title="hexo博客自动化部署到github pages"><i class="fas fa-chevron-left prev-icon"><div class="prev-label">上一篇</div></i></a><div class="pagination-card"><img class="prev-cover" src="https://images.hikki.site/hexologo.svg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">hexo博客自动化部署到github pages</div></div></div></div><div class="next-post pull-right"><a href="/16f50f86.html" title="好软推荐-软件系列"><i class="fas fa-chevron-right next-icon"><div class="next-label">下一篇</div></i></a><div class="pagination-card"><img class="next-cover" src="/data/img/wallhaven-8ozk-%E5%8E%8B%E7%BC%A9%E5%90%8E.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">好软推荐-软件系列</div></div></div></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2802e5c6.html" title="Docker"><img class="cover" src="https://images.hikki.site/docker.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-06-05</div><div class="title">Docker</div></div></a></div><div><a href="/21af92f0.html" title="Ubuntu安装、卸载软件"><img class="cover" src="/data/img/wallhaven-8ozk-%E5%8E%8B%E7%BC%A9%E5%90%8E.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-08-18</div><div class="title">Ubuntu安装、卸载软件</div></div></a></div><div><a href="/2c145f9d.html" title="Linux常见问题"><img class="cover" src="https://images.hikki.site/laptop-5906264_960_720.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-08-17</div><div class="title">Linux常见问题</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="disqus_thread"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/data/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">小码同学</div><div class="author-info__description">喜欢的东西就努力去追求，万一成功了呢！</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">173</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">29</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">39</div></a></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/0000rookie" rel="external nofollow noreferrer" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://space.bilibili.com/110844189?spm_id_from=333.1007.0.0" rel="external nofollow noreferrer" target="_blank" title="B站"><i class="fa-brands fa-bilibili"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title=""><i class="fas fa-rss"></i></a><a class="social-icon" href="mailto:aa1341151056@126.com" rel="external nofollow noreferrer" target="_blank" title=""><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content"><img src="https://blog.hikki.site/data/img/emoji/coolapk/c-pyjiaoyi.png" style="width:35px;height:35px"/>本站拒绝海外IP访问，如果您有连接到海外网络，可能体验不是很好</div></div><div class="card-widget tzy-right-widget" id="card-wechat"><div id="flip-wrapper"><div id="flip-content"><div class="face"></div><div class="back face"></div></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#linux%E7%89%88%E6%9C%AC%E5%8C%BA%E5%88%AB"><span class="toc-number">1.</span> <span class="toc-text"> Linux版本区别</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#centos"><span class="toc-number">1.1.</span> <span class="toc-text"> CentOS</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E7%9A%84%E6%8C%87%E4%BB%A4"><span class="toc-number">2.</span> <span class="toc-text"> 常用的指令</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#linux%E6%9F%A5%E7%9C%8B%E8%BD%AF%E4%BB%B6%E7%9A%84%E5%AE%89%E8%A3%85%E4%BD%8D%E7%BD%AE"><span class="toc-number">2.1.</span> <span class="toc-text"> linux查看软件的安装位置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%A8sed%E6%8F%92%E5%85%A5%E5%86%85%E5%AE%B9"><span class="toc-number">2.2.</span> <span class="toc-text"> 用sed插入内容</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6-%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="toc-number">2.3.</span> <span class="toc-text"> 创建文件、文件夹</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="toc-number">2.3.1.</span> <span class="toc-text"> 创建文件夹</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6-%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="toc-number">2.4.</span> <span class="toc-text"> 删除文件、文件夹</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6-%E6%96%87%E4%BB%B6%E5%A4%B9-2"><span class="toc-number">2.4.1.</span> <span class="toc-text"> 删除文件、文件夹</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A7%BB%E5%8A%A8%E6%96%87%E4%BB%B6-%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="toc-number">2.5.</span> <span class="toc-text"> 移动文件、文件夹</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A7%BB%E5%8A%A8%E4%B8%80%E4%B8%AA%E6%96%87%E4%BB%B6%E6%88%96%E8%80%85%E4%B8%80%E4%B8%AA%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="toc-number">2.5.1.</span> <span class="toc-text"> 移动一个文件或者一个文件夹</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A7%BB%E5%8A%A8%E5%A4%9A%E4%B8%AA%E6%96%87%E4%BB%B6%E6%88%96%E8%80%85%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="toc-number">2.5.2.</span> <span class="toc-text"> 移动多个文件或者文件夹</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%99%E6%96%87%E4%BB%B6-%E6%96%87%E4%BB%B6%E5%A4%B9%E9%87%8D%E6%96%B0%E5%91%BD%E5%90%8D"><span class="toc-number">2.6.</span> <span class="toc-text"> 给文件、文件夹重新命名</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9B%B4%E6%94%B9%E6%96%87%E4%BB%B6-%E6%96%87%E4%BB%B6%E5%A4%B9%E5%B1%9E%E6%80%A7"><span class="toc-number">2.7.</span> <span class="toc-text"> 更改文件、文件夹属性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E6%96%87%E4%BB%B6%E6%88%96%E6%96%87%E4%BB%B6%E5%A4%B9%E5%A4%A7%E5%B0%8F"><span class="toc-number">2.8.</span> <span class="toc-text"> 查看文件或文件夹大小</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E6%96%87%E4%BB%B6%E5%8D%A0%E7%94%A8%E5%A4%A7%E5%B0%8F"><span class="toc-number">2.8.1.</span> <span class="toc-text"> 查看文件占用大小</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E6%96%87%E4%BB%B6%E5%A4%B9%E5%8D%A0%E7%94%A8%E5%A4%A7%E5%B0%8F"><span class="toc-number">2.8.2.</span> <span class="toc-text"> 查看文件夹占用大小</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#linux%E8%A7%A3%E5%8E%8B-%E5%8E%8B%E7%BC%A9%E5%91%BD%E4%BB%A4"><span class="toc-number">3.</span> <span class="toc-text"> Linux解压、压缩命令</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#ubuntu-desktop%E7%89%88%E5%88%87%E6%8D%A2%E6%A8%A1%E5%BC%8F"><span class="toc-number">3.1.</span> <span class="toc-text"> Ubuntu Desktop版切换模式</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0root%E6%9D%83%E9%99%90%E7%94%A8%E6%88%B7"><span class="toc-number">4.</span> <span class="toc-text"> 添加root权限用户</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%89%93%E5%BC%80sudoers%E6%96%87%E4%BB%B6"><span class="toc-number">4.1.</span> <span class="toc-text"> 打开sudoers文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#centos%E6%B7%BB%E5%8A%A0%E6%96%B0%E7%94%A8%E6%88%B7"><span class="toc-number">4.2.</span> <span class="toc-text"> CentOS添加新用户</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#ubuntu%E6%9B%B4%E6%8D%A2%E6%BA%90"><span class="toc-number">5.</span> <span class="toc-text"> Ubuntu更换源</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%87%E4%BB%BD%E6%BA%90%E6%96%87%E4%BB%B6"><span class="toc-number">5.1.</span> <span class="toc-text"> 备份源文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%89%93%E5%BC%80sourceslist%E6%96%87%E4%BB%B6"><span class="toc-number">5.2.</span> <span class="toc-text"> 打开sources.list文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B0%86%E4%B8%8B%E9%9D%A2%E7%9A%84%E4%BB%A3%E7%A0%81%E5%85%B6%E4%B8%AD%E4%B8%80%E6%AE%B5%E5%A4%8D%E5%88%B6%E8%BF%9B%E5%8E%BB"><span class="toc-number">5.3.</span> <span class="toc-text"> 将下面的代码其中一段复制进去</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%87%E4%BB%BDubuntu%E5%AE%98%E6%96%B9%E6%BA%90%E5%A4%87%E4%BB%BD%E7%94%A8"><span class="toc-number">5.4.</span> <span class="toc-text"> 备份Ubuntu官方源(备份用)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9B%B4%E6%96%B0%E6%BA%90"><span class="toc-number">5.5.</span> <span class="toc-text"> 更新源</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#centos%E6%8D%A2%E6%BA%9020229"><span class="toc-number">6.</span> <span class="toc-text"> CentOS换源2022.9</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#centos-8-%E6%8D%A2%E6%BA%90"><span class="toc-number">6.1.</span> <span class="toc-text"> CentOS 8 换源</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%A8wget%E5%B7%A5%E5%85%B7%E4%B8%8B%E8%BD%BDaliyun%E6%9C%80%E6%96%B0repo%E6%96%87%E4%BB%B6"><span class="toc-number">6.1.1.</span> <span class="toc-text"> 用wget工具下载aliyun最新repo文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8curl%E5%B7%A5%E5%85%B7%E4%B8%8B%E8%BD%BDaliyun%E6%9C%80%E6%96%B0repo%E6%96%87%E4%BB%B6"><span class="toc-number">6.1.2.</span> <span class="toc-text"> 使用curl工具下载aliyun最新repo文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B8%85%E9%99%A4%E7%BC%93%E5%AD%98"><span class="toc-number">6.1.3.</span> <span class="toc-text"> 清除缓存</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%9F%E6%88%90%E6%96%B0%E7%9A%84%E7%BC%93%E5%AD%98"><span class="toc-number">6.1.4.</span> <span class="toc-text"> 生成新的缓存</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#centos-7%E6%8D%A2%E6%BA%90"><span class="toc-number">6.2.</span> <span class="toc-text"> CentOS 7换源</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%87%E4%BB%BD%E4%B8%80%E4%B8%8B%E6%BA%90"><span class="toc-number">6.2.1.</span> <span class="toc-text"> 备份一下源</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%88%E8%BF%9B%E5%85%A5%E7%AE%A1%E7%90%86%E5%91%98%E6%A8%A1%E5%BC%8F"><span class="toc-number">6.2.1.1.</span> <span class="toc-text"> 先进入管理员模式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9%E5%AD%98%E6%94%BE%E6%BA%90"><span class="toc-number">6.2.1.2.</span> <span class="toc-text"> 创建文件夹存放源</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%8D%E5%88%B6%E6%BA%90%E6%96%87%E4%BB%B6%E5%88%B0repo_baclup"><span class="toc-number">6.2.1.3.</span> <span class="toc-text"> 复制源文件到repo_baclup</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD%E6%96%B0%E7%9A%84centos-baserepo-%E5%88%B0etcyumreposd"><span class="toc-number">6.2.2.</span> <span class="toc-text"> 下载新的CentOS-Base.repo 到&#x2F;etc&#x2F;yum.repos.d&#x2F;</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B8%85%E9%99%A4%E7%BC%93%E5%AD%98-2"><span class="toc-number">6.3.</span> <span class="toc-text"> 清除缓存</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%9F%E6%88%90%E6%96%B0%E7%9A%84%E7%BC%93%E5%AD%98-2"><span class="toc-number">6.4.</span> <span class="toc-text"> 生成新的缓存</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85epelextra-packages-for-enterprise-linux-%E6%BA%90"><span class="toc-number">6.4.1.</span> <span class="toc-text"> 安装EPEL（Extra Packages for Enterprise Linux ）源</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E5%90%AF%E7%94%A8%E7%9A%84yum%E6%BA%90%E5%92%8C%E6%89%80%E6%9C%89%E7%9A%84yum%E6%BA%90"><span class="toc-number">6.4.2.</span> <span class="toc-text"> 查看启用的yum源和所有的yum源</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9B%B4%E6%96%B0%E6%BA%90-2"><span class="toc-number">6.5.</span> <span class="toc-text"> 更新源</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%94%A8%E6%88%B7-%E7%94%A8%E6%88%B7%E7%BB%84"><span class="toc-number">7.</span> <span class="toc-text"> 用户、用户组</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#linux%E6%9F%A5%E7%9C%8B%E6%89%80%E6%9C%89%E7%94%A8%E6%88%B7-%E7%94%A8%E6%88%B7%E7%BB%84"><span class="toc-number">7.1.</span> <span class="toc-text"> Linux查看所有用户、用户组</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B0%86%E6%9F%90%E7%94%A8%E6%88%B7%E6%B7%BB%E5%8A%A0%E5%88%B0%E6%9F%90%E7%94%A8%E6%88%B7%E7%BB%84"><span class="toc-number">7.2.</span> <span class="toc-text"> 将某用户添加到某用户组</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#linux%E5%88%9B%E5%BB%BA%E6%96%B0%E7%94%A8%E6%88%B7-%E6%96%B0%E7%94%A8%E6%88%B7%E7%BB%84"><span class="toc-number">7.3.</span> <span class="toc-text"> Linux创建新用户、新用户组</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B0%E5%BB%BA%E7%94%A8%E6%88%B7"><span class="toc-number">7.3.1.</span> <span class="toc-text"> 新建用户</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8C%BA%E5%88%AB"><span class="toc-number">7.3.2.</span> <span class="toc-text"> 区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B0%E5%BB%BA%E7%94%A8%E6%88%B7%E7%BB%84"><span class="toc-number">7.3.3.</span> <span class="toc-text"> 新建用户组</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#linux%E5%88%A0%E9%99%A4%E7%94%A8%E6%88%B7-%E7%94%A8%E6%88%B7%E7%BB%84"><span class="toc-number">7.4.</span> <span class="toc-text"> Linux删除用户、用户组</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#linux%E5%88%A0%E9%99%A4%E7%94%A8%E6%88%B7"><span class="toc-number">7.4.1.</span> <span class="toc-text"> Linux删除用户</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E9%94%AE%E5%88%A0%E9%99%A4%E7%94%A8%E6%88%B7%E4%BB%A5%E5%8F%8A%E7%9B%B8%E5%85%B3%E4%BF%A1%E6%81%AF"><span class="toc-number">7.4.2.</span> <span class="toc-text"> 一键删除用户以及相关信息</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%8E%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BC%A0%E8%BE%93%E6%96%87%E4%BB%B6"><span class="toc-number">8.</span> <span class="toc-text"> 与服务器传输文件</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="toc-number">8.1.</span> <span class="toc-text"> 上传文件到服务器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BC%A0%E8%BE%93%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="toc-number">8.1.1.</span> <span class="toc-text"> 传输文件夹</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BC%A0%E8%BE%93%E6%96%87%E4%BB%B6"><span class="toc-number">8.1.2.</span> <span class="toc-text"> 传输文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A4%BA%E4%BE%8B"><span class="toc-number">8.1.3.</span> <span class="toc-text"> 示例</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%8E%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6%E5%88%B0%E6%9C%AC%E6%9C%BA"><span class="toc-number">8.2.</span> <span class="toc-text"> 从服务器下载文件到本机</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BC%A0%E8%BE%93%E6%96%87%E4%BB%B6-2"><span class="toc-number">8.2.1.</span> <span class="toc-text"> 传输文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BC%A0%E8%BE%93%E6%96%87%E4%BB%B6%E5%A4%B9-2"><span class="toc-number">8.2.2.</span> <span class="toc-text"> 传输文件夹</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#wget%E5%B7%A5%E5%85%B7"><span class="toc-number">9.</span> <span class="toc-text"> wget工具</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%B4%E6%8E%A5%E4%B8%8B%E8%BD%BDwget"><span class="toc-number">9.1.</span> <span class="toc-text"> 直接下载wget</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6%E5%90%8E%E9%87%8D%E5%91%BD%E5%90%8D-wget-o"><span class="toc-number">9.2.</span> <span class="toc-text"> 下载文件后重命名 wget -O</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8C%87%E5%AE%9A%E8%B7%AF%E5%BE%84%E5%B9%B6%E6%8C%87%E5%AE%9A%E6%96%87%E4%BB%B6%E5%90%8D"><span class="toc-number">9.3.</span> <span class="toc-text"> 指定路径并指定文件名</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%AD%E7%82%B9%E7%BB%AD%E4%BC%A0-wget-c"><span class="toc-number">9.4.</span> <span class="toc-text"> 断点续传 wget -c</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%8E%E5%8F%B0%E4%B8%8B%E8%BD%BD-wget-b"><span class="toc-number">9.5.</span> <span class="toc-text"> 后台下载 wget -b</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95%E4%B8%8B%E8%BD%BD%E9%80%9F%E5%BA%A6-wget-s"><span class="toc-number">9.6.</span> <span class="toc-text"> 测试下载速度 wget -S</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD%E9%87%8D%E8%AF%95%E6%AC%A1%E6%95%B0-wget-t%E6%AC%A1%E6%95%B0"><span class="toc-number">9.7.</span> <span class="toc-text"> 下载重试次数 wget -t&#x3D;次数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD%E5%A4%9A%E6%96%87%E4%BB%B6-wget-i"><span class="toc-number">9.8.</span> <span class="toc-text"> 下载多文件 wget -i</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%98%E5%82%A8%E4%B8%8B%E8%BD%BD%E6%97%A5%E5%BF%97wget-o"><span class="toc-number">9.9.</span> <span class="toc-text"> 存储下载日志wget -o</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9B%B4%E5%A4%9A%E5%91%BD%E4%BB%A4"><span class="toc-number">9.10.</span> <span class="toc-text"> 更多命令</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#linux-ps%E6%8C%87%E4%BB%A4"><span class="toc-number">10.</span> <span class="toc-text"> Linux ps指令</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9F%A5%E6%89%BE%E8%BF%9B%E7%A8%8B"><span class="toc-number">10.1.</span> <span class="toc-text"> 查找进程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%98%BE%E7%A4%BA%E6%89%80%E6%9C%89%E8%BF%9B%E7%A8%8B%E4%BF%A1%E6%81%AF"><span class="toc-number">10.2.</span> <span class="toc-text"> 显示所有进程信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%98%BE%E7%A4%BA%E6%9F%90%E7%94%A8%E6%88%B7%E4%B8%8B%E7%9A%84%E5%85%A8%E7%A8%8B%E8%BF%9B%E7%A8%8B"><span class="toc-number">10.3.</span> <span class="toc-text"> 显示某用户下的全程进程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A4%BA%E4%BE%8B-2"><span class="toc-number">10.3.1.</span> <span class="toc-text"> 示例</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%98%BE%E7%A4%BA%E7%B3%BB%E7%BB%9F%E5%85%A8%E9%83%A8%E8%BF%9B%E7%A8%8B"><span class="toc-number">10.4.</span> <span class="toc-text"> 显示系统全部进程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E5%86%85%E5%AD%98cpu%E5%8D%A0%E7%94%A8%E5%89%8D10%E7%9A%84%E8%BF%9B%E7%A8%8B"><span class="toc-number">10.5.</span> <span class="toc-text"> 查看内存&#x2F;CPU占用前10的进程</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/232c1cc7.html" title="服务器备案+迁移数据方案"><img src="/data/img/wallhaven-8ozk-%E5%8E%8B%E7%BC%A9%E5%90%8E.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="服务器备案+迁移数据方案"/></a><div class="content"><a class="title" href="/232c1cc7.html" title="服务器备案+迁移数据方案">服务器备案+迁移数据方案</a><time datetime="2023-05-30T12:54:52.000Z" title="发表于 2023-05-30 20:54:52">2023-05-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/f9ef02fb.html" title="【SpringBoot系列】04-NoSQL数据库"><img src="https://images.hikki.site/cover-2023-05-24-150023.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【SpringBoot系列】04-NoSQL数据库"/></a><div class="content"><a class="title" href="/f9ef02fb.html" title="【SpringBoot系列】04-NoSQL数据库">【SpringBoot系列】04-NoSQL数据库</a><time datetime="2023-05-24T07:57:35.000Z" title="发表于 2023-05-24 15:57:35">2023-05-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/169f819e.html" title="【SpringBoot系列】03-测试与数据库操作"><img src="https://bu.dusays.com/2023/05/22/646a5ebd510bf.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【SpringBoot系列】03-测试与数据库操作"/></a><div class="content"><a class="title" href="/169f819e.html" title="【SpringBoot系列】03-测试与数据库操作">【SpringBoot系列】03-测试与数据库操作</a><time datetime="2023-05-22T06:58:21.000Z" title="发表于 2023-05-22 14:58:21">2023-05-22</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://images.hikki.site/Linux-睡觉.png')"><div id="footer-wrap"><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="fa-solid fa-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="fa-solid fa-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="fa-solid fa-arrow-rotate-right"></i></div><div class="rightMenu-item" id="menu-home"><i class="fa-solid fa-house"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" href="/archives/"><i class="fa-solid fa-archive"></i><span>文章归档</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="fa-solid fa-tags"></i><span>文章标签</span></a><a class="rightMenu-item menu-link" href="/message/"><i class="fa-solid fa-comment-dots"></i><span>留言板</span></a><a class="rightMenu-item menu-link" href="/link/moments"><i class="fa-solid fa-procedures"></i><span>闲言碎语</span></a><a class="rightMenu-item menu-link" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.travellings.cn/go.html"><i class="fa-solid fa-rocket"></i><span>博客列车</span></a></div><div class="rightMenu-group rightMenu-line rightMenuNormal"><a class="rightMenu-item menu-link" id="menu-radompage" href="/random.html"><i class="fa-solid fa-shoe-prints"></i><span>随便逛逛</span></a><div class="rightMenu-item" id="menu-translate"><i class="fa-solid fa-earth-asia"></i><span>繁简切换</span></div><div class="rightMenu-item" id="menu-darkmode"><i class="fa-solid fa-moon"></i><span>切换模式</span></div></div></div><div id="rightmenu-mask"></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="/data/theme/medium-zoom.min.js"></script><script src="/data/theme/instantpage.min.js" type="module"></script><script src="/data/theme/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function loadDisqus () {
+  var disqus_config = function () {
+    this.page.url = 'https://blog.hikki.site/4c982bf.html'
+    this.page.identifier = '/4c982bf.html'
+    this.page.title = 'Linux'
+  };
+
+  window.disqusReset = () => {
+    DISQUS.reset({
+      reload: true,
+      config: disqus_config
+    })
+  }
+
+  if (window.DISQUS) disqusReset()
+  else {
+    (function() { 
+      var d = document, s = d.createElement('script');
+      s.src = 'https://.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  }
+
+  document.getElementById('darkmode').addEventListener('click', () => {
+    setTimeout(() => window.disqusReset(), 200)
+  })
+}
+
+if ('Disqus' === 'Disqus' || !true) {
+  if (true) btf.loadComment(document.getElementById('disqus_thread'), loadDisqus)
+  else loadDisqus()
+} else {
+  function loadOtherComment () {
+    loadDisqus()
+  }
+}
+</script></div><script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script><script defer data-pjax src="/js/rightMenu.js"></script><script src="/js/fixed-pagination.js" async></script><script defer data-pjax type="text/javascript" src="/util/util.js"></script><script defer data-pjax type="text/javascript" src="/data/js/utils.js"></script><script>let tianliGPT_postSelector = '\#post \#article-container';let tianliGPT_key = 'U5FHKh71uMCfndwMIBkd';</script><script src="https://cdn1.tianli0.top/gh/zhheo/Post-Abstract-AI@0.7/tianli_gpt.js"></script><script src="/data/theme/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script src="/data/theme/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"]):not([href="/music/"]):not([href="/no-pjax/"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script async src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><script data-pjax>
+  function butterfly_footer_beautify_injector_config(){
+    var parent_div_git = document.getElementById('footer-wrap');
+    var item_html = '<div id="workboard"></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://www.upyun.com/?utm_source=lianmeng&amp;utm_medium=referral" rel="external nofollow noreferrer" style="margin-inline:5px" data-title="本网站由又拍云提供CDN加速/云存储服务" title=""><img src="https://img.shields.io/badge/CDN-%E5%8F%88%E6%8B%8D%E4%BA%91-blue" alt=""/></a><a class="github-badge" target="_blank" href="https://hexo.io/" rel="external nofollow noreferrer" style="margin-inline:5px" data-title="博客框架为Hexo_v5.4.0" title=""><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&amp;logo=hexo" alt=""/></a><a class="github-badge" target="_blank" href="https://butterfly.js.org/" rel="external nofollow noreferrer" style="margin-inline:5px" data-title="主题版本Butterfly_v4.5.1" title=""><img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&amp;logo=bitdefender" alt=""/></a><a class="github-badge" target="_blank" href="https://beian.miit.gov.cn/" rel="external nofollow noreferrer" style="margin-inline:5px" data-title="粤ICP备2022125102号" title=""><img src="/data/img/icon-link/粤ICP备2022125102号.svg" alt=""/></a></p>';
+    console.log('已挂载butterfly_footer_beautify')
+    parent_div_git.insertAdjacentHTML("beforeend",item_html)
+    }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_footer_beautify_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_footer_beautify_injector_config();
+  }
+  </script><script async src="/data/js/runtime.min.js"></script><!-- hexo injector body_end end --></body></html>
